@@ -26,37 +26,39 @@ namespace PKIo {
           string.Concat(
             "Ch5pby9jb21tb24vY29tbW9uX29iamVjdHMucHJvdG8SAmlvGixwcm90b2Mt",
             "Z2VuLXN3YWdnZXIvb3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90bxoaaW8vY29t",
-            "bW9uL3BhZ2luYXRpb24ucHJvdG8aGWlvL2NvbW1vbi9wcm90b2NvbHMucHJv",
-            "dG8iEAoCSWQSCgoCaWQYASABKAkiEgoDVXJsEgsKA3VybBgBIAEoCSIWCgVD",
-            "b3VudBINCgV0b3RhbBgBIAEoBSIeCglGaWxlQnl0ZXMSEQoJZmlsZUJ5dGVz",
-            "GAEgASgMIhsKB0Jvb2xlYW4SEAoIcmVzcG9uc2UYASABKAgiGwoHU3RyaW5n",
-            "cxIQCghyZXNwb25zZRgBIAMoCSIwCgREYXRlEgwKBHllYXIYASABKAUSDQoF",
-            "bW9udGgYAiABKAUSCwoDZGF5GAMgASgFIjQKBFRpbWUSDAoEaG91chgBIAEo",
-            "BRIOCgZtaW51dGUYAiABKAUSDgoGc2Vjb25kGAMgASgFIlsKCUxvY2FsRGF0",
-            "ZRJOCghkYXRlVGltZRgBIAEoCUI8kkE5igE2XihbMC05XXs0fSktPygxWzAt",
-            "Ml18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0pIpwBCg1Mb2Nh",
-            "bERhdGVUaW1lEooBCghkYXRlVGltZRgBIAEoCUJ4kkF1igFyXihbMC05XXs0",
-            "fSktPygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0p",
-            "VCgyWzAtM118WzAxXVswLTldKTooWzAtNV1bMC05XSk6KFswLTVdWzAtOV0p",
-            "KC5bMC05XXsxLDN9KT8kIm4KClBhc3NCdW5kbGUSCgoCaWQYASABKAkSCwoD",
-            "dXJsGAIgASgJEhQKDGdvb2dsZVBheVVSTBgFIAEoCRIWCg5hcHBsZVBhc3NC",
-            "eXRlcxgGIAEoDBIZChFtdWx0aXBsZVBhc3Nlc1VSTBgHIAEoCSJFChFQYXNz",
-            "QnVuZGxlUmVxdWVzdBIKCgJpZBgBIAEoCRIkCgZmb3JtYXQYAiADKA4yFC5p",
-            "by5QYXNzQnVuZGxlRm9ybWF0ImYKC0xpc3RSZXF1ZXN0Eg8KB2NsYXNzSWQY",
-            "ASABKAkSIgoIcHJvdG9jb2wYAiABKA4yEC5pby5QYXNzUHJvdG9jb2wSIgoK",
-            "cGFnaW5hdGlvbhgDIAEoCzIOLmlvLlBhZ2luYXRpb24iYgoJRGF0YUl0ZW1z",
-            "EicKBWl0ZW1zGAEgAygLMhguaW8uRGF0YUl0ZW1zLkl0ZW1zRW50cnkaLAoK",
-            "SXRlbXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBKjQK",
-            "DExpc3RQb3NpdGlvbhIKCgZBUFBFTkQQABILCgdQUkVQRU5EEAESCwoHUkVQ",
-            "TEFDRRACKlcKEFBhc3NCdW5kbGVGb3JtYXQSDAoIUEFTU19VUkwQABIOCgpH",
-            "T09HTEVfVVJMEAISFQoRQVBQTEVfUEFTU19CVU5ETEUQCBIOCgpNVUxUSV9M",
-            "SU5LEBAqZwoJVXNhZ2VUeXBlEgwKCE5PX1VTQUdFEAASFgoSVVNBR0VfQVBQ",
-            "TEVfV0FMTEVUEAESFAoQVVNBR0VfR09PR0xFX1BBWRACEh4KGlVTQUdFX0RB",
-            "VEFfQ09MTEVDVElPTl9QQUdFEARCPgoPaW8ucGFzc2tpdC5QS2lvWiRzdGFz",
-            "aC5wYXNza2l0LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgRQS0lvYgZwcm90",
-            "bzM="));
+            "bW9uL3BhZ2luYXRpb24ucHJvdG8aFmlvL2NvbW1vbi9maWx0ZXIucHJvdG8a",
+            "GWlvL2NvbW1vbi9wcm90b2NvbHMucHJvdG8iEAoCSWQSCgoCaWQYASABKAki",
+            "EgoDVXJsEgsKA3VybBgBIAEoCSIWCgVDb3VudBINCgV0b3RhbBgBIAEoBSIe",
+            "CglGaWxlQnl0ZXMSEQoJZmlsZUJ5dGVzGAEgASgMIhsKB0Jvb2xlYW4SEAoI",
+            "cmVzcG9uc2UYASABKAgiGwoHU3RyaW5ncxIQCghyZXNwb25zZRgBIAMoCSIw",
+            "CgREYXRlEgwKBHllYXIYASABKAUSDQoFbW9udGgYAiABKAUSCwoDZGF5GAMg",
+            "ASgFIjQKBFRpbWUSDAoEaG91chgBIAEoBRIOCgZtaW51dGUYAiABKAUSDgoG",
+            "c2Vjb25kGAMgASgFIlsKCUxvY2FsRGF0ZRJOCghkYXRlVGltZRgBIAEoCUI8",
+            "kkE5igE2XihbMC05XXs0fSktPygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBb",
+            "MS05XXxbMTJdWzAtOV0pIpwBCg1Mb2NhbERhdGVUaW1lEooBCghkYXRlVGlt",
+            "ZRgBIAEoCUJ4kkF1igFyXihbMC05XXs0fSktPygxWzAtMl18MFsxLTldKS0/",
+            "KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0pVCgyWzAtM118WzAxXVswLTldKToo",
+            "WzAtNV1bMC05XSk6KFswLTVdWzAtOV0pKC5bMC05XXsxLDN9KT8kIm4KClBh",
+            "c3NCdW5kbGUSCgoCaWQYASABKAkSCwoDdXJsGAIgASgJEhQKDGdvb2dsZVBh",
+            "eVVSTBgFIAEoCRIWCg5hcHBsZVBhc3NCeXRlcxgGIAEoDBIZChFtdWx0aXBs",
+            "ZVBhc3Nlc1VSTBgHIAEoCSJFChFQYXNzQnVuZGxlUmVxdWVzdBIKCgJpZBgB",
+            "IAEoCRIkCgZmb3JtYXQYAiADKA4yFC5pby5QYXNzQnVuZGxlRm9ybWF0InAK",
+            "FUxpc3RSZXF1ZXN0RGVwcmVjYXRlZBIPCgdjbGFzc0lkGAEgASgJEiIKCHBy",
+            "b3RvY29sGAIgASgOMhAuaW8uUGFzc1Byb3RvY29sEiIKCnBhZ2luYXRpb24Y",
+            "AyABKAsyDi5pby5QYWdpbmF0aW9uImAKC0xpc3RSZXF1ZXN0Eg8KB2NsYXNz",
+            "SWQYASABKAkSIgoIcHJvdG9jb2wYAiABKA4yEC5pby5QYXNzUHJvdG9jb2wS",
+            "HAoHZmlsdGVycxgDIAEoCzILLmlvLkZpbHRlcnMiYgoJRGF0YUl0ZW1zEicK",
+            "BWl0ZW1zGAEgAygLMhguaW8uRGF0YUl0ZW1zLkl0ZW1zRW50cnkaLAoKSXRl",
+            "bXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBKjQKDExp",
+            "c3RQb3NpdGlvbhIKCgZBUFBFTkQQABILCgdQUkVQRU5EEAESCwoHUkVQTEFD",
+            "RRACKlcKEFBhc3NCdW5kbGVGb3JtYXQSDAoIUEFTU19VUkwQABIOCgpHT09H",
+            "TEVfVVJMEAISFQoRQVBQTEVfUEFTU19CVU5ETEUQCBIOCgpNVUxUSV9MSU5L",
+            "EBAqZwoJVXNhZ2VUeXBlEgwKCE5PX1VTQUdFEAASFgoSVVNBR0VfQVBQTEVf",
+            "V0FMTEVUEAESFAoQVVNBR0VfR09PR0xFX1BBWRACEh4KGlVTQUdFX0RBVEFf",
+            "Q09MTEVDVElPTl9QQUdFEARCPgoPaW8ucGFzc2tpdC5QS2lvWiRzdGFzaC5w",
+            "YXNza2l0LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgRQS0lvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenSwagger.Options.AnnotationsReflection.Descriptor, global::PKIo.PaginationReflection.Descriptor, global::PKIo.ProtocolsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenSwagger.Options.AnnotationsReflection.Descriptor, global::PKIo.PaginationReflection.Descriptor, global::PKIo.FilterReflection.Descriptor, global::PKIo.ProtocolsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PKIo.ListPosition), typeof(global::PKIo.PassBundleFormat), typeof(global::PKIo.UsageType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.Id), global::PKIo.Id.Parser, new[]{ "Id_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.Url), global::PKIo.Url.Parser, new[]{ "Url_" }, null, null, null, null),
@@ -70,7 +72,8 @@ namespace PKIo {
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.LocalDateTime), global::PKIo.LocalDateTime.Parser, new[]{ "DateTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.PassBundle), global::PKIo.PassBundle.Parser, new[]{ "Id", "Url", "GooglePayURL", "ApplePassBytes", "MultiplePassesURL" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.PassBundleRequest), global::PKIo.PassBundleRequest.Parser, new[]{ "Id", "Format" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.ListRequest), global::PKIo.ListRequest.Parser, new[]{ "ClassId", "Protocol", "Pagination" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.ListRequestDeprecated), global::PKIo.ListRequestDeprecated.Parser, new[]{ "ClassId", "Protocol", "Pagination" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.ListRequest), global::PKIo.ListRequest.Parser, new[]{ "ClassId", "Protocol", "Filters" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKIo.DataItems), global::PKIo.DataItems.Parser, new[]{ "Items" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
@@ -1988,11 +1991,14 @@ namespace PKIo {
 
   }
 
-  public sealed partial class ListRequest : pb::IMessage<ListRequest> {
-    private static readonly pb::MessageParser<ListRequest> _parser = new pb::MessageParser<ListRequest>(() => new ListRequest());
+  /// <summary>
+  /// [DEPRECATED: OR operator is not supported] Filter and list records.
+  /// </summary>
+  public sealed partial class ListRequestDeprecated : pb::IMessage<ListRequestDeprecated> {
+    private static readonly pb::MessageParser<ListRequestDeprecated> _parser = new pb::MessageParser<ListRequestDeprecated>(() => new ListRequestDeprecated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ListRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<ListRequestDeprecated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -2005,14 +2011,14 @@ namespace PKIo {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest() {
+    public ListRequestDeprecated() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest(ListRequest other) : this() {
+    public ListRequestDeprecated(ListRequestDeprecated other) : this() {
       classId_ = other.classId_;
       protocol_ = other.protocol_;
       pagination_ = other.pagination_ != null ? other.pagination_.Clone() : null;
@@ -2020,8 +2026,8 @@ namespace PKIo {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest Clone() {
-      return new ListRequest(this);
+    public ListRequestDeprecated Clone() {
+      return new ListRequestDeprecated(this);
     }
 
     /// <summary>Field number for the "classId" field.</summary>
@@ -2059,11 +2065,11 @@ namespace PKIo {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as ListRequest);
+      return Equals(other as ListRequestDeprecated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ListRequest other) {
+    public bool Equals(ListRequestDeprecated other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2131,7 +2137,7 @@ namespace PKIo {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ListRequest other) {
+    public void MergeFrom(ListRequestDeprecated other) {
       if (other == null) {
         return;
       }
@@ -2179,6 +2185,197 @@ namespace PKIo {
 
   }
 
+  public sealed partial class ListRequest : pb::IMessage<ListRequest> {
+    private static readonly pb::MessageParser<ListRequest> _parser = new pb::MessageParser<ListRequest>(() => new ListRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PKIo.CommonObjectsReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest(ListRequest other) : this() {
+      classId_ = other.classId_;
+      protocol_ = other.protocol_;
+      filters_ = other.filters_ != null ? other.filters_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest Clone() {
+      return new ListRequest(this);
+    }
+
+    /// <summary>Field number for the "classId" field.</summary>
+    public const int ClassIdFieldNumber = 1;
+    private string classId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ClassId {
+      get { return classId_; }
+      set {
+        classId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "protocol" field.</summary>
+    public const int ProtocolFieldNumber = 2;
+    private global::PKIo.PassProtocol protocol_ = global::PKIo.PassProtocol.DoNotUse;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::PKIo.PassProtocol Protocol {
+      get { return protocol_; }
+      set {
+        protocol_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "filters" field.</summary>
+    public const int FiltersFieldNumber = 3;
+    private global::PKIo.Filters filters_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::PKIo.Filters Filters {
+      get { return filters_; }
+      set {
+        filters_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ClassId != other.ClassId) return false;
+      if (Protocol != other.Protocol) return false;
+      if (!object.Equals(Filters, other.Filters)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
+      if (Protocol != global::PKIo.PassProtocol.DoNotUse) hash ^= Protocol.GetHashCode();
+      if (filters_ != null) hash ^= Filters.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ClassId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ClassId);
+      }
+      if (Protocol != global::PKIo.PassProtocol.DoNotUse) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Protocol);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Filters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ClassId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassId);
+      }
+      if (Protocol != global::PKIo.PassProtocol.DoNotUse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Protocol);
+      }
+      if (filters_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filters);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ClassId.Length != 0) {
+        ClassId = other.ClassId;
+      }
+      if (other.Protocol != global::PKIo.PassProtocol.DoNotUse) {
+        Protocol = other.Protocol;
+      }
+      if (other.filters_ != null) {
+        if (filters_ == null) {
+          Filters = new global::PKIo.Filters();
+        }
+        Filters.MergeFrom(other.Filters);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 16: {
+            Protocol = (global::PKIo.PassProtocol) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            if (filters_ == null) {
+              Filters = new global::PKIo.Filters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   /// DataItems are used to supply additional metadata when creating or updating passes.
   /// </summary>
@@ -2190,7 +2387,7 @@ namespace PKIo {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PKIo.CommonObjectsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::PKIo.CommonObjectsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

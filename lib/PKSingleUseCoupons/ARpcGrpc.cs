@@ -19,12 +19,15 @@ namespace PKSingleUseCoupons {
     static readonly grpc::Marshaller<global::PKIo.Id> __Marshaller_io_Id = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Id.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Pagination.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Filters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.AnalyticsRequest> __Marshaller_io_AnalyticsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.AnalyticsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.CouponCampaignAnalyticsResponse> __Marshaller_single_use_coupons_CouponCampaignAnalyticsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.CouponCampaignAnalyticsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.CouponOffer> __Marshaller_single_use_coupons_CouponOffer = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.CouponOffer.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKSingleUseCoupons.CouponOffersListRequestDeprecated> __Marshaller_single_use_coupons_CouponOffersListRequestDeprecated = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.CouponOffersListRequestDeprecated.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.CouponOffersListRequest> __Marshaller_single_use_coupons_CouponOffersListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.CouponOffersListRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.Coupon> __Marshaller_single_use_coupons_Coupon = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.Coupon.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.ExternalIdRequest> __Marshaller_single_use_coupons_ExternalIdRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.ExternalIdRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKSingleUseCoupons.ListRequestDeprecated> __Marshaller_single_use_coupons_ListRequestDeprecated = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.ListRequestDeprecated.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.ListRequest> __Marshaller_single_use_coupons_ListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.ListRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Count> __Marshaller_io_Count = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Count.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKSingleUseCoupons.CampaignCopyRequest> __Marshaller_single_use_coupons_CampaignCopyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKSingleUseCoupons.CampaignCopyRequest.Parser.ParseFrom);
@@ -57,11 +60,18 @@ namespace PKSingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKSingleUseCoupons.CouponCampaign> __Method_listCouponCampaigns = new grpc::Method<global::PKIo.Pagination, global::PKSingleUseCoupons.CouponCampaign>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKSingleUseCoupons.CouponCampaign> __Method_listCouponCampaignsDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKSingleUseCoupons.CouponCampaign>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listCouponCampaignsDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_single_use_coupons_CouponCampaign);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKSingleUseCoupons.CouponCampaign> __Method_listCouponCampaigns = new grpc::Method<global::PKIo.Filters, global::PKSingleUseCoupons.CouponCampaign>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listCouponCampaigns",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_single_use_coupons_CouponCampaign);
 
     static readonly grpc::Method<global::PKIo.AnalyticsRequest, global::PKSingleUseCoupons.CouponCampaignAnalyticsResponse> __Method_getAnalytics = new grpc::Method<global::PKIo.AnalyticsRequest, global::PKSingleUseCoupons.CouponCampaignAnalyticsResponse>(
@@ -98,6 +108,13 @@ namespace PKSingleUseCoupons {
         "deleteCouponOffer",
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly grpc::Method<global::PKSingleUseCoupons.CouponOffersListRequestDeprecated, global::PKSingleUseCoupons.CouponOffer> __Method_listCouponOffersDeprecated = new grpc::Method<global::PKSingleUseCoupons.CouponOffersListRequestDeprecated, global::PKSingleUseCoupons.CouponOffer>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listCouponOffersDeprecated",
+        __Marshaller_single_use_coupons_CouponOffersListRequestDeprecated,
+        __Marshaller_single_use_coupons_CouponOffer);
 
     static readonly grpc::Method<global::PKSingleUseCoupons.CouponOffersListRequest, global::PKSingleUseCoupons.CouponOffer> __Method_listCouponOffers = new grpc::Method<global::PKSingleUseCoupons.CouponOffersListRequest, global::PKSingleUseCoupons.CouponOffer>(
         grpc::MethodType.ServerStreaming,
@@ -162,12 +179,26 @@ namespace PKSingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_google_protobuf_Empty);
 
+    static readonly grpc::Method<global::PKSingleUseCoupons.ListRequestDeprecated, global::PKSingleUseCoupons.Coupon> __Method_listCouponsByCouponCampaignDeprecated = new grpc::Method<global::PKSingleUseCoupons.ListRequestDeprecated, global::PKSingleUseCoupons.Coupon>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listCouponsByCouponCampaignDeprecated",
+        __Marshaller_single_use_coupons_ListRequestDeprecated,
+        __Marshaller_single_use_coupons_Coupon);
+
     static readonly grpc::Method<global::PKSingleUseCoupons.ListRequest, global::PKSingleUseCoupons.Coupon> __Method_listCouponsByCouponCampaign = new grpc::Method<global::PKSingleUseCoupons.ListRequest, global::PKSingleUseCoupons.Coupon>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listCouponsByCouponCampaign",
         __Marshaller_single_use_coupons_ListRequest,
         __Marshaller_single_use_coupons_Coupon);
+
+    static readonly grpc::Method<global::PKSingleUseCoupons.ListRequestDeprecated, global::PKIo.Count> __Method_countCouponsByCouponCampaignDeprecated = new grpc::Method<global::PKSingleUseCoupons.ListRequestDeprecated, global::PKIo.Count>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "countCouponsByCouponCampaignDeprecated",
+        __Marshaller_single_use_coupons_ListRequestDeprecated,
+        __Marshaller_io_Count);
 
     static readonly grpc::Method<global::PKSingleUseCoupons.ListRequest, global::PKIo.Count> __Method_countCouponsByCouponCampaign = new grpc::Method<global::PKSingleUseCoupons.ListRequest, global::PKIo.Count>(
         grpc::MethodType.Unary,
@@ -276,11 +307,19 @@ namespace PKSingleUseCoupons {
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteCouponCampaign, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaignsDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listCouponCampaignsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaignsDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listCouponCampaignsDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponCampaigns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponCampaigns, null, options, request);
       }
@@ -363,6 +402,14 @@ namespace PKSingleUseCoupons {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCouponOfferAsync(global::PKIo.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteCouponOffer, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponOffer> listCouponOffersDeprecated(global::PKSingleUseCoupons.CouponOffersListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listCouponOffersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponOffer> listCouponOffersDeprecated(global::PKSingleUseCoupons.CouponOffersListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listCouponOffersDeprecated, null, options, request);
       }
       public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.CouponOffer> listCouponOffers(global::PKSingleUseCoupons.CouponOffersListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -484,6 +531,14 @@ namespace PKSingleUseCoupons {
       {
         return CallInvoker.AsyncUnaryCall(__Method_voidCoupon, null, options, request);
       }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.Coupon> listCouponsByCouponCampaignDeprecated(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listCouponsByCouponCampaignDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.Coupon> listCouponsByCouponCampaignDeprecated(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listCouponsByCouponCampaignDeprecated, null, options, request);
+      }
       public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.Coupon> listCouponsByCouponCampaign(global::PKSingleUseCoupons.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponsByCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -491,6 +546,22 @@ namespace PKSingleUseCoupons {
       public virtual grpc::AsyncServerStreamingCall<global::PKSingleUseCoupons.Coupon> listCouponsByCouponCampaign(global::PKSingleUseCoupons.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponsByCouponCampaign, null, options, request);
+      }
+      public virtual global::PKIo.Count countCouponsByCouponCampaignDeprecated(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countCouponsByCouponCampaignDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PKIo.Count countCouponsByCouponCampaignDeprecated(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_countCouponsByCouponCampaignDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countCouponsByCouponCampaignDeprecatedAsync(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countCouponsByCouponCampaignDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countCouponsByCouponCampaignDeprecatedAsync(global::PKSingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_countCouponsByCouponCampaignDeprecated, null, options, request);
       }
       public virtual global::PKIo.Count countCouponsByCouponCampaign(global::PKSingleUseCoupons.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {

@@ -24,21 +24,18 @@ namespace PKIo {
     static ProtocolsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chlpby9jb21tb24vcHJvdG9jb2xzLnByb3RvEgJpbyqoAgoMUGFzc1Byb3Rv",
+            "Chlpby9jb21tb24vcHJvdG9jb2xzLnByb3RvEgJpbyqLAQoMUGFzc1Byb3Rv",
             "Y29sEhwKGFBBU1NfUFJPVE9DT0xfRE9fTk9UX1VTRRAAEhAKDFJBV19QUk9U",
             "T0NPTBABEg8KC1YxX1BST1RPQ09MEAISEwoPRkxJR0hUX1BST1RPQ09MEAMS",
-            "FAoQTE9ZQUxUWV9QUk9UT0NPTBAEEhkKFUVWRU5UX1RJQ0tFVF9QUk9UT0NP",
-            "TBAFEhMKD0NPVVBPTl9QUk9UT0NPTBAGEhkKFVNUT1JFRF9WQUxVRV9QUk9U",
-            "T0NPTBAHEhoKFlRSQU5TSVRfVkFMVUVfUFJPVE9DT0wQCBIOCgpNRU1CRVJT",
-            "SElQEGQSFQoRU0lOR0xFX1VTRV9DT1VQT04QZRIOCglQUk9QXzAwMDEQ6AcS",
-            "DgoJUFJPUF8wMDAyEOkHKo4CChRQcm90b2NvbENvbW1vbkV2ZW50cxIlCiFQ",
-            "Uk9UT0NPTF9DT01NT05fRVZFTlRTX0RPX05PVF9VU0UQABIYChRFVkVOVF9P",
-            "QkpFQ1RfQ1JFQVRFRBABEhgKFEVWRU5UX09CSkVDVF9VUERBVEVEEAISGAoU",
-            "RVZFTlRfT0JKRUNUX0VYUElSRUQQAxIYChRFVkVOVF9PQkpFQ1RfREVMRVRF",
-            "RBAEEhUKEUVWRU5UX1BBU1NfSVNTVUVEEAUSGAoURVZFTlRfUEFTU19JTlNU",
-            "QUxMRUQQBhIaChZFVkVOVF9QQVNTX1VOSU5TVEFMTEVEEAcSGgoWRVZFTlRf",
-            "UEFTU19JTlZBTElEQVRFRBAIQj4KD2lvLnBhc3NraXQuUEtpb1okc3Rhc2gu",
-            "cGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIEUEtJb2IGcHJvdG8z"));
+            "DgoKTUVNQkVSU0hJUBBkEhUKEVNJTkdMRV9VU0VfQ09VUE9OEGUqjgIKFFBy",
+            "b3RvY29sQ29tbW9uRXZlbnRzEiUKIVBST1RPQ09MX0NPTU1PTl9FVkVOVFNf",
+            "RE9fTk9UX1VTRRAAEhgKFEVWRU5UX09CSkVDVF9DUkVBVEVEEAESGAoURVZF",
+            "TlRfT0JKRUNUX1VQREFURUQQAhIYChRFVkVOVF9PQkpFQ1RfRVhQSVJFRBAD",
+            "EhgKFEVWRU5UX09CSkVDVF9ERUxFVEVEEAQSFQoRRVZFTlRfUEFTU19JU1NV",
+            "RUQQBRIYChRFVkVOVF9QQVNTX0lOU1RBTExFRBAGEhoKFkVWRU5UX1BBU1Nf",
+            "VU5JTlNUQUxMRUQQBxIaChZFVkVOVF9QQVNTX0lOVkFMSURBVEVEEAhCPgoP",
+            "aW8ucGFzc2tpdC5QS2lvWiRzdGFzaC5wYXNza2l0LmNvbS9pby9tb2RlbC9z",
+            "ZGsvZ28vaW+qAgRQS0lvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PKIo.PassProtocol), typeof(global::PKIo.ProtocolCommonEvents), }, null, null));
@@ -50,7 +47,7 @@ namespace PKIo {
   public enum PassProtocol {
     [pbr::OriginalName("PASS_PROTOCOL_DO_NOT_USE")] DoNotUse = 0,
     /// <summary>
-    /// Reserved for v2 v3 legacy pass protocol.
+    /// Reserved for raw pass protocol.
     /// </summary>
     [pbr::OriginalName("RAW_PROTOCOL")] RawProtocol = 1,
     /// <summary>
@@ -58,47 +55,18 @@ namespace PKIo {
     /// </summary>
     [pbr::OriginalName("V1_PROTOCOL")] V1Protocol = 2,
     /// <summary>
-    /// Flights - mapped to Google's boarding passes class.
+    /// Flights protocol: https://docs.passkit.io/protocols/boarding/
     /// </summary>
     [pbr::OriginalName("FLIGHT_PROTOCOL")] FlightProtocol = 3,
     /// <summary>
-    /// Loyalty - mapped to Google's loyalty class.
-    /// </summary>
-    [pbr::OriginalName("LOYALTY_PROTOCOL")] LoyaltyProtocol = 4,
-    /// <summary>
-    /// Event Tickets; - mapped to Google's event ticket class.
-    /// </summary>
-    [pbr::OriginalName("EVENT_TICKET_PROTOCOL")] EventTicketProtocol = 5,
-    /// <summary>
-    /// Coupons - mapped to Google's offer class.
-    /// </summary>
-    [pbr::OriginalName("COUPON_PROTOCOL")] CouponProtocol = 6,
-    /// <summary>
-    /// Stored Value - mapped to Google's gift class.
-    /// </summary>
-    [pbr::OriginalName("STORED_VALUE_PROTOCOL")] StoredValueProtocol = 7,
-    /// <summary>
-    /// Stored Value - mapped to Google's transit class.
-    /// </summary>
-    [pbr::OriginalName("TRANSIT_VALUE_PROTOCOL")] TransitValueProtocol = 8,
-    /// <summary>
     /// Values 100 onwards are for PassKit generic protocols.
-    /// Generic Membership protocol
+    /// Generic Membership protocol: https://docs.passkit.io/protocols/member/
     /// </summary>
     [pbr::OriginalName("MEMBERSHIP")] Membership = 100,
     /// <summary>
-    /// Single Use Coupon protocol
+    /// Single Use Coupon protocol: https://docs.passkit.io/protocols/coupon/
     /// </summary>
     [pbr::OriginalName("SINGLE_USE_COUPON")] SingleUseCoupon = 101,
-    /// <summary>
-    /// Values 1000 onwards are for proprietary protocols
-    /// Proprietary protocol.
-    /// </summary>
-    [pbr::OriginalName("PROP_0001")] Prop0001 = 1000,
-    /// <summary>
-    /// Proprietary protocol.
-    /// </summary>
-    [pbr::OriginalName("PROP_0002")] Prop0002 = 1001,
   }
 
   public enum ProtocolCommonEvents {

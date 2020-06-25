@@ -23,6 +23,7 @@ namespace PKIo {
     static readonly grpc::Marshaller<global::PKIo.ImageBundle> __Marshaller_io_ImageBundle = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.ImageBundle.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.LocalizedImageInput> __Marshaller_io_LocalizedImageInput = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.LocalizedImageInput.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Pagination.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Filters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Count> __Marshaller_io_Count = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Count.Parser.ParseFrom);
 
     static readonly grpc::Method<global::PKIo.ProfileImageInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_setProfileImage = new grpc::Method<global::PKIo.ProfileImageInput, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -102,32 +103,60 @@ namespace PKIo {
         __Marshaller_io_LocalizedImageInput,
         __Marshaller_io_ImageRecord);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord> __Method_listImagesForUser = new grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord> __Method_listImagesForUserDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listImagesForUserDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_io_ImageRecord);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.ImageRecord> __Method_listImagesForUser = new grpc::Method<global::PKIo.Filters, global::PKIo.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listImagesForUser",
+        __Marshaller_io_Filters,
+        __Marshaller_io_ImageRecord);
+
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord> __Method_listImagesDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listImagesDeprecated",
         __Marshaller_io_Pagination,
         __Marshaller_io_ImageRecord);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord> __Method_listImages = new grpc::Method<global::PKIo.Pagination, global::PKIo.ImageRecord>(
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.ImageRecord> __Method_listImages = new grpc::Method<global::PKIo.Filters, global::PKIo.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listImages",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_io_ImageRecord);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countImages = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countImagesDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "countImages",
+        "countImagesDeprecated",
         __Marshaller_io_Pagination,
         __Marshaller_io_Count);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countImagesForUser = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.Count> __Method_countImages = new grpc::Method<global::PKIo.Filters, global::PKIo.Count>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "countImages",
+        __Marshaller_io_Filters,
+        __Marshaller_io_Count);
+
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countImagesForUserDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "countImagesForUserDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_io_Count);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.Count> __Method_countImagesForUser = new grpc::Method<global::PKIo.Filters, global::PKIo.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
         "countImagesForUser",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_io_Count);
 
     /// <summary>Service descriptor</summary>
@@ -363,51 +392,99 @@ namespace PKIo {
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteLocalizedImage, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUser(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUserDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listImagesForUserDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUserDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listImagesForUserDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUser(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImagesForUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUser(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesForUser(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImagesForUser, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImages(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listImagesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImagesDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listImagesDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImages(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImages(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.ImageRecord> listImages(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImages, null, options, request);
       }
-      public virtual global::PKIo.Count countImages(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::PKIo.Count countImagesDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countImagesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PKIo.Count countImagesDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_countImagesDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesDeprecatedAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countImagesDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesDeprecatedAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_countImagesDeprecated, null, options, request);
+      }
+      public virtual global::PKIo.Count countImages(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PKIo.Count countImages(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual global::PKIo.Count countImages(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImages, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesAsync(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesAsync(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImages, null, options, request);
       }
-      public virtual global::PKIo.Count countImagesForUser(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::PKIo.Count countImagesForUserDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countImagesForUserDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PKIo.Count countImagesForUserDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_countImagesForUserDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserDeprecatedAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countImagesForUserDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserDeprecatedAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_countImagesForUserDeprecated, null, options, request);
+      }
+      public virtual global::PKIo.Count countImagesForUser(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PKIo.Count countImagesForUser(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual global::PKIo.Count countImagesForUser(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImagesForUser, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserAsync(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countImagesForUserAsync(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImagesForUser, null, options, request);
       }

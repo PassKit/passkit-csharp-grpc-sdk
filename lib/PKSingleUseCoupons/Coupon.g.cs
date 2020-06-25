@@ -26,45 +26,48 @@ namespace PKSingleUseCoupons {
           string.Concat(
             "CiJpby9zaW5nbGVfdXNlX2NvdXBvbnMvY291cG9uLnByb3RvEhJzaW5nbGVf",
             "dXNlX2NvdXBvbnMaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8a",
-            "GmlvL2NvbW1vbi9wYWdpbmF0aW9uLnByb3RvGhRpby9jb21tb24vcGFzcy5w",
-            "cm90bxoYaW8vY29tbW9uL3BlcnNvbmFsLnByb3RvGhdpby9jb21tb24vbWV0",
-            "cmljcy5wcm90bxoscHJvdG9jLWdlbi1zd2FnZ2VyL29wdGlvbnMvYW5ub3Rh",
-            "dGlvbnMucHJvdG8ivAUKBkNvdXBvbhIKCgJpZBgBIAEoCRISCgpleHRlcm5h",
-            "bElkGAIgASgJEg8KB29mZmVySWQYAyABKAkSEgoKY2FtcGFpZ25JZBgEIAEo",
-            "CRIaCgZwZXJzb24YBSABKAsyCi5pby5QZXJzb24SOgoIbWV0YURhdGEYBiAD",
-            "KAsyKC5zaW5nbGVfdXNlX2NvdXBvbnMuQ291cG9uLk1ldGFEYXRhRW50cnkS",
-            "CwoDc2t1GAcgASgJEg4KBm9wdE91dBgIIAEoCBIwCgZzdGF0dXMYCiABKA4y",
-            "IC5zaW5nbGVfdXNlX2NvdXBvbnMuQ291cG9uU3RhdHVzEi4KCmV4cGlyeURh",
-            "dGUYCyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEkAKEXJlZGVt",
-            "cHRpb25EZXRhaWxzGAwgASgLMiUuc2luZ2xlX3VzZV9jb3Vwb25zLlJlZGVt",
-            "cHRpb25EZXRhaWxzEigKDXBhc3NPdmVycmlkZXMYDSABKAsyES5pby5QYXNz",
-            "T3ZlcnJpZGVzEiIKDHBhc3NNZXRhRGF0YRgOIAEoCzIMLmlvLk1ldGFkYXRh",
-            "EisKB2NyZWF0ZWQYDyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "EisKB3VwZGF0ZWQYECABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "Gi8KDU1ldGFEYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJ",
-            "OgI4ATp1kkFyCnAqBkNvdXBvbjJPSG9sZHMgdGhlIGRldGFpbHMgJiBzdGF0",
-            "ZSBvZiBhIHVuaXF1ZSBpbmRpdmlkdWFsIGNvdXBvbiBpbnN0YW5jZSAoaS5l",
-            "LiBhIHBhc3MpLtIBB29mZmVySWTSAQpjYW1wYWlnbklkSgQICRAKIvYBChFS",
-            "ZWRlbXB0aW9uRGV0YWlscxIyCg5yZWRlbXB0aW9uRGF0ZRgBIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFgoOcmVkZW1wdGlvbkNvZGUYAiAB",
-            "KAkSCwoDbGF0GAMgASgBEgsKA2xvbhgEIAEoARILCgNhbHQYBSABKAUSGAoQ",
-            "cmVkZW1wdGlvblNvdXJjZRgGIAEoCRIbChNyZWRlbXB0aW9uUmVmZXJlbmNl",
-            "GAcgASgJEhwKFHRyYW5zYWN0aW9uUmVmZXJlbmNlGAggASgJEhkKEXRyYW5z",
-            "YWN0aW9uQW1vdW50GAkgASgBIkEKEUV4dGVybmFsSWRSZXF1ZXN0EhgKEGNv",
-            "dXBvbkNhbXBhaWduSWQYASABKAkSEgoKZXh0ZXJuYWxJZBgCIAEoCSJLCgtM",
-            "aXN0UmVxdWVzdBIYChBjb3Vwb25DYW1wYWlnbklkGAEgASgJEiIKCnBhZ2lu",
-            "YXRpb24YAiABKAsyDi5pby5QYWdpbmF0aW9uKiwKDENvdXBvblN0YXR1cxIO",
-            "CgpVTlJFREVFTUVEEAASDAoIUkVERUVNRUQQAUJwCiBpby5wYXNza2l0LlBL",
-            "aW8uU2luZ2xlVXNlQ291cG9uc1o3c3Rhc2gucGFzc2tpdC5jb20vaW8vbW9k",
-            "ZWwvc2RrL2dvL2lvL3NpbmdsZV91c2VfY291cG9uc6oCElBLU2luZ2xlVXNl",
-            "Q291cG9uc2IGcHJvdG8z"));
+            "GmlvL2NvbW1vbi9wYWdpbmF0aW9uLnByb3RvGhZpby9jb21tb24vZmlsdGVy",
+            "LnByb3RvGhRpby9jb21tb24vcGFzcy5wcm90bxoYaW8vY29tbW9uL3BlcnNv",
+            "bmFsLnByb3RvGhdpby9jb21tb24vbWV0cmljcy5wcm90bxoscHJvdG9jLWdl",
+            "bi1zd2FnZ2VyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8ivAUKBkNvdXBv",
+            "bhIKCgJpZBgBIAEoCRISCgpleHRlcm5hbElkGAIgASgJEg8KB29mZmVySWQY",
+            "AyABKAkSEgoKY2FtcGFpZ25JZBgEIAEoCRIaCgZwZXJzb24YBSABKAsyCi5p",
+            "by5QZXJzb24SOgoIbWV0YURhdGEYBiADKAsyKC5zaW5nbGVfdXNlX2NvdXBv",
+            "bnMuQ291cG9uLk1ldGFEYXRhRW50cnkSCwoDc2t1GAcgASgJEg4KBm9wdE91",
+            "dBgIIAEoCBIwCgZzdGF0dXMYCiABKA4yIC5zaW5nbGVfdXNlX2NvdXBvbnMu",
+            "Q291cG9uU3RhdHVzEi4KCmV4cGlyeURhdGUYCyABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEkAKEXJlZGVtcHRpb25EZXRhaWxzGAwgASgLMiUu",
+            "c2luZ2xlX3VzZV9jb3Vwb25zLlJlZGVtcHRpb25EZXRhaWxzEigKDXBhc3NP",
+            "dmVycmlkZXMYDSABKAsyES5pby5QYXNzT3ZlcnJpZGVzEiIKDHBhc3NNZXRh",
+            "RGF0YRgOIAEoCzIMLmlvLk1ldGFkYXRhEisKB2NyZWF0ZWQYDyABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEisKB3VwZGF0ZWQYECABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wGi8KDU1ldGFEYXRhRW50cnkSCwoD",
+            "a2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ATp1kkFyCnAqBkNvdXBvbjJP",
+            "SG9sZHMgdGhlIGRldGFpbHMgJiBzdGF0ZSBvZiBhIHVuaXF1ZSBpbmRpdmlk",
+            "dWFsIGNvdXBvbiBpbnN0YW5jZSAoaS5lLiBhIHBhc3MpLtIBB29mZmVySWTS",
+            "AQpjYW1wYWlnbklkSgQICRAKIvYBChFSZWRlbXB0aW9uRGV0YWlscxIyCg5y",
+            "ZWRlbXB0aW9uRGF0ZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASFgoOcmVkZW1wdGlvbkNvZGUYAiABKAkSCwoDbGF0GAMgASgBEgsKA2xv",
+            "bhgEIAEoARILCgNhbHQYBSABKAUSGAoQcmVkZW1wdGlvblNvdXJjZRgGIAEo",
+            "CRIbChNyZWRlbXB0aW9uUmVmZXJlbmNlGAcgASgJEhwKFHRyYW5zYWN0aW9u",
+            "UmVmZXJlbmNlGAggASgJEhkKEXRyYW5zYWN0aW9uQW1vdW50GAkgASgBIkEK",
+            "EUV4dGVybmFsSWRSZXF1ZXN0EhgKEGNvdXBvbkNhbXBhaWduSWQYASABKAkS",
+            "EgoKZXh0ZXJuYWxJZBgCIAEoCSJVChVMaXN0UmVxdWVzdERlcHJlY2F0ZWQS",
+            "GAoQY291cG9uQ2FtcGFpZ25JZBgBIAEoCRIiCgpwYWdpbmF0aW9uGAIgASgL",
+            "Mg4uaW8uUGFnaW5hdGlvbiJFCgtMaXN0UmVxdWVzdBIYChBjb3Vwb25DYW1w",
+            "YWlnbklkGAEgASgJEhwKB2ZpbHRlcnMYAiABKAsyCy5pby5GaWx0ZXJzKiwK",
+            "DENvdXBvblN0YXR1cxIOCgpVTlJFREVFTUVEEAASDAoIUkVERUVNRUQQAUJw",
+            "CiBpby5wYXNza2l0LlBLaW8uU2luZ2xlVXNlQ291cG9uc1o3c3Rhc2gucGFz",
+            "c2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvL3NpbmdsZV91c2VfY291cG9u",
+            "c6oCElBLU2luZ2xlVXNlQ291cG9uc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PKIo.PaginationReflection.Descriptor, global::PKIo.PassReflection.Descriptor, global::PKIo.PersonalReflection.Descriptor, global::PKIo.MetricsReflection.Descriptor, global::Grpc.Gateway.ProtocGenSwagger.Options.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PKIo.PaginationReflection.Descriptor, global::PKIo.FilterReflection.Descriptor, global::PKIo.PassReflection.Descriptor, global::PKIo.PersonalReflection.Descriptor, global::PKIo.MetricsReflection.Descriptor, global::Grpc.Gateway.ProtocGenSwagger.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PKSingleUseCoupons.CouponStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.Coupon), global::PKSingleUseCoupons.Coupon.Parser, new[]{ "Id", "ExternalId", "OfferId", "CampaignId", "Person", "MetaData", "Sku", "OptOut", "Status", "ExpiryDate", "RedemptionDetails", "PassOverrides", "PassMetaData", "Created", "Updated" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.RedemptionDetails), global::PKSingleUseCoupons.RedemptionDetails.Parser, new[]{ "RedemptionDate", "RedemptionCode", "Lat", "Lon", "Alt", "RedemptionSource", "RedemptionReference", "TransactionReference", "TransactionAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.ExternalIdRequest), global::PKSingleUseCoupons.ExternalIdRequest.Parser, new[]{ "CouponCampaignId", "ExternalId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.ListRequest), global::PKSingleUseCoupons.ListRequest.Parser, new[]{ "CouponCampaignId", "Pagination" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.ListRequestDeprecated), global::PKSingleUseCoupons.ListRequestDeprecated.Parser, new[]{ "CouponCampaignId", "Pagination" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PKSingleUseCoupons.ListRequest), global::PKSingleUseCoupons.ListRequest.Parser, new[]{ "CouponCampaignId", "Filters" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1237,11 +1240,11 @@ namespace PKSingleUseCoupons {
 
   }
 
-  public sealed partial class ListRequest : pb::IMessage<ListRequest> {
-    private static readonly pb::MessageParser<ListRequest> _parser = new pb::MessageParser<ListRequest>(() => new ListRequest());
+  public sealed partial class ListRequestDeprecated : pb::IMessage<ListRequestDeprecated> {
+    private static readonly pb::MessageParser<ListRequestDeprecated> _parser = new pb::MessageParser<ListRequestDeprecated>(() => new ListRequestDeprecated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ListRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<ListRequestDeprecated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1254,22 +1257,22 @@ namespace PKSingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest() {
+    public ListRequestDeprecated() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest(ListRequest other) : this() {
+    public ListRequestDeprecated(ListRequestDeprecated other) : this() {
       couponCampaignId_ = other.couponCampaignId_;
       pagination_ = other.pagination_ != null ? other.pagination_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListRequest Clone() {
-      return new ListRequest(this);
+    public ListRequestDeprecated Clone() {
+      return new ListRequestDeprecated(this);
     }
 
     /// <summary>Field number for the "couponCampaignId" field.</summary>
@@ -1302,11 +1305,11 @@ namespace PKSingleUseCoupons {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as ListRequest);
+      return Equals(other as ListRequestDeprecated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ListRequest other) {
+    public bool Equals(ListRequestDeprecated other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1365,7 +1368,7 @@ namespace PKSingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ListRequest other) {
+    public void MergeFrom(ListRequestDeprecated other) {
       if (other == null) {
         return;
       }
@@ -1398,6 +1401,175 @@ namespace PKSingleUseCoupons {
               Pagination = new global::PKIo.Pagination();
             }
             input.ReadMessage(Pagination);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ListRequest : pb::IMessage<ListRequest> {
+    private static readonly pb::MessageParser<ListRequest> _parser = new pb::MessageParser<ListRequest>(() => new ListRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PKSingleUseCoupons.CouponReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest(ListRequest other) : this() {
+      couponCampaignId_ = other.couponCampaignId_;
+      filters_ = other.filters_ != null ? other.filters_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListRequest Clone() {
+      return new ListRequest(this);
+    }
+
+    /// <summary>Field number for the "couponCampaignId" field.</summary>
+    public const int CouponCampaignIdFieldNumber = 1;
+    private string couponCampaignId_ = "";
+    /// <summary>
+    /// Coupon Campaign ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CouponCampaignId {
+      get { return couponCampaignId_; }
+      set {
+        couponCampaignId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "filters" field.</summary>
+    public const int FiltersFieldNumber = 2;
+    private global::PKIo.Filters filters_;
+    /// <summary>
+    /// External ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::PKIo.Filters Filters {
+      get { return filters_; }
+      set {
+        filters_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CouponCampaignId != other.CouponCampaignId) return false;
+      if (!object.Equals(Filters, other.Filters)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CouponCampaignId.Length != 0) hash ^= CouponCampaignId.GetHashCode();
+      if (filters_ != null) hash ^= Filters.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (CouponCampaignId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CouponCampaignId);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Filters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CouponCampaignId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CouponCampaignId);
+      }
+      if (filters_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filters);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CouponCampaignId.Length != 0) {
+        CouponCampaignId = other.CouponCampaignId;
+      }
+      if (other.filters_ != null) {
+        if (filters_ == null) {
+          Filters = new global::PKIo.Filters();
+        }
+        Filters.MergeFrom(other.Filters);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CouponCampaignId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (filters_ == null) {
+              Filters = new global::PKIo.Filters();
+            }
+            input.ReadMessage(Filters);
             break;
           }
         }

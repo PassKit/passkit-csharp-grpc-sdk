@@ -18,6 +18,7 @@ namespace PKIo {
     static readonly grpc::Marshaller<global::PKIo.CertificateData> __Marshaller_io_CertificateData = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.CertificateData.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.PassTypeIdentifier> __Marshaller_io_PassTypeIdentifier = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.PassTypeIdentifier.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Pagination.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Filters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Count> __Marshaller_io_Count = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Count.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.NFCSigningCredentialsRequest> __Marshaller_io_NFCSigningCredentialsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.NFCSigningCredentialsRequest.Parser.ParseFrom);
 
@@ -49,18 +50,32 @@ namespace PKIo {
         __Marshaller_io_PassTypeIdentifier,
         __Marshaller_io_CertificateData);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.CertificateData> __Method_listAppleCertificates = new grpc::Method<global::PKIo.Pagination, global::PKIo.CertificateData>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.CertificateData> __Method_listAppleCertificatesDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.CertificateData>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
-        "listAppleCertificates",
+        "listAppleCertificatesDeprecated",
         __Marshaller_io_Pagination,
         __Marshaller_io_CertificateData);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countAppleCertificates = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.CertificateData> __Method_listAppleCertificates = new grpc::Method<global::PKIo.Filters, global::PKIo.CertificateData>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listAppleCertificates",
+        __Marshaller_io_Filters,
+        __Marshaller_io_CertificateData);
+
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Count> __Method_countAppleCertificatesDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.Count>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "countAppleCertificatesDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_io_Count);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.Count> __Method_countAppleCertificates = new grpc::Method<global::PKIo.Filters, global::PKIo.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
         "countAppleCertificates",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_io_Count);
 
     static readonly grpc::Method<global::PKIo.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_sendNFCSigningCredentials = new grpc::Method<global::PKIo.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -163,27 +178,51 @@ namespace PKIo {
       {
         return CallInvoker.AsyncUnaryCall(__Method_getAppleCertificateData, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificates(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificatesDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listAppleCertificatesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificatesDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listAppleCertificatesDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificates(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listAppleCertificates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificates(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.CertificateData> listAppleCertificates(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listAppleCertificates, null, options, request);
       }
-      public virtual global::PKIo.Count countAppleCertificates(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::PKIo.Count countAppleCertificatesDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countAppleCertificatesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PKIo.Count countAppleCertificatesDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_countAppleCertificatesDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesDeprecatedAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countAppleCertificatesDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesDeprecatedAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_countAppleCertificatesDeprecated, null, options, request);
+      }
+      public virtual global::PKIo.Count countAppleCertificates(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PKIo.Count countAppleCertificates(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual global::PKIo.Count countAppleCertificates(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countAppleCertificates, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesAsync(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesAsync(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificatesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesAsync(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countAppleCertificatesAsync(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countAppleCertificates, null, options, request);
       }

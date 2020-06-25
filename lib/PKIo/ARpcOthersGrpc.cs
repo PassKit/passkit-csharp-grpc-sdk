@@ -24,6 +24,7 @@ namespace PKIo {
     static readonly grpc::Marshaller<global::PKIo.PasswordResetInput> __Marshaller_io_PasswordResetInput = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.PasswordResetInput.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Pagination.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Project> __Marshaller_io_Project = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Project.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Filters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.ProjectByShortCodeResult> __Marshaller_io_ProjectByShortCodeResult = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.ProjectByShortCodeResult.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.ProjectStatusFilter> __Marshaller_io_ProjectStatusFilter = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.ProjectStatusFilter.Parser.ParseFrom);
 
@@ -90,18 +91,32 @@ namespace PKIo {
         __Marshaller_io_PasswordResetInput,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Project> __Method_getProjectsForUserQuery = new grpc::Method<global::PKIo.Pagination, global::PKIo.Project>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Project> __Method_getProjectsForUserQueryDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.Project>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
-        "getProjectsForUserQuery",
+        "getProjectsForUserQueryDeprecated",
         __Marshaller_io_Pagination,
         __Marshaller_io_Project);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Project> __Method_getProjectsQuery = new grpc::Method<global::PKIo.Pagination, global::PKIo.Project>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKIo.Project> __Method_getProjectsQueryDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKIo.Project>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "getProjectsQueryDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_io_Project);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.Project> __Method_getProjectsForUserQuery = new grpc::Method<global::PKIo.Filters, global::PKIo.Project>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "getProjectsForUserQuery",
+        __Marshaller_io_Filters,
+        __Marshaller_io_Project);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKIo.Project> __Method_getProjectsQuery = new grpc::Method<global::PKIo.Filters, global::PKIo.Project>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "getProjectsQuery",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_io_Project);
 
     static readonly grpc::Method<global::PKIo.Id, global::PKIo.Project> __Method_getProjectByUuid = new grpc::Method<global::PKIo.Id, global::PKIo.Project>(
@@ -305,19 +320,35 @@ namespace PKIo {
       {
         return CallInvoker.AsyncUnaryCall(__Method_changePassword, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQuery(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQueryDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return getProjectsForUserQueryDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQueryDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_getProjectsForUserQueryDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQueryDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return getProjectsQueryDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQueryDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_getProjectsQueryDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQuery(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProjectsForUserQuery(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQuery(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsForUserQuery(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_getProjectsForUserQuery, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQuery(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQuery(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProjectsQuery(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQuery(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.Project> getProjectsQuery(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_getProjectsQuery, null, options, request);
       }
@@ -644,6 +675,7 @@ namespace PKIo {
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.SinkSubscription> __Marshaller_io_SinkSubscription = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.SinkSubscription.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.SubscriptionRequest> __Marshaller_io_SubscriptionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.SubscriptionRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.ListRequestDeprecated> __Marshaller_io_ListRequestDeprecated = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.ListRequestDeprecated.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.ListRequest> __Marshaller_io_ListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.ListRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::PKIo.IntegrationConfigs, global::PKIo.Id> __Method_createIntegrations = new grpc::Method<global::PKIo.IntegrationConfigs, global::PKIo.Id>(
@@ -686,6 +718,13 @@ namespace PKIo {
         __ServiceName,
         "getSinkSubscription",
         __Marshaller_io_SubscriptionRequest,
+        __Marshaller_io_SinkSubscription);
+
+    static readonly grpc::Method<global::PKIo.ListRequestDeprecated, global::PKIo.SinkSubscription> __Method_listSinkSubscriptionsDeprecated = new grpc::Method<global::PKIo.ListRequestDeprecated, global::PKIo.SinkSubscription>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listSinkSubscriptionsDeprecated",
+        __Marshaller_io_ListRequestDeprecated,
         __Marshaller_io_SinkSubscription);
 
     static readonly grpc::Method<global::PKIo.ListRequest, global::PKIo.SinkSubscription> __Method_listSinkSubscriptions = new grpc::Method<global::PKIo.ListRequest, global::PKIo.SinkSubscription>(
@@ -840,6 +879,14 @@ namespace PKIo {
       public virtual grpc::AsyncUnaryCall<global::PKIo.SinkSubscription> getSinkSubscriptionAsync(global::PKIo.SubscriptionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getSinkSubscription, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.SinkSubscription> listSinkSubscriptionsDeprecated(global::PKIo.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listSinkSubscriptionsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKIo.SinkSubscription> listSinkSubscriptionsDeprecated(global::PKIo.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listSinkSubscriptionsDeprecated, null, options, request);
       }
       public virtual grpc::AsyncServerStreamingCall<global::PKIo.SinkSubscription> listSinkSubscriptions(global::PKIo.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {

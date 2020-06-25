@@ -22,8 +22,10 @@ namespace PKMembers {
     static readonly grpc::Marshaller<global::PKMembers.ProgramCopyRequest> __Marshaller_members_ProgramCopyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.ProgramCopyRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKIo.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Pagination.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKIo.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKIo.Filters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKMembers.Tier> __Marshaller_members_Tier = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.Tier.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKMembers.TierRequestInput> __Marshaller_members_TierRequestInput = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.TierRequestInput.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::PKMembers.ListRequestDeprecated> __Marshaller_members_ListRequestDeprecated = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.ListRequestDeprecated.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKMembers.ListRequest> __Marshaller_members_ListRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.ListRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKMembers.Member> __Marshaller_members_Member = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.Member.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::PKMembers.MemberRecordByExternalIdRequest> __Marshaller_members_MemberRecordByExternalIdRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::PKMembers.MemberRecordByExternalIdRequest.Parser.ParseFrom);
@@ -72,11 +74,18 @@ namespace PKMembers {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly grpc::Method<global::PKIo.Pagination, global::PKMembers.Program> __Method_listPrograms = new grpc::Method<global::PKIo.Pagination, global::PKMembers.Program>(
+    static readonly grpc::Method<global::PKIo.Pagination, global::PKMembers.Program> __Method_listProgramsDeprecated = new grpc::Method<global::PKIo.Pagination, global::PKMembers.Program>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listProgramsDeprecated",
+        __Marshaller_io_Pagination,
+        __Marshaller_members_Program);
+
+    static readonly grpc::Method<global::PKIo.Filters, global::PKMembers.Program> __Method_listPrograms = new grpc::Method<global::PKIo.Filters, global::PKMembers.Program>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listPrograms",
-        __Marshaller_io_Pagination,
+        __Marshaller_io_Filters,
         __Marshaller_members_Program);
 
     static readonly grpc::Method<global::PKMembers.Tier, global::PKIo.Id> __Method_createTier = new grpc::Method<global::PKMembers.Tier, global::PKIo.Id>(
@@ -106,6 +115,13 @@ namespace PKMembers {
         "deleteTier",
         __Marshaller_members_TierRequestInput,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKMembers.Tier> __Method_listTiersDeprecated = new grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKMembers.Tier>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listTiersDeprecated",
+        __Marshaller_members_ListRequestDeprecated,
+        __Marshaller_members_Tier);
 
     static readonly grpc::Method<global::PKMembers.ListRequest, global::PKMembers.Tier> __Method_listTiers = new grpc::Method<global::PKMembers.ListRequest, global::PKMembers.Tier>(
         grpc::MethodType.ServerStreaming,
@@ -155,6 +171,13 @@ namespace PKMembers {
         "checkOutMember",
         __Marshaller_members_MemberCheckInOutRequest,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKMembers.Member> __Method_listMembersDeprecated = new grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKMembers.Member>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listMembersDeprecated",
+        __Marshaller_members_ListRequestDeprecated,
+        __Marshaller_members_Member);
 
     static readonly grpc::Method<global::PKMembers.ListRequest, global::PKMembers.Member> __Method_listMembers = new grpc::Method<global::PKMembers.ListRequest, global::PKMembers.Member>(
         grpc::MethodType.ServerStreaming,
@@ -211,6 +234,13 @@ namespace PKMembers {
         "deleteMember",
         __Marshaller_members_Member,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKIo.Count> __Method_countMembersDeprecated = new grpc::Method<global::PKMembers.ListRequestDeprecated, global::PKIo.Count>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "countMembersDeprecated",
+        __Marshaller_members_ListRequestDeprecated,
+        __Marshaller_io_Count);
 
     static readonly grpc::Method<global::PKMembers.ListRequest, global::PKIo.Count> __Method_countMembers = new grpc::Method<global::PKMembers.ListRequest, global::PKIo.Count>(
         grpc::MethodType.Unary,
@@ -497,7 +527,29 @@ namespace PKMembers {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listPrograms(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listProgramsDeprecated(global::PKIo.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listProgramsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists all programs for the logged in user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listProgramsDeprecated(global::PKIo.Pagination request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listProgramsDeprecated, null, options, request);
+      }
+      /// <summary>
+      /// Lists all programs for the logged in user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listPrograms(global::PKIo.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listPrograms(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -507,7 +559,7 @@ namespace PKMembers {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listPrograms(global::PKIo.Pagination request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Program> listPrograms(global::PKIo.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listPrograms, null, options, request);
       }
@@ -695,6 +747,28 @@ namespace PKMembers {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Tier> listTiersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listTiersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists all the tiers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Tier> listTiersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listTiersDeprecated, null, options, request);
+      }
+      /// <summary>
+      /// Lists all the tiers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Tier> listTiers(global::PKMembers.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listTiers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -860,6 +934,14 @@ namespace PKMembers {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> checkOutMemberAsync(global::PKMembers.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_checkOutMember, null, options, request);
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Member> listMembersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Member> listMembersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listMembersDeprecated, null, options, request);
       }
       public virtual grpc::AsyncServerStreamingCall<global::PKMembers.Member> listMembers(global::PKMembers.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -1036,6 +1118,22 @@ namespace PKMembers {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberAsync(global::PKMembers.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMember, null, options, request);
+      }
+      public virtual global::PKIo.Count countMembersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::PKIo.Count countMembersDeprecated(global::PKMembers.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_countMembersDeprecated, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countMembersDeprecatedAsync(global::PKMembers.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return countMembersDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::PKIo.Count> countMembersDeprecatedAsync(global::PKMembers.ListRequestDeprecated request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_countMembersDeprecated, null, options, request);
       }
       public virtual global::PKIo.Count countMembers(global::PKMembers.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {

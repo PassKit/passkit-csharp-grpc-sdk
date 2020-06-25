@@ -120,7 +120,7 @@ namespace PKIo {
     public const int PeriodFieldNumber = 1;
     private global::PKIo.Period period_ = global::PKIo.Period.Day;
     /// <summary>
-    /// Period unit of data returned (day, month or year).
+    /// The Period that the response data is grouped by by: per DAY, MONTH or YEAR.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::PKIo.Period Period {
@@ -134,7 +134,7 @@ namespace PKIo {
     public const int CreatedFieldNumber = 2;
     private uint created_;
     /// <summary>
-    /// Total number of pass created during the whole period.
+    /// Total number of passes created during the requested period.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Created {
@@ -148,7 +148,7 @@ namespace PKIo {
     public const int InstalledFieldNumber = 3;
     private uint installed_;
     /// <summary>
-    /// Total number of pass installed during the whole period.
+    /// Total number of passes installed during the requested period.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Installed {
@@ -162,7 +162,7 @@ namespace PKIo {
     public const int DeletedFieldNumber = 4;
     private uint deleted_;
     /// <summary>
-    /// Total number of pass deleted during the whole period.
+    /// Total number of passes deleted during the requested period.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Deleted {
@@ -176,7 +176,7 @@ namespace PKIo {
     public const int InvalidatedFieldNumber = 5;
     private uint invalidated_;
     /// <summary>
-    /// Total number of pass invalidated during the whole period.
+    /// Total number of passes invalidated during the requested period.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Invalidated {
@@ -190,7 +190,7 @@ namespace PKIo {
     public const int DeviceBreakdownFieldNumber = 6;
     private global::PKIo.DeviceBreakdown deviceBreakdown_;
     /// <summary>
-    /// Total number of pass installed for each device type.
+    /// Total number of passes installed for each device type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::PKIo.DeviceBreakdown DeviceBreakdown {
@@ -206,7 +206,7 @@ namespace PKIo {
         = new pbc::MapField<string, uint>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForUInt32(16, 0), 58);
     private readonly pbc::MapField<string, uint> sourceBreakdown_ = new pbc::MapField<string, uint>();
     /// <summary>
-    /// Total number of pass installed for each distribution source.
+    /// Total number of passes installed for each distribution source.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, uint> SourceBreakdown {
@@ -736,7 +736,7 @@ namespace PKIo {
     public const int CustomFieldNumber = 7;
     private uint custom_;
     /// <summary>
-    /// Daily, monthly or yearly total of custom (in case this message is used by a protocol; it can put whatever is preferred in here).
+    /// Daily, monthly or yearly total of custom data (in case this field used by a protocol; it can put whatever is preferred in here).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint Custom {
@@ -969,7 +969,7 @@ namespace PKIo {
     public const int ProtocolFieldNumber = 1;
     private global::PKIo.PassProtocol protocol_ = global::PKIo.PassProtocol.DoNotUse;
     /// <summary>
-    /// A type of protocol.
+    /// The protocol that you are requesting analytics for, i.e. MEMBERSHIP, SINGLE_USE_COUPON, EVENT_TICKETS, FLIGHTS, etc.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::PKIo.PassProtocol Protocol {
@@ -983,7 +983,7 @@ namespace PKIo {
     public const int ClassIdFieldNumber = 2;
     private string classId_ = "";
     /// <summary>
-    /// An identifier of the class in the protocol.
+    /// The ID of the highest level element in the protocol. For Membership this is the Program ID, for coupons this is the Campaign ID, For Event Tickets this is Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ClassId {
@@ -997,7 +997,7 @@ namespace PKIo {
     public const int PeriodFieldNumber = 3;
     private global::PKIo.Period period_ = global::PKIo.Period.Day;
     /// <summary>
-    /// A period unit of individual data (day, month or year)
+    /// The Period to group the response data by: per DAY, MONTH or YEAR.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::PKIo.Period Period {
@@ -1039,7 +1039,7 @@ namespace PKIo {
     public const int TimezoneFieldNumber = 6;
     private string timezone_ = "";
     /// <summary>
-    /// Timezone in IANA format; defaults to UTC if not providedd
+    /// Timezone in IANA format; defaults to UTC if not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Timezone {
