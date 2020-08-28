@@ -65,6 +65,9 @@
     <Compile Include="..\lib\PKIo\Expiry.g.cs">
       <Link>PKIo\Expiry.g.cs</Link>
     </Compile>
+    <Compile Include="..\lib\PKIo\Filter.g.cs">
+      <Link>PKIo\Filter.g.cs</Link>
+    </Compile>
     <Compile Include="..\lib\PKIo\Image.g.cs">
       <Link>PKIo\Image.g.cs</Link>
     </Compile>
@@ -115,6 +118,9 @@
     </Compile>
     <Compile Include="..\lib\PKIo\Transaction.g.cs">
       <Link>PKIo\Transaction.g.cs</Link>
+    </Compile>
+    <Compile Include="..\lib\PKIo\Tracking.g.cs">
+      <Link>PKIo\Tracking.g.cs</Link>
     </Compile>
     <Compile Include="..\lib\PKIo\User.g.cs">
       <Link>PKIo\User.g.cs</Link>

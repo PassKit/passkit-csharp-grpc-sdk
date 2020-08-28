@@ -18,7 +18,7 @@ namespace examples{
             try {
                 // create new boarding pass
                 string boardingPassId = this.CreateBoardingPass();
-                Console.WriteLine("Created coupon: https://pub1.pskt.io/{0}", boardingPassId);
+                Console.WriteLine("Created boarding pass: https://pub1.pskt.io/{0}", boardingPassId);
 
                 // update boarding pass
                

@@ -8,7 +8,7 @@ namespace examples{
         Members.MembersClient client;
 
         // progamId is the program to enrol the member into.
-        string programId = "69IxFnVAR5cOVgE9SC5l6P";
+        string programId = "16K0oPb8Hlh0KcEy57bLtQ";
         // tierId is the tier to enrol the member into.
         string tierId = "bronze";
 
