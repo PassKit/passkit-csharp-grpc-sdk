@@ -23,26 +23,26 @@
     <Compile Include="..\lib\PKIo\ARpcCertificates.g.cs">
       <Link>PKIo\ARpcCertificates.g.cs</Link>
     </Compile>
-    <Compile Include="..\lib\PKIo\ArpcCertificatesGrpc.cs">
-      <Link>PKIo\ArpcCertificatesGrpc.cs</Link>
+    <Compile Include="..\lib\PKIo\ARpcCertificatesGrpc.cs">
+      <Link>PKIo\ARpcCertificatesGrpc.cs</Link>
     </Compile>
     <Compile Include="..\lib\PKIo\ARpcImages.g.cs">
       <Link>PKIo\ARpcImages.g.cs</Link>
     </Compile>
-    <Compile Include="..\lib\PKIo\ArpcImagesGrpc.cs">
-      <Link>PKIo\ArpcImagesGrpc.cs</Link>
+    <Compile Include="..\lib\PKIo\ARpcImagesGrpc.cs">
+      <Link>PKIo\ARpcImagesGrpc.cs</Link>
     </Compile>
     <Compile Include="..\lib\PKIo\ARpcOthers.g.cs">
       <Link>PKIo\ARpcOthers.g.cs</Link>
     </Compile>
-    <Compile Include="..\lib\PKIo\ArpcOthersGrpc.cs">
-      <Link>PKIo\ArpcOthersGrpc.cs</Link>
+    <Compile Include="..\lib\PKIo\ARpcOthersGrpc.cs">
+      <Link>PKIo\ARpcOthersGrpc.cs</Link>
     </Compile>
     <Compile Include="..\lib\PKIo\ARpcTemplates.g.cs">
       <Link>PKIo\ARpcTemplates.g.cs</Link>
     </Compile>
-    <Compile Include="..\lib\PKIo\ArpcTemplatesGrpc.cs">
-      <Link>PKIo\ArpcTemplatesGrpc.cs</Link>
+    <Compile Include="..\lib\PKIo\ARpcTemplatesGrpc.cs">
+      <Link>PKIo\ARpcTemplatesGrpc.cs</Link>
     </Compile>
     <Compile Include="..\lib\PKIo\Attributes.g.cs">
       <Link>PKIo\Attributes.g.cs</Link>
