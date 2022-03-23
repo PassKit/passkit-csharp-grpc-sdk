@@ -28,56 +28,59 @@ namespace PassKit.Grpc {
             "Z2VuLW9wZW5hcGl2Mi9vcHRpb25zL2Fubm90YXRpb25zLnByb3RvGhppby9j",
             "b21tb24vcGFnaW5hdGlvbi5wcm90bxoWaW8vY29tbW9uL2ZpbHRlci5wcm90",
             "bxoZaW8vY29tbW9uL3Byb3RvY29scy5wcm90byIQCgJJZBIKCgJpZBgBIAEo",
-            "CSIRCgNJZHMSCgoCaWQYASADKAkiEgoDVXJsEgsKA3VybBgBIAEoCSIWCgVD",
-            "b3VudBINCgV0b3RhbBgBIAEoBSIeCglGaWxlQnl0ZXMSEQoJZmlsZUJ5dGVz",
-            "GAEgASgMIhsKB0Jvb2xlYW4SEAoIcmVzcG9uc2UYASABKAgiGwoHU3RyaW5n",
-            "cxIQCghyZXNwb25zZRgBIAMoCSIwCgREYXRlEgwKBHllYXIYASABKAUSDQoF",
-            "bW9udGgYAiABKAUSCwoDZGF5GAMgASgFIjQKBFRpbWUSDAoEaG91chgBIAEo",
-            "BRIOCgZtaW51dGUYAiABKAUSDgoGc2Vjb25kGAMgASgFIlsKCUxvY2FsRGF0",
-            "ZRJOCghkYXRlVGltZRgBIAEoCUI8kkE5igE2XihbMC05XXs0fSktPygxWzAt",
-            "Ml18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0pIpwBCg1Mb2Nh",
-            "bERhdGVUaW1lEooBCghkYXRlVGltZRgBIAEoCUJ4kkF1igFyXihbMC05XXs0",
-            "fSktPygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0p",
-            "VCgyWzAtM118WzAxXVswLTldKTooWzAtNV1bMC05XSk6KFswLTVdWzAtOV0p",
-            "KC5bMC05XXsxLDN9KT8kIm4KClBhc3NCdW5kbGUSCgoCaWQYASABKAkSCwoD",
-            "dXJsGAIgASgJEhQKDGdvb2dsZVBheVVSTBgFIAEoCRIWCg5hcHBsZVBhc3NC",
-            "eXRlcxgGIAEoDBIZChFtdWx0aXBsZVBhc3Nlc1VSTBgHIAEoCSItCgtQYXNz",
-            "QnVuZGxlcxIeCgZwYXNzZXMYASADKAsyDi5pby5QYXNzQnVuZGxlIkUKEVBh",
-            "c3NCdW5kbGVSZXF1ZXN0EgoKAmlkGAEgASgJEiQKBmZvcm1hdBgCIAMoDjIU",
-            "LmlvLlBhc3NCdW5kbGVGb3JtYXQicAoVTGlzdFJlcXVlc3REZXByZWNhdGVk",
-            "Eg8KB2NsYXNzSWQYASABKAkSIgoIcHJvdG9jb2wYAiABKA4yEC5pby5QYXNz",
-            "UHJvdG9jb2wSIgoKcGFnaW5hdGlvbhgDIAEoCzIOLmlvLlBhZ2luYXRpb24i",
-            "YAoLTGlzdFJlcXVlc3QSDwoHY2xhc3NJZBgBIAEoCRIiCghwcm90b2NvbBgC",
-            "IAEoDjIQLmlvLlBhc3NQcm90b2NvbBIcCgdmaWx0ZXJzGAMgASgLMgsuaW8u",
-            "RmlsdGVycyJiCglEYXRhSXRlbXMSJwoFaXRlbXMYASADKAsyGC5pby5EYXRh",
-            "SXRlbXMuSXRlbXNFbnRyeRosCgpJdGVtc0VudHJ5EgsKA2tleRgBIAEoCRIN",
-            "CgV2YWx1ZRgCIAEoCToCOAEiFAoGUGtCb29sEgoKAm9rGAEgASgIIlkKEENs",
-            "YXNzT2JqZWN0SW5wdXQSIgoIcHJvdG9jb2wYASABKA4yEC5pby5QYXNzUHJv",
-            "dG9jb2wSEAoIb2JqZWN0SWQYAiABKAkSDwoHY2xhc3NJZBgDIAEoCSI/Cg1S",
-            "ZWN1cnNpdmVEYXRlEhAKCHNjaGVkdWxlGAEgASgJEhwKBXN0YXRlGAIgASgO",
-            "Mg0uaW8uVGltZVN0YXRlInIKEE1vbnRobHlSZWN1cnNpdmUSEgoKZGF5T2ZN",
-            "b250aBgBIAEoBRIMCgRob3VyGAIgASgFEg4KBm1pbnV0ZRgDIAEoBRIOCgZz",
-            "ZWNvbmQYBCABKAUSHAoFc3RhdGUYBSABKA4yDS5pby5UaW1lU3RhdGUigAEK",
-            "D1llYXJseVJlY3Vyc2l2ZRINCgVtb250aBgBIAEoBRISCgpkYXlPZk1vbnRo",
-            "GAIgASgFEgwKBGhvdXIYAyABKAUSDgoGbWludXRlGAQgASgFEg4KBnNlY29u",
-            "ZBgFIAEoBRIcCgVzdGF0ZRgGIAEoDjINLmlvLlRpbWVTdGF0ZSo0CgxMaXN0",
-            "UG9zaXRpb24SCgoGQVBQRU5EEAASCwoHUFJFUEVORBABEgsKB1JFUExBQ0UQ",
-            "AiopCgZUb2dnbGUSDgoKRE9fTk9UX1VTRRAAEgYKAk9OEAESBwoDT0ZGEAIq",
-            "awoJVGltZVN0YXRlEhMKD1RJTUVfU1RBVEVfTk9ORRAAEhYKElRJTUVfU1RB",
-            "VEVfQ1VSUkVOVBABEhcKE1RJTUVfU1RBVEVfUFJFVklPVVMQAhIYChRUSU1F",
-            "X1NUQVRFX0ZPTExPV0lORxADKlcKEFBhc3NCdW5kbGVGb3JtYXQSDAoIUEFT",
-            "U19VUkwQABIOCgpHT09HTEVfVVJMEAISFQoRQVBQTEVfUEFTU19CVU5ETEUQ",
-            "CBIOCgpNVUxUSV9MSU5LEBAqZwoJVXNhZ2VUeXBlEgwKCE5PX1VTQUdFEAAS",
-            "FgoSVVNBR0VfQVBQTEVfV0FMTEVUEAESFAoQVVNBR0VfR09PR0xFX1BBWRAC",
-            "Eh4KGlVTQUdFX0RBVEFfQ09MTEVDVElPTl9QQUdFEARCRwoQY29tLnBhc3Nr",
-            "aXQuZ3JwY1okc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lv",
-            "qgIMUGFzc0tpdC5HcnBjYgZwcm90bzM="));
+            "CSIRCgNJZHMSCgoCaWQYASADKAkiIQoDVXJsEgsKA3VybBgBIAEoCRINCgV0",
+            "aXRsZRgCIAEoCSIWCgVDb3VudBINCgV0b3RhbBgBIAEoBSIeCglGaWxlQnl0",
+            "ZXMSEQoJZmlsZUJ5dGVzGAEgASgMIhsKB0Jvb2xlYW4SEAoIcmVzcG9uc2UY",
+            "ASABKAgiGwoHU3RyaW5ncxIQCghyZXNwb25zZRgBIAMoCSIwCgREYXRlEgwK",
+            "BHllYXIYASABKAUSDQoFbW9udGgYAiABKAUSCwoDZGF5GAMgASgFIjQKBFRp",
+            "bWUSDAoEaG91chgBIAEoBRIOCgZtaW51dGUYAiABKAUSDgoGc2Vjb25kGAMg",
+            "ASgFIlsKCUxvY2FsRGF0ZRJOCghkYXRlVGltZRgBIAEoCUI8kkE5igE2Xihb",
+            "MC05XXs0fSktPygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJd",
+            "WzAtOV0pIpwBCg1Mb2NhbERhdGVUaW1lEooBCghkYXRlVGltZRgBIAEoCUJ4",
+            "kkF1igFyXihbMC05XXs0fSktPygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBb",
+            "MS05XXxbMTJdWzAtOV0pVCgyWzAtM118WzAxXVswLTldKTooWzAtNV1bMC05",
+            "XSk6KFswLTVdWzAtOV0pKC5bMC05XXsxLDN9KT8kIm4KClBhc3NCdW5kbGUS",
+            "CgoCaWQYASABKAkSCwoDdXJsGAIgASgJEhQKDGdvb2dsZVBheVVSTBgFIAEo",
+            "CRIWCg5hcHBsZVBhc3NCeXRlcxgGIAEoDBIZChFtdWx0aXBsZVBhc3Nlc1VS",
+            "TBgHIAEoCSItCgtQYXNzQnVuZGxlcxIeCgZwYXNzZXMYASADKAsyDi5pby5Q",
+            "YXNzQnVuZGxlIkUKEVBhc3NCdW5kbGVSZXF1ZXN0EgoKAmlkGAEgASgJEiQK",
+            "BmZvcm1hdBgCIAMoDjIULmlvLlBhc3NCdW5kbGVGb3JtYXQicAoVTGlzdFJl",
+            "cXVlc3REZXByZWNhdGVkEg8KB2NsYXNzSWQYASABKAkSIgoIcHJvdG9jb2wY",
+            "AiABKA4yEC5pby5QYXNzUHJvdG9jb2wSIgoKcGFnaW5hdGlvbhgDIAEoCzIO",
+            "LmlvLlBhZ2luYXRpb24iYAoLTGlzdFJlcXVlc3QSDwoHY2xhc3NJZBgBIAEo",
+            "CRIiCghwcm90b2NvbBgCIAEoDjIQLmlvLlBhc3NQcm90b2NvbBIcCgdmaWx0",
+            "ZXJzGAMgASgLMgsuaW8uRmlsdGVycyJiCglEYXRhSXRlbXMSJwoFaXRlbXMY",
+            "ASADKAsyGC5pby5EYXRhSXRlbXMuSXRlbXNFbnRyeRosCgpJdGVtc0VudHJ5",
+            "EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiFAoGUGtCb29sEgoK",
+            "Am9rGAEgASgIIlkKEENsYXNzT2JqZWN0SW5wdXQSIgoIcHJvdG9jb2wYASAB",
+            "KA4yEC5pby5QYXNzUHJvdG9jb2wSEAoIb2JqZWN0SWQYAiABKAkSDwoHY2xh",
+            "c3NJZBgDIAEoCSI/Cg1SZWN1cnNpdmVEYXRlEhAKCHNjaGVkdWxlGAEgASgJ",
+            "EhwKBXN0YXRlGAIgASgOMg0uaW8uVGltZVN0YXRlInIKEE1vbnRobHlSZWN1",
+            "cnNpdmUSEgoKZGF5T2ZNb250aBgBIAEoBRIMCgRob3VyGAIgASgFEg4KBm1p",
+            "bnV0ZRgDIAEoBRIOCgZzZWNvbmQYBCABKAUSHAoFc3RhdGUYBSABKA4yDS5p",
+            "by5UaW1lU3RhdGUigAEKD1llYXJseVJlY3Vyc2l2ZRINCgVtb250aBgBIAEo",
+            "BRISCgpkYXlPZk1vbnRoGAIgASgFEgwKBGhvdXIYAyABKAUSDgoGbWludXRl",
+            "GAQgASgFEg4KBnNlY29uZBgFIAEoBRIcCgVzdGF0ZRgGIAEoDjINLmlvLlRp",
+            "bWVTdGF0ZSIWCgdQYXNzSWRzEgsKA2lkcxgBIAMoCSJfCghQcm90b2NvbBIe",
+            "Cghwcm90b2NvbBgBIAEoCzIMLmlvLlByb3RvY29sEg8KB2NsYXNzSWQYAiAB",
+            "KAkSIgoKcGFnaW5hdGlvbhgDIAEoCzIOLmlvLlBhZ2luYXRpb24qNAoMTGlz",
+            "dFBvc2l0aW9uEgoKBkFQUEVORBAAEgsKB1BSRVBFTkQQARILCgdSRVBMQUNF",
+            "EAIqKQoGVG9nZ2xlEg4KCkRPX05PVF9VU0UQABIGCgJPThABEgcKA09GRhAC",
+            "KmsKCVRpbWVTdGF0ZRITCg9USU1FX1NUQVRFX05PTkUQABIWChJUSU1FX1NU",
+            "QVRFX0NVUlJFTlQQARIXChNUSU1FX1NUQVRFX1BSRVZJT1VTEAISGAoUVElN",
+            "RV9TVEFURV9GT0xMT1dJTkcQAypXChBQYXNzQnVuZGxlRm9ybWF0EgwKCFBB",
+            "U1NfVVJMEAASDgoKR09PR0xFX1VSTBACEhUKEUFQUExFX1BBU1NfQlVORExF",
+            "EAgSDgoKTVVMVElfTElOSxAQKmcKCVVzYWdlVHlwZRIMCghOT19VU0FHRRAA",
+            "EhYKElVTQUdFX0FQUExFX1dBTExFVBABEhQKEFVTQUdFX0dPT0dMRV9QQVkQ",
+            "AhIeChpVU0FHRV9EQVRBX0NPTExFQ1RJT05fUEFHRRAEQkcKEGNvbS5wYXNz",
+            "a2l0LmdycGNaJHN0YXNoLnBhc3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9p",
+            "b6oCDFBhc3NLaXQuR3JwY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::PassKit.Grpc.FilterReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.ListPosition), typeof(global::PassKit.Grpc.Toggle), typeof(global::PassKit.Grpc.TimeState), typeof(global::PassKit.Grpc.PassBundleFormat), typeof(global::PassKit.Grpc.UsageType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Id), global::PassKit.Grpc.Id.Parser, new[]{ "Id_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Ids), global::PassKit.Grpc.Ids.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Url), global::PassKit.Grpc.Url.Parser, new[]{ "Url_" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Url), global::PassKit.Grpc.Url.Parser, new[]{ "Url_", "Title" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Count), global::PassKit.Grpc.Count.Parser, new[]{ "Total" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.FileBytes), global::PassKit.Grpc.FileBytes.Parser, new[]{ "FileBytes_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Boolean), global::PassKit.Grpc.Boolean.Parser, new[]{ "Response" }, null, null, null, null),
@@ -96,7 +99,9 @@ namespace PassKit.Grpc {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ClassObjectInput), global::PassKit.Grpc.ClassObjectInput.Parser, new[]{ "Protocol", "ObjectId", "ClassId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.RecursiveDate), global::PassKit.Grpc.RecursiveDate.Parser, new[]{ "Schedule", "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.MonthlyRecursive), global::PassKit.Grpc.MonthlyRecursive.Parser, new[]{ "DayOfMonth", "Hour", "Minute", "Second", "State" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.YearlyRecursive), global::PassKit.Grpc.YearlyRecursive.Parser, new[]{ "Month", "DayOfMonth", "Hour", "Minute", "Second", "State" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.YearlyRecursive), global::PassKit.Grpc.YearlyRecursive.Parser, new[]{ "Month", "DayOfMonth", "Hour", "Minute", "Second", "State" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassIds), global::PassKit.Grpc.PassIds.Parser, new[]{ "Ids" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Protocol), global::PassKit.Grpc.Protocol.Parser, new[]{ "Protocol_", "ClassId", "Pagination" }, null, null, null, null)
           }));
     }
     #endregion
@@ -180,19 +185,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Id> _parser = new pb::MessageParser<Id>(() => new Id());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Id> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Id() {
       OnConstruction();
     }
@@ -200,12 +209,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Id(Id other) : this() {
       id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Id Clone() {
       return new Id(this);
     }
@@ -217,6 +228,7 @@ namespace PassKit.Grpc {
     /// The unique identifier to an object or record.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id_ {
       get { return id_; }
       set {
@@ -225,11 +237,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Id);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Id other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -242,6 +256,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id_.Length != 0) hash ^= Id_.GetHashCode();
@@ -252,11 +267,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -273,6 +290,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id_.Length != 0) {
         output.WriteRawTag(10);
@@ -285,6 +303,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id_.Length != 0) {
@@ -297,6 +316,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Id other) {
       if (other == null) {
         return;
@@ -308,6 +328,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -329,6 +350,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -355,19 +377,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Ids> _parser = new pb::MessageParser<Ids>(() => new Ids());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Ids> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ids() {
       OnConstruction();
     }
@@ -375,12 +401,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ids(Ids other) : this() {
       id_ = other.id_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ids Clone() {
       return new Ids(this);
     }
@@ -394,16 +422,19 @@ namespace PassKit.Grpc {
     /// An array of unique identifiers for objects or records.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Id {
       get { return id_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Ids);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Ids other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -416,6 +447,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= id_.GetHashCode();
@@ -426,11 +458,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -444,6 +478,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       id_.WriteTo(ref output, _repeated_id_codec);
       if (_unknownFields != null) {
@@ -453,6 +488,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += id_.CalculateSize(_repeated_id_codec);
@@ -463,6 +499,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Ids other) {
       if (other == null) {
         return;
@@ -472,6 +509,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -493,6 +531,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -519,19 +558,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Url> _parser = new pb::MessageParser<Url>(() => new Url());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Url> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Url() {
       OnConstruction();
     }
@@ -539,12 +582,15 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Url(Url other) : this() {
       url_ = other.url_;
+      title_ = other.title_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Url Clone() {
       return new Url(this);
     }
@@ -553,6 +599,7 @@ namespace PassKit.Grpc {
     public const int Url_FieldNumber = 1;
     private string url_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url_ {
       get { return url_; }
       set {
@@ -560,12 +607,26 @@ namespace PassKit.Grpc {
       }
     }
 
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 2;
+    private string title_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Url);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Url other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -574,13 +635,16 @@ namespace PassKit.Grpc {
         return true;
       }
       if (Url_ != other.Url_) return false;
+      if (Title != other.Title) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Url_.Length != 0) hash ^= Url_.GetHashCode();
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -588,11 +652,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -600,6 +666,10 @@ namespace PassKit.Grpc {
       if (Url_.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Url_);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Title);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -609,10 +679,15 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Url_.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Url_);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Title);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -621,10 +696,14 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Url_.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Url_);
+      }
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -633,6 +712,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Url other) {
       if (other == null) {
         return;
@@ -640,10 +720,14 @@ namespace PassKit.Grpc {
       if (other.Url_.Length != 0) {
         Url_ = other.Url_;
       }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -658,6 +742,10 @@ namespace PassKit.Grpc {
             Url_ = input.ReadString();
             break;
           }
+          case 18: {
+            Title = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -665,6 +753,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -674,6 +763,10 @@ namespace PassKit.Grpc {
             break;
           case 10: {
             Url_ = input.ReadString();
+            break;
+          }
+          case 18: {
+            Title = input.ReadString();
             break;
           }
         }
@@ -691,19 +784,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Count> _parser = new pb::MessageParser<Count>(() => new Count());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Count> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Count() {
       OnConstruction();
     }
@@ -711,12 +808,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Count(Count other) : this() {
       total_ = other.total_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Count Clone() {
       return new Count(this);
     }
@@ -728,6 +827,7 @@ namespace PassKit.Grpc {
     /// set as int32 so JSON renders as an integer
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Total {
       get { return total_; }
       set {
@@ -736,11 +836,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Count);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Count other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -753,6 +855,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Total != 0) hash ^= Total.GetHashCode();
@@ -763,11 +866,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -784,6 +889,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Total != 0) {
         output.WriteRawTag(8);
@@ -796,6 +902,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Total != 0) {
@@ -808,6 +915,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Count other) {
       if (other == null) {
         return;
@@ -819,6 +927,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -840,6 +949,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -866,19 +976,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<FileBytes> _parser = new pb::MessageParser<FileBytes>(() => new FileBytes());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FileBytes> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FileBytes() {
       OnConstruction();
     }
@@ -886,12 +1000,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FileBytes(FileBytes other) : this() {
       fileBytes_ = other.fileBytes_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FileBytes Clone() {
       return new FileBytes(this);
     }
@@ -900,6 +1016,7 @@ namespace PassKit.Grpc {
     public const int FileBytes_FieldNumber = 1;
     private pb::ByteString fileBytes_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString FileBytes_ {
       get { return fileBytes_; }
       set {
@@ -908,11 +1025,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FileBytes);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FileBytes other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -925,6 +1044,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (FileBytes_.Length != 0) hash ^= FileBytes_.GetHashCode();
@@ -935,11 +1055,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -956,6 +1078,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (FileBytes_.Length != 0) {
         output.WriteRawTag(10);
@@ -968,6 +1091,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (FileBytes_.Length != 0) {
@@ -980,6 +1104,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FileBytes other) {
       if (other == null) {
         return;
@@ -991,6 +1116,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1012,6 +1138,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1038,19 +1165,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Boolean> _parser = new pb::MessageParser<Boolean>(() => new Boolean());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Boolean> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Boolean() {
       OnConstruction();
     }
@@ -1058,12 +1189,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Boolean(Boolean other) : this() {
       response_ = other.response_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Boolean Clone() {
       return new Boolean(this);
     }
@@ -1072,6 +1205,7 @@ namespace PassKit.Grpc {
     public const int ResponseFieldNumber = 1;
     private bool response_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Response {
       get { return response_; }
       set {
@@ -1080,11 +1214,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Boolean);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Boolean other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1097,6 +1233,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Response != false) hash ^= Response.GetHashCode();
@@ -1107,11 +1244,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1128,6 +1267,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Response != false) {
         output.WriteRawTag(8);
@@ -1140,6 +1280,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Response != false) {
@@ -1152,6 +1293,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Boolean other) {
       if (other == null) {
         return;
@@ -1163,6 +1305,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1184,6 +1327,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1213,19 +1357,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Strings> _parser = new pb::MessageParser<Strings>(() => new Strings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Strings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Strings() {
       OnConstruction();
     }
@@ -1233,12 +1381,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Strings(Strings other) : this() {
       response_ = other.response_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Strings Clone() {
       return new Strings(this);
     }
@@ -1249,16 +1399,19 @@ namespace PassKit.Grpc {
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> response_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Response {
       get { return response_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Strings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Strings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1271,6 +1424,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= response_.GetHashCode();
@@ -1281,11 +1435,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1299,6 +1455,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       response_.WriteTo(ref output, _repeated_response_codec);
       if (_unknownFields != null) {
@@ -1308,6 +1465,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += response_.CalculateSize(_repeated_response_codec);
@@ -1318,6 +1476,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Strings other) {
       if (other == null) {
         return;
@@ -1327,6 +1486,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1348,6 +1508,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1377,19 +1538,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Date> _parser = new pb::MessageParser<Date>(() => new Date());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Date> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Date() {
       OnConstruction();
     }
@@ -1397,6 +1562,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Date(Date other) : this() {
       year_ = other.year_;
       month_ = other.month_;
@@ -1405,6 +1571,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Date Clone() {
       return new Date(this);
     }
@@ -1416,6 +1583,7 @@ namespace PassKit.Grpc {
     /// Year.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Year {
       get { return year_; }
       set {
@@ -1430,6 +1598,7 @@ namespace PassKit.Grpc {
     /// Month.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Month {
       get { return month_; }
       set {
@@ -1444,6 +1613,7 @@ namespace PassKit.Grpc {
     /// Day.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Day {
       get { return day_; }
       set {
@@ -1452,11 +1622,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Date);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Date other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1471,6 +1643,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Year != 0) hash ^= Year.GetHashCode();
@@ -1483,11 +1656,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1512,6 +1687,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Year != 0) {
         output.WriteRawTag(8);
@@ -1532,6 +1708,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Year != 0) {
@@ -1550,6 +1727,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Date other) {
       if (other == null) {
         return;
@@ -1567,6 +1745,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1596,6 +1775,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1633,19 +1813,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Time> _parser = new pb::MessageParser<Time>(() => new Time());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Time> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Time() {
       OnConstruction();
     }
@@ -1653,6 +1837,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Time(Time other) : this() {
       hour_ = other.hour_;
       minute_ = other.minute_;
@@ -1661,6 +1846,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Time Clone() {
       return new Time(this);
     }
@@ -1672,6 +1858,7 @@ namespace PassKit.Grpc {
     /// Hour.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Hour {
       get { return hour_; }
       set {
@@ -1686,6 +1873,7 @@ namespace PassKit.Grpc {
     /// Minute.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Minute {
       get { return minute_; }
       set {
@@ -1700,6 +1888,7 @@ namespace PassKit.Grpc {
     /// Second.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Second {
       get { return second_; }
       set {
@@ -1708,11 +1897,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Time);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Time other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1727,6 +1918,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Hour != 0) hash ^= Hour.GetHashCode();
@@ -1739,11 +1931,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1768,6 +1962,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Hour != 0) {
         output.WriteRawTag(8);
@@ -1788,6 +1983,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Hour != 0) {
@@ -1806,6 +2002,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Time other) {
       if (other == null) {
         return;
@@ -1823,6 +2020,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1852,6 +2050,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1889,19 +2088,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<LocalDate> _parser = new pb::MessageParser<LocalDate>(() => new LocalDate());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LocalDate> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDate() {
       OnConstruction();
     }
@@ -1909,12 +2112,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDate(LocalDate other) : this() {
       dateTime_ = other.dateTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDate Clone() {
       return new LocalDate(this);
     }
@@ -1926,6 +2131,7 @@ namespace PassKit.Grpc {
     /// ISO 8601 format date without a time. E.g. 2019-08-07.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DateTime {
       get { return dateTime_; }
       set {
@@ -1934,11 +2140,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LocalDate);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LocalDate other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1951,6 +2159,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (DateTime.Length != 0) hash ^= DateTime.GetHashCode();
@@ -1961,11 +2170,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1982,6 +2193,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (DateTime.Length != 0) {
         output.WriteRawTag(10);
@@ -1994,6 +2206,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (DateTime.Length != 0) {
@@ -2006,6 +2219,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LocalDate other) {
       if (other == null) {
         return;
@@ -2017,6 +2231,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2038,6 +2253,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2067,19 +2283,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<LocalDateTime> _parser = new pb::MessageParser<LocalDateTime>(() => new LocalDateTime());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LocalDateTime> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDateTime() {
       OnConstruction();
     }
@@ -2087,12 +2307,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDateTime(LocalDateTime other) : this() {
       dateTime_ = other.dateTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LocalDateTime Clone() {
       return new LocalDateTime(this);
     }
@@ -2104,6 +2326,7 @@ namespace PassKit.Grpc {
     /// ISO 8601 extended format date/time without an offset E.g. 2019-08-07T18:00:00. Time can optionally be stated to millisecond precision. E.g. 2019-08-07T18:00:00.123.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DateTime {
       get { return dateTime_; }
       set {
@@ -2112,11 +2335,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LocalDateTime);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LocalDateTime other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2129,6 +2354,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (DateTime.Length != 0) hash ^= DateTime.GetHashCode();
@@ -2139,11 +2365,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2160,6 +2388,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (DateTime.Length != 0) {
         output.WriteRawTag(10);
@@ -2172,6 +2401,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (DateTime.Length != 0) {
@@ -2184,6 +2414,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LocalDateTime other) {
       if (other == null) {
         return;
@@ -2195,6 +2426,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2216,6 +2448,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2245,19 +2478,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PassBundle> _parser = new pb::MessageParser<PassBundle>(() => new PassBundle());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PassBundle> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundle() {
       OnConstruction();
     }
@@ -2265,6 +2502,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundle(PassBundle other) : this() {
       id_ = other.id_;
       url_ = other.url_;
@@ -2275,6 +2513,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundle Clone() {
       return new PassBundle(this);
     }
@@ -2286,6 +2525,7 @@ namespace PassKit.Grpc {
     /// The PassKit Id that uniquely references the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -2300,6 +2540,7 @@ namespace PassKit.Grpc {
     /// The URL to the web landing page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_; }
       set {
@@ -2314,6 +2555,7 @@ namespace PassKit.Grpc {
     /// A URL that can be used in an Android app or email. Note that this is not recommended for web use.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GooglePayURL {
       get { return googlePayURL_; }
       set {
@@ -2328,6 +2570,7 @@ namespace PassKit.Grpc {
     /// The Base64 encoded bytes of the Apple Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString ApplePassBytes {
       get { return applePassBytes_; }
       set {
@@ -2342,6 +2585,7 @@ namespace PassKit.Grpc {
     /// A URL for multiple passes, linked by a common index.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MultiplePassesURL {
       get { return multiplePassesURL_; }
       set {
@@ -2350,11 +2594,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PassBundle);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PassBundle other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2371,6 +2617,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -2385,11 +2632,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2422,6 +2671,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -2450,6 +2700,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -2474,6 +2725,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PassBundle other) {
       if (other == null) {
         return;
@@ -2497,6 +2749,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2534,6 +2787,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2576,19 +2830,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PassBundles> _parser = new pb::MessageParser<PassBundles>(() => new PassBundles());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PassBundles> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundles() {
       OnConstruction();
     }
@@ -2596,12 +2854,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundles(PassBundles other) : this() {
       passes_ = other.passes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundles Clone() {
       return new PassBundles(this);
     }
@@ -2612,16 +2872,19 @@ namespace PassKit.Grpc {
         = pb::FieldCodec.ForMessage(10, global::PassKit.Grpc.PassBundle.Parser);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.PassBundle> passes_ = new pbc::RepeatedField<global::PassKit.Grpc.PassBundle>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.PassBundle> Passes {
       get { return passes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PassBundles);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PassBundles other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2634,6 +2897,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= passes_.GetHashCode();
@@ -2644,11 +2908,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2662,6 +2928,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       passes_.WriteTo(ref output, _repeated_passes_codec);
       if (_unknownFields != null) {
@@ -2671,6 +2938,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += passes_.CalculateSize(_repeated_passes_codec);
@@ -2681,6 +2949,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PassBundles other) {
       if (other == null) {
         return;
@@ -2690,6 +2959,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2711,6 +2981,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2737,19 +3008,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PassBundleRequest> _parser = new pb::MessageParser<PassBundleRequest>(() => new PassBundleRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PassBundleRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundleRequest() {
       OnConstruction();
     }
@@ -2757,6 +3032,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundleRequest(PassBundleRequest other) : this() {
       id_ = other.id_;
       format_ = other.format_.Clone();
@@ -2764,6 +3040,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassBundleRequest Clone() {
       return new PassBundleRequest(this);
     }
@@ -2775,6 +3052,7 @@ namespace PassKit.Grpc {
     /// The PassKit pass id that uniquely identifies the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -2791,16 +3069,19 @@ namespace PassKit.Grpc {
     /// The format(s) of the pass required.  If omitted, the URL to the web landing page will be returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.PassBundleFormat> Format {
       get { return format_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PassBundleRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PassBundleRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2814,6 +3095,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -2825,11 +3107,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2847,6 +3131,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -2860,6 +3145,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -2873,6 +3159,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PassBundleRequest other) {
       if (other == null) {
         return;
@@ -2885,6 +3172,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2911,6 +3199,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2945,19 +3234,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<ListRequestDeprecated> _parser = new pb::MessageParser<ListRequestDeprecated>(() => new ListRequestDeprecated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ListRequestDeprecated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequestDeprecated() {
       OnConstruction();
     }
@@ -2965,6 +3258,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequestDeprecated(ListRequestDeprecated other) : this() {
       classId_ = other.classId_;
       protocol_ = other.protocol_;
@@ -2973,6 +3267,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequestDeprecated Clone() {
       return new ListRequestDeprecated(this);
     }
@@ -2981,6 +3276,7 @@ namespace PassKit.Grpc {
     public const int ClassIdFieldNumber = 1;
     private string classId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
       get { return classId_; }
       set {
@@ -2992,6 +3288,7 @@ namespace PassKit.Grpc {
     public const int ProtocolFieldNumber = 2;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -3003,6 +3300,7 @@ namespace PassKit.Grpc {
     public const int PaginationFieldNumber = 3;
     private global::PassKit.Grpc.Pagination pagination_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Pagination Pagination {
       get { return pagination_; }
       set {
@@ -3011,11 +3309,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ListRequestDeprecated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ListRequestDeprecated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3030,6 +3330,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
@@ -3042,11 +3343,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3071,6 +3374,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ClassId.Length != 0) {
         output.WriteRawTag(10);
@@ -3091,6 +3395,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ClassId.Length != 0) {
@@ -3109,6 +3414,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ListRequestDeprecated other) {
       if (other == null) {
         return;
@@ -3129,6 +3435,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3161,6 +3468,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3198,19 +3506,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<ListRequest> _parser = new pb::MessageParser<ListRequest>(() => new ListRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ListRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequest() {
       OnConstruction();
     }
@@ -3218,6 +3530,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequest(ListRequest other) : this() {
       classId_ = other.classId_;
       protocol_ = other.protocol_;
@@ -3226,6 +3539,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ListRequest Clone() {
       return new ListRequest(this);
     }
@@ -3234,6 +3548,7 @@ namespace PassKit.Grpc {
     public const int ClassIdFieldNumber = 1;
     private string classId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
       get { return classId_; }
       set {
@@ -3245,6 +3560,7 @@ namespace PassKit.Grpc {
     public const int ProtocolFieldNumber = 2;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -3256,6 +3572,7 @@ namespace PassKit.Grpc {
     public const int FiltersFieldNumber = 3;
     private global::PassKit.Grpc.Filters filters_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
       get { return filters_; }
       set {
@@ -3264,11 +3581,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ListRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ListRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3283,6 +3602,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
@@ -3295,11 +3615,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3324,6 +3646,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ClassId.Length != 0) {
         output.WriteRawTag(10);
@@ -3344,6 +3667,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ClassId.Length != 0) {
@@ -3362,6 +3686,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ListRequest other) {
       if (other == null) {
         return;
@@ -3382,6 +3707,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3414,6 +3740,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3454,19 +3781,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<DataItems> _parser = new pb::MessageParser<DataItems>(() => new DataItems());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DataItems> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataItems() {
       OnConstruction();
     }
@@ -3474,12 +3805,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataItems(DataItems other) : this() {
       items_ = other.items_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataItems Clone() {
       return new DataItems(this);
     }
@@ -3493,16 +3826,19 @@ namespace PassKit.Grpc {
     /// Key value pairs. All values must be strings, but formatting and conversion can be defined in the pass template. Keys should be alphanumeric, start with a lowercase level and use camel case.  They can be accessed in the pass template by prefixing with 'meta.'. E.g. 'meta.myCustomKey'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Items {
       get { return items_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DataItems);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DataItems other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3515,6 +3851,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= Items.GetHashCode();
@@ -3525,11 +3862,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3543,6 +3882,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       items_.WriteTo(ref output, _map_items_codec);
       if (_unknownFields != null) {
@@ -3552,6 +3892,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += items_.CalculateSize(_map_items_codec);
@@ -3562,6 +3903,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DataItems other) {
       if (other == null) {
         return;
@@ -3571,6 +3913,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3592,6 +3935,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3621,19 +3965,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PkBool> _parser = new pb::MessageParser<PkBool>(() => new PkBool());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PkBool> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PkBool() {
       OnConstruction();
     }
@@ -3641,12 +3989,14 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PkBool(PkBool other) : this() {
       ok_ = other.ok_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PkBool Clone() {
       return new PkBool(this);
     }
@@ -3655,6 +4005,7 @@ namespace PassKit.Grpc {
     public const int OkFieldNumber = 1;
     private bool ok_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Ok {
       get { return ok_; }
       set {
@@ -3663,11 +4014,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PkBool);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PkBool other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3680,6 +4033,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Ok != false) hash ^= Ok.GetHashCode();
@@ -3690,11 +4044,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3711,6 +4067,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Ok != false) {
         output.WriteRawTag(8);
@@ -3723,6 +4080,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Ok != false) {
@@ -3735,6 +4093,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PkBool other) {
       if (other == null) {
         return;
@@ -3746,6 +4105,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3767,6 +4127,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3793,19 +4154,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<ClassObjectInput> _parser = new pb::MessageParser<ClassObjectInput>(() => new ClassObjectInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ClassObjectInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClassObjectInput() {
       OnConstruction();
     }
@@ -3813,6 +4178,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClassObjectInput(ClassObjectInput other) : this() {
       protocol_ = other.protocol_;
       objectId_ = other.objectId_;
@@ -3821,6 +4187,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClassObjectInput Clone() {
       return new ClassObjectInput(this);
     }
@@ -3829,6 +4196,7 @@ namespace PassKit.Grpc {
     public const int ProtocolFieldNumber = 1;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -3843,6 +4211,7 @@ namespace PassKit.Grpc {
     /// The object ID (objects belong to the class object; i.e. member tier id, coupon offer id, etc).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ObjectId {
       get { return objectId_; }
       set {
@@ -3857,6 +4226,7 @@ namespace PassKit.Grpc {
     /// The class ID (highest level protocol object; i.e. member program id, etc). Required only for the Member protocol.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
       get { return classId_; }
       set {
@@ -3865,11 +4235,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ClassObjectInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ClassObjectInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3884,6 +4256,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) hash ^= Protocol.GetHashCode();
@@ -3896,11 +4269,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3925,6 +4300,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
         output.WriteRawTag(8);
@@ -3945,6 +4321,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
@@ -3963,6 +4340,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ClassObjectInput other) {
       if (other == null) {
         return;
@@ -3980,6 +4358,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4009,6 +4388,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4046,19 +4426,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<RecursiveDate> _parser = new pb::MessageParser<RecursiveDate>(() => new RecursiveDate());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RecursiveDate> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecursiveDate() {
       OnConstruction();
     }
@@ -4066,6 +4450,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecursiveDate(RecursiveDate other) : this() {
       schedule_ = other.schedule_;
       state_ = other.state_;
@@ -4073,6 +4458,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecursiveDate Clone() {
       return new RecursiveDate(this);
     }
@@ -4084,6 +4470,7 @@ namespace PassKit.Grpc {
     /// Crontab expression (https://crontab.guru) to declare the recursive billing period start.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Schedule {
       get { return schedule_; }
       set {
@@ -4099,6 +4486,7 @@ namespace PassKit.Grpc {
     /// Eg. Given schedule is @monthly, if state is PREVIOUS, the recursive date will be 'At 00:00 on day-of-PREVIOUS-month 1'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TimeState State {
       get { return state_; }
       set {
@@ -4107,11 +4495,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RecursiveDate);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RecursiveDate other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4125,6 +4515,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Schedule.Length != 0) hash ^= Schedule.GetHashCode();
@@ -4136,11 +4527,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4161,6 +4554,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Schedule.Length != 0) {
         output.WriteRawTag(10);
@@ -4177,6 +4571,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Schedule.Length != 0) {
@@ -4192,6 +4587,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RecursiveDate other) {
       if (other == null) {
         return;
@@ -4206,6 +4602,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4231,6 +4628,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4261,19 +4659,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<MonthlyRecursive> _parser = new pb::MessageParser<MonthlyRecursive>(() => new MonthlyRecursive());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MonthlyRecursive> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MonthlyRecursive() {
       OnConstruction();
     }
@@ -4281,6 +4683,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MonthlyRecursive(MonthlyRecursive other) : this() {
       dayOfMonth_ = other.dayOfMonth_;
       hour_ = other.hour_;
@@ -4291,6 +4694,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MonthlyRecursive Clone() {
       return new MonthlyRecursive(this);
     }
@@ -4303,6 +4707,7 @@ namespace PassKit.Grpc {
     /// Selecting 31 for the last day of any month.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DayOfMonth {
       get { return dayOfMonth_; }
       set {
@@ -4317,6 +4722,7 @@ namespace PassKit.Grpc {
     /// Default hour is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Hour {
       get { return hour_; }
       set {
@@ -4331,6 +4737,7 @@ namespace PassKit.Grpc {
     /// Default minute is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Minute {
       get { return minute_; }
       set {
@@ -4345,6 +4752,7 @@ namespace PassKit.Grpc {
     /// Default second is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Second {
       get { return second_; }
       set {
@@ -4360,6 +4768,7 @@ namespace PassKit.Grpc {
     /// Eg. Given the date=15 and state=TIME_STATE_CURRENT, then the date is 15th of the current month.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TimeState State {
       get { return state_; }
       set {
@@ -4368,11 +4777,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MonthlyRecursive);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MonthlyRecursive other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4389,6 +4800,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (DayOfMonth != 0) hash ^= DayOfMonth.GetHashCode();
@@ -4403,11 +4815,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4440,6 +4854,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (DayOfMonth != 0) {
         output.WriteRawTag(8);
@@ -4468,6 +4883,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (DayOfMonth != 0) {
@@ -4492,6 +4908,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MonthlyRecursive other) {
       if (other == null) {
         return;
@@ -4515,6 +4932,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4552,6 +4970,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4594,19 +5013,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<YearlyRecursive> _parser = new pb::MessageParser<YearlyRecursive>(() => new YearlyRecursive());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<YearlyRecursive> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public YearlyRecursive() {
       OnConstruction();
     }
@@ -4614,6 +5037,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public YearlyRecursive(YearlyRecursive other) : this() {
       month_ = other.month_;
       dayOfMonth_ = other.dayOfMonth_;
@@ -4625,6 +5049,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public YearlyRecursive Clone() {
       return new YearlyRecursive(this);
     }
@@ -4636,6 +5061,7 @@ namespace PassKit.Grpc {
     /// The month in which the recursive period starts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Month {
       get { return month_; }
       set {
@@ -4651,6 +5077,7 @@ namespace PassKit.Grpc {
     /// Selecting dayOfMonth=29 and month=2, for the last day of Feb of any year.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DayOfMonth {
       get { return dayOfMonth_; }
       set {
@@ -4665,6 +5092,7 @@ namespace PassKit.Grpc {
     /// Default hour is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Hour {
       get { return hour_; }
       set {
@@ -4679,6 +5107,7 @@ namespace PassKit.Grpc {
     /// Default minute is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Minute {
       get { return minute_; }
       set {
@@ -4693,6 +5122,7 @@ namespace PassKit.Grpc {
     /// Default second is 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Second {
       get { return second_; }
       set {
@@ -4708,6 +5138,7 @@ namespace PassKit.Grpc {
     /// Eg. Given the month=1, date=15 and state=TIME_STATE_CURRENT, then the date is 15th Jan of the current year.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TimeState State {
       get { return state_; }
       set {
@@ -4716,11 +5147,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as YearlyRecursive);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(YearlyRecursive other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4738,6 +5171,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Month != 0) hash ^= Month.GetHashCode();
@@ -4753,11 +5187,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4794,6 +5230,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Month != 0) {
         output.WriteRawTag(8);
@@ -4826,6 +5263,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Month != 0) {
@@ -4853,6 +5291,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(YearlyRecursive other) {
       if (other == null) {
         return;
@@ -4879,6 +5318,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4920,6 +5360,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4949,6 +5390,468 @@ namespace PassKit.Grpc {
           }
           case 48: {
             State = (global::PassKit.Grpc.TimeState) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PassIds : pb::IMessage<PassIds>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PassIds> _parser = new pb::MessageParser<PassIds>(() => new PassIds());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PassIds> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[22]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PassIds() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PassIds(PassIds other) : this() {
+      ids_ = other.ids_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PassIds Clone() {
+      return new PassIds(this);
+    }
+
+    /// <summary>Field number for the "ids" field.</summary>
+    public const int IdsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_ids_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> ids_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Ids {
+      get { return ids_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PassIds);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PassIds other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!ids_.Equals(other.ids_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= ids_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      ids_.WriteTo(output, _repeated_ids_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      ids_.WriteTo(ref output, _repeated_ids_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += ids_.CalculateSize(_repeated_ids_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PassIds other) {
+      if (other == null) {
+        return;
+      }
+      ids_.Add(other.ids_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ids_.AddEntriesFrom(input, _repeated_ids_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ids_.AddEntriesFrom(ref input, _repeated_ids_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Protocol : pb::IMessage<Protocol>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Protocol> _parser = new pb::MessageParser<Protocol>(() => new Protocol());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Protocol> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CommonObjectsReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Protocol() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Protocol(Protocol other) : this() {
+      protocol_ = other.protocol_ != null ? other.protocol_.Clone() : null;
+      classId_ = other.classId_;
+      pagination_ = other.pagination_ != null ? other.pagination_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Protocol Clone() {
+      return new Protocol(this);
+    }
+
+    /// <summary>Field number for the "protocol" field.</summary>
+    public const int Protocol_FieldNumber = 1;
+    private global::PassKit.Grpc.Protocol protocol_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Protocol Protocol_ {
+      get { return protocol_; }
+      set {
+        protocol_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "classId" field.</summary>
+    public const int ClassIdFieldNumber = 2;
+    private string classId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClassId {
+      get { return classId_; }
+      set {
+        classId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "pagination" field.</summary>
+    public const int PaginationFieldNumber = 3;
+    private global::PassKit.Grpc.Pagination pagination_;
+    /// <summary>
+    /// Optional pagination criteria. If not provided, then all passes for the class will be selected.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Pagination Pagination {
+      get { return pagination_; }
+      set {
+        pagination_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Protocol);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Protocol other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Protocol_, other.Protocol_)) return false;
+      if (ClassId != other.ClassId) return false;
+      if (!object.Equals(Pagination, other.Pagination)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (protocol_ != null) hash ^= Protocol_.GetHashCode();
+      if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
+      if (pagination_ != null) hash ^= Pagination.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (protocol_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Protocol_);
+      }
+      if (ClassId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (pagination_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Pagination);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (protocol_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Protocol_);
+      }
+      if (ClassId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (pagination_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Pagination);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (protocol_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Protocol_);
+      }
+      if (ClassId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassId);
+      }
+      if (pagination_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pagination);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Protocol other) {
+      if (other == null) {
+        return;
+      }
+      if (other.protocol_ != null) {
+        if (protocol_ == null) {
+          Protocol_ = new global::PassKit.Grpc.Protocol();
+        }
+        Protocol_.MergeFrom(other.Protocol_);
+      }
+      if (other.ClassId.Length != 0) {
+        ClassId = other.ClassId;
+      }
+      if (other.pagination_ != null) {
+        if (pagination_ == null) {
+          Pagination = new global::PassKit.Grpc.Pagination();
+        }
+        Pagination.MergeFrom(other.Pagination);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (protocol_ == null) {
+              Protocol_ = new global::PassKit.Grpc.Protocol();
+            }
+            input.ReadMessage(Protocol_);
+            break;
+          }
+          case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (pagination_ == null) {
+              Pagination = new global::PassKit.Grpc.Pagination();
+            }
+            input.ReadMessage(Pagination);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (protocol_ == null) {
+              Protocol_ = new global::PassKit.Grpc.Protocol();
+            }
+            input.ReadMessage(Protocol_);
+            break;
+          }
+          case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (pagination_ == null) {
+              Pagination = new global::PassKit.Grpc.Pagination();
+            }
+            input.ReadMessage(Pagination);
             break;
           }
         }

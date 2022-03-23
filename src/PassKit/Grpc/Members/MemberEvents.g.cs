@@ -113,19 +113,23 @@ namespace PassKit.Grpc.Members {
     private static readonly pb::MessageParser<MemberEvent> _parser = new pb::MessageParser<MemberEvent>(() => new MemberEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MemberEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Members.MemberEventsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberEvent() {
       OnConstruction();
     }
@@ -133,6 +137,7 @@ namespace PassKit.Grpc.Members {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberEvent(MemberEvent other) : this() {
       id_ = other.id_;
       member_ = other.member_ != null ? other.member_.Clone() : null;
@@ -154,6 +159,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberEvent Clone() {
       return new MemberEvent(this);
     }
@@ -165,6 +171,7 @@ namespace PassKit.Grpc.Members {
     /// PassKit generated Event ID. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -179,6 +186,7 @@ namespace PassKit.Grpc.Members {
     /// Member that the event belongs to. This does not contain the full member details, only the key data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Members.MemberMininmal Member {
       get { return member_; }
       set {
@@ -193,6 +201,7 @@ namespace PassKit.Grpc.Members {
     /// Event type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Members.MemberEvents EventType {
       get { return eventType_; }
       set {
@@ -207,6 +216,7 @@ namespace PassKit.Grpc.Members {
     /// Address the event took place.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address {
       get { return address_; }
       set {
@@ -221,6 +231,7 @@ namespace PassKit.Grpc.Members {
     /// Latitude the event took place.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lat {
       get { return lat_; }
       set {
@@ -235,6 +246,7 @@ namespace PassKit.Grpc.Members {
     /// Longitude the event took place.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lon {
       get { return lon_; }
       set {
@@ -249,6 +261,7 @@ namespace PassKit.Grpc.Members {
     /// Altitude the event took place (in metres).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Alt {
       get { return alt_; }
       set {
@@ -263,6 +276,7 @@ namespace PassKit.Grpc.Members {
     /// External unique ID of the event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExternalId {
       get { return externalId_; }
       set {
@@ -277,6 +291,7 @@ namespace PassKit.Grpc.Members {
     /// External user ID of the logged in user that captured the event (for example when using an external scanning app).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExternalUserId {
       get { return externalUserId_; }
       set {
@@ -291,6 +306,7 @@ namespace PassKit.Grpc.Members {
     /// External device ID of the device that was used to capture the event (for example when using an external scanning app).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExternalDeviceId {
       get { return externalDeviceId_; }
       set {
@@ -305,6 +321,7 @@ namespace PassKit.Grpc.Members {
     /// External service ID of the service that was used for capturing the event (for example when using an external scanning app).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExternalServiceId {
       get { return externalServiceId_; }
       set {
@@ -321,6 +338,7 @@ namespace PassKit.Grpc.Members {
     /// Any meta data (for example gathered on scanning) that is relevant to the event (# of points earner, bill spent, device meta-data, etc).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> MetaData {
       get { return metaData_; }
     }
@@ -332,6 +350,7 @@ namespace PassKit.Grpc.Members {
     /// Any relevant notes for the event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Notes {
       get { return notes_; }
       set {
@@ -346,6 +365,7 @@ namespace PassKit.Grpc.Members {
     /// The event date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Date {
       get { return date_; }
       set {
@@ -360,6 +380,7 @@ namespace PassKit.Grpc.Members {
     /// The date until the event is retained in the PassKit database.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp RetainedUntilDate {
       get { return retainedUntilDate_; }
       set {
@@ -374,6 +395,7 @@ namespace PassKit.Grpc.Members {
     /// The date the event record was created in the PassKit database.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -382,11 +404,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MemberEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MemberEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -414,6 +438,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -439,11 +464,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -517,6 +544,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -586,6 +614,7 @@ namespace PassKit.Grpc.Members {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -641,6 +670,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MemberEvent other) {
       if (other == null) {
         return;
@@ -707,6 +737,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -800,6 +831,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -898,19 +930,23 @@ namespace PassKit.Grpc.Members {
     private static readonly pb::MessageParser<MemberMininmal> _parser = new pb::MessageParser<MemberMininmal>(() => new MemberMininmal());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MemberMininmal> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Members.MemberEventsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberMininmal() {
       OnConstruction();
     }
@@ -918,6 +954,7 @@ namespace PassKit.Grpc.Members {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberMininmal(MemberMininmal other) : this() {
       id_ = other.id_;
       externalId_ = other.externalId_;
@@ -929,6 +966,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MemberMininmal Clone() {
       return new MemberMininmal(this);
     }
@@ -940,6 +978,7 @@ namespace PassKit.Grpc.Members {
     /// Id assigned by PassKit to represent the member record. It will be used as the serial number in Apple Wallet and as the Object identifier for Google Wallet. This field is not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -954,6 +993,7 @@ namespace PassKit.Grpc.Members {
     /// This can be used to set the 'external' ID of the member (i.e. the member ID as it's being used in your system). If provided then this can be used to query &amp; update members. This field will be treated as unique within the program, and cannot be updated at a later stage.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExternalId {
       get { return externalId_; }
       set {
@@ -968,6 +1008,7 @@ namespace PassKit.Grpc.Members {
     /// Grouping Identifier can be used to group members under the same membership (i.e. couple).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GroupingIdentifier {
       get { return groupingIdentifier_; }
       set {
@@ -982,6 +1023,7 @@ namespace PassKit.Grpc.Members {
     /// Indicates the ID of the tier this member is in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TierId {
       get { return tierId_; }
       set {
@@ -996,6 +1038,7 @@ namespace PassKit.Grpc.Members {
     /// Indicates the ID of the program this member is in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProgramId {
       get { return programId_; }
       set {
@@ -1010,6 +1053,7 @@ namespace PassKit.Grpc.Members {
     /// Personal details of the member.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {
       get { return person_; }
       set {
@@ -1018,11 +1062,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MemberMininmal);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MemberMininmal other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1040,6 +1086,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -1055,11 +1102,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1096,6 +1145,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -1128,6 +1178,7 @@ namespace PassKit.Grpc.Members {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -1155,6 +1206,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MemberMininmal other) {
       if (other == null) {
         return;
@@ -1184,6 +1236,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1228,6 +1281,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

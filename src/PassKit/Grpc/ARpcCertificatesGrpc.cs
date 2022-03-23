@@ -12,6 +12,7 @@ namespace PassKit.Grpc {
   {
     static readonly string __ServiceName = "io.Certificates";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -26,11 +27,13 @@ namespace PassKit.Grpc {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -42,16 +45,26 @@ namespace PassKit.Grpc {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.PassTypeIdentifier> __Marshaller_io_PassTypeIdentifier = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PassTypeIdentifier.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.CertificateData> __Marshaller_io_CertificateData = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.CertificateData.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.CertificateSigningRequest> __Marshaller_io_CertificateSigningRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.CertificateSigningRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.FileBytes> __Marshaller_io_FileBytes = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.FileBytes.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Pagination.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Filters.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.NFCSigningCredentialsRequest> __Marshaller_io_NFCSigningCredentialsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.NFCSigningCredentialsRequest.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.PassTypeIdentifier, global::PassKit.Grpc.CertificateData> __Method_getAppleCertificateData = new grpc::Method<global::PassKit.Grpc.PassTypeIdentifier, global::PassKit.Grpc.CertificateData>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -59,6 +72,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_PassTypeIdentifier,
         __Marshaller_io_CertificateData);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::PassKit.Grpc.CertificateSigningRequest> __Method_getCertificateSigningRequest = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::PassKit.Grpc.CertificateSigningRequest>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -66,6 +80,7 @@ namespace PassKit.Grpc {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_io_CertificateSigningRequest);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.FileBytes, global::PassKit.Grpc.CertificateData> __Method_addAppleCertificate = new grpc::Method<global::PassKit.Grpc.FileBytes, global::PassKit.Grpc.CertificateData>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -73,6 +88,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_FileBytes,
         __Marshaller_io_CertificateData);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.FileBytes, global::PassKit.Grpc.CertificateData> __Method_updateAppleCertificate = new grpc::Method<global::PassKit.Grpc.FileBytes, global::PassKit.Grpc.CertificateData>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -80,6 +96,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_FileBytes,
         __Marshaller_io_CertificateData);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.CertificateData> __Method_listAppleCertificatesDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.CertificateData>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -87,6 +104,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_CertificateData);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.CertificateData> __Method_listAppleCertificates = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.CertificateData>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -94,6 +112,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Filters,
         __Marshaller_io_CertificateData);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count> __Method_countAppleCertificatesDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -101,6 +120,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count> __Method_countAppleCertificates = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -108,6 +128,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Filters,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_sendNFCSigningCredentials = new grpc::Method<global::PassKit.Grpc.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -126,153 +147,190 @@ namespace PassKit.Grpc {
     {
       /// <summary>Creates a new client for Certificates</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public CertificatesClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Certificates that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public CertificatesClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected CertificatesClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected CertificatesClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData getAppleCertificateData(global::PassKit.Grpc.PassTypeIdentifier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAppleCertificateData(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData getAppleCertificateData(global::PassKit.Grpc.PassTypeIdentifier request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getAppleCertificateData, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> getAppleCertificateDataAsync(global::PassKit.Grpc.PassTypeIdentifier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAppleCertificateDataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> getAppleCertificateDataAsync(global::PassKit.Grpc.PassTypeIdentifier request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getAppleCertificateData, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateSigningRequest getCertificateSigningRequest(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCertificateSigningRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateSigningRequest getCertificateSigningRequest(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCertificateSigningRequest, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateSigningRequest> getCertificateSigningRequestAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCertificateSigningRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateSigningRequest> getCertificateSigningRequestAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCertificateSigningRequest, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData addAppleCertificate(global::PassKit.Grpc.FileBytes request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return addAppleCertificate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData addAppleCertificate(global::PassKit.Grpc.FileBytes request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_addAppleCertificate, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> addAppleCertificateAsync(global::PassKit.Grpc.FileBytes request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return addAppleCertificateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> addAppleCertificateAsync(global::PassKit.Grpc.FileBytes request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_addAppleCertificate, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData updateAppleCertificate(global::PassKit.Grpc.FileBytes request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateAppleCertificate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.CertificateData updateAppleCertificate(global::PassKit.Grpc.FileBytes request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateAppleCertificate, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> updateAppleCertificateAsync(global::PassKit.Grpc.FileBytes request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateAppleCertificateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.CertificateData> updateAppleCertificateAsync(global::PassKit.Grpc.FileBytes request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateAppleCertificate, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.CertificateData> listAppleCertificatesDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listAppleCertificatesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.CertificateData> listAppleCertificatesDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listAppleCertificatesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.CertificateData> listAppleCertificates(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listAppleCertificates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.CertificateData> listAppleCertificates(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listAppleCertificates, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countAppleCertificatesDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificatesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countAppleCertificatesDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countAppleCertificatesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countAppleCertificatesDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificatesDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countAppleCertificatesDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countAppleCertificatesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countAppleCertificates(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countAppleCertificates(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countAppleCertificates, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countAppleCertificatesAsync(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countAppleCertificatesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countAppleCertificatesAsync(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countAppleCertificates, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty sendNFCSigningCredentials(global::PassKit.Grpc.NFCSigningCredentialsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return sendNFCSigningCredentials(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty sendNFCSigningCredentials(global::PassKit.Grpc.NFCSigningCredentialsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_sendNFCSigningCredentials, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> sendNFCSigningCredentialsAsync(global::PassKit.Grpc.NFCSigningCredentialsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return sendNFCSigningCredentialsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> sendNFCSigningCredentialsAsync(global::PassKit.Grpc.NFCSigningCredentialsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_sendNFCSigningCredentials, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override CertificatesClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new CertificatesClient(configuration);

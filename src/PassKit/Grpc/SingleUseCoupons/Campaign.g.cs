@@ -74,19 +74,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponCampaign> _parser = new pb::MessageParser<CouponCampaign>(() => new CouponCampaign());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponCampaign> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.CampaignReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaign() {
       OnConstruction();
     }
@@ -94,6 +98,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaign(CouponCampaign other) : this() {
       id_ = other.id_;
       name_ = other.name_;
@@ -107,6 +112,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaign Clone() {
       return new CouponCampaign(this);
     }
@@ -118,6 +124,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// PassKit generated program id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -132,6 +139,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Name of the coupon campaign; used in the portal / API. Not shown to the end-customer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -146,6 +154,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized name of the coupon campaign.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedName {
       get { return localizedName_; }
       set {
@@ -162,6 +171,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The program status (bitmask of ProjectStatus). Defaults to io.ProjectStatus.PROJECT_ACTIVE_FOR_OBJECT_CREATION + io.ProjectStatus.PROJECT_DRAFT.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.ProjectStatus> Status {
       get { return status_; }
     }
@@ -173,6 +183,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Leave empty for draft campaigns. Needs to be set for campaigns where status contains PROJECT_PUBLISHED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTypeIdentifier {
       get { return passTypeIdentifier_; }
       set {
@@ -187,6 +198,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The campaign timezone.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IanaTimezone {
       get { return ianaTimezone_; }
       set {
@@ -201,6 +213,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The date the campaign was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -215,6 +228,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The date the campaign updated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -223,11 +237,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponCampaign);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponCampaign other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -247,6 +263,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -264,11 +281,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -310,6 +329,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -347,6 +367,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -378,6 +399,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponCampaign other) {
       if (other == null) {
         return;
@@ -417,6 +439,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -476,6 +499,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -543,19 +567,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponCampaignAnalyticsResponse> _parser = new pb::MessageParser<CouponCampaignAnalyticsResponse>(() => new CouponCampaignAnalyticsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponCampaignAnalyticsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.CampaignReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaignAnalyticsResponse() {
       OnConstruction();
     }
@@ -563,6 +591,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaignAnalyticsResponse(CouponCampaignAnalyticsResponse other) : this() {
       period_ = other.period_;
       redeemed_ = other.redeemed_;
@@ -573,6 +602,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponCampaignAnalyticsResponse Clone() {
       return new CouponCampaignAnalyticsResponse(this);
     }
@@ -584,6 +614,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Period unit of data returned (day, month or year).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Period Period {
       get { return period_; }
       set {
@@ -598,6 +629,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Passes redeemed in this period.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Redeemed {
       get { return redeemed_; }
       set {
@@ -612,6 +644,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Total number of pass redeemed for each device type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DeviceBreakdown Devices {
       get { return devices_; }
       set {
@@ -628,6 +661,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Total number of pass redeemed for each distribution source.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, uint> Sources {
       get { return sources_; }
     }
@@ -641,16 +675,19 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Breakdown of data by day, month or year.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.ChartDataPoints> Data {
       get { return data_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponCampaignAnalyticsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponCampaignAnalyticsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -667,6 +704,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Period != global::PassKit.Grpc.Period.Day) hash ^= Period.GetHashCode();
@@ -681,11 +719,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -712,6 +752,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Period != global::PassKit.Grpc.Period.Day) {
         output.WriteRawTag(8);
@@ -734,6 +775,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Period != global::PassKit.Grpc.Period.Day) {
@@ -754,6 +796,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponCampaignAnalyticsResponse other) {
       if (other == null) {
         return;
@@ -776,6 +819,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -816,6 +860,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -864,19 +909,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CampaignCopyRequest> _parser = new pb::MessageParser<CampaignCopyRequest>(() => new CampaignCopyRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CampaignCopyRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.CampaignReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignCopyRequest() {
       OnConstruction();
     }
@@ -884,6 +933,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignCopyRequest(CampaignCopyRequest other) : this() {
       id_ = other.id_;
       name_ = other.name_;
@@ -893,6 +943,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignCopyRequest Clone() {
       return new CampaignCopyRequest(this);
     }
@@ -904,6 +955,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// uuid of the campaign to copy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -918,6 +970,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional name for the new campaign.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -934,6 +987,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Status to set the copied campaign to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.ProjectStatus> Status {
       get { return status_; }
     }
@@ -945,6 +999,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Can optionally be provided if setting status to published (requires a prod cert).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTypeIdentifier {
       get { return passTypeIdentifier_; }
       set {
@@ -953,11 +1008,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CampaignCopyRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CampaignCopyRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -973,6 +1030,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -986,11 +1044,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1016,6 +1076,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -1037,6 +1098,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -1056,6 +1118,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CampaignCopyRequest other) {
       if (other == null) {
         return;
@@ -1074,6 +1137,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1108,6 +1172,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

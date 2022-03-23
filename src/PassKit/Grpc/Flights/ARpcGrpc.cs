@@ -17,6 +17,7 @@ namespace PassKit.Grpc.Flights {
   {
     static readonly string __ServiceName = "flights.Flights";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -31,11 +32,13 @@ namespace PassKit.Grpc.Flights {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -47,20 +50,34 @@ namespace PassKit.Grpc.Flights {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.Port> __Marshaller_flights_Port = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.Port.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.AirportCode> __Marshaller_flights_AirportCode = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.AirportCode.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.Carrier> __Marshaller_flights_Carrier = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.Carrier.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.CarrierCode> __Marshaller_flights_CarrierCode = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.CarrierCode.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.FlightDesignator> __Marshaller_flights_FlightDesignator = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.FlightDesignator.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.FlightDesignatorRequest> __Marshaller_flights_FlightDesignatorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.FlightDesignatorRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.Flight> __Marshaller_flights_Flight = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.Flight.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.FlightRequest> __Marshaller_flights_FlightRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.FlightRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.BoardingPassRecord> __Marshaller_flights_BoardingPassRecord = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.BoardingPassRecord.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.BoardingPassesResponse> __Marshaller_flights_BoardingPassesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.BoardingPassesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.BoardingPassRecordRequest> __Marshaller_flights_BoardingPassRecordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.BoardingPassRecordRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Flights.BoardingPassRequest> __Marshaller_flights_BoardingPassRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Flights.BoardingPassRequest.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Port, global::Google.Protobuf.WellKnownTypes.Empty> __Method_createPort = new grpc::Method<global::PassKit.Grpc.Flights.Port, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -68,6 +85,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Port,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.AirportCode, global::PassKit.Grpc.Flights.Port> __Method_getPort = new grpc::Method<global::PassKit.Grpc.Flights.AirportCode, global::PassKit.Grpc.Flights.Port>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -75,6 +93,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_AirportCode,
         __Marshaller_flights_Port);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Port, global::PassKit.Grpc.Flights.Port> __Method_updatePort = new grpc::Method<global::PassKit.Grpc.Flights.Port, global::PassKit.Grpc.Flights.Port>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -82,6 +101,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Port,
         __Marshaller_flights_Port);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.AirportCode, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deletePort = new grpc::Method<global::PassKit.Grpc.Flights.AirportCode, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -89,6 +109,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_AirportCode,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Carrier, global::Google.Protobuf.WellKnownTypes.Empty> __Method_createCarrier = new grpc::Method<global::PassKit.Grpc.Flights.Carrier, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -96,6 +117,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Carrier,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.CarrierCode, global::PassKit.Grpc.Flights.Carrier> __Method_getCarrier = new grpc::Method<global::PassKit.Grpc.Flights.CarrierCode, global::PassKit.Grpc.Flights.Carrier>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -103,6 +125,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_CarrierCode,
         __Marshaller_flights_Carrier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Carrier, global::PassKit.Grpc.Flights.Carrier> __Method_updateCarrier = new grpc::Method<global::PassKit.Grpc.Flights.Carrier, global::PassKit.Grpc.Flights.Carrier>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -110,6 +133,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Carrier,
         __Marshaller_flights_Carrier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.CarrierCode, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteCarrier = new grpc::Method<global::PassKit.Grpc.Flights.CarrierCode, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -117,6 +141,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_CarrierCode,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightDesignator, global::Google.Protobuf.WellKnownTypes.Empty> __Method_createFlightDesignator = new grpc::Method<global::PassKit.Grpc.Flights.FlightDesignator, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -124,6 +149,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightDesignator,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightDesignatorRequest, global::PassKit.Grpc.Flights.FlightDesignator> __Method_getFlightDesignator = new grpc::Method<global::PassKit.Grpc.Flights.FlightDesignatorRequest, global::PassKit.Grpc.Flights.FlightDesignator>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -131,6 +157,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightDesignatorRequest,
         __Marshaller_flights_FlightDesignator);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightDesignator, global::PassKit.Grpc.Flights.FlightDesignator> __Method_updateFlightDesignator = new grpc::Method<global::PassKit.Grpc.Flights.FlightDesignator, global::PassKit.Grpc.Flights.FlightDesignator>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -138,6 +165,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightDesignator,
         __Marshaller_flights_FlightDesignator);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightDesignatorRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteFlightDesignator = new grpc::Method<global::PassKit.Grpc.Flights.FlightDesignatorRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -145,6 +173,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightDesignatorRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Flight, global::Google.Protobuf.WellKnownTypes.Empty> __Method_createFlight = new grpc::Method<global::PassKit.Grpc.Flights.Flight, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -152,6 +181,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Flight,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightRequest, global::PassKit.Grpc.Flights.Flight> __Method_getFlight = new grpc::Method<global::PassKit.Grpc.Flights.FlightRequest, global::PassKit.Grpc.Flights.Flight>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -159,6 +189,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightRequest,
         __Marshaller_flights_Flight);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.Flight, global::PassKit.Grpc.Flights.Flight> __Method_updateFlight = new grpc::Method<global::PassKit.Grpc.Flights.Flight, global::PassKit.Grpc.Flights.Flight>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -166,6 +197,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_Flight,
         __Marshaller_flights_Flight);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.FlightRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteFlight = new grpc::Method<global::PassKit.Grpc.Flights.FlightRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -173,6 +205,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_FlightRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecord, global::PassKit.Grpc.Flights.BoardingPassesResponse> __Method_createBoardingPass = new grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecord, global::PassKit.Grpc.Flights.BoardingPassesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -180,6 +213,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_BoardingPassRecord,
         __Marshaller_flights_BoardingPassesResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecordRequest, global::PassKit.Grpc.Flights.BoardingPassRecord> __Method_getBoardingPassRecord = new grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecordRequest, global::PassKit.Grpc.Flights.BoardingPassRecord>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -187,6 +221,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_BoardingPassRecordRequest,
         __Marshaller_flights_BoardingPassRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRequest, global::PassKit.Grpc.Flights.BoardingPassesResponse> __Method_getBoardingPass = new grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRequest, global::PassKit.Grpc.Flights.BoardingPassesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -194,6 +229,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_BoardingPassRequest,
         __Marshaller_flights_BoardingPassesResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecord, global::PassKit.Grpc.Flights.BoardingPassRecord> __Method_updateBoardingPass = new grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecord, global::PassKit.Grpc.Flights.BoardingPassRecord>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -201,6 +237,7 @@ namespace PassKit.Grpc.Flights {
         __Marshaller_flights_BoardingPassRecord,
         __Marshaller_flights_BoardingPassRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecordRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteBoardingPass = new grpc::Method<global::PassKit.Grpc.Flights.BoardingPassRecordRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -219,20 +256,24 @@ namespace PassKit.Grpc.Flights {
     {
       /// <summary>Creates a new client for Flights</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public FlightsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Flights that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public FlightsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected FlightsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected FlightsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
@@ -245,6 +286,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createPort(global::PassKit.Grpc.Flights.Port request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createPort(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -255,6 +297,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createPort(global::PassKit.Grpc.Flights.Port request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createPort, null, options, request);
@@ -267,6 +310,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createPortAsync(global::PassKit.Grpc.Flights.Port request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createPortAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -277,6 +321,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createPortAsync(global::PassKit.Grpc.Flights.Port request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createPort, null, options, request);
@@ -289,6 +334,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Port getPort(global::PassKit.Grpc.Flights.AirportCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getPort(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -299,6 +345,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Port getPort(global::PassKit.Grpc.Flights.AirportCode request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getPort, null, options, request);
@@ -311,6 +358,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Port> getPortAsync(global::PassKit.Grpc.Flights.AirportCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getPortAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -321,6 +369,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Port> getPortAsync(global::PassKit.Grpc.Flights.AirportCode request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getPort, null, options, request);
@@ -333,6 +382,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Port updatePort(global::PassKit.Grpc.Flights.Port request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updatePort(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -343,6 +393,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Port updatePort(global::PassKit.Grpc.Flights.Port request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updatePort, null, options, request);
@@ -355,6 +406,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Port> updatePortAsync(global::PassKit.Grpc.Flights.Port request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updatePortAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -365,6 +417,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Port> updatePortAsync(global::PassKit.Grpc.Flights.Port request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updatePort, null, options, request);
@@ -377,6 +430,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deletePort(global::PassKit.Grpc.Flights.AirportCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deletePort(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -387,6 +441,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deletePort(global::PassKit.Grpc.Flights.AirportCode request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deletePort, null, options, request);
@@ -399,6 +454,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deletePortAsync(global::PassKit.Grpc.Flights.AirportCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deletePortAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -409,6 +465,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deletePortAsync(global::PassKit.Grpc.Flights.AirportCode request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deletePort, null, options, request);
@@ -421,6 +478,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createCarrier(global::PassKit.Grpc.Flights.Carrier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCarrier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -431,6 +489,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createCarrier(global::PassKit.Grpc.Flights.Carrier request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createCarrier, null, options, request);
@@ -443,6 +502,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createCarrierAsync(global::PassKit.Grpc.Flights.Carrier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCarrierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -453,6 +513,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createCarrierAsync(global::PassKit.Grpc.Flights.Carrier request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createCarrier, null, options, request);
@@ -465,6 +526,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Carrier getCarrier(global::PassKit.Grpc.Flights.CarrierCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCarrier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -475,6 +537,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Carrier getCarrier(global::PassKit.Grpc.Flights.CarrierCode request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCarrier, null, options, request);
@@ -487,6 +550,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Carrier> getCarrierAsync(global::PassKit.Grpc.Flights.CarrierCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCarrierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -497,6 +561,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Carrier> getCarrierAsync(global::PassKit.Grpc.Flights.CarrierCode request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCarrier, null, options, request);
@@ -509,6 +574,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Carrier updateCarrier(global::PassKit.Grpc.Flights.Carrier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCarrier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -519,6 +585,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Carrier updateCarrier(global::PassKit.Grpc.Flights.Carrier request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateCarrier, null, options, request);
@@ -531,6 +598,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Carrier> updateCarrierAsync(global::PassKit.Grpc.Flights.Carrier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCarrierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -541,6 +609,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Carrier> updateCarrierAsync(global::PassKit.Grpc.Flights.Carrier request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateCarrier, null, options, request);
@@ -553,6 +622,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCarrier(global::PassKit.Grpc.Flights.CarrierCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCarrier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -563,6 +633,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCarrier(global::PassKit.Grpc.Flights.CarrierCode request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteCarrier, null, options, request);
@@ -575,6 +646,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCarrierAsync(global::PassKit.Grpc.Flights.CarrierCode request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCarrierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -585,6 +657,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCarrierAsync(global::PassKit.Grpc.Flights.CarrierCode request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteCarrier, null, options, request);
@@ -597,6 +670,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -607,6 +681,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createFlightDesignator, null, options, request);
@@ -619,6 +694,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -629,6 +705,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createFlightDesignator, null, options, request);
@@ -641,6 +718,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.FlightDesignator getFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -651,6 +729,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.FlightDesignator getFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getFlightDesignator, null, options, request);
@@ -663,6 +742,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.FlightDesignator> getFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -673,6 +753,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.FlightDesignator> getFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getFlightDesignator, null, options, request);
@@ -685,6 +766,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.FlightDesignator updateFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -695,6 +777,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.FlightDesignator updateFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateFlightDesignator, null, options, request);
@@ -707,6 +790,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.FlightDesignator> updateFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -717,6 +801,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.FlightDesignator> updateFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignator request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateFlightDesignator, null, options, request);
@@ -729,6 +814,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -739,6 +825,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteFlightDesignator(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteFlightDesignator, null, options, request);
@@ -751,6 +838,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -761,6 +849,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteFlightDesignatorAsync(global::PassKit.Grpc.Flights.FlightDesignatorRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteFlightDesignator, null, options, request);
@@ -773,6 +862,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createFlight(global::PassKit.Grpc.Flights.Flight request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createFlight(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -783,6 +873,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty createFlight(global::PassKit.Grpc.Flights.Flight request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createFlight, null, options, request);
@@ -795,6 +886,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createFlightAsync(global::PassKit.Grpc.Flights.Flight request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createFlightAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -805,6 +897,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> createFlightAsync(global::PassKit.Grpc.Flights.Flight request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createFlight, null, options, request);
@@ -817,6 +910,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Flight getFlight(global::PassKit.Grpc.Flights.FlightRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getFlight(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -827,6 +921,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Flight getFlight(global::PassKit.Grpc.Flights.FlightRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getFlight, null, options, request);
@@ -839,6 +934,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Flight> getFlightAsync(global::PassKit.Grpc.Flights.FlightRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getFlightAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -849,6 +945,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Flight> getFlightAsync(global::PassKit.Grpc.Flights.FlightRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getFlight, null, options, request);
@@ -861,6 +958,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Flight updateFlight(global::PassKit.Grpc.Flights.Flight request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateFlight(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -871,6 +969,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.Flight updateFlight(global::PassKit.Grpc.Flights.Flight request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateFlight, null, options, request);
@@ -883,6 +982,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Flight> updateFlightAsync(global::PassKit.Grpc.Flights.Flight request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateFlightAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -893,6 +993,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.Flight> updateFlightAsync(global::PassKit.Grpc.Flights.Flight request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateFlight, null, options, request);
@@ -905,6 +1006,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteFlight(global::PassKit.Grpc.Flights.FlightRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteFlight(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -915,6 +1017,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteFlight(global::PassKit.Grpc.Flights.FlightRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteFlight, null, options, request);
@@ -927,6 +1030,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteFlightAsync(global::PassKit.Grpc.Flights.FlightRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteFlightAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -937,6 +1041,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteFlightAsync(global::PassKit.Grpc.Flights.FlightRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteFlight, null, options, request);
@@ -949,6 +1054,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassesResponse createBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createBoardingPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -959,6 +1065,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassesResponse createBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createBoardingPass, null, options, request);
@@ -971,6 +1078,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassesResponse> createBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createBoardingPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -981,6 +1089,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassesResponse> createBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createBoardingPass, null, options, request);
@@ -993,6 +1102,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassRecord getBoardingPassRecord(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getBoardingPassRecord(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1003,6 +1113,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassRecord getBoardingPassRecord(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getBoardingPassRecord, null, options, request);
@@ -1015,6 +1126,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassRecord> getBoardingPassRecordAsync(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getBoardingPassRecordAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1025,6 +1137,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassRecord> getBoardingPassRecordAsync(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getBoardingPassRecord, null, options, request);
@@ -1037,6 +1150,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassesResponse getBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getBoardingPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1047,6 +1161,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassesResponse getBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getBoardingPass, null, options, request);
@@ -1059,6 +1174,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassesResponse> getBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getBoardingPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1069,6 +1185,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassesResponse> getBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getBoardingPass, null, options, request);
@@ -1081,6 +1198,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassRecord updateBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateBoardingPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1091,6 +1209,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Flights.BoardingPassRecord updateBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateBoardingPass, null, options, request);
@@ -1103,6 +1222,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassRecord> updateBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateBoardingPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1113,6 +1233,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Flights.BoardingPassRecord> updateBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecord request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateBoardingPass, null, options, request);
@@ -1125,6 +1246,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteBoardingPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1135,6 +1257,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteBoardingPass(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteBoardingPass, null, options, request);
@@ -1147,6 +1270,7 @@ namespace PassKit.Grpc.Flights {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteBoardingPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1157,11 +1281,13 @@ namespace PassKit.Grpc.Flights {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteBoardingPassAsync(global::PassKit.Grpc.Flights.BoardingPassRecordRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteBoardingPass, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override FlightsClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new FlightsClient(configuration);

@@ -15,6 +15,7 @@ namespace PassKit.Grpc.EventTickets {
   {
     static readonly string __ServiceName = "event_tickets.EventTickets";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -29,11 +30,13 @@ namespace PassKit.Grpc.EventTickets {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -45,40 +48,74 @@ namespace PassKit.Grpc.EventTickets {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.Production> __Marshaller_event_tickets_Production = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.Production.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Id> __Marshaller_io_Id = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Id.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Filters.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.AnalyticsRequest> __Marshaller_io_AnalyticsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.AnalyticsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse> __Marshaller_event_tickets_ProductionAnalyticsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.ProductionCopyRequest> __Marshaller_event_tickets_ProductionCopyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.ProductionCopyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.Venue> __Marshaller_event_tickets_Venue = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.Venue.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.Event> __Marshaller_event_tickets_Event = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.Event.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.GetEventRequest> __Marshaller_event_tickets_GetEventRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.GetEventRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.EventListRequest> __Marshaller_event_tickets_EventListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.EventListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.EventListResponse> __Marshaller_event_tickets_EventListResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.EventListResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketType> __Marshaller_event_tickets_TicketType = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketType.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.GetByUidRequest> __Marshaller_event_tickets_GetByUidRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.GetByUidRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketTypeListRequest> __Marshaller_event_tickets_TicketTypeListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketTypeListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.IssueTicketRequest> __Marshaller_event_tickets_IssueTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.IssueTicketRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.Ticket> __Marshaller_event_tickets_Ticket = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.Ticket.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.IssueTicketResponseIds> __Marshaller_event_tickets_IssueTicketResponseIds = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.IssueTicketResponseIds.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.EventTicketPerson> __Marshaller_event_tickets_EventTicketPerson = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.EventTicketPerson.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.ValidateTicketRequest> __Marshaller_event_tickets_ValidateTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.ValidateTicketRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.ValidateTicketResponse> __Marshaller_event_tickets_ValidateTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.ValidateTicketResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.RedeemTicketRequest> __Marshaller_event_tickets_RedeemTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.RedeemTicketRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.RedeemByOrderNumber> __Marshaller_event_tickets_RedeemByOrderNumber = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.RedeemByOrderNumber.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Ids> __Marshaller_io_Ids = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Ids.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketNumberRequest> __Marshaller_event_tickets_TicketNumberRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketNumberRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.OrderNumberRequest> __Marshaller_event_tickets_OrderNumberRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.OrderNumberRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.Tickets> __Marshaller_event_tickets_Tickets = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.Tickets.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.EventTicketPassRequest> __Marshaller_event_tickets_EventTicketPassRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.EventTicketPassRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.PassBundles> __Marshaller_io_PassBundles = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PassBundles.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketId> __Marshaller_event_tickets_TicketId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketId.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketListRequest> __Marshaller_event_tickets_TicketListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EventTickets.TicketLimitedFields> __Marshaller_event_tickets_TicketLimitedFields = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EventTickets.TicketLimitedFields.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.Id> __Method_createProduction = new grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -86,6 +123,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Production,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.EventTickets.Production> __Method_patchProduction = new grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.EventTickets.Production>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -93,6 +131,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Production,
         __Marshaller_event_tickets_Production);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.EventTickets.Production> __Method_updateProduction = new grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::PassKit.Grpc.EventTickets.Production>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -100,6 +139,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Production,
         __Marshaller_event_tickets_Production);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Production> __Method_getProduction = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Production>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -107,6 +147,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Id,
         __Marshaller_event_tickets_Production);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteProduction = new grpc::Method<global::PassKit.Grpc.EventTickets.Production, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -114,6 +155,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Production,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.EventTickets.Production> __Method_listProductions = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.EventTickets.Production>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -121,6 +163,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Filters,
         __Marshaller_event_tickets_Production);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.AnalyticsRequest, global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse> __Method_getAnalytics = new grpc::Method<global::PassKit.Grpc.AnalyticsRequest, global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -128,6 +171,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_AnalyticsRequest,
         __Marshaller_event_tickets_ProductionAnalyticsResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.ProductionCopyRequest, global::PassKit.Grpc.Id> __Method_copyProduction = new grpc::Method<global::PassKit.Grpc.EventTickets.ProductionCopyRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -135,6 +179,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_ProductionCopyRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.Id> __Method_createVenue = new grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -142,6 +187,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Venue,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.EventTickets.Venue> __Method_updateVenue = new grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.EventTickets.Venue>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -149,6 +195,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Venue,
         __Marshaller_event_tickets_Venue);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.EventTickets.Venue> __Method_patchVenue = new grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::PassKit.Grpc.EventTickets.Venue>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -156,6 +203,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Venue,
         __Marshaller_event_tickets_Venue);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Venue> __Method_getVenueById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Venue>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -163,6 +211,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Id,
         __Marshaller_event_tickets_Venue);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteVenue = new grpc::Method<global::PassKit.Grpc.EventTickets.Venue, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -170,6 +219,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Venue,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.EventTickets.Venue> __Method_listVenues = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.EventTickets.Venue>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -177,6 +227,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Filters,
         __Marshaller_event_tickets_Venue);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.Id> __Method_createEvent = new grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -184,6 +235,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Event,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.EventTickets.Event> __Method_updateEvent = new grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.EventTickets.Event>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -191,6 +243,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Event,
         __Marshaller_event_tickets_Event);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.EventTickets.Event> __Method_patchEvent = new grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::PassKit.Grpc.EventTickets.Event>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -198,6 +251,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Event,
         __Marshaller_event_tickets_Event);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Event> __Method_getEventById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Event>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -205,6 +259,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Id,
         __Marshaller_event_tickets_Event);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.GetEventRequest, global::PassKit.Grpc.EventTickets.Event> __Method_getEventByStartDateAndVenue = new grpc::Method<global::PassKit.Grpc.EventTickets.GetEventRequest, global::PassKit.Grpc.EventTickets.Event>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -212,6 +267,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_GetEventRequest,
         __Marshaller_event_tickets_Event);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteEvent = new grpc::Method<global::PassKit.Grpc.EventTickets.Event, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -219,6 +275,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Event,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.EventListRequest, global::PassKit.Grpc.EventTickets.EventListResponse> __Method_listEvents = new grpc::Method<global::PassKit.Grpc.EventTickets.EventListRequest, global::PassKit.Grpc.EventTickets.EventListResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -226,6 +283,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_EventListRequest,
         __Marshaller_event_tickets_EventListResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.Id> __Method_createTicketType = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -233,6 +291,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketType,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.EventTickets.TicketType> __Method_updateTicketType = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.EventTickets.TicketType>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -240,6 +299,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketType,
         __Marshaller_event_tickets_TicketType);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.EventTickets.TicketType> __Method_patchTicketType = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::PassKit.Grpc.EventTickets.TicketType>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -247,6 +307,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketType,
         __Marshaller_event_tickets_TicketType);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.TicketType> __Method_getTicketTypeById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.TicketType>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -254,6 +315,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Id,
         __Marshaller_event_tickets_TicketType);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.GetByUidRequest, global::PassKit.Grpc.EventTickets.TicketType> __Method_getTicketTypeByUserDefinedId = new grpc::Method<global::PassKit.Grpc.EventTickets.GetByUidRequest, global::PassKit.Grpc.EventTickets.TicketType>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -261,6 +323,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_GetByUidRequest,
         __Marshaller_event_tickets_TicketType);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteTicketType = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketType, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -268,6 +331,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketType,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketTypeListRequest, global::PassKit.Grpc.EventTickets.TicketType> __Method_listTicketTypes = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketTypeListRequest, global::PassKit.Grpc.EventTickets.TicketType>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -275,6 +339,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketTypeListRequest,
         __Marshaller_event_tickets_TicketType);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.IssueTicketRequest, global::PassKit.Grpc.Id> __Method_issueTicket = new grpc::Method<global::PassKit.Grpc.EventTickets.IssueTicketRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -282,6 +347,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_IssueTicketRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Ticket, global::PassKit.Grpc.EventTickets.IssueTicketResponseIds> __Method_issueTicketById = new grpc::Method<global::PassKit.Grpc.EventTickets.Ticket, global::PassKit.Grpc.EventTickets.IssueTicketResponseIds>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -289,6 +355,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Ticket,
         __Marshaller_event_tickets_IssueTicketResponseIds);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.Ticket, global::PassKit.Grpc.Id> __Method_updateTicket = new grpc::Method<global::PassKit.Grpc.EventTickets.Ticket, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -296,6 +363,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_Ticket,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.EventTicketPerson, global::PassKit.Grpc.Id> __Method_patchPerson = new grpc::Method<global::PassKit.Grpc.EventTickets.EventTicketPerson, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -303,6 +371,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_EventTicketPerson,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.ValidateTicketRequest, global::PassKit.Grpc.EventTickets.ValidateTicketResponse> __Method_validateTicket = new grpc::Method<global::PassKit.Grpc.EventTickets.ValidateTicketRequest, global::PassKit.Grpc.EventTickets.ValidateTicketResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -310,6 +379,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_ValidateTicketRequest,
         __Marshaller_event_tickets_ValidateTicketResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.RedeemTicketRequest, global::PassKit.Grpc.Id> __Method_redeemTicket = new grpc::Method<global::PassKit.Grpc.EventTickets.RedeemTicketRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -317,6 +387,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_RedeemTicketRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.RedeemByOrderNumber, global::PassKit.Grpc.Ids> __Method_redeemTicketsByOrderNumber = new grpc::Method<global::PassKit.Grpc.EventTickets.RedeemByOrderNumber, global::PassKit.Grpc.Ids>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -324,6 +395,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_RedeemByOrderNumber,
         __Marshaller_io_Ids);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Ticket> __Method_getTicketById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EventTickets.Ticket>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -331,6 +403,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_io_Id,
         __Marshaller_event_tickets_Ticket);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketNumberRequest, global::PassKit.Grpc.EventTickets.Ticket> __Method_getTicketByTicketNumber = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketNumberRequest, global::PassKit.Grpc.EventTickets.Ticket>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -338,6 +411,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketNumberRequest,
         __Marshaller_event_tickets_Ticket);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.OrderNumberRequest, global::PassKit.Grpc.EventTickets.Tickets> __Method_getTicketsByOrderNumber = new grpc::Method<global::PassKit.Grpc.EventTickets.OrderNumberRequest, global::PassKit.Grpc.EventTickets.Tickets>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -345,6 +419,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_OrderNumberRequest,
         __Marshaller_event_tickets_Tickets);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.EventTicketPassRequest, global::PassKit.Grpc.PassBundles> __Method_getEventTicketPass = new grpc::Method<global::PassKit.Grpc.EventTickets.EventTicketPassRequest, global::PassKit.Grpc.PassBundles>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -352,6 +427,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_EventTicketPassRequest,
         __Marshaller_io_PassBundles);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteTicket = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketId, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -359,6 +435,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketId,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.OrderNumberRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteTicketsByOrderNumber = new grpc::Method<global::PassKit.Grpc.EventTickets.OrderNumberRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -366,6 +443,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_OrderNumberRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketListRequest, global::PassKit.Grpc.EventTickets.TicketLimitedFields> __Method_listTickets = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketListRequest, global::PassKit.Grpc.EventTickets.TicketLimitedFields>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -373,6 +451,7 @@ namespace PassKit.Grpc.EventTickets {
         __Marshaller_event_tickets_TicketListRequest,
         __Marshaller_event_tickets_TicketLimitedFields);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EventTickets.TicketListRequest, global::PassKit.Grpc.Count> __Method_countTickets = new grpc::Method<global::PassKit.Grpc.EventTickets.TicketListRequest, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -391,673 +470,840 @@ namespace PassKit.Grpc.EventTickets {
     {
       /// <summary>Creates a new client for EventTickets</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public EventTicketsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for EventTickets that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public EventTicketsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected EventTicketsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected EventTicketsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production patchProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production patchProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> patchProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> patchProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production updateProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production updateProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> updateProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> updateProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production getProduction(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Production getProduction(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> getProductionAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Production> getProductionAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteProduction(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteProductionAsync(global::PassKit.Grpc.EventTickets.Production request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.Production> listProductions(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listProductions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.Production> listProductions(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listProductions, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse getAnalytics(global::PassKit.Grpc.AnalyticsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAnalytics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse getAnalytics(global::PassKit.Grpc.AnalyticsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getAnalytics, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse> getAnalyticsAsync(global::PassKit.Grpc.AnalyticsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAnalyticsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.ProductionAnalyticsResponse> getAnalyticsAsync(global::PassKit.Grpc.AnalyticsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getAnalytics, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyProduction(global::PassKit.Grpc.EventTickets.ProductionCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyProduction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyProduction(global::PassKit.Grpc.EventTickets.ProductionCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_copyProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyProductionAsync(global::PassKit.Grpc.EventTickets.ProductionCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyProductionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyProductionAsync(global::PassKit.Grpc.EventTickets.ProductionCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_copyProduction, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createVenue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createVenueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue updateVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateVenue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue updateVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> updateVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateVenueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> updateVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue patchVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchVenue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue patchVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> patchVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchVenueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> patchVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue getVenueById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getVenueById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Venue getVenueById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getVenueById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> getVenueByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getVenueByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Venue> getVenueByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getVenueById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteVenue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteVenue(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteVenueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteVenueAsync(global::PassKit.Grpc.EventTickets.Venue request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.Venue> listVenues(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listVenues(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.Venue> listVenues(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listVenues, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event updateEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event updateEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> updateEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> updateEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event patchEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event patchEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> patchEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> patchEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event getEventById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event getEventById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getEventById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> getEventByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> getEventByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getEventById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event getEventByStartDateAndVenue(global::PassKit.Grpc.EventTickets.GetEventRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventByStartDateAndVenue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Event getEventByStartDateAndVenue(global::PassKit.Grpc.EventTickets.GetEventRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getEventByStartDateAndVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> getEventByStartDateAndVenueAsync(global::PassKit.Grpc.EventTickets.GetEventRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventByStartDateAndVenueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Event> getEventByStartDateAndVenueAsync(global::PassKit.Grpc.EventTickets.GetEventRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getEventByStartDateAndVenue, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEvent(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventAsync(global::PassKit.Grpc.EventTickets.Event request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.EventListResponse> listEvents(global::PassKit.Grpc.EventTickets.EventListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.EventListResponse> listEvents(global::PassKit.Grpc.EventTickets.EventListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createTicketType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createTicketTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType updateTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTicketType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType updateTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> updateTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTicketTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> updateTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType patchTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchTicketType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType patchTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> patchTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchTicketTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> patchTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType getTicketTypeById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketTypeById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType getTicketTypeById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTicketTypeById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> getTicketTypeByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketTypeByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> getTicketTypeByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketTypeById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType getTicketTypeByUserDefinedId(global::PassKit.Grpc.EventTickets.GetByUidRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketTypeByUserDefinedId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.TicketType getTicketTypeByUserDefinedId(global::PassKit.Grpc.EventTickets.GetByUidRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTicketTypeByUserDefinedId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> getTicketTypeByUserDefinedIdAsync(global::PassKit.Grpc.EventTickets.GetByUidRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketTypeByUserDefinedIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.TicketType> getTicketTypeByUserDefinedIdAsync(global::PassKit.Grpc.EventTickets.GetByUidRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketTypeByUserDefinedId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicketType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicketType(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicketTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketTypeAsync(global::PassKit.Grpc.EventTickets.TicketType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteTicketType, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.TicketType> listTicketTypes(global::PassKit.Grpc.EventTickets.TicketTypeListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listTicketTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.TicketType> listTicketTypes(global::PassKit.Grpc.EventTickets.TicketTypeListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTicketTypes, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id issueTicket(global::PassKit.Grpc.EventTickets.IssueTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return issueTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id issueTicket(global::PassKit.Grpc.EventTickets.IssueTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_issueTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> issueTicketAsync(global::PassKit.Grpc.EventTickets.IssueTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return issueTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> issueTicketAsync(global::PassKit.Grpc.EventTickets.IssueTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_issueTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.IssueTicketResponseIds issueTicketById(global::PassKit.Grpc.EventTickets.Ticket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return issueTicketById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.IssueTicketResponseIds issueTicketById(global::PassKit.Grpc.EventTickets.Ticket request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_issueTicketById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.IssueTicketResponseIds> issueTicketByIdAsync(global::PassKit.Grpc.EventTickets.Ticket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return issueTicketByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.IssueTicketResponseIds> issueTicketByIdAsync(global::PassKit.Grpc.EventTickets.Ticket request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_issueTicketById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateTicket(global::PassKit.Grpc.EventTickets.Ticket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateTicket(global::PassKit.Grpc.EventTickets.Ticket request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateTicketAsync(global::PassKit.Grpc.EventTickets.Ticket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateTicketAsync(global::PassKit.Grpc.EventTickets.Ticket request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.EventTickets.EventTicketPerson request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPerson(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.EventTickets.EventTicketPerson request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.EventTickets.EventTicketPerson request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPersonAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.EventTickets.EventTicketPerson request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.ValidateTicketResponse validateTicket(global::PassKit.Grpc.EventTickets.ValidateTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return validateTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.ValidateTicketResponse validateTicket(global::PassKit.Grpc.EventTickets.ValidateTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_validateTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.ValidateTicketResponse> validateTicketAsync(global::PassKit.Grpc.EventTickets.ValidateTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return validateTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.ValidateTicketResponse> validateTicketAsync(global::PassKit.Grpc.EventTickets.ValidateTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_validateTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id redeemTicket(global::PassKit.Grpc.EventTickets.RedeemTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id redeemTicket(global::PassKit.Grpc.EventTickets.RedeemTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_redeemTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> redeemTicketAsync(global::PassKit.Grpc.EventTickets.RedeemTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> redeemTicketAsync(global::PassKit.Grpc.EventTickets.RedeemTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_redeemTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Ids redeemTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.RedeemByOrderNumber request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemTicketsByOrderNumber(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Ids redeemTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.RedeemByOrderNumber request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_redeemTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ids> redeemTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.RedeemByOrderNumber request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemTicketsByOrderNumberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ids> redeemTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.RedeemByOrderNumber request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_redeemTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Ticket getTicketById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Ticket getTicketById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTicketById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Ticket> getTicketByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Ticket> getTicketByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Ticket getTicketByTicketNumber(global::PassKit.Grpc.EventTickets.TicketNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketByTicketNumber(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Ticket getTicketByTicketNumber(global::PassKit.Grpc.EventTickets.TicketNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTicketByTicketNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Ticket> getTicketByTicketNumberAsync(global::PassKit.Grpc.EventTickets.TicketNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketByTicketNumberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Ticket> getTicketByTicketNumberAsync(global::PassKit.Grpc.EventTickets.TicketNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketByTicketNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Tickets getTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketsByOrderNumber(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EventTickets.Tickets getTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Tickets> getTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTicketsByOrderNumberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EventTickets.Tickets> getTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.PassBundles getEventTicketPass(global::PassKit.Grpc.EventTickets.EventTicketPassRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventTicketPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.PassBundles getEventTicketPass(global::PassKit.Grpc.EventTickets.EventTicketPassRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getEventTicketPass, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.PassBundles> getEventTicketPassAsync(global::PassKit.Grpc.EventTickets.EventTicketPassRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getEventTicketPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.PassBundles> getEventTicketPassAsync(global::PassKit.Grpc.EventTickets.EventTicketPassRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getEventTicketPass, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicket(global::PassKit.Grpc.EventTickets.TicketId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicket(global::PassKit.Grpc.EventTickets.TicketId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketAsync(global::PassKit.Grpc.EventTickets.TicketId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketAsync(global::PassKit.Grpc.EventTickets.TicketId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicketsByOrderNumber(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTicketsByOrderNumber(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTicketsByOrderNumberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTicketsByOrderNumberAsync(global::PassKit.Grpc.EventTickets.OrderNumberRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteTicketsByOrderNumber, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.TicketLimitedFields> listTickets(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listTickets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.EventTickets.TicketLimitedFields> listTickets(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTickets, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countTickets(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countTickets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countTickets(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countTickets, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countTicketsAsync(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countTicketsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countTicketsAsync(global::PassKit.Grpc.EventTickets.TicketListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countTickets, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override EventTicketsClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new EventTicketsClient(configuration);

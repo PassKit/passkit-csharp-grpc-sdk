@@ -12,6 +12,7 @@ namespace PassKit.Grpc {
   {
     static readonly string __ServiceName = "io.Images";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -26,11 +27,13 @@ namespace PassKit.Grpc {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -42,21 +45,36 @@ namespace PassKit.Grpc {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ProfileImageInput> __Marshaller_io_ProfileImageInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ProfileImageInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Url> __Marshaller_io_Url = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Url.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.CreateImageInput> __Marshaller_io_CreateImageInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.CreateImageInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ImageIds> __Marshaller_io_ImageIds = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ImageIds.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.UpdateImageInput> __Marshaller_io_UpdateImageInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.UpdateImageInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ImageRecord> __Marshaller_io_ImageRecord = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ImageRecord.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Id> __Marshaller_io_Id = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Id.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.StampImageRequest> __Marshaller_io_StampImageRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.StampImageRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.LocalizedImageInput> __Marshaller_io_LocalizedImageInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.LocalizedImageInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ImageBundle> __Marshaller_io_ImageBundle = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ImageBundle.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Pagination.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Filters.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.ProfileImageInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_setProfileImage = new grpc::Method<global::PassKit.Grpc.ProfileImageInput, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -64,6 +82,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_ProfileImageInput,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::PassKit.Grpc.Url> __Method_getProfileImage = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -71,6 +90,7 @@ namespace PassKit.Grpc {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.CreateImageInput, global::PassKit.Grpc.ImageIds> __Method_createImages = new grpc::Method<global::PassKit.Grpc.CreateImageInput, global::PassKit.Grpc.ImageIds>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -78,6 +98,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_CreateImageInput,
         __Marshaller_io_ImageIds);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.UpdateImageInput, global::PassKit.Grpc.ImageRecord> __Method_updateImage = new grpc::Method<global::PassKit.Grpc.UpdateImageInput, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -85,6 +106,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_UpdateImageInput,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Url> __Method_getImageURL = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -92,6 +114,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Id,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.StampImageRequest, global::PassKit.Grpc.Url> __Method_getStampImageURL = new grpc::Method<global::PassKit.Grpc.StampImageRequest, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -99,6 +122,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_StampImageRequest,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.LocalizedImageInput, global::PassKit.Grpc.Url> __Method_getLocalizedImageURL = new grpc::Method<global::PassKit.Grpc.LocalizedImageInput, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -106,6 +130,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_LocalizedImageInput,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Url> __Method_getProfileImageById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -113,6 +138,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Id,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.ImageBundle> __Method_getImageBundle = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.ImageBundle>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -120,6 +146,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Id,
         __Marshaller_io_ImageBundle);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.ImageRecord> __Method_getImageData = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -127,6 +154,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Id,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteImage = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -134,6 +162,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.LocalizedImageInput, global::PassKit.Grpc.ImageRecord> __Method_deleteLocalizedImage = new grpc::Method<global::PassKit.Grpc.LocalizedImageInput, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -141,6 +170,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_LocalizedImageInput,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.ImageRecord> __Method_listImagesForUserDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -148,6 +178,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.ImageRecord> __Method_listImagesForUser = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -155,6 +186,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Filters,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.ImageRecord> __Method_listImagesDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -162,6 +194,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.ImageRecord> __Method_listImages = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.ImageRecord>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -169,6 +202,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Filters,
         __Marshaller_io_ImageRecord);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count> __Method_countImagesDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -176,6 +210,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count> __Method_countImages = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -183,6 +218,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Filters,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count> __Method_countImagesForUserDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -190,6 +226,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_Pagination,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count> __Method_countImagesForUser = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -208,148 +245,184 @@ namespace PassKit.Grpc {
     {
       /// <summary>Creates a new client for Images</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public ImagesClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Images that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public ImagesClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected ImagesClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected ImagesClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty setProfileImage(global::PassKit.Grpc.ProfileImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setProfileImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty setProfileImage(global::PassKit.Grpc.ProfileImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_setProfileImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> setProfileImageAsync(global::PassKit.Grpc.ProfileImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setProfileImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> setProfileImageAsync(global::PassKit.Grpc.ProfileImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_setProfileImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getProfileImage(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProfileImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getProfileImage(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProfileImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getProfileImageAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProfileImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getProfileImageAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProfileImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageIds createImages(global::PassKit.Grpc.CreateImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createImages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageIds createImages(global::PassKit.Grpc.CreateImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createImages, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageIds> createImagesAsync(global::PassKit.Grpc.CreateImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createImagesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageIds> createImagesAsync(global::PassKit.Grpc.CreateImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createImages, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord updateImage(global::PassKit.Grpc.UpdateImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord updateImage(global::PassKit.Grpc.UpdateImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> updateImageAsync(global::PassKit.Grpc.UpdateImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> updateImageAsync(global::PassKit.Grpc.UpdateImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getImageURL(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageURL(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getImageURL(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getImageURLAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageURLAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getImageURLAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getStampImageURL(global::PassKit.Grpc.StampImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getStampImageURL(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getStampImageURL(global::PassKit.Grpc.StampImageRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getStampImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getStampImageURLAsync(global::PassKit.Grpc.StampImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getStampImageURLAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getStampImageURLAsync(global::PassKit.Grpc.StampImageRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getStampImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getLocalizedImageURL(global::PassKit.Grpc.LocalizedImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getLocalizedImageURL(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getLocalizedImageURL(global::PassKit.Grpc.LocalizedImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getLocalizedImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getLocalizedImageURLAsync(global::PassKit.Grpc.LocalizedImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getLocalizedImageURLAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getLocalizedImageURLAsync(global::PassKit.Grpc.LocalizedImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getLocalizedImageURL, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getProfileImageById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProfileImageById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getProfileImageById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProfileImageById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getProfileImageByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProfileImageByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getProfileImageByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProfileImageById, null, options, request);
@@ -362,6 +435,7 @@ namespace PassKit.Grpc {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageBundle getImageBundle(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageBundle(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -372,6 +446,7 @@ namespace PassKit.Grpc {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageBundle getImageBundle(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getImageBundle, null, options, request);
@@ -384,6 +459,7 @@ namespace PassKit.Grpc {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageBundle> getImageBundleAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageBundleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -394,155 +470,193 @@ namespace PassKit.Grpc {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageBundle> getImageBundleAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getImageBundle, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord getImageData(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageData(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord getImageData(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getImageData, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> getImageDataAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getImageDataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> getImageDataAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getImageData, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteImage(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteImage(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteImageAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteImageAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord deleteLocalizedImage(global::PassKit.Grpc.LocalizedImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteLocalizedImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.ImageRecord deleteLocalizedImage(global::PassKit.Grpc.LocalizedImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteLocalizedImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> deleteLocalizedImageAsync(global::PassKit.Grpc.LocalizedImageInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteLocalizedImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.ImageRecord> deleteLocalizedImageAsync(global::PassKit.Grpc.LocalizedImageInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteLocalizedImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesForUserDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImagesForUserDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesForUserDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImagesForUserDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesForUser(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImagesForUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesForUser(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImagesForUser, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImagesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImagesDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImagesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImages(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listImages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.ImageRecord> listImages(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listImages, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImagesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImagesDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImages(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImages(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImages, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesAsync(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesAsync(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImages, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesForUserDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUserDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesForUserDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImagesForUserDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesForUserDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUserDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesForUserDeprecatedAsync(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImagesForUserDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesForUser(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countImagesForUser(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countImagesForUser, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesForUserAsync(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countImagesForUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countImagesForUserAsync(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countImagesForUser, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImagesClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new ImagesClient(configuration);

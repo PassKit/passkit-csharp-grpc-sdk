@@ -17,6 +17,7 @@ namespace PassKit.Grpc.Scheduler {
   {
     static readonly string __ServiceName = "scheduler.Scheduler";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -31,11 +32,13 @@ namespace PassKit.Grpc.Scheduler {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -47,41 +50,52 @@ namespace PassKit.Grpc.Scheduler {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
-    static readonly grpc::Marshaller<global::PassKit.Grpc.Scheduler.SchedulingJob> __Marshaller_scheduler_SchedulingJob = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Scheduler.SchedulingJob.Parser));
-    static readonly grpc::Marshaller<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> __Marshaller_scheduler_SchedulingJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Scheduler.SchedulingJobResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.Ct.SchedulingJob> __Marshaller_ct_SchedulingJob = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Ct.SchedulingJob.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.Ct.SchedulingJobResponse> __Marshaller_ct_SchedulingJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Ct.SchedulingJobResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Id> __Marshaller_io_Id = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Id.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
-    static readonly grpc::Marshaller<global::PassKit.Grpc.Scheduler.JobHistory> __Marshaller_scheduler_JobHistory = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Scheduler.JobHistory.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.Ct.JobHistory> __Marshaller_ct_JobHistory = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Ct.JobHistory.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Scheduler.ListRequest> __Marshaller_scheduler_ListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Scheduler.ListRequest.Parser));
 
-    static readonly grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse> __Method_createSchedulingJob = new grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse> __Method_createSchedulingJob = new grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "createSchedulingJob",
-        __Marshaller_scheduler_SchedulingJob,
-        __Marshaller_scheduler_SchedulingJobResponse);
+        __Marshaller_ct_SchedulingJob,
+        __Marshaller_ct_SchedulingJobResponse);
 
-    static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Scheduler.SchedulingJob> __Method_getSchedulingJob = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Scheduler.SchedulingJob>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Ct.SchedulingJob> __Method_getSchedulingJob = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Ct.SchedulingJob>(
         grpc::MethodType.Unary,
         __ServiceName,
         "getSchedulingJob",
         __Marshaller_io_Id,
-        __Marshaller_scheduler_SchedulingJob);
+        __Marshaller_ct_SchedulingJob);
 
-    static readonly grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse> __Method_updateSchedulingJob = new grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse> __Method_updateSchedulingJob = new grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "updateSchedulingJob",
-        __Marshaller_scheduler_SchedulingJob,
-        __Marshaller_scheduler_SchedulingJobResponse);
+        __Marshaller_ct_SchedulingJob,
+        __Marshaller_ct_SchedulingJobResponse);
 
-    static readonly grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse> __Method_patchSchedulingJob = new grpc::Method<global::PassKit.Grpc.Scheduler.SchedulingJob, global::PassKit.Grpc.Scheduler.SchedulingJobResponse>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse> __Method_patchSchedulingJob = new grpc::Method<global::PassKit.Grpc.Ct.SchedulingJob, global::PassKit.Grpc.Ct.SchedulingJobResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "patchSchedulingJob",
-        __Marshaller_scheduler_SchedulingJob,
-        __Marshaller_scheduler_SchedulingJobResponse);
+        __Marshaller_ct_SchedulingJob,
+        __Marshaller_ct_SchedulingJobResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteSchedulingJob = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -89,19 +103,21 @@ namespace PassKit.Grpc.Scheduler {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Scheduler.JobHistory> __Method_getSchedulingJobHistory = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Scheduler.JobHistory>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Ct.JobHistory> __Method_getSchedulingJobHistory = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Ct.JobHistory>(
         grpc::MethodType.Unary,
         __ServiceName,
         "getSchedulingJobHistory",
         __Marshaller_io_Id,
-        __Marshaller_scheduler_JobHistory);
+        __Marshaller_ct_JobHistory);
 
-    static readonly grpc::Method<global::PassKit.Grpc.Scheduler.ListRequest, global::PassKit.Grpc.Scheduler.JobHistory> __Method_listSchedulingJobHistories = new grpc::Method<global::PassKit.Grpc.Scheduler.ListRequest, global::PassKit.Grpc.Scheduler.JobHistory>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.Scheduler.ListRequest, global::PassKit.Grpc.Ct.JobHistory> __Method_listSchedulingJobHistories = new grpc::Method<global::PassKit.Grpc.Scheduler.ListRequest, global::PassKit.Grpc.Ct.JobHistory>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "listSchedulingJobHistories",
         __Marshaller_scheduler_ListRequest,
-        __Marshaller_scheduler_JobHistory);
+        __Marshaller_ct_JobHistory);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -114,129 +130,160 @@ namespace PassKit.Grpc.Scheduler {
     {
       /// <summary>Creates a new client for Scheduler</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public SchedulerClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Scheduler that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public SchedulerClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected SchedulerClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected SchedulerClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse createSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse createSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createSchedulingJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse createSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse createSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createSchedulingJob, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> createSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> createSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createSchedulingJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> createSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> createSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createSchedulingJob, null, options, request);
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJob getSchedulingJob(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJob getSchedulingJob(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSchedulingJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJob getSchedulingJob(global::PassKit.Grpc.Id request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJob getSchedulingJob(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getSchedulingJob, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJob> getSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJob> getSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSchedulingJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJob> getSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJob> getSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getSchedulingJob, null, options, request);
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse updateSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse updateSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateSchedulingJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse updateSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse updateSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateSchedulingJob, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> updateSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> updateSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateSchedulingJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> updateSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> updateSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateSchedulingJob, null, options, request);
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse patchSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse patchSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchSchedulingJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PassKit.Grpc.Scheduler.SchedulingJobResponse patchSchedulingJob(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.SchedulingJobResponse patchSchedulingJob(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchSchedulingJob, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> patchSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> patchSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchSchedulingJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.SchedulingJobResponse> patchSchedulingJobAsync(global::PassKit.Grpc.Scheduler.SchedulingJob request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.SchedulingJobResponse> patchSchedulingJobAsync(global::PassKit.Grpc.Ct.SchedulingJob request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchSchedulingJob, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteSchedulingJob(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteSchedulingJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteSchedulingJob(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteSchedulingJob, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteSchedulingJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteSchedulingJobAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteSchedulingJob, null, options, request);
       }
-      public virtual global::PassKit.Grpc.Scheduler.JobHistory getSchedulingJobHistory(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.JobHistory getSchedulingJobHistory(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSchedulingJobHistory(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::PassKit.Grpc.Scheduler.JobHistory getSchedulingJobHistory(global::PassKit.Grpc.Id request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.Ct.JobHistory getSchedulingJobHistory(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getSchedulingJobHistory, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.JobHistory> getSchedulingJobHistoryAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.JobHistory> getSchedulingJobHistoryAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSchedulingJobHistoryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Scheduler.JobHistory> getSchedulingJobHistoryAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Ct.JobHistory> getSchedulingJobHistoryAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getSchedulingJobHistory, null, options, request);
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Scheduler.JobHistory> listSchedulingJobHistories(global::PassKit.Grpc.Scheduler.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Ct.JobHistory> listSchedulingJobHistories(global::PassKit.Grpc.Scheduler.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listSchedulingJobHistories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Scheduler.JobHistory> listSchedulingJobHistories(global::PassKit.Grpc.Scheduler.ListRequest request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Ct.JobHistory> listSchedulingJobHistories(global::PassKit.Grpc.Scheduler.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listSchedulingJobHistories, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override SchedulerClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SchedulerClient(configuration);

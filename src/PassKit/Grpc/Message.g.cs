@@ -25,30 +25,44 @@ namespace PassKit.Grpc {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chdpby9jb21tb24vbWVzc2FnZS5wcm90bxICaW8aHGlvL2NvbW1vbi9sb2Nh",
-            "bGl6YXRpb24ucHJvdG8aGmlvL2NvbW1vbi9wYWdpbmF0aW9uLnByb3RvGh9n",
-            "b29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvGhlpby9jb21tb24vcHJv",
-            "dG9jb2xzLnByb3RvIqcECgdNZXNzYWdlEiIKCHByb3RvY29sGAEgASgOMhAu",
-            "aW8uUGFzc1Byb3RvY29sEhEKCWNvbXBhbnlJZBgCIAEoCRIPCgdjbGFzc0lk",
-            "GAMgASgJEgwKBHV1aWQYBCABKAkSIQoGc3RhdHVzGAUgASgOMhEuaW8uTWVz",
-            "c2FnZVN0YXR1cxIPCgd3YXJuaW5nGAYgASgJEg8KB2ltYWdlSWQYByABKA0S",
-            "DQoFdGl0bGUYCCABKAkSKwoObG9jYWxpemVkVGl0bGUYCSABKAsyEy5pby5M",
-            "b2NhbGl6ZWRTdHJpbmcSDwoHY29udGVudBgKIAEoCRItChBsb2NhbGl6ZWRD",
-            "b250ZW50GAsgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEi0KCXN0YXJ0RGF0",
-            "ZRgMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASKwoHZW5kRGF0",
-            "ZRgNIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASGgoGZmlsdGVy",
-            "GA4gASgLMgouaW8uRmlsdGVyEh4KFnJlY29yZHNNYXRjaGluZ1NlZ21lbnQY",
-            "DyABKA0SIQoZcmVjb3Jkc1N1Y2Nlc3NmdWxseVVwZGF0ZRgQIAEoDRIdChVy",
-            "ZWNvcmRzRmFpbGVkVG9VcGRhdGUYESABKA0SKwoHY3JlYXRlZBgSIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAqmwEKDU1lc3NhZ2VTdGF0dXMS",
-            "CwoHQ1JFQVRFRBAAEg4KClBST0NFU1NJTkcQARIXChNBQk9SVEVEX1dJVEhf",
-            "RVJST1JTEAISGwoXQ09NUExFVEVEX1dJVEhfV0FSTklOR1MQAxIZChVDT01Q",
-            "TEVURURfV0lUSF9FUlJPUlMQBBIcChhDT01QTEVURURfV0lUSE9VVF9FUlJP",
-            "UlMQBUJHChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0LmNvbS9p",
-            "by9tb2RlbC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3RvMw=="));
+            "bGl6YXRpb24ucHJvdG8aGmlvL2NvbW1vbi9wYWdpbmF0aW9uLnByb3RvGh5p",
+            "by9jb21tb24vY29tbW9uX29iamVjdHMucHJvdG8aFGlvL2ltYWdlL2ltYWdl",
+            "LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvIuUCCgdN",
+            "ZXNzYWdlEgoKAmlkGAEgASgJEg0KBXRpdGxlGAIgASgJEisKDmxvY2FsaXpl",
+            "ZFRpdGxlGAMgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEhgKEHBsYWluVGV4",
+            "dENvbnRlbnQYBCABKAkSNgoZbG9jYWxpemVkUGxhaW5UZXh0Q29udGVudBgF",
+            "IAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxIXCg9yaWNoVGV4dENvbnRlbnQY",
+            "BiABKAkSNQoYbG9jYWxpemVkUmljaFRleHRDb250ZW50GAcgASgLMhMuaW8u",
+            "TG9jYWxpemVkU3RyaW5nEhUKBHVybHMYCCADKAsyBy5pby5VcmwSHAoGaW1h",
+            "Z2VzGAkgASgLMgwuaW8uSW1hZ2VJZHMSEAoIcHJpb3JpdHkYCiABKA0SEwoL",
+            "ZGlzcGxheUZyb20YCyABKAkSFAoMZGlzcGxheVVudGlsGAwgASgJImYKHUdl",
+            "dE1lc3NhZ2VzRm9yUHJvdG9jb2xSZXF1ZXN0EhAKCHByb3RvY29sGAEgASgJ",
+            "Eg8KB2NsYXNzSWQYAiABKAkSIgoKcGFnaW5hdGlvbhgDIAEoCzIOLmlvLlBh",
+            "Z2luYXRpb24iqwIKEkdldE1lc3NhZ2VSZXNwb25zZRIcCgdtZXNzYWdlGAEg",
+            "ASgLMgsuaW8uTWVzc2FnZRIhCgZzdGF0dXMYAiABKA4yES5pby5NZXNzYWdl",
+            "U3RhdHVzEhIKCnJlY2lwaWVudHMYAyABKA0SMQoNZGlzdHJpYnV0ZWRBdBgE",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLd2l0aGRyYXdu",
+            "QXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi0KCWNyZWF0",
+            "ZWRBdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLQoJdXBk",
+            "YXRlZEF0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJFChlH",
+            "ZXRNZXNzYWdlSGlzdG9yeVJlc3BvbnNlEigKCG1lc3NhZ2VzGAEgAygLMhYu",
+            "aW8uR2V0TWVzc2FnZVJlc3BvbnNlInMKElNlbmRNZXNzYWdlUmVxdWVzdBIR",
+            "CgltZXNzYWdlSWQYASABKAkSHgoHcGFzc0lkcxgCIAEoCzILLmlvLlBhc3NJ",
+            "ZHNIABIgCghwcm90b2NvbBgDIAEoCzIMLmlvLlByb3RvY29sSABCCAoGdGFy",
+            "Z2V0IiQKE1NlbmRNZXNzYWdlUmVzcG9uc2USDQoFY291bnQYASABKAUqZQoN",
+            "TWVzc2FnZVN0YXR1cxIdChlNRVNTQUdFX1NUQVRVU19ET19OT1RfVVNFEAAS",
+            "DQoJU0NIRURVTEVEEAESCgoGQUNUSVZFEAISCwoHRVhQSVJFRBADEg0KCUNB",
+            "TkNFTExFRBAEQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3NraXQu",
+            "Y29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ImageReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.MessageStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Message), global::PassKit.Grpc.Message.Parser, new[]{ "Protocol", "CompanyId", "ClassId", "Uuid", "Status", "Warning", "ImageId", "Title", "LocalizedTitle", "Content", "LocalizedContent", "StartDate", "EndDate", "Filter", "RecordsMatchingSegment", "RecordsSuccessfullyUpdate", "RecordsFailedToUpdate", "Created" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Message), global::PassKit.Grpc.Message.Parser, new[]{ "Id", "Title", "LocalizedTitle", "PlainTextContent", "LocalizedPlainTextContent", "RichTextContent", "LocalizedRichTextContent", "Urls", "Images", "Priority", "DisplayFrom", "DisplayUntil" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessagesForProtocolRequest), global::PassKit.Grpc.GetMessagesForProtocolRequest.Parser, new[]{ "Protocol", "ClassId", "Pagination" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessageResponse), global::PassKit.Grpc.GetMessageResponse.Parser, new[]{ "Message", "Status", "Recipients", "DistributedAt", "WithdrawnAt", "CreatedAt", "UpdatedAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessageHistoryResponse), global::PassKit.Grpc.GetMessageHistoryResponse.Parser, new[]{ "Messages" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.SendMessageRequest), global::PassKit.Grpc.SendMessageRequest.Parser, new[]{ "MessageId", "PassIds", "Protocol" }, new[]{ "Target" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.SendMessageResponse), global::PassKit.Grpc.SendMessageResponse.Parser, new[]{ "Count" }, null, null, null, null)
           }));
     }
     #endregion
@@ -56,12 +70,11 @@ namespace PassKit.Grpc {
   }
   #region Enums
   public enum MessageStatus {
-    [pbr::OriginalName("CREATED")] Created = 0,
-    [pbr::OriginalName("PROCESSING")] Processing = 1,
-    [pbr::OriginalName("ABORTED_WITH_ERRORS")] AbortedWithErrors = 2,
-    [pbr::OriginalName("COMPLETED_WITH_WARNINGS")] CompletedWithWarnings = 3,
-    [pbr::OriginalName("COMPLETED_WITH_ERRORS")] CompletedWithErrors = 4,
-    [pbr::OriginalName("COMPLETED_WITHOUT_ERRORS")] CompletedWithoutErrors = 5,
+    [pbr::OriginalName("MESSAGE_STATUS_DO_NOT_USE")] DoNotUse = 0,
+    [pbr::OriginalName("SCHEDULED")] Scheduled = 1,
+    [pbr::OriginalName("ACTIVE")] Active = 2,
+    [pbr::OriginalName("EXPIRED")] Expired = 3,
+    [pbr::OriginalName("CANCELLED")] Cancelled = 4,
   }
 
   #endregion
@@ -75,19 +88,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Message> _parser = new pb::MessageParser<Message>(() => new Message());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Message> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Message() {
       OnConstruction();
     }
@@ -95,138 +112,49 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Message(Message other) : this() {
-      protocol_ = other.protocol_;
-      companyId_ = other.companyId_;
-      classId_ = other.classId_;
-      uuid_ = other.uuid_;
-      status_ = other.status_;
-      warning_ = other.warning_;
-      imageId_ = other.imageId_;
+      id_ = other.id_;
       title_ = other.title_;
       localizedTitle_ = other.localizedTitle_ != null ? other.localizedTitle_.Clone() : null;
-      content_ = other.content_;
-      localizedContent_ = other.localizedContent_ != null ? other.localizedContent_.Clone() : null;
-      startDate_ = other.startDate_ != null ? other.startDate_.Clone() : null;
-      endDate_ = other.endDate_ != null ? other.endDate_.Clone() : null;
-      filter_ = other.filter_ != null ? other.filter_.Clone() : null;
-      recordsMatchingSegment_ = other.recordsMatchingSegment_;
-      recordsSuccessfullyUpdate_ = other.recordsSuccessfullyUpdate_;
-      recordsFailedToUpdate_ = other.recordsFailedToUpdate_;
-      created_ = other.created_ != null ? other.created_.Clone() : null;
+      plainTextContent_ = other.plainTextContent_;
+      localizedPlainTextContent_ = other.localizedPlainTextContent_ != null ? other.localizedPlainTextContent_.Clone() : null;
+      richTextContent_ = other.richTextContent_;
+      localizedRichTextContent_ = other.localizedRichTextContent_ != null ? other.localizedRichTextContent_.Clone() : null;
+      urls_ = other.urls_.Clone();
+      images_ = other.images_ != null ? other.images_.Clone() : null;
+      priority_ = other.priority_;
+      displayFrom_ = other.displayFrom_;
+      displayUntil_ = other.displayUntil_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Message Clone() {
       return new Message(this);
     }
 
-    /// <summary>Field number for the "protocol" field.</summary>
-    public const int ProtocolFieldNumber = 1;
-    private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
-    /// <summary>
-    /// the protocol that this message is associated with.
-    /// </summary>
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::PassKit.Grpc.PassProtocol Protocol {
-      get { return protocol_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
       set {
-        protocol_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "companyId" field.</summary>
-    public const int CompanyIdFieldNumber = 2;
-    private string companyId_ = "";
-    /// <summary>
-    /// the id of the company that made the message
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string CompanyId {
-      get { return companyId_; }
-      set {
-        companyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "classId" field.</summary>
-    public const int ClassIdFieldNumber = 3;
-    private string classId_ = "";
-    /// <summary>
-    /// the higher level class id for the protocol.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ClassId {
-      get { return classId_; }
-      set {
-        classId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "uuid" field.</summary>
-    public const int UuidFieldNumber = 4;
-    private string uuid_ = "";
-    /// <summary>
-    /// the unique id for this message
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Uuid {
-      get { return uuid_; }
-      set {
-        uuid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 5;
-    private global::PassKit.Grpc.MessageStatus status_ = global::PassKit.Grpc.MessageStatus.Created;
-    /// <summary>
-    /// the status of the message.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::PassKit.Grpc.MessageStatus Status {
-      get { return status_; }
-      set {
-        status_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "warning" field.</summary>
-    public const int WarningFieldNumber = 6;
-    private string warning_ = "";
-    /// <summary>
-    /// warning of any errors that may have occurred.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Warning {
-      get { return warning_; }
-      set {
-        warning_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "imageId" field.</summary>
-    public const int ImageIdFieldNumber = 7;
-    private uint imageId_;
-    /// <summary>
-    /// Optional Image ID; for the Main Image that will be shown in Google Pay (Google Pay only; no image is shown for Apple Wallet).
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint ImageId {
-      get { return imageId_; }
-      set {
-        imageId_ = value;
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "title" field.</summary>
-    public const int TitleFieldNumber = 8;
+    public const int TitleFieldNumber = 2;
     private string title_ = "";
     /// <summary>
-    /// Title (summary) of the message.
+    /// The message title. This is used as a label in iOS and as the title in Google Pay.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -235,12 +163,13 @@ namespace PassKit.Grpc {
     }
 
     /// <summary>Field number for the "localizedTitle" field.</summary>
-    public const int LocalizedTitleFieldNumber = 9;
+    public const int LocalizedTitleFieldNumber = 3;
     private global::PassKit.Grpc.LocalizedString localizedTitle_;
     /// <summary>
-    /// Localized title of the message.
+    /// Localized message title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTitle {
       get { return localizedTitle_; }
       set {
@@ -248,138 +177,148 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 10;
-    private string content_ = "";
+    /// <summary>Field number for the "plainTextContent" field.</summary>
+    public const int PlainTextContentFieldNumber = 4;
+    private string plainTextContent_ = "";
     /// <summary>
-    /// Content of the message (finer details).
+    /// Plain text content cannot contain hyperlinks. Google Pay messages cannot have links, use URLs instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Content {
-      get { return content_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PlainTextContent {
+      get { return plainTextContent_; }
       set {
-        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        plainTextContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "localizedContent" field.</summary>
-    public const int LocalizedContentFieldNumber = 11;
-    private global::PassKit.Grpc.LocalizedString localizedContent_;
+    /// <summary>Field number for the "localizedPlainTextContent" field.</summary>
+    public const int LocalizedPlainTextContentFieldNumber = 5;
+    private global::PassKit.Grpc.LocalizedString localizedPlainTextContent_;
     /// <summary>
-    /// Localized content of the message.
+    /// Localized plain text content.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::PassKit.Grpc.LocalizedString LocalizedContent {
-      get { return localizedContent_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.LocalizedString LocalizedPlainTextContent {
+      get { return localizedPlainTextContent_; }
       set {
-        localizedContent_ = value;
+        localizedPlainTextContent_ = value;
       }
     }
 
-    /// <summary>Field number for the "startDate" field.</summary>
-    public const int StartDateFieldNumber = 12;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp startDate_;
+    /// <summary>Field number for the "richTextContent" field.</summary>
+    public const int RichTextContentFieldNumber = 6;
+    private string richTextContent_ = "";
     /// <summary>
-    /// Start date indicates when the message is shown on the pass.
+    /// Rich text content that can contain hyperlinks. No other markup is accepted. Links will only function on iOS devices. Ignored for Google Pay.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp StartDate {
-      get { return startDate_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RichTextContent {
+      get { return richTextContent_; }
       set {
-        startDate_ = value;
+        richTextContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "endDate" field.</summary>
-    public const int EndDateFieldNumber = 13;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp endDate_;
+    /// <summary>Field number for the "localizedRichTextContent" field.</summary>
+    public const int LocalizedRichTextContentFieldNumber = 7;
+    private global::PassKit.Grpc.LocalizedString localizedRichTextContent_;
     /// <summary>
-    /// End date indicates when the message is removed from the pass.
+    /// Localized rich text content.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp EndDate {
-      get { return endDate_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.LocalizedString LocalizedRichTextContent {
+      get { return localizedRichTextContent_; }
       set {
-        endDate_ = value;
+        localizedRichTextContent_ = value;
       }
     }
 
-    /// <summary>Field number for the "filter" field.</summary>
-    public const int FilterFieldNumber = 14;
-    private global::PassKit.Grpc.Filter filter_;
+    /// <summary>Field number for the "urls" field.</summary>
+    public const int UrlsFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Url> _repeated_urls_codec
+        = pb::FieldCodec.ForMessage(66, global::PassKit.Grpc.Url.Parser);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Url> urls_ = new pbc::RepeatedField<global::PassKit.Grpc.Url>();
     /// <summary>
-    /// optional filter used determine which members qualify for this message.
+    /// Urls will be prioritized over existing urls on the Google Pay Pass. They are ignored for Apple Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::PassKit.Grpc.Filter Filter {
-      get { return filter_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Url> Urls {
+      get { return urls_; }
+    }
+
+    /// <summary>Field number for the "images" field.</summary>
+    public const int ImagesFieldNumber = 9;
+    private global::PassKit.Grpc.ImageIds images_;
+    /// <summary>
+    /// Images to display for the duration of the message. For Google Pay, only a 'message' type image will be used. For Apple Wallet, any of strip, eventStrip, background, logo, thumbnail and footer can be used, depending on the underlying pass type.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.ImageIds Images {
+      get { return images_; }
       set {
-        filter_ = value;
+        images_ = value;
       }
     }
 
-    /// <summary>Field number for the "recordsMatchingSegment" field.</summary>
-    public const int RecordsMatchingSegmentFieldNumber = 15;
-    private uint recordsMatchingSegment_;
+    /// <summary>Field number for the "priority" field.</summary>
+    public const int PriorityFieldNumber = 10;
+    private uint priority_;
     /// <summary>
-    /// number of records this message will be sent to.
+    /// Priority the lower the priority, the lower down the message will be rendered when there are multiple messages. Defaults to a value of 10.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint RecordsMatchingSegment {
-      get { return recordsMatchingSegment_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Priority {
+      get { return priority_; }
       set {
-        recordsMatchingSegment_ = value;
+        priority_ = value;
       }
     }
 
-    /// <summary>Field number for the "recordsSuccessfullyUpdate" field.</summary>
-    public const int RecordsSuccessfullyUpdateFieldNumber = 16;
-    private uint recordsSuccessfullyUpdate_;
+    /// <summary>Field number for the "displayFrom" field.</summary>
+    public const int DisplayFromFieldNumber = 11;
+    private string displayFrom_ = "";
     /// <summary>
-    /// number of records updated with this message.
+    /// The date and time to display the message. The value must be in RFC3339 format. If omitted, the current timestamp will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint RecordsSuccessfullyUpdate {
-      get { return recordsSuccessfullyUpdate_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DisplayFrom {
+      get { return displayFrom_; }
       set {
-        recordsSuccessfullyUpdate_ = value;
+        displayFrom_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "recordsFailedToUpdate" field.</summary>
-    public const int RecordsFailedToUpdateFieldNumber = 17;
-    private uint recordsFailedToUpdate_;
+    /// <summary>Field number for the "displayUntil" field.</summary>
+    public const int DisplayUntilFieldNumber = 12;
+    private string displayUntil_ = "";
     /// <summary>
-    /// number of records that failed updated with this message.
+    /// The date and time to remove the message. The value must be in RFC3339 format. If omitted, the message will be displayed indefinitely until it is cancelled.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint RecordsFailedToUpdate {
-      get { return recordsFailedToUpdate_; }
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DisplayUntil {
+      get { return displayUntil_; }
       set {
-        recordsFailedToUpdate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "created" field.</summary>
-    public const int CreatedFieldNumber = 18;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
-    /// <summary>
-    /// The date the message was created in the PassKit system.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
-      get { return created_; }
-      set {
-        created_ = value;
+        displayUntil_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Message);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Message other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -387,48 +326,37 @@ namespace PassKit.Grpc {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Protocol != other.Protocol) return false;
-      if (CompanyId != other.CompanyId) return false;
-      if (ClassId != other.ClassId) return false;
-      if (Uuid != other.Uuid) return false;
-      if (Status != other.Status) return false;
-      if (Warning != other.Warning) return false;
-      if (ImageId != other.ImageId) return false;
+      if (Id != other.Id) return false;
       if (Title != other.Title) return false;
       if (!object.Equals(LocalizedTitle, other.LocalizedTitle)) return false;
-      if (Content != other.Content) return false;
-      if (!object.Equals(LocalizedContent, other.LocalizedContent)) return false;
-      if (!object.Equals(StartDate, other.StartDate)) return false;
-      if (!object.Equals(EndDate, other.EndDate)) return false;
-      if (!object.Equals(Filter, other.Filter)) return false;
-      if (RecordsMatchingSegment != other.RecordsMatchingSegment) return false;
-      if (RecordsSuccessfullyUpdate != other.RecordsSuccessfullyUpdate) return false;
-      if (RecordsFailedToUpdate != other.RecordsFailedToUpdate) return false;
-      if (!object.Equals(Created, other.Created)) return false;
+      if (PlainTextContent != other.PlainTextContent) return false;
+      if (!object.Equals(LocalizedPlainTextContent, other.LocalizedPlainTextContent)) return false;
+      if (RichTextContent != other.RichTextContent) return false;
+      if (!object.Equals(LocalizedRichTextContent, other.LocalizedRichTextContent)) return false;
+      if(!urls_.Equals(other.urls_)) return false;
+      if (!object.Equals(Images, other.Images)) return false;
+      if (Priority != other.Priority) return false;
+      if (DisplayFrom != other.DisplayFrom) return false;
+      if (DisplayUntil != other.DisplayUntil) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) hash ^= Protocol.GetHashCode();
-      if (CompanyId.Length != 0) hash ^= CompanyId.GetHashCode();
-      if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
-      if (Uuid.Length != 0) hash ^= Uuid.GetHashCode();
-      if (Status != global::PassKit.Grpc.MessageStatus.Created) hash ^= Status.GetHashCode();
-      if (Warning.Length != 0) hash ^= Warning.GetHashCode();
-      if (ImageId != 0) hash ^= ImageId.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (localizedTitle_ != null) hash ^= LocalizedTitle.GetHashCode();
-      if (Content.Length != 0) hash ^= Content.GetHashCode();
-      if (localizedContent_ != null) hash ^= LocalizedContent.GetHashCode();
-      if (startDate_ != null) hash ^= StartDate.GetHashCode();
-      if (endDate_ != null) hash ^= EndDate.GetHashCode();
-      if (filter_ != null) hash ^= Filter.GetHashCode();
-      if (RecordsMatchingSegment != 0) hash ^= RecordsMatchingSegment.GetHashCode();
-      if (RecordsSuccessfullyUpdate != 0) hash ^= RecordsSuccessfullyUpdate.GetHashCode();
-      if (RecordsFailedToUpdate != 0) hash ^= RecordsFailedToUpdate.GetHashCode();
-      if (created_ != null) hash ^= Created.GetHashCode();
+      if (PlainTextContent.Length != 0) hash ^= PlainTextContent.GetHashCode();
+      if (localizedPlainTextContent_ != null) hash ^= LocalizedPlainTextContent.GetHashCode();
+      if (RichTextContent.Length != 0) hash ^= RichTextContent.GetHashCode();
+      if (localizedRichTextContent_ != null) hash ^= LocalizedRichTextContent.GetHashCode();
+      hash ^= urls_.GetHashCode();
+      if (images_ != null) hash ^= Images.GetHashCode();
+      if (Priority != 0) hash ^= Priority.GetHashCode();
+      if (DisplayFrom.Length != 0) hash ^= DisplayFrom.GetHashCode();
+      if (DisplayUntil.Length != 0) hash ^= DisplayUntil.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -436,86 +364,61 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Protocol);
-      }
-      if (CompanyId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CompanyId);
-      }
-      if (ClassId.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ClassId);
-      }
-      if (Uuid.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Uuid);
-      }
-      if (Status != global::PassKit.Grpc.MessageStatus.Created) {
-        output.WriteRawTag(40);
-        output.WriteEnum((int) Status);
-      }
-      if (Warning.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Warning);
-      }
-      if (ImageId != 0) {
-        output.WriteRawTag(56);
-        output.WriteUInt32(ImageId);
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
       }
       if (Title.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(18);
         output.WriteString(Title);
       }
       if (localizedTitle_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(26);
         output.WriteMessage(LocalizedTitle);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(82);
-        output.WriteString(Content);
+      if (PlainTextContent.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(PlainTextContent);
       }
-      if (localizedContent_ != null) {
+      if (localizedPlainTextContent_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(LocalizedPlainTextContent);
+      }
+      if (RichTextContent.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(RichTextContent);
+      }
+      if (localizedRichTextContent_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(LocalizedRichTextContent);
+      }
+      urls_.WriteTo(output, _repeated_urls_codec);
+      if (images_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Images);
+      }
+      if (Priority != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(Priority);
+      }
+      if (DisplayFrom.Length != 0) {
         output.WriteRawTag(90);
-        output.WriteMessage(LocalizedContent);
+        output.WriteString(DisplayFrom);
       }
-      if (startDate_ != null) {
+      if (DisplayUntil.Length != 0) {
         output.WriteRawTag(98);
-        output.WriteMessage(StartDate);
-      }
-      if (endDate_ != null) {
-        output.WriteRawTag(106);
-        output.WriteMessage(EndDate);
-      }
-      if (filter_ != null) {
-        output.WriteRawTag(114);
-        output.WriteMessage(Filter);
-      }
-      if (RecordsMatchingSegment != 0) {
-        output.WriteRawTag(120);
-        output.WriteUInt32(RecordsMatchingSegment);
-      }
-      if (RecordsSuccessfullyUpdate != 0) {
-        output.WriteRawTag(128, 1);
-        output.WriteUInt32(RecordsSuccessfullyUpdate);
-      }
-      if (RecordsFailedToUpdate != 0) {
-        output.WriteRawTag(136, 1);
-        output.WriteUInt32(RecordsFailedToUpdate);
-      }
-      if (created_ != null) {
-        output.WriteRawTag(146, 1);
-        output.WriteMessage(Created);
+        output.WriteString(DisplayUntil);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -525,78 +428,52 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Protocol);
-      }
-      if (CompanyId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CompanyId);
-      }
-      if (ClassId.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ClassId);
-      }
-      if (Uuid.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Uuid);
-      }
-      if (Status != global::PassKit.Grpc.MessageStatus.Created) {
-        output.WriteRawTag(40);
-        output.WriteEnum((int) Status);
-      }
-      if (Warning.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Warning);
-      }
-      if (ImageId != 0) {
-        output.WriteRawTag(56);
-        output.WriteUInt32(ImageId);
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
       }
       if (Title.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(18);
         output.WriteString(Title);
       }
       if (localizedTitle_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(26);
         output.WriteMessage(LocalizedTitle);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(82);
-        output.WriteString(Content);
+      if (PlainTextContent.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(PlainTextContent);
       }
-      if (localizedContent_ != null) {
+      if (localizedPlainTextContent_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(LocalizedPlainTextContent);
+      }
+      if (RichTextContent.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(RichTextContent);
+      }
+      if (localizedRichTextContent_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(LocalizedRichTextContent);
+      }
+      urls_.WriteTo(ref output, _repeated_urls_codec);
+      if (images_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Images);
+      }
+      if (Priority != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(Priority);
+      }
+      if (DisplayFrom.Length != 0) {
         output.WriteRawTag(90);
-        output.WriteMessage(LocalizedContent);
+        output.WriteString(DisplayFrom);
       }
-      if (startDate_ != null) {
+      if (DisplayUntil.Length != 0) {
         output.WriteRawTag(98);
-        output.WriteMessage(StartDate);
-      }
-      if (endDate_ != null) {
-        output.WriteRawTag(106);
-        output.WriteMessage(EndDate);
-      }
-      if (filter_ != null) {
-        output.WriteRawTag(114);
-        output.WriteMessage(Filter);
-      }
-      if (RecordsMatchingSegment != 0) {
-        output.WriteRawTag(120);
-        output.WriteUInt32(RecordsMatchingSegment);
-      }
-      if (RecordsSuccessfullyUpdate != 0) {
-        output.WriteRawTag(128, 1);
-        output.WriteUInt32(RecordsSuccessfullyUpdate);
-      }
-      if (RecordsFailedToUpdate != 0) {
-        output.WriteRawTag(136, 1);
-        output.WriteUInt32(RecordsFailedToUpdate);
-      }
-      if (created_ != null) {
-        output.WriteRawTag(146, 1);
-        output.WriteMessage(Created);
+        output.WriteString(DisplayUntil);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -605,28 +482,11 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Protocol);
-      }
-      if (CompanyId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyId);
-      }
-      if (ClassId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassId);
-      }
-      if (Uuid.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Uuid);
-      }
-      if (Status != global::PassKit.Grpc.MessageStatus.Created) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
-      }
-      if (Warning.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Warning);
-      }
-      if (ImageId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ImageId);
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
@@ -634,32 +494,30 @@ namespace PassKit.Grpc {
       if (localizedTitle_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedTitle);
       }
-      if (Content.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
+      if (PlainTextContent.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlainTextContent);
       }
-      if (localizedContent_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedContent);
+      if (localizedPlainTextContent_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedPlainTextContent);
       }
-      if (startDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartDate);
+      if (RichTextContent.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RichTextContent);
       }
-      if (endDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndDate);
+      if (localizedRichTextContent_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedRichTextContent);
       }
-      if (filter_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filter);
+      size += urls_.CalculateSize(_repeated_urls_codec);
+      if (images_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Images);
       }
-      if (RecordsMatchingSegment != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RecordsMatchingSegment);
+      if (Priority != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
       }
-      if (RecordsSuccessfullyUpdate != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(RecordsSuccessfullyUpdate);
+      if (DisplayFrom.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DisplayFrom);
       }
-      if (RecordsFailedToUpdate != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(RecordsFailedToUpdate);
-      }
-      if (created_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Created);
+      if (DisplayUntil.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DisplayUntil);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -668,30 +526,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Message other) {
       if (other == null) {
         return;
       }
-      if (other.Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
-        Protocol = other.Protocol;
-      }
-      if (other.CompanyId.Length != 0) {
-        CompanyId = other.CompanyId;
-      }
-      if (other.ClassId.Length != 0) {
-        ClassId = other.ClassId;
-      }
-      if (other.Uuid.Length != 0) {
-        Uuid = other.Uuid;
-      }
-      if (other.Status != global::PassKit.Grpc.MessageStatus.Created) {
-        Status = other.Status;
-      }
-      if (other.Warning.Length != 0) {
-        Warning = other.Warning;
-      }
-      if (other.ImageId != 0) {
-        ImageId = other.ImageId;
+      if (other.Id.Length != 0) {
+        Id = other.Id;
       }
       if (other.Title.Length != 0) {
         Title = other.Title;
@@ -702,52 +543,1588 @@ namespace PassKit.Grpc {
         }
         LocalizedTitle.MergeFrom(other.LocalizedTitle);
       }
-      if (other.Content.Length != 0) {
-        Content = other.Content;
+      if (other.PlainTextContent.Length != 0) {
+        PlainTextContent = other.PlainTextContent;
       }
-      if (other.localizedContent_ != null) {
-        if (localizedContent_ == null) {
-          LocalizedContent = new global::PassKit.Grpc.LocalizedString();
+      if (other.localizedPlainTextContent_ != null) {
+        if (localizedPlainTextContent_ == null) {
+          LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
         }
-        LocalizedContent.MergeFrom(other.LocalizedContent);
+        LocalizedPlainTextContent.MergeFrom(other.LocalizedPlainTextContent);
       }
-      if (other.startDate_ != null) {
-        if (startDate_ == null) {
-          StartDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      if (other.RichTextContent.Length != 0) {
+        RichTextContent = other.RichTextContent;
+      }
+      if (other.localizedRichTextContent_ != null) {
+        if (localizedRichTextContent_ == null) {
+          LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
         }
-        StartDate.MergeFrom(other.StartDate);
+        LocalizedRichTextContent.MergeFrom(other.LocalizedRichTextContent);
       }
-      if (other.endDate_ != null) {
-        if (endDate_ == null) {
-          EndDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+      urls_.Add(other.urls_);
+      if (other.images_ != null) {
+        if (images_ == null) {
+          Images = new global::PassKit.Grpc.ImageIds();
         }
-        EndDate.MergeFrom(other.EndDate);
+        Images.MergeFrom(other.Images);
       }
-      if (other.filter_ != null) {
-        if (filter_ == null) {
-          Filter = new global::PassKit.Grpc.Filter();
-        }
-        Filter.MergeFrom(other.Filter);
+      if (other.Priority != 0) {
+        Priority = other.Priority;
       }
-      if (other.RecordsMatchingSegment != 0) {
-        RecordsMatchingSegment = other.RecordsMatchingSegment;
+      if (other.DisplayFrom.Length != 0) {
+        DisplayFrom = other.DisplayFrom;
       }
-      if (other.RecordsSuccessfullyUpdate != 0) {
-        RecordsSuccessfullyUpdate = other.RecordsSuccessfullyUpdate;
-      }
-      if (other.RecordsFailedToUpdate != 0) {
-        RecordsFailedToUpdate = other.RecordsFailedToUpdate;
-      }
-      if (other.created_ != null) {
-        if (created_ == null) {
-          Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        Created.MergeFrom(other.Created);
+      if (other.DisplayUntil.Length != 0) {
+        DisplayUntil = other.DisplayUntil;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Title = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (localizedTitle_ == null) {
+              LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedTitle);
+            break;
+          }
+          case 34: {
+            PlainTextContent = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (localizedPlainTextContent_ == null) {
+              LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedPlainTextContent);
+            break;
+          }
+          case 50: {
+            RichTextContent = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (localizedRichTextContent_ == null) {
+              LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedRichTextContent);
+            break;
+          }
+          case 66: {
+            urls_.AddEntriesFrom(input, _repeated_urls_codec);
+            break;
+          }
+          case 74: {
+            if (images_ == null) {
+              Images = new global::PassKit.Grpc.ImageIds();
+            }
+            input.ReadMessage(Images);
+            break;
+          }
+          case 80: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 90: {
+            DisplayFrom = input.ReadString();
+            break;
+          }
+          case 98: {
+            DisplayUntil = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Title = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (localizedTitle_ == null) {
+              LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedTitle);
+            break;
+          }
+          case 34: {
+            PlainTextContent = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (localizedPlainTextContent_ == null) {
+              LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedPlainTextContent);
+            break;
+          }
+          case 50: {
+            RichTextContent = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (localizedRichTextContent_ == null) {
+              LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedRichTextContent);
+            break;
+          }
+          case 66: {
+            urls_.AddEntriesFrom(ref input, _repeated_urls_codec);
+            break;
+          }
+          case 74: {
+            if (images_ == null) {
+              Images = new global::PassKit.Grpc.ImageIds();
+            }
+            input.ReadMessage(Images);
+            break;
+          }
+          case 80: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 90: {
+            DisplayFrom = input.ReadString();
+            break;
+          }
+          case 98: {
+            DisplayUntil = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// If no parameters are provided, all messages will be returned
+  /// </summary>
+  public sealed partial class GetMessagesForProtocolRequest : pb::IMessage<GetMessagesForProtocolRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMessagesForProtocolRequest> _parser = new pb::MessageParser<GetMessagesForProtocolRequest>(() => new GetMessagesForProtocolRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMessagesForProtocolRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessagesForProtocolRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessagesForProtocolRequest(GetMessagesForProtocolRequest other) : this() {
+      protocol_ = other.protocol_;
+      classId_ = other.classId_;
+      pagination_ = other.pagination_ != null ? other.pagination_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessagesForProtocolRequest Clone() {
+      return new GetMessagesForProtocolRequest(this);
+    }
+
+    /// <summary>Field number for the "protocol" field.</summary>
+    public const int ProtocolFieldNumber = 1;
+    private string protocol_ = "";
+    /// <summary>
+    /// Optional protocol.  If no protocol is provided, all messages for the company that meet the pagination criteria will be returned.
+    /// @tag "validateGeneric:required_with:ClassId"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Protocol {
+      get { return protocol_; }
+      set {
+        protocol_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "classId" field.</summary>
+    public const int ClassIdFieldNumber = 2;
+    private string classId_ = "";
+    /// <summary>
+    /// Optional class id must be provided if protocol is not empty.
+    /// @tag "validateGeneric:required_with:Protocol"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClassId {
+      get { return classId_; }
+      set {
+        classId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "pagination" field.</summary>
+    public const int PaginationFieldNumber = 3;
+    private global::PassKit.Grpc.Pagination pagination_;
+    /// <summary>
+    /// Optional pagination criteria. If not provided, then all messages for the class will be returned. Ignored if protocol not provided.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Pagination Pagination {
+      get { return pagination_; }
+      set {
+        pagination_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMessagesForProtocolRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMessagesForProtocolRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Protocol != other.Protocol) return false;
+      if (ClassId != other.ClassId) return false;
+      if (!object.Equals(Pagination, other.Pagination)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Protocol.Length != 0) hash ^= Protocol.GetHashCode();
+      if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
+      if (pagination_ != null) hash ^= Pagination.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Protocol.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Protocol);
+      }
+      if (ClassId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (pagination_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Pagination);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Protocol.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Protocol);
+      }
+      if (ClassId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (pagination_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Pagination);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Protocol.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Protocol);
+      }
+      if (ClassId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassId);
+      }
+      if (pagination_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pagination);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMessagesForProtocolRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Protocol.Length != 0) {
+        Protocol = other.Protocol;
+      }
+      if (other.ClassId.Length != 0) {
+        ClassId = other.ClassId;
+      }
+      if (other.pagination_ != null) {
+        if (pagination_ == null) {
+          Pagination = new global::PassKit.Grpc.Pagination();
+        }
+        Pagination.MergeFrom(other.Pagination);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Protocol = input.ReadString();
+            break;
+          }
+          case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (pagination_ == null) {
+              Pagination = new global::PassKit.Grpc.Pagination();
+            }
+            input.ReadMessage(Pagination);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Protocol = input.ReadString();
+            break;
+          }
+          case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (pagination_ == null) {
+              Pagination = new global::PassKit.Grpc.Pagination();
+            }
+            input.ReadMessage(Pagination);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetMessageResponse : pb::IMessage<GetMessageResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMessageResponse> _parser = new pb::MessageParser<GetMessageResponse>(() => new GetMessageResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMessageResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageResponse(GetMessageResponse other) : this() {
+      message_ = other.message_ != null ? other.message_.Clone() : null;
+      status_ = other.status_;
+      recipients_ = other.recipients_;
+      distributedAt_ = other.distributedAt_ != null ? other.distributedAt_.Clone() : null;
+      withdrawnAt_ = other.withdrawnAt_ != null ? other.withdrawnAt_.Clone() : null;
+      createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
+      updatedAt_ = other.updatedAt_ != null ? other.updatedAt_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageResponse Clone() {
+      return new GetMessageResponse(this);
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 1;
+    private global::PassKit.Grpc.Message message_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Message Message {
+      get { return message_; }
+      set {
+        message_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 2;
+    private global::PassKit.Grpc.MessageStatus status_ = global::PassKit.Grpc.MessageStatus.DoNotUse;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.MessageStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recipients" field.</summary>
+    public const int RecipientsFieldNumber = 3;
+    private uint recipients_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Recipients {
+      get { return recipients_; }
+      set {
+        recipients_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "distributedAt" field.</summary>
+    public const int DistributedAtFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp distributedAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp DistributedAt {
+      get { return distributedAt_; }
+      set {
+        distributedAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "withdrawnAt" field.</summary>
+    public const int WithdrawnAtFieldNumber = 5;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp withdrawnAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp WithdrawnAt {
+      get { return withdrawnAt_; }
+      set {
+        withdrawnAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "createdAt" field.</summary>
+    public const int CreatedAtFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
+      get { return createdAt_; }
+      set {
+        createdAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "updatedAt" field.</summary>
+    public const int UpdatedAtFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp updatedAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp UpdatedAt {
+      get { return updatedAt_; }
+      set {
+        updatedAt_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMessageResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMessageResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Message, other.Message)) return false;
+      if (Status != other.Status) return false;
+      if (Recipients != other.Recipients) return false;
+      if (!object.Equals(DistributedAt, other.DistributedAt)) return false;
+      if (!object.Equals(WithdrawnAt, other.WithdrawnAt)) return false;
+      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
+      if (!object.Equals(UpdatedAt, other.UpdatedAt)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (message_ != null) hash ^= Message.GetHashCode();
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) hash ^= Status.GetHashCode();
+      if (Recipients != 0) hash ^= Recipients.GetHashCode();
+      if (distributedAt_ != null) hash ^= DistributedAt.GetHashCode();
+      if (withdrawnAt_ != null) hash ^= WithdrawnAt.GetHashCode();
+      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
+      if (updatedAt_ != null) hash ^= UpdatedAt.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (message_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Message);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Status);
+      }
+      if (Recipients != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Recipients);
+      }
+      if (distributedAt_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DistributedAt);
+      }
+      if (withdrawnAt_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(WithdrawnAt);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreatedAt);
+      }
+      if (updatedAt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(UpdatedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (message_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Message);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Status);
+      }
+      if (Recipients != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Recipients);
+      }
+      if (distributedAt_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DistributedAt);
+      }
+      if (withdrawnAt_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(WithdrawnAt);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreatedAt);
+      }
+      if (updatedAt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(UpdatedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (message_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Message);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (Recipients != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Recipients);
+      }
+      if (distributedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DistributedAt);
+      }
+      if (withdrawnAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WithdrawnAt);
+      }
+      if (createdAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
+      }
+      if (updatedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdatedAt);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMessageResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.message_ != null) {
+        if (message_ == null) {
+          Message = new global::PassKit.Grpc.Message();
+        }
+        Message.MergeFrom(other.Message);
+      }
+      if (other.Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        Status = other.Status;
+      }
+      if (other.Recipients != 0) {
+        Recipients = other.Recipients;
+      }
+      if (other.distributedAt_ != null) {
+        if (distributedAt_ == null) {
+          DistributedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        DistributedAt.MergeFrom(other.DistributedAt);
+      }
+      if (other.withdrawnAt_ != null) {
+        if (withdrawnAt_ == null) {
+          WithdrawnAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        WithdrawnAt.MergeFrom(other.WithdrawnAt);
+      }
+      if (other.createdAt_ != null) {
+        if (createdAt_ == null) {
+          CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedAt.MergeFrom(other.CreatedAt);
+      }
+      if (other.updatedAt_ != null) {
+        if (updatedAt_ == null) {
+          UpdatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        UpdatedAt.MergeFrom(other.UpdatedAt);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (message_ == null) {
+              Message = new global::PassKit.Grpc.Message();
+            }
+            input.ReadMessage(Message);
+            break;
+          }
+          case 16: {
+            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            Recipients = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            if (distributedAt_ == null) {
+              DistributedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DistributedAt);
+            break;
+          }
+          case 42: {
+            if (withdrawnAt_ == null) {
+              WithdrawnAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(WithdrawnAt);
+            break;
+          }
+          case 50: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 58: {
+            if (updatedAt_ == null) {
+              UpdatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdatedAt);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (message_ == null) {
+              Message = new global::PassKit.Grpc.Message();
+            }
+            input.ReadMessage(Message);
+            break;
+          }
+          case 16: {
+            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            Recipients = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            if (distributedAt_ == null) {
+              DistributedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DistributedAt);
+            break;
+          }
+          case 42: {
+            if (withdrawnAt_ == null) {
+              WithdrawnAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(WithdrawnAt);
+            break;
+          }
+          case 50: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 58: {
+            if (updatedAt_ == null) {
+              UpdatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdatedAt);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetMessageHistoryResponse : pb::IMessage<GetMessageHistoryResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMessageHistoryResponse> _parser = new pb::MessageParser<GetMessageHistoryResponse>(() => new GetMessageHistoryResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMessageHistoryResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageHistoryResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageHistoryResponse(GetMessageHistoryResponse other) : this() {
+      messages_ = other.messages_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMessageHistoryResponse Clone() {
+      return new GetMessageHistoryResponse(this);
+    }
+
+    /// <summary>Field number for the "messages" field.</summary>
+    public const int MessagesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.GetMessageResponse> _repeated_messages_codec
+        = pb::FieldCodec.ForMessage(10, global::PassKit.Grpc.GetMessageResponse.Parser);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.GetMessageResponse> messages_ = new pbc::RepeatedField<global::PassKit.Grpc.GetMessageResponse>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.GetMessageResponse> Messages {
+      get { return messages_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMessageHistoryResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMessageHistoryResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!messages_.Equals(other.messages_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= messages_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      messages_.WriteTo(output, _repeated_messages_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      messages_.WriteTo(ref output, _repeated_messages_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += messages_.CalculateSize(_repeated_messages_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMessageHistoryResponse other) {
+      if (other == null) {
+        return;
+      }
+      messages_.Add(other.messages_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            messages_.AddEntriesFrom(input, _repeated_messages_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            messages_.AddEntriesFrom(ref input, _repeated_messages_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SendMessageRequest : pb::IMessage<SendMessageRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SendMessageRequest> _parser = new pb::MessageParser<SendMessageRequest>(() => new SendMessageRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SendMessageRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageRequest(SendMessageRequest other) : this() {
+      messageId_ = other.messageId_;
+      switch (other.TargetCase) {
+        case TargetOneofCase.PassIds:
+          PassIds = other.PassIds.Clone();
+          break;
+        case TargetOneofCase.Protocol:
+          Protocol = other.Protocol.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageRequest Clone() {
+      return new SendMessageRequest(this);
+    }
+
+    /// <summary>Field number for the "messageId" field.</summary>
+    public const int MessageIdFieldNumber = 1;
+    private string messageId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string MessageId {
+      get { return messageId_; }
+      set {
+        messageId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "passIds" field.</summary>
+    public const int PassIdsFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.PassIds PassIds {
+      get { return targetCase_ == TargetOneofCase.PassIds ? (global::PassKit.Grpc.PassIds) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.PassIds;
+      }
+    }
+
+    /// <summary>Field number for the "protocol" field.</summary>
+    public const int ProtocolFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Protocol Protocol {
+      get { return targetCase_ == TargetOneofCase.Protocol ? (global::PassKit.Grpc.Protocol) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.Protocol;
+      }
+    }
+
+    private object target_;
+    /// <summary>Enum of possible cases for the "target" oneof.</summary>
+    public enum TargetOneofCase {
+      None = 0,
+      PassIds = 2,
+      Protocol = 3,
+    }
+    private TargetOneofCase targetCase_ = TargetOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TargetOneofCase TargetCase {
+      get { return targetCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTarget() {
+      targetCase_ = TargetOneofCase.None;
+      target_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SendMessageRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SendMessageRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MessageId != other.MessageId) return false;
+      if (!object.Equals(PassIds, other.PassIds)) return false;
+      if (!object.Equals(Protocol, other.Protocol)) return false;
+      if (TargetCase != other.TargetCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MessageId.Length != 0) hash ^= MessageId.GetHashCode();
+      if (targetCase_ == TargetOneofCase.PassIds) hash ^= PassIds.GetHashCode();
+      if (targetCase_ == TargetOneofCase.Protocol) hash ^= Protocol.GetHashCode();
+      hash ^= (int) targetCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (MessageId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(MessageId);
+      }
+      if (targetCase_ == TargetOneofCase.PassIds) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PassIds);
+      }
+      if (targetCase_ == TargetOneofCase.Protocol) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Protocol);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (MessageId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(MessageId);
+      }
+      if (targetCase_ == TargetOneofCase.PassIds) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PassIds);
+      }
+      if (targetCase_ == TargetOneofCase.Protocol) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Protocol);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (MessageId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MessageId);
+      }
+      if (targetCase_ == TargetOneofCase.PassIds) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PassIds);
+      }
+      if (targetCase_ == TargetOneofCase.Protocol) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Protocol);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SendMessageRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MessageId.Length != 0) {
+        MessageId = other.MessageId;
+      }
+      switch (other.TargetCase) {
+        case TargetOneofCase.PassIds:
+          if (PassIds == null) {
+            PassIds = new global::PassKit.Grpc.PassIds();
+          }
+          PassIds.MergeFrom(other.PassIds);
+          break;
+        case TargetOneofCase.Protocol:
+          if (Protocol == null) {
+            Protocol = new global::PassKit.Grpc.Protocol();
+          }
+          Protocol.MergeFrom(other.Protocol);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            MessageId = input.ReadString();
+            break;
+          }
+          case 18: {
+            global::PassKit.Grpc.PassIds subBuilder = new global::PassKit.Grpc.PassIds();
+            if (targetCase_ == TargetOneofCase.PassIds) {
+              subBuilder.MergeFrom(PassIds);
+            }
+            input.ReadMessage(subBuilder);
+            PassIds = subBuilder;
+            break;
+          }
+          case 26: {
+            global::PassKit.Grpc.Protocol subBuilder = new global::PassKit.Grpc.Protocol();
+            if (targetCase_ == TargetOneofCase.Protocol) {
+              subBuilder.MergeFrom(Protocol);
+            }
+            input.ReadMessage(subBuilder);
+            Protocol = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            MessageId = input.ReadString();
+            break;
+          }
+          case 18: {
+            global::PassKit.Grpc.PassIds subBuilder = new global::PassKit.Grpc.PassIds();
+            if (targetCase_ == TargetOneofCase.PassIds) {
+              subBuilder.MergeFrom(PassIds);
+            }
+            input.ReadMessage(subBuilder);
+            PassIds = subBuilder;
+            break;
+          }
+          case 26: {
+            global::PassKit.Grpc.Protocol subBuilder = new global::PassKit.Grpc.Protocol();
+            if (targetCase_ == TargetOneofCase.Protocol) {
+              subBuilder.MergeFrom(Protocol);
+            }
+            input.ReadMessage(subBuilder);
+            Protocol = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SendMessageResponse : pb::IMessage<SendMessageResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SendMessageResponse> _parser = new pb::MessageParser<SendMessageResponse>(() => new SendMessageResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SendMessageResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.MessageReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageResponse(SendMessageResponse other) : this() {
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SendMessageResponse Clone() {
+      return new SendMessageResponse(this);
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 1;
+    private int count_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Count {
+      get { return count_; }
+      set {
+        count_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SendMessageResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SendMessageResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Count != 0) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Count != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Count != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Count != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SendMessageResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Count != 0) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -759,93 +2136,7 @@ namespace PassKit.Grpc {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Protocol = (global::PassKit.Grpc.PassProtocol) input.ReadEnum();
-            break;
-          }
-          case 18: {
-            CompanyId = input.ReadString();
-            break;
-          }
-          case 26: {
-            ClassId = input.ReadString();
-            break;
-          }
-          case 34: {
-            Uuid = input.ReadString();
-            break;
-          }
-          case 40: {
-            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
-            break;
-          }
-          case 50: {
-            Warning = input.ReadString();
-            break;
-          }
-          case 56: {
-            ImageId = input.ReadUInt32();
-            break;
-          }
-          case 66: {
-            Title = input.ReadString();
-            break;
-          }
-          case 74: {
-            if (localizedTitle_ == null) {
-              LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedTitle);
-            break;
-          }
-          case 82: {
-            Content = input.ReadString();
-            break;
-          }
-          case 90: {
-            if (localizedContent_ == null) {
-              LocalizedContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedContent);
-            break;
-          }
-          case 98: {
-            if (startDate_ == null) {
-              StartDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartDate);
-            break;
-          }
-          case 106: {
-            if (endDate_ == null) {
-              EndDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndDate);
-            break;
-          }
-          case 114: {
-            if (filter_ == null) {
-              Filter = new global::PassKit.Grpc.Filter();
-            }
-            input.ReadMessage(Filter);
-            break;
-          }
-          case 120: {
-            RecordsMatchingSegment = input.ReadUInt32();
-            break;
-          }
-          case 128: {
-            RecordsSuccessfullyUpdate = input.ReadUInt32();
-            break;
-          }
-          case 136: {
-            RecordsFailedToUpdate = input.ReadUInt32();
-            break;
-          }
-          case 146: {
-            if (created_ == null) {
-              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Created);
+            Count = input.ReadInt32();
             break;
           }
         }
@@ -855,6 +2146,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -863,93 +2155,7 @@ namespace PassKit.Grpc {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Protocol = (global::PassKit.Grpc.PassProtocol) input.ReadEnum();
-            break;
-          }
-          case 18: {
-            CompanyId = input.ReadString();
-            break;
-          }
-          case 26: {
-            ClassId = input.ReadString();
-            break;
-          }
-          case 34: {
-            Uuid = input.ReadString();
-            break;
-          }
-          case 40: {
-            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
-            break;
-          }
-          case 50: {
-            Warning = input.ReadString();
-            break;
-          }
-          case 56: {
-            ImageId = input.ReadUInt32();
-            break;
-          }
-          case 66: {
-            Title = input.ReadString();
-            break;
-          }
-          case 74: {
-            if (localizedTitle_ == null) {
-              LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedTitle);
-            break;
-          }
-          case 82: {
-            Content = input.ReadString();
-            break;
-          }
-          case 90: {
-            if (localizedContent_ == null) {
-              LocalizedContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedContent);
-            break;
-          }
-          case 98: {
-            if (startDate_ == null) {
-              StartDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartDate);
-            break;
-          }
-          case 106: {
-            if (endDate_ == null) {
-              EndDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndDate);
-            break;
-          }
-          case 114: {
-            if (filter_ == null) {
-              Filter = new global::PassKit.Grpc.Filter();
-            }
-            input.ReadMessage(Filter);
-            break;
-          }
-          case 120: {
-            RecordsMatchingSegment = input.ReadUInt32();
-            break;
-          }
-          case 128: {
-            RecordsSuccessfullyUpdate = input.ReadUInt32();
-            break;
-          }
-          case 136: {
-            RecordsFailedToUpdate = input.ReadUInt32();
-            break;
-          }
-          case 146: {
-            if (created_ == null) {
-              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Created);
+            Count = input.ReadInt32();
             break;
           }
         }

@@ -228,19 +228,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Swagger> _parser = new pb::MessageParser<Swagger>(() => new Swagger());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Swagger> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Swagger() {
       OnConstruction();
     }
@@ -248,6 +252,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Swagger(Swagger other) : this() {
       swagger_ = other.swagger_;
       info_ = other.info_ != null ? other.info_.Clone() : null;
@@ -265,6 +270,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Swagger Clone() {
       return new Swagger(this);
     }
@@ -278,6 +284,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// value MUST be "2.0".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Swagger_ {
       get { return swagger_; }
       set {
@@ -293,6 +300,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// clients if needed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Info Info {
       get { return info_; }
       set {
@@ -310,6 +318,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// the port). The host does not support path templating.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Host {
       get { return host_; }
       set {
@@ -332,6 +341,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// serve the API from the `base_path`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BasePath {
       get { return basePath_; }
       set {
@@ -350,6 +360,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// be used is the one used to access the OpenAPI definition itself.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Scheme> Schemes {
       get { return schemes_; }
     }
@@ -365,6 +376,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Mime Types.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Consumes {
       get { return consumes_; }
     }
@@ -380,6 +392,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Mime Types.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Produces {
       get { return produces_; }
     }
@@ -394,6 +407,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// property does not define global responses for all operations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Response> Responses {
       get { return responses_; }
     }
@@ -405,6 +419,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Security scheme definitions that can be used across the specification.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityDefinitions SecurityDefinitions {
       get { return securityDefinitions_; }
       set {
@@ -424,6 +439,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Individual operations can override this definition.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityRequirement> Security {
       get { return security_; }
     }
@@ -435,6 +451,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Additional external documentation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.ExternalDocumentation ExternalDocs {
       get { return externalDocs_; }
       set {
@@ -448,16 +465,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Value.Parser), 122);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> extensions_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> Extensions {
       get { return extensions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Swagger);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Swagger other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -481,6 +501,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Swagger_.Length != 0) hash ^= Swagger_.GetHashCode();
@@ -502,11 +523,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -549,6 +572,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Swagger_.Length != 0) {
         output.WriteRawTag(10);
@@ -587,6 +611,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Swagger_.Length != 0) {
@@ -620,6 +645,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Swagger other) {
       if (other == null) {
         return;
@@ -661,6 +687,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -736,6 +763,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -843,19 +871,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Operation> _parser = new pb::MessageParser<Operation>(() => new Operation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Operation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Operation() {
       OnConstruction();
     }
@@ -863,6 +895,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Operation(Operation other) : this() {
       tags_ = other.tags_.Clone();
       summary_ = other.summary_;
@@ -880,6 +913,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Operation Clone() {
       return new Operation(this);
     }
@@ -894,6 +928,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// grouping of operations by resources or any other qualifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Tags {
       get { return tags_; }
     }
@@ -906,6 +941,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// swagger-ui, this field SHOULD be less than 120 characters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Summary {
       get { return summary_; }
       set {
@@ -921,6 +957,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// rich text representation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -935,6 +972,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Additional external documentation for this operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.ExternalDocumentation ExternalDocs {
       get { return externalDocs_; }
       set {
@@ -952,6 +990,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// to follow common programming naming conventions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OperationId {
       get { return operationId_; }
       set {
@@ -970,6 +1009,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// global definition. Value MUST be as described under Mime Types.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Consumes {
       get { return consumes_; }
     }
@@ -985,6 +1025,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// global definition. Value MUST be as described under Mime Types.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Produces {
       get { return produces_; }
     }
@@ -999,6 +1040,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Response> Responses {
       get { return responses_; }
     }
@@ -1014,6 +1056,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// schemes definition.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Scheme> Schemes {
       get { return schemes_; }
     }
@@ -1026,6 +1069,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// should be refrained. Default value is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Deprecated {
       get { return deprecated_; }
       set {
@@ -1046,6 +1090,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// security declaration, an empty array can be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityRequirement> Security {
       get { return security_; }
     }
@@ -1056,16 +1101,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Value.Parser), 106);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> extensions_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> Extensions {
       get { return extensions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Operation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Operation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1089,6 +1137,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= tags_.GetHashCode();
@@ -1110,11 +1159,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1154,6 +1205,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       tags_.WriteTo(ref output, _repeated_tags_codec);
       if (Summary.Length != 0) {
@@ -1189,6 +1241,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += tags_.CalculateSize(_repeated_tags_codec);
@@ -1220,6 +1273,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Operation other) {
       if (other == null) {
         return;
@@ -1253,6 +1307,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1322,6 +1377,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1401,19 +1457,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Header> _parser = new pb::MessageParser<Header>(() => new Header());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Header> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Header() {
       OnConstruction();
     }
@@ -1421,6 +1481,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Header(Header other) : this() {
       description_ = other.description_;
       type_ = other.type_;
@@ -1431,6 +1492,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Header Clone() {
       return new Header(this);
     }
@@ -1442,6 +1504,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// `Description` is a short description of the header.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -1456,6 +1519,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The type of the object. The value MUST be one of "string", "number", "integer", or "boolean". The "array" type is not supported.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Type {
       get { return type_; }
       set {
@@ -1470,6 +1534,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// `Format` The extending format for the previously mentioned type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Format {
       get { return format_; }
       set {
@@ -1486,6 +1551,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Unlike JSON Schema this value MUST conform to the defined type for the header.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Default {
       get { return default_; }
       set {
@@ -1500,6 +1566,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// 'Pattern' See https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-5.2.3.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Pattern {
       get { return pattern_; }
       set {
@@ -1508,11 +1575,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Header);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Header other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1529,6 +1598,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Description.Length != 0) hash ^= Description.GetHashCode();
@@ -1543,11 +1613,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1580,6 +1652,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Description.Length != 0) {
         output.WriteRawTag(10);
@@ -1608,6 +1681,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Description.Length != 0) {
@@ -1632,6 +1706,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Header other) {
       if (other == null) {
         return;
@@ -1655,6 +1730,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1692,6 +1768,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1739,19 +1816,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Response> _parser = new pb::MessageParser<Response>(() => new Response());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Response> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Response() {
       OnConstruction();
     }
@@ -1759,6 +1840,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Response(Response other) : this() {
       description_ = other.description_;
       schema_ = other.schema_ != null ? other.schema_.Clone() : null;
@@ -1769,6 +1851,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Response Clone() {
       return new Response(this);
     }
@@ -1781,6 +1864,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// GFM syntax can be used for rich text representation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -1796,6 +1880,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// If `Schema` is not provided, it means there is no content to the response.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Schema Schema {
       get { return schema_; }
       set {
@@ -1814,6 +1899,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// See: https://golang.org/pkg/net/textproto/#CanonicalMIMEHeaderKey
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Header> Headers {
       get { return headers_; }
     }
@@ -1828,6 +1914,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// See: https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/2.0.md#example-object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Examples {
       get { return examples_; }
     }
@@ -1838,16 +1925,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Value.Parser), 42);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> extensions_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> Extensions {
       get { return extensions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Response);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Response other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1864,6 +1954,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Description.Length != 0) hash ^= Description.GetHashCode();
@@ -1878,11 +1969,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1906,6 +1999,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Description.Length != 0) {
         output.WriteRawTag(10);
@@ -1925,6 +2019,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Description.Length != 0) {
@@ -1943,6 +2038,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Response other) {
       if (other == null) {
         return;
@@ -1963,6 +2059,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2003,6 +2100,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2073,19 +2171,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Info> _parser = new pb::MessageParser<Info>(() => new Info());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Info> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Info() {
       OnConstruction();
     }
@@ -2093,6 +2195,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Info(Info other) : this() {
       title_ = other.title_;
       description_ = other.description_;
@@ -2105,6 +2208,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Info Clone() {
       return new Info(this);
     }
@@ -2116,6 +2220,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The title of the application.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -2131,6 +2236,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// text representation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -2145,6 +2251,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The Terms of Service for the API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TermsOfService {
       get { return termsOfService_; }
       set {
@@ -2159,6 +2266,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The contact information for the exposed API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Contact Contact {
       get { return contact_; }
       set {
@@ -2173,6 +2281,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The license information for the exposed API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.License License {
       get { return license_; }
       set {
@@ -2188,6 +2297,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// with the specification version).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Version {
       get { return version_; }
       set {
@@ -2201,16 +2311,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Value.Parser), 58);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> extensions_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> Extensions {
       get { return extensions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Info);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Info other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2229,6 +2342,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Title.Length != 0) hash ^= Title.GetHashCode();
@@ -2245,11 +2359,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2287,6 +2403,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Title.Length != 0) {
         output.WriteRawTag(10);
@@ -2320,6 +2437,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Title.Length != 0) {
@@ -2348,6 +2466,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Info other) {
       if (other == null) {
         return;
@@ -2381,6 +2500,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2432,6 +2552,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2508,19 +2629,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Contact> _parser = new pb::MessageParser<Contact>(() => new Contact());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Contact> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Contact() {
       OnConstruction();
     }
@@ -2528,6 +2653,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Contact(Contact other) : this() {
       name_ = other.name_;
       url_ = other.url_;
@@ -2536,6 +2662,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Contact Clone() {
       return new Contact(this);
     }
@@ -2547,6 +2674,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The identifying name of the contact person/organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -2562,6 +2690,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_; }
       set {
@@ -2577,6 +2706,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// of an email address.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
       get { return email_; }
       set {
@@ -2585,11 +2715,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Contact);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Contact other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2604,6 +2736,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
@@ -2616,11 +2749,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2645,6 +2780,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Name.Length != 0) {
         output.WriteRawTag(10);
@@ -2665,6 +2801,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Name.Length != 0) {
@@ -2683,6 +2820,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Contact other) {
       if (other == null) {
         return;
@@ -2700,6 +2838,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2729,6 +2868,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2782,19 +2922,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<License> _parser = new pb::MessageParser<License>(() => new License());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<License> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public License() {
       OnConstruction();
     }
@@ -2802,6 +2946,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public License(License other) : this() {
       name_ = other.name_;
       url_ = other.url_;
@@ -2809,6 +2954,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public License Clone() {
       return new License(this);
     }
@@ -2820,6 +2966,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The license name used for the API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -2834,6 +2981,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// A URL to the license used for the API. MUST be in the format of a URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_; }
       set {
@@ -2842,11 +2990,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as License);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(License other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2860,6 +3010,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
@@ -2871,11 +3022,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2896,6 +3049,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Name.Length != 0) {
         output.WriteRawTag(10);
@@ -2912,6 +3066,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Name.Length != 0) {
@@ -2927,6 +3082,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(License other) {
       if (other == null) {
         return;
@@ -2941,6 +3097,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2966,6 +3123,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3013,19 +3171,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<ExternalDocumentation> _parser = new pb::MessageParser<ExternalDocumentation>(() => new ExternalDocumentation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ExternalDocumentation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExternalDocumentation() {
       OnConstruction();
     }
@@ -3033,6 +3195,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExternalDocumentation(ExternalDocumentation other) : this() {
       description_ = other.description_;
       url_ = other.url_;
@@ -3040,6 +3203,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExternalDocumentation Clone() {
       return new ExternalDocumentation(this);
     }
@@ -3052,6 +3216,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// rich text representation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -3067,6 +3232,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// of a URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_; }
       set {
@@ -3075,11 +3241,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ExternalDocumentation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ExternalDocumentation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3093,6 +3261,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Description.Length != 0) hash ^= Description.GetHashCode();
@@ -3104,11 +3273,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3129,6 +3300,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Description.Length != 0) {
         output.WriteRawTag(10);
@@ -3145,6 +3317,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Description.Length != 0) {
@@ -3160,6 +3333,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ExternalDocumentation other) {
       if (other == null) {
         return;
@@ -3174,6 +3348,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3199,6 +3374,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3234,19 +3410,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Schema> _parser = new pb::MessageParser<Schema>(() => new Schema());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Schema> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Schema() {
       OnConstruction();
     }
@@ -3254,6 +3434,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Schema(Schema other) : this() {
       jsonSchema_ = other.jsonSchema_ != null ? other.jsonSchema_.Clone() : null;
       discriminator_ = other.discriminator_;
@@ -3264,6 +3445,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Schema Clone() {
       return new Schema(this);
     }
@@ -3272,6 +3454,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int JsonSchemaFieldNumber = 1;
     private global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema jsonSchema_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema JsonSchema {
       get { return jsonSchema_; }
       set {
@@ -3290,6 +3473,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// this schema or any schema that inherits it.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Discriminator {
       get { return discriminator_; }
       set {
@@ -3308,6 +3492,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// value is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ReadOnly {
       get { return readOnly_; }
       set {
@@ -3322,6 +3507,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Additional external documentation for this schema.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.ExternalDocumentation ExternalDocs {
       get { return externalDocs_; }
       set {
@@ -3337,6 +3523,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// This is copied verbatim to the output.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Example {
       get { return example_; }
       set {
@@ -3345,11 +3532,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Schema);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Schema other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3366,6 +3555,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (jsonSchema_ != null) hash ^= JsonSchema.GetHashCode();
@@ -3380,11 +3570,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3417,6 +3609,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (jsonSchema_ != null) {
         output.WriteRawTag(10);
@@ -3445,6 +3638,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (jsonSchema_ != null) {
@@ -3469,6 +3663,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Schema other) {
       if (other == null) {
         return;
@@ -3498,6 +3693,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3541,6 +3737,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3606,7 +3803,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
   ///    // Id represents the message identifier.
   ///    string id = 1; [
   ///        (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
-  ///          {description: "The unique identifier of the simple message."
+  ///          description: "The unique identifier of the simple message."
   ///        }];
   ///  }
   /// </summary>
@@ -3618,19 +3815,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<JSONSchema> _parser = new pb::MessageParser<JSONSchema>(() => new JSONSchema());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<JSONSchema> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public JSONSchema() {
       OnConstruction();
     }
@@ -3638,6 +3839,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public JSONSchema(JSONSchema other) : this() {
       ref_ = other.ref_;
       title_ = other.title_;
@@ -3667,6 +3869,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public JSONSchema Clone() {
       return new JSONSchema(this);
     }
@@ -3683,6 +3886,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     ///  `ref: ".google.protobuf.Timestamp"`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Ref {
       get { return ref_; }
       set {
@@ -3697,6 +3901,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// The title of the schema.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -3711,6 +3916,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// A short description of the schema.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -3722,6 +3928,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int DefaultFieldNumber = 7;
     private string default_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Default {
       get { return default_; }
       set {
@@ -3733,6 +3940,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int ReadOnlyFieldNumber = 8;
     private bool readOnly_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ReadOnly {
       get { return readOnly_; }
       set {
@@ -3749,6 +3957,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// This property is the same for 2.0 and 3.0.0 https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/3.0.0.md#schemaObject  https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/2.0.md#schemaObject
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Example {
       get { return example_; }
       set {
@@ -3760,6 +3969,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MultipleOfFieldNumber = 10;
     private double multipleOf_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double MultipleOf {
       get { return multipleOf_; }
       set {
@@ -3775,6 +3985,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// value of MUST be a number, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Maximum {
       get { return maximum_; }
       set {
@@ -3786,6 +3997,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int ExclusiveMaximumFieldNumber = 12;
     private bool exclusiveMaximum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ExclusiveMaximum {
       get { return exclusiveMaximum_; }
       set {
@@ -3801,6 +4013,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// value of MUST be a number, 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Minimum {
       get { return minimum_; }
       set {
@@ -3812,6 +4025,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int ExclusiveMinimumFieldNumber = 14;
     private bool exclusiveMinimum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ExclusiveMinimum {
       get { return exclusiveMinimum_; }
       set {
@@ -3823,6 +4037,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MaxLengthFieldNumber = 15;
     private ulong maxLength_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MaxLength {
       get { return maxLength_; }
       set {
@@ -3834,6 +4049,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MinLengthFieldNumber = 16;
     private ulong minLength_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MinLength {
       get { return minLength_; }
       set {
@@ -3845,6 +4061,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int PatternFieldNumber = 17;
     private string pattern_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Pattern {
       get { return pattern_; }
       set {
@@ -3856,6 +4073,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MaxItemsFieldNumber = 20;
     private ulong maxItems_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MaxItems {
       get { return maxItems_; }
       set {
@@ -3867,6 +4085,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MinItemsFieldNumber = 21;
     private ulong minItems_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MinItems {
       get { return minItems_; }
       set {
@@ -3878,6 +4097,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int UniqueItemsFieldNumber = 22;
     private bool uniqueItems_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UniqueItems {
       get { return uniqueItems_; }
       set {
@@ -3889,6 +4109,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MaxPropertiesFieldNumber = 24;
     private ulong maxProperties_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MaxProperties {
       get { return maxProperties_; }
       set {
@@ -3900,6 +4121,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public const int MinPropertiesFieldNumber = 25;
     private ulong minProperties_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MinProperties {
       get { return minProperties_; }
       set {
@@ -3913,6 +4135,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = pb::FieldCodec.ForString(210);
     private readonly pbc::RepeatedField<string> required_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Required {
       get { return required_; }
     }
@@ -3926,6 +4149,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Items in 'array' must be unique.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Array {
       get { return array_; }
     }
@@ -3936,6 +4160,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = pb::FieldCodec.ForEnum(282, x => (int) x, x => (global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema.Types.JSONSchemaSimpleTypes) x);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema.Types.JSONSchemaSimpleTypes> type_ = new pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema.Types.JSONSchemaSimpleTypes>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.JSONSchema.Types.JSONSchemaSimpleTypes> Type {
       get { return type_; }
     }
@@ -3947,6 +4172,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// `Format`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Format {
       get { return format_; }
       set {
@@ -3963,16 +4189,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Items in `enum` must be unique https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-5.5.1
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Enum {
       get { return enum_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as JSONSchema);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(JSONSchema other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4008,6 +4237,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Ref.Length != 0) hash ^= Ref.GetHashCode();
@@ -4041,11 +4271,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4142,6 +4374,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Ref.Length != 0) {
         output.WriteRawTag(26);
@@ -4234,6 +4467,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Ref.Length != 0) {
@@ -4307,6 +4541,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(JSONSchema other) {
       if (other == null) {
         return;
@@ -4379,6 +4614,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4493,6 +4729,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4605,6 +4842,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #region Nested types
     /// <summary>Container for nested types declared in the JSONSchema message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       public enum JSONSchemaSimpleTypes {
         [pbr::OriginalName("UNKNOWN")] Unknown = 0,
@@ -4635,19 +4873,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Tag> _parser = new pb::MessageParser<Tag>(() => new Tag());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Tag> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tag() {
       OnConstruction();
     }
@@ -4655,6 +4897,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tag(Tag other) : this() {
       description_ = other.description_;
       externalDocs_ = other.externalDocs_ != null ? other.externalDocs_.Clone() : null;
@@ -4662,6 +4905,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tag Clone() {
       return new Tag(this);
     }
@@ -4674,6 +4918,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// representation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -4688,6 +4933,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Additional external documentation for this tag.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.ExternalDocumentation ExternalDocs {
       get { return externalDocs_; }
       set {
@@ -4696,11 +4942,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Tag);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Tag other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4714,6 +4962,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Description.Length != 0) hash ^= Description.GetHashCode();
@@ -4725,11 +4974,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4750,6 +5001,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Description.Length != 0) {
         output.WriteRawTag(18);
@@ -4766,6 +5018,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Description.Length != 0) {
@@ -4781,6 +5034,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Tag other) {
       if (other == null) {
         return;
@@ -4798,6 +5052,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4826,6 +5081,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4869,19 +5125,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<SecurityDefinitions> _parser = new pb::MessageParser<SecurityDefinitions>(() => new SecurityDefinitions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SecurityDefinitions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityDefinitions() {
       OnConstruction();
     }
@@ -4889,12 +5149,14 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityDefinitions(SecurityDefinitions other) : this() {
       security_ = other.security_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityDefinitions Clone() {
       return new SecurityDefinitions(this);
     }
@@ -4909,16 +5171,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// defines.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme> Security {
       get { return security_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SecurityDefinitions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SecurityDefinitions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4931,6 +5196,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= Security.GetHashCode();
@@ -4941,11 +5207,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4959,6 +5227,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       security_.WriteTo(ref output, _map_security_codec);
       if (_unknownFields != null) {
@@ -4968,6 +5237,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += security_.CalculateSize(_map_security_codec);
@@ -4978,6 +5248,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SecurityDefinitions other) {
       if (other == null) {
         return;
@@ -4987,6 +5258,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5008,6 +5280,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5045,19 +5318,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<SecurityScheme> _parser = new pb::MessageParser<SecurityScheme>(() => new SecurityScheme());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SecurityScheme> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityScheme() {
       OnConstruction();
     }
@@ -5065,6 +5342,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityScheme(SecurityScheme other) : this() {
       type_ = other.type_;
       description_ = other.description_;
@@ -5079,6 +5357,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityScheme Clone() {
       return new SecurityScheme(this);
     }
@@ -5091,6 +5370,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// "apiKey" or "oauth2".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.Type Type {
       get { return type_; }
       set {
@@ -5105,6 +5385,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// A short description for security scheme.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -5120,6 +5401,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for apiKey.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -5136,6 +5418,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for apiKey.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.In In {
       get { return in_; }
       set {
@@ -5152,6 +5435,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for oauth2.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.Flow Flow {
       get { return flow_; }
       set {
@@ -5168,6 +5452,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for oauth2/implicit and oauth2/accessCode.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AuthorizationUrl {
       get { return authorizationUrl_; }
       set {
@@ -5184,6 +5469,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for oauth2/password, oauth2/application and oauth2/accessCode.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenUrl {
       get { return tokenUrl_; }
       set {
@@ -5199,6 +5485,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// Valid for oauth2.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Scopes Scopes {
       get { return scopes_; }
       set {
@@ -5212,16 +5499,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Value.Parser), 74);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> extensions_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Value> Extensions {
       get { return extensions_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SecurityScheme);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SecurityScheme other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5242,6 +5532,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Type != global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.Type.Invalid) hash ^= Type.GetHashCode();
@@ -5260,11 +5551,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5310,6 +5603,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Type != global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.Type.Invalid) {
         output.WriteRawTag(8);
@@ -5351,6 +5645,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Type != global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityScheme.Types.Type.Invalid) {
@@ -5385,6 +5680,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SecurityScheme other) {
       if (other == null) {
         return;
@@ -5421,6 +5717,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5477,6 +5774,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5531,6 +5829,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #region Nested types
     /// <summary>Container for nested types declared in the SecurityScheme message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// The type of the security scheme. Valid values are "basic",
@@ -5590,19 +5889,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<SecurityRequirement> _parser = new pb::MessageParser<SecurityRequirement>(() => new SecurityRequirement());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SecurityRequirement> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityRequirement() {
       OnConstruction();
     }
@@ -5610,12 +5913,14 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityRequirement(SecurityRequirement other) : this() {
       securityRequirement_ = other.securityRequirement_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecurityRequirement Clone() {
       return new SecurityRequirement(this);
     }
@@ -5632,16 +5937,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// For other security scheme types, the array MUST be empty.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityRequirement.Types.SecurityRequirementValue> SecurityRequirement_ {
       get { return securityRequirement_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SecurityRequirement);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SecurityRequirement other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5654,6 +5962,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= SecurityRequirement_.GetHashCode();
@@ -5664,11 +5973,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5682,6 +5993,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       securityRequirement_.WriteTo(ref output, _map_securityRequirement_codec);
       if (_unknownFields != null) {
@@ -5691,6 +6003,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += securityRequirement_.CalculateSize(_map_securityRequirement_codec);
@@ -5701,6 +6014,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SecurityRequirement other) {
       if (other == null) {
         return;
@@ -5710,6 +6024,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5731,6 +6046,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5750,6 +6066,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #region Nested types
     /// <summary>Container for nested types declared in the SecurityRequirement message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// If the security scheme is of type "oauth2", then the value is a list of
@@ -5764,19 +6081,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         private static readonly pb::MessageParser<SecurityRequirementValue> _parser = new pb::MessageParser<SecurityRequirementValue>(() => new SecurityRequirementValue());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<SecurityRequirementValue> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.SecurityRequirement.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public SecurityRequirementValue() {
           OnConstruction();
         }
@@ -5784,12 +6105,14 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public SecurityRequirementValue(SecurityRequirementValue other) : this() {
           scope_ = other.scope_.Clone();
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public SecurityRequirementValue Clone() {
           return new SecurityRequirementValue(this);
         }
@@ -5800,16 +6123,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
             = pb::FieldCodec.ForString(10);
         private readonly pbc::RepeatedField<string> scope_ = new pbc::RepeatedField<string>();
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public pbc::RepeatedField<string> Scope {
           get { return scope_; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as SecurityRequirementValue);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(SecurityRequirementValue other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -5822,6 +6148,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           hash ^= scope_.GetHashCode();
@@ -5832,11 +6159,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -5850,6 +6179,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           scope_.WriteTo(ref output, _repeated_scope_codec);
           if (_unknownFields != null) {
@@ -5859,6 +6189,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           size += scope_.CalculateSize(_repeated_scope_codec);
@@ -5869,6 +6200,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(SecurityRequirementValue other) {
           if (other == null) {
             return;
@@ -5878,6 +6210,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -5899,6 +6232,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -5937,19 +6271,23 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     private static readonly pb::MessageParser<Scopes> _parser = new pb::MessageParser<Scopes>(() => new Scopes());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Scopes> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Openapiv2Reflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Scopes() {
       OnConstruction();
     }
@@ -5957,12 +6295,14 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Scopes(Scopes other) : this() {
       scope_ = other.scope_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Scopes Clone() {
       return new Scopes(this);
     }
@@ -5977,16 +6317,19 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     /// of the property).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> Scope {
       get { return scope_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Scopes);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Scopes other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5999,6 +6342,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= Scope.GetHashCode();
@@ -6009,11 +6353,13 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6027,6 +6373,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       scope_.WriteTo(ref output, _map_scope_codec);
       if (_unknownFields != null) {
@@ -6036,6 +6383,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += scope_.CalculateSize(_map_scope_codec);
@@ -6046,6 +6394,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Scopes other) {
       if (other == null) {
         return;
@@ -6055,6 +6404,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6076,6 +6426,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -12,6 +12,7 @@ namespace PassKit.Grpc {
   {
     static readonly string __ServiceName = "io.Distribution";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -26,11 +27,13 @@ namespace PassKit.Grpc {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -42,15 +45,24 @@ namespace PassKit.Grpc {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EmailDistributionRequest> __Marshaller_io_EmailDistributionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EmailDistributionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SmartPassLinkRequest> __Marshaller_io_SmartPassLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SmartPassLinkRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Url> __Marshaller_io_Url = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Url.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ClassObjectInput> __Marshaller_io_ClassObjectInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ClassObjectInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.DataCollectionFields> __Marshaller_io_DataCollectionFields = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.DataCollectionFields.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SmartPassCsvUploadRequest> __Marshaller_io_SmartPassCsvUploadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SmartPassCsvUploadRequest.Parser));
-    static readonly grpc::Marshaller<global::PassKit.Grpc.ImportMembersRequest> __Marshaller_io_ImportMembersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ImportMembersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.ImportProtocolRequest> __Marshaller_io_ImportProtocolRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ImportProtocolRequest.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.EmailDistributionRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_sendWelcomeEmail = new grpc::Method<global::PassKit.Grpc.EmailDistributionRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -58,6 +70,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_EmailDistributionRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SmartPassLinkRequest, global::PassKit.Grpc.Url> __Method_getSmartPassLink = new grpc::Method<global::PassKit.Grpc.SmartPassLinkRequest, global::PassKit.Grpc.Url>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -65,6 +78,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_SmartPassLinkRequest,
         __Marshaller_io_Url);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.ClassObjectInput, global::PassKit.Grpc.DataCollectionFields> __Method_getDataCollectionPageFields = new grpc::Method<global::PassKit.Grpc.ClassObjectInput, global::PassKit.Grpc.DataCollectionFields>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -72,6 +86,7 @@ namespace PassKit.Grpc {
         __Marshaller_io_ClassObjectInput,
         __Marshaller_io_DataCollectionFields);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SmartPassCsvUploadRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_uploadSmartPassCsv = new grpc::Method<global::PassKit.Grpc.SmartPassCsvUploadRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -79,11 +94,12 @@ namespace PassKit.Grpc {
         __Marshaller_io_SmartPassCsvUploadRequest,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly grpc::Method<global::PassKit.Grpc.ImportMembersRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_importMembers = new grpc::Method<global::PassKit.Grpc.ImportMembersRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.ImportProtocolRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_importProtocolCsv = new grpc::Method<global::PassKit.Grpc.ImportProtocolRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "importMembers",
-        __Marshaller_io_ImportMembersRequest,
+        "importProtocolCsv",
+        __Marshaller_io_ImportProtocolRequest,
         __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -97,105 +113,130 @@ namespace PassKit.Grpc {
     {
       /// <summary>Creates a new client for Distribution</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public DistributionClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Distribution that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public DistributionClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected DistributionClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected DistributionClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty sendWelcomeEmail(global::PassKit.Grpc.EmailDistributionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return sendWelcomeEmail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty sendWelcomeEmail(global::PassKit.Grpc.EmailDistributionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_sendWelcomeEmail, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> sendWelcomeEmailAsync(global::PassKit.Grpc.EmailDistributionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return sendWelcomeEmailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> sendWelcomeEmailAsync(global::PassKit.Grpc.EmailDistributionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_sendWelcomeEmail, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getSmartPassLink(global::PassKit.Grpc.SmartPassLinkRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSmartPassLink(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Url getSmartPassLink(global::PassKit.Grpc.SmartPassLinkRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getSmartPassLink, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getSmartPassLinkAsync(global::PassKit.Grpc.SmartPassLinkRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getSmartPassLinkAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Url> getSmartPassLinkAsync(global::PassKit.Grpc.SmartPassLinkRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getSmartPassLink, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.DataCollectionFields getDataCollectionPageFields(global::PassKit.Grpc.ClassObjectInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getDataCollectionPageFields(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.DataCollectionFields getDataCollectionPageFields(global::PassKit.Grpc.ClassObjectInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getDataCollectionPageFields, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.DataCollectionFields> getDataCollectionPageFieldsAsync(global::PassKit.Grpc.ClassObjectInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getDataCollectionPageFieldsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.DataCollectionFields> getDataCollectionPageFieldsAsync(global::PassKit.Grpc.ClassObjectInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getDataCollectionPageFields, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty uploadSmartPassCsv(global::PassKit.Grpc.SmartPassCsvUploadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return uploadSmartPassCsv(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty uploadSmartPassCsv(global::PassKit.Grpc.SmartPassCsvUploadRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_uploadSmartPassCsv, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> uploadSmartPassCsvAsync(global::PassKit.Grpc.SmartPassCsvUploadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return uploadSmartPassCsvAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> uploadSmartPassCsvAsync(global::PassKit.Grpc.SmartPassCsvUploadRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_uploadSmartPassCsv, null, options, request);
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty importMembers(global::PassKit.Grpc.ImportMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty importProtocolCsv(global::PassKit.Grpc.ImportProtocolRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return importMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return importProtocolCsv(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty importMembers(global::PassKit.Grpc.ImportMembersRequest request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty importProtocolCsv(global::PassKit.Grpc.ImportProtocolRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_importMembers, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_importProtocolCsv, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> importMembersAsync(global::PassKit.Grpc.ImportMembersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> importProtocolCsvAsync(global::PassKit.Grpc.ImportProtocolRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return importMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return importProtocolCsvAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> importMembersAsync(global::PassKit.Grpc.ImportMembersRequest request, grpc::CallOptions options)
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> importProtocolCsvAsync(global::PassKit.Grpc.ImportProtocolRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_importMembers, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_importProtocolCsv, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override DistributionClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new DistributionClient(configuration);

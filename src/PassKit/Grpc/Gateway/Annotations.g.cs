@@ -52,7 +52,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
   /// <summary>Holder for extension identifiers generated from the top level of protoc-gen-openapiv2/options/annotations.proto</summary>
   public static partial class AnnotationsExtensions {
     /// <summary>
-    /// ID assigned by protobuf-global-extension-registry@google.com for grpc-gateway project.
+    /// ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
     ///
     /// All IDs are the same, as assigned. It is okay that they are the same, as they extend
     /// different descriptor messages.
@@ -60,7 +60,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FileOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Swagger> Openapiv2Swagger =
       new pb::Extension<global::Google.Protobuf.Reflection.FileOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Swagger>(1042, pb::FieldCodec.ForMessage(8338, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Swagger.Parser));
     /// <summary>
-    /// ID assigned by protobuf-global-extension-registry@google.com for grpc-gateway project.
+    /// ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
     ///
     /// All IDs are the same, as assigned. It is okay that they are the same, as they extend
     /// different descriptor messages.
@@ -68,7 +68,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.MethodOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Operation> Openapiv2Operation =
       new pb::Extension<global::Google.Protobuf.Reflection.MethodOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Operation>(1042, pb::FieldCodec.ForMessage(8338, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Operation.Parser));
     /// <summary>
-    /// ID assigned by protobuf-global-extension-registry@google.com for grpc-gateway project.
+    /// ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
     ///
     /// All IDs are the same, as assigned. It is okay that they are the same, as they extend
     /// different descriptor messages.
@@ -76,7 +76,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.MessageOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Schema> Openapiv2Schema =
       new pb::Extension<global::Google.Protobuf.Reflection.MessageOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Schema>(1042, pb::FieldCodec.ForMessage(8338, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Schema.Parser));
     /// <summary>
-    /// ID assigned by protobuf-global-extension-registry@google.com for grpc-gateway project.
+    /// ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
     ///
     /// All IDs are the same, as assigned. It is okay that they are the same, as they extend
     /// different descriptor messages.
@@ -84,7 +84,7 @@ namespace PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options {
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.ServiceOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Tag> Openapiv2Tag =
       new pb::Extension<global::Google.Protobuf.Reflection.ServiceOptions, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Tag>(1042, pb::FieldCodec.ForMessage(8338, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.Tag.Parser));
     /// <summary>
-    /// ID assigned by protobuf-global-extension-registry@google.com for grpc-gateway project.
+    /// ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
     ///
     /// All IDs are the same, as assigned. It is okay that they are the same, as they extend
     /// different descriptor messages.

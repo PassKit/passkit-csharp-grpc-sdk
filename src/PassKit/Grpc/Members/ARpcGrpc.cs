@@ -17,6 +17,7 @@ namespace PassKit.Grpc.Members {
   {
     static readonly string __ServiceName = "members.Members";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -31,11 +32,13 @@ namespace PassKit.Grpc.Members {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -47,33 +50,60 @@ namespace PassKit.Grpc.Members {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.Program> __Marshaller_members_Program = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.Program.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Id> __Marshaller_io_Id = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Id.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.ProgramCopyRequest> __Marshaller_members_ProgramCopyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.ProgramCopyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Pagination.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Filters.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.Tier> __Marshaller_members_Tier = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.Tier.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.TierRequestInput> __Marshaller_members_TierRequestInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.TierRequestInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.ListRequestDeprecated> __Marshaller_members_ListRequestDeprecated = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.ListRequestDeprecated.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.ListRequest> __Marshaller_members_ListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.ListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.Member> __Marshaller_members_Member = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.Member.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest> __Marshaller_members_MemberRecordByExternalIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberCheckInOutRequest> __Marshaller_members_MemberCheckInOutRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberCheckInOutRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberEvent> __Marshaller_members_MemberEvent = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberEvent.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.EarnBurnPointsRequest> __Marshaller_members_EarnBurnPointsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.EarnBurnPointsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberPoints> __Marshaller_members_MemberPoints = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberPoints.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.SetPointsRequest> __Marshaller_members_SetPointsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.SetPointsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.ChangeTierRequest> __Marshaller_members_ChangeTierRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.ChangeTierRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberSegmentRequest> __Marshaller_members_MemberSegmentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberSegmentRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Message> __Marshaller_io_Message = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Message.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Strings> __Marshaller_io_Strings = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Strings.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.UpdateExpiryRequest> __Marshaller_members_UpdateExpiryRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.UpdateExpiryRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Members.MemberExpiry> __Marshaller_members_MemberExpiry = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Members.MemberExpiry.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.PersonRequest> __Marshaller_io_PersonRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PersonRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EnrolmentUrls> __Marshaller_io_EnrolmentUrls = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EnrolmentUrls.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Id> __Method_createProgram = new grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -81,6 +111,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Program,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Members.Program> __Method_updateProgram = new grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Members.Program>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -88,6 +119,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Program,
         __Marshaller_members_Program);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.Program> __Method_getProgram = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.Program>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -95,6 +127,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_members_Program);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ProgramCopyRequest, global::PassKit.Grpc.Id> __Method_copyProgram = new grpc::Method<global::PassKit.Grpc.Members.ProgramCopyRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -102,6 +135,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ProgramCopyRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteProgram = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -109,6 +143,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Members.Program> __Method_listProgramsDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Members.Program>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -116,6 +151,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Pagination,
         __Marshaller_members_Program);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Members.Program> __Method_listPrograms = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.Members.Program>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -123,6 +159,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Filters,
         __Marshaller_members_Program);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Tier, global::PassKit.Grpc.Id> __Method_createTier = new grpc::Method<global::PassKit.Grpc.Members.Tier, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -130,6 +167,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Tier,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Tier, global::PassKit.Grpc.Members.Tier> __Method_updateTier = new grpc::Method<global::PassKit.Grpc.Members.Tier, global::PassKit.Grpc.Members.Tier>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -137,6 +175,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Tier,
         __Marshaller_members_Tier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.TierRequestInput, global::PassKit.Grpc.Members.Tier> __Method_getTier = new grpc::Method<global::PassKit.Grpc.Members.TierRequestInput, global::PassKit.Grpc.Members.Tier>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -144,6 +183,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_TierRequestInput,
         __Marshaller_members_Tier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.TierRequestInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteTier = new grpc::Method<global::PassKit.Grpc.Members.TierRequestInput, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -151,6 +191,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_TierRequestInput,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Members.Tier> __Method_listTiersDeprecated = new grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Members.Tier>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -158,6 +199,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequestDeprecated,
         __Marshaller_members_Tier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.Tier> __Method_listTiers = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.Tier>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -165,6 +207,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_members_Tier);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id> __Method_enrolMember = new grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -172,6 +215,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Member,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id> __Method_enrolMemberPublic = new grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -179,6 +223,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Member,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.Member> __Method_getMemberRecordById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.Member>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -186,6 +231,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_members_Member);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest, global::PassKit.Grpc.Members.Member> __Method_getMemberRecordByExternalId = new grpc::Method<global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest, global::PassKit.Grpc.Members.Member>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -193,6 +239,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberRecordByExternalIdRequest,
         __Marshaller_members_Member);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberCheckInOutRequest, global::PassKit.Grpc.Members.MemberEvent> __Method_checkInMember = new grpc::Method<global::PassKit.Grpc.Members.MemberCheckInOutRequest, global::PassKit.Grpc.Members.MemberEvent>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -200,6 +247,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberCheckInOutRequest,
         __Marshaller_members_MemberEvent);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberCheckInOutRequest, global::PassKit.Grpc.Members.MemberEvent> __Method_checkOutMember = new grpc::Method<global::PassKit.Grpc.Members.MemberCheckInOutRequest, global::PassKit.Grpc.Members.MemberEvent>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -207,6 +255,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberCheckInOutRequest,
         __Marshaller_members_MemberEvent);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Members.Member> __Method_listMembersDeprecated = new grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Members.Member>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -214,6 +263,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequestDeprecated,
         __Marshaller_members_Member);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.Member> __Method_listMembers = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.Member>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -221,6 +271,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_members_Member);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id> __Method_updateMember = new grpc::Method<global::PassKit.Grpc.Members.Member, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -228,6 +279,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Member,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.EarnBurnPointsRequest, global::PassKit.Grpc.Members.MemberPoints> __Method_earnPoints = new grpc::Method<global::PassKit.Grpc.Members.EarnBurnPointsRequest, global::PassKit.Grpc.Members.MemberPoints>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -235,6 +287,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_EarnBurnPointsRequest,
         __Marshaller_members_MemberPoints);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.EarnBurnPointsRequest, global::PassKit.Grpc.Members.MemberPoints> __Method_burnPoints = new grpc::Method<global::PassKit.Grpc.Members.EarnBurnPointsRequest, global::PassKit.Grpc.Members.MemberPoints>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -242,6 +295,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_EarnBurnPointsRequest,
         __Marshaller_members_MemberPoints);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.SetPointsRequest, global::PassKit.Grpc.Members.MemberPoints> __Method_setPoints = new grpc::Method<global::PassKit.Grpc.Members.SetPointsRequest, global::PassKit.Grpc.Members.MemberPoints>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -249,6 +303,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_SetPointsRequest,
         __Marshaller_members_MemberPoints);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ChangeTierRequest, global::PassKit.Grpc.Members.MemberEvent> __Method_changeMemberTier = new grpc::Method<global::PassKit.Grpc.Members.ChangeTierRequest, global::PassKit.Grpc.Members.MemberEvent>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -256,6 +311,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ChangeTierRequest,
         __Marshaller_members_MemberEvent);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberSegmentRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_updateMembersBySegment = new grpc::Method<global::PassKit.Grpc.Members.MemberSegmentRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -263,6 +319,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberSegmentRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberSegmentRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteMembersBySegment = new grpc::Method<global::PassKit.Grpc.Members.MemberSegmentRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -270,6 +327,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberSegmentRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Member, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteMember = new grpc::Method<global::PassKit.Grpc.Members.Member, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -277,6 +335,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_Member,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Count> __Method_countMembersDeprecated = new grpc::Method<global::PassKit.Grpc.Members.ListRequestDeprecated, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -284,6 +343,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequestDeprecated,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Count> __Method_countMembers = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -291,6 +351,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Message> __Method_getMessageHistoryForMember = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.Message>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -298,6 +359,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Pagination,
         __Marshaller_io_Message);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings> __Method_getMetaKeysForProgram = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -305,6 +367,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_io_Strings);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.UpdateExpiryRequest, global::PassKit.Grpc.Count> __Method_renewMembersExpiry = new grpc::Method<global::PassKit.Grpc.Members.UpdateExpiryRequest, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -312,6 +375,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_UpdateExpiryRequest,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.MemberExpiry, global::PassKit.Grpc.Id> __Method_updateMemberExpiry = new grpc::Method<global::PassKit.Grpc.Members.MemberExpiry, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -319,6 +383,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_MemberExpiry,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.PersonRequest, global::PassKit.Grpc.Id> __Method_patchPerson = new grpc::Method<global::PassKit.Grpc.PersonRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -326,6 +391,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_PersonRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Count> __Method_countMemberEvents = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -333,6 +399,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.MemberEvent> __Method_listMemberEvents = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::PassKit.Grpc.Members.MemberEvent>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -340,6 +407,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_members_MemberEvent);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings> __Method_getMemberEventMetaKeysForProgram = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -347,6 +415,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_io_Strings);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.MemberEvent> __Method_listEventsForMember = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Members.MemberEvent>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -354,6 +423,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_members_MemberEvent);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteMemberEvents = new grpc::Method<global::PassKit.Grpc.Members.ListRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -361,6 +431,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_members_ListRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteEventsForMember = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -368,6 +439,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteMemberEvent = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -375,6 +447,7 @@ namespace PassKit.Grpc.Members {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EnrolmentUrls> __Method_getProgramEnrolment = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.EnrolmentUrls>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -393,20 +466,24 @@ namespace PassKit.Grpc.Members {
     {
       /// <summary>Creates a new client for Members</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public MembersClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for Members that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public MembersClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected MembersClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected MembersClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
@@ -419,6 +496,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createProgram(global::PassKit.Grpc.Members.Program request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -429,6 +507,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createProgram(global::PassKit.Grpc.Members.Program request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createProgram, null, options, request);
@@ -441,6 +520,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createProgramAsync(global::PassKit.Grpc.Members.Program request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -451,6 +531,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createProgramAsync(global::PassKit.Grpc.Members.Program request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createProgram, null, options, request);
@@ -463,6 +544,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Program updateProgram(global::PassKit.Grpc.Members.Program request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -473,6 +555,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Program updateProgram(global::PassKit.Grpc.Members.Program request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateProgram, null, options, request);
@@ -485,6 +568,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Program> updateProgramAsync(global::PassKit.Grpc.Members.Program request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -495,6 +579,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Program> updateProgramAsync(global::PassKit.Grpc.Members.Program request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateProgram, null, options, request);
@@ -507,6 +592,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Program getProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -517,6 +603,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Program getProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProgram, null, options, request);
@@ -529,6 +616,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Program> getProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -539,6 +627,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Program> getProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProgram, null, options, request);
@@ -551,6 +640,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyProgram(global::PassKit.Grpc.Members.ProgramCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -561,6 +651,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyProgram(global::PassKit.Grpc.Members.ProgramCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_copyProgram, null, options, request);
@@ -573,6 +664,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyProgramAsync(global::PassKit.Grpc.Members.ProgramCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -583,6 +675,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyProgramAsync(global::PassKit.Grpc.Members.ProgramCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_copyProgram, null, options, request);
@@ -595,6 +688,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -605,6 +699,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteProgram, null, options, request);
@@ -617,6 +712,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -627,6 +723,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteProgram, null, options, request);
@@ -639,6 +736,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Program> listProgramsDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listProgramsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -649,6 +747,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Program> listProgramsDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listProgramsDeprecated, null, options, request);
@@ -661,6 +760,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Program> listPrograms(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listPrograms(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -671,6 +771,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Program> listPrograms(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listPrograms, null, options, request);
@@ -683,6 +784,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createTier(global::PassKit.Grpc.Members.Tier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -693,6 +795,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createTier(global::PassKit.Grpc.Members.Tier request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createTier, null, options, request);
@@ -705,6 +808,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createTierAsync(global::PassKit.Grpc.Members.Tier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -715,6 +819,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createTierAsync(global::PassKit.Grpc.Members.Tier request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createTier, null, options, request);
@@ -727,6 +832,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Tier updateTier(global::PassKit.Grpc.Members.Tier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -737,6 +843,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Tier updateTier(global::PassKit.Grpc.Members.Tier request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateTier, null, options, request);
@@ -749,6 +856,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Tier> updateTierAsync(global::PassKit.Grpc.Members.Tier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -759,6 +867,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Tier> updateTierAsync(global::PassKit.Grpc.Members.Tier request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateTier, null, options, request);
@@ -771,6 +880,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Tier getTier(global::PassKit.Grpc.Members.TierRequestInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -781,6 +891,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Tier getTier(global::PassKit.Grpc.Members.TierRequestInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getTier, null, options, request);
@@ -793,6 +904,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Tier> getTierAsync(global::PassKit.Grpc.Members.TierRequestInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -803,6 +915,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Tier> getTierAsync(global::PassKit.Grpc.Members.TierRequestInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getTier, null, options, request);
@@ -815,6 +928,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTier(global::PassKit.Grpc.Members.TierRequestInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -825,6 +939,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteTier(global::PassKit.Grpc.Members.TierRequestInput request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteTier, null, options, request);
@@ -837,6 +952,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTierAsync(global::PassKit.Grpc.Members.TierRequestInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -847,6 +963,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteTierAsync(global::PassKit.Grpc.Members.TierRequestInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteTier, null, options, request);
@@ -859,6 +976,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Tier> listTiersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listTiersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -869,6 +987,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Tier> listTiersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTiersDeprecated, null, options, request);
@@ -881,6 +1000,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Tier> listTiers(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listTiers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -891,6 +1011,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Tier> listTiers(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTiers, null, options, request);
@@ -903,6 +1024,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id enrolMember(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enrolMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -913,6 +1035,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id enrolMember(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMember, null, options, request);
@@ -925,6 +1048,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> enrolMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enrolMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -935,6 +1059,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> enrolMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_enrolMember, null, options, request);
@@ -947,6 +1072,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id enrolMemberPublic(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enrolMemberPublic(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -957,6 +1083,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id enrolMemberPublic(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMemberPublic, null, options, request);
@@ -969,6 +1096,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> enrolMemberPublicAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enrolMemberPublicAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -979,102 +1107,127 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> enrolMemberPublicAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_enrolMemberPublic, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberRecordById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberRecordById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordByExternalId(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByExternalId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordByExternalId(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberRecordByExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByExternalIdAsync(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByExternalIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByExternalIdAsync(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberRecordByExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkInMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkInMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkInMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_checkInMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkInMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkInMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkInMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_checkInMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkOutMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkOutMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkOutMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_checkOutMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkOutMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkOutMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkOutMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_checkOutMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMembersDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMembers, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMember(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMember(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMember, null, options, request);
@@ -1087,6 +1240,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints earnPoints(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return earnPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1097,6 +1251,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints earnPoints(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_earnPoints, null, options, request);
@@ -1109,6 +1264,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> earnPointsAsync(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return earnPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1119,6 +1275,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> earnPointsAsync(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_earnPoints, null, options, request);
@@ -1131,6 +1288,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints burnPoints(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return burnPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1141,6 +1299,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints burnPoints(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_burnPoints, null, options, request);
@@ -1153,6 +1312,7 @@ namespace PassKit.Grpc.Members {
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> burnPointsAsync(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return burnPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1163,307 +1323,383 @@ namespace PassKit.Grpc.Members {
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> burnPointsAsync(global::PassKit.Grpc.Members.EarnBurnPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_burnPoints, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints setPoints(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints setPoints(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_setPoints, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> setPointsAsync(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> setPointsAsync(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_setPoints, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent changeMemberTier(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return changeMemberTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent changeMemberTier(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_changeMemberTier, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> changeMemberTierAsync(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return changeMemberTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> changeMemberTierAsync(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_changeMemberTier, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty updateMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMembersBySegment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty updateMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMembersBySegment, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> updateMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMembersBySegmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> updateMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMembersBySegment, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMembersBySegment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMembersBySegment, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMembersBySegmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMembersBySegment, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMember(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMember(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMembersDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersDeprecatedAsync(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersDeprecatedAsync(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMembersDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMembers, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMembers, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Message> getMessageHistoryForMember(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMessageHistoryForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Message> getMessageHistoryForMember(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_getMessageHistoryForMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMetaKeysForProgram, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMetaKeysForProgram, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count renewMembersExpiry(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return renewMembersExpiry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count renewMembersExpiry(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_renewMembersExpiry, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> renewMembersExpiryAsync(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return renewMembersExpiryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> renewMembersExpiryAsync(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_renewMembersExpiry, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMemberExpiry(global::PassKit.Grpc.Members.MemberExpiry request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberExpiry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMemberExpiry(global::PassKit.Grpc.Members.MemberExpiry request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMemberExpiry, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberExpiryAsync(global::PassKit.Grpc.Members.MemberExpiry request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberExpiryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberExpiryAsync(global::PassKit.Grpc.Members.MemberExpiry request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMemberExpiry, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPerson(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPersonAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMemberEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMemberEventsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMemberEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMemberEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMemberEventMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberEventMetaKeysForProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMemberEventMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberEventMetaKeysForProgram, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMemberEventMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberEventMetaKeysForProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMemberEventMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberEventMetaKeysForProgram, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listEventsForMember(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listEventsForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listEventsForMember(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listEventsForMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMemberEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEventsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMemberEvents, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEventsForMember(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEventsForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEventsForMember(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteEventsForMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventsForMemberAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEventsForMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventsForMemberAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteEventsForMember, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvent(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvent(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMemberEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMemberEvent, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EnrolmentUrls getProgramEnrolment(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgramEnrolment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EnrolmentUrls getProgramEnrolment(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProgramEnrolment, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EnrolmentUrls> getProgramEnrolmentAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgramEnrolmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EnrolmentUrls> getProgramEnrolmentAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProgramEnrolment, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override MembersClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new MembersClient(configuration);

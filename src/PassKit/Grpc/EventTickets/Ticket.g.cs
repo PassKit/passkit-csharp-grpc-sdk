@@ -231,19 +231,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketId> _parser = new pb::MessageParser<TicketId>(() => new TicketId());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketId> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketId() {
       OnConstruction();
     }
@@ -251,6 +255,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketId(TicketId other) : this() {
       switch (other.IdCase) {
         case IdOneofCase.TicketId_:
@@ -265,6 +270,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketId Clone() {
       return new TicketId(this);
     }
@@ -275,6 +281,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The Ticket id (22 character identifier).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketId_ {
       get { return idCase_ == IdOneofCase.TicketId_ ? (string) id_ : ""; }
       set {
@@ -289,6 +296,7 @@ namespace PassKit.Grpc.EventTickets {
     /// A ticket number object containing a production id and ticket number"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketNumber TicketNumber {
       get { return idCase_ == IdOneofCase.TicketNumber ? (global::PassKit.Grpc.EventTickets.TicketNumber) id_ : null; }
       set {
@@ -306,22 +314,26 @@ namespace PassKit.Grpc.EventTickets {
     }
     private IdOneofCase idCase_ = IdOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IdOneofCase IdCase {
       get { return idCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       idCase_ = IdOneofCase.None;
       id_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketId);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketId other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -336,6 +348,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (idCase_ == IdOneofCase.TicketId_) hash ^= TicketId_.GetHashCode();
@@ -348,11 +361,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -373,6 +388,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (idCase_ == IdOneofCase.TicketId_) {
         output.WriteRawTag(10);
@@ -389,6 +405,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (idCase_ == IdOneofCase.TicketId_) {
@@ -404,6 +421,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketId other) {
       if (other == null) {
         return;
@@ -424,6 +442,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -454,6 +473,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -489,19 +509,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketNumber> _parser = new pb::MessageParser<TicketNumber>(() => new TicketNumber());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketNumber> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumber() {
       OnConstruction();
     }
@@ -509,6 +533,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumber(TicketNumber other) : this() {
       productionId_ = other.productionId_;
       ticketNumber_ = other.ticketNumber_;
@@ -516,6 +541,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumber Clone() {
       return new TicketNumber(this);
     }
@@ -527,6 +553,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The Production id (22 character identifier), or the Production user defined id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionId_; }
       set {
@@ -541,6 +568,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The user defined ticket number (unique within production)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketNumber_ {
       get { return ticketNumber_; }
       set {
@@ -549,11 +577,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketNumber);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketNumber other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -567,6 +597,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProductionId.Length != 0) hash ^= ProductionId.GetHashCode();
@@ -578,11 +609,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -603,6 +636,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProductionId.Length != 0) {
         output.WriteRawTag(10);
@@ -619,6 +653,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProductionId.Length != 0) {
@@ -634,6 +669,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketNumber other) {
       if (other == null) {
         return;
@@ -648,6 +684,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -673,6 +710,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -706,19 +744,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<Ticket> _parser = new pb::MessageParser<Ticket>(() => new Ticket());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Ticket> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ticket() {
       OnConstruction();
     }
@@ -726,6 +768,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ticket(Ticket other) : this() {
       id_ = other.id_;
       ticketNumber_ = other.ticketNumber_;
@@ -751,6 +794,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Ticket Clone() {
       return new Ticket(this);
     }
@@ -762,6 +806,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated ticket id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -776,6 +821,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional user generated ticket number. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketNumber {
       get { return ticketNumber_; }
       set {
@@ -790,6 +836,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The event that the ticket is for. Can provide event id, or the whole event object - if the event doesn't exist it will be created. The combination of event.production.id, event.startDate, event.venue.uid &amp; ticket.ticketTypeUid is enforced unique in the system.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.Event Event {
       get { return event_; }
       set {
@@ -804,6 +851,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket type the ticket is for.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketType TicketType {
       get { return ticketType_; }
       set {
@@ -818,6 +866,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional order / confirmation / booking code. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderNumber {
       get { return orderNumber_; }
       set {
@@ -832,6 +881,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional PassKit generated grouping ID. The system automatically groups tickets based by order number. Grouped tickets can be downloaded together from our multi-pass download pages. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GroupingId {
       get { return groupingId_; }
       set {
@@ -846,6 +896,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The contents to embed in the barcode for this ticket. If not provided, the default value from the Ticket Type Pass Template Design is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BarcodeContents {
       get { return barcodeContents_; }
       set {
@@ -860,6 +911,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The seat info for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.Seat SeatInfo {
       get { return seatInfo_; }
       set {
@@ -874,6 +926,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The face value details for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.FaceValue FaceValue {
       get { return faceValue_; }
       set {
@@ -888,6 +941,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket holder information. Stored encrypted in PassKit's database.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {
       get { return person_; }
       set {
@@ -904,6 +958,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Any other meta fields for the ticket that are not covered in the Ticket Object / API (i.e. you might want to capture ticket information specific to your process).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> MetaData {
       get { return metaData_; }
     }
@@ -915,6 +970,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Indicates if the holder of the ticket opted out to receive marketing promotions (defaults to false).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Toggle OptOut {
       get { return optOut_; }
       set {
@@ -929,6 +985,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Holds the ticket status.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketStatus Status {
       get { return status_; }
       set {
@@ -943,6 +1000,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional field to set when the ticket expires. When the expiry date hits, it will automatically gray out the barcode.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiryDate {
       get { return expiryDate_; }
       set {
@@ -957,6 +1015,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about the redemption (if the ticket is in a redeemed state). Not writable; set by the redeem endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.RedemptionDetails RedemptionDetails {
       get { return redemptionDetails_; }
       set {
@@ -973,6 +1032,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about when the ticket was validated. Tickets can be validated multiple times. Not writable; set by the validate endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.EventTickets.ValidateDetails> ValidateDetails {
       get { return validateDetails_; }
     }
@@ -984,6 +1044,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional Pass level overrides for proximity &amp; images.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassOverrides PassOverrides {
       get { return passOverrides_; }
       set {
@@ -998,6 +1059,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Pass Metadata hold meta data about the pass like status, lifecycle, utm details and installation data. Cannot be set via the API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Metadata PassMetaData {
       get { return passMetaData_; }
       set {
@@ -1012,6 +1074,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket was created. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -1026,6 +1089,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket last updated. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -1034,11 +1098,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Ticket);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Ticket other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1070,6 +1136,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -1099,11 +1166,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1190,6 +1259,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -1272,6 +1342,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -1337,6 +1408,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Ticket other) {
       if (other == null) {
         return;
@@ -1434,6 +1506,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1564,6 +1637,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1699,19 +1773,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<ValidateDetails> _parser = new pb::MessageParser<ValidateDetails>(() => new ValidateDetails());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ValidateDetails> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateDetails() {
       OnConstruction();
     }
@@ -1719,6 +1797,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateDetails(ValidateDetails other) : this() {
       validateDate_ = other.validateDate_ != null ? other.validateDate_.Clone() : null;
       lat_ = other.lat_;
@@ -1730,6 +1809,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateDetails Clone() {
       return new ValidateDetails(this);
     }
@@ -1741,6 +1821,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket was validated, auto set by the system when the validate endpoint is called. Tickets can be validated multiple times. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ValidateDate {
       get { return validateDate_; }
       set {
@@ -1755,6 +1836,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption lat.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lat {
       get { return lat_; }
       set {
@@ -1769,6 +1851,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption lon.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lon {
       get { return lon_; }
       set {
@@ -1783,6 +1866,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption alt.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Alt {
       get { return alt_; }
       set {
@@ -1797,6 +1881,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional validate user agent, can be used in case where a Merchant uses the PassKit scanning solution combined with their own scanning software and wants to differentiate the source of validation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ValidateSource {
       get { return validateSource_; }
       set {
@@ -1811,6 +1896,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional validate reference, can be used for staff name, username, scanner ID, location ID, etc.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ValidateReference {
       get { return validateReference_; }
       set {
@@ -1819,11 +1905,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ValidateDetails);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ValidateDetails other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1841,6 +1929,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (validateDate_ != null) hash ^= ValidateDate.GetHashCode();
@@ -1856,11 +1945,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1897,6 +1988,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (validateDate_ != null) {
         output.WriteRawTag(10);
@@ -1929,6 +2021,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (validateDate_ != null) {
@@ -1956,6 +2049,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ValidateDetails other) {
       if (other == null) {
         return;
@@ -1985,6 +2079,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2029,6 +2124,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2078,19 +2174,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<RedemptionDetails> _parser = new pb::MessageParser<RedemptionDetails>(() => new RedemptionDetails());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RedemptionDetails> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionDetails() {
       OnConstruction();
     }
@@ -2098,6 +2198,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionDetails(RedemptionDetails other) : this() {
       redemptionDate_ = other.redemptionDate_ != null ? other.redemptionDate_.Clone() : null;
       lat_ = other.lat_;
@@ -2109,6 +2210,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionDetails Clone() {
       return new RedemptionDetails(this);
     }
@@ -2120,6 +2222,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket was redeemed, auto set by the system when the redeem endpoint is called. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp RedemptionDate {
       get { return redemptionDate_; }
       set {
@@ -2134,6 +2237,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption lat.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lat {
       get { return lat_; }
       set {
@@ -2148,6 +2252,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption lon.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Lon {
       get { return lon_; }
       set {
@@ -2162,6 +2267,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption alt.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Alt {
       get { return alt_; }
       set {
@@ -2176,6 +2282,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption user agent, can be used in case where a Merchant uses the PassKit scanning solution combined with their own scanning software and wants to differentiate the source of redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RedemptionSource {
       get { return redemptionSource_; }
       set {
@@ -2190,6 +2297,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional redemption reference, can be used for staff name, username, scanner ID, location ID, etc.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RedemptionReference {
       get { return redemptionReference_; }
       set {
@@ -2198,11 +2306,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RedemptionDetails);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RedemptionDetails other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2220,6 +2330,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (redemptionDate_ != null) hash ^= RedemptionDate.GetHashCode();
@@ -2235,11 +2346,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2276,6 +2389,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (redemptionDate_ != null) {
         output.WriteRawTag(10);
@@ -2308,6 +2422,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (redemptionDate_ != null) {
@@ -2335,6 +2450,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RedemptionDetails other) {
       if (other == null) {
         return;
@@ -2364,6 +2480,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2408,6 +2525,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2457,19 +2575,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<FaceValue> _parser = new pb::MessageParser<FaceValue>(() => new FaceValue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FaceValue> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FaceValue() {
       OnConstruction();
     }
@@ -2477,6 +2599,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FaceValue(FaceValue other) : this() {
       amount_ = other.amount_;
       currency_ = other.currency_;
@@ -2484,6 +2607,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FaceValue Clone() {
       return new FaceValue(this);
     }
@@ -2495,6 +2619,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket amount in cents.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float Amount {
       get { return amount_; }
       set {
@@ -2509,6 +2634,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket currency.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Currency {
       get { return currency_; }
       set {
@@ -2517,11 +2643,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FaceValue);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FaceValue other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2535,6 +2663,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Amount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Amount);
@@ -2546,11 +2675,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2571,6 +2702,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Amount != 0F) {
         output.WriteRawTag(13);
@@ -2587,6 +2719,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Amount != 0F) {
@@ -2602,6 +2735,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FaceValue other) {
       if (other == null) {
         return;
@@ -2616,6 +2750,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2641,6 +2776,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2671,19 +2807,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<Seat> _parser = new pb::MessageParser<Seat>(() => new Seat());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Seat> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Seat() {
       OnConstruction();
     }
@@ -2691,6 +2831,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Seat(Seat other) : this() {
       seat_ = other.seat_;
       localizedSeat_ = other.localizedSeat_ != null ? other.localizedSeat_.Clone() : null;
@@ -2704,6 +2845,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Seat Clone() {
       return new Seat(this);
     }
@@ -2715,6 +2857,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The seat number, such as "1", "2", "3", or any other seat identifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Seat_ {
       get { return seat_; }
       set {
@@ -2729,6 +2872,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Localized seat number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedSeat {
       get { return localizedSeat_; }
       set {
@@ -2743,6 +2887,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The row of the seat, such as "1", E", "BB", or "A5".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Row {
       get { return row_; }
       set {
@@ -2757,6 +2902,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Localized row.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedRow {
       get { return localizedRow_; }
       set {
@@ -2771,6 +2917,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The section of the seat, such as "121".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Section {
       get { return section_; }
       set {
@@ -2785,6 +2932,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Localized section.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedSection {
       get { return localizedSection_; }
       set {
@@ -2799,6 +2947,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The gate the ticket holder should enter to get to their seat, such as "A" or "West".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Gate {
       get { return gate_; }
       set {
@@ -2813,6 +2962,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Localized gate.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedGate {
       get { return localizedGate_; }
       set {
@@ -2821,11 +2971,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Seat);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Seat other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2845,6 +2997,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Seat_.Length != 0) hash ^= Seat_.GetHashCode();
@@ -2862,11 +3015,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2911,6 +3066,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Seat_.Length != 0) {
         output.WriteRawTag(10);
@@ -2951,6 +3107,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Seat_.Length != 0) {
@@ -2984,6 +3141,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Seat other) {
       if (other == null) {
         return;
@@ -3028,6 +3186,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3089,6 +3248,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3155,19 +3315,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketListRequest> _parser = new pb::MessageParser<TicketListRequest>(() => new TicketListRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketListRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketListRequest() {
       OnConstruction();
     }
@@ -3175,6 +3339,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketListRequest(TicketListRequest other) : this() {
       filters_ = other.filters_ != null ? other.filters_.Clone() : null;
       switch (other.ProductionCase) {
@@ -3208,6 +3373,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketListRequest Clone() {
       return new TicketListRequest(this);
     }
@@ -3218,6 +3384,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production ID. Required if productionUid is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionCase_ == ProductionOneofCase.ProductionId ? (string) production_ : ""; }
       set {
@@ -3232,6 +3399,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production UID. Required if productionId is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionUid {
       get { return productionCase_ == ProductionOneofCase.ProductionUid ? (string) production_ : ""; }
       set {
@@ -3246,6 +3414,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Event ID generated by PassKit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EventId {
       get { return eventCase_ == EventOneofCase.EventId ? (string) event_ : ""; }
       set {
@@ -3257,6 +3426,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "eventFilterByVenueAndStart" field.</summary>
     public const int EventFilterByVenueAndStartFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.EventFilterByVenueAndStart EventFilterByVenueAndStart {
       get { return eventCase_ == EventOneofCase.EventFilterByVenueAndStart ? (global::PassKit.Grpc.EventTickets.EventFilterByVenueAndStart) event_ : null; }
       set {
@@ -3271,6 +3441,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit Ticket Type ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeId {
       get { return ticketTypeCase_ == TicketTypeOneofCase.TicketTypeId ? (string) ticketType_ : ""; }
       set {
@@ -3285,6 +3456,7 @@ namespace PassKit.Grpc.EventTickets {
     /// User Defined Ticket Type ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeUid {
       get { return ticketTypeCase_ == TicketTypeOneofCase.TicketTypeUid ? (string) ticketType_ : ""; }
       set {
@@ -3300,6 +3472,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Filters: allows to filter on additional ticket data (i.e. group id, pass install status, updated etc).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
       get { return filters_; }
       set {
@@ -3316,11 +3489,13 @@ namespace PassKit.Grpc.EventTickets {
     }
     private ProductionOneofCase productionCase_ = ProductionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProductionOneofCase ProductionCase {
       get { return productionCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProduction() {
       productionCase_ = ProductionOneofCase.None;
       production_ = null;
@@ -3335,11 +3510,13 @@ namespace PassKit.Grpc.EventTickets {
     }
     private EventOneofCase eventCase_ = EventOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventOneofCase EventCase {
       get { return eventCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEvent() {
       eventCase_ = EventOneofCase.None;
       event_ = null;
@@ -3354,22 +3531,26 @@ namespace PassKit.Grpc.EventTickets {
     }
     private TicketTypeOneofCase ticketTypeCase_ = TicketTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketTypeOneofCase TicketTypeCase {
       get { return ticketTypeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTicketType() {
       ticketTypeCase_ = TicketTypeOneofCase.None;
       ticketType_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketListRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketListRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3391,6 +3572,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (productionCase_ == ProductionOneofCase.ProductionId) hash ^= ProductionId.GetHashCode();
@@ -3410,11 +3592,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3455,6 +3639,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (productionCase_ == ProductionOneofCase.ProductionId) {
         output.WriteRawTag(10);
@@ -3491,6 +3676,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (productionCase_ == ProductionOneofCase.ProductionId) {
@@ -3521,6 +3707,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketListRequest other) {
       if (other == null) {
         return;
@@ -3565,6 +3752,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3618,6 +3806,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3676,19 +3865,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<EventFilterByVenueAndStart> _parser = new pb::MessageParser<EventFilterByVenueAndStart>(() => new EventFilterByVenueAndStart());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<EventFilterByVenueAndStart> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventFilterByVenueAndStart() {
       OnConstruction();
     }
@@ -3696,6 +3889,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventFilterByVenueAndStart(EventFilterByVenueAndStart other) : this() {
       venueId_ = other.venueId_;
       venueUid_ = other.venueUid_;
@@ -3704,6 +3898,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventFilterByVenueAndStart Clone() {
       return new EventFilterByVenueAndStart(this);
     }
@@ -3715,6 +3910,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Venue ID. Required if venueUid is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueId {
       get { return venueId_; }
       set {
@@ -3729,6 +3925,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Venue UID. Required if venueId is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueUid {
       get { return venueUid_; }
       set {
@@ -3743,6 +3940,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Event scheduled start date time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ScheduledStartDate {
       get { return scheduledStartDate_; }
       set {
@@ -3751,11 +3949,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as EventFilterByVenueAndStart);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(EventFilterByVenueAndStart other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3770,6 +3970,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (VenueId.Length != 0) hash ^= VenueId.GetHashCode();
@@ -3782,11 +3983,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3811,6 +4014,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (VenueId.Length != 0) {
         output.WriteRawTag(10);
@@ -3831,6 +4035,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (VenueId.Length != 0) {
@@ -3849,6 +4054,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(EventFilterByVenueAndStart other) {
       if (other == null) {
         return;
@@ -3869,6 +4075,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3901,6 +4108,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3938,19 +4146,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketNumberRequest> _parser = new pb::MessageParser<TicketNumberRequest>(() => new TicketNumberRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketNumberRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumberRequest() {
       OnConstruction();
     }
@@ -3958,6 +4170,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumberRequest(TicketNumberRequest other) : this() {
       productionId_ = other.productionId_;
       productionUid_ = other.productionUid_;
@@ -3966,6 +4179,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketNumberRequest Clone() {
       return new TicketNumberRequest(this);
     }
@@ -3977,6 +4191,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production ID. Required if productionUid is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionId_; }
       set {
@@ -3991,6 +4206,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production UID. Required if productionId is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionUid {
       get { return productionUid_; }
       set {
@@ -4005,6 +4221,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Ticket Number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketNumber {
       get { return ticketNumber_; }
       set {
@@ -4013,11 +4230,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketNumberRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketNumberRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4032,6 +4251,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProductionId.Length != 0) hash ^= ProductionId.GetHashCode();
@@ -4044,11 +4264,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4073,6 +4295,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProductionId.Length != 0) {
         output.WriteRawTag(10);
@@ -4093,6 +4316,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProductionId.Length != 0) {
@@ -4111,6 +4335,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketNumberRequest other) {
       if (other == null) {
         return;
@@ -4128,6 +4353,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4157,6 +4383,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4191,19 +4418,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<OrderNumberRequest> _parser = new pb::MessageParser<OrderNumberRequest>(() => new OrderNumberRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<OrderNumberRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrderNumberRequest() {
       OnConstruction();
     }
@@ -4211,6 +4442,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrderNumberRequest(OrderNumberRequest other) : this() {
       productionId_ = other.productionId_;
       productionUid_ = other.productionUid_;
@@ -4219,6 +4451,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrderNumberRequest Clone() {
       return new OrderNumberRequest(this);
     }
@@ -4230,6 +4463,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production ID. Required if productionUid is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionId_; }
       set {
@@ -4244,6 +4478,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production UID. Required if productionId is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionUid {
       get { return productionUid_; }
       set {
@@ -4258,6 +4493,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Order Number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderNumber {
       get { return orderNumber_; }
       set {
@@ -4266,11 +4502,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as OrderNumberRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(OrderNumberRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4285,6 +4523,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProductionId.Length != 0) hash ^= ProductionId.GetHashCode();
@@ -4297,11 +4536,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4326,6 +4567,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProductionId.Length != 0) {
         output.WriteRawTag(10);
@@ -4346,6 +4588,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProductionId.Length != 0) {
@@ -4364,6 +4607,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(OrderNumberRequest other) {
       if (other == null) {
         return;
@@ -4381,6 +4625,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4410,6 +4655,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4444,19 +4690,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<RedeemByOrderNumber> _parser = new pb::MessageParser<RedeemByOrderNumber>(() => new RedeemByOrderNumber());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RedeemByOrderNumber> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemByOrderNumber() {
       OnConstruction();
     }
@@ -4464,6 +4714,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemByOrderNumber(RedeemByOrderNumber other) : this() {
       productionId_ = other.productionId_;
       productionUid_ = other.productionUid_;
@@ -4473,6 +4724,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemByOrderNumber Clone() {
       return new RedeemByOrderNumber(this);
     }
@@ -4484,6 +4736,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production ID. Required if productionUid is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionId_; }
       set {
@@ -4498,6 +4751,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Production UID. Required if productionId is not provided
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionUid {
       get { return productionUid_; }
       set {
@@ -4512,6 +4766,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Order Number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderNumber {
       get { return orderNumber_; }
       set {
@@ -4526,6 +4781,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Details about the redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.RedemptionDetails RedemptionDetails {
       get { return redemptionDetails_; }
       set {
@@ -4534,11 +4790,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RedeemByOrderNumber);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RedeemByOrderNumber other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4554,6 +4812,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProductionId.Length != 0) hash ^= ProductionId.GetHashCode();
@@ -4567,11 +4826,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4600,6 +4861,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProductionId.Length != 0) {
         output.WriteRawTag(10);
@@ -4624,6 +4886,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProductionId.Length != 0) {
@@ -4645,6 +4908,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RedeemByOrderNumber other) {
       if (other == null) {
         return;
@@ -4668,6 +4932,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4704,6 +4969,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4745,19 +5011,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<Tickets> _parser = new pb::MessageParser<Tickets>(() => new Tickets());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Tickets> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tickets() {
       OnConstruction();
     }
@@ -4765,12 +5035,14 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tickets(Tickets other) : this() {
       tickets_ = other.tickets_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tickets Clone() {
       return new Tickets(this);
     }
@@ -4781,16 +5053,19 @@ namespace PassKit.Grpc.EventTickets {
         = pb::FieldCodec.ForMessage(10, global::PassKit.Grpc.EventTickets.TicketLimitedFields.Parser);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.EventTickets.TicketLimitedFields> tickets_ = new pbc::RepeatedField<global::PassKit.Grpc.EventTickets.TicketLimitedFields>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.EventTickets.TicketLimitedFields> Tickets_ {
       get { return tickets_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Tickets);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Tickets other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4803,6 +5078,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= tickets_.GetHashCode();
@@ -4813,11 +5089,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4831,6 +5109,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       tickets_.WriteTo(ref output, _repeated_tickets_codec);
       if (_unknownFields != null) {
@@ -4840,6 +5119,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += tickets_.CalculateSize(_repeated_tickets_codec);
@@ -4850,6 +5130,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Tickets other) {
       if (other == null) {
         return;
@@ -4859,6 +5140,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4880,6 +5162,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4906,19 +5189,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketPassBundles> _parser = new pb::MessageParser<TicketPassBundles>(() => new TicketPassBundles());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketPassBundles> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketPassBundles() {
       OnConstruction();
     }
@@ -4926,12 +5213,14 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketPassBundles(TicketPassBundles other) : this() {
       tickets_ = other.tickets_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketPassBundles Clone() {
       return new TicketPassBundles(this);
     }
@@ -4945,16 +5234,19 @@ namespace PassKit.Grpc.EventTickets {
     /// An array of tickets.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.PassBundle> Tickets {
       get { return tickets_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketPassBundles);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketPassBundles other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4967,6 +5259,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= tickets_.GetHashCode();
@@ -4977,11 +5270,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4995,6 +5290,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       tickets_.WriteTo(ref output, _repeated_tickets_codec);
       if (_unknownFields != null) {
@@ -5004,6 +5300,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += tickets_.CalculateSize(_repeated_tickets_codec);
@@ -5014,6 +5311,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketPassBundles other) {
       if (other == null) {
         return;
@@ -5023,6 +5321,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5044,6 +5343,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5070,19 +5370,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<ValidateTicketRequest> _parser = new pb::MessageParser<ValidateTicketRequest>(() => new ValidateTicketRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ValidateTicketRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketRequest() {
       OnConstruction();
     }
@@ -5090,6 +5394,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketRequest(ValidateTicketRequest other) : this() {
       maxNumberOfValidations_ = other.maxNumberOfValidations_;
       ticket_ = other.ticket_ != null ? other.ticket_.Clone() : null;
@@ -5098,6 +5403,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketRequest Clone() {
       return new ValidateTicketRequest(this);
     }
@@ -5109,6 +5415,7 @@ namespace PassKit.Grpc.EventTickets {
     /// If provided will auto redeem ticket once max number of validations has been reached.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MaxNumberOfValidations {
       get { return maxNumberOfValidations_; }
       set {
@@ -5123,6 +5430,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Ticket id for the ticket to validate.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketId Ticket {
       get { return ticket_; }
       set {
@@ -5137,6 +5445,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Additional details to set for this validation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.ValidateDetails ValidateDetails {
       get { return validateDetails_; }
       set {
@@ -5145,11 +5454,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ValidateTicketRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ValidateTicketRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5164,6 +5475,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxNumberOfValidations != 0) hash ^= MaxNumberOfValidations.GetHashCode();
@@ -5176,11 +5488,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5205,6 +5519,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (MaxNumberOfValidations != 0) {
         output.WriteRawTag(8);
@@ -5225,6 +5540,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (MaxNumberOfValidations != 0) {
@@ -5243,6 +5559,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ValidateTicketRequest other) {
       if (other == null) {
         return;
@@ -5266,6 +5583,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5301,6 +5619,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5341,19 +5660,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<ValidateTicketResponse> _parser = new pb::MessageParser<ValidateTicketResponse>(() => new ValidateTicketResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ValidateTicketResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketResponse() {
       OnConstruction();
     }
@@ -5361,6 +5684,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketResponse(ValidateTicketResponse other) : this() {
       valid_ = other.valid_;
       ticket_ = other.ticket_ != null ? other.ticket_.Clone() : null;
@@ -5368,6 +5692,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateTicketResponse Clone() {
       return new ValidateTicketResponse(this);
     }
@@ -5379,6 +5704,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Indicates if the ticket is valid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Valid {
       get { return valid_; }
       set {
@@ -5393,6 +5719,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Full ticket details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.Ticket Ticket {
       get { return ticket_; }
       set {
@@ -5401,11 +5728,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ValidateTicketResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ValidateTicketResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5419,6 +5748,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Valid != false) hash ^= Valid.GetHashCode();
@@ -5430,11 +5760,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5455,6 +5787,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Valid != false) {
         output.WriteRawTag(8);
@@ -5471,6 +5804,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Valid != false) {
@@ -5486,6 +5820,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ValidateTicketResponse other) {
       if (other == null) {
         return;
@@ -5503,6 +5838,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5531,6 +5867,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5564,19 +5901,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<RedeemTicketRequest> _parser = new pb::MessageParser<RedeemTicketRequest>(() => new RedeemTicketRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RedeemTicketRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemTicketRequest() {
       OnConstruction();
     }
@@ -5584,6 +5925,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemTicketRequest(RedeemTicketRequest other) : this() {
       ticket_ = other.ticket_ != null ? other.ticket_.Clone() : null;
       redemptionDetails_ = other.redemptionDetails_ != null ? other.redemptionDetails_.Clone() : null;
@@ -5591,6 +5933,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedeemTicketRequest Clone() {
       return new RedeemTicketRequest(this);
     }
@@ -5602,6 +5945,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Ticket id for the ticket to redeem.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketId Ticket {
       get { return ticket_; }
       set {
@@ -5616,6 +5960,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Additional details to set for this redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.RedemptionDetails RedemptionDetails {
       get { return redemptionDetails_; }
       set {
@@ -5624,11 +5969,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RedeemTicketRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RedeemTicketRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5642,6 +5989,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ticket_ != null) hash ^= Ticket.GetHashCode();
@@ -5653,11 +6001,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5678,6 +6028,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ticket_ != null) {
         output.WriteRawTag(10);
@@ -5694,6 +6045,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ticket_ != null) {
@@ -5709,6 +6061,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RedeemTicketRequest other) {
       if (other == null) {
         return;
@@ -5729,6 +6082,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5760,6 +6114,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5796,19 +6151,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<TicketLimitedFields> _parser = new pb::MessageParser<TicketLimitedFields>(() => new TicketLimitedFields());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TicketLimitedFields> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketLimitedFields() {
       OnConstruction();
     }
@@ -5816,6 +6175,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketLimitedFields(TicketLimitedFields other) : this() {
       id_ = other.id_;
       ticketNumber_ = other.ticketNumber_;
@@ -5843,6 +6203,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketLimitedFields Clone() {
       return new TicketLimitedFields(this);
     }
@@ -5854,6 +6215,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated ticket id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -5868,6 +6230,7 @@ namespace PassKit.Grpc.EventTickets {
     /// User generated ticket number. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketNumber {
       get { return ticketNumber_; }
       set {
@@ -5882,6 +6245,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The production information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.ProductionLimitedFieldsResponse Production {
       get { return production_; }
       set {
@@ -5896,6 +6260,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The event information. Only specific fields are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.EventLimitedFieldsResponse Event {
       get { return event_; }
       set {
@@ -5910,6 +6275,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Venue information. Only specific fields are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.VenueLimitedFieldsResponse Venue {
       get { return venue_; }
       set {
@@ -5924,6 +6290,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket type the ticket is for. Only specific fields are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketTypeLimitedFields TicketType {
       get { return ticketType_; }
       set {
@@ -5938,6 +6305,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional order / confirmation / booking code. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderNumber {
       get { return orderNumber_; }
       set {
@@ -5952,6 +6320,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional PassKit generated grouping ID. The system automatically groups tickets based by order number. Grouped tickets can be downloaded together from our multi-pass download pages. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GroupingId {
       get { return groupingId_; }
       set {
@@ -5966,6 +6335,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The contents to embed in the barcode for this ticket. If not provided, the default value from the Ticket Type Pass Template Design is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BarcodeContents {
       get { return barcodeContents_; }
       set {
@@ -5980,6 +6350,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The seat info for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.Seat SeatInfo {
       get { return seatInfo_; }
       set {
@@ -5994,6 +6365,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The face value details for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.FaceValue FaceValue {
       get { return faceValue_; }
       set {
@@ -6008,6 +6380,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket holder information. Stored encrypted in PassKit's database.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {
       get { return person_; }
       set {
@@ -6024,6 +6397,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Any other meta fields for the ticket that are not covered in the Ticket Object / API (i.e. you might want to capture ticket information specific to your process).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> MetaData {
       get { return metaData_; }
     }
@@ -6035,6 +6409,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Indicates if the holder of the ticket opted out to receive marketing promotions (defaults to false).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool OptOut {
       get { return optOut_; }
       set {
@@ -6049,6 +6424,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Holds the ticket status.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketStatus Status {
       get { return status_; }
       set {
@@ -6063,6 +6439,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional field to set when the ticket expires. When the expiry date hits, it will automatically gray out the barcode.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiryDate {
       get { return expiryDate_; }
       set {
@@ -6077,6 +6454,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about the redemption (if the ticket is in a redeemed state). Not writable; set by the redeem endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.RedemptionDetails RedemptionDetails {
       get { return redemptionDetails_; }
       set {
@@ -6093,6 +6471,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about when the ticket was validated. Tickets can be validated multiple times. Not writable; set by the validate endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.EventTickets.ValidateDetails> ValidateDetails {
       get { return validateDetails_; }
     }
@@ -6104,6 +6483,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional Pass level overrides for proximity &amp; images.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassOverrides PassOverrides {
       get { return passOverrides_; }
       set {
@@ -6118,6 +6498,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Pass Metadata hold meta data about the pass like status, lifecycle, utm details and installation data. Cannot be set via the API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Metadata PassMetaData {
       get { return passMetaData_; }
       set {
@@ -6132,6 +6513,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket was created. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -6146,6 +6528,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket last updated. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -6154,11 +6537,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TicketLimitedFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TicketLimitedFields other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6192,6 +6577,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -6223,11 +6609,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6322,6 +6710,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -6412,6 +6801,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -6483,6 +6873,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TicketLimitedFields other) {
       if (other == null) {
         return;
@@ -6592,6 +6983,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6736,6 +7128,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6885,19 +7278,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<IssueTicketRequest> _parser = new pb::MessageParser<IssueTicketRequest>(() => new IssueTicketRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IssueTicketRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketRequest() {
       OnConstruction();
     }
@@ -6905,6 +7302,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketRequest(IssueTicketRequest other) : this() {
       ticketTypeId_ = other.ticketTypeId_;
       ticketNumber_ = other.ticketNumber_;
@@ -6937,6 +7335,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketRequest Clone() {
       return new IssueTicketRequest(this);
     }
@@ -6947,6 +7346,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated event id (22 characters). Required if event is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EventId {
       get { return eventInfoCase_ == EventInfoOneofCase.EventId ? (string) eventInfo_ : ""; }
       set {
@@ -6961,6 +7361,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Event details. Event is auto generated if the record does not exist. Required if eventId is not provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.EventLimitedFieldsRequest Event {
       get { return eventInfoCase_ == EventInfoOneofCase.Event ? (global::PassKit.Grpc.EventTickets.EventLimitedFieldsRequest) eventInfo_ : null; }
       set {
@@ -6976,6 +7377,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated ticketType id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeId {
       get { return ticketTypeId_; }
       set {
@@ -6990,6 +7392,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional user generated ticket number. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketNumber {
       get { return ticketNumber_; }
       set {
@@ -7004,6 +7407,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional order / confirmation / booking code. Unique within the Production.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrderNumber {
       get { return orderNumber_; }
       set {
@@ -7018,6 +7422,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional PassKit generated grouping ID. The system automatically groups tickets based by order number. Grouped tickets can be downloaded together from our multi-pass download pages. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GroupingId {
       get { return groupingId_; }
       set {
@@ -7032,6 +7437,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The contents to embed in the barcode for this ticket. If not provided, the default value from the Ticket Type Pass Template Design is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BarcodeContents {
       get { return barcodeContents_; }
       set {
@@ -7046,6 +7452,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The seat info for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.Seat SeatInfo {
       get { return seatInfo_; }
       set {
@@ -7060,6 +7467,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The face value details for the ticket.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.FaceValue FaceValue {
       get { return faceValue_; }
       set {
@@ -7074,6 +7482,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The ticket holder information. Stored encrypted in PassKit's database.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {
       get { return person_; }
       set {
@@ -7090,6 +7499,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Any other meta fields for the ticket that are not covered in the Ticket Object / API (i.e. you might want to capture ticket information specific to your process).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, string> MetaData {
       get { return metaData_; }
     }
@@ -7101,6 +7511,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Indicates if the holder of the ticket opted out to receive marketing promotions (defaults to false).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool OptOut {
       get { return optOut_; }
       set {
@@ -7115,6 +7526,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Holds the ticket status.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketStatus Status {
       get { return status_; }
       set {
@@ -7129,6 +7541,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional field to set when the ticket expires. When the expiry date hits, it will automatically gray out the barcode.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiryDate {
       get { return expiryDate_; }
       set {
@@ -7143,6 +7556,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about the redemption (if the ticket is in a redeemed state). Not writable; set by the redeem endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.RedemptionDetails RedemptionDetails {
       get { return redemptionDetails_; }
       set {
@@ -7159,6 +7573,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Contains details about when the ticket was validated. Tickets can be validated multiple times. Not writable; set by the validate endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.EventTickets.ValidateDetails> ValidateDetails {
       get { return validateDetails_; }
     }
@@ -7170,6 +7585,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional Pass level overrides for proximity &amp; images.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassOverrides PassOverrides {
       get { return passOverrides_; }
       set {
@@ -7184,6 +7600,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Pass Metadata hold meta data about the pass like status, lifecycle, utm details and installation data. Cannot be set via the API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Metadata PassMetaData {
       get { return passMetaData_; }
       set {
@@ -7198,6 +7615,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket was created. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -7212,6 +7630,7 @@ namespace PassKit.Grpc.EventTickets {
     /// The date the ticket last updated. Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -7228,22 +7647,26 @@ namespace PassKit.Grpc.EventTickets {
     }
     private EventInfoOneofCase eventInfoCase_ = EventInfoOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventInfoOneofCase EventInfoCase {
       get { return eventInfoCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEventInfo() {
       eventInfoCase_ = EventInfoOneofCase.None;
       eventInfo_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IssueTicketRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IssueTicketRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7276,6 +7699,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventInfoCase_ == EventInfoOneofCase.EventId) hash ^= EventId.GetHashCode();
@@ -7306,11 +7730,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -7397,6 +7823,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventInfoCase_ == EventInfoOneofCase.EventId) {
         output.WriteRawTag(10);
@@ -7479,6 +7906,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventInfoCase_ == EventInfoOneofCase.EventId) {
@@ -7544,6 +7972,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IssueTicketRequest other) {
       if (other == null) {
         return;
@@ -7641,6 +8070,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -7770,6 +8200,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7904,19 +8335,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<IssueTicketResponseIds> _parser = new pb::MessageParser<IssueTicketResponseIds>(() => new IssueTicketResponseIds());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IssueTicketResponseIds> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketResponseIds() {
       OnConstruction();
     }
@@ -7924,6 +8359,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketResponseIds(IssueTicketResponseIds other) : this() {
       ticketId_ = other.ticketId_;
       productionId_ = other.productionId_;
@@ -7934,6 +8370,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueTicketResponseIds Clone() {
       return new IssueTicketResponseIds(this);
     }
@@ -7945,6 +8382,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated ticket id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketId {
       get { return ticketId_; }
       set {
@@ -7959,6 +8397,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated production id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
       get { return productionId_; }
       set {
@@ -7973,6 +8412,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated venue id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueId {
       get { return venueId_; }
       set {
@@ -7987,6 +8427,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated ticket type id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeId {
       get { return ticketTypeId_; }
       set {
@@ -8001,6 +8442,7 @@ namespace PassKit.Grpc.EventTickets {
     /// PassKit generated event id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EventId {
       get { return eventId_; }
       set {
@@ -8009,11 +8451,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IssueTicketResponseIds);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IssueTicketResponseIds other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8030,6 +8474,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TicketId.Length != 0) hash ^= TicketId.GetHashCode();
@@ -8044,11 +8489,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8081,6 +8528,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (TicketId.Length != 0) {
         output.WriteRawTag(10);
@@ -8109,6 +8557,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TicketId.Length != 0) {
@@ -8133,6 +8582,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IssueTicketResponseIds other) {
       if (other == null) {
         return;
@@ -8156,6 +8606,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8193,6 +8644,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8235,19 +8687,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<EventTicketPassRequest> _parser = new pb::MessageParser<EventTicketPassRequest>(() => new EventTicketPassRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<EventTicketPassRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPassRequest() {
       OnConstruction();
     }
@@ -8255,6 +8711,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPassRequest(EventTicketPassRequest other) : this() {
       format_ = other.format_.Clone();
       switch (other.RequestCase) {
@@ -8273,6 +8730,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPassRequest Clone() {
       return new EventTicketPassRequest(this);
     }
@@ -8280,6 +8738,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "ticketId" field.</summary>
     public const int TicketIdFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Id TicketId {
       get { return requestCase_ == RequestOneofCase.TicketId ? (global::PassKit.Grpc.Id) request_ : null; }
       set {
@@ -8291,6 +8750,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "ticketNumber" field.</summary>
     public const int TicketNumberFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketNumberRequest TicketNumber {
       get { return requestCase_ == RequestOneofCase.TicketNumber ? (global::PassKit.Grpc.EventTickets.TicketNumberRequest) request_ : null; }
       set {
@@ -8302,6 +8762,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "orderNumber" field.</summary>
     public const int OrderNumberFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.OrderNumberRequest OrderNumber {
       get { return requestCase_ == RequestOneofCase.OrderNumber ? (global::PassKit.Grpc.EventTickets.OrderNumberRequest) request_ : null; }
       set {
@@ -8319,6 +8780,7 @@ namespace PassKit.Grpc.EventTickets {
     /// Optional. If omitted, return the URL to the web pass landing page. Not used when getting or deleting the underlying boarding pass record.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.PassBundleFormat> Format {
       get { return format_; }
     }
@@ -8333,22 +8795,26 @@ namespace PassKit.Grpc.EventTickets {
     }
     private RequestOneofCase requestCase_ = RequestOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestOneofCase RequestCase {
       get { return requestCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequest() {
       requestCase_ = RequestOneofCase.None;
       request_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as EventTicketPassRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(EventTicketPassRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8365,6 +8831,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (requestCase_ == RequestOneofCase.TicketId) hash ^= TicketId.GetHashCode();
@@ -8379,11 +8846,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8409,6 +8878,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (requestCase_ == RequestOneofCase.TicketId) {
         output.WriteRawTag(10);
@@ -8430,6 +8900,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (requestCase_ == RequestOneofCase.TicketId) {
@@ -8449,6 +8920,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(EventTicketPassRequest other) {
       if (other == null) {
         return;
@@ -8479,6 +8951,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8528,6 +9001,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8582,19 +9056,23 @@ namespace PassKit.Grpc.EventTickets {
     private static readonly pb::MessageParser<EventTicketPerson> _parser = new pb::MessageParser<EventTicketPerson>(() => new EventTicketPerson());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<EventTicketPerson> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.EventTickets.TicketReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPerson() {
       OnConstruction();
     }
@@ -8602,6 +9080,7 @@ namespace PassKit.Grpc.EventTickets {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPerson(EventTicketPerson other) : this() {
       person_ = other.person_ != null ? other.person_.Clone() : null;
       switch (other.RequestCase) {
@@ -8617,6 +9096,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EventTicketPerson Clone() {
       return new EventTicketPerson(this);
     }
@@ -8624,6 +9104,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "ticketId" field.</summary>
     public const int TicketIdFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Id TicketId {
       get { return requestCase_ == RequestOneofCase.TicketId ? (global::PassKit.Grpc.Id) request_ : null; }
       set {
@@ -8635,6 +9116,7 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "ticketNumber" field.</summary>
     public const int TicketNumberFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketNumberRequest TicketNumber {
       get { return requestCase_ == RequestOneofCase.TicketNumber ? (global::PassKit.Grpc.EventTickets.TicketNumberRequest) request_ : null; }
       set {
@@ -8647,6 +9129,7 @@ namespace PassKit.Grpc.EventTickets {
     public const int PersonFieldNumber = 5;
     private global::PassKit.Grpc.Person person_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {
       get { return person_; }
       set {
@@ -8663,22 +9146,26 @@ namespace PassKit.Grpc.EventTickets {
     }
     private RequestOneofCase requestCase_ = RequestOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestOneofCase RequestCase {
       get { return requestCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRequest() {
       requestCase_ = RequestOneofCase.None;
       request_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as EventTicketPerson);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(EventTicketPerson other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8694,6 +9181,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (requestCase_ == RequestOneofCase.TicketId) hash ^= TicketId.GetHashCode();
@@ -8707,11 +9195,13 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8736,6 +9226,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (requestCase_ == RequestOneofCase.TicketId) {
         output.WriteRawTag(10);
@@ -8756,6 +9247,7 @@ namespace PassKit.Grpc.EventTickets {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (requestCase_ == RequestOneofCase.TicketId) {
@@ -8774,6 +9266,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(EventTicketPerson other) {
       if (other == null) {
         return;
@@ -8803,6 +9296,7 @@ namespace PassKit.Grpc.EventTickets {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8845,6 +9339,7 @@ namespace PassKit.Grpc.EventTickets {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

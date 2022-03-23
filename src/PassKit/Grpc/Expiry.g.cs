@@ -84,19 +84,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<ExpirySettings> _parser = new pb::MessageParser<ExpirySettings>(() => new ExpirySettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ExpirySettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.ExpiryReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExpirySettings() {
       OnConstruction();
     }
@@ -104,6 +108,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExpirySettings(ExpirySettings other) : this() {
       expiryType_ = other.expiryType_;
       switch (other.ExpiryOneofCase) {
@@ -119,6 +124,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExpirySettings Clone() {
       return new ExpirySettings(this);
     }
@@ -127,6 +133,7 @@ namespace PassKit.Grpc {
     public const int ExpiryTypeFieldNumber = 1;
     private global::PassKit.Grpc.ExpiryType expiryType_ = global::PassKit.Grpc.ExpiryType.ExpireNone;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ExpiryType ExpiryType {
       get { return expiryType_; }
       set {
@@ -141,6 +148,7 @@ namespace PassKit.Grpc {
     /// Please set expiryType as EXPIRE_ON_FIXED_DATE.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Date FixedExpiryDate {
       get { return expiryOneofCase_ == ExpiryOneofOneofCase.FixedExpiryDate ? (global::PassKit.Grpc.Date) expiryOneof_ : null; }
       set {
@@ -156,6 +164,7 @@ namespace PassKit.Grpc {
     /// Please set expiryType as EXPIRE_AFTER_X_DAYS.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ExpireAfterXDays {
       get { return expiryOneofCase_ == ExpiryOneofOneofCase.ExpireAfterXDays ? (uint) expiryOneof_ : 0; }
       set {
@@ -173,22 +182,26 @@ namespace PassKit.Grpc {
     }
     private ExpiryOneofOneofCase expiryOneofCase_ = ExpiryOneofOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ExpiryOneofOneofCase ExpiryOneofCase {
       get { return expiryOneofCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExpiryOneof() {
       expiryOneofCase_ = ExpiryOneofOneofCase.None;
       expiryOneof_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ExpirySettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ExpirySettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -204,6 +217,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ExpiryType != global::PassKit.Grpc.ExpiryType.ExpireNone) hash ^= ExpiryType.GetHashCode();
@@ -217,11 +231,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -246,6 +262,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ExpiryType != global::PassKit.Grpc.ExpiryType.ExpireNone) {
         output.WriteRawTag(8);
@@ -266,6 +283,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ExpiryType != global::PassKit.Grpc.ExpiryType.ExpireNone) {
@@ -284,6 +302,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ExpirySettings other) {
       if (other == null) {
         return;
@@ -307,6 +326,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -341,6 +361,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

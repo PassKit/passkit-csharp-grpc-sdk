@@ -790,19 +790,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<SelectOption> _parser = new pb::MessageParser<SelectOption>(() => new SelectOption());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SelectOption> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SelectOption() {
       OnConstruction();
     }
@@ -810,6 +814,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SelectOption(SelectOption other) : this() {
       listPriority_ = other.listPriority_;
       textLabel_ = other.textLabel_;
@@ -819,6 +824,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SelectOption Clone() {
       return new SelectOption(this);
     }
@@ -830,6 +836,7 @@ namespace PassKit.Grpc {
     /// The order of option in the select list. Option with listPriority 1 will be rendered at the top of drop-down list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ListPriority {
       get { return listPriority_; }
       set {
@@ -844,6 +851,7 @@ namespace PassKit.Grpc {
     /// Display text on the drop-down list (e.g. Hongkong and Shanghai Banking Corporation).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TextLabel {
       get { return textLabel_; }
       set {
@@ -855,6 +863,7 @@ namespace PassKit.Grpc {
     public const int LocalizedTextLabelFieldNumber = 3;
     private global::PassKit.Grpc.LocalizedString localizedTextLabel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTextLabel {
       get { return localizedTextLabel_; }
       set {
@@ -869,6 +878,7 @@ namespace PassKit.Grpc {
     /// Value of selected text. (e.g. HSBC)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Value {
       get { return value_; }
       set {
@@ -877,11 +887,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SelectOption);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SelectOption other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -897,6 +909,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ListPriority != 0) hash ^= ListPriority.GetHashCode();
@@ -910,11 +923,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -943,6 +958,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ListPriority != 0) {
         output.WriteRawTag(8);
@@ -967,6 +983,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ListPriority != 0) {
@@ -988,6 +1005,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SelectOption other) {
       if (other == null) {
         return;
@@ -1011,6 +1029,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1047,6 +1066,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1088,19 +1108,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Barcode> _parser = new pb::MessageParser<Barcode>(() => new Barcode());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Barcode> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Barcode() {
       OnConstruction();
     }
@@ -1108,6 +1132,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Barcode(Barcode other) : this() {
       payload_ = other.payload_;
       format_ = other.format_;
@@ -1118,6 +1143,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Barcode Clone() {
       return new Barcode(this);
     }
@@ -1126,6 +1152,7 @@ namespace PassKit.Grpc {
     public const int PayloadFieldNumber = 1;
     private string payload_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Payload {
       get { return payload_; }
       set {
@@ -1137,6 +1164,7 @@ namespace PassKit.Grpc {
     public const int FormatFieldNumber = 2;
     private global::PassKit.Grpc.BarcodeType format_ = global::PassKit.Grpc.BarcodeType.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.BarcodeType Format {
       get { return format_; }
       set {
@@ -1148,6 +1176,7 @@ namespace PassKit.Grpc {
     public const int AltTextFieldNumber = 3;
     private string altText_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AltText {
       get { return altText_; }
       set {
@@ -1159,6 +1188,7 @@ namespace PassKit.Grpc {
     public const int LocalizedAltTextFieldNumber = 4;
     private global::PassKit.Grpc.LocalizedString localizedAltText_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAltText {
       get { return localizedAltText_; }
       set {
@@ -1170,6 +1200,7 @@ namespace PassKit.Grpc {
     public const int MessageEncodingFieldNumber = 5;
     private string messageEncoding_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MessageEncoding {
       get { return messageEncoding_; }
       set {
@@ -1178,11 +1209,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Barcode);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Barcode other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1199,6 +1232,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Payload.Length != 0) hash ^= Payload.GetHashCode();
@@ -1213,11 +1247,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1250,6 +1286,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Payload.Length != 0) {
         output.WriteRawTag(10);
@@ -1278,6 +1315,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Payload.Length != 0) {
@@ -1302,6 +1340,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Barcode other) {
       if (other == null) {
         return;
@@ -1328,6 +1367,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1368,6 +1408,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1416,19 +1457,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PassTemplate> _parser = new pb::MessageParser<PassTemplate>(() => new PassTemplate());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PassTemplate> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplate() {
       OnConstruction();
     }
@@ -1436,6 +1481,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplate(PassTemplate other) : this() {
       id_ = other.id_;
       name_ = other.name_;
@@ -1472,6 +1518,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplate Clone() {
       return new PassTemplate(this);
     }
@@ -1483,6 +1530,7 @@ namespace PassKit.Grpc {
     /// This design id (not writable).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -1497,6 +1545,7 @@ namespace PassKit.Grpc {
     /// A name to allow for searching within the console.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -1511,6 +1560,7 @@ namespace PassKit.Grpc {
     /// The protocol for the design.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -1525,6 +1575,7 @@ namespace PassKit.Grpc {
     /// The version of the protocol design. (for protocols that support more than one pass style).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Revision {
       get { return revision_; }
       set {
@@ -1539,6 +1590,7 @@ namespace PassKit.Grpc {
     /// This defines the template’s default language. For a list of supported languages please see the Language List.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LanguageCode DefaultLanguage {
       get { return defaultLanguage_; }
       set {
@@ -1553,6 +1605,7 @@ namespace PassKit.Grpc {
     /// This is the name of the company or organisation issuing the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrganizationName {
       get { return organizationName_; }
       set {
@@ -1567,6 +1620,7 @@ namespace PassKit.Grpc {
     /// Different language translations for the name of company or organisation issuing the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOrganizationName {
       get { return localizedOrganizationName_; }
       set {
@@ -1581,6 +1635,7 @@ namespace PassKit.Grpc {
     /// This is your campaign description. The description will be displayed at the top on the back of the Apple pass, and when customers are downloading their pass. This value should detail the campaign offers and customer benefits.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -1595,6 +1650,7 @@ namespace PassKit.Grpc {
     /// Different language translations for the campaign description.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDescription {
       get { return localizedDescription_; }
       set {
@@ -1609,6 +1665,7 @@ namespace PassKit.Grpc {
     /// This holds pass fields for both front and back of the pass and settings of rendering pass fields and data collection page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Data Data {
       get { return data_; }
       set {
@@ -1622,6 +1679,7 @@ namespace PassKit.Grpc {
     /// Image data defined by image ids.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ImageIds ImageIds {
       get { return imageAssetsCase_ == ImageAssetsOneofCase.ImageIds ? (global::PassKit.Grpc.ImageIds) imageAssets_ : null; }
       set {
@@ -1636,6 +1694,7 @@ namespace PassKit.Grpc {
     /// Image data defined as image object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ImageData Images {
       get { return imageAssetsCase_ == ImageAssetsOneofCase.Images ? (global::PassKit.Grpc.ImageData) imageAssets_ : null; }
       set {
@@ -1651,6 +1710,7 @@ namespace PassKit.Grpc {
     /// Colours take a hex code input.  A '#' prefix is optional. Not all colors have effect on each design.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Colors Colors {
       get { return colors_; }
       set {
@@ -1662,6 +1722,7 @@ namespace PassKit.Grpc {
     public const int BarcodeFieldNumber = 14;
     private global::PassKit.Grpc.Barcode barcode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Barcode Barcode {
       get { return barcode_; }
       set {
@@ -1676,6 +1737,7 @@ namespace PassKit.Grpc {
     /// NFC enabled passes will depend on client certificate capabilities. Contact support for more information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.NFC NfcEnabled {
       get { return nfcEnabled_; }
       set {
@@ -1690,6 +1752,7 @@ namespace PassKit.Grpc {
     /// When set controls how this pass is shared. For Apple wallet this uses the built in sharing functionality. For Google Pay, a sharing link will be added to the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Sharing Sharing {
       get { return sharing_; }
       set {
@@ -1701,6 +1764,7 @@ namespace PassKit.Grpc {
     public const int AppleWalletSettingsFieldNumber = 17;
     private global::PassKit.Grpc.AppleWalletSettings appleWalletSettings_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.AppleWalletSettings AppleWalletSettings {
       get { return appleWalletSettings_; }
       set {
@@ -1712,6 +1776,7 @@ namespace PassKit.Grpc {
     public const int GooglePaySettingsFieldNumber = 18;
     private global::PassKit.Grpc.GooglePaySettings googlePaySettings_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePaySettings GooglePaySettings {
       get { return googlePaySettings_; }
       set {
@@ -1728,6 +1793,7 @@ namespace PassKit.Grpc {
     /// A list of up to 10 GPS locations where this pass should be presented on the lock-screen.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.GPSLocation> Locations {
       get { return locations_; }
     }
@@ -1741,6 +1807,7 @@ namespace PassKit.Grpc {
     /// A list of up to 10 Beacon UUIDs that should trigger the pass to be presented on the lock-screen.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Beacon> Beacons {
       get { return beacons_; }
     }
@@ -1754,6 +1821,7 @@ namespace PassKit.Grpc {
     /// A list of links to be shown on each pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Link> Links {
       get { return links_; }
     }
@@ -1765,6 +1833,7 @@ namespace PassKit.Grpc {
     /// Timezone string in IANA timezone format. If not provided defaults to Etc/UTC.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Timezone {
       get { return timezone_; }
       set {
@@ -1776,6 +1845,7 @@ namespace PassKit.Grpc {
     public const int ExpirySettingsFieldNumber = 23;
     private global::PassKit.Grpc.ExpirySettings expirySettings_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ExpirySettings ExpirySettings {
       get { return expirySettings_; }
       set {
@@ -1790,6 +1860,7 @@ namespace PassKit.Grpc {
     /// Optional settings that override default localizations and Android experience.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LandingPageSettings LandingPageSettings {
       get { return landingPageSettings_; }
       set {
@@ -1806,22 +1877,26 @@ namespace PassKit.Grpc {
     }
     private ImageAssetsOneofCase imageAssetsCase_ = ImageAssetsOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ImageAssetsOneofCase ImageAssetsCase {
       get { return imageAssetsCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearImageAssets() {
       imageAssetsCase_ = ImageAssetsOneofCase.None;
       imageAssets_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PassTemplate);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PassTemplate other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1858,6 +1933,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -1892,11 +1968,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1996,6 +2074,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -2091,6 +2170,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -2166,6 +2246,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PassTemplate other) {
       if (other == null) {
         return;
@@ -2282,6 +2363,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2438,6 +2520,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2602,19 +2685,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<AppleWalletSettings> _parser = new pb::MessageParser<AppleWalletSettings>(() => new AppleWalletSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AppleWalletSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletSettings() {
       OnConstruction();
     }
@@ -2622,6 +2709,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletSettings(AppleWalletSettings other) : this() {
       passType_ = other.passType_;
       userInfo_ = other.userInfo_;
@@ -2635,6 +2723,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletSettings Clone() {
       return new AppleWalletSettings(this);
     }
@@ -2646,6 +2735,7 @@ namespace PassKit.Grpc {
     /// Pass type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ApplePassType PassType {
       get { return passType_; }
       set {
@@ -2660,6 +2750,7 @@ namespace PassKit.Grpc {
     /// Custom information for companion apps. This data is not displayed to the user on the pass. This data needs to be a valid JSON object and is passed to the companion app when it launches from the pass. For example, a pass for a cafe could include information about the user’s favorite drink and sandwich in a machine-readable form for the companion app to read, making it easy to place an order for "the usual" from the app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UserInfo {
       get { return userInfo_; }
       set {
@@ -2674,6 +2765,7 @@ namespace PassKit.Grpc {
     /// This is used to specify a deep link into the app displayed on the back of the Apple Wallet pass (the app is chosen from the associatedStoreIdentifiers). If the app supports deep linking, you can use this url to go to a specific point within the app when the link is clicked.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AppLaunchUrl {
       get { return appLaunchUrl_; }
       set {
@@ -2690,6 +2782,7 @@ namespace PassKit.Grpc {
     /// A list of iTunes Store item identifiers for the associated apps. Only one item in the list is used — the first item identifier for an app compatible with the user's App Store account and device (hardware/iOS version). If the app is not installed, the link opens the App Store and shows the app. If the app is already installed, the link launches the app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AssociatedStoreIdentifiers {
       get { return associatedStoreIdentifiers_; }
     }
@@ -2701,6 +2794,7 @@ namespace PassKit.Grpc {
     /// GPS lock screen messages will show at the lower of max distance and the pass default(unpublished) value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint MaxDistance {
       get { return maxDistance_; }
       set {
@@ -2717,6 +2811,7 @@ namespace PassKit.Grpc {
     /// List of country codes for the stores of the associated apps. This is required to render the pass correctly in the designer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> AppStoreCountries {
       get { return appStoreCountries_; }
     }
@@ -2725,6 +2820,7 @@ namespace PassKit.Grpc {
     public const int TransitTypeFieldNumber = 7;
     private global::PassKit.Grpc.TransitType transitType_ = global::PassKit.Grpc.TransitType.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TransitType TransitType {
       get { return transitType_; }
       set {
@@ -2736,6 +2832,7 @@ namespace PassKit.Grpc {
     public const int GroupingIdentifierFieldNumber = 8;
     private string groupingIdentifier_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GroupingIdentifier {
       get { return groupingIdentifier_; }
       set {
@@ -2744,11 +2841,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AppleWalletSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AppleWalletSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2768,6 +2867,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PassType != global::PassKit.Grpc.ApplePassType.AppleNotSupported) hash ^= PassType.GetHashCode();
@@ -2785,11 +2885,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2828,6 +2930,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (PassType != global::PassKit.Grpc.ApplePassType.AppleNotSupported) {
         output.WriteRawTag(8);
@@ -2862,6 +2965,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PassType != global::PassKit.Grpc.ApplePassType.AppleNotSupported) {
@@ -2891,6 +2995,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AppleWalletSettings other) {
       if (other == null) {
         return;
@@ -2919,6 +3024,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2969,6 +3075,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3027,19 +3134,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<GooglePaySettings> _parser = new pb::MessageParser<GooglePaySettings>(() => new GooglePaySettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GooglePaySettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePaySettings() {
       OnConstruction();
     }
@@ -3047,6 +3158,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePaySettings(GooglePaySettings other) : this() {
       passType_ = other.passType_;
       androidApp_ = other.androidApp_ != null ? other.androidApp_.Clone() : null;
@@ -3059,6 +3171,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePaySettings Clone() {
       return new GooglePaySettings(this);
     }
@@ -3070,6 +3183,7 @@ namespace PassKit.Grpc {
     /// Pass type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayPassType PassType {
       get { return passType_; }
       set {
@@ -3084,6 +3198,7 @@ namespace PassKit.Grpc {
     /// Android App details
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayApp AndroidApp {
       get { return androidApp_; }
       set {
@@ -3098,6 +3213,7 @@ namespace PassKit.Grpc {
     /// IOS app details
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayApp IosApp {
       get { return iosApp_; }
       set {
@@ -3112,6 +3228,7 @@ namespace PassKit.Grpc {
     /// Web app details
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayApp WebApp {
       get { return webApp_; }
       set {
@@ -3126,6 +3243,7 @@ namespace PassKit.Grpc {
     /// Custom template (takes a JSON ClassTemplateInfo object https://developers.google.com/pay/passes/rest/v1/ClassTemplateInfo)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassTemplateInfo {
       get { return classTemplateInfo_; }
       set {
@@ -3140,6 +3258,7 @@ namespace PassKit.Grpc {
     /// Override template background color
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BackgroundColor {
       get { return backgroundColor_; }
       set {
@@ -3156,16 +3275,19 @@ namespace PassKit.Grpc {
     /// The pass localisation will be restricted to languages in this list. Currently only available to Boarding Passes and restricted to a single language. Google are working on supporting multiple overrides and we will update this documentation once multiple languages are available.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.LanguageCode> LanguageOverrides {
       get { return languageOverrides_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GooglePaySettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GooglePaySettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3184,6 +3306,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PassType != global::PassKit.Grpc.GooglePayPassType.GooglePayNotSupported) hash ^= PassType.GetHashCode();
@@ -3200,11 +3323,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3242,6 +3367,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (PassType != global::PassKit.Grpc.GooglePayPassType.GooglePayNotSupported) {
         output.WriteRawTag(8);
@@ -3275,6 +3401,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PassType != global::PassKit.Grpc.GooglePayPassType.GooglePayNotSupported) {
@@ -3303,6 +3430,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GooglePaySettings other) {
       if (other == null) {
         return;
@@ -3339,6 +3467,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3394,6 +3523,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3457,19 +3587,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<GooglePayApp> _parser = new pb::MessageParser<GooglePayApp>(() => new GooglePayApp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GooglePayApp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayApp() {
       OnConstruction();
     }
@@ -3477,6 +3611,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayApp(GooglePayApp other) : this() {
       url_ = other.url_ != null ? other.url_.Clone() : null;
       title_ = other.title_;
@@ -3489,6 +3624,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayApp Clone() {
       return new GooglePayApp(this);
     }
@@ -3500,6 +3636,7 @@ namespace PassKit.Grpc {
     /// Link to an associated app on the Google Play Store
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Url Url {
       get { return url_; }
       set {
@@ -3514,6 +3651,7 @@ namespace PassKit.Grpc {
     /// Localized title of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -3528,6 +3666,7 @@ namespace PassKit.Grpc {
     /// Title of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTitle {
       get { return localizedTitle_; }
       set {
@@ -3542,6 +3681,7 @@ namespace PassKit.Grpc {
     /// Description of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -3556,6 +3696,7 @@ namespace PassKit.Grpc {
     /// Localized description of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDescription {
       get { return localizedDescription_; }
       set {
@@ -3570,6 +3711,7 @@ namespace PassKit.Grpc {
     /// Clickable link description of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UrlDescription {
       get { return urlDescription_; }
       set {
@@ -3584,6 +3726,7 @@ namespace PassKit.Grpc {
     /// Localized clickable link description of the Android App
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedUrlDescription {
       get { return localizedUrlDescription_; }
       set {
@@ -3592,11 +3735,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GooglePayApp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GooglePayApp other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3615,6 +3760,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (url_ != null) hash ^= Url.GetHashCode();
@@ -3631,11 +3777,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3676,6 +3824,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (url_ != null) {
         output.WriteRawTag(10);
@@ -3712,6 +3861,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (url_ != null) {
@@ -3742,6 +3892,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GooglePayApp other) {
       if (other == null) {
         return;
@@ -3783,6 +3934,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3840,6 +3992,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3905,19 +4058,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Data> _parser = new pb::MessageParser<Data>(() => new Data());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Data> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Data() {
       OnConstruction();
     }
@@ -3925,6 +4082,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Data(Data other) : this() {
       dataFields_ = other.dataFields_.Clone();
       dataCollectionPageSettings_ = other.dataCollectionPageSettings_ != null ? other.dataCollectionPageSettings_.Clone() : null;
@@ -3932,6 +4090,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Data Clone() {
       return new Data(this);
     }
@@ -3946,6 +4105,7 @@ namespace PassKit.Grpc {
     /// You can set data field purely for CRM analytics purpose and not show it on the customer UI.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.DataField> DataFields {
       get { return dataFields_; }
     }
@@ -3957,6 +4117,7 @@ namespace PassKit.Grpc {
     /// Settings for data collection elements other than form fields. Form fields can be configured in dataFields object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DataCollectionPageSettings DataCollectionPageSettings {
       get { return dataCollectionPageSettings_; }
       set {
@@ -3965,11 +4126,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Data);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Data other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3983,6 +4146,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= dataFields_.GetHashCode();
@@ -3994,11 +4158,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4016,6 +4182,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       dataFields_.WriteTo(ref output, _repeated_dataFields_codec);
       if (dataCollectionPageSettings_ != null) {
@@ -4029,6 +4196,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += dataFields_.CalculateSize(_repeated_dataFields_codec);
@@ -4042,6 +4210,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Data other) {
       if (other == null) {
         return;
@@ -4057,6 +4226,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4085,6 +4255,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4118,19 +4289,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<LandingPageSettings> _parser = new pb::MessageParser<LandingPageSettings>(() => new LandingPageSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LandingPageSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LandingPageSettings() {
       OnConstruction();
     }
@@ -4138,6 +4313,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LandingPageSettings(LandingPageSettings other) : this() {
       landingLocalizationOverride_ = other.landingLocalizationOverride_.Clone();
       preferThirdPartyAndroidWallet_ = other.preferThirdPartyAndroidWallet_;
@@ -4147,6 +4323,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LandingPageSettings Clone() {
       return new LandingPageSettings(this);
     }
@@ -4160,6 +4337,7 @@ namespace PassKit.Grpc {
     /// Array of languages to display on the landing page, if you would like your language to be supported, please contact support.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.LanguageCode> LandingLocalizationOverride {
       get { return landingLocalizationOverride_; }
     }
@@ -4171,6 +4349,7 @@ namespace PassKit.Grpc {
     /// Set to on to present a third party wallet instead of Google Pay as the default option to Android Users.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Toggle PreferThirdPartyAndroidWallet {
       get { return preferThirdPartyAndroidWallet_; }
       set {
@@ -4185,6 +4364,7 @@ namespace PassKit.Grpc {
     /// Preferred Android Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SupportedAndroidWallet PreferredAndroidWallet {
       get { return preferredAndroidWallet_; }
       set {
@@ -4201,16 +4381,19 @@ namespace PassKit.Grpc {
     /// Override landing page text, note that the localized string must contain the template default language, or "EN" - please contact support for dictionary keys and further usage details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::PassKit.Grpc.LocalizedString> LocalizedTextOverrides {
       get { return localizedTextOverrides_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LandingPageSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LandingPageSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4226,6 +4409,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= landingLocalizationOverride_.GetHashCode();
@@ -4239,11 +4423,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4266,6 +4452,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       landingLocalizationOverride_.WriteTo(ref output, _repeated_landingLocalizationOverride_codec);
       if (PreferThirdPartyAndroidWallet != global::PassKit.Grpc.Toggle.DoNotUse) {
@@ -4284,6 +4471,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += landingLocalizationOverride_.CalculateSize(_repeated_landingLocalizationOverride_codec);
@@ -4301,6 +4489,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LandingPageSettings other) {
       if (other == null) {
         return;
@@ -4317,6 +4506,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4351,6 +4541,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4393,19 +4584,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<DataCollectionPageSettings> _parser = new pb::MessageParser<DataCollectionPageSettings>(() => new DataCollectionPageSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DataCollectionPageSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionPageSettings() {
       OnConstruction();
     }
@@ -4413,6 +4608,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionPageSettings(DataCollectionPageSettings other) : this() {
       title_ = other.title_;
       localizedTitle_ = other.localizedTitle_ != null ? other.localizedTitle_.Clone() : null;
@@ -4437,6 +4633,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionPageSettings Clone() {
       return new DataCollectionPageSettings(this);
     }
@@ -4448,6 +4645,7 @@ namespace PassKit.Grpc {
     /// Used as title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -4462,6 +4660,7 @@ namespace PassKit.Grpc {
     /// Localized title of the page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTitle {
       get { return localizedTitle_; }
       set {
@@ -4476,6 +4675,7 @@ namespace PassKit.Grpc {
     /// Description of the page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -4490,6 +4690,7 @@ namespace PassKit.Grpc {
     /// Localized description of the page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDescription {
       get { return localizedDescription_; }
       set {
@@ -4504,6 +4705,7 @@ namespace PassKit.Grpc {
     /// This sets text for form submit button on the data collection landing page. Default text is 'Submit'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SubmitButtonText {
       get { return submitButtonText_; }
       set {
@@ -4515,6 +4717,7 @@ namespace PassKit.Grpc {
     public const int LocalizedSubmitButtonTextFieldNumber = 6;
     private global::PassKit.Grpc.LocalizedString localizedSubmitButtonText_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedSubmitButtonText {
       get { return localizedSubmitButtonText_; }
       set {
@@ -4529,6 +4732,7 @@ namespace PassKit.Grpc {
     /// The text showed to customers when the page is processing new enrolments.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LoadingText {
       get { return loadingText_; }
       set {
@@ -4543,6 +4747,7 @@ namespace PassKit.Grpc {
     /// Localized loading text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedLoadingText {
       get { return localizedLoadingText_; }
       set {
@@ -4557,6 +4762,7 @@ namespace PassKit.Grpc {
     /// Thank you text to display on the standard issue page. Can contain any of the fields from fields array: ${DISPLAY_NAME}, ${EMAIL_ADDRESS}, etc.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ThankYouText {
       get { return thankYouText_; }
       set {
@@ -4571,6 +4777,7 @@ namespace PassKit.Grpc {
     /// Localized thank you text. Can contain any of the fields from fields array: ${DISPLAY_NAME}, ${EMAIL_ADDRESS}, etc.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedThankYouText {
       get { return localizedThankYouText_; }
       set {
@@ -4585,6 +4792,7 @@ namespace PassKit.Grpc {
     /// For device size greater than the iPad, the form will be rendered with page background color. Form background color is always set as white.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PageBackgroundColor {
       get { return pageBackgroundColor_; }
       set {
@@ -4599,6 +4807,7 @@ namespace PassKit.Grpc {
     /// Localized page background color shown if device is greater than the iPad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedPageBackgroundColor {
       get { return localizedPageBackgroundColor_; }
       set {
@@ -4613,6 +4822,7 @@ namespace PassKit.Grpc {
     /// Tracking settings for Facebook Pixel &amp; Google Analytics
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TrackingSettings TrackingSettings {
       get { return trackingSettings_; }
       set {
@@ -4627,6 +4837,7 @@ namespace PassKit.Grpc {
     /// The color for submit button text. Default is #ffffff.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SubmitButtonTextColor {
       get { return submitButtonTextColor_; }
       set {
@@ -4641,6 +4852,7 @@ namespace PassKit.Grpc {
     /// The background color of submit button. Default is #4CAF50 (green).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SubmitButtonBackgroundColor {
       get { return submitButtonBackgroundColor_; }
       set {
@@ -4655,6 +4867,7 @@ namespace PassKit.Grpc {
     /// Renders above the submit button. Can be used to show T&amp;C link.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FooterText {
       get { return footerText_; }
       set {
@@ -4669,6 +4882,7 @@ namespace PassKit.Grpc {
     /// Localized footer text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedFooterText {
       get { return localizedFooterText_; }
       set {
@@ -4683,6 +4897,7 @@ namespace PassKit.Grpc {
     /// Custom css to overwrite on the data collection page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CssOverrides {
       get { return cssOverrides_; }
       set {
@@ -4697,6 +4912,7 @@ namespace PassKit.Grpc {
     /// Configuration for password protecting the data collection page
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PasswordSettings PasswordSettings {
       get { return passwordSettings_; }
       set {
@@ -4705,11 +4921,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DataCollectionPageSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DataCollectionPageSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4740,6 +4958,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Title.Length != 0) hash ^= Title.GetHashCode();
@@ -4768,11 +4987,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4861,6 +5082,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Title.Length != 0) {
         output.WriteRawTag(10);
@@ -4945,6 +5167,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Title.Length != 0) {
@@ -5011,6 +5234,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DataCollectionPageSettings other) {
       if (other == null) {
         return;
@@ -5103,6 +5327,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5223,6 +5448,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5351,19 +5577,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PasswordSettings> _parser = new pb::MessageParser<PasswordSettings>(() => new PasswordSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PasswordSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PasswordSettings() {
       OnConstruction();
     }
@@ -5371,6 +5601,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PasswordSettings(PasswordSettings other) : this() {
       passwordType_ = other.passwordType_;
       password_ = other.password_;
@@ -5388,6 +5619,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PasswordSettings Clone() {
       return new PasswordSettings(this);
     }
@@ -5399,6 +5631,7 @@ namespace PassKit.Grpc {
     /// Configures the type of password.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PasswordType PasswordType {
       get { return passwordType_; }
       set {
@@ -5413,6 +5646,7 @@ namespace PassKit.Grpc {
     /// Password users need to provide to access the data collection page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Password {
       get { return password_; }
       set {
@@ -5427,6 +5661,7 @@ namespace PassKit.Grpc {
     /// Label text for the password field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string InputLabelText {
       get { return inputLabelText_; }
       set {
@@ -5441,6 +5676,7 @@ namespace PassKit.Grpc {
     /// Localized input label text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedInputLabelText {
       get { return localizedInputLabelText_; }
       set {
@@ -5455,6 +5691,7 @@ namespace PassKit.Grpc {
     /// Error text to be shown when an incorrect password is shown.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ErrorText {
       get { return errorText_; }
       set {
@@ -5469,6 +5706,7 @@ namespace PassKit.Grpc {
     /// Localized error text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedErrorText {
       get { return localizedErrorText_; }
       set {
@@ -5483,6 +5721,7 @@ namespace PassKit.Grpc {
     /// Header text to be displayed above the password input box.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HeaderText {
       get { return headerText_; }
       set {
@@ -5497,6 +5736,7 @@ namespace PassKit.Grpc {
     /// Localized header text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedHeaderText {
       get { return localizedHeaderText_; }
       set {
@@ -5511,6 +5751,7 @@ namespace PassKit.Grpc {
     /// Text for the submit button.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ButtonText {
       get { return buttonText_; }
       set {
@@ -5525,6 +5766,7 @@ namespace PassKit.Grpc {
     /// Localized button text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedButtonText {
       get { return localizedButtonText_; }
       set {
@@ -5539,6 +5781,7 @@ namespace PassKit.Grpc {
     /// Text for the submit button.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TitleText {
       get { return titleText_; }
       set {
@@ -5553,6 +5796,7 @@ namespace PassKit.Grpc {
     /// Localized button text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTitleText {
       get { return localizedTitleText_; }
       set {
@@ -5561,11 +5805,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PasswordSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PasswordSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5589,6 +5835,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PasswordType != global::PassKit.Grpc.PasswordType.DoNotUse) hash ^= PasswordType.GetHashCode();
@@ -5610,11 +5857,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5675,6 +5924,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (PasswordType != global::PassKit.Grpc.PasswordType.DoNotUse) {
         output.WriteRawTag(8);
@@ -5731,6 +5981,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PasswordType != global::PassKit.Grpc.PasswordType.DoNotUse) {
@@ -5776,6 +6027,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PasswordSettings other) {
       if (other == null) {
         return;
@@ -5835,6 +6087,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5915,6 +6168,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6000,19 +6254,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PassTemplateResponse> _parser = new pb::MessageParser<PassTemplateResponse>(() => new PassTemplateResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PassTemplateResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplateResponse() {
       OnConstruction();
     }
@@ -6020,6 +6278,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplateResponse(PassTemplateResponse other) : this() {
       template_ = other.template_ != null ? other.template_.Clone() : null;
       name_ = other.name_;
@@ -6032,6 +6291,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PassTemplateResponse Clone() {
       return new PassTemplateResponse(this);
     }
@@ -6040,6 +6300,7 @@ namespace PassKit.Grpc {
     public const int TemplateFieldNumber = 1;
     private global::PassKit.Grpc.PassTemplate template_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassTemplate Template {
       get { return template_; }
       set {
@@ -6051,6 +6312,7 @@ namespace PassKit.Grpc {
     public const int NameFieldNumber = 2;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -6062,6 +6324,7 @@ namespace PassKit.Grpc {
     public const int OwnerUsernameFieldNumber = 3;
     private string ownerUsername_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerUsername {
       get { return ownerUsername_; }
       set {
@@ -6073,6 +6336,7 @@ namespace PassKit.Grpc {
     public const int ProtocolFieldNumber = 4;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -6084,6 +6348,7 @@ namespace PassKit.Grpc {
     public const int RevisionFieldNumber = 5;
     private uint revision_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Revision {
       get { return revision_; }
       set {
@@ -6095,6 +6360,7 @@ namespace PassKit.Grpc {
     public const int CreatedAtFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
       get { return createdAt_; }
       set {
@@ -6106,6 +6372,7 @@ namespace PassKit.Grpc {
     public const int UpdatedAtFieldNumber = 7;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updatedAt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp UpdatedAt {
       get { return updatedAt_; }
       set {
@@ -6114,11 +6381,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PassTemplateResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PassTemplateResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6137,6 +6406,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (template_ != null) hash ^= Template.GetHashCode();
@@ -6153,11 +6423,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6198,6 +6470,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (template_ != null) {
         output.WriteRawTag(10);
@@ -6234,6 +6507,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (template_ != null) {
@@ -6264,6 +6538,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PassTemplateResponse other) {
       if (other == null) {
         return;
@@ -6302,6 +6577,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6356,6 +6632,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6418,19 +6695,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Colors> _parser = new pb::MessageParser<Colors>(() => new Colors());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Colors> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Colors() {
       OnConstruction();
     }
@@ -6438,6 +6719,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Colors(Colors other) : this() {
       backgroundColor_ = other.backgroundColor_;
       labelColor_ = other.labelColor_;
@@ -6447,6 +6729,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Colors Clone() {
       return new Colors(this);
     }
@@ -6458,6 +6741,7 @@ namespace PassKit.Grpc {
     /// The background color of the card in hex (e.g. “#ffffff” or "ffffff").
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BackgroundColor {
       get { return backgroundColor_; }
       set {
@@ -6472,6 +6756,7 @@ namespace PassKit.Grpc {
     /// This customises the color of field label of Apple Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LabelColor {
       get { return labelColor_; }
       set {
@@ -6486,6 +6771,7 @@ namespace PassKit.Grpc {
     /// This customises the color of field text or value of Apple Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TextColor {
       get { return textColor_; }
       set {
@@ -6500,6 +6786,7 @@ namespace PassKit.Grpc {
     /// Optional undocumented color for text placed over the strip image in Apple Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StripColor {
       get { return stripColor_; }
       set {
@@ -6508,11 +6795,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Colors);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Colors other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6528,6 +6817,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (BackgroundColor.Length != 0) hash ^= BackgroundColor.GetHashCode();
@@ -6541,11 +6831,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6574,6 +6866,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (BackgroundColor.Length != 0) {
         output.WriteRawTag(10);
@@ -6598,6 +6891,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (BackgroundColor.Length != 0) {
@@ -6619,6 +6913,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Colors other) {
       if (other == null) {
         return;
@@ -6639,6 +6934,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6672,6 +6968,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6710,19 +7007,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<CopyObjectInput> _parser = new pb::MessageParser<CopyObjectInput>(() => new CopyObjectInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CopyObjectInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CopyObjectInput() {
       OnConstruction();
     }
@@ -6730,6 +7031,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CopyObjectInput(CopyObjectInput other) : this() {
       id_ = other.id_;
       newName_ = other.newName_;
@@ -6737,6 +7039,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CopyObjectInput Clone() {
       return new CopyObjectInput(this);
     }
@@ -6745,6 +7048,7 @@ namespace PassKit.Grpc {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -6756,6 +7060,7 @@ namespace PassKit.Grpc {
     public const int NewNameFieldNumber = 2;
     private string newName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NewName {
       get { return newName_; }
       set {
@@ -6764,11 +7069,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CopyObjectInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CopyObjectInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6782,6 +7089,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -6793,11 +7101,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6818,6 +7128,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -6834,6 +7145,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -6849,6 +7161,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CopyObjectInput other) {
       if (other == null) {
         return;
@@ -6863,6 +7176,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6888,6 +7202,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6918,19 +7233,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<NFC> _parser = new pb::MessageParser<NFC>(() => new NFC());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<NFC> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NFC() {
       OnConstruction();
     }
@@ -6938,6 +7257,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NFC(NFC other) : this() {
       enabled_ = other.enabled_;
       certificateId_ = other.certificateId_;
@@ -6946,6 +7266,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NFC Clone() {
       return new NFC(this);
     }
@@ -6954,6 +7275,7 @@ namespace PassKit.Grpc {
     public const int EnabledFieldNumber = 1;
     private bool enabled_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Enabled {
       get { return enabled_; }
       set {
@@ -6965,6 +7287,7 @@ namespace PassKit.Grpc {
     public const int CertificateIdFieldNumber = 2;
     private string certificateId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CertificateId {
       get { return certificateId_; }
       set {
@@ -6976,6 +7299,7 @@ namespace PassKit.Grpc {
     public const int PayloadFieldNumber = 3;
     private string payload_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Payload {
       get { return payload_; }
       set {
@@ -6984,11 +7308,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as NFC);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(NFC other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7003,6 +7329,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Enabled != false) hash ^= Enabled.GetHashCode();
@@ -7015,11 +7342,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -7044,6 +7373,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Enabled != false) {
         output.WriteRawTag(8);
@@ -7064,6 +7394,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Enabled != false) {
@@ -7082,6 +7413,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(NFC other) {
       if (other == null) {
         return;
@@ -7099,6 +7431,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -7128,6 +7461,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7166,19 +7500,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<DataField> _parser = new pb::MessageParser<DataField>(() => new DataField());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DataField> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataField() {
       OnConstruction();
     }
@@ -7186,6 +7524,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataField(DataField other) : this() {
       uniqueName_ = other.uniqueName_;
       templateId_ = other.templateId_;
@@ -7208,6 +7547,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataField Clone() {
       return new DataField(this);
     }
@@ -7220,6 +7560,7 @@ namespace PassKit.Grpc {
     /// Else, uniqueName (key) and value are stored under meta object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UniqueName {
       get { return uniqueName_; }
       set {
@@ -7234,6 +7575,7 @@ namespace PassKit.Grpc {
     /// The template id which this field belongs to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TemplateId {
       get { return templateId_; }
       set {
@@ -7245,6 +7587,7 @@ namespace PassKit.Grpc {
     public const int FieldTypeFieldNumber = 3;
     private global::PassKit.Grpc.FieldType fieldType_ = global::PassKit.Grpc.FieldType.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.FieldType FieldType {
       get { return fieldType_; }
       set {
@@ -7259,6 +7602,7 @@ namespace PassKit.Grpc {
     /// If set true, the field is mandatory. If set false, the field is optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsRequired {
       get { return isRequired_; }
       set {
@@ -7273,6 +7617,7 @@ namespace PassKit.Grpc {
     /// A text used for the data collection field label and pass field title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Label {
       get { return label_; }
       set {
@@ -7287,6 +7632,7 @@ namespace PassKit.Grpc {
     /// This translates label text into different language.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedLabel {
       get { return localizedLabel_; }
       set {
@@ -7301,6 +7647,7 @@ namespace PassKit.Grpc {
     /// Data type you want to receive from your users.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DataType DataType {
       get { return dataType_; }
       set {
@@ -7315,6 +7662,7 @@ namespace PassKit.Grpc {
     /// An optional default value or text. E.g. a default set of terms an conditions. Value can contain a protocol field in the format of ${member.externalId}.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultValue {
       get { return defaultValue_; }
       set {
@@ -7329,6 +7677,7 @@ namespace PassKit.Grpc {
     /// This translates default value of the field into different languages.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDefaultValue {
       get { return localizedDefaultValue_; }
       set {
@@ -7343,6 +7692,7 @@ namespace PassKit.Grpc {
     /// A regex which allows you to set set custom validation rules for the data stored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Validation {
       get { return validation_; }
       set {
@@ -7357,6 +7707,7 @@ namespace PassKit.Grpc {
     /// If false, a defaultValue or listOptions[0] will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UserCanSetValue {
       get { return userCanSetValue_; }
       set {
@@ -7371,6 +7722,7 @@ namespace PassKit.Grpc {
     /// The currency code (e.g. USD, EUR) to display with money value if data type is set as currency.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CurrencyCode {
       get { return currencyCode_; }
       set {
@@ -7382,6 +7734,7 @@ namespace PassKit.Grpc {
     public const int AppleWalletFieldRenderOptionsFieldNumber = 13;
     private global::PassKit.Grpc.AppleWalletFieldRenderOptions appleWalletFieldRenderOptions_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.AppleWalletFieldRenderOptions AppleWalletFieldRenderOptions {
       get { return appleWalletFieldRenderOptions_; }
       set {
@@ -7393,6 +7746,7 @@ namespace PassKit.Grpc {
     public const int DataCollectionFieldRenderOptionsFieldNumber = 14;
     private global::PassKit.Grpc.DataCollectionFieldRenderOptions dataCollectionFieldRenderOptions_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DataCollectionFieldRenderOptions DataCollectionFieldRenderOptions {
       get { return dataCollectionFieldRenderOptions_; }
       set {
@@ -7409,6 +7763,7 @@ namespace PassKit.Grpc {
     /// Usage: indicates where the field is used (apple render, google render, data collection page)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.UsageType> Usage {
       get { return usage_; }
     }
@@ -7417,6 +7772,7 @@ namespace PassKit.Grpc {
     public const int GooglePayFieldRenderOptionsFieldNumber = 16;
     private global::PassKit.Grpc.GooglePayFieldRenderOptions googlePayFieldRenderOptions_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayFieldRenderOptions GooglePayFieldRenderOptions {
       get { return googlePayFieldRenderOptions_; }
       set {
@@ -7431,6 +7787,7 @@ namespace PassKit.Grpc {
     /// Default international telephone code determines the default country flag of the tel input field (e.g. +852, +44).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultTelCountryCode {
       get { return defaultTelCountryCode_; }
       set {
@@ -7439,11 +7796,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DataField);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DataField other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7472,6 +7831,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (UniqueName.Length != 0) hash ^= UniqueName.GetHashCode();
@@ -7498,11 +7858,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -7580,6 +7942,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (UniqueName.Length != 0) {
         output.WriteRawTag(10);
@@ -7653,6 +8016,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (UniqueName.Length != 0) {
@@ -7711,6 +8075,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DataField other) {
       if (other == null) {
         return;
@@ -7783,6 +8148,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -7884,6 +8250,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -7993,19 +8360,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<AppleWalletFieldRenderOptions> _parser = new pb::MessageParser<AppleWalletFieldRenderOptions>(() => new AppleWalletFieldRenderOptions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AppleWalletFieldRenderOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletFieldRenderOptions() {
       OnConstruction();
     }
@@ -8013,6 +8384,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletFieldRenderOptions(AppleWalletFieldRenderOptions other) : this() {
       textAlignment_ = other.textAlignment_;
       positionSettings_ = other.positionSettings_ != null ? other.positionSettings_.Clone() : null;
@@ -8028,6 +8400,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AppleWalletFieldRenderOptions Clone() {
       return new AppleWalletFieldRenderOptions(this);
     }
@@ -8039,6 +8412,7 @@ namespace PassKit.Grpc {
     /// Alignment for field title and body text for fields which are displayed on the front of Apple Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.TextAlignment TextAlignment {
       get { return textAlignment_; }
       set {
@@ -8050,6 +8424,7 @@ namespace PassKit.Grpc {
     public const int PositionSettingsFieldNumber = 3;
     private global::PassKit.Grpc.PositionSettings positionSettings_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PositionSettings PositionSettings {
       get { return positionSettings_; }
       set {
@@ -8064,6 +8439,7 @@ namespace PassKit.Grpc {
     /// This message will be displayed as a notification when this field is updated. If %@ is used in the change message it will be replaced with the new field value when the message is displayed. E.g. Your registered name has been changed to %@.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ChangeMessage {
       get { return changeMessage_; }
       set {
@@ -8078,6 +8454,7 @@ namespace PassKit.Grpc {
     /// Localize push notification message for different languages.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedChangeMessage {
       get { return localizedChangeMessage_; }
       set {
@@ -8089,6 +8466,7 @@ namespace PassKit.Grpc {
     public const int DateStyleFieldNumber = 6;
     private global::PassKit.Grpc.DateTimeStyle dateStyle_ = global::PassKit.Grpc.DateTimeStyle.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DateTimeStyle DateStyle {
       get { return dateStyle_; }
       set {
@@ -8100,6 +8478,7 @@ namespace PassKit.Grpc {
     public const int TimeStyleFieldNumber = 7;
     private global::PassKit.Grpc.DateTimeStyle timeStyle_ = global::PassKit.Grpc.DateTimeStyle.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DateTimeStyle TimeStyle {
       get { return timeStyle_; }
       set {
@@ -8111,6 +8490,7 @@ namespace PassKit.Grpc {
     public const int NumberStyleFieldNumber = 8;
     private global::PassKit.Grpc.NumberStyle numberStyle_ = global::PassKit.Grpc.NumberStyle.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.NumberStyle NumberStyle {
       get { return numberStyle_; }
       set {
@@ -8124,6 +8504,7 @@ namespace PassKit.Grpc {
         = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::PassKit.Grpc.LinkDetector) x);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.LinkDetector> suppressLinkDetection_ = new pbc::RepeatedField<global::PassKit.Grpc.LinkDetector>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.LinkDetector> SuppressLinkDetection {
       get { return suppressLinkDetection_; }
     }
@@ -8135,6 +8516,7 @@ namespace PassKit.Grpc {
     /// Render date and time values in the provided time, rather than switching to the local time of the user.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IgnoreTimezone {
       get { return ignoreTimezone_; }
       set {
@@ -8149,6 +8531,7 @@ namespace PassKit.Grpc {
     /// Render date as a relavent date, rather than an absolute date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsRelativeDate {
       get { return isRelativeDate_; }
       set {
@@ -8157,11 +8540,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AppleWalletFieldRenderOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AppleWalletFieldRenderOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8183,6 +8568,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TextAlignment != global::PassKit.Grpc.TextAlignment.DoNotUse) hash ^= TextAlignment.GetHashCode();
@@ -8202,11 +8588,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8256,6 +8644,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (TextAlignment != global::PassKit.Grpc.TextAlignment.DoNotUse) {
         output.WriteRawTag(16);
@@ -8301,6 +8690,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TextAlignment != global::PassKit.Grpc.TextAlignment.DoNotUse) {
@@ -8338,6 +8728,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AppleWalletFieldRenderOptions other) {
       if (other == null) {
         return;
@@ -8380,6 +8771,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8444,6 +8836,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8516,19 +8909,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<GooglePayFieldRenderOptions> _parser = new pb::MessageParser<GooglePayFieldRenderOptions>(() => new GooglePayFieldRenderOptions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GooglePayFieldRenderOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayFieldRenderOptions() {
       OnConstruction();
     }
@@ -8536,6 +8933,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayFieldRenderOptions(GooglePayFieldRenderOptions other) : this() {
       googlePayPosition_ = other.googlePayPosition_;
       textModulePriority_ = other.textModulePriority_;
@@ -8543,6 +8941,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GooglePayFieldRenderOptions Clone() {
       return new GooglePayFieldRenderOptions(this);
     }
@@ -8555,6 +8954,7 @@ namespace PassKit.Grpc {
     /// labels or localization.  Where not supported, label and localization options will be ignored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePayField GooglePayPosition {
       get { return googlePayPosition_; }
       set {
@@ -8569,6 +8969,7 @@ namespace PassKit.Grpc {
     /// If the field type is a text module, the priority of the text module.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint TextModulePriority {
       get { return textModulePriority_; }
       set {
@@ -8577,11 +8978,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GooglePayFieldRenderOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GooglePayFieldRenderOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8595,6 +8998,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (GooglePayPosition != global::PassKit.Grpc.GooglePayField.DoNotUse) hash ^= GooglePayPosition.GetHashCode();
@@ -8606,11 +9010,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8631,6 +9037,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (GooglePayPosition != global::PassKit.Grpc.GooglePayField.DoNotUse) {
         output.WriteRawTag(8);
@@ -8647,6 +9054,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (GooglePayPosition != global::PassKit.Grpc.GooglePayField.DoNotUse) {
@@ -8662,6 +9070,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GooglePayFieldRenderOptions other) {
       if (other == null) {
         return;
@@ -8676,6 +9085,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8701,6 +9111,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8734,19 +9145,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<PositionSettings> _parser = new pb::MessageParser<PositionSettings>(() => new PositionSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PositionSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PositionSettings() {
       OnConstruction();
     }
@@ -8754,6 +9169,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PositionSettings(PositionSettings other) : this() {
       section_ = other.section_;
       priority_ = other.priority_;
@@ -8761,6 +9177,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PositionSettings Clone() {
       return new PositionSettings(this);
     }
@@ -8772,6 +9189,7 @@ namespace PassKit.Grpc {
     /// Selects a section to render a field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.FieldSection Section {
       get { return section_; }
       set {
@@ -8786,6 +9204,7 @@ namespace PassKit.Grpc {
     /// The field section has certain number of fields they can contain. The priority indicates the position of the section.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Priority {
       get { return priority_; }
       set {
@@ -8794,11 +9213,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PositionSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PositionSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -8812,6 +9233,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Section != global::PassKit.Grpc.FieldSection.DoNotUse) hash ^= Section.GetHashCode();
@@ -8823,11 +9245,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -8848,6 +9272,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Section != global::PassKit.Grpc.FieldSection.DoNotUse) {
         output.WriteRawTag(8);
@@ -8864,6 +9289,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Section != global::PassKit.Grpc.FieldSection.DoNotUse) {
@@ -8879,6 +9305,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PositionSettings other) {
       if (other == null) {
         return;
@@ -8893,6 +9320,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -8918,6 +9346,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -8951,19 +9380,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<DataCollectionFieldRenderOptions> _parser = new pb::MessageParser<DataCollectionFieldRenderOptions>(() => new DataCollectionFieldRenderOptions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DataCollectionFieldRenderOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionFieldRenderOptions() {
       OnConstruction();
     }
@@ -8971,6 +9404,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionFieldRenderOptions(DataCollectionFieldRenderOptions other) : this() {
       helpText_ = other.helpText_;
       localizedHelpText_ = other.localizedHelpText_ != null ? other.localizedHelpText_.Clone() : null;
@@ -8987,6 +9421,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DataCollectionFieldRenderOptions Clone() {
       return new DataCollectionFieldRenderOptions(this);
     }
@@ -8998,6 +9433,7 @@ namespace PassKit.Grpc {
     /// Tooltip or helper text displayed under the input field which explains the purpose of field's input.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HelpText {
       get { return helpText_; }
       set {
@@ -9012,6 +9448,7 @@ namespace PassKit.Grpc {
     /// Tooltip or helper text in localized language.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedHelpText {
       get { return localizedHelpText_; }
       set {
@@ -9026,6 +9463,7 @@ namespace PassKit.Grpc {
     /// Used to change the order of fields displayed on the data collection landing page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DisplayOrder {
       get { return displayOrder_; }
       set {
@@ -9040,6 +9478,7 @@ namespace PassKit.Grpc {
     /// If placeholder is set or elementText is not set, then an input element will be rendered. The default is placeholder is an empty string.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Placeholder {
       get { return placeholder_; }
       set {
@@ -9056,6 +9495,7 @@ namespace PassKit.Grpc {
     /// If DataType.OPTIONS is set, then drop-down list will be rendered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.SelectOption> SelectOptions {
       get { return selectOptions_; }
     }
@@ -9067,6 +9507,7 @@ namespace PassKit.Grpc {
     /// Placeholder in localized language.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedPlaceholder {
       get { return localizedPlaceholder_; }
       set {
@@ -9081,6 +9522,7 @@ namespace PassKit.Grpc {
     /// If set true, input field will have autocomplete enabled. The default is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Autocomplete {
       get { return autocomplete_; }
       set {
@@ -9095,6 +9537,7 @@ namespace PassKit.Grpc {
     /// Customize address input fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.AddressRenderOptions AddressRenderOptions {
       get { return addressRenderOptions_; }
       set {
@@ -9109,6 +9552,7 @@ namespace PassKit.Grpc {
     /// Localized text rendered on year select placeholder of DATE_YYYYMM.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LocalizedYearPlaceholder {
       get { return localizedYearPlaceholder_; }
       set {
@@ -9123,6 +9567,7 @@ namespace PassKit.Grpc {
     /// Localized text rendered on month select placeholder of DATE_YYYYMM and DATE_MMDD.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LocalizedMonthPlaceholder {
       get { return localizedMonthPlaceholder_; }
       set {
@@ -9137,6 +9582,7 @@ namespace PassKit.Grpc {
     /// Localized text rendered on day select placeholder of DATE_MMDD.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LocalizedDayPlaceholder {
       get { return localizedDayPlaceholder_; }
       set {
@@ -9145,11 +9591,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DataCollectionFieldRenderOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DataCollectionFieldRenderOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9172,6 +9620,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HelpText.Length != 0) hash ^= HelpText.GetHashCode();
@@ -9192,11 +9641,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -9250,6 +9701,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (HelpText.Length != 0) {
         output.WriteRawTag(10);
@@ -9299,6 +9751,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HelpText.Length != 0) {
@@ -9339,6 +9792,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DataCollectionFieldRenderOptions other) {
       if (other == null) {
         return;
@@ -9387,6 +9841,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -9457,6 +9912,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -9532,19 +9988,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<AddressRenderOptions> _parser = new pb::MessageParser<AddressRenderOptions>(() => new AddressRenderOptions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AddressRenderOptions> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddressRenderOptions() {
       OnConstruction();
     }
@@ -9552,6 +10012,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddressRenderOptions(AddressRenderOptions other) : this() {
       address1Label_ = other.address1Label_;
       address2Label_ = other.address2Label_;
@@ -9577,6 +10038,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddressRenderOptions Clone() {
       return new AddressRenderOptions(this);
     }
@@ -9585,6 +10047,7 @@ namespace PassKit.Grpc {
     public const int Address1LabelFieldNumber = 1;
     private string address1Label_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address1Label {
       get { return address1Label_; }
       set {
@@ -9596,6 +10059,7 @@ namespace PassKit.Grpc {
     public const int Address2LabelFieldNumber = 2;
     private string address2Label_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address2Label {
       get { return address2Label_; }
       set {
@@ -9607,6 +10071,7 @@ namespace PassKit.Grpc {
     public const int CityLabelFieldNumber = 3;
     private string cityLabel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CityLabel {
       get { return cityLabel_; }
       set {
@@ -9618,6 +10083,7 @@ namespace PassKit.Grpc {
     public const int CountryLabelFieldNumber = 4;
     private string countryLabel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryLabel {
       get { return countryLabel_; }
       set {
@@ -9629,6 +10095,7 @@ namespace PassKit.Grpc {
     public const int ZipLabelFieldNumber = 5;
     private string zipLabel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ZipLabel {
       get { return zipLabel_; }
       set {
@@ -9640,6 +10107,7 @@ namespace PassKit.Grpc {
     public const int Address1PlaceholderFieldNumber = 6;
     private string address1Placeholder_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address1Placeholder {
       get { return address1Placeholder_; }
       set {
@@ -9651,6 +10119,7 @@ namespace PassKit.Grpc {
     public const int Address2PlaceholderFieldNumber = 7;
     private string address2Placeholder_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address2Placeholder {
       get { return address2Placeholder_; }
       set {
@@ -9662,6 +10131,7 @@ namespace PassKit.Grpc {
     public const int CityPlaceholderFieldNumber = 8;
     private string cityPlaceholder_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CityPlaceholder {
       get { return cityPlaceholder_; }
       set {
@@ -9673,6 +10143,7 @@ namespace PassKit.Grpc {
     public const int CountryPlaceholderFieldNumber = 9;
     private string countryPlaceholder_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryPlaceholder {
       get { return countryPlaceholder_; }
       set {
@@ -9684,6 +10155,7 @@ namespace PassKit.Grpc {
     public const int ZipPlaceholderFieldNumber = 10;
     private string zipPlaceholder_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ZipPlaceholder {
       get { return zipPlaceholder_; }
       set {
@@ -9695,6 +10167,7 @@ namespace PassKit.Grpc {
     public const int LocalizedAddress1LabelFieldNumber = 11;
     private global::PassKit.Grpc.LocalizedString localizedAddress1Label_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAddress1Label {
       get { return localizedAddress1Label_; }
       set {
@@ -9706,6 +10179,7 @@ namespace PassKit.Grpc {
     public const int LocalizedAddress2LabelFieldNumber = 12;
     private global::PassKit.Grpc.LocalizedString localizedAddress2Label_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAddress2Label {
       get { return localizedAddress2Label_; }
       set {
@@ -9717,6 +10191,7 @@ namespace PassKit.Grpc {
     public const int LocalizedCityLabelFieldNumber = 13;
     private global::PassKit.Grpc.LocalizedString localizedCityLabel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCityLabel {
       get { return localizedCityLabel_; }
       set {
@@ -9728,6 +10203,7 @@ namespace PassKit.Grpc {
     public const int LocalizedCountryLabelFieldNumber = 14;
     private global::PassKit.Grpc.LocalizedString localizedCountryLabel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCountryLabel {
       get { return localizedCountryLabel_; }
       set {
@@ -9739,6 +10215,7 @@ namespace PassKit.Grpc {
     public const int LocalizedZipLabelFieldNumber = 15;
     private global::PassKit.Grpc.LocalizedString localizedZipLabel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedZipLabel {
       get { return localizedZipLabel_; }
       set {
@@ -9750,6 +10227,7 @@ namespace PassKit.Grpc {
     public const int LocalizedAddress1PlaceholderFieldNumber = 16;
     private global::PassKit.Grpc.LocalizedString localizedAddress1Placeholder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAddress1Placeholder {
       get { return localizedAddress1Placeholder_; }
       set {
@@ -9761,6 +10239,7 @@ namespace PassKit.Grpc {
     public const int LocalizedAddress2PlaceholderFieldNumber = 17;
     private global::PassKit.Grpc.LocalizedString localizedAddress2Placeholder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAddress2Placeholder {
       get { return localizedAddress2Placeholder_; }
       set {
@@ -9772,6 +10251,7 @@ namespace PassKit.Grpc {
     public const int LocalizedCityPlaceholderFieldNumber = 18;
     private global::PassKit.Grpc.LocalizedString localizedCityPlaceholder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCityPlaceholder {
       get { return localizedCityPlaceholder_; }
       set {
@@ -9783,6 +10263,7 @@ namespace PassKit.Grpc {
     public const int LocalizedCountryPlaceholderFieldNumber = 19;
     private global::PassKit.Grpc.LocalizedString localizedCountryPlaceholder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCountryPlaceholder {
       get { return localizedCountryPlaceholder_; }
       set {
@@ -9794,6 +10275,7 @@ namespace PassKit.Grpc {
     public const int LocalizedZipPlaceholderFieldNumber = 20;
     private global::PassKit.Grpc.LocalizedString localizedZipPlaceholder_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedZipPlaceholder {
       get { return localizedZipPlaceholder_; }
       set {
@@ -9802,11 +10284,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AddressRenderOptions);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AddressRenderOptions other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -9838,6 +10322,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Address1Label.Length != 0) hash ^= Address1Label.GetHashCode();
@@ -9867,11 +10352,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -9964,6 +10451,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Address1Label.Length != 0) {
         output.WriteRawTag(10);
@@ -10052,6 +10540,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Address1Label.Length != 0) {
@@ -10121,6 +10610,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AddressRenderOptions other) {
       if (other == null) {
         return;
@@ -10219,6 +10709,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -10346,6 +10837,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10481,19 +10973,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<Sharing> _parser = new pb::MessageParser<Sharing>(() => new Sharing());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Sharing> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Sharing() {
       OnConstruction();
     }
@@ -10501,6 +10997,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Sharing(Sharing other) : this() {
       prohibitSharing_ = other.prohibitSharing_;
       url_ = other.url_;
@@ -10510,6 +11007,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Sharing Clone() {
       return new Sharing(this);
     }
@@ -10521,6 +11019,7 @@ namespace PassKit.Grpc {
     /// If not disabled will show the 'Share Pass' button on the back of an Apple Wallet pass. Setting a url and description will redirect sharing to a URL (such as a sign-up or info url) instead of sharing the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ProhibitSharing {
       get { return prohibitSharing_; }
       set {
@@ -10535,6 +11034,7 @@ namespace PassKit.Grpc {
     /// If provided will allow for a custom share URL to be triggered from 'Share Pass' butto.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
       get { return url_; }
       set {
@@ -10549,6 +11049,7 @@ namespace PassKit.Grpc {
     /// If provided will allow for a custom description text to be inserted in the sharing message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_; }
       set {
@@ -10563,6 +11064,7 @@ namespace PassKit.Grpc {
     /// Sharing description in localized language.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDescription {
       get { return localizedDescription_; }
       set {
@@ -10571,11 +11073,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Sharing);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Sharing other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10591,6 +11095,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProhibitSharing != false) hash ^= ProhibitSharing.GetHashCode();
@@ -10604,11 +11109,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -10637,6 +11144,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProhibitSharing != false) {
         output.WriteRawTag(8);
@@ -10661,6 +11169,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProhibitSharing != false) {
@@ -10682,6 +11191,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Sharing other) {
       if (other == null) {
         return;
@@ -10705,6 +11215,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -10741,6 +11252,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -10782,19 +11294,23 @@ namespace PassKit.Grpc {
     private static readonly pb::MessageParser<DefaultTemplateRequest> _parser = new pb::MessageParser<DefaultTemplateRequest>(() => new DefaultTemplateRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DefaultTemplateRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.TemplateReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DefaultTemplateRequest() {
       OnConstruction();
     }
@@ -10802,6 +11318,7 @@ namespace PassKit.Grpc {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DefaultTemplateRequest(DefaultTemplateRequest other) : this() {
       protocol_ = other.protocol_;
       revision_ = other.revision_;
@@ -10809,6 +11326,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DefaultTemplateRequest Clone() {
       return new DefaultTemplateRequest(this);
     }
@@ -10817,6 +11335,7 @@ namespace PassKit.Grpc {
     public const int ProtocolFieldNumber = 1;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
       get { return protocol_; }
       set {
@@ -10828,6 +11347,7 @@ namespace PassKit.Grpc {
     public const int RevisionFieldNumber = 2;
     private uint revision_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Revision {
       get { return revision_; }
       set {
@@ -10836,11 +11356,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DefaultTemplateRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DefaultTemplateRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -10854,6 +11376,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) hash ^= Protocol.GetHashCode();
@@ -10865,11 +11388,13 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -10890,6 +11415,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
         output.WriteRawTag(8);
@@ -10906,6 +11432,7 @@ namespace PassKit.Grpc {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
@@ -10921,6 +11448,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DefaultTemplateRequest other) {
       if (other == null) {
         return;
@@ -10935,6 +11463,7 @@ namespace PassKit.Grpc {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -10960,6 +11489,7 @@ namespace PassKit.Grpc {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

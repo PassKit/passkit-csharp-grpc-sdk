@@ -363,19 +363,23 @@ namespace PassKit.Grpc.Flights {
     private static readonly pb::MessageParser<ConditionalItems> _parser = new pb::MessageParser<ConditionalItems>(() => new ConditionalItems());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ConditionalItems> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConditionalItems() {
       OnConstruction();
     }
@@ -383,6 +387,7 @@ namespace PassKit.Grpc.Flights {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConditionalItems(ConditionalItems other) : this() {
       passengerDescription_ = other.passengerDescription_;
       checkInSource_ = other.checkInSource_;
@@ -399,6 +404,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConditionalItems Clone() {
       return new ConditionalItems(this);
     }
@@ -410,6 +416,7 @@ namespace PassKit.Grpc.Flights {
     /// Passenger Status as detailed in IATA PSC Resolution 792 Attachment 'C'. Note: all values other than 0 indicate that the passenger has checked in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.PassengerDescription PassengerDescription {
       get { return passengerDescription_; }
       set {
@@ -424,6 +431,7 @@ namespace PassKit.Grpc.Flights {
     /// Source of checkin as detailed in IATA PSC Resolution 792 Attachment 'C'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.Source CheckInSource {
       get { return checkInSource_; }
       set {
@@ -438,6 +446,7 @@ namespace PassKit.Grpc.Flights {
     /// Source of boarding pass issuance as detailed in IATA PSC Resolution 792 Attachment 'C'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.Source BoardingPassIssuanceSource {
       get { return boardingPassIssuanceSource_; }
       set {
@@ -452,6 +461,7 @@ namespace PassKit.Grpc.Flights {
     /// Date of boarding pass issuance, local to the boarding point.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Date BoardingPassIssueDate {
       get { return boardingPassIssueDate_; }
       set {
@@ -466,6 +476,7 @@ namespace PassKit.Grpc.Flights {
     /// Document type that the barcode represents.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.DocType DocumentType {
       get { return documentType_; }
       set {
@@ -480,6 +491,7 @@ namespace PassKit.Grpc.Flights {
     /// IATA or ICAO designator of boarding pass issuer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BoardingPassIssuer {
       get { return boardingPassIssuer_; }
       set {
@@ -496,6 +508,7 @@ namespace PassKit.Grpc.Flights {
     /// This field allows carriers to populate baggage tag numbers and the number of consecutive bags. It contains 13 characters corresponding to the 10 digit bag tag number, as per IATA BCM specifications, Resolution 740 and 3 digits identifying the number of consecutive tags.\n1: leading digit – 0 for interline tag, 1 for fall-back tag, 2 for interline rush tag.\n2-4: carrier numeric code.\n5-10: carrier initial tag number (leading zeros).\n11-13: number of consecutive tags (allows for up to 999 tags).\nUp to 2 additional, non-consecutive tags can be added.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> BaggageTagNumber {
       get { return baggageTagNumber_; }
     }
@@ -507,6 +520,7 @@ namespace PassKit.Grpc.Flights {
     /// Passenger security status. Note: in practical terms, this is always likely to be NOT_SELECTEE or TSA_PRECHECK since current DHS Pre-Departure Regulations only allow on-site printing of boarding passes. It is mandatory when US travel is involved.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.SelecteeIndicator SelecteeIndicator {
       get { return selecteeIndicator_; }
       set {
@@ -521,6 +535,7 @@ namespace PassKit.Grpc.Flights {
     /// International Documentation Verification status as detailed in IATA PSC Resolution 792 Attachment 'C'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.InternationalDocVerification InternationalDocVerification {
       get { return internationalDocVerification_; }
       set {
@@ -535,6 +550,7 @@ namespace PassKit.Grpc.Flights {
     /// Industry Discount / Airline Discount codes. See IATA Recommended Practice 1788.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.IDADIndicator IdadIndicator {
       get { return idadIndicator_; }
       set {
@@ -549,6 +565,7 @@ namespace PassKit.Grpc.Flights {
     /// Passenger eligibility for Fast-track privileges.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FastTrack FastTrack {
       get { return fastTrack_; }
       set {
@@ -557,11 +574,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ConditionalItems);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ConditionalItems other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -584,6 +603,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PassengerDescription != global::PassKit.Grpc.Flights.PassengerDescription.Adult) hash ^= PassengerDescription.GetHashCode();
@@ -604,11 +624,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -662,6 +684,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (PassengerDescription != global::PassKit.Grpc.Flights.PassengerDescription.Adult) {
         output.WriteRawTag(8);
@@ -711,6 +734,7 @@ namespace PassKit.Grpc.Flights {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PassengerDescription != global::PassKit.Grpc.Flights.PassengerDescription.Adult) {
@@ -751,6 +775,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ConditionalItems other) {
       if (other == null) {
         return;
@@ -793,6 +818,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -857,6 +883,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -217,19 +217,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponOffer> _parser = new pb::MessageParser<CouponOffer>(() => new CouponOffer());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponOffer> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffer() {
       OnConstruction();
     }
@@ -237,6 +241,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffer(CouponOffer other) : this() {
       id_ = other.id_;
       offerTitle_ = other.offerTitle_;
@@ -265,6 +270,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffer Clone() {
       return new CouponOffer(this);
     }
@@ -276,6 +282,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// PassKit generated offer id (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -290,6 +297,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer title; will be shown on the enrolment page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferTitle {
       get { return offerTitle_; }
       set {
@@ -304,6 +312,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized offer title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOfferTitle {
       get { return localizedOfferTitle_; }
       set {
@@ -318,6 +327,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer short title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferShortTitle {
       get { return offerShortTitle_; }
       set {
@@ -332,6 +342,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized offer short title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOfferShortTitle {
       get { return localizedOfferShortTitle_; }
       set {
@@ -346,6 +357,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer details; will be shown on the enrolment page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferDetails {
       get { return offerDetails_; }
       set {
@@ -360,6 +372,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized offer details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOfferDetails {
       get { return localizedOfferDetails_; }
       set {
@@ -374,6 +387,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer fine print.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferFinePrint {
       get { return offerFinePrint_; }
       set {
@@ -388,6 +402,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized offer fine print.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOfferFinePrint {
       get { return localizedOfferFinePrint_; }
       set {
@@ -402,6 +417,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The pass template ID that coupons will use when in unredeemed state. All coupons for the offer are issued in unredeemed state.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BeforeRedeemPassTemplateId {
       get { return beforeRedeemPassTemplateId_; }
       set {
@@ -416,6 +432,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional pass template ID that coupons will use when switched to redeemed state.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AfterRedeemPassTemplateId {
       get { return afterRedeemPassTemplateId_; }
       set {
@@ -430,6 +447,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The quota for the campaign. If set to 0, then it is unlimited. If the quota is reached no new coupons can be issued.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Quota Quota {
       get { return quota_; }
       set {
@@ -444,6 +462,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Coupon expiry settings
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CouponExpirySettings CouponExpirySettings {
       get { return couponExpirySettings_; }
       set {
@@ -458,6 +477,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional redemption settings to give more control over redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.RedemptionSettings RedemptionSettings {
       get { return redemptionSettings_; }
       set {
@@ -472,6 +492,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional date when coupons can start to be issued. Defaults to the campaign start date. Needs to be greater than / equal to the campaign start date. Needs to be less than / equal to the campaign end date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp IssueStartDate {
       get { return issueStartDate_; }
       set {
@@ -486,6 +507,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional date when coupons can no longer be issued. Defaults to the campaign end date. Needs to be less than / equal to the campaign end date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp IssueEndDate {
       get { return issueEndDate_; }
       set {
@@ -500,6 +522,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The date when the offer was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -514,6 +537,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The date the offer was last updated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -528,6 +552,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The campaign id that the offer belongs to (1 campaign can have multiple offers). This field cannot be changed once an offer is linked to a campaign.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CampaignId {
       get { return campaignId_; }
       set {
@@ -542,6 +567,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Contains the email &amp; sms distribution settings for the offer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.DistributionSettings DistributionSettings {
       get { return distributionSettings_; }
       set {
@@ -556,6 +582,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer shortcode generated by the system. If the campaign is public, then this shortcode can be used to generate the coupon-create URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ShortCode {
       get { return shortCode_; }
       set {
@@ -570,6 +597,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The offer timezone.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IanaTimezone {
       get { return ianaTimezone_; }
       set {
@@ -584,6 +612,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Can be used to temporarily disable the coupon (i.e. if you ran out of your promotion item, you can temporarily disable all live coupons, and activate them again later on when your item is in stock again).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Disabled {
       get { return disabled_; }
       set {
@@ -592,11 +621,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponOffer);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponOffer other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -631,6 +662,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -663,11 +695,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -772,6 +806,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -872,6 +907,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -950,6 +986,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponOffer other) {
       if (other == null) {
         return;
@@ -1063,6 +1100,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1208,6 +1246,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1358,19 +1397,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponExpirySettings> _parser = new pb::MessageParser<CouponExpirySettings>(() => new CouponExpirySettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponExpirySettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponExpirySettings() {
       OnConstruction();
     }
@@ -1378,6 +1421,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponExpirySettings(CouponExpirySettings other) : this() {
       couponExpiryType_ = other.couponExpiryType_;
       expireAfterXDays_ = other.expireAfterXDays_;
@@ -1385,6 +1429,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponExpirySettings Clone() {
       return new CouponExpirySettings(this);
     }
@@ -1393,6 +1438,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int CouponExpiryTypeFieldNumber = 1;
     private global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType couponExpiryType_ = global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType.ExpiryDoNotUse;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType CouponExpiryType {
       get { return couponExpiryType_; }
       set {
@@ -1409,6 +1455,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Field can be omitted if using any of the other coupon expiry types.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint ExpireAfterXDays {
       get { return expireAfterXDays_; }
       set {
@@ -1417,11 +1464,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponExpirySettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponExpirySettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1435,6 +1484,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CouponExpiryType != global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType.ExpiryDoNotUse) hash ^= CouponExpiryType.GetHashCode();
@@ -1446,11 +1496,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1471,6 +1523,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CouponExpiryType != global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType.ExpiryDoNotUse) {
         output.WriteRawTag(8);
@@ -1487,6 +1540,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CouponExpiryType != global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType.ExpiryDoNotUse) {
@@ -1502,6 +1556,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponExpirySettings other) {
       if (other == null) {
         return;
@@ -1516,6 +1571,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1541,6 +1597,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1571,19 +1628,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<RedemptionSettings> _parser = new pb::MessageParser<RedemptionSettings>(() => new RedemptionSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RedemptionSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionSettings() {
       OnConstruction();
     }
@@ -1591,6 +1652,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionSettings(RedemptionSettings other) : this() {
       redemptionStartDate_ = other.redemptionStartDate_ != null ? other.redemptionStartDate_.Clone() : null;
       redemptionEndDate_ = other.redemptionEndDate_ != null ? other.redemptionEndDate_.Clone() : null;
@@ -1602,6 +1664,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionSettings Clone() {
       return new RedemptionSettings(this);
     }
@@ -1613,6 +1676,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional field that can be set if offers can only be redeemed after a certain date. Defaults to the offer issue start date. Needs to be greater than / equal to the offer issue start date, and less than / equal to offer issue end date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp RedemptionStartDate {
       get { return redemptionStartDate_; }
       set {
@@ -1627,6 +1691,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional field that can be set if offers can only be redeemed until a certain date. Defaults to the offer issue end date. Needs to be less than / equal to the offer issue end date.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp RedemptionEndDate {
       get { return redemptionEndDate_; }
       set {
@@ -1643,6 +1708,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Dictates redemption type; defaults to API.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.SingleUseCoupons.RedemptionType> RedemptionType {
       get { return redemptionType_; }
     }
@@ -1654,6 +1720,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Settings for code provided on redemption; a list of valid codes and possible invalid-code error message needs to be provided.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CustomerInitiatedCodeProvideOnRedeemSettings CodeProvidedOnRedeemSettings {
       get { return codeProvidedOnRedeemSettings_; }
       set {
@@ -1668,6 +1735,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Settings for fixed code redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CustomerInitiatedFixedCodeSettings FixedCodeSettings {
       get { return fixedCodeSettings_; }
       set {
@@ -1682,6 +1750,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Standard redemption page design, hosted by PassKit. Mandatory field if the type is any of the customer initiated redemptions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.StandardPassKitHostedPage StandardSettings {
       get { return standardSettings_; }
       set {
@@ -1690,11 +1759,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RedemptionSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RedemptionSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1712,6 +1783,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (redemptionStartDate_ != null) hash ^= RedemptionStartDate.GetHashCode();
@@ -1727,11 +1799,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1765,6 +1839,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (redemptionStartDate_ != null) {
         output.WriteRawTag(10);
@@ -1794,6 +1869,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (redemptionStartDate_ != null) {
@@ -1819,6 +1895,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RedemptionSettings other) {
       if (other == null) {
         return;
@@ -1858,6 +1935,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1915,6 +1993,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1977,19 +2056,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CustomerInitiatedFixedCodeSettings> _parser = new pb::MessageParser<CustomerInitiatedFixedCodeSettings>(() => new CustomerInitiatedFixedCodeSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CustomerInitiatedFixedCodeSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedFixedCodeSettings() {
       OnConstruction();
     }
@@ -1997,6 +2080,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedFixedCodeSettings(CustomerInitiatedFixedCodeSettings other) : this() {
       fixedCode_ = other.fixedCode_;
       useCouponSku_ = other.useCouponSku_;
@@ -2006,6 +2090,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedFixedCodeSettings Clone() {
       return new CustomerInitiatedFixedCodeSettings(this);
     }
@@ -2017,6 +2102,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// For fixed code customer initiated redemption; the fixed code to display needs to be set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FixedCode {
       get { return fixedCode_; }
       set {
@@ -2031,6 +2117,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// If set to true will use coupon.sku as the fixed code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UseCouponSku {
       get { return useCouponSku_; }
       set {
@@ -2045,6 +2132,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// If set will render a barcode underneath the fixed code with as contents the fixed code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.BarcodeType Barcode {
       get { return barcode_; }
       set {
@@ -2059,6 +2147,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Count down timer for redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.RedemptionTimerSettings RedemptionTimer {
       get { return redemptionTimer_; }
       set {
@@ -2067,11 +2156,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CustomerInitiatedFixedCodeSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CustomerInitiatedFixedCodeSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2087,6 +2178,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (FixedCode.Length != 0) hash ^= FixedCode.GetHashCode();
@@ -2100,11 +2192,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2133,6 +2227,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (FixedCode.Length != 0) {
         output.WriteRawTag(10);
@@ -2157,6 +2252,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (FixedCode.Length != 0) {
@@ -2178,6 +2274,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CustomerInitiatedFixedCodeSettings other) {
       if (other == null) {
         return;
@@ -2201,6 +2298,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2237,6 +2335,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2278,19 +2377,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<RedemptionTimerSettings> _parser = new pb::MessageParser<RedemptionTimerSettings>(() => new RedemptionTimerSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RedemptionTimerSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionTimerSettings() {
       OnConstruction();
     }
@@ -2298,6 +2401,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionTimerSettings(RedemptionTimerSettings other) : this() {
       timeoutSeconds_ = other.timeoutSeconds_;
       timerHelpText_ = other.timerHelpText_;
@@ -2306,6 +2410,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionTimerSettings Clone() {
       return new RedemptionTimerSettings(this);
     }
@@ -2317,6 +2422,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The number of seconds the redemption page displays the redemption code. When the times runs out, the redemption page will show the 'redemption period expired' message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint TimeoutSeconds {
       get { return timeoutSeconds_; }
       set {
@@ -2331,6 +2437,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Help text rendered above redemption timer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TimerHelpText {
       get { return timerHelpText_; }
       set {
@@ -2345,6 +2452,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized help text for redemption timer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTimeHelpText {
       get { return localizedTimeHelpText_; }
       set {
@@ -2353,11 +2461,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RedemptionTimerSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RedemptionTimerSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2372,6 +2482,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TimeoutSeconds != 0) hash ^= TimeoutSeconds.GetHashCode();
@@ -2384,11 +2495,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2413,6 +2526,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (TimeoutSeconds != 0) {
         output.WriteRawTag(8);
@@ -2433,6 +2547,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TimeoutSeconds != 0) {
@@ -2451,6 +2566,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RedemptionTimerSettings other) {
       if (other == null) {
         return;
@@ -2471,6 +2587,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2503,6 +2620,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2540,19 +2658,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CustomerInitiatedCodeProvideOnRedeemSettings> _parser = new pb::MessageParser<CustomerInitiatedCodeProvideOnRedeemSettings>(() => new CustomerInitiatedCodeProvideOnRedeemSettings());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CustomerInitiatedCodeProvideOnRedeemSettings> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedCodeProvideOnRedeemSettings() {
       OnConstruction();
     }
@@ -2560,6 +2682,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedCodeProvideOnRedeemSettings(CustomerInitiatedCodeProvideOnRedeemSettings other) : this() {
       validCodes_ = other.validCodes_.Clone();
       redemptionCodeInput_ = other.redemptionCodeInput_ != null ? other.redemptionCodeInput_.Clone() : null;
@@ -2569,6 +2692,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerInitiatedCodeProvideOnRedeemSettings Clone() {
       return new CustomerInitiatedCodeProvideOnRedeemSettings(this);
     }
@@ -2582,6 +2706,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional array of valid codes that can be input on redemption.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> ValidCodes {
       get { return validCodes_; }
     }
@@ -2593,6 +2718,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Input field box for entering the redemption code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.InputField RedemptionCodeInput {
       get { return redemptionCodeInput_; }
       set {
@@ -2607,6 +2733,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Submit button to confirm the validation code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SubmitButtonText {
       get { return submitButtonText_; }
       set {
@@ -2621,6 +2748,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized submit button text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedSubmitButtonText {
       get { return localizedSubmitButtonText_; }
       set {
@@ -2629,11 +2757,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CustomerInitiatedCodeProvideOnRedeemSettings);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CustomerInitiatedCodeProvideOnRedeemSettings other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2649,6 +2779,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= validCodes_.GetHashCode();
@@ -2662,11 +2793,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2692,6 +2825,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       validCodes_.WriteTo(ref output, _repeated_validCodes_codec);
       if (redemptionCodeInput_ != null) {
@@ -2713,6 +2847,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += validCodes_.CalculateSize(_repeated_validCodes_codec);
@@ -2732,6 +2867,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CustomerInitiatedCodeProvideOnRedeemSettings other) {
       if (other == null) {
         return;
@@ -2756,6 +2892,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2795,6 +2932,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2839,19 +2977,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<InputField> _parser = new pb::MessageParser<InputField>(() => new InputField());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InputField> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InputField() {
       OnConstruction();
     }
@@ -2859,6 +3001,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InputField(InputField other) : this() {
       label_ = other.label_;
       localizedLabel_ = other.localizedLabel_ != null ? other.localizedLabel_.Clone() : null;
@@ -2875,6 +3018,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InputField Clone() {
       return new InputField(this);
     }
@@ -2886,6 +3030,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// The label of input field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Label {
       get { return label_; }
       set {
@@ -2900,6 +3045,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized label of input field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedLabel {
       get { return localizedLabel_; }
       set {
@@ -2914,6 +3060,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Help text shown below the input field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HelperText {
       get { return helperText_; }
       set {
@@ -2928,6 +3075,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized help text shown below the input field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedHelperText {
       get { return localizedHelperText_; }
       set {
@@ -2942,6 +3090,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional message that is displayed if the user provides an invalid input value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ErrorMessage {
       get { return errorMessage_; }
       set {
@@ -2956,6 +3105,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized invalid code error message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedErrorMessage {
       get { return localizedErrorMessage_; }
       set {
@@ -2970,6 +3120,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Default input value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultValue {
       get { return defaultValue_; }
       set {
@@ -2984,6 +3135,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized default value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedDefaultValue {
       get { return localizedDefaultValue_; }
       set {
@@ -2998,6 +3150,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Placeholder text for the input field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Placeholder {
       get { return placeholder_; }
       set {
@@ -3012,6 +3165,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized placeholder text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedPlaceholder {
       get { return localizedPlaceholder_; }
       set {
@@ -3026,6 +3180,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// A regex which allows you to set custom validation rules for the input value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Validation {
       get { return validation_; }
       set {
@@ -3034,11 +3189,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InputField);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InputField other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3061,6 +3218,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Label.Length != 0) hash ^= Label.GetHashCode();
@@ -3081,11 +3239,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3142,6 +3302,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Label.Length != 0) {
         output.WriteRawTag(10);
@@ -3194,6 +3355,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Label.Length != 0) {
@@ -3236,6 +3398,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InputField other) {
       if (other == null) {
         return;
@@ -3292,6 +3455,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3368,6 +3532,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3449,19 +3614,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<StandardPassKitHostedPage> _parser = new pb::MessageParser<StandardPassKitHostedPage>(() => new StandardPassKitHostedPage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<StandardPassKitHostedPage> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StandardPassKitHostedPage() {
       OnConstruction();
     }
@@ -3469,6 +3638,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StandardPassKitHostedPage(StandardPassKitHostedPage other) : this() {
       title_ = other.title_;
       localizedTitle_ = other.localizedTitle_ != null ? other.localizedTitle_.Clone() : null;
@@ -3493,6 +3663,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public StandardPassKitHostedPage Clone() {
       return new StandardPassKitHostedPage(this);
     }
@@ -3504,6 +3675,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Title shown on the redemption page browser tab. If not set, offer title will be shown.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
       get { return title_; }
       set {
@@ -3518,6 +3690,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized title.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTitle {
       get { return localizedTitle_; }
       set {
@@ -3532,6 +3705,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Redemption instructions, show underneath the redemption banner image.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RedemptionInstructions {
       get { return redemptionInstructions_; }
       set {
@@ -3546,6 +3720,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized redemption instructions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedRedemptionInstructions {
       get { return localizedRedemptionInstructions_; }
       set {
@@ -3559,6 +3734,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Image data defined by image ids.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ImageIds ImageIds {
       get { return redemptionImageAssetsCase_ == RedemptionImageAssetsOneofCase.ImageIds ? (global::PassKit.Grpc.ImageIds) redemptionImageAssets_ : null; }
       set {
@@ -3573,6 +3749,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Image data defined as image object.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ImageData Images {
       get { return redemptionImageAssetsCase_ == RedemptionImageAssetsOneofCase.Images ? (global::PassKit.Grpc.ImageData) redemptionImageAssets_ : null; }
       set {
@@ -3588,6 +3765,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Text shown at the footer of the page, underneath the redemption code / redemption code input.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FooterText {
       get { return footerText_; }
       set {
@@ -3602,6 +3780,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized text shown at the footer of the page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedFooterText {
       get { return localizedFooterText_; }
       set {
@@ -3616,6 +3795,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Customize success or error messages shown on the page or error dialog box.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.ResponseTexts ResponseTexts {
       get { return responseTexts_; }
       set {
@@ -3630,6 +3810,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Date time showed with couponAlreadyRedeemedText. Date time is localized to browser preferred language.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HideRedeemedDateTime {
       get { return hideRedeemedDateTime_; }
       set {
@@ -3644,6 +3825,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Call to action button rendered on error page of coupon already redeemed to provide better customer experience.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CallToActionButton CallToActionButton {
       get { return callToActionButton_; }
       set {
@@ -3658,6 +3840,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Optional CSS overrides to ensure the page aligns with your brand guidelines.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CssOverrides {
       get { return cssOverrides_; }
       set {
@@ -3674,22 +3857,26 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
     private RedemptionImageAssetsOneofCase redemptionImageAssetsCase_ = RedemptionImageAssetsOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RedemptionImageAssetsOneofCase RedemptionImageAssetsCase {
       get { return redemptionImageAssetsCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRedemptionImageAssets() {
       redemptionImageAssetsCase_ = RedemptionImageAssetsOneofCase.None;
       redemptionImageAssets_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as StandardPassKitHostedPage);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(StandardPassKitHostedPage other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3714,6 +3901,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Title.Length != 0) hash ^= Title.GetHashCode();
@@ -3736,11 +3924,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3801,6 +3991,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Title.Length != 0) {
         output.WriteRawTag(10);
@@ -3857,6 +4048,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Title.Length != 0) {
@@ -3902,6 +4094,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(StandardPassKitHostedPage other) {
       if (other == null) {
         return;
@@ -3970,6 +4163,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4060,6 +4254,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4155,19 +4350,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CallToActionButton> _parser = new pb::MessageParser<CallToActionButton>(() => new CallToActionButton());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CallToActionButton> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CallToActionButton() {
       OnConstruction();
     }
@@ -4175,6 +4374,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CallToActionButton(CallToActionButton other) : this() {
       hideCallToActionButton_ = other.hideCallToActionButton_;
       buttonText_ = other.buttonText_;
@@ -4185,6 +4385,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CallToActionButton Clone() {
       return new CallToActionButton(this);
     }
@@ -4196,6 +4397,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Set true to hide button.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HideCallToActionButton {
       get { return hideCallToActionButton_; }
       set {
@@ -4210,6 +4412,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Call-to-action text shown on the button.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ButtonText {
       get { return buttonText_; }
       set {
@@ -4224,6 +4427,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized button text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedButtonText {
       get { return localizedButtonText_; }
       set {
@@ -4238,6 +4442,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Link that the button will open.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Link {
       get { return link_; }
       set {
@@ -4252,6 +4457,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized link that the button will open.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedLink {
       get { return localizedLink_; }
       set {
@@ -4260,11 +4466,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CallToActionButton);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CallToActionButton other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4281,6 +4489,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HideCallToActionButton != false) hash ^= HideCallToActionButton.GetHashCode();
@@ -4295,11 +4504,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4332,6 +4543,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (HideCallToActionButton != false) {
         output.WriteRawTag(8);
@@ -4360,6 +4572,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HideCallToActionButton != false) {
@@ -4384,6 +4597,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CallToActionButton other) {
       if (other == null) {
         return;
@@ -4413,6 +4627,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4456,6 +4671,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4504,19 +4720,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<ResponseTexts> _parser = new pb::MessageParser<ResponseTexts>(() => new ResponseTexts());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResponseTexts> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResponseTexts() {
       OnConstruction();
     }
@@ -4524,6 +4744,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResponseTexts(ResponseTexts other) : this() {
       redeemConfirmationDialogBoxText_ = other.redeemConfirmationDialogBoxText_;
       localizedRedeemConfirmationDialogBoxText_ = other.localizedRedeemConfirmationDialogBoxText_ != null ? other.localizedRedeemConfirmationDialogBoxText_.Clone() : null;
@@ -4541,6 +4762,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResponseTexts Clone() {
       return new ResponseTexts(this);
     }
@@ -4554,6 +4776,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// This only applies to the redemption type REDEMPTION_TYPE_CUSTOMER_INITIATED_CODE_FIXED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RedeemConfirmationDialogBoxText {
       get { return redeemConfirmationDialogBoxText_; }
       set {
@@ -4568,6 +4791,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized redemption confirm dialog box text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedRedeemConfirmationDialogBoxText {
       get { return localizedRedeemConfirmationDialogBoxText_; }
       set {
@@ -4583,6 +4807,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// This only applies to the redemption type REDEMPTION_TYPE_CUSTOMER_INITIATED_CODE_FIXED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CancelRedeemText {
       get { return cancelRedeemText_; }
       set {
@@ -4597,6 +4822,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized cancel redemption text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCancelRedeemText {
       get { return localizedCancelRedeemText_; }
       set {
@@ -4611,6 +4837,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// To be shown when coupon has been redeemed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AfterRedeemText {
       get { return afterRedeemText_; }
       set {
@@ -4625,6 +4852,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized after redemption text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedAfterRedeemText {
       get { return localizedAfterRedeemText_; }
       set {
@@ -4639,6 +4867,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// To be shown when the coupon was already redeemed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CouponAlreadyRedeemedText {
       get { return couponAlreadyRedeemedText_; }
       set {
@@ -4653,6 +4882,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized text shown when the coupon was already redeemed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCouponAlreadyRedeemedText {
       get { return localizedCouponAlreadyRedeemedText_; }
       set {
@@ -4667,6 +4897,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// To be shown when the offer period has ended.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferExpiredText {
       get { return offerExpiredText_; }
       set {
@@ -4681,6 +4912,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized text shown when offer has ended.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedOfferExpiredText {
       get { return localizedOfferExpiredText_; }
       set {
@@ -4695,6 +4927,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// To be shown when the coupon expiry date / redemption end date has passed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CouponExpiredText {
       get { return couponExpiredText_; }
       set {
@@ -4709,6 +4942,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// Localized text shown when the coupon expiry date / redemption end date has passed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedCouponExpiredText {
       get { return localizedCouponExpiredText_; }
       set {
@@ -4717,11 +4951,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResponseTexts);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResponseTexts other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4745,6 +4981,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (RedeemConfirmationDialogBoxText.Length != 0) hash ^= RedeemConfirmationDialogBoxText.GetHashCode();
@@ -4766,11 +5003,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4831,6 +5070,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (RedeemConfirmationDialogBoxText.Length != 0) {
         output.WriteRawTag(10);
@@ -4887,6 +5127,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (RedeemConfirmationDialogBoxText.Length != 0) {
@@ -4932,6 +5173,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResponseTexts other) {
       if (other == null) {
         return;
@@ -4994,6 +5236,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5077,6 +5320,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5168,19 +5412,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponOffersListRequestDeprecated> _parser = new pb::MessageParser<CouponOffersListRequestDeprecated>(() => new CouponOffersListRequestDeprecated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponOffersListRequestDeprecated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequestDeprecated() {
       OnConstruction();
     }
@@ -5188,6 +5436,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequestDeprecated(CouponOffersListRequestDeprecated other) : this() {
       campaignId_ = other.campaignId_;
       pagination_ = other.pagination_ != null ? other.pagination_.Clone() : null;
@@ -5195,6 +5444,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequestDeprecated Clone() {
       return new CouponOffersListRequestDeprecated(this);
     }
@@ -5203,6 +5453,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int CampaignIdFieldNumber = 1;
     private string campaignId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CampaignId {
       get { return campaignId_; }
       set {
@@ -5214,6 +5465,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int PaginationFieldNumber = 2;
     private global::PassKit.Grpc.Pagination pagination_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Pagination Pagination {
       get { return pagination_; }
       set {
@@ -5222,11 +5474,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponOffersListRequestDeprecated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponOffersListRequestDeprecated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5240,6 +5494,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CampaignId.Length != 0) hash ^= CampaignId.GetHashCode();
@@ -5251,11 +5506,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5276,6 +5533,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CampaignId.Length != 0) {
         output.WriteRawTag(10);
@@ -5292,6 +5550,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CampaignId.Length != 0) {
@@ -5307,6 +5566,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponOffersListRequestDeprecated other) {
       if (other == null) {
         return;
@@ -5324,6 +5584,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5352,6 +5613,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5385,19 +5647,23 @@ namespace PassKit.Grpc.SingleUseCoupons {
     private static readonly pb::MessageParser<CouponOffersListRequest> _parser = new pb::MessageParser<CouponOffersListRequest>(() => new CouponOffersListRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CouponOffersListRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.SingleUseCoupons.OfferReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequest() {
       OnConstruction();
     }
@@ -5405,6 +5671,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequest(CouponOffersListRequest other) : this() {
       campaignId_ = other.campaignId_;
       filters_ = other.filters_ != null ? other.filters_.Clone() : null;
@@ -5412,6 +5679,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CouponOffersListRequest Clone() {
       return new CouponOffersListRequest(this);
     }
@@ -5420,6 +5688,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int CampaignIdFieldNumber = 1;
     private string campaignId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CampaignId {
       get { return campaignId_; }
       set {
@@ -5431,6 +5700,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int FiltersFieldNumber = 2;
     private global::PassKit.Grpc.Filters filters_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
       get { return filters_; }
       set {
@@ -5439,11 +5709,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CouponOffersListRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CouponOffersListRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5457,6 +5729,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CampaignId.Length != 0) hash ^= CampaignId.GetHashCode();
@@ -5468,11 +5741,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5493,6 +5768,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CampaignId.Length != 0) {
         output.WriteRawTag(10);
@@ -5509,6 +5785,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CampaignId.Length != 0) {
@@ -5524,6 +5801,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CouponOffersListRequest other) {
       if (other == null) {
         return;
@@ -5541,6 +5819,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5569,6 +5848,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

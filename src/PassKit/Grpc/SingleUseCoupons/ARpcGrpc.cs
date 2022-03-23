@@ -15,6 +15,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
   {
     static readonly string __ServiceName = "single_use_coupons.SingleUseCoupons";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -29,11 +30,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -45,26 +48,46 @@ namespace PassKit.Grpc.SingleUseCoupons {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> __Marshaller_single_use_coupons_CouponCampaign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Id> __Marshaller_io_Id = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Id.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Pagination> __Marshaller_io_Pagination = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Pagination.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Filters> __Marshaller_io_Filters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Filters.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.AnalyticsRequest> __Marshaller_io_AnalyticsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.AnalyticsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse> __Marshaller_single_use_coupons_CouponCampaignAnalyticsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> __Marshaller_single_use_coupons_CouponOffer = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponOffer.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated> __Marshaller_single_use_coupons_CouponOffersListRequestDeprecated = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest> __Marshaller_single_use_coupons_CouponOffersListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.Coupon> __Marshaller_single_use_coupons_Coupon = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.Coupon.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest> __Marshaller_single_use_coupons_CouponNewExternalIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest> __Marshaller_single_use_coupons_ExternalIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated> __Marshaller_single_use_coupons_ListRequestDeprecated = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.ListRequest> __Marshaller_single_use_coupons_ListRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.ListRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.PersonRequest> __Marshaller_io_PersonRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PersonRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest> __Marshaller_single_use_coupons_CampaignCopyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Strings> __Marshaller_io_Strings = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Strings.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign, global::PassKit.Grpc.Id> __Method_createCouponCampaign = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -72,6 +95,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponCampaign,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> __Method_updateCouponCampaign = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -79,6 +103,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponCampaign,
         __Marshaller_single_use_coupons_CouponCampaign);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> __Method_getCouponCampaign = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -86,6 +111,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_single_use_coupons_CouponCampaign);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteCouponCampaign = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -93,6 +119,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> __Method_listCouponCampaignsDeprecated = new grpc::Method<global::PassKit.Grpc.Pagination, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -100,6 +127,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Pagination,
         __Marshaller_single_use_coupons_CouponCampaign);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> __Method_listCouponCampaigns = new grpc::Method<global::PassKit.Grpc.Filters, global::PassKit.Grpc.SingleUseCoupons.CouponCampaign>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -107,6 +135,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Filters,
         __Marshaller_single_use_coupons_CouponCampaign);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.AnalyticsRequest, global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse> __Method_getAnalytics = new grpc::Method<global::PassKit.Grpc.AnalyticsRequest, global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -114,6 +143,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_AnalyticsRequest,
         __Marshaller_single_use_coupons_CouponCampaignAnalyticsResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffer, global::PassKit.Grpc.Id> __Method_createCouponOffer = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffer, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -121,6 +151,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponOffer,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffer, global::PassKit.Grpc.SingleUseCoupons.CouponOffer> __Method_updateCouponOffer = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffer, global::PassKit.Grpc.SingleUseCoupons.CouponOffer>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -128,6 +159,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponOffer,
         __Marshaller_single_use_coupons_CouponOffer);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.CouponOffer> __Method_getCouponOffer = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.CouponOffer>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -135,6 +167,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_single_use_coupons_CouponOffer);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty> __Method_deleteCouponOffer = new grpc::Method<global::PassKit.Grpc.Id, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -142,6 +175,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated, global::PassKit.Grpc.SingleUseCoupons.CouponOffer> __Method_listCouponOffersDeprecated = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated, global::PassKit.Grpc.SingleUseCoupons.CouponOffer>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -149,6 +183,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponOffersListRequestDeprecated,
         __Marshaller_single_use_coupons_CouponOffer);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest, global::PassKit.Grpc.SingleUseCoupons.CouponOffer> __Method_listCouponOffers = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest, global::PassKit.Grpc.SingleUseCoupons.CouponOffer>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -156,6 +191,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponOffersListRequest,
         __Marshaller_single_use_coupons_CouponOffer);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> __Method_createCoupon = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -163,6 +199,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> __Method_updateCoupon = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -170,6 +207,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> __Method_streamCouponUpdates = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id>(
         grpc::MethodType.DuplexStreaming,
         __ServiceName,
@@ -177,6 +215,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> __Method_redeemCoupon = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -184,6 +223,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest, global::PassKit.Grpc.Id> __Method_updateCouponExternalId = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -191,6 +231,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CouponNewExternalIdRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> __Method_streamCouponRedemptions = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id>(
         grpc::MethodType.DuplexStreaming,
         __ServiceName,
@@ -198,6 +239,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.Coupon> __Method_getCouponById = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.SingleUseCoupons.Coupon>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -205,6 +247,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_Id,
         __Marshaller_single_use_coupons_Coupon);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest, global::PassKit.Grpc.SingleUseCoupons.Coupon> __Method_getCouponByExternalId = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest, global::PassKit.Grpc.SingleUseCoupons.Coupon>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -212,6 +255,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_ExternalIdRequest,
         __Marshaller_single_use_coupons_Coupon);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::Google.Protobuf.WellKnownTypes.Empty> __Method_voidCoupon = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -219,6 +263,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_Coupon,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated, global::PassKit.Grpc.SingleUseCoupons.Coupon> __Method_listCouponsByCouponCampaignDeprecated = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated, global::PassKit.Grpc.SingleUseCoupons.Coupon>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -226,6 +271,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_ListRequestDeprecated,
         __Marshaller_single_use_coupons_Coupon);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequest, global::PassKit.Grpc.SingleUseCoupons.Coupon> __Method_listCouponsByCouponCampaign = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequest, global::PassKit.Grpc.SingleUseCoupons.Coupon>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
@@ -233,6 +279,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_ListRequest,
         __Marshaller_single_use_coupons_Coupon);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated, global::PassKit.Grpc.Count> __Method_countCouponsByCouponCampaignDeprecated = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -240,6 +287,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_ListRequestDeprecated,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequest, global::PassKit.Grpc.Count> __Method_countCouponsByCouponCampaign = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.ListRequest, global::PassKit.Grpc.Count>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -247,6 +295,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_ListRequest,
         __Marshaller_io_Count);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.PersonRequest, global::PassKit.Grpc.Id> __Method_patchPerson = new grpc::Method<global::PassKit.Grpc.PersonRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -254,6 +303,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_io_PersonRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest, global::PassKit.Grpc.Id> __Method_copyCouponCampaign = new grpc::Method<global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest, global::PassKit.Grpc.Id>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -261,6 +311,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         __Marshaller_single_use_coupons_CampaignCopyRequest,
         __Marshaller_io_Id);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings> __Method_getMetaKeysForCampaign = new grpc::Method<global::PassKit.Grpc.Id, global::PassKit.Grpc.Strings>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -279,425 +330,530 @@ namespace PassKit.Grpc.SingleUseCoupons {
     {
       /// <summary>Creates a new client for SingleUseCoupons</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public SingleUseCouponsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for SingleUseCoupons that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public SingleUseCouponsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected SingleUseCouponsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected SingleUseCouponsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaign updateCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaign updateCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> updateCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> updateCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CouponCampaign request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaign getCouponCampaign(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaign getCouponCampaign(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> getCouponCampaignAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> getCouponCampaignAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCouponCampaign(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCouponCampaign(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCouponCampaignAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCouponCampaignAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> listCouponCampaignsDeprecated(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponCampaignsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> listCouponCampaignsDeprecated(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponCampaignsDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PassKit.Grpc.Filters request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponCampaigns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaign> listCouponCampaigns(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponCampaigns, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse getAnalytics(global::PassKit.Grpc.AnalyticsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAnalytics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse getAnalytics(global::PassKit.Grpc.AnalyticsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getAnalytics, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse> getAnalyticsAsync(global::PassKit.Grpc.AnalyticsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getAnalyticsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponCampaignAnalyticsResponse> getAnalyticsAsync(global::PassKit.Grpc.AnalyticsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getAnalytics, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCouponOffer(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCouponOffer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCouponOffer(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponOfferAsync(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCouponOfferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponOfferAsync(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponOffer updateCouponOffer(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponOffer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponOffer updateCouponOffer(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> updateCouponOfferAsync(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponOfferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> updateCouponOfferAsync(global::PassKit.Grpc.SingleUseCoupons.CouponOffer request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponOffer getCouponOffer(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponOffer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.CouponOffer getCouponOffer(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> getCouponOfferAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponOfferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> getCouponOfferAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCouponOffer(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCouponOffer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteCouponOffer(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCouponOfferAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteCouponOfferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteCouponOfferAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteCouponOffer, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> listCouponOffersDeprecated(global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponOffersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> listCouponOffersDeprecated(global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponOffersDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> listCouponOffers(global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponOffers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.CouponOffer> listCouponOffers(global::PassKit.Grpc.SingleUseCoupons.CouponOffersListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponOffers, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id createCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_createCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return createCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> createCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_createCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncDuplexStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> streamCouponUpdates(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return streamCouponUpdates(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncDuplexStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> streamCouponUpdates(grpc::CallOptions options)
       {
         return CallInvoker.AsyncDuplexStreamingCall(__Method_streamCouponUpdates, null, options);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id redeemCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id redeemCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_redeemCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> redeemCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return redeemCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> redeemCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_redeemCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateCouponExternalId(global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponExternalId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateCouponExternalId(global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateCouponExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateCouponExternalIdAsync(global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateCouponExternalIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateCouponExternalIdAsync(global::PassKit.Grpc.SingleUseCoupons.CouponNewExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateCouponExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncDuplexStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> streamCouponRedemptions(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return streamCouponRedemptions(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncDuplexStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon, global::PassKit.Grpc.Id> streamCouponRedemptions(grpc::CallOptions options)
       {
         return CallInvoker.AsyncDuplexStreamingCall(__Method_streamCouponRedemptions, null, options);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.Coupon getCouponById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.Coupon getCouponById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCouponById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> getCouponByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> getCouponByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCouponById, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.Coupon getCouponByExternalId(global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponByExternalId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.SingleUseCoupons.Coupon getCouponByExternalId(global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getCouponByExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> getCouponByExternalIdAsync(global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getCouponByExternalIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> getCouponByExternalIdAsync(global::PassKit.Grpc.SingleUseCoupons.ExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getCouponByExternalId, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty voidCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return voidCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty voidCoupon(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_voidCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> voidCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return voidCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> voidCouponAsync(global::PassKit.Grpc.SingleUseCoupons.Coupon request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_voidCoupon, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> listCouponsByCouponCampaignDeprecated(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponsByCouponCampaignDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> listCouponsByCouponCampaignDeprecated(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponsByCouponCampaignDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> listCouponsByCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listCouponsByCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.SingleUseCoupons.Coupon> listCouponsByCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponsByCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countCouponsByCouponCampaignDeprecated(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countCouponsByCouponCampaignDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countCouponsByCouponCampaignDeprecated(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countCouponsByCouponCampaignDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countCouponsByCouponCampaignDeprecatedAsync(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countCouponsByCouponCampaignDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countCouponsByCouponCampaignDeprecatedAsync(global::PassKit.Grpc.SingleUseCoupons.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countCouponsByCouponCampaignDeprecated, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countCouponsByCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countCouponsByCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countCouponsByCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countCouponsByCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countCouponsByCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countCouponsByCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countCouponsByCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countCouponsByCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPerson(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPersonAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchPerson, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyCouponCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id copyCouponCampaign(global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_copyCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return copyCouponCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> copyCouponCampaignAsync(global::PassKit.Grpc.SingleUseCoupons.CampaignCopyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_copyCouponCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForCampaign(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForCampaign(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMetaKeysForCampaign, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForCampaignAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForCampaignAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMetaKeysForCampaign, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override SingleUseCouponsClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SingleUseCouponsClient(configuration);

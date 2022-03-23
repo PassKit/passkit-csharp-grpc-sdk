@@ -199,19 +199,23 @@ namespace PassKit.Grpc.Flights {
     private static readonly pb::MessageParser<FlightDesignator> _parser = new pb::MessageParser<FlightDesignator>(() => new FlightDesignator());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FlightDesignator> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignator() {
       OnConstruction();
     }
@@ -219,6 +223,7 @@ namespace PassKit.Grpc.Flights {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignator(FlightDesignator other) : this() {
       carrierCode_ = other.carrierCode_;
       flightNumber_ = other.flightNumber_;
@@ -251,6 +256,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignator Clone() {
       return new FlightDesignator(this);
     }
@@ -262,6 +268,7 @@ namespace PassKit.Grpc.Flights {
     /// The IATA or ICAO carrier code for the flight. In the case of a code-share, this should be the carrier code that you wish to present to the customer. This could be the marketing code, or the operating airline code. A carrier record for this code must exist.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CarrierCode {
       get { return carrierCode_; }
       set {
@@ -276,6 +283,7 @@ namespace PassKit.Grpc.Flights {
     /// The flight number.  Note this number must match the carrier code.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FlightNumber {
       get { return flightNumber_; }
       set {
@@ -290,6 +298,7 @@ namespace PassKit.Grpc.Flights {
     /// The date that the record is valid from. If not provided, then the date of submission will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Date ValidFrom {
       get { return validFrom_; }
       set {
@@ -304,6 +313,7 @@ namespace PassKit.Grpc.Flights {
     /// Multiple designators can be active at a time. Provide a revision to distinguish between versions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Revision {
       get { return revision_; }
       set {
@@ -318,6 +328,7 @@ namespace PassKit.Grpc.Flights {
     /// Setting to false will prevent further flights to be created against this flight number. Will automatically be set to false if a second designator with a validFrom date before the current date and after this designator's validFrom date is found.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Active {
       get { return active_; }
       set {
@@ -332,6 +343,7 @@ namespace PassKit.Grpc.Flights {
     /// The published flight schedule. If a flight object for a particular departure doesn't exist, these defaults are used. One-off changes to scheduled times for an individual departure should be handled by the Flight object. Long term changes should create a new revision of the FlightDesignator record.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightSchedule Schedule {
       get { return schedule_; }
       set {
@@ -346,6 +358,7 @@ namespace PassKit.Grpc.Flights {
     /// If the flight is operated by a carrier other than the carrierCode supplied, provide the IATA or ICAO carrier code for the operating carrier.  A carrier record must exist.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OperatingCarrierCode {
       get { return operatingCarrierCode_; }
       set {
@@ -360,6 +373,7 @@ namespace PassKit.Grpc.Flights {
     /// If the flight is operated by a carrier other than the carrierCode supplied, provide the flight number for the operating carrier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OperatingFlightNumber {
       get { return operatingFlightNumber_; }
       set {
@@ -376,6 +390,7 @@ namespace PassKit.Grpc.Flights {
     /// If the flight has code shares, then enter the carrier code and flight number. If there is an operating carrier, then do not include this in the list.  Code share carriers will not be validated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> CodeShareFlightNumbers {
       get { return codeShareFlightNumbers_; }
     }
@@ -387,6 +402,7 @@ namespace PassKit.Grpc.Flights {
     /// The origin port of the flight. In the case of direct flights with multiple stops, this will represent the port where the route commences.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Origin {
       get { return origin_; }
       set {
@@ -401,6 +417,7 @@ namespace PassKit.Grpc.Flights {
     /// The destination port of the flight. In the case of direct flights with multiple stops, this will represent the final port where the route terminates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Destination {
       get { return destination_; }
       set {
@@ -417,6 +434,7 @@ namespace PassKit.Grpc.Flights {
     /// In the case of multiple stops, an ordered array of transit points, commencing with the first port after the origin and ending with the penultimate port.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> TransitPoints {
       get { return transitPoints_; }
     }
@@ -428,6 +446,7 @@ namespace PassKit.Grpc.Flights {
     /// The default terminal that the flight departs from.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DepartureTerminal {
       get { return departureTerminal_; }
       set {
@@ -442,6 +461,7 @@ namespace PassKit.Grpc.Flights {
     /// The default terminal of the final destination.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ArrivalTerminal {
       get { return arrivalTerminal_; }
       set {
@@ -458,6 +478,7 @@ namespace PassKit.Grpc.Flights {
     /// In the case of multiple stops, an ordered array of transit terminals. The length of this array should match the number of transit points.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> TransitTerminals {
       get { return transitTerminals_; }
     }
@@ -469,6 +490,7 @@ namespace PassKit.Grpc.Flights {
     /// The Boarding Policy is used to determine informational labels on the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.BoardingPolicy BoardingPolicy {
       get { return boardingPolicy_; }
       set {
@@ -483,6 +505,7 @@ namespace PassKit.Grpc.Flights {
     /// The Seat Class Policy is used to determine informational labels on the pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.SeatClassPolicy SeatClassPolicy {
       get { return seatClassPolicy_; }
       set {
@@ -499,6 +522,7 @@ namespace PassKit.Grpc.Flights {
     /// An array of alerts to subscribe to for the flight. Note that additional charges apply.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Flights.FlightAlerts> Alerts {
       get { return alerts_; }
     }
@@ -510,6 +534,7 @@ namespace PassKit.Grpc.Flights {
     /// The PassKit template id that will be used for boarding passes for this flight. It can be overwritten at the flight level.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTemplateId {
       get { return passTemplateId_; }
       set {
@@ -524,6 +549,7 @@ namespace PassKit.Grpc.Flights {
     /// Minutes after scheduled arrival time to automatically invalidate the pass. Enter a value of 9999999 or greater if the pass should not auto invalidate. Default is 48 hours.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint AutoInvalidateAfter {
       get { return autoInvalidateAfter_; }
       set {
@@ -539,6 +565,7 @@ namespace PassKit.Grpc.Flights {
     /// </summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AutoInvalidateCancelledPasses {
       get { return autoInvalidateCancelledPasses_; }
       set {
@@ -555,6 +582,7 @@ namespace PassKit.Grpc.Flights {
     /// A list of up to 10 GPS locations where this boarding pass should be presented on the lock-screen.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.GPSLocation> LocationMessages {
       get { return locationMessages_; }
     }
@@ -568,6 +596,7 @@ namespace PassKit.Grpc.Flights {
     /// A list of up to 10 Beacon UUIDs that should trigger the boarding pass to be presented on the lock-screen.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Beacon> BeaconMessages {
       get { return beaconMessages_; }
     }
@@ -581,6 +610,7 @@ namespace PassKit.Grpc.Flights {
     /// A list of links to be appended to the end of each boarding pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.Link> DefaultLinks {
       get { return defaultLinks_; }
     }
@@ -592,6 +622,7 @@ namespace PassKit.Grpc.Flights {
     /// If PassKit are generating barcodes, include conditional items. Default false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ConditionalItems {
       get { return conditionalItems_; }
       set {
@@ -606,6 +637,7 @@ namespace PassKit.Grpc.Flights {
     /// If PassKit are generating barcodes, default airline use data (IATA item 4). This can be overwritten at the flight and boarding pass level.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BarcodeAdditionalData {
       get { return barcodeAdditionalData_; }
       set {
@@ -620,6 +652,7 @@ namespace PassKit.Grpc.Flights {
     /// Invalidate passes where either the booking or the flight have been cancelled. Default is ON.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Toggle InvalidateCancelledPasses {
       get { return invalidateCancelledPasses_; }
       set {
@@ -628,11 +661,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FlightDesignator);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FlightDesignator other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -671,6 +706,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CarrierCode.Length != 0) hash ^= CarrierCode.GetHashCode();
@@ -707,11 +743,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -811,6 +849,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CarrierCode.Length != 0) {
         output.WriteRawTag(10);
@@ -906,6 +945,7 @@ namespace PassKit.Grpc.Flights {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CarrierCode.Length != 0) {
@@ -982,6 +1022,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FlightDesignator other) {
       if (other == null) {
         return;
@@ -1063,6 +1104,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1195,6 +1237,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1332,19 +1375,23 @@ namespace PassKit.Grpc.Flights {
     private static readonly pb::MessageParser<FlightDesignatorRequest> _parser = new pb::MessageParser<FlightDesignatorRequest>(() => new FlightDesignatorRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FlightDesignatorRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignatorRequest() {
       OnConstruction();
     }
@@ -1352,6 +1399,7 @@ namespace PassKit.Grpc.Flights {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignatorRequest(FlightDesignatorRequest other) : this() {
       carrierCode_ = other.carrierCode_;
       flightNumber_ = other.flightNumber_;
@@ -1360,6 +1408,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightDesignatorRequest Clone() {
       return new FlightDesignatorRequest(this);
     }
@@ -1371,6 +1420,7 @@ namespace PassKit.Grpc.Flights {
     /// The IATA or ICAO carrier code for the flight.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CarrierCode {
       get { return carrierCode_; }
       set {
@@ -1385,6 +1435,7 @@ namespace PassKit.Grpc.Flights {
     /// The flight number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FlightNumber {
       get { return flightNumber_; }
       set {
@@ -1399,6 +1450,7 @@ namespace PassKit.Grpc.Flights {
     /// Revision. Each designator record requires a version number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Revision {
       get { return revision_; }
       set {
@@ -1407,11 +1459,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FlightDesignatorRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FlightDesignatorRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1426,6 +1480,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CarrierCode.Length != 0) hash ^= CarrierCode.GetHashCode();
@@ -1438,11 +1493,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1467,6 +1524,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CarrierCode.Length != 0) {
         output.WriteRawTag(10);
@@ -1487,6 +1545,7 @@ namespace PassKit.Grpc.Flights {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CarrierCode.Length != 0) {
@@ -1505,6 +1564,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FlightDesignatorRequest other) {
       if (other == null) {
         return;
@@ -1522,6 +1582,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1551,6 +1612,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1588,19 +1650,23 @@ namespace PassKit.Grpc.Flights {
     private static readonly pb::MessageParser<FlightSchedule> _parser = new pb::MessageParser<FlightSchedule>(() => new FlightSchedule());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FlightSchedule> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightSchedule() {
       OnConstruction();
     }
@@ -1608,6 +1674,7 @@ namespace PassKit.Grpc.Flights {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightSchedule(FlightSchedule other) : this() {
       monday_ = other.monday_ != null ? other.monday_.Clone() : null;
       tuesday_ = other.tuesday_ != null ? other.tuesday_.Clone() : null;
@@ -1620,6 +1687,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightSchedule Clone() {
       return new FlightSchedule(this);
     }
@@ -1628,6 +1696,7 @@ namespace PassKit.Grpc.Flights {
     public const int MondayFieldNumber = 1;
     private global::PassKit.Grpc.Flights.FlightTimes monday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Monday {
       get { return monday_; }
       set {
@@ -1639,6 +1708,7 @@ namespace PassKit.Grpc.Flights {
     public const int TuesdayFieldNumber = 2;
     private global::PassKit.Grpc.Flights.FlightTimes tuesday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Tuesday {
       get { return tuesday_; }
       set {
@@ -1650,6 +1720,7 @@ namespace PassKit.Grpc.Flights {
     public const int WednesdayFieldNumber = 3;
     private global::PassKit.Grpc.Flights.FlightTimes wednesday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Wednesday {
       get { return wednesday_; }
       set {
@@ -1661,6 +1732,7 @@ namespace PassKit.Grpc.Flights {
     public const int ThursdayFieldNumber = 4;
     private global::PassKit.Grpc.Flights.FlightTimes thursday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Thursday {
       get { return thursday_; }
       set {
@@ -1672,6 +1744,7 @@ namespace PassKit.Grpc.Flights {
     public const int FridayFieldNumber = 5;
     private global::PassKit.Grpc.Flights.FlightTimes friday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Friday {
       get { return friday_; }
       set {
@@ -1683,6 +1756,7 @@ namespace PassKit.Grpc.Flights {
     public const int SaturdayFieldNumber = 6;
     private global::PassKit.Grpc.Flights.FlightTimes saturday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Saturday {
       get { return saturday_; }
       set {
@@ -1694,6 +1768,7 @@ namespace PassKit.Grpc.Flights {
     public const int SundayFieldNumber = 7;
     private global::PassKit.Grpc.Flights.FlightTimes sunday_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Flights.FlightTimes Sunday {
       get { return sunday_; }
       set {
@@ -1702,11 +1777,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FlightSchedule);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FlightSchedule other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1725,6 +1802,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (monday_ != null) hash ^= Monday.GetHashCode();
@@ -1741,11 +1819,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1786,6 +1866,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (monday_ != null) {
         output.WriteRawTag(10);
@@ -1822,6 +1903,7 @@ namespace PassKit.Grpc.Flights {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (monday_ != null) {
@@ -1852,6 +1934,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FlightSchedule other) {
       if (other == null) {
         return;
@@ -1902,6 +1985,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1968,6 +2052,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2039,19 +2124,23 @@ namespace PassKit.Grpc.Flights {
     private static readonly pb::MessageParser<FlightTimes> _parser = new pb::MessageParser<FlightTimes>(() => new FlightTimes());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FlightTimes> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightTimes() {
       OnConstruction();
     }
@@ -2059,6 +2148,7 @@ namespace PassKit.Grpc.Flights {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightTimes(FlightTimes other) : this() {
       scheduledDepartureTime_ = other.scheduledDepartureTime_ != null ? other.scheduledDepartureTime_.Clone() : null;
       boardingTime_ = other.boardingTime_ != null ? other.boardingTime_.Clone() : null;
@@ -2068,6 +2158,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FlightTimes Clone() {
       return new FlightTimes(this);
     }
@@ -2079,6 +2170,7 @@ namespace PassKit.Grpc.Flights {
     /// The published departure time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Time ScheduledDepartureTime {
       get { return scheduledDepartureTime_; }
       set {
@@ -2093,6 +2185,7 @@ namespace PassKit.Grpc.Flights {
     /// The published boarding time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Time BoardingTime {
       get { return boardingTime_; }
       set {
@@ -2107,6 +2200,7 @@ namespace PassKit.Grpc.Flights {
     /// The point after which passengers will be denied boarding.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Time GateClosingTime {
       get { return gateClosingTime_; }
       set {
@@ -2121,6 +2215,7 @@ namespace PassKit.Grpc.Flights {
     /// The published, scheduled arrival time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Time ScheduledArrivalTime {
       get { return scheduledArrivalTime_; }
       set {
@@ -2129,11 +2224,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FlightTimes);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FlightTimes other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2149,6 +2246,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (scheduledDepartureTime_ != null) hash ^= ScheduledDepartureTime.GetHashCode();
@@ -2162,11 +2260,13 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2195,6 +2295,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (scheduledDepartureTime_ != null) {
         output.WriteRawTag(10);
@@ -2219,6 +2320,7 @@ namespace PassKit.Grpc.Flights {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (scheduledDepartureTime_ != null) {
@@ -2240,6 +2342,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FlightTimes other) {
       if (other == null) {
         return;
@@ -2272,6 +2375,7 @@ namespace PassKit.Grpc.Flights {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2317,6 +2421,7 @@ namespace PassKit.Grpc.Flights {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

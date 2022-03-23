@@ -72,19 +72,23 @@ namespace PassKit.Grpc.Members {
     private static readonly pb::MessageParser<Tier> _parser = new pb::MessageParser<Tier>(() => new Tier());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Tier> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Members.TierReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tier() {
       OnConstruction();
     }
@@ -92,6 +96,7 @@ namespace PassKit.Grpc.Members {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tier(Tier other) : this() {
       id_ = other.id_;
       tierIndex_ = other.tierIndex_;
@@ -117,6 +122,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tier Clone() {
       return new Tier(this);
     }
@@ -128,6 +134,7 @@ namespace PassKit.Grpc.Members {
     /// Tier identifier (could just be: blue, gold, etc); needs to be lower case. Tier ID needs to be uique within the program.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -142,6 +149,7 @@ namespace PassKit.Grpc.Members {
     /// Index of the tier; can be used for managing downgrades / upgrade messaging; needs to be unique within the program.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint TierIndex {
       get { return tierIndex_; }
       set {
@@ -156,6 +164,7 @@ namespace PassKit.Grpc.Members {
     /// Name of tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -170,6 +179,7 @@ namespace PassKit.Grpc.Members {
     /// Localized name of tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedName {
       get { return localizedName_; }
       set {
@@ -184,6 +194,7 @@ namespace PassKit.Grpc.Members {
     /// Name of the secondary reward tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SecondaryTierName {
       get { return secondaryTierName_; }
       set {
@@ -198,6 +209,7 @@ namespace PassKit.Grpc.Members {
     /// Localized name of the secondary reward tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedSecondaryTierName {
       get { return localizedSecondaryTierName_; }
       set {
@@ -212,6 +224,7 @@ namespace PassKit.Grpc.Members {
     /// The program id that the tier belongs to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProgramId {
       get { return programId_; }
       set {
@@ -226,6 +239,7 @@ namespace PassKit.Grpc.Members {
     /// Identifier of pass template which identifies design and data elements for this tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTemplateId {
       get { return passTemplateId_; }
       set {
@@ -240,6 +254,7 @@ namespace PassKit.Grpc.Members {
     /// Notification to be shown when someone upgrades tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TierUpgradeMessage {
       get { return tierUpgradeMessage_; }
       set {
@@ -254,6 +269,7 @@ namespace PassKit.Grpc.Members {
     /// Localized notification to be shown when someone upgrades tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTierUpgradeMessage {
       get { return localizedTierUpgradeMessage_; }
       set {
@@ -268,6 +284,7 @@ namespace PassKit.Grpc.Members {
     /// Notification to be shown when someone downgrades tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TierDowngradeMessage {
       get { return tierDowngradeMessage_; }
       set {
@@ -282,6 +299,7 @@ namespace PassKit.Grpc.Members {
     /// Localized notification to be shown when someone upgrades tier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.LocalizedString LocalizedTierDowngradeMessage {
       get { return localizedTierDowngradeMessage_; }
       set {
@@ -296,6 +314,7 @@ namespace PassKit.Grpc.Members {
     /// The date the tier was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
       get { return created_; }
       set {
@@ -310,6 +329,7 @@ namespace PassKit.Grpc.Members {
     /// The date the tier was updated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
       get { return updated_; }
       set {
@@ -324,6 +344,7 @@ namespace PassKit.Grpc.Members {
     /// Set true to accept a negative point balance. Default is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool PointsOverdrawn {
       get { return pointsOverdrawn_; }
       set {
@@ -338,6 +359,7 @@ namespace PassKit.Grpc.Members {
     /// Set true to accept a negative secondary point balance. Default is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool SecondaryPointsOverdrawn {
       get { return secondaryPointsOverdrawn_; }
       set {
@@ -352,6 +374,7 @@ namespace PassKit.Grpc.Members {
     /// Expiry date setting. You can set expiry logic here. Default no expiry logic.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ExpirySettings ExpirySettings {
       get { return expirySettings_; }
       set {
@@ -366,6 +389,7 @@ namespace PassKit.Grpc.Members {
     /// Timezone string in IANA timezone format. If not provided defaults to Etc/UTC.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Timezone {
       get { return timezone_; }
       set {
@@ -380,6 +404,7 @@ namespace PassKit.Grpc.Members {
     /// Indicates if customers can enrol into this tier via a public web form (only for public programs).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PkBool AllowTierEnrolment {
       get { return allowTierEnrolment_; }
       set {
@@ -394,6 +419,7 @@ namespace PassKit.Grpc.Members {
     /// Tier shortcode is used in public enrolment URLs, that enrol members into the tier if the program is set to public and allowTierEnrolment = true for this tier. System generated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ShortCode {
       get { return shortCode_; }
       set {
@@ -402,11 +428,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Tier);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Tier other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -438,6 +466,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -467,11 +496,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -564,6 +595,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Id.Length != 0) {
         output.WriteRawTag(10);
@@ -652,6 +684,7 @@ namespace PassKit.Grpc.Members {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -721,6 +754,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Tier other) {
       if (other == null) {
         return;
@@ -813,6 +847,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -934,6 +969,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1063,19 +1099,23 @@ namespace PassKit.Grpc.Members {
     private static readonly pb::MessageParser<TierRequestInput> _parser = new pb::MessageParser<TierRequestInput>(() => new TierRequestInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TierRequestInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::PassKit.Grpc.Members.TierReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TierRequestInput() {
       OnConstruction();
     }
@@ -1083,6 +1123,7 @@ namespace PassKit.Grpc.Members {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TierRequestInput(TierRequestInput other) : this() {
       programId_ = other.programId_;
       tierId_ = other.tierId_;
@@ -1090,6 +1131,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TierRequestInput Clone() {
       return new TierRequestInput(this);
     }
@@ -1101,6 +1143,7 @@ namespace PassKit.Grpc.Members {
     /// Program ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProgramId {
       get { return programId_; }
       set {
@@ -1115,6 +1158,7 @@ namespace PassKit.Grpc.Members {
     /// Tier ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TierId {
       get { return tierId_; }
       set {
@@ -1123,11 +1167,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TierRequestInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TierRequestInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1141,6 +1187,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ProgramId.Length != 0) hash ^= ProgramId.GetHashCode();
@@ -1152,11 +1199,13 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1177,6 +1226,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ProgramId.Length != 0) {
         output.WriteRawTag(10);
@@ -1193,6 +1243,7 @@ namespace PassKit.Grpc.Members {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ProgramId.Length != 0) {
@@ -1208,6 +1259,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TierRequestInput other) {
       if (other == null) {
         return;
@@ -1222,6 +1274,7 @@ namespace PassKit.Grpc.Members {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1247,6 +1300,7 @@ namespace PassKit.Grpc.Members {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
