@@ -21,7 +21,7 @@ The PassKit IO SDK makes it quick and easy to create and manage your branded Dig
    * Membership Cards 
    * Coupons
    * Boarding Passes
-   * Event Tickets _coming_soon_
+   * Event Tickets 
    
 Please refer to the C# quickstart for more information [HERE](https://github.com/PassKit/passkit-c-sharp-quickstart)
 
