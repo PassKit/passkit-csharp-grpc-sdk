@@ -3,7 +3,7 @@
   <metadata>
     <id>PassKit.Grpc</id>
     <title>PassKit gRPC SDK</title>
-    <version>1.1.61</version>
+    <version>1.1.70</version>
     <icon>icon.png</icon>
     <description>
       SDK for the PassKit gRPC API that can be used to create, configure and manage Membership, Loyalty, Event Ticket, Coupon, Transit and Boarding Pass content for mobile wallet applications, including Apple Pay and Google Pay.
@@ -21,9 +21,9 @@
     <tags>PassKit gRPC Apple Wallet Google Pay</tags>
     <dependencies>
       <group targetFramework=".NETCoreApp5.0">
-        <dependency id="Google.Protobuf" version="3.19.4" />
-        <dependency id="Google.Api.CommonProtos" version="2.5.0" />
-        <dependency id="Grpc.Core" version="2.45.0" />
+        <dependency id="Google.Protobuf" version="3.21.7" />
+        <dependency id="Google.Api.CommonProtos" version="2.6.0" />
+        <dependency id="Grpc.Core" version="2.46.5" />
       </group>
     </dependencies>
   </metadata>

@@ -7,7 +7,7 @@
 // Members RPC
 //
 // The PassKit Members API lets you manage your membership programs and passes for Apple Wallet and Google Pay.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

@@ -5,7 +5,7 @@
 // Original file comments:
 // *
 // Single Use Coupon Protocol is suit for cases where the user requires a clean and simple single use coupon for short term coupon campaigns in Apple Wallet and Google Pay.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

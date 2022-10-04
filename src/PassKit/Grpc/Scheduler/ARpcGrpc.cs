@@ -7,7 +7,7 @@
 // Scheduler RPC
 //
 // The PassKit Scheduler API lets you schedule a job.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

@@ -5,7 +5,7 @@
 // Original file comments:
 // *
 // Events Protocol is designed to get your Digital Event Tickets into Apple Wallet and Google Pay, from theatre and cinema, to sport events and concerts.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

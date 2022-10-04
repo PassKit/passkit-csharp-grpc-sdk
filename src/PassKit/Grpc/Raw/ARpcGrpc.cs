@@ -6,7 +6,7 @@
 // *
 // This protocol is suit for cases where the business logic is handled elsewhere, and the purpose is purely to issue and
 // update content for Apple Wallet and Google Pay.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

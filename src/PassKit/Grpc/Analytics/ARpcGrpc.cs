@@ -7,7 +7,7 @@
 // Analytics RPC
 //
 // The PassKit Analytics API lets you track the performance of Apple Wallet and Google Pay passes.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;

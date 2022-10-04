@@ -7,7 +7,7 @@
 // Flights RPC
 //
 // The PassKit Flights API lets you manage your flights and boarding passes for Apple Wallet and Google Pay.
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
