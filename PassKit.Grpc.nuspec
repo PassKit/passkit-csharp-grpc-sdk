@@ -4,7 +4,7 @@
     <id>PassKit.Grpc</id>
     <title>PassKit gRPC SDK</title>
     <version>1.1.70</version>
-    <icon>icon.png</icon>
+    <icon>images/icon.png</icon>
     <description>
       SDK for the PassKit gRPC API that can be used to create, configure and manage Membership, Loyalty, Event Ticket, Coupon, Transit and Boarding Pass content for mobile wallet applications, including Apple Pay and Google Pay.
     </description>

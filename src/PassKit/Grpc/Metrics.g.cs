@@ -54,18 +54,19 @@ namespace PassKit.Grpc {
             "cm90b2J1Zi5UaW1lc3RhbXASNQoRbGFzdFVuaW5zdGFsbGVkQXQYEiABKAsy",
             "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjEKDWludmFsaWRhdGVkQXQY",
             "EyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjEKDWxhc3RVcGRh",
-            "dGVkQXQYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wKrkCCg9M",
+            "dGVkQXQYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wKtICCg9M",
             "aWZlY3ljbGVFdmVudHMSDQoJTk9fU1RBVFVTEAASDAoIUkVOREVSRUQQARIT",
             "Cg9JTlNUQUxMRURfQVBQTEUQAhIUChBJTlNUQUxMRURfR09PR0xFEAQSGwoX",
             "SU5TVEFMTEVEX0FORFJPSURfT1RIRVIQCBIWChFVTklOU1RBTExFRF9BUFBM",
             "RRCACBIXChJVTklOU1RBTExFRF9HT09HTEUQgBASHgoZVU5JTlNUQUxMRURf",
             "QU5EUk9JRF9PVEhFUhCAIBIXChJBUFBMRV9QQVNTX0NSRUFURUQQgEASHwoZ",
             "R09PR0xFX1BBWV9SRUNPUkRfQ1JFQVRFRBCAgAESGgoUSU5WQUxJREFURV9S",
-            "RVFVRVNURUQQgIAQEhoKFElOVkFMSURBVEVfQ09ORklSTUVEEICAICpZCgZT",
-            "dGF0dXMSDwoLUEFTU19JU1NVRUQQABISCg5QQVNTX0lOU1RBTExFRBABEhQK",
-            "EFBBU1NfVU5JTlNUQUxMRUQQAhIUChBQQVNTX0lOVkFMSURBVEVEEANCRwoQ",
-            "Y29tLnBhc3NraXQuZ3JwY1okc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwv",
-            "c2RrL2dvL2lvqgIMUGFzc0tpdC5HcnBjYgZwcm90bzM="));
+            "RVFVRVNURUQQgIAQEhoKFElOVkFMSURBVEVfQ09ORklSTUVEEICAIBIXChFQ",
+            "QVNTX1BFUlNPTkFMSVNFRBCAgEAqWQoGU3RhdHVzEg8KC1BBU1NfSVNTVUVE",
+            "EAASEgoOUEFTU19JTlNUQUxMRUQQARIUChBQQVNTX1VOSU5TVEFMTEVEEAIS",
+            "FAoQUEFTU19JTlZBTElEQVRFRBADQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0",
+            "YXNoLnBhc3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQu",
+            "R3JwY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.AttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.LifecycleEvents), typeof(global::PassKit.Grpc.Status), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -128,6 +129,10 @@ namespace PassKit.Grpc {
     /// Pass has been invalidated.
     /// </summary>
     [pbr::OriginalName("INVALIDATE_CONFIRMED")] InvalidateConfirmed = 524288,
+    /// <summary>
+    /// Pass has been personalised
+    /// </summary>
+    [pbr::OriginalName("PASS_PERSONALISED")] PassPersonalised = 1048576,
   }
 
   /// <summary>
