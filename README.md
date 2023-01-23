@@ -1,4 +1,4 @@
-PassKit C Sharp gRPC SDK
+PassKit C Sharp SDK
 =====================
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
