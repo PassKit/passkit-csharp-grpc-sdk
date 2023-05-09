@@ -648,7 +648,7 @@ namespace PassKit.Grpc {
         }
         ProjectDistributionUrl.MergeFrom(other.ProjectDistributionUrl);
       }
-      fields_.Add(other.fields_);
+      fields_.MergeFrom(other.fields_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2695,8 +2695,8 @@ namespace PassKit.Grpc {
       if (other.QrCodeUrl.Length != 0) {
         QrCodeUrl = other.QrCodeUrl;
       }
-      tierEnrolmentUrls_.Add(other.tierEnrolmentUrls_);
-      tierEnrolmentQRs_.Add(other.tierEnrolmentQRs_);
+      tierEnrolmentUrls_.MergeFrom(other.tierEnrolmentUrls_);
+      tierEnrolmentQRs_.MergeFrom(other.tierEnrolmentQRs_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

@@ -813,7 +813,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         }
         Devices.MergeFrom(other.Devices);
       }
-      sources_.Add(other.sources_);
+      sources_.MergeFrom(other.sources_);
       data_.Add(other.data_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }

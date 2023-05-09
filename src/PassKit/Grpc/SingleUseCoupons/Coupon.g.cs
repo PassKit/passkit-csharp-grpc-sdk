@@ -657,7 +657,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         }
         Person.MergeFrom(other.Person);
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.Sku.Length != 0) {
         Sku = other.Sku;
       }
@@ -1328,7 +1328,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
       if (other.TransactionAmount != 0D) {
         TransactionAmount = other.TransactionAmount;
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

@@ -4102,7 +4102,7 @@ namespace PassKit.Grpc {
       if (other == null) {
         return;
       }
-      items_.Add(other.items_);
+      items_.MergeFrom(other.items_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

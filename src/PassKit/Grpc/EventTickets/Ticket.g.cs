@@ -1458,7 +1458,7 @@ namespace PassKit.Grpc.EventTickets {
         }
         Person.MergeFrom(other.Person);
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.OptOut != global::PassKit.Grpc.Toggle.DoNotUse) {
         OptOut = other.OptOut;
       }
@@ -6935,7 +6935,7 @@ namespace PassKit.Grpc.EventTickets {
         }
         Person.MergeFrom(other.Person);
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.OptOut != false) {
         OptOut = other.OptOut;
       }
@@ -8010,7 +8010,7 @@ namespace PassKit.Grpc.EventTickets {
         }
         Person.MergeFrom(other.Person);
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.OptOut != false) {
         OptOut = other.OptOut;
       }

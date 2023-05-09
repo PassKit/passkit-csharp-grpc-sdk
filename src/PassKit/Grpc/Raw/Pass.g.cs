@@ -627,7 +627,7 @@ namespace PassKit.Grpc.Raw {
         }
         PersonalDetails.MergeFrom(other.PersonalDetails);
       }
-      dynamicData_.Add(other.dynamicData_);
+      dynamicData_.MergeFrom(other.dynamicData_);
       if (other.OptOut != false) {
         OptOut = other.OptOut;
       }

@@ -177,7 +177,7 @@ namespace PassKit.Grpc {
       if (other == null) {
         return;
       }
-      details_.Add(other.details_);
+      details_.MergeFrom(other.details_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

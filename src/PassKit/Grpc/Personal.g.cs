@@ -557,7 +557,7 @@ namespace PassKit.Grpc {
       if (other.ExternalId.Length != 0) {
         ExternalId = other.ExternalId;
       }
-      externalIds_.Add(other.externalIds_);
+      externalIds_.MergeFrom(other.externalIds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

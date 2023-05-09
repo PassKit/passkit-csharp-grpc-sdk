@@ -368,7 +368,7 @@ namespace PassKit.Grpc {
       if (other == null) {
         return;
       }
-      translations_.Add(other.translations_);
+      translations_.MergeFrom(other.translations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

@@ -534,12 +534,12 @@ namespace PassKit.Grpc {
         }
         DeviceBreakdown.MergeFrom(other.DeviceBreakdown);
       }
-      utmSourceBreakdown_.Add(other.utmSourceBreakdown_);
+      utmSourceBreakdown_.MergeFrom(other.utmSourceBreakdown_);
       data_.Add(other.data_);
-      utmMediumBreakdown_.Add(other.utmMediumBreakdown_);
-      utmNameBreakdown_.Add(other.utmNameBreakdown_);
-      utmTermBreakdown_.Add(other.utmTermBreakdown_);
-      utmContentBreakdown_.Add(other.utmContentBreakdown_);
+      utmMediumBreakdown_.MergeFrom(other.utmMediumBreakdown_);
+      utmNameBreakdown_.MergeFrom(other.utmNameBreakdown_);
+      utmTermBreakdown_.MergeFrom(other.utmTermBreakdown_);
+      utmContentBreakdown_.MergeFrom(other.utmContentBreakdown_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

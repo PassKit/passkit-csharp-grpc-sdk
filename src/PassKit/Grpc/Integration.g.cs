@@ -918,7 +918,7 @@ namespace PassKit.Grpc {
       if (other.ClassId.Length != 0) {
         ClassId = other.ClassId;
       }
-      configurations_.Add(other.configurations_);
+      configurations_.MergeFrom(other.configurations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3780,7 +3780,7 @@ namespace PassKit.Grpc {
       if (other.RequestName.Length != 0) {
         RequestName = other.RequestName;
       }
-      params_.Add(other.params_);
+      params_.MergeFrom(other.params_);
       if (other.Payload.Length != 0) {
         Payload = other.Payload;
       }

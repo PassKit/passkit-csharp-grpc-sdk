@@ -29,26 +29,27 @@ namespace PassKit.Grpc {
             "LnByb3RvGhhpby9jb21tb24vcGVyc29uYWwucHJvdG8aGWlvL2NvbW1vbi9w",
             "cm90b2NvbHMucHJvdG8aGWlvL2NvbW1vbi9wcm94aW1pdHkucHJvdG8aGGlv",
             "L2NvbW1vbi90ZW1wbGF0ZS5wcm90bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIv",
-            "b3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90byLnAQoNUGFzc092ZXJyaWRlcxIe",
+            "b3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90byKEAgoNUGFzc092ZXJyaWRlcxIe",
             "CghpbWFnZUlkcxgBIAEoCzIMLmlvLkltYWdlSWRzEioKCWxvY2F0aW9ucxgD",
             "IAMoCzIPLmlvLkdQU0xvY2F0aW9uQgaSQQOgAQoSIwoHYmVhY29ucxgEIAMo",
             "CzIKLmlvLkJlYWNvbkIGkkEDoAEKEh8KBWxpbmtzGAUgAygLMgguaW8uTGlu",
             "a0IGkkEDoAEKEhoKBmNvbG9ycxgGIAEoCzIKLmlvLkNvbG9ycxIiChphc3Nv",
-            "Y2lhdGVkU3RvcmVJZGVudGlmaWVycxgHIAMoDUoECAIQAyJcCgtQYXNzT3B0",
-            "aW9ucxImCgVhcHBsZRgBIAEoCzIXLmlvLkFwcGxlV2FsbGV0U2V0dGluZ3MS",
-            "JQoGZ29vZ2xlGAIgASgLMhUuaW8uR29vZ2xlUGF5U2V0dGluZ3Mi/wEKBFBh",
-            "c3MSCgoCaWQYASABKAkSDwoHY2xhc3NJZBgCIAEoCRIiCghwcm90b2NvbBgD",
-            "IAEoDjIQLmlvLlBhc3NQcm90b2NvbBIhCg1wZXJzb25EZXRhaWxzGAQgASgL",
-            "MgouaW8uUGVyc29uEh4KCG1ldGFkYXRhGAUgASgLMgwuaW8uTWV0YWRhdGES",
-            "LAoKcmVjb3JkRGF0YRgGIAMoCzIYLmlvLlBhc3MuUmVjb3JkRGF0YUVudHJ5",
-            "EhIKCmV4dGVybmFsSWQYByABKAkaMQoPUmVjb3JkRGF0YUVudHJ5EgsKA2tl",
-            "eRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCRwoQY29tLnBhc3NraXQuZ3Jw",
-            "Y1okc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFz",
-            "c0tpdC5HcnBjYgZwcm90bzM="));
+            "Y2lhdGVkU3RvcmVJZGVudGlmaWVycxgHIAMoDRIbChNhcHBTdG9yZUlkZW50",
+            "aWZpZXJzGAggAygESgQIAhADIlwKC1Bhc3NPcHRpb25zEiYKBWFwcGxlGAEg",
+            "ASgLMhcuaW8uQXBwbGVXYWxsZXRTZXR0aW5ncxIlCgZnb29nbGUYAiABKAsy",
+            "FS5pby5Hb29nbGVQYXlTZXR0aW5ncyL/AQoEUGFzcxIKCgJpZBgBIAEoCRIP",
+            "CgdjbGFzc0lkGAIgASgJEiIKCHByb3RvY29sGAMgASgOMhAuaW8uUGFzc1By",
+            "b3RvY29sEiEKDXBlcnNvbkRldGFpbHMYBCABKAsyCi5pby5QZXJzb24SHgoI",
+            "bWV0YWRhdGEYBSABKAsyDC5pby5NZXRhZGF0YRIsCgpyZWNvcmREYXRhGAYg",
+            "AygLMhguaW8uUGFzcy5SZWNvcmREYXRhRW50cnkSEgoKZXh0ZXJuYWxJZBgH",
+            "IAEoCRoxCg9SZWNvcmREYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVl",
+            "GAIgASgJOgI4AUJHChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0",
+            "LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.ImageReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.TemplateReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOverrides), global::PassKit.Grpc.PassOverrides.Parser, new[]{ "ImageIds", "Locations", "Beacons", "Links", "Colors", "AssociatedStoreIdentifiers" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOverrides), global::PassKit.Grpc.PassOverrides.Parser, new[]{ "ImageIds", "Locations", "Beacons", "Links", "Colors", "AssociatedStoreIdentifiers", "AppStoreIdentifiers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOptions), global::PassKit.Grpc.PassOptions.Parser, new[]{ "Apple", "Google" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Pass), global::PassKit.Grpc.Pass.Parser, new[]{ "Id", "ClassId", "Protocol", "PersonDetails", "Metadata", "RecordData", "ExternalId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
@@ -100,6 +101,7 @@ namespace PassKit.Grpc {
       links_ = other.links_.Clone();
       colors_ = other.colors_ != null ? other.colors_.Clone() : null;
       associatedStoreIdentifiers_ = other.associatedStoreIdentifiers_.Clone();
+      appStoreIdentifiers_ = other.appStoreIdentifiers_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -187,12 +189,26 @@ namespace PassKit.Grpc {
         = pb::FieldCodec.ForUInt32(58);
     private readonly pbc::RepeatedField<uint> associatedStoreIdentifiers_ = new pbc::RepeatedField<uint>();
     /// <summary>
-    /// A list of iTunes Store item identifiers for the associated apps. Only one item in the list is used — the first item identifier for an app compatible with the user's App Store account and device (hardware/iOS version). If the app is not installed, the link opens the App Store and shows the app. If the app is already installed, the link launches the app.
+    /// Deprecated - user appStoreIdentifiers.  A list of iTunes Store item identifiers for the associated apps. Only one item in the list is used — the first item identifier for an app compatible with the user's App Store account and device (hardware/iOS version). If the app is not installed, the link opens the App Store and shows the app. If the app is already installed, the link launches the app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AssociatedStoreIdentifiers {
       get { return associatedStoreIdentifiers_; }
+    }
+
+    /// <summary>Field number for the "appStoreIdentifiers" field.</summary>
+    public const int AppStoreIdentifiersFieldNumber = 8;
+    private static readonly pb::FieldCodec<ulong> _repeated_appStoreIdentifiers_codec
+        = pb::FieldCodec.ForUInt64(66);
+    private readonly pbc::RepeatedField<ulong> appStoreIdentifiers_ = new pbc::RepeatedField<ulong>();
+    /// <summary>
+    /// A list of iTunes Store item identifiers for the associated apps. Only one item in the list is used — the first item identifier for an app compatible with the user's App Store account and device (hardware/iOS version). If the app is not installed, the link opens the App Store and shows the app. If the app is already installed, the link launches the app.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> AppStoreIdentifiers {
+      get { return appStoreIdentifiers_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -216,6 +232,7 @@ namespace PassKit.Grpc {
       if(!links_.Equals(other.links_)) return false;
       if (!object.Equals(Colors, other.Colors)) return false;
       if(!associatedStoreIdentifiers_.Equals(other.associatedStoreIdentifiers_)) return false;
+      if(!appStoreIdentifiers_.Equals(other.appStoreIdentifiers_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -229,6 +246,7 @@ namespace PassKit.Grpc {
       hash ^= links_.GetHashCode();
       if (colors_ != null) hash ^= Colors.GetHashCode();
       hash ^= associatedStoreIdentifiers_.GetHashCode();
+      hash ^= appStoreIdentifiers_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -259,6 +277,7 @@ namespace PassKit.Grpc {
         output.WriteMessage(Colors);
       }
       associatedStoreIdentifiers_.WriteTo(output, _repeated_associatedStoreIdentifiers_codec);
+      appStoreIdentifiers_.WriteTo(output, _repeated_appStoreIdentifiers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -281,6 +300,7 @@ namespace PassKit.Grpc {
         output.WriteMessage(Colors);
       }
       associatedStoreIdentifiers_.WriteTo(ref output, _repeated_associatedStoreIdentifiers_codec);
+      appStoreIdentifiers_.WriteTo(ref output, _repeated_appStoreIdentifiers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -301,6 +321,7 @@ namespace PassKit.Grpc {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Colors);
       }
       size += associatedStoreIdentifiers_.CalculateSize(_repeated_associatedStoreIdentifiers_codec);
+      size += appStoreIdentifiers_.CalculateSize(_repeated_appStoreIdentifiers_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -329,6 +350,7 @@ namespace PassKit.Grpc {
         Colors.MergeFrom(other.Colors);
       }
       associatedStoreIdentifiers_.Add(other.associatedStoreIdentifiers_);
+      appStoreIdentifiers_.Add(other.appStoreIdentifiers_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -375,6 +397,11 @@ namespace PassKit.Grpc {
             associatedStoreIdentifiers_.AddEntriesFrom(input, _repeated_associatedStoreIdentifiers_codec);
             break;
           }
+          case 66:
+          case 64: {
+            appStoreIdentifiers_.AddEntriesFrom(input, _repeated_appStoreIdentifiers_codec);
+            break;
+          }
         }
       }
     #endif
@@ -419,6 +446,11 @@ namespace PassKit.Grpc {
           case 58:
           case 56: {
             associatedStoreIdentifiers_.AddEntriesFrom(ref input, _repeated_associatedStoreIdentifiers_codec);
+            break;
+          }
+          case 66:
+          case 64: {
+            appStoreIdentifiers_.AddEntriesFrom(ref input, _repeated_appStoreIdentifiers_codec);
             break;
           }
         }
@@ -1005,7 +1037,7 @@ namespace PassKit.Grpc {
         }
         Metadata.MergeFrom(other.Metadata);
       }
-      recordData_.Add(other.recordData_);
+      recordData_.MergeFrom(other.recordData_);
       if (other.ExternalId.Length != 0) {
         ExternalId = other.ExternalId;
       }

@@ -1701,7 +1701,7 @@ namespace PassKit.Grpc.Members {
       if (other == null) {
         return;
       }
-      eventDataRetentionSettings_.Add(other.eventDataRetentionSettings_);
+      eventDataRetentionSettings_.MergeFrom(other.eventDataRetentionSettings_);
       if (other.SmsConfirmUponCheckIn != false) {
         SmsConfirmUponCheckIn = other.SmsConfirmUponCheckIn;
       }

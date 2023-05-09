@@ -878,7 +878,7 @@ namespace PassKit.Grpc.Members {
         }
         Person.MergeFrom(other.Person);
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.OptOut != false) {
         OptOut = other.OptOut;
       }
@@ -4281,7 +4281,7 @@ namespace PassKit.Grpc.Members {
       if (other.ExternalServiceId.Length != 0) {
         ExternalServiceId = other.ExternalServiceId;
       }
-      metaData_.Add(other.metaData_);
+      metaData_.MergeFrom(other.metaData_);
       if (other.Notes.Length != 0) {
         Notes = other.Notes;
       }
