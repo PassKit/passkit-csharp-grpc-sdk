@@ -38,7 +38,7 @@ namespace PassKit.Grpc {
             "AiABKAk6AjgBIpsBChREaXN0cmlidXRpb25TZXR0aW5ncxI1ChRkaXN0cmli",
             "dXRpb25DaGFubmVscxgBIAMoDjIXLmlvLkRpc3RyaWJ1dGlvbkNoYW5uZWwS",
             "JwoMd2VsY29tZUVtYWlsGAIgASgLMhEuaW8uRW1haWxUZW1wbGF0ZRIjCgp3",
-            "ZWxjb21lU21zGAMgASgLMg8uaW8uU21zVGVtcGxhdGUimQYKDUVtYWlsVGVt",
+            "ZWxjb21lU21zGAMgASgLMg8uaW8uU21zVGVtcGxhdGUi9gYKDUVtYWlsVGVt",
             "cGxhdGUSDwoHc3ViamVjdBgBIAEoCRItChBsb2NhbGl6ZWRTdWJqZWN0GAIg",
             "ASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEhcKD2JvZHlUZXh0Q29udGVudBgD",
             "IAEoCRI1Chhsb2NhbGl6ZWRCb2R5VGV4dENvbnRlbnQYBCABKAsyEy5pby5M",
@@ -56,45 +56,47 @@ namespace PassKit.Grpc {
             "IAEoBRIfChdkYXJrTW9kZUJ1dHRvblRleHRDb2xvchgTIAEoCRIlCh1kYXJr",
             "TW9kZUJ1dHRvbkJhY2tncm91bmRDb2xvchgUIAEoCRIjChtkYXJrTW9kZVBh",
             "Z2VCYWNrZ3JvdW5kQ29sb3IYFSABKAkSJgoeZGFya01vZGVDb250ZW50QmFj",
-            "a2dyb3VuZENvbG9yGBYgASgJInoKEkVtYWlsQ29uZmlndXJhdGlvbhIRCgll",
-            "bWFpbEZyb20YASABKAkSFQoNZW1haWxGcm9tTmFtZRgCIAEoCRIjChtFbWFp",
-            "bEZyb21WZXJpZmllZEZvclNlbmRpbmcYAyABKAgSFQoNdXNlQ3VzdG9tSHRt",
-            "bBgEIAEoCCJhCgtTbXNUZW1wbGF0ZRIWCgdjb250ZW50GAEgASgJQgWSQQJ4",
-            "RhI0ChBsb2NhbGl6ZWRDb250ZW50GAIgASgLMhMuaW8uTG9jYWxpemVkU3Ry",
-            "aW5nQgWSQQJ4RkoECAMQBCKuAgoNRW5yb2xtZW50VXJscxIPCgdwYWdlVXJs",
-            "GAEgASgJEhEKCXFyQ29kZVVybBgCIAEoCRJDChF0aWVyRW5yb2xtZW50VXJs",
-            "cxgDIAMoCzIoLmlvLkVucm9sbWVudFVybHMuVGllckVucm9sbWVudFVybHNF",
-            "bnRyeRJBChB0aWVyRW5yb2xtZW50UVJzGAQgAygLMicuaW8uRW5yb2xtZW50",
-            "VXJscy5UaWVyRW5yb2xtZW50UVJzRW50cnkaOAoWVGllckVucm9sbWVudFVy",
-            "bHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBGjcKFVRp",
-            "ZXJFbnJvbG1lbnRRUnNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiAB",
-            "KAk6AjgBIj8KFERhdGFDb2xsZWN0aW9uRmllbGRzEicKBmZpZWxkcxgBIAMo",
-            "CzIXLmlvLkRhdGFDb2xsZWN0aW9uRmllbGQi5wIKE0RhdGFDb2xsZWN0aW9u",
-            "RmllbGQSEgoKdW5pcXVlTmFtZRgBIAEoCRIgCglmaWVsZFR5cGUYAiABKA4y",
-            "DS5pby5GaWVsZFR5cGUSEgoKaXNSZXF1aXJlZBgDIAEoCBINCgVsYWJlbBgE",
-            "IAEoCRIrCg5sb2NhbGl6ZWRMYWJlbBgFIAEoCzITLmlvLkxvY2FsaXplZFN0",
-            "cmluZxIeCghkYXRhVHlwZRgGIAEoDjIMLmlvLkRhdGFUeXBlEhQKDGRlZmF1",
-            "bHRWYWx1ZRgHIAEoCRIyChVsb2NhbGl6ZWREZWZhdWx0VmFsdWUYCCABKAsy",
-            "Ey5pby5Mb2NhbGl6ZWRTdHJpbmcSEgoKdmFsaWRhdGlvbhgJIAEoCRIXCg91",
-            "c2VyQ2FuU2V0VmFsdWUYCiABKAgSFAoMY3VycmVuY3lDb2RlGAsgASgJEh0K",
-            "FWRlZmF1bHRUZWxDb3VudHJ5Q29kZRgMIAEoCSJIChlTbWFydFBhc3NDc3ZV",
-            "cGxvYWRSZXF1ZXN0EhcKD2Rpc3RyaWJ1dGlvblVybBgBIAEoCRISCgpjc3ZD",
-            "b250ZW50GAIgASgJImAKFUltcG9ydFByb3RvY29sUmVxdWVzdBISCgpjc3ZD",
-            "b250ZW50GAEgASgJEg8KB2NsYXNzSWQYAiABKAkSIgoIcHJvdG9jb2wYAyAB",
-            "KA4yEC5pby5QYXNzUHJvdG9jb2wqTgoTRGlzdHJpYnV0aW9uQ2hhbm5lbBIT",
-            "Cg9OT19ESVNUUklCVVRJT04QABIRCg1DSEFOTkVMX0VNQUlMEAESDwoLQ0hB",
-            "Tk5FTF9TTVMQAip4ChRFbWFpbFRlbXBsYXRlT3B0aW9ucxIXChNFTUFJTF9U",
-            "RU1QX09QVF9OT05FEAASHgoaRU1BSUxfVEVNUF9PUFRfSElERV9FWFRfSUQQ",
-            "ARIhCh1FTUFJTF9URU1QX09QVF9ISURFX0ZVTExfTkFNRRACIgQIBBAEQkcK",
-            "EGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3NraXQuY29tL2lvL21vZGVs",
-            "L3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJvdG8z"));
+            "a2dyb3VuZENvbG9yGBYgASgJEhMKC2hlYWRlckxhYmVsGBcgASgJEjEKFGxv",
+            "Y2FsaXplZEhlYWRlckxhYmVsGBggASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
+            "EhMKC2hlYWRlclZhbHVlGBkgASgJInoKEkVtYWlsQ29uZmlndXJhdGlvbhIR",
+            "CgllbWFpbEZyb20YASABKAkSFQoNZW1haWxGcm9tTmFtZRgCIAEoCRIjChtF",
+            "bWFpbEZyb21WZXJpZmllZEZvclNlbmRpbmcYAyABKAgSFQoNdXNlQ3VzdG9t",
+            "SHRtbBgEIAEoCCJhCgtTbXNUZW1wbGF0ZRIWCgdjb250ZW50GAEgASgJQgWS",
+            "QQJ4RhI0ChBsb2NhbGl6ZWRDb250ZW50GAIgASgLMhMuaW8uTG9jYWxpemVk",
+            "U3RyaW5nQgWSQQJ4RkoECAMQBCKuAgoNRW5yb2xtZW50VXJscxIPCgdwYWdl",
+            "VXJsGAEgASgJEhEKCXFyQ29kZVVybBgCIAEoCRJDChF0aWVyRW5yb2xtZW50",
+            "VXJscxgDIAMoCzIoLmlvLkVucm9sbWVudFVybHMuVGllckVucm9sbWVudFVy",
+            "bHNFbnRyeRJBChB0aWVyRW5yb2xtZW50UVJzGAQgAygLMicuaW8uRW5yb2xt",
+            "ZW50VXJscy5UaWVyRW5yb2xtZW50UVJzRW50cnkaOAoWVGllckVucm9sbWVu",
+            "dFVybHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBGjcK",
+            "FVRpZXJFbnJvbG1lbnRRUnNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUY",
+            "AiABKAk6AjgBIj8KFERhdGFDb2xsZWN0aW9uRmllbGRzEicKBmZpZWxkcxgB",
+            "IAMoCzIXLmlvLkRhdGFDb2xsZWN0aW9uRmllbGQi5wIKE0RhdGFDb2xsZWN0",
+            "aW9uRmllbGQSEgoKdW5pcXVlTmFtZRgBIAEoCRIgCglmaWVsZFR5cGUYAiAB",
+            "KA4yDS5pby5GaWVsZFR5cGUSEgoKaXNSZXF1aXJlZBgDIAEoCBINCgVsYWJl",
+            "bBgEIAEoCRIrCg5sb2NhbGl6ZWRMYWJlbBgFIAEoCzITLmlvLkxvY2FsaXpl",
+            "ZFN0cmluZxIeCghkYXRhVHlwZRgGIAEoDjIMLmlvLkRhdGFUeXBlEhQKDGRl",
+            "ZmF1bHRWYWx1ZRgHIAEoCRIyChVsb2NhbGl6ZWREZWZhdWx0VmFsdWUYCCAB",
+            "KAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSEgoKdmFsaWRhdGlvbhgJIAEoCRIX",
+            "Cg91c2VyQ2FuU2V0VmFsdWUYCiABKAgSFAoMY3VycmVuY3lDb2RlGAsgASgJ",
+            "Eh0KFWRlZmF1bHRUZWxDb3VudHJ5Q29kZRgMIAEoCSJIChlTbWFydFBhc3ND",
+            "c3ZVcGxvYWRSZXF1ZXN0EhcKD2Rpc3RyaWJ1dGlvblVybBgBIAEoCRISCgpj",
+            "c3ZDb250ZW50GAIgASgJImAKFUltcG9ydFByb3RvY29sUmVxdWVzdBISCgpj",
+            "c3ZDb250ZW50GAEgASgJEg8KB2NsYXNzSWQYAiABKAkSIgoIcHJvdG9jb2wY",
+            "AyABKA4yEC5pby5QYXNzUHJvdG9jb2wqTgoTRGlzdHJpYnV0aW9uQ2hhbm5l",
+            "bBITCg9OT19ESVNUUklCVVRJT04QABIRCg1DSEFOTkVMX0VNQUlMEAESDwoL",
+            "Q0hBTk5FTF9TTVMQAip4ChRFbWFpbFRlbXBsYXRlT3B0aW9ucxIXChNFTUFJ",
+            "TF9URU1QX09QVF9OT05FEAASHgoaRU1BSUxfVEVNUF9PUFRfSElERV9FWFRf",
+            "SUQQARIhCh1FTUFJTF9URU1QX09QVF9ISURFX0ZVTExfTkFNRRACIgQIBBAE",
+            "QkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3NraXQuY29tL2lvL21v",
+            "ZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, global::PassKit.Grpc.TemplateReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.DistributionChannel), typeof(global::PassKit.Grpc.EmailTemplateOptions), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.EmailDistributionRequest), global::PassKit.Grpc.EmailDistributionRequest.Parser, new[]{ "Id", "ExternalId", "ClassId", "Protocol", "AlternativeEmail" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.SmartPassLinkRequest), global::PassKit.Grpc.SmartPassLinkRequest.Parser, new[]{ "ProjectDistributionUrl", "Fields" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.DistributionSettings), global::PassKit.Grpc.DistributionSettings.Parser, new[]{ "DistributionChannels", "WelcomeEmail", "WelcomeSms" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.EmailTemplate), global::PassKit.Grpc.EmailTemplate.Parser, new[]{ "Subject", "LocalizedSubject", "BodyTextContent", "LocalizedBodyTextContent", "BodyHtmlContent", "LocalizedBodyHtmlContent", "Configuration", "ButtonText", "ButtonTextColor", "ButtonBackgroundColor", "ButtonBorderRadius", "FooterTextContent", "LocalizedFooterTextContent", "FooterHtmlContent", "LocalizedFooterHtmlContent", "MessageBackgroundColor", "PageBackgroundColor", "TemplateOptions", "DarkModeButtonTextColor", "DarkModeButtonBackgroundColor", "DarkModePageBackgroundColor", "DarkModeContentBackgroundColor" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.EmailTemplate), global::PassKit.Grpc.EmailTemplate.Parser, new[]{ "Subject", "LocalizedSubject", "BodyTextContent", "LocalizedBodyTextContent", "BodyHtmlContent", "LocalizedBodyHtmlContent", "Configuration", "ButtonText", "ButtonTextColor", "ButtonBackgroundColor", "ButtonBorderRadius", "FooterTextContent", "LocalizedFooterTextContent", "FooterHtmlContent", "LocalizedFooterHtmlContent", "MessageBackgroundColor", "PageBackgroundColor", "TemplateOptions", "DarkModeButtonTextColor", "DarkModeButtonBackgroundColor", "DarkModePageBackgroundColor", "DarkModeContentBackgroundColor", "HeaderLabel", "LocalizedHeaderLabel", "HeaderValue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.EmailConfiguration), global::PassKit.Grpc.EmailConfiguration.Parser, new[]{ "EmailFrom", "EmailFromName", "EmailFromVerifiedForSending", "UseCustomHtml" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.SmsTemplate), global::PassKit.Grpc.SmsTemplate.Parser, new[]{ "Content", "LocalizedContent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.EnrolmentUrls), global::PassKit.Grpc.EnrolmentUrls.Parser, new[]{ "PageUrl", "QrCodeUrl", "TierEnrolmentUrls", "TierEnrolmentQRs" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
@@ -1080,6 +1082,9 @@ namespace PassKit.Grpc {
       darkModeButtonBackgroundColor_ = other.darkModeButtonBackgroundColor_;
       darkModePageBackgroundColor_ = other.darkModePageBackgroundColor_;
       darkModeContentBackgroundColor_ = other.darkModeContentBackgroundColor_;
+      headerLabel_ = other.headerLabel_;
+      localizedHeaderLabel_ = other.localizedHeaderLabel_ != null ? other.localizedHeaderLabel_.Clone() : null;
+      headerValue_ = other.headerValue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1419,6 +1424,51 @@ namespace PassKit.Grpc {
       }
     }
 
+    /// <summary>Field number for the "headerLabel" field.</summary>
+    public const int HeaderLabelFieldNumber = 23;
+    private string headerLabel_ = "";
+    /// <summary>
+    /// Header label for the email.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string HeaderLabel {
+      get { return headerLabel_; }
+      set {
+        headerLabel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "localizedHeaderLabel" field.</summary>
+    public const int LocalizedHeaderLabelFieldNumber = 24;
+    private global::PassKit.Grpc.LocalizedString localizedHeaderLabel_;
+    /// <summary>
+    /// Localized header label for the email.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.LocalizedString LocalizedHeaderLabel {
+      get { return localizedHeaderLabel_; }
+      set {
+        localizedHeaderLabel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headerValue" field.</summary>
+    public const int HeaderValueFieldNumber = 25;
+    private string headerValue_ = "";
+    /// <summary>
+    /// Header value for the email.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string HeaderValue {
+      get { return headerValue_; }
+      set {
+        headerValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1456,6 +1506,9 @@ namespace PassKit.Grpc {
       if (DarkModeButtonBackgroundColor != other.DarkModeButtonBackgroundColor) return false;
       if (DarkModePageBackgroundColor != other.DarkModePageBackgroundColor) return false;
       if (DarkModeContentBackgroundColor != other.DarkModeContentBackgroundColor) return false;
+      if (HeaderLabel != other.HeaderLabel) return false;
+      if (!object.Equals(LocalizedHeaderLabel, other.LocalizedHeaderLabel)) return false;
+      if (HeaderValue != other.HeaderValue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1485,6 +1538,9 @@ namespace PassKit.Grpc {
       if (DarkModeButtonBackgroundColor.Length != 0) hash ^= DarkModeButtonBackgroundColor.GetHashCode();
       if (DarkModePageBackgroundColor.Length != 0) hash ^= DarkModePageBackgroundColor.GetHashCode();
       if (DarkModeContentBackgroundColor.Length != 0) hash ^= DarkModeContentBackgroundColor.GetHashCode();
+      if (HeaderLabel.Length != 0) hash ^= HeaderLabel.GetHashCode();
+      if (localizedHeaderLabel_ != null) hash ^= LocalizedHeaderLabel.GetHashCode();
+      if (HeaderValue.Length != 0) hash ^= HeaderValue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1591,6 +1647,18 @@ namespace PassKit.Grpc {
         output.WriteRawTag(178, 1);
         output.WriteString(DarkModeContentBackgroundColor);
       }
+      if (HeaderLabel.Length != 0) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(HeaderLabel);
+      }
+      if (localizedHeaderLabel_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(LocalizedHeaderLabel);
+      }
+      if (HeaderValue.Length != 0) {
+        output.WriteRawTag(202, 1);
+        output.WriteString(HeaderValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1689,6 +1757,18 @@ namespace PassKit.Grpc {
         output.WriteRawTag(178, 1);
         output.WriteString(DarkModeContentBackgroundColor);
       }
+      if (HeaderLabel.Length != 0) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(HeaderLabel);
+      }
+      if (localizedHeaderLabel_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(LocalizedHeaderLabel);
+      }
+      if (HeaderValue.Length != 0) {
+        output.WriteRawTag(202, 1);
+        output.WriteString(HeaderValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1764,6 +1844,15 @@ namespace PassKit.Grpc {
       }
       if (DarkModeContentBackgroundColor.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(DarkModeContentBackgroundColor);
+      }
+      if (HeaderLabel.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(HeaderLabel);
+      }
+      if (localizedHeaderLabel_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedHeaderLabel);
+      }
+      if (HeaderValue.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(HeaderValue);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1860,6 +1949,18 @@ namespace PassKit.Grpc {
       }
       if (other.DarkModeContentBackgroundColor.Length != 0) {
         DarkModeContentBackgroundColor = other.DarkModeContentBackgroundColor;
+      }
+      if (other.HeaderLabel.Length != 0) {
+        HeaderLabel = other.HeaderLabel;
+      }
+      if (other.localizedHeaderLabel_ != null) {
+        if (localizedHeaderLabel_ == null) {
+          LocalizedHeaderLabel = new global::PassKit.Grpc.LocalizedString();
+        }
+        LocalizedHeaderLabel.MergeFrom(other.LocalizedHeaderLabel);
+      }
+      if (other.HeaderValue.Length != 0) {
+        HeaderValue = other.HeaderValue;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1986,6 +2087,21 @@ namespace PassKit.Grpc {
             DarkModeContentBackgroundColor = input.ReadString();
             break;
           }
+          case 186: {
+            HeaderLabel = input.ReadString();
+            break;
+          }
+          case 194: {
+            if (localizedHeaderLabel_ == null) {
+              LocalizedHeaderLabel = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedHeaderLabel);
+            break;
+          }
+          case 202: {
+            HeaderValue = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2109,6 +2225,21 @@ namespace PassKit.Grpc {
           }
           case 178: {
             DarkModeContentBackgroundColor = input.ReadString();
+            break;
+          }
+          case 186: {
+            HeaderLabel = input.ReadString();
+            break;
+          }
+          case 194: {
+            if (localizedHeaderLabel_ == null) {
+              LocalizedHeaderLabel = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedHeaderLabel);
+            break;
+          }
+          case 202: {
+            HeaderValue = input.ReadString();
             break;
           }
         }
