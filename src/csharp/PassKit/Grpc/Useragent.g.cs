@@ -42,6 +42,9 @@ namespace PassKit.Grpc {
 
   }
   #region Messages
+  /// <summary>
+  /// Captures information about the user's device, browser, and compatibility.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserAgent : pb::IMessage<UserAgent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -100,6 +103,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "raw" field.</summary>
     public const int RawFieldNumber = 1;
     private string raw_ = "";
+    /// <summary>
+    /// The raw user agent string received from the client.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Raw {
@@ -112,6 +118,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "platform" field.</summary>
     public const int PlatformFieldNumber = 2;
     private string platform_ = "";
+    /// <summary>
+    /// The device platform (e.g. "Macintosh", "iPhone", "Android").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Platform {
@@ -124,6 +133,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "os" field.</summary>
     public const int OsFieldNumber = 3;
     private string os_ = "";
+    /// <summary>
+    /// The operating system name (e.g. "iOS", "Windows", "Android").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Os {
@@ -136,6 +148,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "osVersion" field.</summary>
     public const int OsVersionFieldNumber = 4;
     private string osVersion_ = "";
+    /// <summary>
+    /// The version of the operating system (e.g. "14.4", "10", "12.5.1").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OsVersion {
@@ -148,6 +163,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "engine" field.</summary>
     public const int EngineFieldNumber = 5;
     private string engine_ = "";
+    /// <summary>
+    /// The rendering engine used by the browser (e.g. "WebKit", "Blink").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Engine {
@@ -160,6 +178,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "engineVersion" field.</summary>
     public const int EngineVersionFieldNumber = 6;
     private string engineVersion_ = "";
+    /// <summary>
+    /// The version of the rendering engine (e.g. "605.1.15").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EngineVersion {
@@ -172,6 +193,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "browser" field.</summary>
     public const int BrowserFieldNumber = 7;
     private string browser_ = "";
+    /// <summary>
+    /// The browser name (e.g. "Safari", "Chrome", "Firefox").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Browser {
@@ -184,6 +208,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "browserVersion" field.</summary>
     public const int BrowserVersionFieldNumber = 8;
     private string browserVersion_ = "";
+    /// <summary>
+    /// The version of the browser (e.g. "91.0.4472.124").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BrowserVersion {
@@ -196,6 +223,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "localization" field.</summary>
     public const int LocalizationFieldNumber = 9;
     private string localization_ = "";
+    /// <summary>
+    /// The localization setting of the user (e.g. "en-US", "fr-FR").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Localization {
@@ -208,6 +238,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "mobile" field.</summary>
     public const int MobileFieldNumber = 10;
     private bool mobile_;
+    /// <summary>
+    /// Indicates whether the device is a mobile device.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Mobile {
@@ -220,6 +253,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "walletCompatible" field.</summary>
     public const int WalletCompatibleFieldNumber = 11;
     private bool walletCompatible_;
+    /// <summary>
+    /// Indicates whether the browser and device are compatible with digital wallet functionality (e.g. Apple Wallet or Google Pay).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool WalletCompatible {

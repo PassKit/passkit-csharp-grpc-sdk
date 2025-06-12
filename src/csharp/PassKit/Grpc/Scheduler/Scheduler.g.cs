@@ -40,6 +40,9 @@ namespace PassKit.Grpc.Scheduler {
 
   }
   #region Messages
+  /// <summary>
+  /// ListRequest is used to retrieve a list of scheduled executions for a given job. Required Fields: jobId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequest : pb::IMessage<ListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

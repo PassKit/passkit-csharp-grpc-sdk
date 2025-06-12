@@ -1000,6 +1000,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input message for identifying a class object by protocol and classId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProtocolIdInput : pb::IMessage<ProtocolIdInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1241,6 +1244,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Message to identify a subscription using the protocol and subscription ID.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SubscriptionRequest : pb::IMessage<SubscriptionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1482,6 +1488,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Message for creating or updating a webhook subscription using a class ID and event type.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SubscriptionRequestByClassId : pb::IMessage<SubscriptionRequestByClassId>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2288,6 +2297,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Configuration for a webhook endpoint.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class WebhookConfig : pb::IMessage<WebhookConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2354,6 +2366,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "actionMethod" field.</summary>
     public const int ActionMethodFieldNumber = 2;
     private global::PassKit.Grpc.ActionMethod actionMethod_ = global::PassKit.Grpc.ActionMethod.MethodNone;
+    /// <summary>
+    /// The HTTP method to use when calling the webhook (e.g., POST, PUT).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ActionMethod ActionMethod {
@@ -2615,6 +2630,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Payload sent when a sink subscription event is triggered.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SinkSubscriptionPayload : pb::IMessage<SinkSubscriptionPayload>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2862,6 +2880,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Defines a sink subscription which is triggered after internal PassKit processes complete.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SinkSubscription : pb::IMessage<SinkSubscription>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2986,6 +3007,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
     private global::PassKit.Grpc.IntegrationStatus status_ = global::PassKit.Grpc.IntegrationStatus.None;
+    /// <summary>
+    /// Status of the integration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.IntegrationStatus Status {
@@ -3519,6 +3543,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Top-level input message used to initiate a dynamic API request to a third-party platform.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DynamicApiInput : pb::IMessage<DynamicApiInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3766,6 +3793,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Describes the payload and route parameters for making a dynamic API call.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DynamicApiRequest : pb::IMessage<DynamicApiRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4036,6 +4066,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// The response returned from a dynamic API call to a third-party platform.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DynamicApiResponse : pb::IMessage<DynamicApiResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

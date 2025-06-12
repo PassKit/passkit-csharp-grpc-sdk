@@ -117,31 +117,31 @@ namespace PassKit.Grpc.Members {
   }
   #region Enums
   /// <summary>
-  /// List of allowed member statuses
+  /// Enum representing possible states for a member.
   /// </summary>
   public enum MemberStatus {
     /// <summary>
-    /// Member has successfully enrolled in the program.
+    /// Member is enrolled but not yet active.
     /// </summary>
     [pbr::OriginalName("ENROLLED")] Enrolled = 0,
     /// <summary>
-    /// Member is active.
+    /// Member is active and eligible to use benefits.
     /// </summary>
     [pbr::OriginalName("ACTIVE")] Active = 1,
     /// <summary>
-    /// Member is checked in.
+    /// Member is checked into a location or event.
     /// </summary>
     [pbr::OriginalName("CHECKED_IN")] CheckedIn = 2,
     /// <summary>
-    /// For expired members.
+    /// Member enrollment has expired.
     /// </summary>
     [pbr::OriginalName("EXPIRED")] Expired = 3,
     /// <summary>
-    /// Member is checked out.
+    /// Member is checked out from a location or event.
     /// </summary>
     [pbr::OriginalName("CHECKED_OUT")] CheckedOut = 4,
     /// <summary>
-    /// For members who's records have been deleted.
+    /// Member record is deleted.
     /// </summary>
     [pbr::OriginalName("DELETED")] Deleted = 5,
   }
@@ -150,7 +150,7 @@ namespace PassKit.Grpc.Members {
 
   #region Messages
   /// <summary>
-  /// The member record
+  /// Member record.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Member : pb::IMessage<Member>
@@ -401,7 +401,7 @@ namespace PassKit.Grpc.Members {
     public const int StatusFieldNumber = 19;
     private global::PassKit.Grpc.Members.MemberStatus status_ = global::PassKit.Grpc.Members.MemberStatus.Enrolled;
     /// <summary>
-    /// Member status.
+    /// Current member status (e.g., ACTIVE, EXPIRED, DELETED).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1244,7 +1244,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Used to request a digital membership pass by PassKit ID.
+  /// Request to retrieve a member record using an external ID.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberRecordByExternalIdRequest : pb::IMessage<MemberRecordByExternalIdRequest>
@@ -1488,7 +1488,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Member segment allows us to segment members for listing or updating
+  /// Request to select or act on members based on a saved segment or filter.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberSegmentRequest : pb::IMessage<MemberSegmentRequest>
@@ -1750,7 +1750,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Used to set new expiry dates for all of active members in the tier.
+  /// Request to update expiry dates for all members in a specific tier.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UpdateExpiryRequest : pb::IMessage<UpdateExpiryRequest>
@@ -2083,7 +2083,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Used to update the expiry date of a member.
+  /// Expiry details for a member's pass or membership enrollment.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberExpiry : pb::IMessage<MemberExpiry>
@@ -2415,6 +2415,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Current points balance for a member across primary, secondary, and tier points.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberPoints : pb::IMessage<MemberPoints>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2816,6 +2819,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Request to earn (add) or burn (deduct) points from a member’s account.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EarnBurnPointsRequest : pb::IMessage<EarnBurnPointsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2961,6 +2967,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "eventDetails" field.</summary>
     public const int EventDetailsFieldNumber = 7;
     private global::PassKit.Grpc.Members.EventDetails eventDetails_;
+    /// <summary>
+    ///Any relevant details for the event.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Members.EventDetails EventDetails {
@@ -3303,6 +3312,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Request to set specific points balances for a member.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SetPointsRequest : pb::IMessage<SetPointsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3496,6 +3508,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "eventDetails" field.</summary>
     public const int EventDetailsFieldNumber = 10;
     private global::PassKit.Grpc.Members.EventDetails eventDetails_;
+    /// <summary>
+    ///Any relevant details for the event.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Members.EventDetails EventDetails {
@@ -3910,6 +3925,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Request to check a member into or out of an event or location.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberCheckInOutRequest : pb::IMessage<MemberCheckInOutRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4580,6 +4598,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Deprecated request to list members with basic pagination.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequestDeprecated : pb::IMessage<ListRequestDeprecated>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4629,6 +4650,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "programId" field.</summary>
     public const int ProgramIdFieldNumber = 1;
     private string programId_ = "";
+    /// <summary>
+    /// Program Id
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProgramId {
@@ -4641,6 +4665,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "pagination" field.</summary>
     public const int PaginationFieldNumber = 2;
     private global::PassKit.Grpc.Pagination pagination_;
+    /// <summary>
+    /// Pagination settings for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Pagination Pagination {
@@ -4824,6 +4851,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Request to list members with filters and optional CSV export.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequest : pb::IMessage<ListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4874,6 +4904,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "programId" field.</summary>
     public const int ProgramIdFieldNumber = 1;
     private string programId_ = "";
+    /// <summary>
+    /// Program Id
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProgramId {
@@ -4886,6 +4919,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 2;
     private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Filters to apply when listing members (e.g., by tier, status).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
@@ -4898,6 +4934,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "emailAsCsv" field.</summary>
     public const int EmailAsCsvFieldNumber = 3;
     private bool emailAsCsv_;
+    /// <summary>
+    /// If true, the list will be emailed as a CSV file instead of returned in the response.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EmailAsCsv {
@@ -5105,6 +5144,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Request to change a member’s tier within a program.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChangeTierRequest : pb::IMessage<ChangeTierRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5217,6 +5259,9 @@ namespace PassKit.Grpc.Members {
     /// <summary>Field number for the "eventDetails" field.</summary>
     public const int EventDetailsFieldNumber = 7;
     private global::PassKit.Grpc.Members.EventDetails eventDetails_;
+    /// <summary>
+    /// Any relevant details for the event.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Members.EventDetails EventDetails {

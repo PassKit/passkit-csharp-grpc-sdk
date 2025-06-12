@@ -36,48 +36,48 @@ namespace PassKit.Grpc {
             "bnRoGAIgASgFEgsKA2RheRgDIAEoBSI0CgRUaW1lEgwKBGhvdXIYASABKAUS",
             "DgoGbWludXRlGAIgASgFEg4KBnNlY29uZBgDIAEoBSJbCglMb2NhbERhdGUS",
             "TgoIZGF0ZVRpbWUYASABKAlCPJJBOYoBNl4oWzAtOV17NH0pLT8oMVswLTJd",
-            "fDBbMS05XSktPygzWzAxXXwwWzEtOV18WzEyXVswLTldKSKcAQoNTG9jYWxE",
-            "YXRlVGltZRKKAQoIZGF0ZVRpbWUYASABKAlCeJJBdYoBcl4oWzAtOV17NH0p",
-            "LT8oMVswLTJdfDBbMS05XSktPygzWzAxXXwwWzEtOV18WzEyXVswLTldKVQo",
-            "MlswLTNdfFswMV1bMC05XSk6KFswLTVdWzAtOV0pOihbMC01XVswLTldKSgu",
-            "WzAtOV17MSwzfSk/JCJuCgpQYXNzQnVuZGxlEgoKAmlkGAEgASgJEgsKA3Vy",
-            "bBgCIAEoCRIUCgxnb29nbGVQYXlVUkwYBSABKAkSFgoOYXBwbGVQYXNzQnl0",
-            "ZXMYBiABKAwSGQoRbXVsdGlwbGVQYXNzZXNVUkwYByABKAkiLQoLUGFzc0J1",
-            "bmRsZXMSHgoGcGFzc2VzGAEgAygLMg4uaW8uUGFzc0J1bmRsZSJFChFQYXNz",
-            "QnVuZGxlUmVxdWVzdBIKCgJpZBgBIAEoCRIkCgZmb3JtYXQYAiADKA4yFC5p",
-            "by5QYXNzQnVuZGxlRm9ybWF0InAKFUxpc3RSZXF1ZXN0RGVwcmVjYXRlZBIP",
-            "CgdjbGFzc0lkGAEgASgJEiIKCHByb3RvY29sGAIgASgOMhAuaW8uUGFzc1By",
-            "b3RvY29sEiIKCnBhZ2luYXRpb24YAyABKAsyDi5pby5QYWdpbmF0aW9uImAK",
-            "C0xpc3RSZXF1ZXN0Eg8KB2NsYXNzSWQYASABKAkSIgoIcHJvdG9jb2wYAiAB",
-            "KA4yEC5pby5QYXNzUHJvdG9jb2wSHAoHZmlsdGVycxgDIAEoCzILLmlvLkZp",
-            "bHRlcnMicwoVQnVsa1Bhc3NBY3Rpb25SZXF1ZXN0Eg8KB2NsYXNzSWQYASAB",
-            "KAkSIgoIcHJvdG9jb2wYAiABKA4yEC5pby5QYXNzUHJvdG9jb2wSJQoMZmls",
-            "dGVyR3JvdXBzGAMgAygLMg8uaW8uRmlsdGVyR3JvdXAiYgoJRGF0YUl0ZW1z",
-            "EicKBWl0ZW1zGAEgAygLMhguaW8uRGF0YUl0ZW1zLkl0ZW1zRW50cnkaLAoK",
-            "SXRlbXNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIhQK",
-            "BlBrQm9vbBIKCgJvaxgBIAEoCCJZChBDbGFzc09iamVjdElucHV0EiIKCHBy",
-            "b3RvY29sGAEgASgOMhAuaW8uUGFzc1Byb3RvY29sEhAKCG9iamVjdElkGAIg",
-            "ASgJEg8KB2NsYXNzSWQYAyABKAkiPwoNUmVjdXJzaXZlRGF0ZRIQCghzY2hl",
-            "ZHVsZRgBIAEoCRIcCgVzdGF0ZRgCIAEoDjINLmlvLlRpbWVTdGF0ZSJyChBN",
-            "b250aGx5UmVjdXJzaXZlEhIKCmRheU9mTW9udGgYASABKAUSDAoEaG91chgC",
-            "IAEoBRIOCgZtaW51dGUYAyABKAUSDgoGc2Vjb25kGAQgASgFEhwKBXN0YXRl",
-            "GAUgASgOMg0uaW8uVGltZVN0YXRlIoABCg9ZZWFybHlSZWN1cnNpdmUSDQoF",
-            "bW9udGgYASABKAUSEgoKZGF5T2ZNb250aBgCIAEoBRIMCgRob3VyGAMgASgF",
-            "Eg4KBm1pbnV0ZRgEIAEoBRIOCgZzZWNvbmQYBSABKAUSHAoFc3RhdGUYBiAB",
-            "KA4yDS5pby5UaW1lU3RhdGUiFgoHUGFzc0lkcxILCgNpZHMYASADKAkiXwoI",
-            "UHJvdG9jb2wSHgoIcHJvdG9jb2wYASABKAsyDC5pby5Qcm90b2NvbBIPCgdj",
-            "bGFzc0lkGAIgASgJEiIKCnBhZ2luYXRpb24YAyABKAsyDi5pby5QYWdpbmF0",
-            "aW9uKjQKDExpc3RQb3NpdGlvbhIKCgZBUFBFTkQQABILCgdQUkVQRU5EEAES",
-            "CwoHUkVQTEFDRRACKikKBlRvZ2dsZRIOCgpET19OT1RfVVNFEAASBgoCT04Q",
-            "ARIHCgNPRkYQAiprCglUaW1lU3RhdGUSEwoPVElNRV9TVEFURV9OT05FEAAS",
-            "FgoSVElNRV9TVEFURV9DVVJSRU5UEAESFwoTVElNRV9TVEFURV9QUkVWSU9V",
-            "UxACEhgKFFRJTUVfU1RBVEVfRk9MTE9XSU5HEAMqVwoQUGFzc0J1bmRsZUZv",
-            "cm1hdBIMCghQQVNTX1VSTBAAEg4KCkdPT0dMRV9VUkwQAhIVChFBUFBMRV9Q",
-            "QVNTX0JVTkRMRRAIEg4KCk1VTFRJX0xJTksQECpnCglVc2FnZVR5cGUSDAoI",
-            "Tk9fVVNBR0UQABIWChJVU0FHRV9BUFBMRV9XQUxMRVQQARIUChBVU0FHRV9H",
-            "T09HTEVfUEFZEAISHgoaVVNBR0VfREFUQV9DT0xMRUNUSU9OX1BBR0UQBEJH",
-            "ChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0LmNvbS9pby9tb2Rl",
-            "bC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3RvMw=="));
+            "fDBbMS05XSktPygzWzAxXXwwWzEtOV18WzEyXVswLTldKSKNAQoNTG9jYWxE",
+            "YXRlVGltZRJ8CghkYXRlVGltZRgBIAEoCUJqkkFnigFkXihbMC05XXs0fSkt",
+            "PygxWzAtMl18MFsxLTldKS0/KDNbMDFdfDBbMS05XXxbMTJdWzAtOV0pVCgy",
+            "WzAtM118WzAxXVswLTldKTooWzAtNV1bMC05XSk6KFswLTVdWzAtOV0pJCJu",
+            "CgpQYXNzQnVuZGxlEgoKAmlkGAEgASgJEgsKA3VybBgCIAEoCRIUCgxnb29n",
+            "bGVQYXlVUkwYBSABKAkSFgoOYXBwbGVQYXNzQnl0ZXMYBiABKAwSGQoRbXVs",
+            "dGlwbGVQYXNzZXNVUkwYByABKAkiLQoLUGFzc0J1bmRsZXMSHgoGcGFzc2Vz",
+            "GAEgAygLMg4uaW8uUGFzc0J1bmRsZSJFChFQYXNzQnVuZGxlUmVxdWVzdBIK",
+            "CgJpZBgBIAEoCRIkCgZmb3JtYXQYAiADKA4yFC5pby5QYXNzQnVuZGxlRm9y",
+            "bWF0InAKFUxpc3RSZXF1ZXN0RGVwcmVjYXRlZBIPCgdjbGFzc0lkGAEgASgJ",
+            "EiIKCHByb3RvY29sGAIgASgOMhAuaW8uUGFzc1Byb3RvY29sEiIKCnBhZ2lu",
+            "YXRpb24YAyABKAsyDi5pby5QYWdpbmF0aW9uImAKC0xpc3RSZXF1ZXN0Eg8K",
+            "B2NsYXNzSWQYASABKAkSIgoIcHJvdG9jb2wYAiABKA4yEC5pby5QYXNzUHJv",
+            "dG9jb2wSHAoHZmlsdGVycxgDIAEoCzILLmlvLkZpbHRlcnMicwoVQnVsa1Bh",
+            "c3NBY3Rpb25SZXF1ZXN0Eg8KB2NsYXNzSWQYASABKAkSIgoIcHJvdG9jb2wY",
+            "AiABKA4yEC5pby5QYXNzUHJvdG9jb2wSJQoMZmlsdGVyR3JvdXBzGAMgAygL",
+            "Mg8uaW8uRmlsdGVyR3JvdXAiYgoJRGF0YUl0ZW1zEicKBWl0ZW1zGAEgAygL",
+            "MhguaW8uRGF0YUl0ZW1zLkl0ZW1zRW50cnkaLAoKSXRlbXNFbnRyeRILCgNr",
+            "ZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIhQKBlBrQm9vbBIKCgJvaxgB",
+            "IAEoCCJZChBDbGFzc09iamVjdElucHV0EiIKCHByb3RvY29sGAEgASgOMhAu",
+            "aW8uUGFzc1Byb3RvY29sEhAKCG9iamVjdElkGAIgASgJEg8KB2NsYXNzSWQY",
+            "AyABKAkiPwoNUmVjdXJzaXZlRGF0ZRIQCghzY2hlZHVsZRgBIAEoCRIcCgVz",
+            "dGF0ZRgCIAEoDjINLmlvLlRpbWVTdGF0ZSJyChBNb250aGx5UmVjdXJzaXZl",
+            "EhIKCmRheU9mTW9udGgYASABKAUSDAoEaG91chgCIAEoBRIOCgZtaW51dGUY",
+            "AyABKAUSDgoGc2Vjb25kGAQgASgFEhwKBXN0YXRlGAUgASgOMg0uaW8uVGlt",
+            "ZVN0YXRlIoABCg9ZZWFybHlSZWN1cnNpdmUSDQoFbW9udGgYASABKAUSEgoK",
+            "ZGF5T2ZNb250aBgCIAEoBRIMCgRob3VyGAMgASgFEg4KBm1pbnV0ZRgEIAEo",
+            "BRIOCgZzZWNvbmQYBSABKAUSHAoFc3RhdGUYBiABKA4yDS5pby5UaW1lU3Rh",
+            "dGUiFgoHUGFzc0lkcxILCgNpZHMYASADKAkiXwoIUHJvdG9jb2wSHgoIcHJv",
+            "dG9jb2wYASABKAsyDC5pby5Qcm90b2NvbBIPCgdjbGFzc0lkGAIgASgJEiIK",
+            "CnBhZ2luYXRpb24YAyABKAsyDi5pby5QYWdpbmF0aW9uKjQKDExpc3RQb3Np",
+            "dGlvbhIKCgZBUFBFTkQQABILCgdQUkVQRU5EEAESCwoHUkVQTEFDRRACKikK",
+            "BlRvZ2dsZRIOCgpET19OT1RfVVNFEAASBgoCT04QARIHCgNPRkYQAiprCglU",
+            "aW1lU3RhdGUSEwoPVElNRV9TVEFURV9OT05FEAASFgoSVElNRV9TVEFURV9D",
+            "VVJSRU5UEAESFwoTVElNRV9TVEFURV9QUkVWSU9VUxACEhgKFFRJTUVfU1RB",
+            "VEVfRk9MTE9XSU5HEAMqVwoQUGFzc0J1bmRsZUZvcm1hdBIMCghQQVNTX1VS",
+            "TBAAEg4KCkdPT0dMRV9VUkwQAhIVChFBUFBMRV9QQVNTX0JVTkRMRRAIEg4K",
+            "Ck1VTFRJX0xJTksQECpnCglVc2FnZVR5cGUSDAoITk9fVVNBR0UQABIWChJV",
+            "U0FHRV9BUFBMRV9XQUxMRVQQARIUChBVU0FHRV9HT09HTEVfUEFZEAISHgoa",
+            "VVNBR0VfREFUQV9DT0xMRUNUSU9OX1BBR0UQBEJHChBjb20ucGFzc2tpdC5n",
+            "cnBjWiRzdGFzaC5wYXNza2l0LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgxQ",
+            "YXNzS2l0LkdycGNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::PassKit.Grpc.FilterReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.ListPosition), typeof(global::PassKit.Grpc.Toggle), typeof(global::PassKit.Grpc.TimeState), typeof(global::PassKit.Grpc.PassBundleFormat), typeof(global::PassKit.Grpc.UsageType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -114,64 +114,100 @@ namespace PassKit.Grpc {
   }
   #region Enums
   /// <summary>
-  /// List position is used to denote behavior for list items that may already have been populated bay a parent object.  Default is to append the item to the existing list.
+  /// Specifies how to position an item in a list when a parent object already has existing values.
   /// </summary>
   public enum ListPosition {
+    /// <summary>
+    /// Appends the item to the list (default behavior).
+    /// </summary>
     [pbr::OriginalName("APPEND")] Append = 0,
+    /// <summary>
+    /// Prepends the item to the list.
+    /// </summary>
     [pbr::OriginalName("PREPEND")] Prepend = 1,
+    /// <summary>
+    /// Replaces the existing list with the item.
+    /// </summary>
     [pbr::OriginalName("REPLACE")] Replace = 2,
   }
 
+  /// <summary>
+  /// A toggle value to indicate on/off states.
+  /// </summary>
   public enum Toggle {
+    /// <summary>
+    /// Default or undefined state.
+    /// </summary>
     [pbr::OriginalName("DO_NOT_USE")] DoNotUse = 0,
+    /// <summary>
+    /// Indicates the feature or flag is enabled.
+    /// </summary>
     [pbr::OriginalName("ON")] On = 1,
+    /// <summary>
+    /// Indicates the feature or flag is disabled.
+    /// </summary>
     [pbr::OriginalName("OFF")] Off = 2,
   }
 
+  /// <summary>
+  /// Time state used to adjust the meaning of a scheduled time (e.g. previous, current, or future).
+  /// </summary>
   public enum TimeState {
+    /// <summary>
+    /// No time state specified.
+    /// </summary>
     [pbr::OriginalName("TIME_STATE_NONE")] None = 0,
+    /// <summary>
+    /// The current time state (e.g. this month).
+    /// </summary>
     [pbr::OriginalName("TIME_STATE_CURRENT")] Current = 1,
+    /// <summary>
+    /// The previous time state (e.g. last month).
+    /// </summary>
     [pbr::OriginalName("TIME_STATE_PREVIOUS")] Previous = 2,
+    /// <summary>
+    /// The following time state (e.g. next month).
+    /// </summary>
     [pbr::OriginalName("TIME_STATE_FOLLOWING")] Following = 3,
   }
 
   /// <summary>
-  /// PassBundleFormat is used to specify which format(s) to provide the pass content.
+  /// PassBundleFormat specifies the format(s) used to deliver the pass.
   /// </summary>
   public enum PassBundleFormat {
     /// <summary>
-    /// The URL to the web landing page.
+    /// Web landing page URL.
     /// </summary>
     [pbr::OriginalName("PASS_URL")] PassUrl = 0,
     /// <summary>
-    /// A URL that can be used in an Android app or email. Note that this is not recommended for web use.
+    /// Google Pay pass install URL.
     /// </summary>
     [pbr::OriginalName("GOOGLE_URL")] GoogleUrl = 2,
     /// <summary>
-    /// The Base64 encoded bytes of the Apple Wallet pass bundle.
+    /// Base64 encoded bytes for Apple Wallet pass file (.pkpass).
     /// </summary>
     [pbr::OriginalName("APPLE_PASS_BUNDLE")] ApplePassBundle = 8,
     /// <summary>
-    /// The URL to a landing page for multiple passes containing a common identifier.
+    /// URL for multiple pass install by shared identifier.
     /// </summary>
     [pbr::OriginalName("MULTI_LINK")] MultiLink = 16,
   }
 
   /// <summary>
-  /// UsageType is used to indicate where a field or link is used / rendered
+  /// Specifies where a field or link should be rendered or used.
   /// </summary>
   public enum UsageType {
     [pbr::OriginalName("NO_USAGE")] NoUsage = 0,
     /// <summary>
-    /// Rendered on Apple Wallet
+    /// Used by Apple Wallet.
     /// </summary>
     [pbr::OriginalName("USAGE_APPLE_WALLET")] UsageAppleWallet = 1,
     /// <summary>
-    /// Rendered on Google Pay
+    /// Used by Google Pay.
     /// </summary>
     [pbr::OriginalName("USAGE_GOOGLE_PAY")] UsageGooglePay = 2,
     /// <summary>
-    /// Rendered on data collection page
+    /// Used on a user-facing data collection form.
     /// </summary>
     [pbr::OriginalName("USAGE_DATA_COLLECTION_PAGE")] UsageDataCollectionPage = 4,
   }
@@ -180,7 +216,7 @@ namespace PassKit.Grpc {
 
   #region Messages
   /// <summary>
-  /// An Id is used to access an unique object or record. Eg. a PassKit pass id.
+  /// A wrapper message for a single ID string.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Id : pb::IMessage<Id>
@@ -383,6 +419,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// A list of object or record IDs.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Ids : pb::IMessage<Ids>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -573,6 +612,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a URL and optional title for display or linking purposes.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Url : pb::IMessage<Url>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -808,6 +850,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a numeric count of items or results.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Count : pb::IMessage<Count>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -857,7 +902,7 @@ namespace PassKit.Grpc {
     public const int TotalFieldNumber = 1;
     private int total_;
     /// <summary>
-    /// set as int32 so JSON renders as an integer
+    /// Set as int32 so JSON renders as an integer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1009,6 +1054,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a file as raw byte data.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FileBytes : pb::IMessage<FileBytes>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1207,6 +1255,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Boolean response wrapper used to indicate success or feature enablement.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Boolean : pb::IMessage<Boolean>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1406,7 +1457,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// Repeated field of dynamically typed values (including string, bool, option, syntax).
+  /// Wrapper for a repeated string response. Useful for flexible or generic outputs.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Strings : pb::IMessage<Strings>
@@ -1596,7 +1647,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// Payload object used for validating TOTP and encrypted barcode strings.
+  /// Payload used to validate TOTP and encrypted barcode strings.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Payload : pb::IMessage<Payload>
@@ -1646,6 +1697,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "payload" field.</summary>
     public const int Payload_FieldNumber = 1;
     private string payload_ = "";
+    /// <summary>
+    /// Encrypted or signed payload data.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Payload_ {
@@ -1797,7 +1851,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// A fixed date without timezone information.
+  /// A date without timezone information.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Date : pb::IMessage<Date>
@@ -1850,7 +1904,7 @@ namespace PassKit.Grpc {
     public const int YearFieldNumber = 1;
     private int year_;
     /// <summary>
-    /// Year.
+    /// Year component.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1865,7 +1919,7 @@ namespace PassKit.Grpc {
     public const int MonthFieldNumber = 2;
     private int month_;
     /// <summary>
-    /// Month.
+    /// Month component (1–12).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1880,7 +1934,7 @@ namespace PassKit.Grpc {
     public const int DayFieldNumber = 3;
     private int day_;
     /// <summary>
-    /// Day.
+    /// Day component (1–31).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2081,7 +2135,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// A fixed time without timezone information.
+  /// A time without timezone information.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Time : pb::IMessage<Time>
@@ -2134,7 +2188,7 @@ namespace PassKit.Grpc {
     public const int HourFieldNumber = 1;
     private int hour_;
     /// <summary>
-    /// Hour.
+    /// Hour (0–23).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2149,7 +2203,7 @@ namespace PassKit.Grpc {
     public const int MinuteFieldNumber = 2;
     private int minute_;
     /// <summary>
-    /// Minute.
+    /// Minute (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2164,7 +2218,7 @@ namespace PassKit.Grpc {
     public const int SecondFieldNumber = 3;
     private int second_;
     /// <summary>
-    /// Second.
+    /// Second (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2365,7 +2419,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// Local Date are specified in ISO 8601 format date without a time. The date should be local to where the pass will be at the time of use.
+  /// ISO 8601 date without a time (e.g. 2023-11-15).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocalDate : pb::IMessage<LocalDate>
@@ -2415,9 +2469,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "dateTime" field.</summary>
     public const int DateTimeFieldNumber = 1;
     private string dateTime_ = "";
-    /// <summary>
-    /// ISO 8601 format date without a time. E.g. 2019-08-07.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DateTime {
@@ -2569,7 +2620,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// Local Date Times are specified in ISO 8601 extended format date/time without a timezone offset. The time should be local to where the pass will be at the time of use.
+  /// ISO 8601 extended format datetime without timezone offset.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocalDateTime : pb::IMessage<LocalDateTime>
@@ -2620,7 +2671,7 @@ namespace PassKit.Grpc {
     public const int DateTimeFieldNumber = 1;
     private string dateTime_ = "";
     /// <summary>
-    /// ISO 8601 extended format date/time without an offset E.g. 2019-08-07T18:00:00. Time can optionally be stated to millisecond precision. E.g. 2019-08-07T18:00:00.123.
+    /// ISO 8601 extended format date/time without a timezone offset E.g. 2019-08-07T18:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2773,7 +2824,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// A Pass Bundle contains a landing page URL and/or a compiled pass in multiple formats
+  /// A Pass Bundle contains one or more ways to access a pass (e.g. URLs or raw Apple pass file).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassBundle : pb::IMessage<PassBundle>
@@ -2827,9 +2878,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
-    /// <summary>
-    /// The PassKit Id that uniquely references the pass.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -2842,9 +2890,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "url" field.</summary>
     public const int UrlFieldNumber = 2;
     private string url_ = "";
-    /// <summary>
-    /// The URL to the web landing page.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
@@ -2857,9 +2902,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "googlePayURL" field.</summary>
     public const int GooglePayURLFieldNumber = 5;
     private string googlePayURL_ = "";
-    /// <summary>
-    /// A URL that can be used in an Android app or email. Note that this is not recommended for web use.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GooglePayURL {
@@ -2872,9 +2914,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "applePassBytes" field.</summary>
     public const int ApplePassBytesFieldNumber = 6;
     private pb::ByteString applePassBytes_ = pb::ByteString.Empty;
-    /// <summary>
-    /// The Base64 encoded bytes of the Apple Wallet pass.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString ApplePassBytes {
@@ -2887,9 +2926,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "multiplePassesURL" field.</summary>
     public const int MultiplePassesURLFieldNumber = 7;
     private string multiplePassesURL_ = "";
-    /// <summary>
-    /// A URL for multiple passes, linked by a common index.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MultiplePassesURL {
@@ -3136,6 +3172,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Wrapper for multiple pass bundles.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassBundles : pb::IMessage<PassBundles>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3323,6 +3362,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request to retrieve pass data in the requested bundle formats.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassBundleRequest : pb::IMessage<PassBundleRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3372,9 +3414,6 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
-    /// <summary>
-    /// The PassKit pass id that uniquely identifies the pass.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -3389,9 +3428,6 @@ namespace PassKit.Grpc {
     private static readonly pb::FieldCodec<global::PassKit.Grpc.PassBundleFormat> _repeated_format_codec
         = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::PassKit.Grpc.PassBundleFormat) x);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.PassBundleFormat> format_ = new pbc::RepeatedField<global::PassKit.Grpc.PassBundleFormat>();
-    /// <summary>
-    /// The format(s) of the pass required.  If omitted, the URL to the web landing page will be returned.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.PassBundleFormat> Format {
@@ -3556,7 +3592,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// [DEPRECATED: OR operator is not supported] Filter and list records.
+  /// [DEPRECATED: OR operator is not supported] Used for filtering and listing records.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequestDeprecated : pb::IMessage<ListRequestDeprecated>
@@ -3608,6 +3644,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "classId" field.</summary>
     public const int ClassIdFieldNumber = 1;
     private string classId_ = "";
+    /// <summary>
+    /// Unique class ID (e.g. program or object ID).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
@@ -3620,6 +3659,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 2;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// Optional protocol to filter by.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
@@ -3632,6 +3674,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "pagination" field.</summary>
     public const int PaginationFieldNumber = 3;
     private global::PassKit.Grpc.Pagination pagination_;
+    /// <summary>
+    /// Optional pagination criteria.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Pagination Pagination {
@@ -3839,6 +3884,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used for filtering and listing records (recommended over deprecated version).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequest : pb::IMessage<ListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3889,6 +3937,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "classId" field.</summary>
     public const int ClassIdFieldNumber = 1;
     private string classId_ = "";
+    /// <summary>
+    /// Unique class ID (e.g. program or object ID).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
@@ -3901,6 +3952,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 2;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// Optional protocol to filter by.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
@@ -3913,6 +3967,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 3;
     private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Optional filter criteria.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
@@ -4120,6 +4177,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request for bulk actions (e.g. update, delete) on filtered pass sets.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BulkPassActionRequest : pb::IMessage<BulkPassActionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4170,6 +4230,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "classId" field.</summary>
     public const int ClassIdFieldNumber = 1;
     private string classId_ = "";
+    /// <summary>
+    /// Unique class ID for passes to apply bulk action to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
@@ -4182,6 +4245,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 2;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// Protocol of the pass (e.g. member, coupon, etc).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
@@ -4196,6 +4262,9 @@ namespace PassKit.Grpc {
     private static readonly pb::FieldCodec<global::PassKit.Grpc.FilterGroup> _repeated_filterGroups_codec
         = pb::FieldCodec.ForMessage(26, global::PassKit.Grpc.FilterGroup.Parser);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.FilterGroup> filterGroups_ = new pbc::RepeatedField<global::PassKit.Grpc.FilterGroup>();
+    /// <summary>
+    /// Grouped filter conditions for selecting target passes.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.FilterGroup> FilterGroups {
@@ -4382,7 +4451,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// DataItems are used to supply additional metadata when creating or updating passes.
+  /// Contains additional metadata to be injected into a pass as key-value pairs.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DataItems : pb::IMessage<DataItems>
@@ -4435,7 +4504,7 @@ namespace PassKit.Grpc {
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 10);
     private readonly pbc::MapField<string, string> items_ = new pbc::MapField<string, string>();
     /// <summary>
-    /// Key value pairs. All values must be strings, but formatting and conversion can be defined in the pass template. Keys should be alphanumeric, start with a lowercase level and use camel case.  They can be accessed in the pass template by prefixing with 'meta.'. E.g. 'meta.myCustomKey'.
+    /// Key/value map for additional metadata.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4575,7 +4644,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// To be used for booleans where we want users to be able to set to off / false via the API.
+  /// Wrapper message to explicitly pass a boolean value.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PkBool : pb::IMessage<PkBool>
@@ -4775,6 +4844,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input format for linking objects to classes.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClassObjectInput : pb::IMessage<ClassObjectInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4825,6 +4897,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 1;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// Protocol of the object (e.g. member, coupon, etc).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
@@ -4838,7 +4913,7 @@ namespace PassKit.Grpc {
     public const int ObjectIdFieldNumber = 2;
     private string objectId_ = "";
     /// <summary>
-    /// The object ID (objects belong to the class object; i.e. member tier id, coupon offer id, etc).
+    /// Object ID (e.g. tierId, offerId).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4853,7 +4928,7 @@ namespace PassKit.Grpc {
     public const int ClassIdFieldNumber = 3;
     private string classId_ = "";
     /// <summary>
-    /// The class ID (highest level protocol object; i.e. member program id, etc). Required only for the Member protocol.
+    /// Optional class ID for context (e.g. for Member protocol).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5054,7 +5129,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// To be used for setting recursive datetime.
+  /// Used for creating datetime values that recur on a regular schedule.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RecursiveDate : pb::IMessage<RecursiveDate>
@@ -5106,7 +5181,7 @@ namespace PassKit.Grpc {
     public const int ScheduleFieldNumber = 1;
     private string schedule_ = "";
     /// <summary>
-    /// Crontab expression (https://crontab.guru) to declare the recursive billing period start.
+    /// Cron expression describing the recurrence interval.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5121,8 +5196,7 @@ namespace PassKit.Grpc {
     public const int StateFieldNumber = 2;
     private global::PassKit.Grpc.TimeState state_ = global::PassKit.Grpc.TimeState.None;
     /// <summary>
-    /// State adds flexibility to the recursive date where user can shift scheduled date. Default is TIME_STATE_CURRENT.
-    /// Eg. Given schedule is @monthly, if state is PREVIOUS, the recursive date will be 'At 00:00 on day-of-PREVIOUS-month 1'.
+    /// Adjusts the date forward or backward relative to the recurrence.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5298,6 +5372,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Recurrence rule for monthly repetition.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MonthlyRecursive : pb::IMessage<MonthlyRecursive>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5351,8 +5428,7 @@ namespace PassKit.Grpc {
     public const int DayOfMonthFieldNumber = 1;
     private int dayOfMonth_;
     /// <summary>
-    /// The day which the recursive period starts. Available values are 1-31.
-    /// Selecting 31 for the last day of any month.
+    /// Day of the month (1–31).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5367,7 +5443,7 @@ namespace PassKit.Grpc {
     public const int HourFieldNumber = 2;
     private int hour_;
     /// <summary>
-    /// Default hour is 0.
+    /// Optional hour of the day (0–23).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5382,7 +5458,7 @@ namespace PassKit.Grpc {
     public const int MinuteFieldNumber = 3;
     private int minute_;
     /// <summary>
-    /// Default minute is 0.
+    /// Optional minute of the hour (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5397,7 +5473,7 @@ namespace PassKit.Grpc {
     public const int SecondFieldNumber = 4;
     private int second_;
     /// <summary>
-    /// Default second is 0.
+    /// Optional second of the minute (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5412,8 +5488,7 @@ namespace PassKit.Grpc {
     public const int StateFieldNumber = 5;
     private global::PassKit.Grpc.TimeState state_ = global::PassKit.Grpc.TimeState.None;
     /// <summary>
-    /// State to select the month.
-    /// Eg. Given the date=15 and state=TIME_STATE_CURRENT, then the date is 15th of the current month.
+    /// Determines which month to apply the date to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5661,6 +5736,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Recurrence rule for yearly repetition.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class YearlyRecursive : pb::IMessage<YearlyRecursive>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5715,7 +5793,7 @@ namespace PassKit.Grpc {
     public const int MonthFieldNumber = 1;
     private int month_;
     /// <summary>
-    /// The month in which the recursive period starts.
+    /// Month (1–12).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5730,8 +5808,7 @@ namespace PassKit.Grpc {
     public const int DayOfMonthFieldNumber = 2;
     private int dayOfMonth_;
     /// <summary>
-    /// The day on which the recursive period starts. Available values are 1-31.
-    /// Selecting dayOfMonth=29 and month=2, for the last day of Feb of any year.
+    /// Day of the month (1–31).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5746,7 +5823,7 @@ namespace PassKit.Grpc {
     public const int HourFieldNumber = 3;
     private int hour_;
     /// <summary>
-    /// Default hour is 0.
+    /// Optional hour (0–23).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5761,7 +5838,7 @@ namespace PassKit.Grpc {
     public const int MinuteFieldNumber = 4;
     private int minute_;
     /// <summary>
-    /// Default minute is 0.
+    /// Optional minute (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5776,7 +5853,7 @@ namespace PassKit.Grpc {
     public const int SecondFieldNumber = 5;
     private int second_;
     /// <summary>
-    /// Default second is 0.
+    /// Optional second (0–59).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5791,8 +5868,7 @@ namespace PassKit.Grpc {
     public const int StateFieldNumber = 6;
     private global::PassKit.Grpc.TimeState state_ = global::PassKit.Grpc.TimeState.None;
     /// <summary>
-    /// State to select the year.
-    /// Eg. Given the month=1, date=15 and state=TIME_STATE_CURRENT, then the date is 15th Jan of the current year.
+    /// Determines whether the date applies to the current, previous, or next year.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6064,6 +6140,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to reference multiple pass IDs in a single operation.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassIds : pb::IMessage<PassIds>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6114,6 +6193,9 @@ namespace PassKit.Grpc {
     private static readonly pb::FieldCodec<string> _repeated_ids_codec
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> ids_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Repeated compressed UUID strings representing individual pass IDs.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Ids {
@@ -6251,6 +6333,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request structure for protocol-level operations (e.g. pass listings).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Protocol : pb::IMessage<Protocol>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6301,6 +6386,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int Protocol_FieldNumber = 1;
     private global::PassKit.Grpc.Protocol protocol_;
+    /// <summary>
+    /// Protocol used (e.g. MEMBER, COUPON, etc).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Protocol Protocol_ {
@@ -6313,6 +6401,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "classId" field.</summary>
     public const int ClassIdFieldNumber = 2;
     private string classId_ = "";
+    /// <summary>
+    /// Class ID associated with the protocol (e.g. programId).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
@@ -6326,7 +6417,7 @@ namespace PassKit.Grpc {
     public const int PaginationFieldNumber = 3;
     private global::PassKit.Grpc.Pagination pagination_;
     /// <summary>
-    /// Optional pagination criteria. If not provided, then all passes for the class will be selected.
+    /// Optional pagination configuration.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

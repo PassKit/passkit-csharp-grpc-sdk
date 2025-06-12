@@ -13,6 +13,9 @@
 using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc.Members {
+  /// <summary>
+  ///The PassKit Members API provides a powerful and flexible way to manage your membership programs, including creating, updating, and maintaining digital membership passes for Apple Wallet and Google Wallet. Easily integrate membership functionality into your applications to deliver seamless, real-time experiences for your members.
+  /// </summary>
   public static partial class Members
   {
     static readonly string __ServiceName = "members.Members";
@@ -499,7 +502,7 @@ namespace PassKit.Grpc.Members {
       }
 
       /// <summary>
-      /// Create a program record. Allows a user to specify program details around enrolment, renewal and cancellation processes. Optionally allows the user to set the GPS location / Beacons that will trigger a lock-screen alert.
+      /// Creates a new membership program with details about enrollment, renewal, and cancellation. Optionally configure GPS locations and Beacons to trigger lock-screen notifications. Required fields: program name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -512,7 +515,7 @@ namespace PassKit.Grpc.Members {
         return createProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a program record. Allows a user to specify program details around enrolment, renewal and cancellation processes. Optionally allows the user to set the GPS location / Beacons that will trigger a lock-screen alert.
+      /// Creates a new membership program with details about enrollment, renewal, and cancellation. Optionally configure GPS locations and Beacons to trigger lock-screen notifications. Required fields: program name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -523,7 +526,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_createProgram, null, options, request);
       }
       /// <summary>
-      /// Create a program record. Allows a user to specify program details around enrolment, renewal and cancellation processes. Optionally allows the user to set the GPS location / Beacons that will trigger a lock-screen alert.
+      /// Creates a new membership program with details about enrollment, renewal, and cancellation. Optionally configure GPS locations and Beacons to trigger lock-screen notifications. Required fields: program name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -536,7 +539,7 @@ namespace PassKit.Grpc.Members {
         return createProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a program record. Allows a user to specify program details around enrolment, renewal and cancellation processes. Optionally allows the user to set the GPS location / Beacons that will trigger a lock-screen alert.
+      /// Creates a new membership program with details about enrollment, renewal, and cancellation. Optionally configure GPS locations and Beacons to trigger lock-screen notifications. Required fields: program name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -547,7 +550,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_createProgram, null, options, request);
       }
       /// <summary>
-      /// Updates an existing program record.
+      /// Updates an existing membership program with new details or settings. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -560,7 +563,7 @@ namespace PassKit.Grpc.Members {
         return updateProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates an existing program record.
+      /// Updates an existing membership program with new details or settings. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -571,7 +574,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_updateProgram, null, options, request);
       }
       /// <summary>
-      /// Updates an existing program record.
+      /// Updates an existing membership program with new details or settings. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -584,7 +587,7 @@ namespace PassKit.Grpc.Members {
         return updateProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates an existing program record.
+      /// Updates an existing membership program with new details or settings. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -595,7 +598,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_updateProgram, null, options, request);
       }
       /// <summary>
-      /// Gets an existing program record by id.
+      /// Retrieves a membership program by its unique id. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -608,7 +611,7 @@ namespace PassKit.Grpc.Members {
         return getProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Gets an existing program record by id.
+      /// Retrieves a membership program by its unique id. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -619,7 +622,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_getProgram, null, options, request);
       }
       /// <summary>
-      /// Gets an existing program record by id.
+      /// Retrieves a membership program by its unique id. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -632,7 +635,7 @@ namespace PassKit.Grpc.Members {
         return getProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Gets an existing program record by id.
+      /// Retrieves a membership program by its unique id. Required fields: program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -643,7 +646,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_getProgram, null, options, request);
       }
       /// <summary>
-      /// Copies an existing program record to a new record, and allows for status of new program to be set; i.e. copy a draft to published (production) program. Will copy program AND related tier + template records.
+      /// Creates a new program by copying the configuration and design of an existing program. Required fields: source program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -656,7 +659,7 @@ namespace PassKit.Grpc.Members {
         return copyProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Copies an existing program record to a new record, and allows for status of new program to be set; i.e. copy a draft to published (production) program. Will copy program AND related tier + template records.
+      /// Creates a new program by copying the configuration and design of an existing program. Required fields: source program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -667,7 +670,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_copyProgram, null, options, request);
       }
       /// <summary>
-      /// Copies an existing program record to a new record, and allows for status of new program to be set; i.e. copy a draft to published (production) program. Will copy program AND related tier + template records.
+      /// Creates a new program by copying the configuration and design of an existing program. Required fields: source program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -680,7 +683,7 @@ namespace PassKit.Grpc.Members {
         return copyProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Copies an existing program record to a new record, and allows for status of new program to be set; i.e. copy a draft to published (production) program. Will copy program AND related tier + template records.
+      /// Creates a new program by copying the configuration and design of an existing program. Required fields: source program id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -691,7 +694,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_copyProgram, null, options, request);
       }
       /// <summary>
-      /// Deletes an existing program record by id. Deleting a program results in all tiers, and members underneath it being invalidated and removed. Needs to be used with care.
+      /// Permanently deletes a membership program and its associated data, including all passes. Required fields: program id. Use with caution, as this action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -704,7 +707,7 @@ namespace PassKit.Grpc.Members {
         return deleteProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes an existing program record by id. Deleting a program results in all tiers, and members underneath it being invalidated and removed. Needs to be used with care.
+      /// Permanently deletes a membership program and its associated data, including all passes. Required fields: program id. Use with caution, as this action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -715,7 +718,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_deleteProgram, null, options, request);
       }
       /// <summary>
-      /// Deletes an existing program record by id. Deleting a program results in all tiers, and members underneath it being invalidated and removed. Needs to be used with care.
+      /// Permanently deletes a membership program and its associated data, including all passes. Required fields: program id. Use with caution, as this action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -728,7 +731,7 @@ namespace PassKit.Grpc.Members {
         return deleteProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes an existing program record by id. Deleting a program results in all tiers, and members underneath it being invalidated and removed. Needs to be used with care.
+      /// Permanently deletes a membership program and its associated data, including all passes. Required fields: program id. Use with caution, as this action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -739,7 +742,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_deleteProgram, null, options, request);
       }
       /// <summary>
-      /// Lists all programs for the logged in user.
+      /// Lists all membership programs associated with your project. Supports filtering and pagination. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use the updated listPrograms call instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -752,7 +755,7 @@ namespace PassKit.Grpc.Members {
         return listProgramsDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all programs for the logged in user.
+      /// Lists all membership programs associated with your project. Supports filtering and pagination. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use the updated listPrograms call instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -763,7 +766,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listProgramsDeprecated, null, options, request);
       }
       /// <summary>
-      /// Lists all programs for the logged in user.
+      /// Lists all membership programs associated with your project. Supports filtering options to narrow down the results based on specific criteria.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -776,7 +779,7 @@ namespace PassKit.Grpc.Members {
         return listPrograms(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all programs for the logged in user.
+      /// Lists all membership programs associated with your project. Supports filtering options to narrow down the results based on specific criteria.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -787,7 +790,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listPrograms, null, options, request);
       }
       /// <summary>
-      /// Create a new tier in an existing member program. Tiers allow a user to categorize their membership program; tiers allow for additional detail that is specific to that 'group' of members. A program needs at least one tier.
+      /// Creates a new membership tier within a program, specifying criteria, benefits, and settings. Required fields: program id, tier name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -800,7 +803,7 @@ namespace PassKit.Grpc.Members {
         return createTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new tier in an existing member program. Tiers allow a user to categorize their membership program; tiers allow for additional detail that is specific to that 'group' of members. A program needs at least one tier.
+      /// Creates a new membership tier within a program, specifying criteria, benefits, and settings. Required fields: program id, tier name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -811,7 +814,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_createTier, null, options, request);
       }
       /// <summary>
-      /// Create a new tier in an existing member program. Tiers allow a user to categorize their membership program; tiers allow for additional detail that is specific to that 'group' of members. A program needs at least one tier.
+      /// Creates a new membership tier within a program, specifying criteria, benefits, and settings. Required fields: program id, tier name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -824,7 +827,7 @@ namespace PassKit.Grpc.Members {
         return createTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new tier in an existing member program. Tiers allow a user to categorize their membership program; tiers allow for additional detail that is specific to that 'group' of members. A program needs at least one tier.
+      /// Creates a new membership tier within a program, specifying criteria, benefits, and settings. Required fields: program id, tier name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -835,7 +838,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_createTier, null, options, request);
       }
       /// <summary>
-      /// Updates a tier by tier id
+      /// Updates an existing membership tier’s details such as benefits, qualifications, and rules. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -848,7 +851,7 @@ namespace PassKit.Grpc.Members {
         return updateTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates a tier by tier id
+      /// Updates an existing membership tier’s details such as benefits, qualifications, and rules. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -859,7 +862,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_updateTier, null, options, request);
       }
       /// <summary>
-      /// Updates a tier by tier id
+      /// Updates an existing membership tier’s details such as benefits, qualifications, and rules. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -872,7 +875,7 @@ namespace PassKit.Grpc.Members {
         return updateTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates a tier by tier id
+      /// Updates an existing membership tier’s details such as benefits, qualifications, and rules. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -883,7 +886,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_updateTier, null, options, request);
       }
       /// <summary>
-      /// Gets a tier by tier ID
+      /// Retrieves details of a specific membership tier by its id. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -896,7 +899,7 @@ namespace PassKit.Grpc.Members {
         return getTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Gets a tier by tier ID
+      /// Retrieves details of a specific membership tier by its id. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -907,7 +910,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_getTier, null, options, request);
       }
       /// <summary>
-      /// Gets a tier by tier ID
+      /// Retrieves details of a specific membership tier by its id. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -920,7 +923,7 @@ namespace PassKit.Grpc.Members {
         return getTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Gets a tier by tier ID
+      /// Retrieves details of a specific membership tier by its id. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -931,7 +934,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_getTier, null, options, request);
       }
       /// <summary>
-      /// Deletes a tier. Deleting a tier will invalidate and delete all the passes that are in the tier.
+      /// Deletes a membership tier from a program. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -944,7 +947,7 @@ namespace PassKit.Grpc.Members {
         return deleteTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes a tier. Deleting a tier will invalidate and delete all the passes that are in the tier.
+      /// Deletes a membership tier from a program. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -955,7 +958,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_deleteTier, null, options, request);
       }
       /// <summary>
-      /// Deletes a tier. Deleting a tier will invalidate and delete all the passes that are in the tier.
+      /// Deletes a membership tier from a program. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -968,7 +971,7 @@ namespace PassKit.Grpc.Members {
         return deleteTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes a tier. Deleting a tier will invalidate and delete all the passes that are in the tier.
+      /// Deletes a membership tier from a program. Required fields: tier id.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -979,7 +982,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_deleteTier, null, options, request);
       }
       /// <summary>
-      /// Lists all the tiers.
+      /// Retrieves a list of all membership tiers within a membership program. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use listTiers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -992,7 +995,7 @@ namespace PassKit.Grpc.Members {
         return listTiersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all the tiers.
+      /// Retrieves a list of all membership tiers within a membership program. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use listTiers.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1003,7 +1006,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTiersDeprecated, null, options, request);
       }
       /// <summary>
-      /// Lists all the tiers.
+      /// Retrieves a list of all membership tiers within a membership program. Required fields: program id. Supports filtering options to narrow down the results based on specific criteria.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1016,7 +1019,7 @@ namespace PassKit.Grpc.Members {
         return listTiers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all the tiers.
+      /// Retrieves a list of all membership tiers within a membership program. Required fields: program id. Supports filtering options to narrow down the results based on specific criteria.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1027,7 +1030,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTiers, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into a tier of a program. Returns the PassKit Member ID.
+      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1040,7 +1043,7 @@ namespace PassKit.Grpc.Members {
         return enrolMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into a tier of a program. Returns the PassKit Member ID.
+      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1051,7 +1054,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMember, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into a tier of a program. Returns the PassKit Member ID.
+      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1064,7 +1067,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into a tier of a program. Returns the PassKit Member ID.
+      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1075,7 +1078,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_enrolMember, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into the default tier (lowest tier index) of a program. Returns the PassKit Member ID.
+      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1088,7 +1091,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberPublic(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into the default tier (lowest tier index) of a program. Returns the PassKit Member ID.
+      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1099,7 +1102,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMemberPublic, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into the default tier (lowest tier index) of a program. Returns the PassKit Member ID.
+      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1112,7 +1115,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberPublicAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into the default tier (lowest tier index) of a program. Returns the PassKit Member ID.
+      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1122,128 +1125,296 @@ namespace PassKit.Grpc.Members {
       {
         return CallInvoker.AsyncUnaryCall(__Method_enrolMemberPublic, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a member record using the PassKit id. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordById(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a member record using the PassKit id. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordById(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberRecordById, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a member record using the PassKit id. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByIdAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a member record using the PassKit id. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByIdAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberRecordById, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a member record using the member's external id. Required fields: program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordByExternalId(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByExternalId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a member record using the member's external id. Required fields: program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.Member getMemberRecordByExternalId(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberRecordByExternalId, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a member record using the member's external id. Required fields: program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByExternalIdAsync(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberRecordByExternalIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a member record using the member's external id. Required fields: program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.Member> getMemberRecordByExternalIdAsync(global::PassKit.Grpc.Members.MemberRecordByExternalIdRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberRecordByExternalId, null, options, request);
       }
+      /// <summary>
+      /// Checks in a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkInMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkInMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Checks in a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkInMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_checkInMember, null, options, request);
       }
+      /// <summary>
+      /// Checks in a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkInMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkInMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Checks in a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkInMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_checkInMember, null, options, request);
       }
+      /// <summary>
+      /// Checks out a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkOutMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkOutMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Checks out a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent checkOutMember(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_checkOutMember, null, options, request);
       }
+      /// <summary>
+      /// Checks out a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkOutMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return checkOutMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Checks out a member in by PassKit Id or External Id. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> checkOutMemberAsync(global::PassKit.Grpc.Members.MemberCheckInOutRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_checkOutMember, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a list of all members within a membership program. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use listMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a list of all members within a membership program. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use listMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMembersDeprecated, null, options, request);
       }
+      /// <summary>
+      /// Retrieves a list of all members within a membership program. Required fields: program id. Supports filtering options to narrow down the results based on specific criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves a list of all members within a membership program. Required fields: program id. Supports filtering options to narrow down the results based on specific criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.Member> listMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMembers, null, options, request);
       }
+      /// <summary>
+      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMember(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMember(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMember, null, options, request);
       }
+      /// <summary>
+      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMember, null, options, request);
       }
       /// <summary>
-      /// @todo: define callback
+      /// Adds (earns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to earn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1256,7 +1427,7 @@ namespace PassKit.Grpc.Members {
         return earnPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// @todo: define callback
+      /// Adds (earns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to earn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1267,7 +1438,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_earnPoints, null, options, request);
       }
       /// <summary>
-      /// @todo: define callback
+      /// Adds (earns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to earn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1280,7 +1451,7 @@ namespace PassKit.Grpc.Members {
         return earnPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// @todo: define callback
+      /// Adds (earns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to earn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1291,7 +1462,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_earnPoints, null, options, request);
       }
       /// <summary>
-      /// @todo: define callback
+      /// Removes (burns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to burn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1304,7 +1475,7 @@ namespace PassKit.Grpc.Members {
         return burnPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// @todo: define callback
+      /// Removes (burns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to burn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1315,7 +1486,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_burnPoints, null, options, request);
       }
       /// <summary>
-      /// @todo: define callback
+      /// Removes (burns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to burn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1328,7 +1499,7 @@ namespace PassKit.Grpc.Members {
         return burnPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// @todo: define callback
+      /// Removes (burns) loyalty points to a member's account using PassKit Id or External Id. Required fields: member id, or program id and external id, and number of points to burn.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1338,391 +1509,937 @@ namespace PassKit.Grpc.Members {
       {
         return CallInvoker.AsyncUnaryCall(__Method_burnPoints, null, options, request);
       }
+      /// <summary>
+      /// Sets loyalty points balance to a specific value for a member using PassKit Id or External Id. Required fields: member id, or program id and external id, and new points balance.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints setPoints(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setPoints(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Sets loyalty points balance to a specific value for a member using PassKit Id or External Id. Required fields: member id, or program id and external id, and new points balance.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberPoints setPoints(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_setPoints, null, options, request);
       }
+      /// <summary>
+      /// Sets loyalty points balance to a specific value for a member using PassKit Id or External Id. Required fields: member id, or program id and external id, and new points balance.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> setPointsAsync(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return setPointsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Sets loyalty points balance to a specific value for a member using PassKit Id or External Id. Required fields: member id, or program id and external id, and new points balance.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberPoints> setPointsAsync(global::PassKit.Grpc.Members.SetPointsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_setPoints, null, options, request);
       }
+      /// <summary>
+      /// Changes a member’s tier within a program using PassKit Id or External Id. Required fields: member id, or program id and external id, and new tier id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent changeMemberTier(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return changeMemberTier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Changes a member’s tier within a program using PassKit Id or External Id. Required fields: member id, or program id and external id, and new tier id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Members.MemberEvent changeMemberTier(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_changeMemberTier, null, options, request);
       }
+      /// <summary>
+      /// Changes a member’s tier within a program using PassKit Id or External Id. Required fields: member id, or program id and external id, and new tier id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> changeMemberTierAsync(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return changeMemberTierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Changes a member’s tier within a program using PassKit Id or External Id. Required fields: member id, or program id and external id, and new tier id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Members.MemberEvent> changeMemberTierAsync(global::PassKit.Grpc.Members.ChangeTierRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_changeMemberTier, null, options, request);
       }
+      /// <summary>
+      /// Updates multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkUpdateMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty updateMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMembersBySegment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkUpdateMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty updateMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMembersBySegment, null, options, request);
       }
+      /// <summary>
+      /// Updates multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkUpdateMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> updateMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMembersBySegmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkUpdateMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> updateMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMembersBySegment, null, options, request);
       }
+      /// <summary>
+      /// Deletes multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkDeleteMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMembersBySegment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkDeleteMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMembersBySegment(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMembersBySegment, null, options, request);
       }
+      /// <summary>
+      /// Deletes multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkDeleteMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMembersBySegmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes multiple members based on filtering criteria. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use bulkDeleteMembers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMembersBySegmentAsync(global::PassKit.Grpc.Members.MemberSegmentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMembersBySegment, null, options, request);
       }
+      /// <summary>
+      /// Deletes a single member by their PassKit Id or External ID. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMember(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes a single member by their PassKit Id or External ID. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMember(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMember, null, options, request);
       }
+      /// <summary>
+      /// Deletes a single member by their PassKit Id or External ID. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes a single member by their PassKit Id or External ID. Required fields: member id or program id and external id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberAsync(global::PassKit.Grpc.Members.Member request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMember, null, options, request);
       }
+      /// <summary>
+      /// Bulk deletes multiple members from a program based on provided criteria. Required fields: program id, protocol and filters criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty bulkDeleteMembers(global::PassKit.Grpc.BulkPassActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return bulkDeleteMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Bulk deletes multiple members from a program based on provided criteria. Required fields: program id, protocol and filters criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty bulkDeleteMembers(global::PassKit.Grpc.BulkPassActionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_bulkDeleteMembers, null, options, request);
       }
+      /// <summary>
+      /// Bulk deletes multiple members from a program based on provided criteria. Required fields: program id, protocol and filters criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> bulkDeleteMembersAsync(global::PassKit.Grpc.BulkPassActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return bulkDeleteMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Bulk deletes multiple members from a program based on provided criteria. Required fields: program id, protocol and filters criteria.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> bulkDeleteMembersAsync(global::PassKit.Grpc.BulkPassActionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_bulkDeleteMembers, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use countMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersDeprecated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use countMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembersDeprecated(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMembersDeprecated, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use countMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersDeprecatedAsync(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersDeprecatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id. This version uses the legacy request format and is maintained for backward compatibility. New integrations should use countMembers as OR operator is not supported.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersDeprecatedAsync(global::PassKit.Grpc.Members.ListRequestDeprecated request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMembersDeprecated, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMembers(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMembers, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of members matching a filter. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMembersAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMembers, null, options, request);
       }
+      /// <summary>
+      /// [UNIMPLEMENTED] Retrieves the message history sent to a member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Message> getMessageHistoryForMember(global::PassKit.Grpc.Pagination request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMessageHistoryForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// [UNIMPLEMENTED] Retrieves the message history sent to a member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Message> getMessageHistoryForMember(global::PassKit.Grpc.Pagination request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_getMessageHistoryForMember, null, options, request);
       }
+      /// <summary>
+      /// Retrieves meta keys (custom fields) for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves meta keys (custom fields) for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMetaKeysForProgram, null, options, request);
       }
+      /// <summary>
+      /// Retrieves meta keys (custom fields) for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMetaKeysForProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves meta keys (custom fields) for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMetaKeysForProgram, null, options, request);
       }
+      /// <summary>
+      /// Batch updates the expiry dates for ALL members. Required fields: program id, tier id and new expiry settings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count renewMembersExpiry(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return renewMembersExpiry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Batch updates the expiry dates for ALL members. Required fields: program id, tier id and new expiry settings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count renewMembersExpiry(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_renewMembersExpiry, null, options, request);
       }
+      /// <summary>
+      /// Batch updates the expiry dates for ALL members. Required fields: program id, tier id and new expiry settings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> renewMembersExpiryAsync(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return renewMembersExpiryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Batch updates the expiry dates for ALL members. Required fields: program id, tier id and new expiry settings.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> renewMembersExpiryAsync(global::PassKit.Grpc.Members.UpdateExpiryRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_renewMembersExpiry, null, options, request);
       }
+      /// <summary>
+      /// Updates the expiry date for a member’s pass using the PassKit Id or External Id. Required fields: member id, or external id and program id, and new expiry date.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMemberExpiry(global::PassKit.Grpc.Members.MemberExpiry request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberExpiry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates the expiry date for a member’s pass using the PassKit Id or External Id. Required fields: member id, or external id and program id, and new expiry date.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id updateMemberExpiry(global::PassKit.Grpc.Members.MemberExpiry request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_updateMemberExpiry, null, options, request);
       }
+      /// <summary>
+      /// Updates the expiry date for a member’s pass using the PassKit Id or External Id. Required fields: member id, or external id and program id, and new expiry date.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberExpiryAsync(global::PassKit.Grpc.Members.MemberExpiry request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return updateMemberExpiryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates the expiry date for a member’s pass using the PassKit Id or External Id. Required fields: member id, or external id and program id, and new expiry date.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> updateMemberExpiryAsync(global::PassKit.Grpc.Members.MemberExpiry request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_updateMemberExpiry, null, options, request);
       }
+      /// <summary>
+      /// Updates a member's personal information, such as name, address, or contact details. Required fields: member id, or external id and program id, and new member information.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPerson(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates a member's personal information, such as name, address, or contact details. Required fields: member id, or external id and program id, and new member information.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Id patchPerson(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_patchPerson, null, options, request);
       }
+      /// <summary>
+      /// Updates a member's personal information, such as name, address, or contact details. Required fields: member id, or external id and program id, and new member information.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return patchPersonAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Updates a member's personal information, such as name, address, or contact details. Required fields: member id, or external id and program id, and new member information.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Id> patchPersonAsync(global::PassKit.Grpc.PersonRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_patchPerson, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of member events for a specific program based on given filters. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of member events for a specific program based on given filters. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Count countMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_countMemberEvents, null, options, request);
       }
+      /// <summary>
+      /// Counts the number of member events for a specific program based on given filters. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return countMemberEventsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Counts the number of member events for a specific program based on given filters. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countMemberEvents, null, options, request);
       }
+      /// <summary>
+      /// Lists events related to members in a specific program, supporting filtering and pagination. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Lists events related to members in a specific program, supporting filtering and pagination. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMemberEvents, null, options, request);
       }
+      /// <summary>
+      /// Retrieves the list of meta keys associated with member events for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMemberEventMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberEventMetaKeysForProgram(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves the list of meta keys associated with member events for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.Strings getMemberEventMetaKeysForProgram(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getMemberEventMetaKeysForProgram, null, options, request);
       }
+      /// <summary>
+      /// Retrieves the list of meta keys associated with member events for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMemberEventMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getMemberEventMetaKeysForProgramAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves the list of meta keys associated with member events for a specific program. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Strings> getMemberEventMetaKeysForProgramAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getMemberEventMetaKeysForProgram, null, options, request);
       }
+      /// <summary>
+      /// Lists events for a specific member, such as check-ins/outs, changes to points etc. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listEventsForMember(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return listEventsForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Lists events for a specific member, such as check-ins/outs, changes to points etc. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.Members.MemberEvent> listEventsForMember(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_listEventsForMember, null, options, request);
       }
+      /// <summary>
+      /// Deletes member event history for a program based on specified criteria. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEvents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes member event history for a program based on specified criteria. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvents(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMemberEvents, null, options, request);
       }
+      /// <summary>
+      /// Deletes member event history for a program based on specified criteria. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEventsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes member event history for a program based on specified criteria. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventsAsync(global::PassKit.Grpc.Members.ListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMemberEvents, null, options, request);
       }
+      /// <summary>
+      /// Deletes all member events associated with a specific member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEventsForMember(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEventsForMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes all member events associated with a specific member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteEventsForMember(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteEventsForMember, null, options, request);
       }
+      /// <summary>
+      /// Deletes all member events associated with a specific member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventsForMemberAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteEventsForMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes all member events associated with a specific member. Required fields: member id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteEventsForMemberAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteEventsForMember, null, options, request);
       }
+      /// <summary>
+      /// Deletes a specific individual member event. Required fields: member event id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvent(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes a specific individual member event. Required fields: member event id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Google.Protobuf.WellKnownTypes.Empty deleteMemberEvent(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_deleteMemberEvent, null, options, request);
       }
+      /// <summary>
+      /// Deletes a specific individual member event. Required fields: member event id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return deleteMemberEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Deletes a specific individual member event. Required fields: member event id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> deleteMemberEventAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_deleteMemberEvent, null, options, request);
       }
+      /// <summary>
+      /// Retrieves enrolment URLs and QR codes for a membership program, including tier-specific links if applicable. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EnrolmentUrls getProgramEnrolment(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgramEnrolment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves enrolment URLs and QR codes for a membership program, including tier-specific links if applicable. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::PassKit.Grpc.EnrolmentUrls getProgramEnrolment(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_getProgramEnrolment, null, options, request);
       }
+      /// <summary>
+      /// Retrieves enrolment URLs and QR codes for a membership program, including tier-specific links if applicable. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EnrolmentUrls> getProgramEnrolmentAsync(global::PassKit.Grpc.Id request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return getProgramEnrolmentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Retrieves enrolment URLs and QR codes for a membership program, including tier-specific links if applicable. Required fields: program id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EnrolmentUrls> getProgramEnrolmentAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {

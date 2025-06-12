@@ -37,6 +37,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Specifies the type of update operation to perform.
+  /// </summary>
   public enum Operation {
     /// <summary>
     /// Will use the default operator PATCH.

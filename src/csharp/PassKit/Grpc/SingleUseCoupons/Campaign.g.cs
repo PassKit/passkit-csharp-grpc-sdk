@@ -64,7 +64,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
   }
   #region Messages
   /// <summary>
-  /// The Coupon Campaign Details.
+  /// Campaign configuration for managing a coupon campaign’s rules, statuses, and options.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponCampaign : pb::IMessage<CouponCampaign>
@@ -181,7 +181,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int PassTypeIdentifierFieldNumber = 6;
     private string passTypeIdentifier_ = "";
     /// <summary>
-    /// Leave empty for draft campaigns. Needs to be set for campaigns where status contains PROJECT_PUBLISHED.
+    /// Required only when campaign status includes PROJECT_PUBLISHED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -566,7 +566,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
   }
 
   /// <summary>
-  /// CouponCampaignAnalyticsResponse contains redemption stats for the campaign. Other campaign analytics can be taken from the generic analytics endpoint.
+  /// Response containing redemption statistics for a coupon campaign.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponCampaignAnalyticsResponse : pb::IMessage<CouponCampaignAnalyticsResponse>
@@ -917,7 +917,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
   }
 
   /// <summary>
-  /// Contains payload for copying a campaign.
+  /// Request to copy an existing coupon campaign with optional changes.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignCopyRequest : pb::IMessage<CampaignCopyRequest>

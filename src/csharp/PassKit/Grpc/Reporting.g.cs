@@ -86,6 +86,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Enum to specify the period grouping for analytics data.
+  /// </summary>
   public enum Period {
     /// <summary>
     /// Show individual data by day.
@@ -104,6 +107,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// The response message containing analytics statistics.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AnalyticsResponse : pb::IMessage<AnalyticsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -688,6 +694,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Installation breakdown by device type.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeviceBreakdown : pb::IMessage<DeviceBreakdown>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -969,6 +978,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Data points for each unit of the selected period.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ChartDataPoints : pb::IMessage<ChartDataPoints>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1410,6 +1422,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// The request message for fetching analytics data.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AnalyticsRequest : pb::IMessage<AnalyticsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1997,6 +2012,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Filter object for coupon analytics.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponAnalyticsFilter : pb::IMessage<CouponAnalyticsFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2045,6 +2063,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "offerId" field.</summary>
     public const int OfferIdFieldNumber = 1;
     private string offerId_ = "";
+    /// <summary>
+    /// The offer ID to filter analytics by.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferId {
@@ -2517,6 +2538,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Filter object for event ticket analytics.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventTicketAnalyticsFilter : pb::IMessage<EventTicketAnalyticsFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2569,6 +2593,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ticketTypeId" field.</summary>
     public const int TicketTypeIdFieldNumber = 1;
     private string ticketTypeId_ = "";
+    /// <summary>
+    /// Ticket type ID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeId {
@@ -2581,6 +2608,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ticketTypeUid" field.</summary>
     public const int TicketTypeUidFieldNumber = 2;
     private string ticketTypeUid_ = "";
+    /// <summary>
+    /// Ticket type UID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TicketTypeUid {
@@ -2593,6 +2623,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "venueId" field.</summary>
     public const int VenueIdFieldNumber = 3;
     private string venueId_ = "";
+    /// <summary>
+    /// Venue ID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueId {
@@ -2605,6 +2638,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "venueUid" field.</summary>
     public const int VenueUidFieldNumber = 4;
     private string venueUid_ = "";
+    /// <summary>
+    /// Venue UID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueUid {
@@ -2617,6 +2653,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "eventId" field.</summary>
     public const int EventIdFieldNumber = 5;
     private string eventId_ = "";
+    /// <summary>
+    /// Event ID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EventId {

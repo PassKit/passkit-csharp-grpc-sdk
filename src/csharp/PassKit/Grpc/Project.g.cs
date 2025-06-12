@@ -55,6 +55,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Status options for a project. These can be combined using bitmasks.
+  /// </summary>
   public enum ProjectStatus {
     /// <summary>
     /// Zero based enum, don't use 0.
@@ -108,6 +111,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Project metadata object used throughout the platform.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Project : pb::IMessage<Project>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -598,6 +604,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Combined response of a project and its associated pass template when fetched by short code.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProjectByShortCodeResult : pb::IMessage<ProjectByShortCodeResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -851,6 +860,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Filter used to find projects by their current status.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProjectStatusFilter : pb::IMessage<ProjectStatusFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

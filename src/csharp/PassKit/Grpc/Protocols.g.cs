@@ -45,6 +45,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Enum representing different protocols supported.
+  /// </summary>
   public enum PassProtocol {
     [pbr::OriginalName("PASS_PROTOCOL_DO_NOT_USE")] DoNotUse = 0,
     /// <summary>
@@ -74,6 +77,9 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("EVENT_TICKETING")] EventTicketing = 102,
   }
 
+  /// <summary>
+  /// Enum describing events common to all protocols.
+  /// </summary>
   public enum ProtocolCommonEvents {
     [pbr::OriginalName("PROTOCOL_COMMON_EVENTS_DO_NOT_USE")] DoNotUse = 0,
     /// <summary>

@@ -40,6 +40,9 @@ namespace PassKit.Grpc {
 
   }
   #region Messages
+  /// <summary>
+  /// Represents a note associated with an api call.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Note : pb::IMessage<Note>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -778,6 +778,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a discount applied to a transaction item.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DiscountItem : pb::IMessage<DiscountItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1099,6 +1102,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a single item in a transaction order.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OrderItem : pb::IMessage<OrderItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

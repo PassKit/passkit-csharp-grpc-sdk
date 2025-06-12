@@ -99,6 +99,9 @@ namespace PassKit.Grpc.Members {
 
   }
   #region Enums
+  /// <summary>
+  /// Defines the method used for automatic tier upgrades and downgrades in a program.
+  /// </summary>
   public enum ProgramAutoUpDownGradeTierType {
     /// <summary>
     /// Auto up / down grades based on points.
@@ -118,25 +121,52 @@ namespace PassKit.Grpc.Members {
     [pbr::OriginalName("UPDOWNGRADE_VISITS")] UpdowngradeVisits = 3,
   }
 
+  /// <summary>
+  /// Type of value used to represent a points balance.
+  /// </summary>
   public enum BalanceType {
+    /// <summary>
+    /// Points are stored as a string value (e.g., "1000").
+    /// </summary>
     [pbr::OriginalName("BALANCE_TYPE_STRING")] String = 0,
+    /// <summary>
+    /// Points are stored as an integer value (whole numbers).
+    /// </summary>
     [pbr::OriginalName("BALANCE_TYPE_INT")] Int = 1,
+    /// <summary>
+    /// Points are stored as a decimal value (floating-point numbers).
+    /// </summary>
     [pbr::OriginalName("BALANCE_TYPE_DOUBLE")] Double = 2,
+    /// <summary>
+    /// Points are stored as a monetary value using a currency format.
+    /// </summary>
     [pbr::OriginalName("BALANCE_TYPE_MONEY")] Money = 3,
   }
 
+  /// <summary>
+  /// Defines whether a member profile image is required or optional during enrollment.
+  /// </summary>
   public enum ProfileImageSetting {
+    /// <summary>
+    /// No profile image is required or allowed.
+    /// </summary>
     [pbr::OriginalName("PROFILE_IMAGE_NONE")] ProfileImageNone = 0,
+    /// <summary>
+    /// Uploading a profile image is optional during enrollment.
+    /// </summary>
     [pbr::OriginalName("PROFILE_IMAGE_OPTIONAL")] ProfileImageOptional = 1,
+    /// <summary>
+    /// A profile image must be uploaded during enrollment.
+    /// </summary>
     [pbr::OriginalName("PROFILE_IMAGE_REQUIRED")] ProfileImageRequired = 2,
     /// <summary>
-    /// option to restict the profile image upload from the data collection page.
+    /// Restricts uploading a profile image only from the internal data collection page (not public enrollment).
     /// </summary>
     [pbr::OriginalName("PROFILE_IMAGE_RESTRICTED")] ProfileImageRestricted = 3,
   }
 
   /// <summary>
-  /// Defines what medium we deliver the recovered pass.
+  /// Defines the delivery method used when recovering a member’s pass.
   /// </summary>
   public enum RecoverPassDelivery {
     /// <summary>
@@ -156,6 +186,9 @@ namespace PassKit.Grpc.Members {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Defines the format used for member points.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PointsType : pb::IMessage<PointsType>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -398,7 +431,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// The Program Details
+  /// Program configuration for managing a membership program’s rules, statuses, and options.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Program : pb::IMessage<Program>
@@ -1449,6 +1482,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Settings for event capture and behavior during member events (e.g., check-ins).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventCaptureSettings : pb::IMessage<EventCaptureSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1720,7 +1756,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Contains payload for copying a program
+  /// Request payload for copying an existing program into a new draft or published program.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProgramCopyRequest : pb::IMessage<ProgramCopyRequest>
@@ -2035,7 +2071,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Contains an array of programs.
+  /// Response containing a list of programs.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListProgramsResponse : pb::IMessage<ListProgramsResponse>
@@ -2227,6 +2263,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Response containing a list of distinct metadata keys used across members.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetMetaKeysResponse : pb::IMessage<GetMetaKeysResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2417,6 +2456,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Configuration for using a field (e.g., email or phone) as the member’s external ID automatically on enrollment.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomExternalId : pb::IMessage<CustomExternalId>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2659,7 +2701,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// PassRecoverySettings details the logic for recovering a pass.
+  /// Configuration for how users can recover their pass (e.g., via email, SMS).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassRecoverySettings : pb::IMessage<PassRecoverySettings>

@@ -24,45 +24,50 @@ namespace PassKit.Grpc.Flights {
     static BoardingPassReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5pby9mbGlnaHRzL2JvYXJkaW5nX3Bhc3MucHJvdG8SB2ZsaWdodHMaGmlv",
-            "L2ZsaWdodHMvcGFzc2VuZ2VyLnByb3RvGhhpby9mbGlnaHRzL2JhcmNvZGUu",
-            "cHJvdG8aKGlvL2ZsaWdodHMvY2FiaW5fY29kZXMvY2FiaW5fY29kZXMucHJv",
-            "dG8aHmlvL2NvbW1vbi9jb21tb25fb2JqZWN0cy5wcm90bxoZaW8vY29tbW9u",
-            "L3Byb3hpbWl0eS5wcm90bxoVaW8vY29tbW9uL2xpbmtzLnByb3RvGhdpby9j",
-            "b21tb24vbWV0cmljcy5wcm90bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0",
-            "aW9ucy9hbm5vdGF0aW9ucy5wcm90byK/DwoSQm9hcmRpbmdQYXNzUmVjb3Jk",
-            "EgoKAmlkGAEgASgJEjIKE29wZXJhdGluZ0NhcnJpZXJQTlIYAiABKAlCFZJB",
-            "EooBD15bQS1aMC05XXs1LDd9JBLYAgoLcmVsYXRlZFBOUnMYAyADKAlCwgKS",
-            "Qb4CMpcCUmVsYXRlZCBQTlJzIGNhbiBiZSB1c2VkIHRvIGluZGV4IHRoZSBy",
-            "ZWNvcmQgYW5kIGNhbiBiZSB0aGUgbWFya2V0aW5nIGNhcnJpZXIgUE5SIG9y",
-            "IGEgbWFzdGVyIFBOUiBjb250YWluaW5nIG11bHRpcGxlIGJvb2tpbmdzLiBJ",
-            "ZiByZXF1aXJlZCwgYSByZWxhdGVkIFBOUiBjYW4gYmUgZm9sbG93ZWQgYnkg",
-            "dGhlIHR3byBvciB0aHJlZSBjaGFyYWN0ZXIgZGVzaWduYXRvciBvZiB0aGUg",
-            "Y2FycmllciBvciBDUlMgY29udHJvbGxpbmcgdGhlIFBOUiwgc2VwYXJhdGVk",
-            "IGJ5IGFuIG9ibGlxdWUuigEhXltBLVowLTldezUsN30oXC9bQS1aMC05XXsy",
-            "LDN9KT8kEioKDHRpY2tldE51bWJlchgEIAEoCUIUkkERigEOXihbMC05XXsz",
-            "LDEwfSQSHwoJdGlja2V0TGVnGAUgASgFQgySQQlpAAAAAAAA8D8SKQoNYm9h",
-            "cmRpbmdQb2ludBgGIAEoCUISkkEPigEMXltBLVpdezMsNH0kEioKDmRlcGxh",
-            "bmluZ1BvaW50GAcgASgJQhKSQQ+KAQxeW0EtWl17Myw0fSQSHQoLY2Fycmll",
-            "ckNvZGUYCCABKAlCCJJBBXgDgAECEhsKDGZsaWdodE51bWJlchgJIAEoCUIF",
-            "kkECeAUSHwoNZGVwYXJ0dXJlRGF0ZRgLIAEoCzIILmlvLkRhdGUSJQoJcGFz",
-            "c2VuZ2VyGAwgASgLMhIuZmxpZ2h0cy5QYXNzZW5nZXISDQoFY2xhc3MYDSAB",
-            "KAkSNQoPY29tcGFydG1lbnRDb2RlGA4gASgOMhwuY2FiaW5fY29kZXMuQ29t",
-            "cGFydG1lbnRDb2RlEhkKCnNlYXROdW1iZXIYDyABKAlCBZJBAngFEhYKDnNl",
-            "cXVlbmNlTnVtYmVyGBAgASgFEhUKDWJvYXJkaW5nR3JvdXAYESABKAkSGAoQ",
-            "Ym9hcmRpbmdQb3NpdGlvbhgSIAEoCRImChRmcmVlQmFnZ2FnZUFsbG93YW5j",
-            "ZRgTIAEoCUIIkkEFeAOAAQMSIgoQY2FycnlPbkFsbG93YW5jZRgUIAEoCUII",
-            "kkEFeAOAAQMSEAoIc3NyQ29kZXMYFSADKAkSCwoDb3NpGBYgASgJEg8KB3Jl",
-            "bWFya3MYFyABKAkSMQoPcGFzc2VuZ2VyU3RhdHVzGBggASgOMhguZmxpZ2h0",
-            "cy5QYXNzZW5nZXJTdGF0dXMSMwoQY29uZGl0aW9uYWxJdGVtcxgZIAEoCzIZ",
-            "LmZsaWdodHMuQ29uZGl0aW9uYWxJdGVtcxIWCg5iYXJjb2RlUGF5bG9hZBga",
-            "IAEoCRIVCg1zZWN1cml0eUltYWdlGBsgASgJEhYKDnByaXZpbGVnZUltYWdl",
-            "GBwgASgJEhMKC2Zvb3RlckltYWdlGB0gASgJEjEKEGxvY2F0aW9uTWVzc2Fn",
-            "ZXMYHiADKAsyDy5pby5HUFNMb2NhdGlvbkIGkkEDoAEKEioKDmJlYWNvbk1l",
-            "c3NhZ2VzGB8gAygLMgouaW8uQmVhY29uQgaSQQOgAQoSHwoFbGlua3MYICAD",
-            "KAsyCC5pby5MaW5rQgaSQQOgAQoSHQoVYmFyY29kZUFkZGl0aW9uYWxEYXRh",
-            "GCEgASgJEhQKDGluZmFudFBhc3NJZBgiIAEoCRIqChNhZGRpdGlvbmFsRGF0",
-            "YUl0ZW1zGCMgASgLMg0uaW8uRGF0YUl0ZW1zEh4KCG1ldGFkYXRhGCQgASgL",
+            "Ch5pby9mbGlnaHRzL2JvYXJkaW5nX3Bhc3MucHJvdG8SB2ZsaWdodHMaGGlv",
+            "L2ZsaWdodHMvYWlycG9ydC5wcm90bxoaaW8vZmxpZ2h0cy9wYXNzZW5nZXIu",
+            "cHJvdG8aGGlvL2ZsaWdodHMvYmFyY29kZS5wcm90bxoXaW8vZmxpZ2h0cy9m",
+            "bGlnaHQucHJvdG8aF2lvL2ZsaWdodHMvY29tbW9uLnByb3RvGihpby9mbGln",
+            "aHRzL2NhYmluX2NvZGVzL2NhYmluX2NvZGVzLnByb3RvGh5pby9jb21tb24v",
+            "Y29tbW9uX29iamVjdHMucHJvdG8aGWlvL2NvbW1vbi9wcm94aW1pdHkucHJv",
+            "dG8aFWlvL2NvbW1vbi9saW5rcy5wcm90bxoXaW8vY29tbW9uL21ldHJpY3Mu",
+            "cHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29wdGlvbnMvYW5ub3RhdGlv",
+            "bnMucHJvdG8i1BAKEkJvYXJkaW5nUGFzc1JlY29yZBIKCgJpZBgBIAEoCRIy",
+            "ChNvcGVyYXRpbmdDYXJyaWVyUE5SGAIgASgJQhWSQRKKAQ9eW0EtWjAtOV17",
+            "NSw3fSQS2AIKC3JlbGF0ZWRQTlJzGAMgAygJQsICkkG+AjKXAlJlbGF0ZWQg",
+            "UE5ScyBjYW4gYmUgdXNlZCB0byBpbmRleCB0aGUgcmVjb3JkIGFuZCBjYW4g",
+            "YmUgdGhlIG1hcmtldGluZyBjYXJyaWVyIFBOUiBvciBhIG1hc3RlciBQTlIg",
+            "Y29udGFpbmluZyBtdWx0aXBsZSBib29raW5ncy4gSWYgcmVxdWlyZWQsIGEg",
+            "cmVsYXRlZCBQTlIgY2FuIGJlIGZvbGxvd2VkIGJ5IHRoZSB0d28gb3IgdGhy",
+            "ZWUgY2hhcmFjdGVyIGRlc2lnbmF0b3Igb2YgdGhlIGNhcnJpZXIgb3IgQ1JT",
+            "IGNvbnRyb2xsaW5nIHRoZSBQTlIsIHNlcGFyYXRlZCBieSBhbiBvYmxpcXVl",
+            "LooBIV5bQS1aMC05XXs1LDd9KFwvW0EtWjAtOV17MiwzfSk/JBIqCgx0aWNr",
+            "ZXROdW1iZXIYBCABKAlCFJJBEYoBDl4oWzAtOV17MywxMH0kEh8KCXRpY2tl",
+            "dExlZxgFIAEoBUIMkkEJaQAAAAAAAPA/EikKDWJvYXJkaW5nUG9pbnQYBiAB",
+            "KAlCEpJBD4oBDF5bQS1aXXszLDR9JBIqCg5kZXBsYW5pbmdQb2ludBgHIAEo",
+            "CUISkkEPigEMXltBLVpdezMsNH0kEh0KC2NhcnJpZXJDb2RlGAggASgJQgiS",
+            "QQV4A4ABAhIbCgxmbGlnaHROdW1iZXIYCSABKAlCBZJBAngFEh8KDWRlcGFy",
+            "dHVyZURhdGUYCyABKAsyCC5pby5EYXRlEiUKCXBhc3NlbmdlchgMIAEoCzIS",
+            "LmZsaWdodHMuUGFzc2VuZ2VyEg0KBWNsYXNzGA0gASgJEjUKD2NvbXBhcnRt",
+            "ZW50Q29kZRgOIAEoDjIcLmNhYmluX2NvZGVzLkNvbXBhcnRtZW50Q29kZRIZ",
+            "CgpzZWF0TnVtYmVyGA8gASgJQgWSQQJ4BRIWCg5zZXF1ZW5jZU51bWJlchgQ",
+            "IAEoBRIVCg1ib2FyZGluZ0dyb3VwGBEgASgJEhgKEGJvYXJkaW5nUG9zaXRp",
+            "b24YEiABKAkSJgoUZnJlZUJhZ2dhZ2VBbGxvd2FuY2UYEyABKAlCCJJBBXgD",
+            "gAEDEiIKEGNhcnJ5T25BbGxvd2FuY2UYFCABKAlCCJJBBXgDgAEDEhAKCHNz",
+            "ckNvZGVzGBUgAygJEgsKA29zaRgWIAEoCRIPCgdyZW1hcmtzGBcgASgJEjEK",
+            "D3Bhc3NlbmdlclN0YXR1cxgYIAEoDjIYLmZsaWdodHMuUGFzc2VuZ2VyU3Rh",
+            "dHVzEjMKEGNvbmRpdGlvbmFsSXRlbXMYGSABKAsyGS5mbGlnaHRzLkNvbmRp",
+            "dGlvbmFsSXRlbXMSFgoOYmFyY29kZVBheWxvYWQYGiABKAkSFQoNc2VjdXJp",
+            "dHlJbWFnZRgbIAEoCRIWCg5wcml2aWxlZ2VJbWFnZRgcIAEoCRITCgtmb290",
+            "ZXJJbWFnZRgdIAEoCRIxChBsb2NhdGlvbk1lc3NhZ2VzGB4gAygLMg8uaW8u",
+            "R1BTTG9jYXRpb25CBpJBA6ABChIqCg5iZWFjb25NZXNzYWdlcxgfIAMoCzIK",
+            "LmlvLkJlYWNvbkIGkkEDoAEKEh8KBWxpbmtzGCAgAygLMgguaW8uTGlua0IG",
+            "kkEDoAEKEh0KFWJhcmNvZGVBZGRpdGlvbmFsRGF0YRghIAEoCRIqChNhZGRp",
+            "dGlvbmFsRGF0YUl0ZW1zGCMgASgLMg0uaW8uRGF0YUl0ZW1zEiEKBHVybHMY",
+            "JSABKAsyEy5mbGlnaHRzLkZsaWdodFVSTHMSNAoMQ2FwYWJpbGl0aWVzGCYg",
+            "AygOMh4uZmxpZ2h0cy5QYXNzZW5nZXJDYXBhYmlsaXRpZXMSOgoQU2VjdXJp",
+            "dHlQcm9ncmFtcxgnIAMoDjIgLmZsaWdodHMuQWlycG9ydFNlY3VyaXR5UHJv",
+            "Z3JhbXMSFAoMaW5mYW50UGFzc0lkGCIgASgJEh4KCG1ldGFkYXRhGCQgASgL",
             "MgwuaW8uTWV0YWRhdGE6+gOSQfYDCvMDKhRCb2FyZGluZyBQYXNzIFJlY29y",
             "ZDLZAkEgQm9hcmRpbmcgUGFzcyByZWNvcmQgaXMgdW5pcXVlIHRvIGFuIGlu",
             "ZGl2aWR1YWwgcGFzc2VuZ2VyIGpvdXJuZXkgZm9ybSBhIGJvYXJkaW5nIHBv",
@@ -111,9 +116,9 @@ namespace PassKit.Grpc.Flights {
             "c3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvL2ZsaWdodHOq",
             "AhRQYXNzS2l0LkdycGMuRmxpZ2h0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.Flights.PassengerReflection.Descriptor, global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.Flights.CabinCodes.CabinCodesReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.Flights.AirportReflection.Descriptor, global::PassKit.Grpc.Flights.PassengerReflection.Descriptor, global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.Flights.FlightReflection.Descriptor, global::PassKit.Grpc.Flights.CommonReflection.Descriptor, global::PassKit.Grpc.Flights.CabinCodes.CabinCodesReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecord), global::PassKit.Grpc.Flights.BoardingPassRecord.Parser, new[]{ "Id", "OperatingCarrierPNR", "RelatedPNRs", "TicketNumber", "TicketLeg", "BoardingPoint", "DeplaningPoint", "CarrierCode", "FlightNumber", "DepartureDate", "Passenger", "Class", "CompartmentCode", "SeatNumber", "SequenceNumber", "BoardingGroup", "BoardingPosition", "FreeBaggageAllowance", "CarryOnAllowance", "SsrCodes", "Osi", "Remarks", "PassengerStatus", "ConditionalItems", "BarcodePayload", "SecurityImage", "PrivilegeImage", "FooterImage", "LocationMessages", "BeaconMessages", "Links", "BarcodeAdditionalData", "InfantPassId", "AdditionalDataItems", "Metadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecord), global::PassKit.Grpc.Flights.BoardingPassRecord.Parser, new[]{ "Id", "OperatingCarrierPNR", "RelatedPNRs", "TicketNumber", "TicketLeg", "BoardingPoint", "DeplaningPoint", "CarrierCode", "FlightNumber", "DepartureDate", "Passenger", "Class", "CompartmentCode", "SeatNumber", "SequenceNumber", "BoardingGroup", "BoardingPosition", "FreeBaggageAllowance", "CarryOnAllowance", "SsrCodes", "Osi", "Remarks", "PassengerStatus", "ConditionalItems", "BarcodePayload", "SecurityImage", "PrivilegeImage", "FooterImage", "LocationMessages", "BeaconMessages", "Links", "BarcodeAdditionalData", "AdditionalDataItems", "Urls", "Capabilities", "SecurityPrograms", "InfantPassId", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecordRequestByTicketNumber), global::PassKit.Grpc.Flights.BoardingPassRecordRequestByTicketNumber.Parser, new[]{ "TicketNumber", "TicketLeg", "BoardingPoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecordRequestByIndex), global::PassKit.Grpc.Flights.BoardingPassRecordRequestByIndex.Parser, new[]{ "CarrierCode", "FlightNumber", "DepartureDate", "BoardingPoint", "SequenceNumber" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRequest), global::PassKit.Grpc.Flights.BoardingPassRequest.Parser, new[]{ "TicketNumber", "Index", "Pnr", "PassId", "Format" }, new[]{ "Request" }, null, null, null),
@@ -196,8 +201,11 @@ namespace PassKit.Grpc.Flights {
       beaconMessages_ = other.beaconMessages_.Clone();
       links_ = other.links_.Clone();
       barcodeAdditionalData_ = other.barcodeAdditionalData_;
-      infantPassId_ = other.infantPassId_;
       additionalDataItems_ = other.additionalDataItems_ != null ? other.additionalDataItems_.Clone() : null;
+      urls_ = other.urls_ != null ? other.urls_.Clone() : null;
+      capabilities_ = other.capabilities_.Clone();
+      securityPrograms_ = other.securityPrograms_.Clone();
+      infantPassId_ = other.infantPassId_;
       metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -683,6 +691,64 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
+    /// <summary>Field number for the "additionalDataItems" field.</summary>
+    public const int AdditionalDataItemsFieldNumber = 35;
+    private global::PassKit.Grpc.DataItems additionalDataItems_;
+    /// <summary>
+    /// Optional key value pairs to be added in to the flight record.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.DataItems AdditionalDataItems {
+      get { return additionalDataItems_; }
+      set {
+        additionalDataItems_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "urls" field.</summary>
+    public const int UrlsFieldNumber = 37;
+    private global::PassKit.Grpc.Flights.FlightURLs urls_;
+    /// <summary>
+    /// URLs at the flight level will be completely overwritten by URLs at boarding pass level. For example, a Purchase Wifi, or Purchase Lounge Access may apply to every passenger except for passengers that have already purchased. In these cases, it is more efficient to update the boarding pass objects of those that have purchased, so as not to display a redundant link.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Flights.FlightURLs Urls {
+      get { return urls_; }
+      set {
+        urls_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Capabilities" field.</summary>
+    public const int CapabilitiesFieldNumber = 38;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Flights.PassengerCapabilities> _repeated_capabilities_codec
+        = pb::FieldCodec.ForEnum(306, x => (int) x, x => (global::PassKit.Grpc.Flights.PassengerCapabilities) x);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities> capabilities_ = new pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities>();
+    /// <summary>
+    /// Passenger Capabilities are used by Apple Semantic boarding passes to visibly display useful information at the boarding gate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities> Capabilities {
+      get { return capabilities_; }
+    }
+
+    /// <summary>Field number for the "SecurityPrograms" field.</summary>
+    public const int SecurityProgramsFieldNumber = 39;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Flights.AirportSecurityPrograms> _repeated_securityPrograms_codec
+        = pb::FieldCodec.ForEnum(314, x => (int) x, x => (global::PassKit.Grpc.Flights.AirportSecurityPrograms) x);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> securityPrograms_ = new pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms>();
+    /// <summary>
+    /// Airport Security Programs are by Apple Semantic boarding passes to visibly display on the pass. Both the Airport and the Passenger must be members of the program, otherwise value is ignored.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> SecurityPrograms {
+      get { return securityPrograms_; }
+    }
+
     /// <summary>Field number for the "infantPassId" field.</summary>
     public const int InfantPassIdFieldNumber = 34;
     private string infantPassId_ = "";
@@ -698,26 +764,11 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
-    /// <summary>Field number for the "additionalDataItems" field.</summary>
-    public const int AdditionalDataItemsFieldNumber = 35;
-    private global::PassKit.Grpc.DataItems additionalDataItems_;
-    /// <summary>
-    /// Optional key value pairs to be added in to the flight record
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.DataItems AdditionalDataItems {
-      get { return additionalDataItems_; }
-      set {
-        additionalDataItems_ = value;
-      }
-    }
-
     /// <summary>Field number for the "metadata" field.</summary>
     public const int MetadataFieldNumber = 36;
     private global::PassKit.Grpc.Metadata metadata_;
     /// <summary>
-    /// Pass Metadata
+    /// Pass Metadata.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -775,8 +826,11 @@ namespace PassKit.Grpc.Flights {
       if(!beaconMessages_.Equals(other.beaconMessages_)) return false;
       if(!links_.Equals(other.links_)) return false;
       if (BarcodeAdditionalData != other.BarcodeAdditionalData) return false;
-      if (InfantPassId != other.InfantPassId) return false;
       if (!object.Equals(AdditionalDataItems, other.AdditionalDataItems)) return false;
+      if (!object.Equals(Urls, other.Urls)) return false;
+      if(!capabilities_.Equals(other.capabilities_)) return false;
+      if(!securityPrograms_.Equals(other.securityPrograms_)) return false;
+      if (InfantPassId != other.InfantPassId) return false;
       if (!object.Equals(Metadata, other.Metadata)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -817,8 +871,11 @@ namespace PassKit.Grpc.Flights {
       hash ^= beaconMessages_.GetHashCode();
       hash ^= links_.GetHashCode();
       if (BarcodeAdditionalData.Length != 0) hash ^= BarcodeAdditionalData.GetHashCode();
-      if (InfantPassId.Length != 0) hash ^= InfantPassId.GetHashCode();
       if (additionalDataItems_ != null) hash ^= AdditionalDataItems.GetHashCode();
+      if (urls_ != null) hash ^= Urls.GetHashCode();
+      hash ^= capabilities_.GetHashCode();
+      hash ^= securityPrograms_.GetHashCode();
+      if (InfantPassId.Length != 0) hash ^= InfantPassId.GetHashCode();
       if (metadata_ != null) hash ^= Metadata.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -963,6 +1020,12 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(162, 2);
         output.WriteMessage(Metadata);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
+      capabilities_.WriteTo(output, _repeated_capabilities_codec);
+      securityPrograms_.WriteTo(output, _repeated_securityPrograms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1098,6 +1161,12 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(162, 2);
         output.WriteMessage(Metadata);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
+      capabilities_.WriteTo(ref output, _repeated_capabilities_codec);
+      securityPrograms_.WriteTo(ref output, _repeated_securityPrograms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1194,11 +1263,16 @@ namespace PassKit.Grpc.Flights {
       if (BarcodeAdditionalData.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(BarcodeAdditionalData);
       }
-      if (InfantPassId.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(InfantPassId);
-      }
       if (additionalDataItems_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AdditionalDataItems);
+      }
+      if (urls_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Urls);
+      }
+      size += capabilities_.CalculateSize(_repeated_capabilities_codec);
+      size += securityPrograms_.CalculateSize(_repeated_securityPrograms_codec);
+      if (InfantPassId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(InfantPassId);
       }
       if (metadata_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
@@ -1310,14 +1384,22 @@ namespace PassKit.Grpc.Flights {
       if (other.BarcodeAdditionalData.Length != 0) {
         BarcodeAdditionalData = other.BarcodeAdditionalData;
       }
-      if (other.InfantPassId.Length != 0) {
-        InfantPassId = other.InfantPassId;
-      }
       if (other.additionalDataItems_ != null) {
         if (additionalDataItems_ == null) {
           AdditionalDataItems = new global::PassKit.Grpc.DataItems();
         }
         AdditionalDataItems.MergeFrom(other.AdditionalDataItems);
+      }
+      if (other.urls_ != null) {
+        if (urls_ == null) {
+          Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+        }
+        Urls.MergeFrom(other.Urls);
+      }
+      capabilities_.Add(other.capabilities_);
+      securityPrograms_.Add(other.securityPrograms_);
+      if (other.InfantPassId.Length != 0) {
+        InfantPassId = other.InfantPassId;
       }
       if (other.metadata_ != null) {
         if (metadata_ == null) {
@@ -1499,6 +1581,23 @@ namespace PassKit.Grpc.Flights {
             input.ReadMessage(Metadata);
             break;
           }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
+            break;
+          }
+          case 306:
+          case 304: {
+            capabilities_.AddEntriesFrom(input, _repeated_capabilities_codec);
+            break;
+          }
+          case 314:
+          case 312: {
+            securityPrograms_.AddEntriesFrom(input, _repeated_securityPrograms_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1671,6 +1770,23 @@ namespace PassKit.Grpc.Flights {
               Metadata = new global::PassKit.Grpc.Metadata();
             }
             input.ReadMessage(Metadata);
+            break;
+          }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
+            break;
+          }
+          case 306:
+          case 304: {
+            capabilities_.AddEntriesFrom(ref input, _repeated_capabilities_codec);
+            break;
+          }
+          case 314:
+          case 312: {
+            securityPrograms_.AddEntriesFrom(ref input, _repeated_securityPrograms_codec);
             break;
           }
         }

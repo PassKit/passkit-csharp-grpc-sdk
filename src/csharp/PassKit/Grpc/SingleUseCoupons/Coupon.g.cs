@@ -81,6 +81,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
   #region Enums
+  /// <summary>
+  /// Enum representing the redemption state of a coupon.
+  /// </summary>
   public enum CouponStatus {
     /// <summary>
     /// Default status when a coupon is issued.
@@ -96,7 +99,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   #region Messages
   /// <summary>
-  /// The Coupon Details
+  /// Represents a unique coupon instance (pass) with associated data and state.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Coupon : pb::IMessage<Coupon>
@@ -911,6 +914,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Redemption metadata attached to a coupon once it's redeemed.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedemptionDetails : pb::IMessage<RedemptionDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1470,6 +1476,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Request to fetch a coupon using a campaign ID and external ID.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExternalIdRequest : pb::IMessage<ExternalIdRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1711,6 +1720,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Deprecated request message for listing coupons with pagination.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequestDeprecated : pb::IMessage<ListRequestDeprecated>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1961,6 +1973,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Request to list coupons with optional filters and export options.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListRequest : pb::IMessage<ListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2012,7 +2027,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int CouponCampaignIdFieldNumber = 1;
     private string couponCampaignId_ = "";
     /// <summary>
-    /// Coupon Campaign ID
+    /// Coupon Campaign ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2027,7 +2042,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
     public const int FiltersFieldNumber = 2;
     private global::PassKit.Grpc.Filters filters_;
     /// <summary>
-    /// External ID
+    /// Filters to apply when listing members (e.g., by tier, status).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2041,6 +2056,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "emailAsCsv" field.</summary>
     public const int EmailAsCsvFieldNumber = 3;
     private bool emailAsCsv_;
+    /// <summary>
+    /// If true, the list will be emailed as a CSV file instead of returned in the response.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EmailAsCsv {
@@ -2248,6 +2266,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Request to update the external ID for a coupon.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponNewExternalIdRequest : pb::IMessage<CouponNewExternalIdRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

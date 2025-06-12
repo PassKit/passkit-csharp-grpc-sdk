@@ -573,6 +573,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a collection of links stored in a database context.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DbLink : pb::IMessage<DbLink>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

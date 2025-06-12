@@ -45,7 +45,7 @@ namespace PassKit.Grpc.Members {
   }
   #region Messages
   /// <summary>
-  /// Details on the event. These info will be stored in Member Event.
+  /// Additional details about a member event. These fields will be stored in the Member Event record.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventDetails : pb::IMessage<EventDetails>
@@ -105,7 +105,7 @@ namespace PassKit.Grpc.Members {
     public const int AddressFieldNumber = 1;
     private string address_ = "";
     /// <summary>
-    /// Address the event took place.
+    /// Address where the event occurred.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -120,7 +120,7 @@ namespace PassKit.Grpc.Members {
     public const int LatFieldNumber = 2;
     private double lat_;
     /// <summary>
-    /// Latitude the event took place.
+    /// Latitude where the event occurred.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -135,7 +135,7 @@ namespace PassKit.Grpc.Members {
     public const int LonFieldNumber = 3;
     private double lon_;
     /// <summary>
-    /// Longitude the event took place.
+    /// Longitude where the event occurred.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -150,7 +150,7 @@ namespace PassKit.Grpc.Members {
     public const int AltFieldNumber = 4;
     private int alt_;
     /// <summary>
-    /// Altitude the event took place (in metres).
+    /// Altitude where the event occurred, in meters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -165,7 +165,7 @@ namespace PassKit.Grpc.Members {
     public const int ExternalEventIdFieldNumber = 5;
     private string externalEventId_ = "";
     /// <summary>
-    /// External unique ID of the event.
+    /// External unique ID associated with the event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -180,7 +180,7 @@ namespace PassKit.Grpc.Members {
     public const int ExternalDeviceIdFieldNumber = 6;
     private string externalDeviceId_ = "";
     /// <summary>
-    /// External device ID of the device that was used to capture the event (for example when using an external scanning app).
+    /// External device ID of the device used to capture the event (e.g., from an external scanning app).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -195,7 +195,7 @@ namespace PassKit.Grpc.Members {
     public const int ExternalServiceIdFieldNumber = 7;
     private string externalServiceId_ = "";
     /// <summary>
-    /// External service ID of the service that was used for capturing the event (for example when using an external scanning app).
+    /// External service ID of the service used to capture the event (e.g., an external scanning platform).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -212,7 +212,7 @@ namespace PassKit.Grpc.Members {
         = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 66);
     private readonly pbc::MapField<string, string> metaData_ = new pbc::MapField<string, string>();
     /// <summary>
-    /// Any meta data (for example gathered on scanning) that is relevant to the event (# of points earner, bill spent, device meta-data, etc).
+    /// Additional metadata related to the event (e.g., points earned, bill amount, device information).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -224,7 +224,7 @@ namespace PassKit.Grpc.Members {
     public const int NotesFieldNumber = 9;
     private string notes_ = "";
     /// <summary>
-    /// Any relevant notes for the event.
+    /// Any additional notes related to the event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -239,7 +239,7 @@ namespace PassKit.Grpc.Members {
     public const int ExternalUserIdFieldNumber = 10;
     private string externalUserId_ = "";
     /// <summary>
-    /// External user ID of the logged in user that captured the event (for example when using an external scanning app).
+    /// External user ID of the logged-in user who captured the event (e.g., via an external app).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

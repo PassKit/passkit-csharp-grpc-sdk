@@ -890,6 +890,9 @@ namespace PassKit.Grpc.Raw {
 
   }
 
+  /// <summary>
+  /// Request to retrieve a pass record using its external ID and associated Pass Project ID.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassRecordByExternalIdRequest : pb::IMessage<PassRecordByExternalIdRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1131,6 +1134,9 @@ namespace PassKit.Grpc.Raw {
 
   }
 
+  /// <summary>
+  /// Request to list passes for a given Pass Project. Filters can be applied to narrow down results.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListPassesByPassProjectRequest : pb::IMessage<ListPassesByPassProjectRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1375,6 +1381,9 @@ namespace PassKit.Grpc.Raw {
 
   }
 
+  /// <summary>
+  /// Request to list passes associated with a specific Pass Template. Filters can be applied to narrow down results.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ListPassesByPassTemplateRequest : pb::IMessage<ListPassesByPassTemplateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -42,6 +42,9 @@ namespace PassKit.Grpc {
 
   }
   #region Messages
+  /// <summary>
+  /// Quota provides usage and status information for various metered event types. The key is one of the values from pk.MeteredEventType.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Quota : pb::IMessage<Quota>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -232,6 +235,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// QuotaDetails provides information about a specific quota usage.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QuotaDetails : pb::IMessage<QuotaDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -126,6 +126,9 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("FBP_STANDARD_EVENT_VIEW_CONTENT")] FbpStandardEventViewContent = 9,
   }
 
+  /// <summary>
+  /// Enum of events used on the data collection page for Google Analytics.
+  /// </summary>
   public enum GoogleAnalyticsDataCollectionPageEvent {
     [pbr::OriginalName("GA_DC_EVENT_DO_NOT_USE")] GaDcEventDoNotUse = 0,
     /// <summary>
@@ -138,6 +141,9 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("GA_DC_EVENT_SUBMIT_FORM")] GaDcEventSubmitForm = 2,
   }
 
+  /// <summary>
+  /// Enum of events used on the pass render page for Google Analytics.
+  /// </summary>
   public enum GoogleAnalyticsPassRenderPageEvent {
     [pbr::OriginalName("GA_PP_EVENT_DO_NOT_USE")] GaPpEventDoNotUse = 0,
     /// <summary>
@@ -162,6 +168,9 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("GA_PP_EVENT_CHANGE_LANGUAGE")] GaPpEventChangeLanguage = 5,
   }
 
+  /// <summary>
+  /// Enum of events used on the customer-initiated redemption page for Google Analytics.
+  /// </summary>
   public enum GoogleAnalyticsCustomerInitiatedRedemptionPageEvent {
     [pbr::OriginalName("GA_CIRP_EVENT_DO_NOT_USE")] GaCirpEventDoNotUse = 0,
     /// <summary>
@@ -177,6 +186,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Facebook Pixel configuration for tracking page views and interactions.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FacebookPixelSettings : pb::IMessage<FacebookPixelSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -552,6 +564,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a standard Facebook Pixel event.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StandardEvent : pb::IMessage<StandardEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -793,6 +808,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a custom Facebook Pixel event.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomEvent : pb::IMessage<CustomEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1034,6 +1052,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Google Analytics configuration for different page views and events.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GoogleAnalyticsSettings : pb::IMessage<GoogleAnalyticsSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1317,6 +1338,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Wrapper to configure tracking settings across multiple platforms.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TrackingSettings : pb::IMessage<TrackingSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

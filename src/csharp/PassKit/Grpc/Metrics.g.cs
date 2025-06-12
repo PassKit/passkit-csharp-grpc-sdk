@@ -662,6 +662,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// UTM parameters used for tracking the source and behavior of a user journey.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UTM : pb::IMessage<UTM>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1023,6 +1026,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Location metadata, typically collected when a pass is issued.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MetaLocation : pb::IMessage<MetaLocation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

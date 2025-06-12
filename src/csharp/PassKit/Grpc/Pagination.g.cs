@@ -46,6 +46,9 @@ namespace PassKit.Grpc {
 
   }
   #region Messages
+  /// <summary>
+  /// Pagination object used to split content into smaller parts.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Pagination : pb::IMessage<Pagination>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -454,6 +457,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Basic filter structure used for querying data.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Filter : pb::IMessage<Filter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

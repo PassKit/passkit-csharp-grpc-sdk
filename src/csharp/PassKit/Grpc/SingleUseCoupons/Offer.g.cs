@@ -156,7 +156,13 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
   #region Enums
+  /// <summary>
+  /// Enum defining the type of expiry logic applied to issued coupons.
+  /// </summary>
   public enum CouponExpiryType {
+    /// <summary>
+    /// Do not use
+    /// </summary>
     [pbr::OriginalName("EXPIRY_DO_NOT_USE")] ExpiryDoNotUse = 0,
     /// <summary>
     /// The system will set the coupon expiry based to the campaign end date (default).
@@ -180,6 +186,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     [pbr::OriginalName("EXPIRE_ON_VARIABLE_DATE_TIME")] ExpireOnVariableDateTime = 4,
   }
 
+  /// <summary>
+  /// Enum defining the allowed methods for redeeming a coupon.
+  /// </summary>
   public enum RedemptionType {
     /// <summary>
     /// Zero index should not be used
@@ -208,7 +217,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   #region Messages
   /// <summary>
-  /// The Coupon Offer Details.
+  /// Represents a coupon offer with configuration, design, and redemption settings.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponOffer : pb::IMessage<CouponOffer>
@@ -1439,6 +1448,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Defines the expiry behavior for a coupon offer.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponExpirySettings : pb::IMessage<CouponExpirySettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1488,6 +1500,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "couponExpiryType" field.</summary>
     public const int CouponExpiryTypeFieldNumber = 1;
     private global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType couponExpiryType_ = global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType.ExpiryDoNotUse;
+    /// <summary>
+    /// The coupon expiry type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.SingleUseCoupons.CouponExpiryType CouponExpiryType {
@@ -1679,6 +1694,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Settings controlling how and when coupons can be redeemed.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedemptionSettings : pb::IMessage<RedemptionSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2116,6 +2134,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Settings for displaying a fixed redemption code to the customer.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerInitiatedFixedCodeSettings : pb::IMessage<CustomerInitiatedFixedCodeSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2446,6 +2467,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Controls how long a redemption code is visible and what is shown during the countdown.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedemptionTimerSettings : pb::IMessage<RedemptionTimerSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2736,6 +2760,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Settings for customer-entered redemption codes and input validation.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerInitiatedCodeProvideOnRedeemSettings : pb::IMessage<CustomerInitiatedCodeProvideOnRedeemSettings>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3064,6 +3091,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Input field configuration used in customer-initiated redemption.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class InputField : pb::IMessage<InputField>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3710,6 +3740,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Defines the hosted redemption page shown to customers.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StandardPassKitHostedPage : pb::IMessage<StandardPassKitHostedPage>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4455,6 +4488,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Defines the call-to-action button shown on error or post-redeem states.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CallToActionButton : pb::IMessage<CallToActionButton>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4834,6 +4870,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Response texts shown on the hosted redemption page in various states.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ResponseTexts : pb::IMessage<ResponseTexts>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5533,7 +5572,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
   }
 
   /// <summary>
-  /// [DEPRECATED: OR operator not supported] Filter and list records.
+  /// Deprecated request to list coupon offers using pagination.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponOffersListRequestDeprecated : pb::IMessage<CouponOffersListRequestDeprecated>
@@ -5584,6 +5623,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "campaignId" field.</summary>
     public const int CampaignIdFieldNumber = 1;
     private string campaignId_ = "";
+    /// <summary>
+    /// Campaign Id.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CampaignId {
@@ -5596,6 +5638,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "pagination" field.</summary>
     public const int PaginationFieldNumber = 2;
     private global::PassKit.Grpc.Pagination pagination_;
+    /// <summary>
+    /// Pagination settings for the request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Pagination Pagination {
@@ -5779,6 +5824,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
 
   }
 
+  /// <summary>
+  /// Request to list coupon offers with filtering options.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CouponOffersListRequest : pb::IMessage<CouponOffersListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5828,6 +5876,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "campaignId" field.</summary>
     public const int CampaignIdFieldNumber = 1;
     private string campaignId_ = "";
+    /// <summary>
+    /// Campaign Id.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CampaignId {
@@ -5840,6 +5891,9 @@ namespace PassKit.Grpc.SingleUseCoupons {
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 2;
     private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Filters to apply when listing offers (e.g., by date created, status).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {

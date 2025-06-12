@@ -49,6 +49,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Defines how to join grouped filter fields in a query.
+  /// </summary>
   public enum Operator {
     /// <summary>
     /// Join grouped filter fields with AND operator. E.g. tier_id = bronze AND tier_id = silver. The default.
@@ -63,6 +66,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Filters applies multiple filter conditions to retrieve matched records.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Filters : pb::IMessage<Filters>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -410,6 +416,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Defines a single filter condition for a field.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FieldFilter : pb::IMessage<FieldFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -691,6 +700,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// A group of field filters, combined using a logical condition (AND/OR).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FilterGroup : pb::IMessage<FilterGroup>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

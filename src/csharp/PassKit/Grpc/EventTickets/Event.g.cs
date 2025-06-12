@@ -120,6 +120,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
   #region Messages
+  /// <summary>
+  /// Represents a scheduled showing of a Production at a specific venue and time.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Event : pb::IMessage<Event>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -182,7 +185,7 @@ namespace PassKit.Grpc.EventTickets {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// PassKit generated event id (22 characters). No writable.
+    /// PassKit generated event id (22 characters). Not writable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -938,6 +941,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Represents a start and end time of an event.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventHours : pb::IMessage<EventHours>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -987,6 +993,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "startTime" field.</summary>
     public const int StartTimeFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    /// <summary>
+    /// Start time of the event.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
@@ -1191,6 +1200,10 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request to list all events within a production.
+  /// Required fields: productionId or productionUid.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventListRequest : pb::IMessage<EventListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1307,6 +1320,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "venueId" field.</summary>
     public const int VenueIdFieldNumber = 3;
     private string venueId_ = "";
+    /// <summary>
+    /// PassKit generated venue id (22 characters).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueId {
@@ -1319,6 +1335,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 4;
     private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Optional filter object; defines the segment.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {
@@ -1576,6 +1595,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request to retrieve a single event based on production, venue, and start time. Required fields: productionId or productionUid, venueId or venueUid, scheduledStartDate.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetEventRequest : pb::IMessage<GetEventRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2068,6 +2090,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight response version of an event, typically includes start and end time only.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventLimitedFieldsResponse : pb::IMessage<EventLimitedFieldsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2416,6 +2441,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight request version of an event, typically used in filters or references. Required fields: productionId, venueId, scheduledStartDate.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventLimitedFieldsRequest : pb::IMessage<EventLimitedFieldsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3176,6 +3204,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Response containing event search results with limited production and venue fields.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventListResponse : pb::IMessage<EventListResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

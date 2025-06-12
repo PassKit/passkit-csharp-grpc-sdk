@@ -225,6 +225,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
   #region Enums
+  /// <summary>
+  /// List of allowed ticket statuses.
+  /// </summary>
   public enum TicketStatus {
     [pbr::OriginalName("STATUS_NONE")] StatusNone = 0,
     /// <summary>
@@ -241,8 +244,7 @@ namespace PassKit.Grpc.EventTickets {
 
   #region Messages
   /// <summary>
-  /// An object to communicate the ID of the ticket. Either the ticket id (22 character identifier), or the production id
-  /// (22 character identifier), or Production UID (user defined id) plus the externally provided ticket number should be provided.
+  /// A wrapper to uniquely identify a ticket either by its ID or a combination of production ID/UID and ticket number. Required fields: ticketId or ticketNumber object.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketId : pb::IMessage<TicketId>
@@ -545,6 +547,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Identifies a ticket by combining a production ID or UID with a unique ticket number. Required fields: productionId, ticketNumber.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketNumber : pb::IMessage<TicketNumber>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -787,7 +792,7 @@ namespace PassKit.Grpc.EventTickets {
   }
 
   /// <summary>
-  /// The Ticket Details
+  /// Represents a Ticket, which is a unique entry for a specific event, issued to a ticket holder. Contains metadata like seat info, barcode, status, and personal details. Required fields: event, ticketType.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Ticket : pb::IMessage<Ticket>
@@ -1827,6 +1832,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Holds details of how a ticket was validated. Includes timestamps and optional metadata. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidateDetails : pb::IMessage<ValidateDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2237,6 +2245,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Contains redemption information for a redeemed ticket. Set by the redeem endpoint only. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedemptionDetails : pb::IMessage<RedemptionDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2647,6 +2658,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Represents a ticket's price and currency. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class FaceValue : pb::IMessage<FaceValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2888,6 +2902,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Describes a seat's location, category, and venue mapping. Optional fields support localization and additional entrance/admission details. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Seat : pb::IMessage<Seat>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4602,6 +4619,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Represents a list of filtered tickets based on production, event, and type. Required fields: productionId or productionUid.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketListRequest : pb::IMessage<TicketListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5231,6 +5251,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Filters tickets for a specific event using venue ID or UID and a start date. Required fields: venueId or venueUid, scheduledStartDate.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventFilterByVenueAndStart : pb::IMessage<EventFilterByVenueAndStart>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5521,6 +5544,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to look up a ticket based on its number and associated production. Required fields: productionId or productionUid, ticketNumber.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketNumberRequest : pb::IMessage<TicketNumberRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5802,6 +5828,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to look up or redeem a ticket based on its associated order number. Required fields: productionId or productionUid, orderNumber.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OrderNumberRequest : pb::IMessage<OrderNumberRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6083,6 +6112,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to redeem all tickets within a specific order. Required fields: productionId or productionUid, orderNumber.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedeemByOrderNumber : pb::IMessage<RedeemByOrderNumber>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6413,6 +6445,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Response that contains an array of ticket summary entries. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Tickets : pb::IMessage<Tickets>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6600,6 +6635,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Contains an array of PassKit pass bundles. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketPassBundles : pb::IMessage<TicketPassBundles>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6790,6 +6828,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to validate a ticket with optional metadata and validation cap. Required fields: ticketId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidateTicketRequest : pb::IMessage<ValidateTicketRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -7089,6 +7130,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Contains the result of a ticket validation including full ticket details. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ValidateTicketResponse : pb::IMessage<ValidateTicketResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -7339,6 +7383,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to redeem a single ticket with optional redemption metadata. Required fields: ticketId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RedeemTicketRequest : pb::IMessage<RedeemTicketRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -7598,6 +7645,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight representation of a ticket with key details used in summaries or filtered responses. Required fields: event, ticketTypeUid.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketLimitedFields : pb::IMessage<TicketLimitedFields>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -8734,6 +8784,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request message for issuing a ticket. Event will be auto-created if it doesn’t exist. Required fields: eventId or event, ticketTypeId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IssueTicketRequest : pb::IMessage<IssueTicketRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -9814,6 +9867,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Response containing system-generated identifiers when a ticket is successfully issued. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IssueTicketResponseIds : pb::IMessage<IssueTicketResponseIds>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -10175,6 +10231,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request to retrieve a ticket pass (URL or format) by ID, ticket number, or order number. Required fields: ticketId or ticketNumber or orderNumber.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventTicketPassRequest : pb::IMessage<EventTicketPassRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -10234,6 +10293,9 @@ namespace PassKit.Grpc.EventTickets {
 
     /// <summary>Field number for the "ticketId" field.</summary>
     public const int TicketIdFieldNumber = 1;
+    /// <summary>
+    /// PassKit generated ticket id (22 characters).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Id TicketId {
@@ -10246,6 +10308,9 @@ namespace PassKit.Grpc.EventTickets {
 
     /// <summary>Field number for the "ticketNumber" field.</summary>
     public const int TicketNumberFieldNumber = 2;
+    /// <summary>
+    /// Ticket Number.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketNumberRequest TicketNumber {
@@ -10258,6 +10323,9 @@ namespace PassKit.Grpc.EventTickets {
 
     /// <summary>Field number for the "orderNumber" field.</summary>
     public const int OrderNumberFieldNumber = 3;
+    /// <summary>
+    /// Order Number.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.OrderNumberRequest OrderNumber {
@@ -10553,6 +10621,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Used to update the ticket holder details of a ticket by ID or ticket number.Required fields: ticketId or ticketNumber, person.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventTicketPerson : pb::IMessage<EventTicketPerson>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -10609,6 +10680,9 @@ namespace PassKit.Grpc.EventTickets {
 
     /// <summary>Field number for the "ticketId" field.</summary>
     public const int TicketIdFieldNumber = 1;
+    /// <summary>
+    /// PassKit generated ticket id (22 characters).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Id TicketId {
@@ -10621,6 +10695,9 @@ namespace PassKit.Grpc.EventTickets {
 
     /// <summary>Field number for the "ticketNumber" field.</summary>
     public const int TicketNumberFieldNumber = 2;
+    /// <summary>
+    /// Ticket Number.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.EventTickets.TicketNumberRequest TicketNumber {
@@ -10634,6 +10711,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "person" field.</summary>
     public const int PersonFieldNumber = 5;
     private global::PassKit.Grpc.Person person_;
+    /// <summary>
+    /// Personal details of the ticket holder.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {

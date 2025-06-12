@@ -66,7 +66,7 @@ namespace PassKit.Grpc.EventTickets {
   }
   #region Messages
   /// <summary>
-  /// The Ticket Type Details
+  /// Defines a ticket type and its associated settings and pass templates. Required fields: productionId, name, beforeRedeemPassTemplateId.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketType : pb::IMessage<TicketType>
@@ -705,6 +705,10 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request to retrieve a ticket type using its productionId and user-defined uid.
+  /// Required fields: productionId, uid.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetByUidRequest : pb::IMessage<GetByUidRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -946,6 +950,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight representation of a ticket type with essential fields only. Required fields: id or uid, name.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketTypeLimitedFields : pb::IMessage<TicketTypeLimitedFields>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1227,6 +1234,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Request to list all ticket types within a production, optionally using filters. Required fields: productionId.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TicketTypeListRequest : pb::IMessage<TicketTypeListRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1276,6 +1286,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "productionId" field.</summary>
     public const int ProductionIdFieldNumber = 1;
     private string productionId_ = "";
+    /// <summary>
+    /// The Production the ticket type belongs to
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProductionId {
@@ -1288,6 +1301,9 @@ namespace PassKit.Grpc.EventTickets {
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 2;
     private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Filters: allows to filter on additional ticket type data.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Filters Filters {

@@ -45,40 +45,127 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// DeviceAttributes is a bitmask enum describing capabilities or properties of a device.
+  /// </summary>
   public enum DeviceAttributes {
+    /// <summary>
+    /// No attributes are set.
+    /// </summary>
     [pbr::OriginalName("NoAttributes")] NoAttributes = 0,
+    /// <summary>
+    /// Device is running iOS.
+    /// </summary>
     [pbr::OriginalName("Ios")] Ios = 1,
+    /// <summary>
+    /// Device is running Android.
+    /// </summary>
     [pbr::OriginalName("Android")] Android = 2,
+    /// <summary>
+    /// Device supports a wallet application.
+    /// </summary>
     [pbr::OriginalName("SupportWallet")] SupportWallet = 4,
+    /// <summary>
+    /// Device has a wallet scanner installed.
+    /// </summary>
     [pbr::OriginalName("WalletScanner")] WalletScanner = 8,
+    /// <summary>
+    /// Device runs a background wallet daemon.
+    /// </summary>
     [pbr::OriginalName("WalletDaemon")] WalletDaemon = 16,
+    /// <summary>
+    /// Device supports .pkpass files.
+    /// </summary>
     [pbr::OriginalName("WalletPasses")] WalletPasses = 32,
+    /// <summary>
+    /// Device is running Windows.
+    /// </summary>
     [pbr::OriginalName("Windows")] Windows = 64,
+    /// <summary>
+    /// Device is running macOS.
+    /// </summary>
     [pbr::OriginalName("OSX")] Osx = 128,
+    /// <summary>
+    /// Device is running Linux.
+    /// </summary>
     [pbr::OriginalName("Linux")] Linux = 256,
+    /// <summary>
+    /// Device is a mobile form factor.
+    /// </summary>
     [pbr::OriginalName("Mobile")] Mobile = 512,
+    /// <summary>
+    /// Device is a desktop form factor.
+    /// </summary>
     [pbr::OriginalName("Desktop")] Desktop = 1024,
+    /// <summary>
+    /// Device is a tablet.
+    /// </summary>
     [pbr::OriginalName("Tablet")] Tablet = 2048,
+    /// <summary>
+    /// Device is an unsupported version of iOS.
+    /// </summary>
     [pbr::OriginalName("UnsupportedIos")] UnsupportedIos = 4096,
   }
 
+  /// <summary>
+  /// Channel indicates the origin of a request.
+  /// </summary>
   public enum Channel {
+    /// <summary>
+    /// Unknown source.
+    /// </summary>
     [pbr::OriginalName("UnknownChannel")] UnknownChannel = 0,
+    /// <summary>
+    /// Request originated from the web application.
+    /// </summary>
     [pbr::OriginalName("Web")] Web = 1,
+    /// <summary>
+    /// Request originated via the public API.
+    /// </summary>
     [pbr::OriginalName("API")] Api = 2,
+    /// <summary>
+    /// Request originated from a mobile or desktop app.
+    /// </summary>
     [pbr::OriginalName("App")] App = 3,
   }
 
+  /// <summary>
+  /// Authentication defines the method used to authenticate the request.
+  /// </summary>
   public enum Authentication {
+    /// <summary>
+    /// No authentication provided.
+    /// </summary>
     [pbr::OriginalName("Unauthenticated")] Unauthenticated = 0,
+    /// <summary>
+    /// Session or web token was used.
+    /// </summary>
     [pbr::OriginalName("WebToken")] WebToken = 1,
+    /// <summary>
+    /// Bearer token authentication.
+    /// </summary>
     [pbr::OriginalName("BearerToken")] BearerToken = 2,
+    /// <summary>
+    /// Certificate-based authentication.
+    /// </summary>
     [pbr::OriginalName("Certificate")] Certificate = 3,
   }
 
+  /// <summary>
+  /// UserType describes the category of the user who made the request.
+  /// </summary>
   public enum UserType {
+    /// <summary>
+    /// Unknown or unspecified user type.
+    /// </summary>
     [pbr::OriginalName("UnknownUserType")] UnknownUserType = 0,
+    /// <summary>
+    /// Regular user.
+    /// </summary>
     [pbr::OriginalName("User")] User = 1,
+    /// <summary>
+    /// Team member with assigned roles and permissions.
+    /// </summary>
     [pbr::OriginalName("TeamMember")] TeamMember = 2,
   }
 

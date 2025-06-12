@@ -237,6 +237,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Enumerates supported event types.
+  /// </summary>
   public enum EventType {
     [pbr::OriginalName("EVENT_TYPE_NONE")] None = 0,
     [pbr::OriginalName("EVENT_TYPE_GENERIC")] Generic = 1,
@@ -252,6 +255,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Represents a currency amount with a numeric value and ISO currency code.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticCurrencyAmount : pb::IMessage<SemanticCurrencyAmount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -487,6 +493,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a geographical location using latitude and longitude.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticLocation : pb::IMessage<SemanticLocation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -722,6 +731,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a person's full name and related phonetic details.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticPersonName : pb::IMessage<SemanticPersonName>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1145,6 +1157,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Seat assignment and related metadata for event or transportation.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticSeat : pb::IMessage<SemanticSeat>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1639,6 +1654,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a WiFi network’s SSID and password.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticWifiNetwork : pb::IMessage<SemanticWifiNetwork>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1874,6 +1892,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents event date information with optional time and timezone.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticEventDateInfo : pb::IMessage<SemanticEventDateInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2164,6 +2185,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to display details such as teams, event timing, venue info, and artist IDs.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventSemanticTags : pb::IMessage<EventSemanticTags>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4284,6 +4308,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Metadata used across different protocols (e.g. events, flights). Includes info like names, locations, seats, pricing, and travel details.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SemanticTags : pb::IMessage<SemanticTags>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -62,7 +62,7 @@ namespace PassKit.Grpc.Members {
   }
   #region Messages
   /// <summary>
-  /// The Tier object; will override certain details of the pass (colours, logo's, dynamic back fields, and labels).
+  /// Tier definition for a membership program. A tier overrides default program settings such as design, colors, labels, and enrollment behavior.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Tier : pb::IMessage<Tier>
@@ -1098,7 +1098,7 @@ namespace PassKit.Grpc.Members {
   }
 
   /// <summary>
-  /// Used to request member tier record by tier id.
+  /// Request to fetch a tier record by program and tier ID.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TierRequestInput : pb::IMessage<TierRequestInput>

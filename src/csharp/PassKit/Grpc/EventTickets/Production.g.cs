@@ -78,6 +78,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
   #region Messages
+  /// <summary>
+  /// Represents a Production, which contains shared settings, branding, and distribution options for all Events under it (e.g., a theatre show, movie title, or recurring concert series).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Production : pb::IMessage<Production>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -875,6 +878,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Contains analytics data for a specific Production, including redemption counts, device breakdown, and distribution sources. Useful for reporting and tracking performance over time. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductionAnalyticsResponse : pb::IMessage<ProductionAnalyticsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1224,7 +1230,7 @@ namespace PassKit.Grpc.EventTickets {
   }
 
   /// <summary>
-  /// Contains payload for copying a Production.
+  /// Contains payload for copying an existing Production to a new one, including optional fields such as a new name, UID, or status. Used to duplicate configurations efficiently. Required fields: id.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductionCopyRequest : pb::IMessage<ProductionCopyRequest>
@@ -1578,6 +1584,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight response version of a Production, typically used inside other responses (such as Events) to avoid including full configuration data. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProductionLimitedFieldsResponse : pb::IMessage<ProductionLimitedFieldsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

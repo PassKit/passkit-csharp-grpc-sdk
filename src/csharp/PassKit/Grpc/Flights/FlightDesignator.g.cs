@@ -26,167 +26,53 @@ namespace PassKit.Grpc.Flights {
           string.Concat(
             "CiJpby9mbGlnaHRzL2ZsaWdodF9kZXNpZ25hdG9yLnByb3RvEgdmbGlnaHRz",
             "Gh5pby9jb21tb24vY29tbW9uX29iamVjdHMucHJvdG8aGWlvL2NvbW1vbi9w",
-            "cm94aW1pdHkucHJvdG8aFWlvL2NvbW1vbi9saW5rcy5wcm90bxoucHJvdG9j",
-            "LWdlbi1vcGVuYXBpdjIvb3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90byKECQoQ",
-            "RmxpZ2h0RGVzaWduYXRvchIqCgtjYXJyaWVyQ29kZRgBIAEoCUIVkkESigEP",
-            "XltBLVowLTldezMsNH0kEhsKDGZsaWdodE51bWJlchgCIAEoCUIFkkECeAUS",
-            "GwoJdmFsaWRGcm9tGAMgASgLMgguaW8uRGF0ZRIQCghyZXZpc2lvbhgEIAEo",
-            "DRIZCgZhY3RpdmUYBSABKAhCCZJBBjoEVFJVRRIpCghzY2hlZHVsZRgGIAEo",
-            "CzIXLmZsaWdodHMuRmxpZ2h0U2NoZWR1bGUSJgoUb3BlcmF0aW5nQ2Fycmll",
-            "ckNvZGUYByABKAlCCJJBBXgDgAECEiQKFW9wZXJhdGluZ0ZsaWdodE51bWJl",
-            "chgIIAEoCUIFkkECeAUSHgoWY29kZVNoYXJlRmxpZ2h0TnVtYmVycxgJIAMo",
-            "CRIOCgZvcmlnaW4YCiABKAkSEwoLZGVzdGluYXRpb24YCyABKAkSFQoNdHJh",
-            "bnNpdFBvaW50cxgMIAMoCRIZChFkZXBhcnR1cmVUZXJtaW5hbBgNIAEoCRIX",
-            "Cg9hcnJpdmFsVGVybWluYWwYDiABKAkSGAoQdHJhbnNpdFRlcm1pbmFscxgP",
-            "IAMoCRIvCg5ib2FyZGluZ1BvbGljeRgQIAEoDjIXLmZsaWdodHMuQm9hcmRp",
-            "bmdQb2xpY3kSMQoPc2VhdENsYXNzUG9saWN5GBEgASgOMhguZmxpZ2h0cy5T",
-            "ZWF0Q2xhc3NQb2xpY3kSJQoGYWxlcnRzGBIgAygOMhUuZmxpZ2h0cy5GbGln",
-            "aHRBbGVydHMSFgoOcGFzc1RlbXBsYXRlSWQYEyABKAkSJgoTYXV0b0ludmFs",
-            "aWRhdGVBZnRlchgUIAEoDUIJkkEGOgQyODgwEikKHWF1dG9JbnZhbGlkYXRl",
-            "Q2FuY2VsbGVkUGFzc2VzGBUgASgIQgIYARIxChBsb2NhdGlvbk1lc3NhZ2Vz",
-            "GBYgAygLMg8uaW8uR1BTTG9jYXRpb25CBpJBA6ABChIqCg5iZWFjb25NZXNz",
-            "YWdlcxgXIAMoCzIKLmlvLkJlYWNvbkIGkkEDoAEKEh4KDGRlZmF1bHRMaW5r",
-            "cxgYIAMoCzIILmlvLkxpbmsSGAoQQ29uZGl0aW9uYWxJdGVtcxgZIAEoCBId",
-            "ChVCYXJjb2RlQWRkaXRpb25hbERhdGEYGiABKAkSOAoZaW52YWxpZGF0ZUNh",
-            "bmNlbGxlZFBhc3NlcxgbIAEoDjIKLmlvLlRvZ2dsZUIJkkEGOgRUUlVFOtEB",
-            "kkHNAQrKASoRRmxpZ2h0IERlc2lnbmF0b3IyWkEgZmxpZ2h0IGRlc2lnbmF0",
-            "b3IgcmVjb3JkIGRlc2NyaWJlcyBtb3N0bHkgc3RhdGljIGRhdGEgd2l0aCBy",
-            "ZWdhcmQgdG8gYSBmbGlnaHQgb3BlcmF0aW9uLtIBC2NhcnJpZXJDb2Rl0gEM",
-            "ZmxpZ2h0TnVtYmVy0gEGb3JpZ2lu0gEIc2NoZWR1bGXSAQhyZXZpc2lvbtIB",
-            "C2Rlc3RpbmF0aW9u0gEOcGFzc1RlbXBsYXRlSWQi5gEKF0ZsaWdodERlc2ln",
-            "bmF0b3JSZXF1ZXN0Eh0KC2NhcnJpZXJDb2RlGAEgASgJQgiSQQV4A4ABAhIb",
-            "CgxmbGlnaHROdW1iZXIYAiABKAlCBZJBAngFEhAKCHJldmlzaW9uGAMgASgN",
-            "On2SQXoKeCoZRmxpZ2h0IERlc2lnbmF0b3IgUmVxdWVzdDI+VXNlZCBmb3Ig",
-            "cmV0cmlldmluZyBkZXRhaWxzIG9mIGEgcGFydGljdWxhciBmbGlnaHQgZGVz",
-            "aWduYXRvci7SAQtjYXJyaWVyQ29kZdIBDGZsaWdodE51bWJlciKiAgoORmxp",
-            "Z2h0U2NoZWR1bGUSJAoGbW9uZGF5GAEgASgLMhQuZmxpZ2h0cy5GbGlnaHRU",
-            "aW1lcxIlCgd0dWVzZGF5GAIgASgLMhQuZmxpZ2h0cy5GbGlnaHRUaW1lcxIn",
-            "Cgl3ZWRuZXNkYXkYAyABKAsyFC5mbGlnaHRzLkZsaWdodFRpbWVzEiYKCHRo",
-            "dXJzZGF5GAQgASgLMhQuZmxpZ2h0cy5GbGlnaHRUaW1lcxIkCgZmcmlkYXkY",
-            "BSABKAsyFC5mbGlnaHRzLkZsaWdodFRpbWVzEiYKCHNhdHVyZGF5GAYgASgL",
-            "MhQuZmxpZ2h0cy5GbGlnaHRUaW1lcxIkCgZzdW5kYXkYByABKAsyFC5mbGln",
-            "aHRzLkZsaWdodFRpbWVzIqIBCgtGbGlnaHRUaW1lcxIoChZzY2hlZHVsZWRE",
-            "ZXBhcnR1cmVUaW1lGAEgASgLMgguaW8uVGltZRIeCgxib2FyZGluZ1RpbWUY",
-            "AiABKAsyCC5pby5UaW1lEiEKD2dhdGVDbG9zaW5nVGltZRgDIAEoCzIILmlv",
-            "LlRpbWUSJgoUc2NoZWR1bGVkQXJyaXZhbFRpbWUYBCABKAsyCC5pby5UaW1l",
-            "KqkBCgxGbGlnaHRBbGVydHMSDQoJTk9fQUxFUlRTEAASDgoKQUxMX0FMRVJU",
-            "UxABEhgKFERFUEFSVFVSRV9HQVRFX0FMRVJUEAISGAoUREVQQVJUVVJFX1RJ",
-            "TUVfQUxFUlQQBBIWChJBUlJJVkFMX0dBVEVfQUxFUlQQCBIWChJBUlJJVkFM",
-            "X1RJTUVfQUxFUlQQEBIWChJCQUdHQUdFX0JFTFRfQUxFUlQQICptCg5Cb2Fy",
-            "ZGluZ1BvbGljeRIfChtCT0FSRElOR19QT0xJQ1lfVU5TUEVDSUZJRUQQABIO",
-            "CgpaT05FX0JBU0VEEAESDwoLR1JPVVBfQkFTRUQQAhIZChVCT0FSRElOR19Q",
-            "T0xJQ1lfT1RIRVIQAyqDAQoPU2VhdENsYXNzUG9saWN5EiEKHVNFQVRfQ0xB",
-            "U1NfUE9MSUNZX1VOU1BFQ0lGSUVEEAASDwoLQ0FCSU5fQkFTRUQQARIPCgtD",
-            "TEFTU19CQVNFRBACEg4KClRJRVJfQkFTRUQQAxIbChdTRUFUX0NMQVNTX1BP",
-            "TElDWV9PVEhFUhAEKh8KCUF1dGhvcml0eRIICgRJQVRBEAASCAoESUNBTxAB",
-            "Ql8KGGNvbS5wYXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFzc2tpdC5j",
-            "b20vaW8vbW9kZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0LkdycGMu",
-            "RmxpZ2h0c2IGcHJvdG8z"));
+            "cm94aW1pdHkucHJvdG8aFWlvL2NvbW1vbi9saW5rcy5wcm90bxoXaW8vZmxp",
+            "Z2h0cy9jb21tb24ucHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29wdGlv",
+            "bnMvYW5ub3RhdGlvbnMucHJvdG8ipwkKEEZsaWdodERlc2lnbmF0b3ISKgoL",
+            "Y2FycmllckNvZGUYASABKAlCFZJBEooBD15bQS1aMC05XXszLDR9JBIbCgxm",
+            "bGlnaHROdW1iZXIYAiABKAlCBZJBAngFEhsKCXZhbGlkRnJvbRgDIAEoCzII",
+            "LmlvLkRhdGUSEAoIcmV2aXNpb24YBCABKA0SGQoGYWN0aXZlGAUgASgIQgmS",
+            "QQY6BFRSVUUSKQoIc2NoZWR1bGUYBiABKAsyFy5mbGlnaHRzLkZsaWdodFNj",
+            "aGVkdWxlEiYKFG9wZXJhdGluZ0NhcnJpZXJDb2RlGAcgASgJQgiSQQV4A4AB",
+            "AhIkChVvcGVyYXRpbmdGbGlnaHROdW1iZXIYCCABKAlCBZJBAngFEh4KFmNv",
+            "ZGVTaGFyZUZsaWdodE51bWJlcnMYCSADKAkSDgoGb3JpZ2luGAogASgJEhMK",
+            "C2Rlc3RpbmF0aW9uGAsgASgJEhUKDXRyYW5zaXRQb2ludHMYDCADKAkSGQoR",
+            "ZGVwYXJ0dXJlVGVybWluYWwYDSABKAkSFwoPYXJyaXZhbFRlcm1pbmFsGA4g",
+            "ASgJEhgKEHRyYW5zaXRUZXJtaW5hbHMYDyADKAkSLwoOYm9hcmRpbmdQb2xp",
+            "Y3kYECABKA4yFy5mbGlnaHRzLkJvYXJkaW5nUG9saWN5EjEKD3NlYXRDbGFz",
+            "c1BvbGljeRgRIAEoDjIYLmZsaWdodHMuU2VhdENsYXNzUG9saWN5EiUKBmFs",
+            "ZXJ0cxgSIAMoDjIVLmZsaWdodHMuRmxpZ2h0QWxlcnRzEhYKDnBhc3NUZW1w",
+            "bGF0ZUlkGBMgASgJEiYKE2F1dG9JbnZhbGlkYXRlQWZ0ZXIYFCABKA1CCZJB",
+            "BjoEMjg4MBIpCh1hdXRvSW52YWxpZGF0ZUNhbmNlbGxlZFBhc3NlcxgVIAEo",
+            "CEICGAESMQoQbG9jYXRpb25NZXNzYWdlcxgWIAMoCzIPLmlvLkdQU0xvY2F0",
+            "aW9uQgaSQQOgAQoSKgoOYmVhY29uTWVzc2FnZXMYFyADKAsyCi5pby5CZWFj",
+            "b25CBpJBA6ABChIeCgxkZWZhdWx0TGlua3MYGCADKAsyCC5pby5MaW5rEhgK",
+            "EENvbmRpdGlvbmFsSXRlbXMYGSABKAgSHQoVQmFyY29kZUFkZGl0aW9uYWxE",
+            "YXRhGBogASgJEjgKGWludmFsaWRhdGVDYW5jZWxsZWRQYXNzZXMYGyABKA4y",
+            "Ci5pby5Ub2dnbGVCCZJBBjoEVFJVRRIhCgR1cmxzGCUgASgLMhMuZmxpZ2h0",
+            "cy5GbGlnaHRVUkxzOtEBkkHNAQrKASoRRmxpZ2h0IERlc2lnbmF0b3IyWkEg",
+            "ZmxpZ2h0IGRlc2lnbmF0b3IgcmVjb3JkIGRlc2NyaWJlcyBtb3N0bHkgc3Rh",
+            "dGljIGRhdGEgd2l0aCByZWdhcmQgdG8gYSBmbGlnaHQgb3BlcmF0aW9uLtIB",
+            "C2NhcnJpZXJDb2Rl0gEMZmxpZ2h0TnVtYmVy0gEGb3JpZ2lu0gEIc2NoZWR1",
+            "bGXSAQhyZXZpc2lvbtIBC2Rlc3RpbmF0aW9u0gEOcGFzc1RlbXBsYXRlSWQi",
+            "5gEKF0ZsaWdodERlc2lnbmF0b3JSZXF1ZXN0Eh0KC2NhcnJpZXJDb2RlGAEg",
+            "ASgJQgiSQQV4A4ABAhIbCgxmbGlnaHROdW1iZXIYAiABKAlCBZJBAngFEhAK",
+            "CHJldmlzaW9uGAMgASgNOn2SQXoKeCoZRmxpZ2h0IERlc2lnbmF0b3IgUmVx",
+            "dWVzdDI+VXNlZCBmb3IgcmV0cmlldmluZyBkZXRhaWxzIG9mIGEgcGFydGlj",
+            "dWxhciBmbGlnaHQgZGVzaWduYXRvci7SAQtjYXJyaWVyQ29kZdIBDGZsaWdo",
+            "dE51bWJlckJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0YXNoLnBh",
+            "c3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIUUGFzc0tp",
+            "dC5HcnBjLkZsaWdodHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.Flights.FlightAlerts), typeof(global::PassKit.Grpc.Flights.BoardingPolicy), typeof(global::PassKit.Grpc.Flights.SeatClassPolicy), typeof(global::PassKit.Grpc.Flights.Authority), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightDesignator), global::PassKit.Grpc.Flights.FlightDesignator.Parser, new[]{ "CarrierCode", "FlightNumber", "ValidFrom", "Revision", "Active", "Schedule", "OperatingCarrierCode", "OperatingFlightNumber", "CodeShareFlightNumbers", "Origin", "Destination", "TransitPoints", "DepartureTerminal", "ArrivalTerminal", "TransitTerminals", "BoardingPolicy", "SeatClassPolicy", "Alerts", "PassTemplateId", "AutoInvalidateAfter", "AutoInvalidateCancelledPasses", "LocationMessages", "BeaconMessages", "DefaultLinks", "ConditionalItems", "BarcodeAdditionalData", "InvalidateCancelledPasses" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightDesignatorRequest), global::PassKit.Grpc.Flights.FlightDesignatorRequest.Parser, new[]{ "CarrierCode", "FlightNumber", "Revision" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightSchedule), global::PassKit.Grpc.Flights.FlightSchedule.Parser, new[]{ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightTimes), global::PassKit.Grpc.Flights.FlightTimes.Parser, new[]{ "ScheduledDepartureTime", "BoardingTime", "GateClosingTime", "ScheduledArrivalTime" }, null, null, null, null)
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.Flights.CommonReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightDesignator), global::PassKit.Grpc.Flights.FlightDesignator.Parser, new[]{ "CarrierCode", "FlightNumber", "ValidFrom", "Revision", "Active", "Schedule", "OperatingCarrierCode", "OperatingFlightNumber", "CodeShareFlightNumbers", "Origin", "Destination", "TransitPoints", "DepartureTerminal", "ArrivalTerminal", "TransitTerminals", "BoardingPolicy", "SeatClassPolicy", "Alerts", "PassTemplateId", "AutoInvalidateAfter", "AutoInvalidateCancelledPasses", "LocationMessages", "BeaconMessages", "DefaultLinks", "ConditionalItems", "BarcodeAdditionalData", "InvalidateCancelledPasses", "Urls" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightDesignatorRequest), global::PassKit.Grpc.Flights.FlightDesignatorRequest.Parser, new[]{ "CarrierCode", "FlightNumber", "Revision" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
-  #region Enums
-  /// <summary>
-  /// Flight alerts automatically update boarding passes as information becomes available or changes. Note that these services may incur additional usage charges.
-  /// </summary>
-  public enum FlightAlerts {
-    /// <summary>
-    /// Boarding passes will not automatically update.
-    /// </summary>
-    [pbr::OriginalName("NO_ALERTS")] NoAlerts = 0,
-    /// <summary>
-    /// Boarding passes will automatically update whenever a change to the departure gate/time, arrival gate/time or baggage belt information is detected.
-    /// </summary>
-    [pbr::OriginalName("ALL_ALERTS")] AllAlerts = 1,
-    /// <summary>
-    /// Boarding passes will automatically update whenever a change to the departure gate is detected.
-    /// </summary>
-    [pbr::OriginalName("DEPARTURE_GATE_ALERT")] DepartureGateAlert = 2,
-    /// <summary>
-    /// Boarding passes will automatically update whenever a change to the estimated departure gate is detected.
-    /// </summary>
-    [pbr::OriginalName("DEPARTURE_TIME_ALERT")] DepartureTimeAlert = 4,
-    /// <summary>
-    /// Boarding passes will automatically update whenever a change to the arrival gate is detected.
-    /// </summary>
-    [pbr::OriginalName("ARRIVAL_GATE_ALERT")] ArrivalGateAlert = 8,
-    /// <summary>
-    /// Boarding passes will automatically update whenever a change to the estimated arrival time is detected.
-    /// </summary>
-    [pbr::OriginalName("ARRIVAL_TIME_ALERT")] ArrivalTimeAlert = 16,
-    /// <summary>
-    /// Boarding passes will automatically update whenever the baggage collection belt or area is known or changes.
-    /// </summary>
-    [pbr::OriginalName("BAGGAGE_BELT_ALERT")] BaggageBeltAlert = 32,
-  }
-
-  /// <summary>
-  /// The Boarding Policy is used to determine informational labels on the pass.
-  /// </summary>
-  public enum BoardingPolicy {
-    [pbr::OriginalName("BOARDING_POLICY_UNSPECIFIED")] Unspecified = 0,
-    /// <summary>
-    /// Boarding is managed by zone.
-    /// </summary>
-    [pbr::OriginalName("ZONE_BASED")] ZoneBased = 1,
-    /// <summary>
-    /// Boarding is managed by group.
-    /// </summary>
-    [pbr::OriginalName("GROUP_BASED")] GroupBased = 2,
-    /// <summary>
-    /// Another, or No boarding policy is in place.
-    /// </summary>
-    [pbr::OriginalName("BOARDING_POLICY_OTHER")] Other = 3,
-  }
-
-  /// <summary>
-  /// The Seat Class Policy is used to determine informational labels on the pass.
-  /// </summary>
-  public enum SeatClassPolicy {
-    [pbr::OriginalName("SEAT_CLASS_POLICY_UNSPECIFIED")] Unspecified = 0,
-    /// <summary>
-    /// Seats groups are determined by cabin. "Cabin" will be used as the label on the pass.
-    /// </summary>
-    [pbr::OriginalName("CABIN_BASED")] CabinBased = 1,
-    /// <summary>
-    /// Seats groups are determined by class of travel. "Class" will be used as the label on the pass.
-    /// </summary>
-    [pbr::OriginalName("CLASS_BASED")] ClassBased = 2,
-    /// <summary>
-    /// Seat groups are determined by tier. "Tier" will be used as the label on the pass.
-    /// </summary>
-    [pbr::OriginalName("TIER_BASED")] TierBased = 3,
-    /// <summary>
-    /// Another, or no seat policy is in place. No label will be used on the pass.
-    /// </summary>
-    [pbr::OriginalName("SEAT_CLASS_POLICY_OTHER")] Other = 4,
-  }
-
-  /// <summary>
-  /// The authority of an identifier (carrier code, airport code, etc.).
-  /// </summary>
-  public enum Authority {
-    /// <summary>
-    /// International Air Transport Association (IATA).
-    /// </summary>
-    [pbr::OriginalName("IATA")] Iata = 0,
-    /// <summary>
-    /// International Civil Aviation Organization (ICAO).
-    /// </summary>
-    [pbr::OriginalName("ICAO")] Icao = 1,
-  }
-
-  #endregion
-
   #region Messages
   /// <summary>
   /// carrier code and flight number and valid from represent the primary key.
@@ -253,6 +139,7 @@ namespace PassKit.Grpc.Flights {
       conditionalItems_ = other.conditionalItems_;
       barcodeAdditionalData_ = other.barcodeAdditionalData_;
       invalidateCancelledPasses_ = other.invalidateCancelledPasses_;
+      urls_ = other.urls_ != null ? other.urls_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -661,6 +548,21 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
+    /// <summary>Field number for the "urls" field.</summary>
+    public const int UrlsFieldNumber = 37;
+    private global::PassKit.Grpc.Flights.FlightURLs urls_;
+    /// <summary>
+    /// URLs at the flight level will be completely overwritten by URLs at boarding pass level. For example, a Purchase Wifi, or Purchase Lounge Access may apply to every passenger except for passengers that have already purchased. In these cases, it is more efficient to update the boarding pass objects of those that have purchased, so as not to display a redundant link.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Flights.FlightURLs Urls {
+      get { return urls_; }
+      set {
+        urls_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -703,6 +605,7 @@ namespace PassKit.Grpc.Flights {
       if (ConditionalItems != other.ConditionalItems) return false;
       if (BarcodeAdditionalData != other.BarcodeAdditionalData) return false;
       if (InvalidateCancelledPasses != other.InvalidateCancelledPasses) return false;
+      if (!object.Equals(Urls, other.Urls)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -737,6 +640,7 @@ namespace PassKit.Grpc.Flights {
       if (ConditionalItems != false) hash ^= ConditionalItems.GetHashCode();
       if (BarcodeAdditionalData.Length != 0) hash ^= BarcodeAdditionalData.GetHashCode();
       if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) hash ^= InvalidateCancelledPasses.GetHashCode();
+      if (urls_ != null) hash ^= Urls.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -842,6 +746,10 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(216, 1);
         output.WriteEnum((int) InvalidateCancelledPasses);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -939,6 +847,10 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(216, 1);
         output.WriteEnum((int) InvalidateCancelledPasses);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1015,6 +927,9 @@ namespace PassKit.Grpc.Flights {
       }
       if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) InvalidateCancelledPasses);
+      }
+      if (urls_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Urls);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1100,6 +1015,12 @@ namespace PassKit.Grpc.Flights {
       }
       if (other.InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
         InvalidateCancelledPasses = other.InvalidateCancelledPasses;
+      }
+      if (other.urls_ != null) {
+        if (urls_ == null) {
+          Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+        }
+        Urls.MergeFrom(other.Urls);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1235,6 +1156,13 @@ namespace PassKit.Grpc.Flights {
             InvalidateCancelledPasses = (global::PassKit.Grpc.Toggle) input.ReadEnum();
             break;
           }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
+            break;
+          }
         }
       }
     #endif
@@ -1367,6 +1295,13 @@ namespace PassKit.Grpc.Flights {
           }
           case 216: {
             InvalidateCancelledPasses = (global::PassKit.Grpc.Toggle) input.ReadEnum();
+            break;
+          }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
             break;
           }
         }
@@ -1648,849 +1583,6 @@ namespace PassKit.Grpc.Flights {
           }
           case 24: {
             Revision = input.ReadUInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// If there are no departures on a given day (E.g. flight only operates on Tuesdays and Thursdays), the days with no departures should be nil.
-  /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class FlightSchedule : pb::IMessage<FlightSchedule>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<FlightSchedule> _parser = new pb::MessageParser<FlightSchedule>(() => new FlightSchedule());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<FlightSchedule> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightSchedule() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightSchedule(FlightSchedule other) : this() {
-      monday_ = other.monday_ != null ? other.monday_.Clone() : null;
-      tuesday_ = other.tuesday_ != null ? other.tuesday_.Clone() : null;
-      wednesday_ = other.wednesday_ != null ? other.wednesday_.Clone() : null;
-      thursday_ = other.thursday_ != null ? other.thursday_.Clone() : null;
-      friday_ = other.friday_ != null ? other.friday_.Clone() : null;
-      saturday_ = other.saturday_ != null ? other.saturday_.Clone() : null;
-      sunday_ = other.sunday_ != null ? other.sunday_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightSchedule Clone() {
-      return new FlightSchedule(this);
-    }
-
-    /// <summary>Field number for the "monday" field.</summary>
-    public const int MondayFieldNumber = 1;
-    private global::PassKit.Grpc.Flights.FlightTimes monday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Monday {
-      get { return monday_; }
-      set {
-        monday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "tuesday" field.</summary>
-    public const int TuesdayFieldNumber = 2;
-    private global::PassKit.Grpc.Flights.FlightTimes tuesday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Tuesday {
-      get { return tuesday_; }
-      set {
-        tuesday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "wednesday" field.</summary>
-    public const int WednesdayFieldNumber = 3;
-    private global::PassKit.Grpc.Flights.FlightTimes wednesday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Wednesday {
-      get { return wednesday_; }
-      set {
-        wednesday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "thursday" field.</summary>
-    public const int ThursdayFieldNumber = 4;
-    private global::PassKit.Grpc.Flights.FlightTimes thursday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Thursday {
-      get { return thursday_; }
-      set {
-        thursday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "friday" field.</summary>
-    public const int FridayFieldNumber = 5;
-    private global::PassKit.Grpc.Flights.FlightTimes friday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Friday {
-      get { return friday_; }
-      set {
-        friday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "saturday" field.</summary>
-    public const int SaturdayFieldNumber = 6;
-    private global::PassKit.Grpc.Flights.FlightTimes saturday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Saturday {
-      get { return saturday_; }
-      set {
-        saturday_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "sunday" field.</summary>
-    public const int SundayFieldNumber = 7;
-    private global::PassKit.Grpc.Flights.FlightTimes sunday_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Flights.FlightTimes Sunday {
-      get { return sunday_; }
-      set {
-        sunday_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as FlightSchedule);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(FlightSchedule other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Monday, other.Monday)) return false;
-      if (!object.Equals(Tuesday, other.Tuesday)) return false;
-      if (!object.Equals(Wednesday, other.Wednesday)) return false;
-      if (!object.Equals(Thursday, other.Thursday)) return false;
-      if (!object.Equals(Friday, other.Friday)) return false;
-      if (!object.Equals(Saturday, other.Saturday)) return false;
-      if (!object.Equals(Sunday, other.Sunday)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (monday_ != null) hash ^= Monday.GetHashCode();
-      if (tuesday_ != null) hash ^= Tuesday.GetHashCode();
-      if (wednesday_ != null) hash ^= Wednesday.GetHashCode();
-      if (thursday_ != null) hash ^= Thursday.GetHashCode();
-      if (friday_ != null) hash ^= Friday.GetHashCode();
-      if (saturday_ != null) hash ^= Saturday.GetHashCode();
-      if (sunday_ != null) hash ^= Sunday.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (monday_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Monday);
-      }
-      if (tuesday_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Tuesday);
-      }
-      if (wednesday_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Wednesday);
-      }
-      if (thursday_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Thursday);
-      }
-      if (friday_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Friday);
-      }
-      if (saturday_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(Saturday);
-      }
-      if (sunday_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Sunday);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (monday_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Monday);
-      }
-      if (tuesday_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Tuesday);
-      }
-      if (wednesday_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Wednesday);
-      }
-      if (thursday_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Thursday);
-      }
-      if (friday_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Friday);
-      }
-      if (saturday_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(Saturday);
-      }
-      if (sunday_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Sunday);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (monday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Monday);
-      }
-      if (tuesday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Tuesday);
-      }
-      if (wednesday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Wednesday);
-      }
-      if (thursday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Thursday);
-      }
-      if (friday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Friday);
-      }
-      if (saturday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Saturday);
-      }
-      if (sunday_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Sunday);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(FlightSchedule other) {
-      if (other == null) {
-        return;
-      }
-      if (other.monday_ != null) {
-        if (monday_ == null) {
-          Monday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Monday.MergeFrom(other.Monday);
-      }
-      if (other.tuesday_ != null) {
-        if (tuesday_ == null) {
-          Tuesday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Tuesday.MergeFrom(other.Tuesday);
-      }
-      if (other.wednesday_ != null) {
-        if (wednesday_ == null) {
-          Wednesday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Wednesday.MergeFrom(other.Wednesday);
-      }
-      if (other.thursday_ != null) {
-        if (thursday_ == null) {
-          Thursday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Thursday.MergeFrom(other.Thursday);
-      }
-      if (other.friday_ != null) {
-        if (friday_ == null) {
-          Friday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Friday.MergeFrom(other.Friday);
-      }
-      if (other.saturday_ != null) {
-        if (saturday_ == null) {
-          Saturday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Saturday.MergeFrom(other.Saturday);
-      }
-      if (other.sunday_ != null) {
-        if (sunday_ == null) {
-          Sunday = new global::PassKit.Grpc.Flights.FlightTimes();
-        }
-        Sunday.MergeFrom(other.Sunday);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (monday_ == null) {
-              Monday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Monday);
-            break;
-          }
-          case 18: {
-            if (tuesday_ == null) {
-              Tuesday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Tuesday);
-            break;
-          }
-          case 26: {
-            if (wednesday_ == null) {
-              Wednesday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Wednesday);
-            break;
-          }
-          case 34: {
-            if (thursday_ == null) {
-              Thursday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Thursday);
-            break;
-          }
-          case 42: {
-            if (friday_ == null) {
-              Friday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Friday);
-            break;
-          }
-          case 50: {
-            if (saturday_ == null) {
-              Saturday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Saturday);
-            break;
-          }
-          case 58: {
-            if (sunday_ == null) {
-              Sunday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Sunday);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (monday_ == null) {
-              Monday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Monday);
-            break;
-          }
-          case 18: {
-            if (tuesday_ == null) {
-              Tuesday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Tuesday);
-            break;
-          }
-          case 26: {
-            if (wednesday_ == null) {
-              Wednesday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Wednesday);
-            break;
-          }
-          case 34: {
-            if (thursday_ == null) {
-              Thursday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Thursday);
-            break;
-          }
-          case 42: {
-            if (friday_ == null) {
-              Friday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Friday);
-            break;
-          }
-          case 50: {
-            if (saturday_ == null) {
-              Saturday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Saturday);
-            break;
-          }
-          case 58: {
-            if (sunday_ == null) {
-              Sunday = new global::PassKit.Grpc.Flights.FlightTimes();
-            }
-            input.ReadMessage(Sunday);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class FlightTimes : pb::IMessage<FlightTimes>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<FlightTimes> _parser = new pb::MessageParser<FlightTimes>(() => new FlightTimes());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<FlightTimes> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightTimes() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightTimes(FlightTimes other) : this() {
-      scheduledDepartureTime_ = other.scheduledDepartureTime_ != null ? other.scheduledDepartureTime_.Clone() : null;
-      boardingTime_ = other.boardingTime_ != null ? other.boardingTime_.Clone() : null;
-      gateClosingTime_ = other.gateClosingTime_ != null ? other.gateClosingTime_.Clone() : null;
-      scheduledArrivalTime_ = other.scheduledArrivalTime_ != null ? other.scheduledArrivalTime_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public FlightTimes Clone() {
-      return new FlightTimes(this);
-    }
-
-    /// <summary>Field number for the "scheduledDepartureTime" field.</summary>
-    public const int ScheduledDepartureTimeFieldNumber = 1;
-    private global::PassKit.Grpc.Time scheduledDepartureTime_;
-    /// <summary>
-    /// The published departure time.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Time ScheduledDepartureTime {
-      get { return scheduledDepartureTime_; }
-      set {
-        scheduledDepartureTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "boardingTime" field.</summary>
-    public const int BoardingTimeFieldNumber = 2;
-    private global::PassKit.Grpc.Time boardingTime_;
-    /// <summary>
-    /// The published boarding time.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Time BoardingTime {
-      get { return boardingTime_; }
-      set {
-        boardingTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gateClosingTime" field.</summary>
-    public const int GateClosingTimeFieldNumber = 3;
-    private global::PassKit.Grpc.Time gateClosingTime_;
-    /// <summary>
-    /// The point after which passengers will be denied boarding.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Time GateClosingTime {
-      get { return gateClosingTime_; }
-      set {
-        gateClosingTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "scheduledArrivalTime" field.</summary>
-    public const int ScheduledArrivalTimeFieldNumber = 4;
-    private global::PassKit.Grpc.Time scheduledArrivalTime_;
-    /// <summary>
-    /// The published, scheduled arrival time.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Time ScheduledArrivalTime {
-      get { return scheduledArrivalTime_; }
-      set {
-        scheduledArrivalTime_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as FlightTimes);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(FlightTimes other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(ScheduledDepartureTime, other.ScheduledDepartureTime)) return false;
-      if (!object.Equals(BoardingTime, other.BoardingTime)) return false;
-      if (!object.Equals(GateClosingTime, other.GateClosingTime)) return false;
-      if (!object.Equals(ScheduledArrivalTime, other.ScheduledArrivalTime)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (scheduledDepartureTime_ != null) hash ^= ScheduledDepartureTime.GetHashCode();
-      if (boardingTime_ != null) hash ^= BoardingTime.GetHashCode();
-      if (gateClosingTime_ != null) hash ^= GateClosingTime.GetHashCode();
-      if (scheduledArrivalTime_ != null) hash ^= ScheduledArrivalTime.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (scheduledDepartureTime_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ScheduledDepartureTime);
-      }
-      if (boardingTime_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(BoardingTime);
-      }
-      if (gateClosingTime_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(GateClosingTime);
-      }
-      if (scheduledArrivalTime_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ScheduledArrivalTime);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (scheduledDepartureTime_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ScheduledDepartureTime);
-      }
-      if (boardingTime_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(BoardingTime);
-      }
-      if (gateClosingTime_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(GateClosingTime);
-      }
-      if (scheduledArrivalTime_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ScheduledArrivalTime);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (scheduledDepartureTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ScheduledDepartureTime);
-      }
-      if (boardingTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BoardingTime);
-      }
-      if (gateClosingTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GateClosingTime);
-      }
-      if (scheduledArrivalTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ScheduledArrivalTime);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(FlightTimes other) {
-      if (other == null) {
-        return;
-      }
-      if (other.scheduledDepartureTime_ != null) {
-        if (scheduledDepartureTime_ == null) {
-          ScheduledDepartureTime = new global::PassKit.Grpc.Time();
-        }
-        ScheduledDepartureTime.MergeFrom(other.ScheduledDepartureTime);
-      }
-      if (other.boardingTime_ != null) {
-        if (boardingTime_ == null) {
-          BoardingTime = new global::PassKit.Grpc.Time();
-        }
-        BoardingTime.MergeFrom(other.BoardingTime);
-      }
-      if (other.gateClosingTime_ != null) {
-        if (gateClosingTime_ == null) {
-          GateClosingTime = new global::PassKit.Grpc.Time();
-        }
-        GateClosingTime.MergeFrom(other.GateClosingTime);
-      }
-      if (other.scheduledArrivalTime_ != null) {
-        if (scheduledArrivalTime_ == null) {
-          ScheduledArrivalTime = new global::PassKit.Grpc.Time();
-        }
-        ScheduledArrivalTime.MergeFrom(other.ScheduledArrivalTime);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (scheduledDepartureTime_ == null) {
-              ScheduledDepartureTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(ScheduledDepartureTime);
-            break;
-          }
-          case 18: {
-            if (boardingTime_ == null) {
-              BoardingTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(BoardingTime);
-            break;
-          }
-          case 26: {
-            if (gateClosingTime_ == null) {
-              GateClosingTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(GateClosingTime);
-            break;
-          }
-          case 34: {
-            if (scheduledArrivalTime_ == null) {
-              ScheduledArrivalTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(ScheduledArrivalTime);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (scheduledDepartureTime_ == null) {
-              ScheduledDepartureTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(ScheduledDepartureTime);
-            break;
-          }
-          case 18: {
-            if (boardingTime_ == null) {
-              BoardingTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(BoardingTime);
-            break;
-          }
-          case 26: {
-            if (gateClosingTime_ == null) {
-              GateClosingTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(GateClosingTime);
-            break;
-          }
-          case 34: {
-            if (scheduledArrivalTime_ == null) {
-              ScheduledArrivalTime = new global::PassKit.Grpc.Time();
-            }
-            input.ReadMessage(ScheduledArrivalTime);
             break;
           }
         }

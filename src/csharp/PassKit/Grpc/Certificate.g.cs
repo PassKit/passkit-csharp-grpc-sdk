@@ -67,6 +67,9 @@ namespace PassKit.Grpc {
 
   }
   #region Messages
+  /// <summary>
+  /// Contains data about an Apple certificate used for pass signing.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateData : pb::IMessage<CertificateData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -123,6 +126,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "passTypeId" field.</summary>
     public const int PassTypeIdFieldNumber = 1;
     private string passTypeId_ = "";
+    /// <summary>
+    /// Apple-issued pass type identifier.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTypeId {
@@ -135,6 +141,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "teamId" field.</summary>
     public const int TeamIdFieldNumber = 2;
     private string teamId_ = "";
+    /// <summary>
+    /// Apple team ID associated with the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TeamId {
@@ -147,6 +156,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "teamName" field.</summary>
     public const int TeamNameFieldNumber = 3;
     private string teamName_ = "";
+    /// <summary>
+    /// Name of the Apple team.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TeamName {
@@ -159,6 +171,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "serialNumber" field.</summary>
     public const int SerialNumberFieldNumber = 4;
     private string serialNumber_ = "";
+    /// <summary>
+    /// Serial number of the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SerialNumber {
@@ -171,6 +186,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "validFrom" field.</summary>
     public const int ValidFromFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp validFrom_;
+    /// <summary>
+    /// Start date of certificate validity.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ValidFrom {
@@ -183,6 +201,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "validTo" field.</summary>
     public const int ValidToFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp validTo_;
+    /// <summary>
+    /// End date of certificate validity.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ValidTo {
@@ -195,6 +216,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "modulus" field.</summary>
     public const int ModulusFieldNumber = 7;
     private string modulus_ = "";
+    /// <summary>
+    /// Certificate modulus.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Modulus {
@@ -207,6 +231,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "nfcCapable" field.</summary>
     public const int NfcCapableFieldNumber = 8;
     private bool nfcCapable_;
+    /// <summary>
+    /// Indicates whether the certificate supports NFC passes.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool NfcCapable {
@@ -219,6 +246,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ownerUsername" field.</summary>
     public const int OwnerUsernameFieldNumber = 9;
     private string ownerUsername_ = "";
+    /// <summary>
+    /// Username of the certificate owner.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerUsername {
@@ -579,6 +609,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request payload for uploading a private key.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivateKeyRequest : pb::IMessage<PrivateKeyRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -630,6 +663,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 1;
     private string name_ = "";
+    /// <summary>
+    /// Display name for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -642,6 +678,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 2;
     private string description_ = "";
+    /// <summary>
+    /// Description for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
@@ -654,6 +693,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "expiry" field.</summary>
     public const int ExpiryFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiry_;
+    /// <summary>
+    /// Optional expiry date for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Expiry {
@@ -666,6 +708,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "privateKey" field.</summary>
     public const int PrivateKeyFieldNumber = 4;
     private pb::ByteString privateKey_ = pb::ByteString.Empty;
+    /// <summary>
+    /// PEM-encoded private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString PrivateKey {
@@ -897,6 +942,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request payload for uploading a TLS certificate.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TLSCertificateRequest : pb::IMessage<TLSCertificateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -947,6 +995,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "certificate" field.</summary>
     public const int CertificateFieldNumber = 1;
     private pb::ByteString certificate_ = pb::ByteString.Empty;
+    /// <summary>
+    /// PEM-encoded TLS certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Certificate {
@@ -959,6 +1010,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "caChain" field.</summary>
     public const int CaChainFieldNumber = 2;
     private pb::ByteString caChain_ = pb::ByteString.Empty;
+    /// <summary>
+    /// PEM-encoded certificate authority chain.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString CaChain {
@@ -971,6 +1025,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "privateKey" field.</summary>
     public const int PrivateKeyFieldNumber = 3;
     private pb::ByteString privateKey_ = pb::ByteString.Empty;
+    /// <summary>
+    /// PEM-encoded private key associated with the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString PrivateKey {
@@ -1169,6 +1226,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Metadata associated with a TLS certificate.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class TLSCertificateData : pb::IMessage<TLSCertificateData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1224,6 +1284,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Unique identifier for the TLS certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -1236,6 +1299,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "commonName" field.</summary>
     public const int CommonNameFieldNumber = 2;
     private string commonName_ = "";
+    /// <summary>
+    /// Common name (CN) from the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CommonName {
@@ -1248,6 +1314,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "serialNumber" field.</summary>
     public const int SerialNumberFieldNumber = 3;
     private string serialNumber_ = "";
+    /// <summary>
+    /// Serial number of the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SerialNumber {
@@ -1260,6 +1329,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "validFrom" field.</summary>
     public const int ValidFromFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp validFrom_;
+    /// <summary>
+    /// Start date of certificate validity.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ValidFrom {
@@ -1272,6 +1344,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "validTo" field.</summary>
     public const int ValidToFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp validTo_;
+    /// <summary>
+    /// End date of certificate validity.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ValidTo {
@@ -1284,6 +1359,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "modulus" field.</summary>
     public const int ModulusFieldNumber = 6;
     private string modulus_ = "";
+    /// <summary>
+    /// Certificate modulus.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Modulus {
@@ -1298,6 +1376,9 @@ namespace PassKit.Grpc {
     private static readonly pb::FieldCodec<string> _repeated_subjectAlternativeNames_codec
         = pb::FieldCodec.ForString(58);
     private readonly pbc::RepeatedField<string> subjectAlternativeNames_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Subject Alternative Names (SANs) included in the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> SubjectAlternativeNames {
@@ -1307,6 +1388,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ownerUsername" field.</summary>
     public const int OwnerUsernameFieldNumber = 8;
     private string ownerUsername_ = "";
+    /// <summary>
+    /// Username of the certificate owner.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerUsername {
@@ -1633,6 +1717,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Metadata about a private key stored in the system.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PrivateKeyData : pb::IMessage<PrivateKeyData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1685,6 +1772,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Unique identifier for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -1697,6 +1787,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Display name for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -1709,6 +1802,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
     private string description_ = "";
+    /// <summary>
+    /// Description for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
@@ -1721,6 +1817,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "expiry" field.</summary>
     public const int ExpiryFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiry_;
+    /// <summary>
+    /// Optional expiry date for the private key.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Expiry {
@@ -1733,6 +1832,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ownerUsername" field.</summary>
     public const int OwnerUsernameFieldNumber = 5;
     private string ownerUsername_ = "";
+    /// <summary>
+    /// Username of the key owner.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerUsername {
@@ -1988,6 +2090,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to request or identify a specific Pass Type ID.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassTypeIdentifier : pb::IMessage<PassTypeIdentifier>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2036,6 +2141,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "passTypeId" field.</summary>
     public const int PassTypeIdFieldNumber = 1;
     private string passTypeId_ = "";
+    /// <summary>
+    /// Apple-issued pass type identifier.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassTypeId {
@@ -2186,6 +2294,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request payload containing a CSR (Certificate Signing Request).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CertificateSigningRequest : pb::IMessage<CertificateSigningRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2234,6 +2345,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "csr" field.</summary>
     public const int CsrFieldNumber = 1;
     private string csr_ = "";
+    /// <summary>
+    /// PEM-encoded certificate signing request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Csr {
@@ -2384,6 +2498,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to provide credentials required for NFC certificate signing.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NFCSigningCredentialsRequest : pb::IMessage<NFCSigningCredentialsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2433,6 +2550,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "password" field.</summary>
     public const int PasswordFieldNumber = 1;
     private string password_ = "";
+    /// <summary>
+    /// Password for the certificate (e.g. for .p12 file).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Password {
@@ -2445,6 +2565,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "privateKeyId" field.</summary>
     public const int PrivateKeyIdFieldNumber = 2;
     private string privateKeyId_ = "";
+    /// <summary>
+    /// ID of the private key used to sign the certificate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PrivateKeyId {

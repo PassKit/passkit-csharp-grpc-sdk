@@ -69,17 +69,35 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Status of the message lifecycle.
+  /// </summary>
   public enum MessageStatus {
     [pbr::OriginalName("MESSAGE_STATUS_DO_NOT_USE")] DoNotUse = 0,
+    /// <summary>
+    /// Message is scheduled for future delivery.
+    /// </summary>
     [pbr::OriginalName("SCHEDULED")] Scheduled = 1,
+    /// <summary>
+    /// Message is currently active.
+    /// </summary>
     [pbr::OriginalName("ACTIVE")] Active = 2,
+    /// <summary>
+    /// Message is no longer visible.
+    /// </summary>
     [pbr::OriginalName("EXPIRED")] Expired = 3,
+    /// <summary>
+    /// Message delivery was cancelled.
+    /// </summary>
     [pbr::OriginalName("CANCELLED")] Cancelled = 4,
   }
 
   #endregion
 
   #region Messages
+  /// <summary>
+  /// Represents a message to be shown on passes such as Apple Wallet or Google Pay.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Message : pb::IMessage<Message>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1038,6 +1056,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Response containing metadata for a single message.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetMessageResponse : pb::IMessage<GetMessageResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1092,6 +1113,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 1;
     private global::PassKit.Grpc.Message message_;
+    /// <summary>
+    /// The full message object including content, title, timing, etc.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Message Message {
@@ -1104,6 +1128,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 2;
     private global::PassKit.Grpc.MessageStatus status_ = global::PassKit.Grpc.MessageStatus.DoNotUse;
+    /// <summary>
+    /// Current status of the message (e.g. ACTIVE, EXPIRED).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.MessageStatus Status {
@@ -1116,6 +1143,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "recipients" field.</summary>
     public const int RecipientsFieldNumber = 3;
     private uint recipients_;
+    /// <summary>
+    /// Number of recipients the message was delivered to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Recipients {
@@ -1128,6 +1158,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "distributedAt" field.</summary>
     public const int DistributedAtFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp distributedAt_;
+    /// <summary>
+    /// Timestamp when the message was distributed (sent).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp DistributedAt {
@@ -1140,6 +1173,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "withdrawnAt" field.</summary>
     public const int WithdrawnAtFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp withdrawnAt_;
+    /// <summary>
+    /// Timestamp when the message was withdrawn (no longer displayed).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp WithdrawnAt {
@@ -1152,6 +1188,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "createdAt" field.</summary>
     public const int CreatedAtFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    /// <summary>
+    /// Timestamp when the message was created.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
@@ -1164,6 +1203,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "updatedAt" field.</summary>
     public const int UpdatedAtFieldNumber = 7;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updatedAt_;
+    /// <summary>
+    /// Timestamp when the message was last updated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp UpdatedAt {
@@ -1503,6 +1545,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Response containing a list of message history records.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetMessageHistoryResponse : pb::IMessage<GetMessageHistoryResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1690,6 +1735,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request to send a message to specific passes or a whole protocol.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SendMessageRequest : pb::IMessage<SendMessageRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1747,6 +1795,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "messageId" field.</summary>
     public const int MessageIdFieldNumber = 1;
     private string messageId_ = "";
+    /// <summary>
+    /// The ID of the message to send.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MessageId {
@@ -2021,6 +2072,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Response after sending a message.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SendMessageResponse : pb::IMessage<SendMessageResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2069,6 +2123,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "count" field.</summary>
     public const int CountFieldNumber = 1;
     private int count_;
+    /// <summary>
+    /// The number of recipients the message was sent to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Count {

@@ -27,7 +27,7 @@ namespace PassKit.Grpc {
             "ChRpby9pbWFnZS9pbWFnZS5wcm90bxICaW8aHGlvL2NvbW1vbi9sb2NhbGl6",
             "YXRpb24ucHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29wdGlvbnMvYW5u",
             "b3RhdGlvbnMucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
-            "dG8ikgQKCEltYWdlSWRzEgwKBGljb24YASABKAkSDAoEbG9nbxgCIAEoCRIR",
+            "dG8ikwQKCEltYWdlSWRzEgwKBGljb24YASABKAkSDAoEbG9nbxgCIAEoCRIR",
             "CglhcHBsZUxvZ28YAyABKAkSDAoEaGVybxgEIAEoCRISCgpldmVudFN0cmlw",
             "GAUgASgJEg0KBXN0cmlwGAYgASgJEhEKCXRodW1ibmFpbBgHIAEoCRISCgpi",
             "YWNrZ3JvdW5kGAggASgJEg4KBmZvb3RlchgJIAEoCRIQCghzZWN1cml0eRgK",
@@ -36,95 +36,96 @@ namespace PassKit.Grpc {
             "DwoHbWVzc2FnZRgPIAEoCRIPCgdwcm9maWxlGBAgASgJEhAKCGFwcEltYWdl",
             "GBEgASgJEhQKDHN0YW1wZWRJbWFnZRgSIAEoCRIWCg51bnN0YW1wZWRJbWFn",
             "ZRgTIAEoCRISCgpzdGFtcEltYWdlGBQgASgJEhAKCHdpZGVMb2dvGBUgASgJ",
-            "EhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoHYXJ0d29yaxgXIAEoCRISCgpw",
-            "b3N0ZXJMb2dvGBggASgJEhAKCHZlbnVlTWFwGBkgASgJOjKSQS8KLSoJSW1h",
-            "Z2UgSWRzMhlUaGlzIG1hbmFnZXMgaW1hZ2VzIGJ5IGlk0gEEaWNvbiKVDAoJ",
-            "SW1hZ2VEYXRhEgwKBGljb24YASABKAkSDAoEbG9nbxgCIAEoCRIRCglhcHBs",
-            "ZUxvZ28YAyABKAkSDAoEaGVybxgEIAEoCRISCgpldmVudFN0cmlwGAUgASgJ",
-            "Eg0KBXN0cmlwGAYgASgJEhEKCXRodW1ibmFpbBgHIAEoCRISCgpiYWNrZ3Jv",
-            "dW5kGAggASgJEg4KBmZvb3RlchgJIAEoCRIQCghzZWN1cml0eRgKIAEoCRIR",
-            "Cglwcml2aWxlZ2UYCyABKAkSFwoPYWlybGluZUFsbGlhbmNlGAwgASgJEhcK",
-            "D3BlcnNvbmFsaXphdGlvbhgNIAEoCRIOCgZiYW5uZXIYDiABKAkSDwoHbWVz",
-            "c2FnZRgPIAEoCRIPCgdwcm9maWxlGBAgASgJEhAKCGFwcEltYWdlGBEgASgJ",
-            "EhQKDHN0YW1wZWRJbWFnZRgSIAEoCRIWCg51bnN0YW1wZWRJbWFnZRgTIAEo",
-            "CRIpCgtzdGFtcENvbmZpZxgUIAEoCzIULmlvLlN0YW1wSW1hZ2VDb25maWcS",
-            "EAoId2lkZUxvZ28YFSABKAkSFQoNc2Vjb25kYXJ5TG9nbxgWIAEoCRIPCgdh",
-            "cnR3b3JrGBcgASgJEhIKCnBvc3RlckxvZ28YGCABKAkSEAoIdmVudWVNYXAY",
-            "GSABKAkSKgoNbG9jYWxpemVkSWNvbhgfIAEoCzITLmlvLkxvY2FsaXplZFN0",
-            "cmluZxIqCg1sb2NhbGl6ZWRMb2dvGCAgASgLMhMuaW8uTG9jYWxpemVkU3Ry",
-            "aW5nEi8KEmxvY2FsaXplZEFwcGxlTG9nbxghIAEoCzITLmlvLkxvY2FsaXpl",
-            "ZFN0cmluZxIqCg1sb2NhbGl6ZWRIZXJvGCIgASgLMhMuaW8uTG9jYWxpemVk",
-            "U3RyaW5nEjAKE2xvY2FsaXplZEV2ZW50U3RyaXAYIyABKAsyEy5pby5Mb2Nh",
-            "bGl6ZWRTdHJpbmcSKwoObG9jYWxpemVkU3RyaXAYJCABKAsyEy5pby5Mb2Nh",
-            "bGl6ZWRTdHJpbmcSLwoSbG9jYWxpemVkVGh1bWJuYWlsGCUgASgLMhMuaW8u",
-            "TG9jYWxpemVkU3RyaW5nEjAKE2xvY2FsaXplZEJhY2tncm91bmQYJiABKAsy",
-            "Ey5pby5Mb2NhbGl6ZWRTdHJpbmcSLAoPbG9jYWxpemVkRm9vdGVyGCcgASgL",
-            "MhMuaW8uTG9jYWxpemVkU3RyaW5nEi4KEWxvY2FsaXplZFNlY3VyaXR5GCgg",
-            "ASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEi8KEmxvY2FsaXplZFByaXZpbGVn",
-            "ZRgpIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxI1Chhsb2NhbGl6ZWRBaXJs",
-            "aW5lQWxsaWFuY2UYKiABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSNQoYbG9j",
-            "YWxpemVkUGVyc29uYWxpemF0aW9uGCsgASgLMhMuaW8uTG9jYWxpemVkU3Ry",
-            "aW5nEiwKD2xvY2FsaXplZEJhbm5lchgsIAEoCzITLmlvLkxvY2FsaXplZFN0",
-            "cmluZxItChBsb2NhbGl6ZWRNZXNzYWdlGC0gASgLMhMuaW8uTG9jYWxpemVk",
-            "U3RyaW5nEi4KEWxvY2FsaXplZFdpZGVMb2dvGC4gASgLMhMuaW8uTG9jYWxp",
-            "emVkU3RyaW5nEjMKFmxvY2FsaXplZFNlY29uZGFyeUxvZ28YLyABKAsyEy5p",
-            "by5Mb2NhbGl6ZWRTdHJpbmcSLQoQbG9jYWxpemVkQXJ0d29yaxgwIAEoCzIT",
-            "LmlvLkxvY2FsaXplZFN0cmluZxIwChNsb2NhbGl6ZWRQb3N0ZXJMb2dvGDEg",
-            "ASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEi4KEWxvY2FsaXplZFZlbnVlTWFw",
-            "GDIgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nOlaSQVMKUSoKSW1hZ2UgRGF0",
-            "YTJDSW1hZ2UgZGF0YSBjYW4gYmUgcHJvdmlkZWQgYXMgZWl0aGVyIGEgdXJs",
-            "IG9yIGJhc2UgNjQgZW5jb2RlZCBkYXRhLiLpAQoLSW1hZ2VSZWNvcmQSCgoC",
-            "aWQYASABKAkSDAoEbmFtZRgCIAEoCRILCgN1cmwYAyABKAkSGQoDdXNlGAUg",
-            "ASgOMgwuaW8uSW1hZ2VVc2USIwoJbGFuZ3VhZ2VzGAYgAygOMhAuaW8uTGFu",
-            "Z3VhZ2VDb2RlEhUKDW93bmVyVXNlcm5hbWUYByABKAkSLQoJY3JlYXRlZEF0",
-            "GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCgl1cGRhdGVk",
-            "QXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIiYKEVByb2Zp",
-            "bGVJbWFnZUlucHV0EhEKCWltYWdlRGF0YRgBIAEoCSIxCg5NdWx0aXBsZUlt",
-            "YWdlcxIfCgZpbWFnZXMYASADKAsyDy5pby5JbWFnZVJlY29yZCIvChFTdGFt",
-            "cEltYWdlUmVxdWVzdBIKCgJpZBgBIAEoCRIOCgZzdGF0dXMYAiABKAQijAEK",
-            "EENyZWF0ZUltYWdlSW5wdXQSDAoEbmFtZRgBIAEoCRIgCglpbWFnZURhdGEY",
-            "AiABKAsyDS5pby5JbWFnZURhdGE6SJJBRQpDKhJDcmVhdGUgSW1hZ2UgSW5w",
-            "dXQyGlRoaXMgY3JlYXRlcyBpbWFnZSByZWNvcmQu0gEEbmFtZdIBCWltYWdl",
-            "RGF0YSLCAQoQVXBkYXRlSW1hZ2VJbnB1dBIKCgJpZBgBIAEoCRIMCgRuYW1l",
-            "GAIgASgJEhEKCWltYWdlRGF0YRgDIAEoCRIvChJsb2NhbGl6ZWRJbWFnZURh",
-            "dGEYBCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmc6UJJBTQpLKhJVcGRhdGUg",
-            "SW1hZ2UgSW5wdXQyMFRoaXMgbWFuYWdlcyBpbWFnZXMgc2V0IGZvciBkaWZm",
-            "ZXJlbnQgbGFuZ3VhZ2VzLtIBAmlkIhwKC0ltYWdlQnVuZGxlEg0KBWltYWdl",
-            "GAEgASgMIpsBChNMb2NhbGl6ZWRJbWFnZUlucHV0EgoKAmlkGAEgASgJEhQK",
-            "DGxhbmd1YWdlQ29kZRgCIAEoCTpikkFfCl0qFUxvY2FsaXplZCBJbWFnZSBJ",
-            "bnB1dDIwVGhpcyBtYW5hZ2VzIGltYWdlcyBzZXQgZm9yIGRpZmZlcmVudCBs",
-            "YW5ndWFnZXMu0gECaWTSAQxsYW5ndWFnZUNvZGUizgQKEFN0YW1wSW1hZ2VD",
-            "b25maWcSCgoCaWQYASABKAkSDwoHcGFkZGluZxgCIAEoAhITCgt0b3RhbFN0",
-            "YW1wcxgDIAEoDRISCgpzdGFtcEltYWdlGAQgASgJEhQKDHVuc3RhbXBJbWFn",
-            "ZRgFIAEoCRIXCg9iYWNrZ3JvdW5kSW1hZ2UYBiABKAkSFwoPYmFja2dyb3Vu",
-            "ZENvbG9yGAcgASgJEhkKEWJhY2tncm91bmRPcGFjaXR5GAggASgCEhIKCnN0",
-            "YW1wQ29sb3IYCSABKAkSFAoMc3RhbXBPcGFjaXR5GAogASgCEhQKDHVuc3Rh",
-            "bXBDb2xvchgLIAEoCRIWCg51bnN0YW1wT3BhY2l0eRgMIAEoAhIUCgxwbGFj",
-            "ZWhvbGRlcnMYDSABKAgSGAoQcGxhY2Vob2xkZXJDb2xvchgOIAEoCRIaChJw",
-            "bGFjZWhvbGRlck9wYWNpdHkYDyABKAISHgoWcGxhY2Vob2xkZXJCb3JkZXJD",
-            "b2xvchgQIAEoCRIgChhwbGFjZWhvbGRlckJvcmRlck9wYWNpdHkYESABKAIS",
-            "GgoScmV3YXJkUGxhY2Vob2xkZXJzGBIgASgIEhkKEXJld2FyZEJvcmRlckNv",
-            "bG9yGBMgASgJEhsKE3Jld2FyZEJvcmRlck9wYWNpdHkYFCABKAISHQoVcmV3",
-            "YXJkQmFja2dyb3VuZENvbG9yGBUgASgJEh8KF3Jld2FyZEJhY2tncm91bmRP",
-            "cGFjaXR5GBYgASgCEhcKD3Jld2FyZFBvc2l0aW9ucxgXIAEoBCJaChhTdGFt",
-            "cEltYWdlUHJldmlld1JlcXVlc3QSLgoQc3RhbXBJbWFnZUNvbmZpZxgBIAEo",
-            "CzIULmlvLlN0YW1wSW1hZ2VDb25maWcSDgoGc3RhdHVzGAIgASgEIiQKEVN0",
-            "YW1wSW1hZ2VQcmV2aWV3Eg8KB3ByZXZpZXcYASABKAkq+gIKCEltYWdlVXNl",
-            "EggKBGljb24QABIICgRsb2dvEAESDQoJYXBwbGVMb2dvEAISCAoEaGVybxAD",
-            "Eg4KCmV2ZW50U3RyaXAQBBIJCgVzdHJpcBAFEg0KCXRodW1ibmFpbBAGEg4K",
-            "CmJhY2tncm91bmQQBxIKCgZmb290ZXIQCBIMCghzZWN1cml0eRAJEg0KCXBy",
-            "aXZpbGVnZRAKEhMKD2FpcmxpbmVBbGxpYW5jZRALEhMKD3BlcnNvbmFsaXph",
-            "dGlvbhAMEgoKBmJhbm5lchANEgsKB21lc3NhZ2UQDhILCgdwcm9maWxlEA8S",
-            "DAoIYXBwSW1hZ2UQEBIQCgxzdGFtcGVkSW1hZ2UQEhISCg51bnN0YW1wZWRJ",
-            "bWFnZRATEg4KCnN0YW1wSW1hZ2UQFBIMCgh3aWRlTG9nbxAVEhEKDXNlY29u",
-            "ZGFyeUxvZ28QFhILCgdhcnR3b3JrEBcSDgoKcG9zdGVyTG9nbxAYEgwKCHZl",
-            "bnVlTWFwEBlCRwoQY29tLnBhc3NraXQuZ3JwY1okc3Rhc2gucGFzc2tpdC5j",
-            "b20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFzc0tpdC5HcnBjYgZwcm90bzM="));
+            "EhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoHYXJ0d29yaxgXIAEoCRITCgtw",
+            "cmltYXJ5TG9nbxgYIAEoCRIQCgh2ZW51ZU1hcBgZIAEoCToykkEvCi0qCUlt",
+            "YWdlIElkczIZVGhpcyBtYW5hZ2VzIGltYWdlcyBieSBpZNIBBGljb24ilwwK",
+            "CUltYWdlRGF0YRIMCgRpY29uGAEgASgJEgwKBGxvZ28YAiABKAkSEQoJYXBw",
+            "bGVMb2dvGAMgASgJEgwKBGhlcm8YBCABKAkSEgoKZXZlbnRTdHJpcBgFIAEo",
+            "CRINCgVzdHJpcBgGIAEoCRIRCgl0aHVtYm5haWwYByABKAkSEgoKYmFja2dy",
+            "b3VuZBgIIAEoCRIOCgZmb290ZXIYCSABKAkSEAoIc2VjdXJpdHkYCiABKAkS",
+            "EQoJcHJpdmlsZWdlGAsgASgJEhcKD2FpcmxpbmVBbGxpYW5jZRgMIAEoCRIX",
+            "Cg9wZXJzb25hbGl6YXRpb24YDSABKAkSDgoGYmFubmVyGA4gASgJEg8KB21l",
+            "c3NhZ2UYDyABKAkSDwoHcHJvZmlsZRgQIAEoCRIQCghhcHBJbWFnZRgRIAEo",
+            "CRIUCgxzdGFtcGVkSW1hZ2UYEiABKAkSFgoOdW5zdGFtcGVkSW1hZ2UYEyAB",
+            "KAkSKQoLc3RhbXBDb25maWcYFCABKAsyFC5pby5TdGFtcEltYWdlQ29uZmln",
+            "EhAKCHdpZGVMb2dvGBUgASgJEhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoH",
+            "YXJ0d29yaxgXIAEoCRITCgtwcmltYXJ5TG9nbxgYIAEoCRIQCgh2ZW51ZU1h",
+            "cBgZIAEoCRIqCg1sb2NhbGl6ZWRJY29uGB8gASgLMhMuaW8uTG9jYWxpemVk",
+            "U3RyaW5nEioKDWxvY2FsaXplZExvZ28YICABKAsyEy5pby5Mb2NhbGl6ZWRT",
+            "dHJpbmcSLwoSbG9jYWxpemVkQXBwbGVMb2dvGCEgASgLMhMuaW8uTG9jYWxp",
+            "emVkU3RyaW5nEioKDWxvY2FsaXplZEhlcm8YIiABKAsyEy5pby5Mb2NhbGl6",
+            "ZWRTdHJpbmcSMAoTbG9jYWxpemVkRXZlbnRTdHJpcBgjIAEoCzITLmlvLkxv",
+            "Y2FsaXplZFN0cmluZxIrCg5sb2NhbGl6ZWRTdHJpcBgkIAEoCzITLmlvLkxv",
+            "Y2FsaXplZFN0cmluZxIvChJsb2NhbGl6ZWRUaHVtYm5haWwYJSABKAsyEy5p",
+            "by5Mb2NhbGl6ZWRTdHJpbmcSMAoTbG9jYWxpemVkQmFja2dyb3VuZBgmIAEo",
+            "CzITLmlvLkxvY2FsaXplZFN0cmluZxIsCg9sb2NhbGl6ZWRGb290ZXIYJyAB",
+            "KAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSLgoRbG9jYWxpemVkU2VjdXJpdHkY",
+            "KCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSLwoSbG9jYWxpemVkUHJpdmls",
+            "ZWdlGCkgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEjUKGGxvY2FsaXplZEFp",
+            "cmxpbmVBbGxpYW5jZRgqIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxI1Chhs",
+            "b2NhbGl6ZWRQZXJzb25hbGl6YXRpb24YKyABKAsyEy5pby5Mb2NhbGl6ZWRT",
+            "dHJpbmcSLAoPbG9jYWxpemVkQmFubmVyGCwgASgLMhMuaW8uTG9jYWxpemVk",
+            "U3RyaW5nEi0KEGxvY2FsaXplZE1lc3NhZ2UYLSABKAsyEy5pby5Mb2NhbGl6",
+            "ZWRTdHJpbmcSLgoRbG9jYWxpemVkV2lkZUxvZ28YLiABKAsyEy5pby5Mb2Nh",
+            "bGl6ZWRTdHJpbmcSMwoWbG9jYWxpemVkU2Vjb25kYXJ5TG9nbxgvIAEoCzIT",
+            "LmlvLkxvY2FsaXplZFN0cmluZxItChBsb2NhbGl6ZWRBcnR3b3JrGDAgASgL",
+            "MhMuaW8uTG9jYWxpemVkU3RyaW5nEjEKFGxvY2FsaXplZFByaW1hcnlMb2dv",
+            "GDEgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEi4KEWxvY2FsaXplZFZlbnVl",
+            "TWFwGDIgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nOlaSQVMKUSoKSW1hZ2Ug",
+            "RGF0YTJDSW1hZ2UgZGF0YSBjYW4gYmUgcHJvdmlkZWQgYXMgZWl0aGVyIGEg",
+            "dXJsIG9yIGJhc2UgNjQgZW5jb2RlZCBkYXRhLiLpAQoLSW1hZ2VSZWNvcmQS",
+            "CgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRILCgN1cmwYAyABKAkSGQoDdXNl",
+            "GAUgASgOMgwuaW8uSW1hZ2VVc2USIwoJbGFuZ3VhZ2VzGAYgAygOMhAuaW8u",
+            "TGFuZ3VhZ2VDb2RlEhUKDW93bmVyVXNlcm5hbWUYByABKAkSLQoJY3JlYXRl",
+            "ZEF0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCgl1cGRh",
+            "dGVkQXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIiYKEVBy",
+            "b2ZpbGVJbWFnZUlucHV0EhEKCWltYWdlRGF0YRgBIAEoCSIxCg5NdWx0aXBs",
+            "ZUltYWdlcxIfCgZpbWFnZXMYASADKAsyDy5pby5JbWFnZVJlY29yZCIvChFT",
+            "dGFtcEltYWdlUmVxdWVzdBIKCgJpZBgBIAEoCRIOCgZzdGF0dXMYAiABKAQi",
+            "jAEKEENyZWF0ZUltYWdlSW5wdXQSDAoEbmFtZRgBIAEoCRIgCglpbWFnZURh",
+            "dGEYAiABKAsyDS5pby5JbWFnZURhdGE6SJJBRQpDKhJDcmVhdGUgSW1hZ2Ug",
+            "SW5wdXQyGlRoaXMgY3JlYXRlcyBpbWFnZSByZWNvcmQu0gEEbmFtZdIBCWlt",
+            "YWdlRGF0YSLCAQoQVXBkYXRlSW1hZ2VJbnB1dBIKCgJpZBgBIAEoCRIMCgRu",
+            "YW1lGAIgASgJEhEKCWltYWdlRGF0YRgDIAEoCRIvChJsb2NhbGl6ZWRJbWFn",
+            "ZURhdGEYBCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmc6UJJBTQpLKhJVcGRh",
+            "dGUgSW1hZ2UgSW5wdXQyMFRoaXMgbWFuYWdlcyBpbWFnZXMgc2V0IGZvciBk",
+            "aWZmZXJlbnQgbGFuZ3VhZ2VzLtIBAmlkIhwKC0ltYWdlQnVuZGxlEg0KBWlt",
+            "YWdlGAEgASgMIpsBChNMb2NhbGl6ZWRJbWFnZUlucHV0EgoKAmlkGAEgASgJ",
+            "EhQKDGxhbmd1YWdlQ29kZRgCIAEoCTpikkFfCl0qFUxvY2FsaXplZCBJbWFn",
+            "ZSBJbnB1dDIwVGhpcyBtYW5hZ2VzIGltYWdlcyBzZXQgZm9yIGRpZmZlcmVu",
+            "dCBsYW5ndWFnZXMu0gECaWTSAQxsYW5ndWFnZUNvZGUizgQKEFN0YW1wSW1h",
+            "Z2VDb25maWcSCgoCaWQYASABKAkSDwoHcGFkZGluZxgCIAEoAhITCgt0b3Rh",
+            "bFN0YW1wcxgDIAEoDRISCgpzdGFtcEltYWdlGAQgASgJEhQKDHVuc3RhbXBJ",
+            "bWFnZRgFIAEoCRIXCg9iYWNrZ3JvdW5kSW1hZ2UYBiABKAkSFwoPYmFja2dy",
+            "b3VuZENvbG9yGAcgASgJEhkKEWJhY2tncm91bmRPcGFjaXR5GAggASgCEhIK",
+            "CnN0YW1wQ29sb3IYCSABKAkSFAoMc3RhbXBPcGFjaXR5GAogASgCEhQKDHVu",
+            "c3RhbXBDb2xvchgLIAEoCRIWCg51bnN0YW1wT3BhY2l0eRgMIAEoAhIUCgxw",
+            "bGFjZWhvbGRlcnMYDSABKAgSGAoQcGxhY2Vob2xkZXJDb2xvchgOIAEoCRIa",
+            "ChJwbGFjZWhvbGRlck9wYWNpdHkYDyABKAISHgoWcGxhY2Vob2xkZXJCb3Jk",
+            "ZXJDb2xvchgQIAEoCRIgChhwbGFjZWhvbGRlckJvcmRlck9wYWNpdHkYESAB",
+            "KAISGgoScmV3YXJkUGxhY2Vob2xkZXJzGBIgASgIEhkKEXJld2FyZEJvcmRl",
+            "ckNvbG9yGBMgASgJEhsKE3Jld2FyZEJvcmRlck9wYWNpdHkYFCABKAISHQoV",
+            "cmV3YXJkQmFja2dyb3VuZENvbG9yGBUgASgJEh8KF3Jld2FyZEJhY2tncm91",
+            "bmRPcGFjaXR5GBYgASgCEhcKD3Jld2FyZFBvc2l0aW9ucxgXIAEoBCJaChhT",
+            "dGFtcEltYWdlUHJldmlld1JlcXVlc3QSLgoQc3RhbXBJbWFnZUNvbmZpZxgB",
+            "IAEoCzIULmlvLlN0YW1wSW1hZ2VDb25maWcSDgoGc3RhdHVzGAIgASgEIiQK",
+            "EVN0YW1wSW1hZ2VQcmV2aWV3Eg8KB3ByZXZpZXcYASABKAkq+wIKCEltYWdl",
+            "VXNlEggKBGljb24QABIICgRsb2dvEAESDQoJYXBwbGVMb2dvEAISCAoEaGVy",
+            "bxADEg4KCmV2ZW50U3RyaXAQBBIJCgVzdHJpcBAFEg0KCXRodW1ibmFpbBAG",
+            "Eg4KCmJhY2tncm91bmQQBxIKCgZmb290ZXIQCBIMCghzZWN1cml0eRAJEg0K",
+            "CXByaXZpbGVnZRAKEhMKD2FpcmxpbmVBbGxpYW5jZRALEhMKD3BlcnNvbmFs",
+            "aXphdGlvbhAMEgoKBmJhbm5lchANEgsKB21lc3NhZ2UQDhILCgdwcm9maWxl",
+            "EA8SDAoIYXBwSW1hZ2UQEBIQCgxzdGFtcGVkSW1hZ2UQEhISCg51bnN0YW1w",
+            "ZWRJbWFnZRATEg4KCnN0YW1wSW1hZ2UQFBIMCgh3aWRlTG9nbxAVEhEKDXNl",
+            "Y29uZGFyeUxvZ28QFhILCgdhcnR3b3JrEBcSDwoLcHJpbWFyeUxvZ28QGBIM",
+            "Cgh2ZW51ZU1hcBAZQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3Nr",
+            "aXQuY29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.ImageUse), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageIds), global::PassKit.Grpc.ImageIds.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampImage", "WideLogo", "SecondaryLogo", "Artwork", "PosterLogo", "VenueMap" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageData), global::PassKit.Grpc.ImageData.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampConfig", "WideLogo", "SecondaryLogo", "Artwork", "PosterLogo", "VenueMap", "LocalizedIcon", "LocalizedLogo", "LocalizedAppleLogo", "LocalizedHero", "LocalizedEventStrip", "LocalizedStrip", "LocalizedThumbnail", "LocalizedBackground", "LocalizedFooter", "LocalizedSecurity", "LocalizedPrivilege", "LocalizedAirlineAlliance", "LocalizedPersonalization", "LocalizedBanner", "LocalizedMessage", "LocalizedWideLogo", "LocalizedSecondaryLogo", "LocalizedArtwork", "LocalizedPosterLogo", "LocalizedVenueMap" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageIds), global::PassKit.Grpc.ImageIds.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampImage", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageData), global::PassKit.Grpc.ImageData.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampConfig", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap", "LocalizedIcon", "LocalizedLogo", "LocalizedAppleLogo", "LocalizedHero", "LocalizedEventStrip", "LocalizedStrip", "LocalizedThumbnail", "LocalizedBackground", "LocalizedFooter", "LocalizedSecurity", "LocalizedPrivilege", "LocalizedAirlineAlliance", "LocalizedPersonalization", "LocalizedBanner", "LocalizedMessage", "LocalizedWideLogo", "LocalizedSecondaryLogo", "LocalizedArtwork", "LocalizedPrimaryLogo", "LocalizedVenueMap" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageRecord), global::PassKit.Grpc.ImageRecord.Parser, new[]{ "Id", "Name", "Url", "Use", "Languages", "OwnerUsername", "CreatedAt", "UpdatedAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ProfileImageInput), global::PassKit.Grpc.ProfileImageInput.Parser, new[]{ "ImageData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.MultipleImages), global::PassKit.Grpc.MultipleImages.Parser, new[]{ "Images" }, null, null, null, null),
@@ -142,6 +143,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Representing the use-case for each image.
+  /// </summary>
   public enum ImageUse {
     /// <summary>
     /// Mandatory icon, used in Apple Wallet lock screen (87px x 87px).
@@ -152,8 +156,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("logo")] Logo = 1,
     /// <summary>
-    /// Apple logo can be used where a rectangular design is preferred for Apple Passes only.  If omitted, the square
-    /// logo image will be used.  (&lt;=480px x 150px).
+    /// Apple logo can be used where a rectangular design is preferred for Apple Passes only.  If omitted, the square logo image will be used.  (&lt;=480px x 150px).
     /// </summary>
     [pbr::OriginalName("appleLogo")] AppleLogo = 2,
     /// <summary>
@@ -243,9 +246,9 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("artwork")] Artwork = 23,
     /// <summary>
-    /// used in the top left hand corner for Apple poster style Event tickets (&lt;=378px x 30px)
+    /// used in the top left hand corner for Apple poster style Event tickets, and Semantic Boarding Passes (&lt;=378px x 30px).
     /// </summary>
-    [pbr::OriginalName("posterLogo")] PosterLogo = 24,
+    [pbr::OriginalName("primaryLogo")] PrimaryLogo = 24,
     /// <summary>
     /// used to present a venue map for an Apple poster style Event Ticket.  Width should be Ratio should be at least 1074px wide and have a 16:9 or 4:5 to avoid cropping.
     /// </summary>
@@ -256,7 +259,7 @@ namespace PassKit.Grpc {
 
   #region Messages
   /// <summary>
-  /// See image 'Use' enum for descriptions and sizes.
+  /// Used to manage image IDs by use case. Required fields: icon.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ImageIds : pb::IMessage<ImageIds>
@@ -316,7 +319,7 @@ namespace PassKit.Grpc {
       wideLogo_ = other.wideLogo_;
       secondaryLogo_ = other.secondaryLogo_;
       artwork_ = other.artwork_;
-      posterLogo_ = other.posterLogo_;
+      primaryLogo_ = other.primaryLogo_;
       venueMap_ = other.venueMap_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -330,6 +333,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "icon" field.</summary>
     public const int IconFieldNumber = 1;
     private string icon_ = "";
+    /// <summary>
+    /// Mandatory icon, used in Apple Wallet lock screen (87px x 87px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Icon {
@@ -342,6 +348,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "logo" field.</summary>
     public const int LogoFieldNumber = 2;
     private string logo_ = "";
+    /// <summary>
+    /// Logo is circle-cropped by Google Pay, a 15% safety margin is recommended (660px x 660px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Logo {
@@ -354,6 +363,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "appleLogo" field.</summary>
     public const int AppleLogoFieldNumber = 3;
     private string appleLogo_ = "";
+    /// <summary>
+    /// Apple logo for rectangular designs in Apple Passes. (≤480px x 150px)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AppleLogo {
@@ -366,6 +378,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "hero" field.</summary>
     public const int HeroFieldNumber = 4;
     private string hero_ = "";
+    /// <summary>
+    /// Google Pay hero strip and install dialog. (1032px x 336px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Hero {
@@ -378,6 +393,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "eventStrip" field.</summary>
     public const int EventStripFieldNumber = 5;
     private string eventStrip_ = "";
+    /// <summary>
+    /// Apple Wallet strip for EventTicket passes. (1125px x 294px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EventStrip {
@@ -390,6 +408,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "strip" field.</summary>
     public const int StripFieldNumber = 6;
     private string strip_ = "";
+    /// <summary>
+    /// Apple Wallet strip for non-EventTicket passes. (1125px x 432px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Strip {
@@ -402,6 +423,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "thumbnail" field.</summary>
     public const int ThumbnailFieldNumber = 7;
     private string thumbnail_ = "";
+    /// <summary>
+    /// Used on Membership and Apple Event Ticket passes. (≥320px x ≥320px, ratio 2:3–3:2).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Thumbnail {
@@ -414,6 +438,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "background" field.</summary>
     public const int BackgroundFieldNumber = 8;
     private string background_ = "";
+    /// <summary>
+    /// Background for Apple Event Ticket designs. Can be low quality. (180px x 220px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Background {
@@ -426,6 +453,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "footer" field.</summary>
     public const int FooterFieldNumber = 9;
     private string footer_ = "";
+    /// <summary>
+    /// Appears above barcode in Apple Wallet Boarding passes. (858px x 45px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Footer {
@@ -438,6 +468,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "security" field.</summary>
     public const int SecurityFieldNumber = 10;
     private string security_ = "";
+    /// <summary>
+    /// Google Pay boarding pass security program (e.g. TSA PreCheck®). (≤1600px x 80px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Security {
@@ -450,6 +483,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "privilege" field.</summary>
     public const int PrivilegeFieldNumber = 11;
     private string privilege_ = "";
+    /// <summary>
+    /// Google Pay boarding privilege logo. Shares width with security. (≤1600px x 80px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Privilege {
@@ -462,6 +498,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "airlineAlliance" field.</summary>
     public const int AirlineAllianceFieldNumber = 12;
     private string airlineAlliance_ = "";
+    /// <summary>
+    /// Google Pay airline alliance logo for boarding passes. (≤1600px x 80px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AirlineAlliance {
@@ -474,6 +513,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "personalization" field.</summary>
     public const int PersonalizationFieldNumber = 13;
     private string personalization_ = "";
+    /// <summary>
+    /// Apple Pay NFC personalization passes. Appears post-terms. (≤450px x 120px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Personalization {
@@ -486,6 +528,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "banner" field.</summary>
     public const int BannerFieldNumber = 14;
     private string banner_ = "";
+    /// <summary>
+    /// For landing pages or email campaigns. Treated as @2x.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Banner {
@@ -498,6 +543,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 15;
     private string message_ = "";
+    /// <summary>
+    /// Wallet promo messages (Google) or mobile web (Apple). (1860px x ≤930px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Message {
@@ -510,6 +558,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "profile" field.</summary>
     public const int ProfileFieldNumber = 16;
     private string profile_ = "";
+    /// <summary>
+    /// User profile photo. (300px x 300px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Profile {
@@ -522,6 +573,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "appImage" field.</summary>
     public const int AppImageFieldNumber = 17;
     private string appImage_ = "";
+    /// <summary>
+    /// Google Pay app image - Requires Google pre-authorization (300px x 300px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AppImage {
@@ -534,6 +588,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "stampedImage" field.</summary>
     public const int StampedImageFieldNumber = 18;
     private string stampedImage_ = "";
+    /// <summary>
+    /// Custom image when a stamp is applied.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StampedImage {
@@ -546,6 +603,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "unstampedImage" field.</summary>
     public const int UnstampedImageFieldNumber = 19;
     private string unstampedImage_ = "";
+    /// <summary>
+    /// Custom image for unpunched stamp.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UnstampedImage {
@@ -558,6 +618,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "stampImage" field.</summary>
     public const int StampImageFieldNumber = 20;
     private string stampImage_ = "";
+    /// <summary>
+    /// Configured stamp image with stampImageConfig record.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StampImage {
@@ -570,6 +633,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "wideLogo" field.</summary>
     public const int WideLogoFieldNumber = 21;
     private string wideLogo_ = "";
+    /// <summary>
+    /// Google Wallet wide header logo. (1280px x 400px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string WideLogo {
@@ -582,6 +648,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "secondaryLogo" field.</summary>
     public const int SecondaryLogoFieldNumber = 22;
     private string secondaryLogo_ = "";
+    /// <summary>
+    /// Apple Event Ticket footer inset logo. (≤405px x 36px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SecondaryLogo {
@@ -594,6 +663,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "artwork" field.</summary>
     public const int ArtworkFieldNumber = 23;
     private string artwork_ = "";
+    /// <summary>
+    /// Apple poster-style Event Ticket background. (1074px x 1344px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Artwork {
@@ -603,21 +675,27 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "posterLogo" field.</summary>
-    public const int PosterLogoFieldNumber = 24;
-    private string posterLogo_ = "";
+    /// <summary>Field number for the "primaryLogo" field.</summary>
+    public const int PrimaryLogoFieldNumber = 24;
+    private string primaryLogo_ = "";
+    /// <summary>
+    /// Apple logo used in the top left hand corner for Apple poster style Event tickets and Semantic Boarding Passes (≤378px x 30px).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PosterLogo {
-      get { return posterLogo_; }
+    public string PrimaryLogo {
+      get { return primaryLogo_; }
       set {
-        posterLogo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        primaryLogo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "venueMap" field.</summary>
     public const int VenueMapFieldNumber = 25;
     private string venueMap_ = "";
+    /// <summary>
+    /// Venue map image for poster-style Apple Event Tickets. (min 1074px width, 16:9 or 4:5 ratio).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string VenueMap {
@@ -665,7 +743,7 @@ namespace PassKit.Grpc {
       if (WideLogo != other.WideLogo) return false;
       if (SecondaryLogo != other.SecondaryLogo) return false;
       if (Artwork != other.Artwork) return false;
-      if (PosterLogo != other.PosterLogo) return false;
+      if (PrimaryLogo != other.PrimaryLogo) return false;
       if (VenueMap != other.VenueMap) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -697,7 +775,7 @@ namespace PassKit.Grpc {
       if (WideLogo.Length != 0) hash ^= WideLogo.GetHashCode();
       if (SecondaryLogo.Length != 0) hash ^= SecondaryLogo.GetHashCode();
       if (Artwork.Length != 0) hash ^= Artwork.GetHashCode();
-      if (PosterLogo.Length != 0) hash ^= PosterLogo.GetHashCode();
+      if (PrimaryLogo.Length != 0) hash ^= PrimaryLogo.GetHashCode();
       if (VenueMap.Length != 0) hash ^= VenueMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -809,9 +887,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(186, 1);
         output.WriteString(Artwork);
       }
-      if (PosterLogo.Length != 0) {
+      if (PrimaryLogo.Length != 0) {
         output.WriteRawTag(194, 1);
-        output.WriteString(PosterLogo);
+        output.WriteString(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         output.WriteRawTag(202, 1);
@@ -919,9 +997,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(186, 1);
         output.WriteString(Artwork);
       }
-      if (PosterLogo.Length != 0) {
+      if (PrimaryLogo.Length != 0) {
         output.WriteRawTag(194, 1);
-        output.WriteString(PosterLogo);
+        output.WriteString(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         output.WriteRawTag(202, 1);
@@ -1006,8 +1084,8 @@ namespace PassKit.Grpc {
       if (Artwork.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Artwork);
       }
-      if (PosterLogo.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(PosterLogo);
+      if (PrimaryLogo.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(VenueMap);
@@ -1093,8 +1171,8 @@ namespace PassKit.Grpc {
       if (other.Artwork.Length != 0) {
         Artwork = other.Artwork;
       }
-      if (other.PosterLogo.Length != 0) {
-        PosterLogo = other.PosterLogo;
+      if (other.PrimaryLogo.Length != 0) {
+        PrimaryLogo = other.PrimaryLogo;
       }
       if (other.VenueMap.Length != 0) {
         VenueMap = other.VenueMap;
@@ -1211,7 +1289,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 194: {
-            PosterLogo = input.ReadString();
+            PrimaryLogo = input.ReadString();
             break;
           }
           case 202: {
@@ -1330,7 +1408,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 194: {
-            PosterLogo = input.ReadString();
+            PrimaryLogo = input.ReadString();
             break;
           }
           case 202: {
@@ -1345,7 +1423,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// Images strings can be either a base64 image or a url. See image 'Use' enum for descriptions and sizes.
+  /// Used to provide image data by use case, as either base64 or a URL. See image 'Use' enum for descriptions and sizes.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ImageData : pb::IMessage<ImageData>
@@ -1405,7 +1483,7 @@ namespace PassKit.Grpc {
       wideLogo_ = other.wideLogo_;
       secondaryLogo_ = other.secondaryLogo_;
       artwork_ = other.artwork_;
-      posterLogo_ = other.posterLogo_;
+      primaryLogo_ = other.primaryLogo_;
       venueMap_ = other.venueMap_;
       localizedIcon_ = other.localizedIcon_ != null ? other.localizedIcon_.Clone() : null;
       localizedLogo_ = other.localizedLogo_ != null ? other.localizedLogo_.Clone() : null;
@@ -1425,7 +1503,7 @@ namespace PassKit.Grpc {
       localizedWideLogo_ = other.localizedWideLogo_ != null ? other.localizedWideLogo_.Clone() : null;
       localizedSecondaryLogo_ = other.localizedSecondaryLogo_ != null ? other.localizedSecondaryLogo_.Clone() : null;
       localizedArtwork_ = other.localizedArtwork_ != null ? other.localizedArtwork_.Clone() : null;
-      localizedPosterLogo_ = other.localizedPosterLogo_ != null ? other.localizedPosterLogo_.Clone() : null;
+      localizedPrimaryLogo_ = other.localizedPrimaryLogo_ != null ? other.localizedPrimaryLogo_.Clone() : null;
       localizedVenueMap_ = other.localizedVenueMap_ != null ? other.localizedVenueMap_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1781,18 +1859,18 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "posterLogo" field.</summary>
-    public const int PosterLogoFieldNumber = 24;
-    private string posterLogo_ = "";
+    /// <summary>Field number for the "primaryLogo" field.</summary>
+    public const int PrimaryLogoFieldNumber = 24;
+    private string primaryLogo_ = "";
     /// <summary>
-    /// Used in the top left hand corner for Apple poster style Event tickets (&lt;=378px x 90px)
+    /// Used in the top left hand corner for Apple primary style Event tickets and Semantic Boarding Passes (&lt;=378px x 90px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PosterLogo {
-      get { return posterLogo_; }
+    public string PrimaryLogo {
+      get { return primaryLogo_; }
       set {
-        posterLogo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        primaryLogo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2081,18 +2159,18 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "localizedPosterLogo" field.</summary>
-    public const int LocalizedPosterLogoFieldNumber = 49;
-    private global::PassKit.Grpc.LocalizedString localizedPosterLogo_;
+    /// <summary>Field number for the "localizedPrimaryLogo" field.</summary>
+    public const int LocalizedPrimaryLogoFieldNumber = 49;
+    private global::PassKit.Grpc.LocalizedString localizedPrimaryLogo_;
     /// <summary>
-    /// Sets different posterLogo images for non-default languages.
+    /// Sets different primaryLogo images for non-default languages.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.LocalizedString LocalizedPosterLogo {
-      get { return localizedPosterLogo_; }
+    public global::PassKit.Grpc.LocalizedString LocalizedPrimaryLogo {
+      get { return localizedPrimaryLogo_; }
       set {
-        localizedPosterLogo_ = value;
+        localizedPrimaryLogo_ = value;
       }
     }
 
@@ -2149,7 +2227,7 @@ namespace PassKit.Grpc {
       if (WideLogo != other.WideLogo) return false;
       if (SecondaryLogo != other.SecondaryLogo) return false;
       if (Artwork != other.Artwork) return false;
-      if (PosterLogo != other.PosterLogo) return false;
+      if (PrimaryLogo != other.PrimaryLogo) return false;
       if (VenueMap != other.VenueMap) return false;
       if (!object.Equals(LocalizedIcon, other.LocalizedIcon)) return false;
       if (!object.Equals(LocalizedLogo, other.LocalizedLogo)) return false;
@@ -2169,7 +2247,7 @@ namespace PassKit.Grpc {
       if (!object.Equals(LocalizedWideLogo, other.LocalizedWideLogo)) return false;
       if (!object.Equals(LocalizedSecondaryLogo, other.LocalizedSecondaryLogo)) return false;
       if (!object.Equals(LocalizedArtwork, other.LocalizedArtwork)) return false;
-      if (!object.Equals(LocalizedPosterLogo, other.LocalizedPosterLogo)) return false;
+      if (!object.Equals(LocalizedPrimaryLogo, other.LocalizedPrimaryLogo)) return false;
       if (!object.Equals(LocalizedVenueMap, other.LocalizedVenueMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2201,7 +2279,7 @@ namespace PassKit.Grpc {
       if (WideLogo.Length != 0) hash ^= WideLogo.GetHashCode();
       if (SecondaryLogo.Length != 0) hash ^= SecondaryLogo.GetHashCode();
       if (Artwork.Length != 0) hash ^= Artwork.GetHashCode();
-      if (PosterLogo.Length != 0) hash ^= PosterLogo.GetHashCode();
+      if (PrimaryLogo.Length != 0) hash ^= PrimaryLogo.GetHashCode();
       if (VenueMap.Length != 0) hash ^= VenueMap.GetHashCode();
       if (localizedIcon_ != null) hash ^= LocalizedIcon.GetHashCode();
       if (localizedLogo_ != null) hash ^= LocalizedLogo.GetHashCode();
@@ -2221,7 +2299,7 @@ namespace PassKit.Grpc {
       if (localizedWideLogo_ != null) hash ^= LocalizedWideLogo.GetHashCode();
       if (localizedSecondaryLogo_ != null) hash ^= LocalizedSecondaryLogo.GetHashCode();
       if (localizedArtwork_ != null) hash ^= LocalizedArtwork.GetHashCode();
-      if (localizedPosterLogo_ != null) hash ^= LocalizedPosterLogo.GetHashCode();
+      if (localizedPrimaryLogo_ != null) hash ^= LocalizedPrimaryLogo.GetHashCode();
       if (localizedVenueMap_ != null) hash ^= LocalizedVenueMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2333,9 +2411,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(186, 1);
         output.WriteString(Artwork);
       }
-      if (PosterLogo.Length != 0) {
+      if (PrimaryLogo.Length != 0) {
         output.WriteRawTag(194, 1);
-        output.WriteString(PosterLogo);
+        output.WriteString(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         output.WriteRawTag(202, 1);
@@ -2413,9 +2491,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(130, 3);
         output.WriteMessage(LocalizedArtwork);
       }
-      if (localizedPosterLogo_ != null) {
+      if (localizedPrimaryLogo_ != null) {
         output.WriteRawTag(138, 3);
-        output.WriteMessage(LocalizedPosterLogo);
+        output.WriteMessage(LocalizedPrimaryLogo);
       }
       if (localizedVenueMap_ != null) {
         output.WriteRawTag(146, 3);
@@ -2523,9 +2601,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(186, 1);
         output.WriteString(Artwork);
       }
-      if (PosterLogo.Length != 0) {
+      if (PrimaryLogo.Length != 0) {
         output.WriteRawTag(194, 1);
-        output.WriteString(PosterLogo);
+        output.WriteString(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         output.WriteRawTag(202, 1);
@@ -2603,9 +2681,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(130, 3);
         output.WriteMessage(LocalizedArtwork);
       }
-      if (localizedPosterLogo_ != null) {
+      if (localizedPrimaryLogo_ != null) {
         output.WriteRawTag(138, 3);
-        output.WriteMessage(LocalizedPosterLogo);
+        output.WriteMessage(LocalizedPrimaryLogo);
       }
       if (localizedVenueMap_ != null) {
         output.WriteRawTag(146, 3);
@@ -2690,8 +2768,8 @@ namespace PassKit.Grpc {
       if (Artwork.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Artwork);
       }
-      if (PosterLogo.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(PosterLogo);
+      if (PrimaryLogo.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PrimaryLogo);
       }
       if (VenueMap.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(VenueMap);
@@ -2750,8 +2828,8 @@ namespace PassKit.Grpc {
       if (localizedArtwork_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedArtwork);
       }
-      if (localizedPosterLogo_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedPosterLogo);
+      if (localizedPrimaryLogo_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedPrimaryLogo);
       }
       if (localizedVenueMap_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedVenueMap);
@@ -2840,8 +2918,8 @@ namespace PassKit.Grpc {
       if (other.Artwork.Length != 0) {
         Artwork = other.Artwork;
       }
-      if (other.PosterLogo.Length != 0) {
-        PosterLogo = other.PosterLogo;
+      if (other.PrimaryLogo.Length != 0) {
+        PrimaryLogo = other.PrimaryLogo;
       }
       if (other.VenueMap.Length != 0) {
         VenueMap = other.VenueMap;
@@ -2954,11 +3032,11 @@ namespace PassKit.Grpc {
         }
         LocalizedArtwork.MergeFrom(other.LocalizedArtwork);
       }
-      if (other.localizedPosterLogo_ != null) {
-        if (localizedPosterLogo_ == null) {
-          LocalizedPosterLogo = new global::PassKit.Grpc.LocalizedString();
+      if (other.localizedPrimaryLogo_ != null) {
+        if (localizedPrimaryLogo_ == null) {
+          LocalizedPrimaryLogo = new global::PassKit.Grpc.LocalizedString();
         }
-        LocalizedPosterLogo.MergeFrom(other.LocalizedPosterLogo);
+        LocalizedPrimaryLogo.MergeFrom(other.LocalizedPrimaryLogo);
       }
       if (other.localizedVenueMap_ != null) {
         if (localizedVenueMap_ == null) {
@@ -3081,7 +3159,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 194: {
-            PosterLogo = input.ReadString();
+            PrimaryLogo = input.ReadString();
             break;
           }
           case 202: {
@@ -3215,10 +3293,10 @@ namespace PassKit.Grpc {
             break;
           }
           case 394: {
-            if (localizedPosterLogo_ == null) {
-              LocalizedPosterLogo = new global::PassKit.Grpc.LocalizedString();
+            if (localizedPrimaryLogo_ == null) {
+              LocalizedPrimaryLogo = new global::PassKit.Grpc.LocalizedString();
             }
-            input.ReadMessage(LocalizedPosterLogo);
+            input.ReadMessage(LocalizedPrimaryLogo);
             break;
           }
           case 402: {
@@ -3343,7 +3421,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 194: {
-            PosterLogo = input.ReadString();
+            PrimaryLogo = input.ReadString();
             break;
           }
           case 202: {
@@ -3477,10 +3555,10 @@ namespace PassKit.Grpc {
             break;
           }
           case 394: {
-            if (localizedPosterLogo_ == null) {
-              LocalizedPosterLogo = new global::PassKit.Grpc.LocalizedString();
+            if (localizedPrimaryLogo_ == null) {
+              LocalizedPrimaryLogo = new global::PassKit.Grpc.LocalizedString();
             }
-            input.ReadMessage(LocalizedPosterLogo);
+            input.ReadMessage(LocalizedPrimaryLogo);
             break;
           }
           case 402: {
@@ -3497,6 +3575,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents metadata about an uploaded image.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ImageRecord : pb::IMessage<ImageRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3552,6 +3633,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Unique image identifier.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -3564,6 +3648,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Image name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -3576,6 +3663,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "url" field.</summary>
     public const int UrlFieldNumber = 3;
     private string url_ = "";
+    /// <summary>
+    /// Hosted URL for accessing the image.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Url {
@@ -3588,6 +3678,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "use" field.</summary>
     public const int UseFieldNumber = 5;
     private global::PassKit.Grpc.ImageUse use_ = global::PassKit.Grpc.ImageUse.Icon;
+    /// <summary>
+    /// Enum indicating how the image is used.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.ImageUse Use {
@@ -3602,6 +3695,9 @@ namespace PassKit.Grpc {
     private static readonly pb::FieldCodec<global::PassKit.Grpc.LanguageCode> _repeated_languages_codec
         = pb::FieldCodec.ForEnum(50, x => (int) x, x => (global::PassKit.Grpc.LanguageCode) x);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.LanguageCode> languages_ = new pbc::RepeatedField<global::PassKit.Grpc.LanguageCode>();
+    /// <summary>
+    /// Languages this image supports.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::PassKit.Grpc.LanguageCode> Languages {
@@ -3611,6 +3707,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "ownerUsername" field.</summary>
     public const int OwnerUsernameFieldNumber = 7;
     private string ownerUsername_ = "";
+    /// <summary>
+    /// Username of the image owner.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerUsername {
@@ -3623,6 +3722,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "createdAt" field.</summary>
     public const int CreatedAtFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    /// <summary>
+    /// Timestamp of creation.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
@@ -3635,6 +3737,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "updatedAt" field.</summary>
     public const int UpdatedAtFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updatedAt_;
+    /// <summary>
+    /// Timestamp of last update.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp UpdatedAt {
@@ -3963,6 +4068,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input for uploading a profile image (URL or base64-encoded).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ProfileImageInput : pb::IMessage<ProfileImageInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4164,6 +4272,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used for returning multiple image records.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MultipleImages : pb::IMessage<MultipleImages>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4351,6 +4462,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to generate a stamp preview for a given image ID and status bitmask.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StampImageRequest : pb::IMessage<StampImageRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4592,6 +4706,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input required to create a new image entry. Required fields: name, imageData.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CreateImageInput : pb::IMessage<CreateImageInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4842,6 +4959,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input to update an existing image or its localized variants. Required fields: id.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UpdateImageInput : pb::IMessage<UpdateImageInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5172,6 +5292,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// A single binary image blob.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ImageBundle : pb::IMessage<ImageBundle>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5370,6 +5493,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Input for localized image update by language. Required fields: id, languageCode.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocalizedImageInput : pb::IMessage<LocalizedImageInput>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5611,6 +5737,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Configuration for rendering a stamp card image.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StampImageConfig : pb::IMessage<StampImageConfig>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6626,6 +6755,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request to preview the stamp card design based on configuration and state.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StampImagePreviewRequest : pb::IMessage<StampImagePreviewRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6873,6 +7005,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// A string-encoded preview of the rendered stamp image.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StampImagePreview : pb::IMessage<StampImagePreview>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

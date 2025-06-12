@@ -13,6 +13,9 @@
 using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc.Analytics {
+  /// <summary>
+  /// Analytics provides access to daily, monthly, or yearly analytics reports.
+  /// </summary>
   public static partial class Analytics
   {
     static readonly string __ServiceName = "analytics.Analytics";
@@ -97,7 +100,7 @@ namespace PassKit.Grpc.Analytics {
       }
 
       /// <summary>
-      /// Retrieve a daily, monthly or yearly record.
+      /// Retrieves analytics data for a class or project, such as daily check-ins, installs, redemptions, etc. Required fields: classId, protocol.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -110,7 +113,7 @@ namespace PassKit.Grpc.Analytics {
         return getAnalytics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieve a daily, monthly or yearly record.
+      /// Retrieves analytics data for a class or project, such as daily check-ins, installs, redemptions, etc. Required fields: classId, protocol.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -121,7 +124,7 @@ namespace PassKit.Grpc.Analytics {
         return CallInvoker.BlockingUnaryCall(__Method_getAnalytics, null, options, request);
       }
       /// <summary>
-      /// Retrieve a daily, monthly or yearly record.
+      /// Retrieves analytics data for a class or project, such as daily check-ins, installs, redemptions, etc. Required fields: classId, protocol.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -134,7 +137,7 @@ namespace PassKit.Grpc.Analytics {
         return getAnalyticsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieve a daily, monthly or yearly record.
+      /// Retrieves analytics data for a class or project, such as daily check-ins, installs, redemptions, etc. Required fields: classId, protocol.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

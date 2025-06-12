@@ -706,6 +706,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Address contains structured address fields for a person or location.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Address : pb::IMessage<Address>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -760,6 +763,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "addressLine1" field.</summary>
     public const int AddressLine1FieldNumber = 1;
     private string addressLine1_ = "";
+    /// <summary>
+    /// The first line of the street address (e.g. house number and street name).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AddressLine1 {
@@ -772,6 +778,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "addressLine2" field.</summary>
     public const int AddressLine2FieldNumber = 2;
     private string addressLine2_ = "";
+    /// <summary>
+    /// The second line of the address (e.g. apartment, suite, unit, building, floor).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AddressLine2 {
@@ -784,6 +793,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "addressLine3" field.</summary>
     public const int AddressLine3FieldNumber = 3;
     private string addressLine3_ = "";
+    /// <summary>
+    /// The third line of the address if additional space is needed.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AddressLine3 {
@@ -796,6 +808,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "city" field.</summary>
     public const int CityFieldNumber = 4;
     private string city_ = "";
+    /// <summary>
+    /// The city or locality.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string City {
@@ -808,6 +823,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 5;
     private string state_ = "";
+    /// <summary>
+    /// The state, province, or region.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string State {
@@ -820,6 +838,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "zipCode" field.</summary>
     public const int ZipCodeFieldNumber = 6;
     private string zipCode_ = "";
+    /// <summary>
+    /// The postal or ZIP code.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ZipCode {
@@ -832,6 +853,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "countryCode" field.</summary>
     public const int CountryCodeFieldNumber = 7;
     private string countryCode_ = "";
+    /// <summary>
+    /// The ISO 3166-1 alpha-2 country code (e.g. "US", "HK").
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryCode {
@@ -1126,6 +1150,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Request object for updating personal details on a pass holder.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PersonRequest : pb::IMessage<PersonRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1178,7 +1205,7 @@ namespace PassKit.Grpc {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Pass Id (22 characters).
+    /// The unique PassKit pass ID (22 characters).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1193,7 +1220,8 @@ namespace PassKit.Grpc {
     public const int ExternalIdFieldNumber = 2;
     private string externalId_ = "";
     /// <summary>
-    /// External Id of the pass holder. Needs to provide Class Id as well.
+    /// The external identifier for the pass holder.
+    /// Used as an alternative to pass ID when paired with class ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1208,7 +1236,8 @@ namespace PassKit.Grpc {
     public const int ClassIdFieldNumber = 3;
     private string classId_ = "";
     /// <summary>
-    /// The class ID that the projects refers to (highest level protocol object; i.e. member program id, coupon campaign id, etc).
+    /// The class ID (e.g. member program ID, coupon campaign ID).
+    /// Required if externalId is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1222,6 +1251,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "person" field.</summary>
     public const int PersonFieldNumber = 4;
     private global::PassKit.Grpc.Person person_;
+    /// <summary>
+    /// The updated person details.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.Person Person {

@@ -64,6 +64,9 @@ namespace PassKit.Grpc.Members {
 
   }
   #region Enums
+  /// <summary>
+  /// Enum representing event types recorded for a member.
+  /// </summary>
   public enum MemberEvents {
     /// <summary>
     /// Do not use
@@ -103,7 +106,7 @@ namespace PassKit.Grpc.Members {
 
   #region Messages
   /// <summary>
-  /// The Member Event record
+  /// Record of an event that occurred for a member.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberEvent : pb::IMessage<MemberEvent>
@@ -931,6 +934,9 @@ namespace PassKit.Grpc.Members {
 
   }
 
+  /// <summary>
+  /// Minimal member information stored within an event record.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MemberMininmal : pb::IMessage<MemberMininmal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

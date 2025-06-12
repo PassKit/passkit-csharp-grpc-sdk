@@ -27,136 +27,59 @@ namespace PassKit.Grpc.Flights {
             "Chdpby9mbGlnaHRzL2ZsaWdodC5wcm90bxIHZmxpZ2h0cxoeaW8vY29tbW9u",
             "L2NvbW1vbl9vYmplY3RzLnByb3RvGhlpby9jb21tb24vcHJveGltaXR5LnBy",
             "b3RvGhVpby9jb21tb24vbGlua3MucHJvdG8aF2lvL2NvbW1vbi9tZXRyaWNz",
-            "LnByb3RvGiJpby9mbGlnaHRzL2ZsaWdodF9kZXNpZ25hdG9yLnByb3RvGi5w",
-            "cm90b2MtZ2VuLW9wZW5hcGl2Mi9vcHRpb25zL2Fubm90YXRpb25zLnByb3Rv",
-            "IuwLCgZGbGlnaHQSHQoLY2FycmllckNvZGUYASABKAlCCJJBBXgDgAECEhsK",
-            "DGZsaWdodE51bWJlchgCIAEoCUIFkkECeAUSHAoNYm9hcmRpbmdQb2ludBgD",
-            "IAEoCUIFkkECeAMSHQoOZGVwbGFuaW5nUG9pbnQYBCABKAlCBZJBAngDEh8K",
-            "DWRlcGFydHVyZURhdGUYBSABKAsyCC5pby5EYXRlEhkKEWRlcGFydHVyZVRl",
-            "cm1pbmFsGAYgASgJEhcKD2Fycml2YWxUZXJtaW5hbBgHIAEoCRIVCg1kZXBh",
-            "cnR1cmVHYXRlGAggASgJEhMKC2Fycml2YWxHYXRlGAkgASgJEjEKFnNjaGVk",
-            "dWxlZERlcGFydHVyZVRpbWUYCiABKAsyES5pby5Mb2NhbERhdGVUaW1lEjEK",
-            "FmVzdGltYXRlZERlcGFydHVyZVRpbWUYCyABKAsyES5pby5Mb2NhbERhdGVU",
-            "aW1lEicKDGJvYXJkaW5nVGltZRgMIAEoCzIRLmlvLkxvY2FsRGF0ZVRpbWUS",
-            "KgoPZ2F0ZUNsb3NpbmdUaW1lGA0gASgLMhEuaW8uTG9jYWxEYXRlVGltZRIv",
-            "ChRzY2hlZHVsZWRBcnJpdmFsVGltZRgOIAEoCzIRLmlvLkxvY2FsRGF0ZVRp",
-            "bWUSLwoUZXN0aW1hdGVkQXJyaXZhbFRpbWUYDyABKAsyES5pby5Mb2NhbERh",
-            "dGVUaW1lEiYKFG9wZXJhdGluZ0NhcnJpZXJDb2RlGBAgASgJQgiSQQV4A4AB",
-            "AhIkChVvcGVyYXRpbmdGbGlnaHROdW1iZXIYESABKAlCBZJBAngFEh4KFmNv",
-            "ZGVTaGFyZUZsaWdodE51bWJlcnMYEiADKAkSFgoOcGFzc1RlbXBsYXRlSWQY",
-            "EyABKAkSEwoLYmFnZ2FnZUJlbHQYFSABKAkSJgoTYXV0b0ludmFsaWRhdGVB",
-            "ZnRlchgWIAEoDUIJkkEGOgQyODgwEikKHWF1dG9JbnZhbGlkYXRlQ2FuY2Vs",
-            "bGVkUGFzc2VzGBcgASgIQgIYARIxChBsb2NhdGlvbk1lc3NhZ2VzGBggAygL",
-            "Mg8uaW8uR1BTTG9jYXRpb25CBpJBA6ABChIqCg5iZWFjb25NZXNzYWdlcxgZ",
-            "IAMoCzIKLmlvLkJlYWNvbkIGkkEDoAEKEh8KBWxpbmtzGBogAygLMgguaW8u",
-            "TGlua0IGkkEDoAEKEh8KF3N1c3BlbmRBdXRvbWF0aWNVcGRhdGVzGBsgASgI",
-            "Ei8KDmJvYXJkaW5nUG9saWN5GBwgASgOMhcuZmxpZ2h0cy5Cb2FyZGluZ1Bv",
-            "bGljeRIvCg1zZWF0aW5nUG9saWN5GB0gASgOMhguZmxpZ2h0cy5TZWF0Q2xh",
-            "c3NQb2xpY3kSJQoGc3RhdHVzGB4gASgOMhUuZmxpZ2h0cy5GbGlnaHRTdGF0",
-            "dXMSGAoQQ29uZGl0aW9uYWxJdGVtcxgfIAEoCBIdChVCYXJjb2RlQWRkaXRp",
-            "b25hbERhdGEYICABKAkSHAoHbWV0cmljcxghIAEoCzILLmlvLk1ldHJpY3MS",
-            "LwoMY3JlYXRlTWV0aG9kGCIgASgOMhkuZmxpZ2h0cy5GbGlnaHRDcmVhdGVN",
-            "b2RlEhQKDGRlc2lnbmF0b3JJZBgjIAEoCRI2ChlpbnZhbGlkYXRlQ2FuY2Vs",
-            "bGVkUGFzc2VzGCQgASgOMgouaW8uVG9nZ2xlQgeSQQQ6Ak9OOtwBkkHYAQrV",
-            "ASoGRmxpZ2h0MlNBIGZsaWdodCByZWNvcmQgZGVzY3JpYmVzIGRhdGEgdGhh",
-            "dCBpcyByZWxldmFudCB0byBhIHNpbmdsZSBmbGlnaHQgb24gYSBnaXZlbiBk",
-            "YXRlLtIBC2NhcnJpZXJDb2Rl0gEMZmxpZ2h0TnVtYmVy0gENYm9hcmRpbmdQ",
-            "b2ludNIBDmRlcGxhbmluZ1BvaW500gEWc2NoZWR1bGVkRGVwYXJ0dXJlVGlt",
-            "ZdIBDnBhc3NUZW1wbGF0ZUlk0gENZGVwYXJ0dXJlRGF0ZSKbAQoNRmxpZ2h0",
-            "UmVxdWVzdBIdCgtjYXJyaWVyQ29kZRgBIAEoCUIIkkEFeAOAAQISGwoMZmxp",
-            "Z2h0TnVtYmVyGAIgASgJQgWSQQJ4BRIfCg1kZXBhcnR1cmVEYXRlGAMgASgL",
-            "MgguaW8uRGF0ZRIVCg1ib2FyZGluZ1BvaW50GAUgASgJEhYKDmRlcGxhbmlu",
-            "Z1BvaW50GAYgASgJKvoBCgxGbGlnaHRTdGF0dXMSCwoHVU5LTk9XThAAEg0K",
-            "CVNDSEVEVUxFRBABEgwKCERFUEFSVEVEEAISCQoFSU5BSVIQAxIKCgZMQU5E",
-            "RUQQBBILCgdBUlJJVkVEEAUSDQoJQ0FOQ0VMTEVEEAYSCwoHREVMQVlFRBAH",
-            "EhUKEURFUEFSVEVEX0RJVkVSVEVEEAgSEgoOSU5BSVJfRElWRVJURUQQCRIU",
-            "ChBBUlJJVkVEX0RJVkVSVEVEEAoSFQoRREVQQVJURURfUkVDT1ZFUlkQCxIS",
-            "Cg5JTkFJUl9SRUNPVkVSWRAMEhQKEEFSUklWRURfUkVDT1ZFUlkQDSo9ChBG",
-            "bGlnaHRDcmVhdGVNb2RlEg4KCkRPX05PVF9VU0UQABIKCgZNQU5VQUwQARIN",
-            "CglBVVRPTUFUSUMQAkJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0",
-            "YXNoLnBhc3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIU",
-            "UGFzc0tpdC5HcnBjLkZsaWdodHNiBnByb3RvMw=="));
+            "LnByb3RvGhdpby9mbGlnaHRzL2NvbW1vbi5wcm90bxoucHJvdG9jLWdlbi1v",
+            "cGVuYXBpdjIvb3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90byKPDAoGRmxpZ2h0",
+            "Eh0KC2NhcnJpZXJDb2RlGAEgASgJQgiSQQV4A4ABAhIbCgxmbGlnaHROdW1i",
+            "ZXIYAiABKAlCBZJBAngFEhwKDWJvYXJkaW5nUG9pbnQYAyABKAlCBZJBAngD",
+            "Eh0KDmRlcGxhbmluZ1BvaW50GAQgASgJQgWSQQJ4AxIfCg1kZXBhcnR1cmVE",
+            "YXRlGAUgASgLMgguaW8uRGF0ZRIZChFkZXBhcnR1cmVUZXJtaW5hbBgGIAEo",
+            "CRIXCg9hcnJpdmFsVGVybWluYWwYByABKAkSFQoNZGVwYXJ0dXJlR2F0ZRgI",
+            "IAEoCRITCgthcnJpdmFsR2F0ZRgJIAEoCRIxChZzY2hlZHVsZWREZXBhcnR1",
+            "cmVUaW1lGAogASgLMhEuaW8uTG9jYWxEYXRlVGltZRIxChZlc3RpbWF0ZWRE",
+            "ZXBhcnR1cmVUaW1lGAsgASgLMhEuaW8uTG9jYWxEYXRlVGltZRInCgxib2Fy",
+            "ZGluZ1RpbWUYDCABKAsyES5pby5Mb2NhbERhdGVUaW1lEioKD2dhdGVDbG9z",
+            "aW5nVGltZRgNIAEoCzIRLmlvLkxvY2FsRGF0ZVRpbWUSLwoUc2NoZWR1bGVk",
+            "QXJyaXZhbFRpbWUYDiABKAsyES5pby5Mb2NhbERhdGVUaW1lEi8KFGVzdGlt",
+            "YXRlZEFycml2YWxUaW1lGA8gASgLMhEuaW8uTG9jYWxEYXRlVGltZRImChRv",
+            "cGVyYXRpbmdDYXJyaWVyQ29kZRgQIAEoCUIIkkEFeAOAAQISJAoVb3BlcmF0",
+            "aW5nRmxpZ2h0TnVtYmVyGBEgASgJQgWSQQJ4BRIeChZjb2RlU2hhcmVGbGln",
+            "aHROdW1iZXJzGBIgAygJEhYKDnBhc3NUZW1wbGF0ZUlkGBMgASgJEhMKC2Jh",
+            "Z2dhZ2VCZWx0GBUgASgJEiYKE2F1dG9JbnZhbGlkYXRlQWZ0ZXIYFiABKA1C",
+            "CZJBBjoEMjg4MBIpCh1hdXRvSW52YWxpZGF0ZUNhbmNlbGxlZFBhc3NlcxgX",
+            "IAEoCEICGAESMQoQbG9jYXRpb25NZXNzYWdlcxgYIAMoCzIPLmlvLkdQU0xv",
+            "Y2F0aW9uQgaSQQOgAQoSKgoOYmVhY29uTWVzc2FnZXMYGSADKAsyCi5pby5C",
+            "ZWFjb25CBpJBA6ABChIfCgVsaW5rcxgaIAMoCzIILmlvLkxpbmtCBpJBA6AB",
+            "ChIfChdzdXNwZW5kQXV0b21hdGljVXBkYXRlcxgbIAEoCBIvCg5ib2FyZGlu",
+            "Z1BvbGljeRgcIAEoDjIXLmZsaWdodHMuQm9hcmRpbmdQb2xpY3kSLwoNc2Vh",
+            "dGluZ1BvbGljeRgdIAEoDjIYLmZsaWdodHMuU2VhdENsYXNzUG9saWN5EiUK",
+            "BnN0YXR1cxgeIAEoDjIVLmZsaWdodHMuRmxpZ2h0U3RhdHVzEhgKEENvbmRp",
+            "dGlvbmFsSXRlbXMYHyABKAgSHQoVQmFyY29kZUFkZGl0aW9uYWxEYXRhGCAg",
+            "ASgJEjYKGWludmFsaWRhdGVDYW5jZWxsZWRQYXNzZXMYJCABKA4yCi5pby5U",
+            "b2dnbGVCB5JBBDoCT04SIQoEdXJscxglIAEoCzITLmZsaWdodHMuRmxpZ2h0",
+            "VVJMcxIcCgdtZXRyaWNzGCEgASgLMgsuaW8uTWV0cmljcxIvCgxjcmVhdGVN",
+            "ZXRob2QYIiABKA4yGS5mbGlnaHRzLkZsaWdodENyZWF0ZU1vZGUSFAoMZGVz",
+            "aWduYXRvcklkGCMgASgJOtwBkkHYAQrVASoGRmxpZ2h0MlNBIGZsaWdodCBy",
+            "ZWNvcmQgZGVzY3JpYmVzIGRhdGEgdGhhdCBpcyByZWxldmFudCB0byBhIHNp",
+            "bmdsZSBmbGlnaHQgb24gYSBnaXZlbiBkYXRlLtIBC2NhcnJpZXJDb2Rl0gEM",
+            "ZmxpZ2h0TnVtYmVy0gENYm9hcmRpbmdQb2ludNIBDmRlcGxhbmluZ1BvaW50",
+            "0gEWc2NoZWR1bGVkRGVwYXJ0dXJlVGltZdIBDnBhc3NUZW1wbGF0ZUlk0gEN",
+            "ZGVwYXJ0dXJlRGF0ZSKbAQoNRmxpZ2h0UmVxdWVzdBIdCgtjYXJyaWVyQ29k",
+            "ZRgBIAEoCUIIkkEFeAOAAQISGwoMZmxpZ2h0TnVtYmVyGAIgASgJQgWSQQJ4",
+            "BRIfCg1kZXBhcnR1cmVEYXRlGAMgASgLMgguaW8uRGF0ZRIVCg1ib2FyZGlu",
+            "Z1BvaW50GAUgASgJEhYKDmRlcGxhbmluZ1BvaW50GAYgASgJQl8KGGNvbS5w",
+            "YXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9k",
+            "ZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0LkdycGMuRmxpZ2h0c2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.Flights.FlightDesignatorReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.Flights.FlightStatus), typeof(global::PassKit.Grpc.Flights.FlightCreateMode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Flight), global::PassKit.Grpc.Flights.Flight.Parser, new[]{ "CarrierCode", "FlightNumber", "BoardingPoint", "DeplaningPoint", "DepartureDate", "DepartureTerminal", "ArrivalTerminal", "DepartureGate", "ArrivalGate", "ScheduledDepartureTime", "EstimatedDepartureTime", "BoardingTime", "GateClosingTime", "ScheduledArrivalTime", "EstimatedArrivalTime", "OperatingCarrierCode", "OperatingFlightNumber", "CodeShareFlightNumbers", "PassTemplateId", "BaggageBelt", "AutoInvalidateAfter", "AutoInvalidateCancelledPasses", "LocationMessages", "BeaconMessages", "Links", "SuspendAutomaticUpdates", "BoardingPolicy", "SeatingPolicy", "Status", "ConditionalItems", "BarcodeAdditionalData", "Metrics", "CreateMethod", "DesignatorId", "InvalidateCancelledPasses" }, null, null, null, null),
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.Flights.CommonReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Flight), global::PassKit.Grpc.Flights.Flight.Parser, new[]{ "CarrierCode", "FlightNumber", "BoardingPoint", "DeplaningPoint", "DepartureDate", "DepartureTerminal", "ArrivalTerminal", "DepartureGate", "ArrivalGate", "ScheduledDepartureTime", "EstimatedDepartureTime", "BoardingTime", "GateClosingTime", "ScheduledArrivalTime", "EstimatedArrivalTime", "OperatingCarrierCode", "OperatingFlightNumber", "CodeShareFlightNumbers", "PassTemplateId", "BaggageBelt", "AutoInvalidateAfter", "AutoInvalidateCancelledPasses", "LocationMessages", "BeaconMessages", "Links", "SuspendAutomaticUpdates", "BoardingPolicy", "SeatingPolicy", "Status", "ConditionalItems", "BarcodeAdditionalData", "InvalidateCancelledPasses", "Urls", "Metrics", "CreateMethod", "DesignatorId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightRequest), global::PassKit.Grpc.Flights.FlightRequest.Parser, new[]{ "CarrierCode", "FlightNumber", "DepartureDate", "BoardingPoint", "DeplaningPoint" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
-  #region Enums
-  /// <summary>
-  /// For customers subscribing to automatic updates, the flight status will be automatically updated. Status is also writable for manual updates.
-  /// </summary>
-  public enum FlightStatus {
-    /// <summary>
-    /// No status is known, or flight is not yet scheduled.
-    /// </summary>
-    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
-    /// <summary>
-    /// Flight is scheduled to depart.
-    /// </summary>
-    [pbr::OriginalName("SCHEDULED")] Scheduled = 1,
-    /// <summary>
-    /// Flight has left the departure gate, but may not be airborne yet.
-    /// </summary>
-    [pbr::OriginalName("DEPARTED")] Departed = 2,
-    /// <summary>
-    /// Flight is airborne.
-    /// </summary>
-    [pbr::OriginalName("INAIR")] Inair = 3,
-    /// <summary>
-    /// Flight has landed, but may not yet be at the arrival gate.
-    /// </summary>
-    [pbr::OriginalName("LANDED")] Landed = 4,
-    /// <summary>
-    /// Flight has arrived at the destination gate.
-    /// </summary>
-    [pbr::OriginalName("ARRIVED")] Arrived = 5,
-    /// <summary>
-    /// Flight has been cancelled.
-    /// </summary>
-    [pbr::OriginalName("CANCELLED")] Cancelled = 6,
-    /// <summary>
-    /// Flight is delayed to depart by at least 15 minutes.
-    /// </summary>
-    [pbr::OriginalName("DELAYED")] Delayed = 7,
-    /// <summary>
-    /// Flight has been diverted from its scheduled destination and has left the departure gate.
-    /// </summary>
-    [pbr::OriginalName("DEPARTED_DIVERTED")] DepartedDiverted = 8,
-    /// <summary>
-    /// Flight has been diverted from its scheduled destination and is airborne.
-    /// </summary>
-    [pbr::OriginalName("INAIR_DIVERTED")] InairDiverted = 9,
-    /// <summary>
-    /// Flight has arrived at a location different to its scheduled destination.
-    /// </summary>
-    [pbr::OriginalName("ARRIVED_DIVERTED")] ArrivedDiverted = 10,
-    /// <summary>
-    /// Flight has left its diverted destination en-route to its original destination.
-    /// </summary>
-    [pbr::OriginalName("DEPARTED_RECOVERY")] DepartedRecovery = 11,
-    /// <summary>
-    /// Flight has left its diverted destination airborne en-route to its original destination.
-    /// </summary>
-    [pbr::OriginalName("INAIR_RECOVERY")] InairRecovery = 12,
-    /// <summary>
-    /// Flight has landed at is original scheduled destination.
-    /// </summary>
-    [pbr::OriginalName("ARRIVED_RECOVERY")] ArrivedRecovery = 13,
-  }
-
-  public enum FlightCreateMode {
-    [pbr::OriginalName("DO_NOT_USE")] DoNotUse = 0,
-    [pbr::OriginalName("MANUAL")] Manual = 1,
-    [pbr::OriginalName("AUTOMATIC")] Automatic = 2,
-  }
-
-  #endregion
-
   #region Messages
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Flight : pb::IMessage<Flight>
@@ -224,10 +147,11 @@ namespace PassKit.Grpc.Flights {
       status_ = other.status_;
       conditionalItems_ = other.conditionalItems_;
       barcodeAdditionalData_ = other.barcodeAdditionalData_;
+      invalidateCancelledPasses_ = other.invalidateCancelledPasses_;
+      urls_ = other.urls_ != null ? other.urls_.Clone() : null;
       metrics_ = other.metrics_ != null ? other.metrics_.Clone() : null;
       createMethod_ = other.createMethod_;
       designatorId_ = other.designatorId_;
-      invalidateCancelledPasses_ = other.invalidateCancelledPasses_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -376,7 +300,7 @@ namespace PassKit.Grpc.Flights {
     public const int ScheduledDepartureTimeFieldNumber = 10;
     private global::PassKit.Grpc.LocalDateTime scheduledDepartureTime_;
     /// <summary>
-    /// The scheduled departure time. If omitted then the departureDate must be specified.
+    /// The scheduled departure time. Required. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -391,7 +315,7 @@ namespace PassKit.Grpc.Flights {
     public const int EstimatedDepartureTimeFieldNumber = 11;
     private global::PassKit.Grpc.LocalDateTime estimatedDepartureTime_;
     /// <summary>
-    /// The estimated departure time.
+    /// The estimated departure time. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -406,7 +330,7 @@ namespace PassKit.Grpc.Flights {
     public const int BoardingTimeFieldNumber = 12;
     private global::PassKit.Grpc.LocalDateTime boardingTime_;
     /// <summary>
-    /// The boarding time.
+    /// The boarding time. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -421,7 +345,7 @@ namespace PassKit.Grpc.Flights {
     public const int GateClosingTimeFieldNumber = 13;
     private global::PassKit.Grpc.LocalDateTime gateClosingTime_;
     /// <summary>
-    /// The time the gate will close.
+    /// The time the gate will close. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -436,7 +360,7 @@ namespace PassKit.Grpc.Flights {
     public const int ScheduledArrivalTimeFieldNumber = 14;
     private global::PassKit.Grpc.LocalDateTime scheduledArrivalTime_;
     /// <summary>
-    /// The scheduled arrival time.
+    /// The scheduled arrival time. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -451,7 +375,7 @@ namespace PassKit.Grpc.Flights {
     public const int EstimatedArrivalTimeFieldNumber = 15;
     private global::PassKit.Grpc.LocalDateTime estimatedArrivalTime_;
     /// <summary>
-    /// The estimated arrival time.
+    /// The estimated arrival time. Provide local time in ISO8601 format with seconds but without a timezone. E.g. 2026-12-25T12:00:00.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -573,7 +497,7 @@ namespace PassKit.Grpc.Flights {
         = pb::FieldCodec.ForMessage(194, global::PassKit.Grpc.GPSLocation.Parser);
     private readonly pbc::RepeatedField<global::PassKit.Grpc.GPSLocation> locationMessages_ = new pbc::RepeatedField<global::PassKit.Grpc.GPSLocation>();
     /// <summary>
-    /// A list of up to 10 GPS locations where this boarding pass should be presented on the lock-screen. Values here will override the designated defaults.
+    /// A list of up to 10 GPS locations where this boarding pass should be presented on the lock-screen. Values here will override the designated defaults. The first location should be the most relevant, E.g. the location of the checkin terminal.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -699,6 +623,36 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
+    /// <summary>Field number for the "invalidateCancelledPasses" field.</summary>
+    public const int InvalidateCancelledPassesFieldNumber = 36;
+    private global::PassKit.Grpc.Toggle invalidateCancelledPasses_ = global::PassKit.Grpc.Toggle.DoNotUse;
+    /// <summary>
+    /// Invalidate passes where either the booking or the flight have been cancelled. Default is ON.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Toggle InvalidateCancelledPasses {
+      get { return invalidateCancelledPasses_; }
+      set {
+        invalidateCancelledPasses_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "urls" field.</summary>
+    public const int UrlsFieldNumber = 37;
+    private global::PassKit.Grpc.Flights.FlightURLs urls_;
+    /// <summary>
+    /// URLs at the flight level will be completely overwritten by URLs at boarding pass level. For example, a Purchase Wifi, or Purchase Lounge Access may apply to every passenger except for passengers that have already purchased. In these cases, it is more efficient to update the boarding pass objects of those that have purchased, so as not to display a redundant link.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Flights.FlightURLs Urls {
+      get { return urls_; }
+      set {
+        urls_ = value;
+      }
+    }
+
     /// <summary>Field number for the "metrics" field.</summary>
     public const int MetricsFieldNumber = 33;
     private global::PassKit.Grpc.Metrics metrics_;
@@ -741,21 +695,6 @@ namespace PassKit.Grpc.Flights {
       get { return designatorId_; }
       set {
         designatorId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "invalidateCancelledPasses" field.</summary>
-    public const int InvalidateCancelledPassesFieldNumber = 36;
-    private global::PassKit.Grpc.Toggle invalidateCancelledPasses_ = global::PassKit.Grpc.Toggle.DoNotUse;
-    /// <summary>
-    /// Invalidate passes where either the booking or the flight have been cancelled. Default is ON.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.Toggle InvalidateCancelledPasses {
-      get { return invalidateCancelledPasses_; }
-      set {
-        invalidateCancelledPasses_ = value;
       }
     }
 
@@ -805,10 +744,11 @@ namespace PassKit.Grpc.Flights {
       if (Status != other.Status) return false;
       if (ConditionalItems != other.ConditionalItems) return false;
       if (BarcodeAdditionalData != other.BarcodeAdditionalData) return false;
+      if (InvalidateCancelledPasses != other.InvalidateCancelledPasses) return false;
+      if (!object.Equals(Urls, other.Urls)) return false;
       if (!object.Equals(Metrics, other.Metrics)) return false;
       if (CreateMethod != other.CreateMethod) return false;
       if (DesignatorId != other.DesignatorId) return false;
-      if (InvalidateCancelledPasses != other.InvalidateCancelledPasses) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -847,10 +787,11 @@ namespace PassKit.Grpc.Flights {
       if (Status != global::PassKit.Grpc.Flights.FlightStatus.Unknown) hash ^= Status.GetHashCode();
       if (ConditionalItems != false) hash ^= ConditionalItems.GetHashCode();
       if (BarcodeAdditionalData.Length != 0) hash ^= BarcodeAdditionalData.GetHashCode();
+      if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) hash ^= InvalidateCancelledPasses.GetHashCode();
+      if (urls_ != null) hash ^= Urls.GetHashCode();
       if (metrics_ != null) hash ^= Metrics.GetHashCode();
       if (CreateMethod != global::PassKit.Grpc.Flights.FlightCreateMode.DoNotUse) hash ^= CreateMethod.GetHashCode();
       if (DesignatorId.Length != 0) hash ^= DesignatorId.GetHashCode();
-      if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) hash ^= InvalidateCancelledPasses.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -997,6 +938,10 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(160, 2);
         output.WriteEnum((int) InvalidateCancelledPasses);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1135,6 +1080,10 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(160, 2);
         output.WriteEnum((int) InvalidateCancelledPasses);
       }
+      if (urls_ != null) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Urls);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1230,6 +1179,12 @@ namespace PassKit.Grpc.Flights {
       if (BarcodeAdditionalData.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(BarcodeAdditionalData);
       }
+      if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) InvalidateCancelledPasses);
+      }
+      if (urls_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Urls);
+      }
       if (metrics_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Metrics);
       }
@@ -1238,9 +1193,6 @@ namespace PassKit.Grpc.Flights {
       }
       if (DesignatorId.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(DesignatorId);
-      }
-      if (InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
-        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) InvalidateCancelledPasses);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1360,6 +1312,15 @@ namespace PassKit.Grpc.Flights {
       if (other.BarcodeAdditionalData.Length != 0) {
         BarcodeAdditionalData = other.BarcodeAdditionalData;
       }
+      if (other.InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
+        InvalidateCancelledPasses = other.InvalidateCancelledPasses;
+      }
+      if (other.urls_ != null) {
+        if (urls_ == null) {
+          Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+        }
+        Urls.MergeFrom(other.Urls);
+      }
       if (other.metrics_ != null) {
         if (metrics_ == null) {
           Metrics = new global::PassKit.Grpc.Metrics();
@@ -1371,9 +1332,6 @@ namespace PassKit.Grpc.Flights {
       }
       if (other.DesignatorId.Length != 0) {
         DesignatorId = other.DesignatorId;
-      }
-      if (other.InvalidateCancelledPasses != global::PassKit.Grpc.Toggle.DoNotUse) {
-        InvalidateCancelledPasses = other.InvalidateCancelledPasses;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1558,6 +1516,13 @@ namespace PassKit.Grpc.Flights {
             InvalidateCancelledPasses = (global::PassKit.Grpc.Toggle) input.ReadEnum();
             break;
           }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
+            break;
+          }
         }
       }
     #endif
@@ -1739,6 +1704,13 @@ namespace PassKit.Grpc.Flights {
           }
           case 288: {
             InvalidateCancelledPasses = (global::PassKit.Grpc.Toggle) input.ReadEnum();
+            break;
+          }
+          case 298: {
+            if (urls_ == null) {
+              Urls = new global::PassKit.Grpc.Flights.FlightURLs();
+            }
+            input.ReadMessage(Urls);
             break;
           }
         }

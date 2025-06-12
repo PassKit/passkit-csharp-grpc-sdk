@@ -469,6 +469,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// PassOptions contains settings specific to each pass platform.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PassOptions : pb::IMessage<PassOptions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -518,6 +521,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "apple" field.</summary>
     public const int AppleFieldNumber = 1;
     private global::PassKit.Grpc.AppleWalletSettings apple_;
+    /// <summary>
+    /// Apple Wallet-specific pass rendering and behavior options.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.AppleWalletSettings Apple {
@@ -530,6 +536,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "google" field.</summary>
     public const int GoogleFieldNumber = 2;
     private global::PassKit.Grpc.GooglePaySettings google_;
+    /// <summary>
+    /// Google Pay-specific pass rendering and behavior options.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.GooglePaySettings Google {

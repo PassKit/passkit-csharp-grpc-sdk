@@ -66,6 +66,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
   #region Messages
+  /// <summary>
+  /// Venue defines the location where the event takes place and includes address, timezone, and optional event URLs. Required fields: name, address, timezone.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Venue : pb::IMessage<Venue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -741,6 +744,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// EventUrls provides URLs for enhanced event guidance, such as selling, transferring, or accessing services. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EventUrls : pb::IMessage<EventUrls>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1502,6 +1508,9 @@ namespace PassKit.Grpc.EventTickets {
 
   }
 
+  /// <summary>
+  /// Lightweight representation of a venue with minimal identifying fields. Required fields: none.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VenueLimitedFieldsResponse : pb::IMessage<VenueLimitedFieldsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

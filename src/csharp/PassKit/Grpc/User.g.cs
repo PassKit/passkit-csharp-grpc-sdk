@@ -125,17 +125,18 @@ namespace PassKit.Grpc {
             "Q0hFQ0tfSU5fT1VUEAQSHwobTUVNQkVSU0hJUF9ERUZBVUxUX1ZBTElEQVRF",
             "EAgqagoXRGVmYXVsdENvdXBvblNjYW5BY3Rpb24SFwoTQ09VUE9OX0RFRkFV",
             "TFRfTk9ORRAAEhkKFUNPVVBPTl9ERUZBVUxUX1JFREVFTRABEhsKF0NPVVBP",
-            "Tl9ERUZBVUxUX1ZBTElEQVRFEAIq7QEKD1Blcm1pc3Npb25TY29wZRITCg9Q",
+            "Tl9ERUZBVUxUX1ZBTElEQVRFEAIqhQIKD1Blcm1pc3Npb25TY29wZRITCg9Q",
             "RVJNSVNTSU9OX05PTkUQABIOCgpXRUJfQUNDRVNTEAESDgoKQVBQX0FDQ0VT",
             "UxACEhAKDEFMTF9QUk9KRUNUUxAEEhQKEEFMTF9DRVJUSUZJQ0FURVMQCBIS",
             "Cg5CSUxMSU5HX0FDQ0VTUxAQEhcKE0NFUlRJRklDQVRFU19BQ0NFU1MQIBIS",
             "Cg5NRU1CRVJTX0FDQ0VTUxBAEhMKDkNPVVBPTlNfQUNDRVNTEIABEhIKDUVW",
-            "RU5UU19BQ0NFU1MQgAISEwoORkxJR0hUU19BQ0NFU1MQgAQqhwEKEFRlYW1N",
-            "ZW1iZXJTdGF0dXMSDwoLU1RBVFVTX05PTkUQABIWChJURUFNX01FTUJFUl9B",
-            "Q1RJVkUQARIYChRURUFNX01FTUJFUl9ESVNBQkxFRBACEhcKE1RFQU1fTUVN",
-            "QkVSX0VYUElSRUQQBBIXChNURUFNX01FTUJFUl9QRU5ESU5HEAhCRwoQY29t",
-            "LnBhc3NraXQuZ3JwY1okc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2Rr",
-            "L2dvL2lvqgIMUGFzc0tpdC5HcnBjYgZwcm90bzM="));
+            "RU5UU19BQ0NFU1MQgAISEwoORkxJR0hUU19BQ0NFU1MQgAQSFgoRVEVBTV9N",
+            "RU1CRVJfQURNSU4QgAgqhwEKEFRlYW1NZW1iZXJTdGF0dXMSDwoLU1RBVFVT",
+            "X05PTkUQABIWChJURUFNX01FTUJFUl9BQ1RJVkUQARIYChRURUFNX01FTUJF",
+            "Ul9ESVNBQkxFRBACEhcKE1RFQU1fTUVNQkVSX0VYUElSRUQQBBIXChNURUFN",
+            "X01FTUJFUl9QRU5ESU5HEAhCRwoQY29tLnBhc3NraXQuZ3JwY1okc3Rhc2gu",
+            "cGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFzc0tpdC5HcnBj",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.AttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.OAuth2Provider), typeof(global::PassKit.Grpc.ScannerMembershipPermissions), typeof(global::PassKit.Grpc.ScannerCouponPermissions), typeof(global::PassKit.Grpc.DefaultMembershipScanAction), typeof(global::PassKit.Grpc.DefaultCouponScanAction), typeof(global::PassKit.Grpc.PermissionScope), typeof(global::PassKit.Grpc.TeamMemberStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -337,6 +338,7 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("COUPONS_ACCESS")] CouponsAccess = 128,
     [pbr::OriginalName("EVENTS_ACCESS")] EventsAccess = 256,
     [pbr::OriginalName("FLIGHTS_ACCESS")] FlightsAccess = 512,
+    [pbr::OriginalName("TEAM_MEMBER_ADMIN")] TeamMemberAdmin = 1024,
   }
 
   public enum TeamMemberStatus {
@@ -1444,6 +1446,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "javaPrivateKey" field.</summary>
     public const int JavaPrivateKeyFieldNumber = 8;
     private string javaPrivateKey_ = "";
+    /// <summary>
+    /// JavaPrivateKey contains a PKCS#8 encrypted private key. Use with Java 11 and below.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string JavaPrivateKey {

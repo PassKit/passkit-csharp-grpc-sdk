@@ -25,25 +25,29 @@ namespace PassKit.Grpc.Flights {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chhpby9mbGlnaHRzL2FpcnBvcnQucHJvdG8SB2ZsaWdodHMaHGlvL2NvbW1v",
-            "bi9sb2NhbGl6YXRpb24ucHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29w",
-            "dGlvbnMvYW5ub3RhdGlvbnMucHJvdG8iqAMKBFBvcnQSHgoPaWF0YUFpcnBv",
-            "cnRDb2RlGAEgASgJQgWSQQJ4AxIeCg9pY2FvQWlycG9ydENvZGUYAiABKAlC",
-            "BZJBAngEEhAKCGNpdHlOYW1lGAMgASgJEi4KEWxvY2FsaXplZENpdHlOYW1l",
-            "GAQgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEhMKC2FpcnBvcnROYW1lGAUg",
-            "ASgJEjEKFGxvY2FsaXplZEFpcnBvcnROYW1lGAYgASgLMhMuaW8uTG9jYWxp",
-            "emVkU3RyaW5nEhMKC2NvdW50cnlDb2RlGAcgASgJEhAKCHRpbWV6b25lGAgg",
-            "ASgJOq4BkkGqAQqnASoOQWlycG9ydCBSZWNvcmQyUUFpcnBvcnQgcmVjb3Jk",
-            "cyBhcmUgcmVxdWlyZWQgZm9yIGVhY2ggcG9ydCB0aGF0IGEgY2FycmllciBv",
-            "cGVyYXRlcyBpbiBhbmQgb3V0IG9mLtIBD2lhdGFBaXJwb3J0Q29kZdIBCGNp",
-            "dHlOYW1l0gELYWlycG9ydE5hbWXSAQtjb3VudHJ5Q29kZdIBCHRpbWV6b25l",
-            "IiIKC0FpcnBvcnRDb2RlEhMKC2FpcnBvcnRDb2RlGAEgASgJQl8KGGNvbS5w",
-            "YXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9k",
-            "ZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0LkdycGMuRmxpZ2h0c2IG",
-            "cHJvdG8z"));
+            "bi9sb2NhbGl6YXRpb24ucHJvdG8aF2lvL2ZsaWdodHMvY29tbW9uLnByb3Rv",
+            "Gi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9vcHRpb25zL2Fubm90YXRpb25zLnBy",
+            "b3RvItIECgRQb3J0Eh4KD2lhdGFBaXJwb3J0Q29kZRgBIAEoCUIFkkECeAMS",
+            "HgoPaWNhb0FpcnBvcnRDb2RlGAIgASgJQgWSQQJ4BBIQCghjaXR5TmFtZRgD",
+            "IAEoCRIuChFsb2NhbGl6ZWRDaXR5TmFtZRgEIAEoCzITLmlvLkxvY2FsaXpl",
+            "ZFN0cmluZxITCgthaXJwb3J0TmFtZRgFIAEoCRIxChRsb2NhbGl6ZWRBaXJw",
+            "b3J0TmFtZRgGIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxITCgtjb3VudHJ5",
+            "Q29kZRgHIAEoCRIQCgh0aW1lem9uZRgIIAEoCRI6ChBzZWN1cml0eVByb2dy",
+            "YW1zGAkgAygOMiAuZmxpZ2h0cy5BaXJwb3J0U2VjdXJpdHlQcm9ncmFtcxId",
+            "ChVEb2N1bWVudHNWZXJpZmllZFRleHQYCiABKAkSOwoebG9jYWxpemVkRG9j",
+            "dW1lbnRzVmVyaWZpZWRUZXh0GAsgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
+            "EhAKCExvdW5nZUlkGA0gASgJOq4BkkGqAQqnASoOQWlycG9ydCBSZWNvcmQy",
+            "UUFpcnBvcnQgcmVjb3JkcyBhcmUgcmVxdWlyZWQgZm9yIGVhY2ggcG9ydCB0",
+            "aGF0IGEgY2FycmllciBvcGVyYXRlcyBpbiBhbmQgb3V0IG9mLtIBD2lhdGFB",
+            "aXJwb3J0Q29kZdIBCGNpdHlOYW1l0gELYWlycG9ydE5hbWXSAQtjb3VudHJ5",
+            "Q29kZdIBCHRpbWV6b25lIiIKC0FpcnBvcnRDb2RlEhMKC2FpcnBvcnRDb2Rl",
+            "GAEgASgJQl8KGGNvbS5wYXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFz",
+            "c2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0",
+            "LkdycGMuRmxpZ2h0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Flights.CommonReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Port), global::PassKit.Grpc.Flights.Port.Parser, new[]{ "IataAirportCode", "IcaoAirportCode", "CityName", "LocalizedCityName", "AirportName", "LocalizedAirportName", "CountryCode", "Timezone" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Port), global::PassKit.Grpc.Flights.Port.Parser, new[]{ "IataAirportCode", "IcaoAirportCode", "CityName", "LocalizedCityName", "AirportName", "LocalizedAirportName", "CountryCode", "Timezone", "SecurityPrograms", "DocumentsVerifiedText", "LocalizedDocumentsVerifiedText", "LoungeId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.AirportCode), global::PassKit.Grpc.Flights.AirportCode.Parser, new[]{ "AirportCode_" }, null, null, null, null)
           }));
     }
@@ -97,6 +101,10 @@ namespace PassKit.Grpc.Flights {
       localizedAirportName_ = other.localizedAirportName_ != null ? other.localizedAirportName_.Clone() : null;
       countryCode_ = other.countryCode_;
       timezone_ = other.timezone_;
+      securityPrograms_ = other.securityPrograms_.Clone();
+      documentsVerifiedText_ = other.documentsVerifiedText_;
+      localizedDocumentsVerifiedText_ = other.localizedDocumentsVerifiedText_ != null ? other.localizedDocumentsVerifiedText_.Clone() : null;
+      loungeId_ = other.loungeId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -226,6 +234,65 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
+    /// <summary>Field number for the "securityPrograms" field.</summary>
+    public const int SecurityProgramsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Flights.AirportSecurityPrograms> _repeated_securityPrograms_codec
+        = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::PassKit.Grpc.Flights.AirportSecurityPrograms) x);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> securityPrograms_ = new pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms>();
+    /// <summary>
+    /// A list of security programs available at the airport. For use with Apple Semantic boarding passes.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> SecurityPrograms {
+      get { return securityPrograms_; }
+    }
+
+    /// <summary>Field number for the "DocumentsVerifiedText" field.</summary>
+    public const int DocumentsVerifiedTextFieldNumber = 10;
+    private string documentsVerifiedText_ = "";
+    /// <summary>
+    /// A localizable value to show whe a passenger's international documents have been verified. Examples include "Docs OK", or "TravelReady". If the boarding pass conditionalItems -> InternationalDocVerification is COMPLETED, this value will show on the face of the pass.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DocumentsVerifiedText {
+      get { return documentsVerifiedText_; }
+      set {
+        documentsVerifiedText_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "localizedDocumentsVerifiedText" field.</summary>
+    public const int LocalizedDocumentsVerifiedTextFieldNumber = 11;
+    private global::PassKit.Grpc.LocalizedString localizedDocumentsVerifiedText_;
+    /// <summary>
+    /// The localized documents verified text.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.LocalizedString LocalizedDocumentsVerifiedText {
+      get { return localizedDocumentsVerifiedText_; }
+      set {
+        localizedDocumentsVerifiedText_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "LoungeId" field.</summary>
+    public const int LoungeIdFieldNumber = 13;
+    private string loungeId_ = "";
+    /// <summary>
+    /// Apple Place ID for Airline lounge. Can be overridden at the boarding pass level by providing additional data items 'airport.loungeId'.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string LoungeId {
+      get { return loungeId_; }
+      set {
+        loungeId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -249,6 +316,10 @@ namespace PassKit.Grpc.Flights {
       if (!object.Equals(LocalizedAirportName, other.LocalizedAirportName)) return false;
       if (CountryCode != other.CountryCode) return false;
       if (Timezone != other.Timezone) return false;
+      if(!securityPrograms_.Equals(other.securityPrograms_)) return false;
+      if (DocumentsVerifiedText != other.DocumentsVerifiedText) return false;
+      if (!object.Equals(LocalizedDocumentsVerifiedText, other.LocalizedDocumentsVerifiedText)) return false;
+      if (LoungeId != other.LoungeId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -264,6 +335,10 @@ namespace PassKit.Grpc.Flights {
       if (localizedAirportName_ != null) hash ^= LocalizedAirportName.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (Timezone.Length != 0) hash ^= Timezone.GetHashCode();
+      hash ^= securityPrograms_.GetHashCode();
+      if (DocumentsVerifiedText.Length != 0) hash ^= DocumentsVerifiedText.GetHashCode();
+      if (localizedDocumentsVerifiedText_ != null) hash ^= LocalizedDocumentsVerifiedText.GetHashCode();
+      if (LoungeId.Length != 0) hash ^= LoungeId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -314,6 +389,19 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(Timezone);
       }
+      securityPrograms_.WriteTo(output, _repeated_securityPrograms_codec);
+      if (DocumentsVerifiedText.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(DocumentsVerifiedText);
+      }
+      if (localizedDocumentsVerifiedText_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(LocalizedDocumentsVerifiedText);
+      }
+      if (LoungeId.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(LoungeId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -356,6 +444,19 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(Timezone);
       }
+      securityPrograms_.WriteTo(ref output, _repeated_securityPrograms_codec);
+      if (DocumentsVerifiedText.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(DocumentsVerifiedText);
+      }
+      if (localizedDocumentsVerifiedText_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(LocalizedDocumentsVerifiedText);
+      }
+      if (LoungeId.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(LoungeId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -389,6 +490,16 @@ namespace PassKit.Grpc.Flights {
       }
       if (Timezone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Timezone);
+      }
+      size += securityPrograms_.CalculateSize(_repeated_securityPrograms_codec);
+      if (DocumentsVerifiedText.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DocumentsVerifiedText);
+      }
+      if (localizedDocumentsVerifiedText_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedDocumentsVerifiedText);
+      }
+      if (LoungeId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LoungeId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -431,6 +542,19 @@ namespace PassKit.Grpc.Flights {
       }
       if (other.Timezone.Length != 0) {
         Timezone = other.Timezone;
+      }
+      securityPrograms_.Add(other.securityPrograms_);
+      if (other.DocumentsVerifiedText.Length != 0) {
+        DocumentsVerifiedText = other.DocumentsVerifiedText;
+      }
+      if (other.localizedDocumentsVerifiedText_ != null) {
+        if (localizedDocumentsVerifiedText_ == null) {
+          LocalizedDocumentsVerifiedText = new global::PassKit.Grpc.LocalizedString();
+        }
+        LocalizedDocumentsVerifiedText.MergeFrom(other.LocalizedDocumentsVerifiedText);
+      }
+      if (other.LoungeId.Length != 0) {
+        LoungeId = other.LoungeId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -489,6 +613,26 @@ namespace PassKit.Grpc.Flights {
             Timezone = input.ReadString();
             break;
           }
+          case 74:
+          case 72: {
+            securityPrograms_.AddEntriesFrom(input, _repeated_securityPrograms_codec);
+            break;
+          }
+          case 82: {
+            DocumentsVerifiedText = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (localizedDocumentsVerifiedText_ == null) {
+              LocalizedDocumentsVerifiedText = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedDocumentsVerifiedText);
+            break;
+          }
+          case 106: {
+            LoungeId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -544,6 +688,26 @@ namespace PassKit.Grpc.Flights {
           }
           case 66: {
             Timezone = input.ReadString();
+            break;
+          }
+          case 74:
+          case 72: {
+            securityPrograms_.AddEntriesFrom(ref input, _repeated_securityPrograms_codec);
+            break;
+          }
+          case 82: {
+            DocumentsVerifiedText = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (localizedDocumentsVerifiedText_ == null) {
+              LocalizedDocumentsVerifiedText = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedDocumentsVerifiedText);
+            break;
+          }
+          case 106: {
+            LoungeId = input.ReadString();
             break;
           }
         }

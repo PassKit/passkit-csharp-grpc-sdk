@@ -110,6 +110,9 @@ namespace PassKit.Grpc {
 
   }
   #region Enums
+  /// <summary>
+  /// Specifies the available distribution channels for pass delivery.
+  /// </summary>
   public enum DistributionChannel {
     [pbr::OriginalName("NO_DISTRIBUTION")] NoDistribution = 0,
     /// <summary>
@@ -122,6 +125,9 @@ namespace PassKit.Grpc {
     [pbr::OriginalName("CHANNEL_SMS")] ChannelSms = 2,
   }
 
+  /// <summary>
+  /// Defines options that can modify email template behavior.
+  /// </summary>
   public enum EmailTemplateOptions {
     [pbr::OriginalName("EMAIL_TEMP_OPT_NONE")] EmailTempOptNone = 0,
     /// <summary>
@@ -137,6 +143,9 @@ namespace PassKit.Grpc {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// A request to distribute a pass to a user by email.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EmailDistributionRequest : pb::IMessage<EmailDistributionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -234,6 +243,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 4;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// The PassKit protocol used for this pass.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
@@ -246,6 +258,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "alternativeEmail" field.</summary>
     public const int AlternativeEmailFieldNumber = 5;
     private string alternativeEmail_ = "";
+    /// <summary>
+    /// Optional override to send to a different email address.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AlternativeEmail {
@@ -492,6 +507,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Used to generate SmartPass links via a project distribution URL.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SmartPassLinkRequest : pb::IMessage<SmartPassLinkRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1022,8 +1040,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// EmailTemplate contains details for sending an email to a customer.
-  /// Uses the default PassKit email provider and sending credentials
+  /// EmailTemplate contains details for sending an email to a customer. Uses the default PassKit email provider and sending credentials
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EmailTemplate : pb::IMessage<EmailTemplate>
@@ -2249,6 +2266,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// SMTP configuration options for outbound email.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EmailConfiguration : pb::IMessage<EmailConfiguration>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2571,8 +2591,7 @@ namespace PassKit.Grpc {
   }
 
   /// <summary>
-  /// SMS contains details for a sending an sms to customers.
-  /// Uses the default PassKit SMS provider and sending credentials.
+  /// SMS contains details for a sending an sms to customers. Uses the default PassKit SMS provider and sending credentials.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SmsTemplate : pb::IMessage<SmsTemplate>
@@ -2824,6 +2843,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Contains SmartPass enrolment links and QR codes.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EnrolmentUrls : pb::IMessage<EnrolmentUrls>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3123,6 +3145,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Holds one or more fields to collect user input (e.g. name, email, etc.).
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DataCollectionFields : pb::IMessage<DataCollectionFields>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3310,6 +3335,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Represents a single field in a data collection form.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DataCollectionField : pb::IMessage<DataCollectionField>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3967,6 +3995,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Upload a CSV file for bulk SmartPass link generation.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SmartPassCsvUploadRequest : pb::IMessage<SmartPassCsvUploadRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4031,6 +4062,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "csvContent" field.</summary>
     public const int CsvContentFieldNumber = 2;
     private string csvContent_ = "";
+    /// <summary>
+    /// Raw CSV data containing personalisation fields.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CsvContent {
@@ -4205,6 +4239,9 @@ namespace PassKit.Grpc {
 
   }
 
+  /// <summary>
+  /// Import passes from a CSV file into a class.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ImportProtocolRequest : pb::IMessage<ImportProtocolRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -4255,6 +4292,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "csvContent" field.</summary>
     public const int CsvContentFieldNumber = 1;
     private string csvContent_ = "";
+    /// <summary>
+    /// Raw CSV content with records.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CsvContent {
@@ -4267,6 +4307,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "classId" field.</summary>
     public const int ClassIdFieldNumber = 2;
     private string classId_ = "";
+    /// <summary>
+    /// Class Id e.g. programId, campaignId, producionId etc.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClassId {
@@ -4279,6 +4322,9 @@ namespace PassKit.Grpc {
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 3;
     private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    /// <summary>
+    /// PassKit protocol type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::PassKit.Grpc.PassProtocol Protocol {
