@@ -35,45 +35,49 @@ namespace PassKit.Grpc.Flights {
             "ogEKC0ZsaWdodFRpbWVzEigKFnNjaGVkdWxlZERlcGFydHVyZVRpbWUYASAB",
             "KAsyCC5pby5UaW1lEh4KDGJvYXJkaW5nVGltZRgCIAEoCzIILmlvLlRpbWUS",
             "IQoPZ2F0ZUNsb3NpbmdUaW1lGAMgASgLMgguaW8uVGltZRImChRzY2hlZHVs",
-            "ZWRBcnJpdmFsVGltZRgEIAEoCzIILmlvLlRpbWUi+AEKCkZsaWdodFVSTHMS",
+            "ZWRBcnJpdmFsVGltZRgEIAEoCzIILmlvLlRpbWUitQMKCkZsaWdodFVSTHMS",
             "EgoKdXBncmFkZVVSTBgBIAEoCRIUCgxvcmRlckZvb2RVUkwYAiABKAkSFwoP",
             "cHVyY2hhc2VXaWZpVVJMGAMgASgJEhUKDWNoYW5nZVNlYXRVUkwYBCABKAkS",
             "GAoQZW50ZXJ0YWlubWVudFVSTBgFIAEoCRIWCg5zdGFuZGJ5TGlzdFVSTBgG",
             "IAEoCRIkChxwdXJjaGFzZUFkZGl0aW9uYWxCYWdnYWdlVVJMGAcgASgJEh8K",
-            "F3B1cmNoYXNlTG91bmdlQWNjZXNzVVJMGAggASgJEhcKD3RyYWNrTHVnZ2Fn",
-            "ZVVSTBgJIAEoCSqoAQoXQWlycG9ydFNlY3VyaXR5UHJvZ3JhbXMSGAoUTk9f",
-            "U0VDVVJJVFlfUFJPR1JBTVMQABIRCg1UU0FfUFJFX0NIRUNLEAESHgoaVFNB",
-            "X1BSRV9DSEVDS19UT1VDSExFU1NfSUQQAhIICgRUV09WEAMSBwoDT1NTEAQS",
-            "BwoDSVRJEAUSBwoDSVREEAYSEAoMR0xPQkFMX0VOVFJZEAcSCQoFQ0xFQVIQ",
-            "CCr6AQoMRmxpZ2h0U3RhdHVzEgsKB1VOS05PV04QABINCglTQ0hFRFVMRUQQ",
-            "ARIMCghERVBBUlRFRBACEgkKBUlOQUlSEAMSCgoGTEFOREVEEAQSCwoHQVJS",
-            "SVZFRBAFEg0KCUNBTkNFTExFRBAGEgsKB0RFTEFZRUQQBxIVChFERVBBUlRF",
-            "RF9ESVZFUlRFRBAIEhIKDklOQUlSX0RJVkVSVEVEEAkSFAoQQVJSSVZFRF9E",
-            "SVZFUlRFRBAKEhUKEURFUEFSVEVEX1JFQ09WRVJZEAsSEgoOSU5BSVJfUkVD",
-            "T1ZFUlkQDBIUChBBUlJJVkVEX1JFQ09WRVJZEA0qPQoQRmxpZ2h0Q3JlYXRl",
-            "TW9kZRIOCgpET19OT1RfVVNFEAASCgoGTUFOVUFMEAESDQoJQVVUT01BVElD",
-            "EAIqqQEKDEZsaWdodEFsZXJ0cxINCglOT19BTEVSVFMQABIOCgpBTExfQUxF",
-            "UlRTEAESGAoUREVQQVJUVVJFX0dBVEVfQUxFUlQQAhIYChRERVBBUlRVUkVf",
-            "VElNRV9BTEVSVBAEEhYKEkFSUklWQUxfR0FURV9BTEVSVBAIEhYKEkFSUklW",
-            "QUxfVElNRV9BTEVSVBAQEhYKEkJBR0dBR0VfQkVMVF9BTEVSVBAgKm0KDkJv",
-            "YXJkaW5nUG9saWN5Eh8KG0JPQVJESU5HX1BPTElDWV9VTlNQRUNJRklFRBAA",
-            "Eg4KClpPTkVfQkFTRUQQARIPCgtHUk9VUF9CQVNFRBACEhkKFUJPQVJESU5H",
-            "X1BPTElDWV9PVEhFUhADKoMBCg9TZWF0Q2xhc3NQb2xpY3kSIQodU0VBVF9D",
-            "TEFTU19QT0xJQ1lfVU5TUEVDSUZJRUQQABIPCgtDQUJJTl9CQVNFRBABEg8K",
-            "C0NMQVNTX0JBU0VEEAISDgoKVElFUl9CQVNFRBADEhsKF1NFQVRfQ0xBU1Nf",
-            "UE9MSUNZX09USEVSEAQqHwoJQXV0aG9yaXR5EggKBElBVEEQABIICgRJQ0FP",
-            "EAEqdgoVUGFzc2VuZ2VyQ2FwYWJpbGl0aWVzEhMKD05PX0NBUEFCSUxJVElF",
-            "UxAAEhAKDFBSRV9CT0FSRElORxABEhUKEVBSSU9SSVRZX0JPQVJESU5HEAIS",
-            "DAoIQ0FSUllfT04QAxIRCg1QRVJTT05BTF9JVEVNEARCXwoYY29tLnBhc3Nr",
-            "aXQuZ3JwYy5GbGlnaHRzWixzdGFzaC5wYXNza2l0LmNvbS9pby9tb2RlbC9z",
-            "ZGsvZ28vaW8vZmxpZ2h0c6oCFFBhc3NLaXQuR3JwYy5GbGlnaHRzYgZwcm90",
-            "bzM="));
+            "F3B1cmNoYXNlTG91bmdlQWNjZXNzVVJMGAggASgJEhgKEHJlcG9ydExvc3RC",
+            "YWdVUkwYCSABKAkSFQoNbWFuYWdlbWVudFVSTBgKIAEoCRIcChRyZXF1ZXN0",
+            "V2hlZWxjaGFpclVSTBgLIAEoCRIgChhyZWdpc3RlclNlcnZpY2VBbmltYWxV",
+            "UkwYDCABKAkSHAoUdHJhbnNpdFByb3ZpZGVyRW1haWwYDSABKAkSIQoZdHJh",
+            "bnNpdFByb3ZpZGVyV2Vic2l0ZVVSTBgOIAEoCRIiChp0cmFuc2l0UHJvdmlk",
+            "ZXJQaG9uZU51bWJlchgPIAEoCSqoAQoXQWlycG9ydFNlY3VyaXR5UHJvZ3Jh",
+            "bXMSGAoUTk9fU0VDVVJJVFlfUFJPR1JBTVMQABIRCg1UU0FfUFJFX0NIRUNL",
+            "EAESHgoaVFNBX1BSRV9DSEVDS19UT1VDSExFU1NfSUQQAhIICgRUV09WEAMS",
+            "BwoDT1NTEAQSBwoDSVRJEAUSBwoDSVREEAYSEAoMR0xPQkFMX0VOVFJZEAcS",
+            "CQoFQ0xFQVIQCCr6AQoMRmxpZ2h0U3RhdHVzEgsKB1VOS05PV04QABINCglT",
+            "Q0hFRFVMRUQQARIMCghERVBBUlRFRBACEgkKBUlOQUlSEAMSCgoGTEFOREVE",
+            "EAQSCwoHQVJSSVZFRBAFEg0KCUNBTkNFTExFRBAGEgsKB0RFTEFZRUQQBxIV",
+            "ChFERVBBUlRFRF9ESVZFUlRFRBAIEhIKDklOQUlSX0RJVkVSVEVEEAkSFAoQ",
+            "QVJSSVZFRF9ESVZFUlRFRBAKEhUKEURFUEFSVEVEX1JFQ09WRVJZEAsSEgoO",
+            "SU5BSVJfUkVDT1ZFUlkQDBIUChBBUlJJVkVEX1JFQ09WRVJZEA0qPQoQRmxp",
+            "Z2h0Q3JlYXRlTW9kZRIOCgpET19OT1RfVVNFEAASCgoGTUFOVUFMEAESDQoJ",
+            "QVVUT01BVElDEAIqqQEKDEZsaWdodEFsZXJ0cxINCglOT19BTEVSVFMQABIO",
+            "CgpBTExfQUxFUlRTEAESGAoUREVQQVJUVVJFX0dBVEVfQUxFUlQQAhIYChRE",
+            "RVBBUlRVUkVfVElNRV9BTEVSVBAEEhYKEkFSUklWQUxfR0FURV9BTEVSVBAI",
+            "EhYKEkFSUklWQUxfVElNRV9BTEVSVBAQEhYKEkJBR0dBR0VfQkVMVF9BTEVS",
+            "VBAgKm0KDkJvYXJkaW5nUG9saWN5Eh8KG0JPQVJESU5HX1BPTElDWV9VTlNQ",
+            "RUNJRklFRBAAEg4KClpPTkVfQkFTRUQQARIPCgtHUk9VUF9CQVNFRBACEhkK",
+            "FUJPQVJESU5HX1BPTElDWV9PVEhFUhADKoMBCg9TZWF0Q2xhc3NQb2xpY3kS",
+            "IQodU0VBVF9DTEFTU19QT0xJQ1lfVU5TUEVDSUZJRUQQABIPCgtDQUJJTl9C",
+            "QVNFRBABEg8KC0NMQVNTX0JBU0VEEAISDgoKVElFUl9CQVNFRBADEhsKF1NF",
+            "QVRfQ0xBU1NfUE9MSUNZX09USEVSEAQqHwoJQXV0aG9yaXR5EggKBElBVEEQ",
+            "ABIICgRJQ0FPEAEqdgoVUGFzc2VuZ2VyQ2FwYWJpbGl0aWVzEhMKD05PX0NB",
+            "UEFCSUxJVElFUxAAEhAKDFBSRV9CT0FSRElORxABEhUKEVBSSU9SSVRZX0JP",
+            "QVJESU5HEAISDAoIQ0FSUllfT04QAxIRCg1QRVJTT05BTF9JVEVNEARCXwoY",
+            "Y29tLnBhc3NraXQuZ3JwYy5GbGlnaHRzWixzdGFzaC5wYXNza2l0LmNvbS9p",
+            "by9tb2RlbC9zZGsvZ28vaW8vZmxpZ2h0c6oCFFBhc3NLaXQuR3JwYy5GbGln",
+            "aHRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.CommonObjectsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.Flights.AirportSecurityPrograms), typeof(global::PassKit.Grpc.Flights.FlightStatus), typeof(global::PassKit.Grpc.Flights.FlightCreateMode), typeof(global::PassKit.Grpc.Flights.FlightAlerts), typeof(global::PassKit.Grpc.Flights.BoardingPolicy), typeof(global::PassKit.Grpc.Flights.SeatClassPolicy), typeof(global::PassKit.Grpc.Flights.Authority), typeof(global::PassKit.Grpc.Flights.PassengerCapabilities), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightSchedule), global::PassKit.Grpc.Flights.FlightSchedule.Parser, new[]{ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightTimes), global::PassKit.Grpc.Flights.FlightTimes.Parser, new[]{ "ScheduledDepartureTime", "BoardingTime", "GateClosingTime", "ScheduledArrivalTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightURLs), global::PassKit.Grpc.Flights.FlightURLs.Parser, new[]{ "UpgradeURL", "OrderFoodURL", "PurchaseWifiURL", "ChangeSeatURL", "EntertainmentURL", "StandbyListURL", "PurchaseAdditionalBaggageURL", "PurchaseLoungeAccessURL", "TrackLuggageURL" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FlightURLs), global::PassKit.Grpc.Flights.FlightURLs.Parser, new[]{ "UpgradeURL", "OrderFoodURL", "PurchaseWifiURL", "ChangeSeatURL", "EntertainmentURL", "StandbyListURL", "PurchaseAdditionalBaggageURL", "PurchaseLoungeAccessURL", "ReportLostBagURL", "ManagementURL", "RequestWheelchairURL", "RegisterServiceAnimalURL", "TransitProviderEmail", "TransitProviderWebsiteURL", "TransitProviderPhoneNumber" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1183,7 +1187,13 @@ namespace PassKit.Grpc.Flights {
       standbyListURL_ = other.standbyListURL_;
       purchaseAdditionalBaggageURL_ = other.purchaseAdditionalBaggageURL_;
       purchaseLoungeAccessURL_ = other.purchaseLoungeAccessURL_;
-      trackLuggageURL_ = other.trackLuggageURL_;
+      reportLostBagURL_ = other.reportLostBagURL_;
+      managementURL_ = other.managementURL_;
+      requestWheelchairURL_ = other.requestWheelchairURL_;
+      registerServiceAnimalURL_ = other.registerServiceAnimalURL_;
+      transitProviderEmail_ = other.transitProviderEmail_;
+      transitProviderWebsiteURL_ = other.transitProviderWebsiteURL_;
+      transitProviderPhoneNumber_ = other.transitProviderPhoneNumber_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1313,18 +1323,108 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
-    /// <summary>Field number for the "trackLuggageURL" field.</summary>
-    public const int TrackLuggageURLFieldNumber = 9;
-    private string trackLuggageURL_ = "";
+    /// <summary>Field number for the "reportLostBagURL" field.</summary>
+    public const int ReportLostBagURLFieldNumber = 9;
+    private string reportLostBagURL_ = "";
     /// <summary>
-    /// A link to track luggage
+    /// A link to report lost luggage.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TrackLuggageURL {
-      get { return trackLuggageURL_; }
+    public string ReportLostBagURL {
+      get { return reportLostBagURL_; }
       set {
-        trackLuggageURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        reportLostBagURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "managementURL" field.</summary>
+    public const int ManagementURLFieldNumber = 10;
+    private string managementURL_ = "";
+    /// <summary>
+    /// A link for managing the booking.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ManagementURL {
+      get { return managementURL_; }
+      set {
+        managementURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "requestWheelchairURL" field.</summary>
+    public const int RequestWheelchairURLFieldNumber = 11;
+    private string requestWheelchairURL_ = "";
+    /// <summary>
+    /// A link to request a wheel chair.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RequestWheelchairURL {
+      get { return requestWheelchairURL_; }
+      set {
+        requestWheelchairURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "registerServiceAnimalURL" field.</summary>
+    public const int RegisterServiceAnimalURLFieldNumber = 12;
+    private string registerServiceAnimalURL_ = "";
+    /// <summary>
+    /// A link for registering a service animal.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RegisterServiceAnimalURL {
+      get { return registerServiceAnimalURL_; }
+      set {
+        registerServiceAnimalURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "transitProviderEmail" field.</summary>
+    public const int TransitProviderEmailFieldNumber = 13;
+    private string transitProviderEmail_ = "";
+    /// <summary>
+    /// The email for the transit provider.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TransitProviderEmail {
+      get { return transitProviderEmail_; }
+      set {
+        transitProviderEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "transitProviderWebsiteURL" field.</summary>
+    public const int TransitProviderWebsiteURLFieldNumber = 14;
+    private string transitProviderWebsiteURL_ = "";
+    /// <summary>
+    /// A link for the transit provider.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TransitProviderWebsiteURL {
+      get { return transitProviderWebsiteURL_; }
+      set {
+        transitProviderWebsiteURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "transitProviderPhoneNumber" field.</summary>
+    public const int TransitProviderPhoneNumberFieldNumber = 15;
+    private string transitProviderPhoneNumber_ = "";
+    /// <summary>
+    /// A phone number for the transit provider.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TransitProviderPhoneNumber {
+      get { return transitProviderPhoneNumber_; }
+      set {
+        transitProviderPhoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1351,7 +1451,13 @@ namespace PassKit.Grpc.Flights {
       if (StandbyListURL != other.StandbyListURL) return false;
       if (PurchaseAdditionalBaggageURL != other.PurchaseAdditionalBaggageURL) return false;
       if (PurchaseLoungeAccessURL != other.PurchaseLoungeAccessURL) return false;
-      if (TrackLuggageURL != other.TrackLuggageURL) return false;
+      if (ReportLostBagURL != other.ReportLostBagURL) return false;
+      if (ManagementURL != other.ManagementURL) return false;
+      if (RequestWheelchairURL != other.RequestWheelchairURL) return false;
+      if (RegisterServiceAnimalURL != other.RegisterServiceAnimalURL) return false;
+      if (TransitProviderEmail != other.TransitProviderEmail) return false;
+      if (TransitProviderWebsiteURL != other.TransitProviderWebsiteURL) return false;
+      if (TransitProviderPhoneNumber != other.TransitProviderPhoneNumber) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1367,7 +1473,13 @@ namespace PassKit.Grpc.Flights {
       if (StandbyListURL.Length != 0) hash ^= StandbyListURL.GetHashCode();
       if (PurchaseAdditionalBaggageURL.Length != 0) hash ^= PurchaseAdditionalBaggageURL.GetHashCode();
       if (PurchaseLoungeAccessURL.Length != 0) hash ^= PurchaseLoungeAccessURL.GetHashCode();
-      if (TrackLuggageURL.Length != 0) hash ^= TrackLuggageURL.GetHashCode();
+      if (ReportLostBagURL.Length != 0) hash ^= ReportLostBagURL.GetHashCode();
+      if (ManagementURL.Length != 0) hash ^= ManagementURL.GetHashCode();
+      if (RequestWheelchairURL.Length != 0) hash ^= RequestWheelchairURL.GetHashCode();
+      if (RegisterServiceAnimalURL.Length != 0) hash ^= RegisterServiceAnimalURL.GetHashCode();
+      if (TransitProviderEmail.Length != 0) hash ^= TransitProviderEmail.GetHashCode();
+      if (TransitProviderWebsiteURL.Length != 0) hash ^= TransitProviderWebsiteURL.GetHashCode();
+      if (TransitProviderPhoneNumber.Length != 0) hash ^= TransitProviderPhoneNumber.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1418,9 +1530,33 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(PurchaseLoungeAccessURL);
       }
-      if (TrackLuggageURL.Length != 0) {
+      if (ReportLostBagURL.Length != 0) {
         output.WriteRawTag(74);
-        output.WriteString(TrackLuggageURL);
+        output.WriteString(ReportLostBagURL);
+      }
+      if (ManagementURL.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(ManagementURL);
+      }
+      if (RequestWheelchairURL.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(RequestWheelchairURL);
+      }
+      if (RegisterServiceAnimalURL.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(RegisterServiceAnimalURL);
+      }
+      if (TransitProviderEmail.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(TransitProviderEmail);
+      }
+      if (TransitProviderWebsiteURL.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(TransitProviderWebsiteURL);
+      }
+      if (TransitProviderPhoneNumber.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(TransitProviderPhoneNumber);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1464,9 +1600,33 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(PurchaseLoungeAccessURL);
       }
-      if (TrackLuggageURL.Length != 0) {
+      if (ReportLostBagURL.Length != 0) {
         output.WriteRawTag(74);
-        output.WriteString(TrackLuggageURL);
+        output.WriteString(ReportLostBagURL);
+      }
+      if (ManagementURL.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(ManagementURL);
+      }
+      if (RequestWheelchairURL.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(RequestWheelchairURL);
+      }
+      if (RegisterServiceAnimalURL.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(RegisterServiceAnimalURL);
+      }
+      if (TransitProviderEmail.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(TransitProviderEmail);
+      }
+      if (TransitProviderWebsiteURL.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(TransitProviderWebsiteURL);
+      }
+      if (TransitProviderPhoneNumber.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(TransitProviderPhoneNumber);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1502,8 +1662,26 @@ namespace PassKit.Grpc.Flights {
       if (PurchaseLoungeAccessURL.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PurchaseLoungeAccessURL);
       }
-      if (TrackLuggageURL.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TrackLuggageURL);
+      if (ReportLostBagURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ReportLostBagURL);
+      }
+      if (ManagementURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ManagementURL);
+      }
+      if (RequestWheelchairURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RequestWheelchairURL);
+      }
+      if (RegisterServiceAnimalURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RegisterServiceAnimalURL);
+      }
+      if (TransitProviderEmail.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TransitProviderEmail);
+      }
+      if (TransitProviderWebsiteURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TransitProviderWebsiteURL);
+      }
+      if (TransitProviderPhoneNumber.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TransitProviderPhoneNumber);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1541,8 +1719,26 @@ namespace PassKit.Grpc.Flights {
       if (other.PurchaseLoungeAccessURL.Length != 0) {
         PurchaseLoungeAccessURL = other.PurchaseLoungeAccessURL;
       }
-      if (other.TrackLuggageURL.Length != 0) {
-        TrackLuggageURL = other.TrackLuggageURL;
+      if (other.ReportLostBagURL.Length != 0) {
+        ReportLostBagURL = other.ReportLostBagURL;
+      }
+      if (other.ManagementURL.Length != 0) {
+        ManagementURL = other.ManagementURL;
+      }
+      if (other.RequestWheelchairURL.Length != 0) {
+        RequestWheelchairURL = other.RequestWheelchairURL;
+      }
+      if (other.RegisterServiceAnimalURL.Length != 0) {
+        RegisterServiceAnimalURL = other.RegisterServiceAnimalURL;
+      }
+      if (other.TransitProviderEmail.Length != 0) {
+        TransitProviderEmail = other.TransitProviderEmail;
+      }
+      if (other.TransitProviderWebsiteURL.Length != 0) {
+        TransitProviderWebsiteURL = other.TransitProviderWebsiteURL;
+      }
+      if (other.TransitProviderPhoneNumber.Length != 0) {
+        TransitProviderPhoneNumber = other.TransitProviderPhoneNumber;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1596,7 +1792,31 @@ namespace PassKit.Grpc.Flights {
             break;
           }
           case 74: {
-            TrackLuggageURL = input.ReadString();
+            ReportLostBagURL = input.ReadString();
+            break;
+          }
+          case 82: {
+            ManagementURL = input.ReadString();
+            break;
+          }
+          case 90: {
+            RequestWheelchairURL = input.ReadString();
+            break;
+          }
+          case 98: {
+            RegisterServiceAnimalURL = input.ReadString();
+            break;
+          }
+          case 106: {
+            TransitProviderEmail = input.ReadString();
+            break;
+          }
+          case 114: {
+            TransitProviderWebsiteURL = input.ReadString();
+            break;
+          }
+          case 122: {
+            TransitProviderPhoneNumber = input.ReadString();
             break;
           }
         }
@@ -1651,7 +1871,31 @@ namespace PassKit.Grpc.Flights {
             break;
           }
           case 74: {
-            TrackLuggageURL = input.ReadString();
+            ReportLostBagURL = input.ReadString();
+            break;
+          }
+          case 82: {
+            ManagementURL = input.ReadString();
+            break;
+          }
+          case 90: {
+            RequestWheelchairURL = input.ReadString();
+            break;
+          }
+          case 98: {
+            RegisterServiceAnimalURL = input.ReadString();
+            break;
+          }
+          case 106: {
+            TransitProviderEmail = input.ReadString();
+            break;
+          }
+          case 114: {
+            TransitProviderWebsiteURL = input.ReadString();
+            break;
+          }
+          case 122: {
+            TransitProviderPhoneNumber = input.ReadString();
             break;
           }
         }

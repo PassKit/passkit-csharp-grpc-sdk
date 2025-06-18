@@ -36,7 +36,7 @@ namespace PassKit.Grpc.Flights {
             "YW1zGAkgAygOMiAuZmxpZ2h0cy5BaXJwb3J0U2VjdXJpdHlQcm9ncmFtcxId",
             "ChVEb2N1bWVudHNWZXJpZmllZFRleHQYCiABKAkSOwoebG9jYWxpemVkRG9j",
             "dW1lbnRzVmVyaWZpZWRUZXh0GAsgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
-            "EhAKCExvdW5nZUlkGA0gASgJOq4BkkGqAQqnASoOQWlycG9ydCBSZWNvcmQy",
+            "EhAKCGxvdW5nZUlkGA0gASgJOq4BkkGqAQqnASoOQWlycG9ydCBSZWNvcmQy",
             "UUFpcnBvcnQgcmVjb3JkcyBhcmUgcmVxdWlyZWQgZm9yIGVhY2ggcG9ydCB0",
             "aGF0IGEgY2FycmllciBvcGVyYXRlcyBpbiBhbmQgb3V0IG9mLtIBD2lhdGFB",
             "aXJwb3J0Q29kZdIBCGNpdHlOYW1l0gELYWlycG9ydE5hbWXSAQtjb3VudHJ5",
@@ -278,7 +278,7 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
-    /// <summary>Field number for the "LoungeId" field.</summary>
+    /// <summary>Field number for the "loungeId" field.</summary>
     public const int LoungeIdFieldNumber = 13;
     private string loungeId_ = "";
     /// <summary>
