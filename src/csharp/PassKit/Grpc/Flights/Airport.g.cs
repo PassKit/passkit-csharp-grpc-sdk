@@ -25,27 +25,27 @@ namespace PassKit.Grpc.Flights {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chhpby9mbGlnaHRzL2FpcnBvcnQucHJvdG8SB2ZsaWdodHMaHGlvL2NvbW1v",
-            "bi9sb2NhbGl6YXRpb24ucHJvdG8aF2lvL2ZsaWdodHMvY29tbW9uLnByb3Rv",
-            "Gi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9vcHRpb25zL2Fubm90YXRpb25zLnBy",
-            "b3RvItIECgRQb3J0Eh4KD2lhdGFBaXJwb3J0Q29kZRgBIAEoCUIFkkECeAMS",
-            "HgoPaWNhb0FpcnBvcnRDb2RlGAIgASgJQgWSQQJ4BBIQCghjaXR5TmFtZRgD",
-            "IAEoCRIuChFsb2NhbGl6ZWRDaXR5TmFtZRgEIAEoCzITLmlvLkxvY2FsaXpl",
-            "ZFN0cmluZxITCgthaXJwb3J0TmFtZRgFIAEoCRIxChRsb2NhbGl6ZWRBaXJw",
-            "b3J0TmFtZRgGIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxITCgtjb3VudHJ5",
-            "Q29kZRgHIAEoCRIQCgh0aW1lem9uZRgIIAEoCRI6ChBzZWN1cml0eVByb2dy",
-            "YW1zGAkgAygOMiAuZmxpZ2h0cy5BaXJwb3J0U2VjdXJpdHlQcm9ncmFtcxId",
-            "ChVEb2N1bWVudHNWZXJpZmllZFRleHQYCiABKAkSOwoebG9jYWxpemVkRG9j",
-            "dW1lbnRzVmVyaWZpZWRUZXh0GAsgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
-            "EhAKCGxvdW5nZUlkGA0gASgJOq4BkkGqAQqnASoOQWlycG9ydCBSZWNvcmQy",
-            "UUFpcnBvcnQgcmVjb3JkcyBhcmUgcmVxdWlyZWQgZm9yIGVhY2ggcG9ydCB0",
-            "aGF0IGEgY2FycmllciBvcGVyYXRlcyBpbiBhbmQgb3V0IG9mLtIBD2lhdGFB",
-            "aXJwb3J0Q29kZdIBCGNpdHlOYW1l0gELYWlycG9ydE5hbWXSAQtjb3VudHJ5",
-            "Q29kZdIBCHRpbWV6b25lIiIKC0FpcnBvcnRDb2RlEhMKC2FpcnBvcnRDb2Rl",
-            "GAEgASgJQl8KGGNvbS5wYXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFz",
-            "c2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0",
-            "LkdycGMuRmxpZ2h0c2IGcHJvdG8z"));
+            "bi9sb2NhbGl6YXRpb24ucHJvdG8aGGlvL2ZsaWdodHMvYmFyY29kZS5wcm90",
+            "bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0aW9ucy9hbm5vdGF0aW9ucy5w",
+            "cm90byLSBAoEUG9ydBIeCg9pYXRhQWlycG9ydENvZGUYASABKAlCBZJBAngD",
+            "Eh4KD2ljYW9BaXJwb3J0Q29kZRgCIAEoCUIFkkECeAQSEAoIY2l0eU5hbWUY",
+            "AyABKAkSLgoRbG9jYWxpemVkQ2l0eU5hbWUYBCABKAsyEy5pby5Mb2NhbGl6",
+            "ZWRTdHJpbmcSEwoLYWlycG9ydE5hbWUYBSABKAkSMQoUbG9jYWxpemVkQWly",
+            "cG9ydE5hbWUYBiABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSEwoLY291bnRy",
+            "eUNvZGUYByABKAkSEAoIdGltZXpvbmUYCCABKAkSOgoQc2VjdXJpdHlQcm9n",
+            "cmFtcxgJIAMoDjIgLmZsaWdodHMuQWlycG9ydFNlY3VyaXR5UHJvZ3JhbXMS",
+            "HQoVZG9jdW1lbnRzVmVyaWZpZWRUZXh0GAogASgJEjsKHmxvY2FsaXplZERv",
+            "Y3VtZW50c1ZlcmlmaWVkVGV4dBgLIAEoCzITLmlvLkxvY2FsaXplZFN0cmlu",
+            "ZxIQCghsb3VuZ2VJZBgNIAEoCTquAZJBqgEKpwEqDkFpcnBvcnQgUmVjb3Jk",
+            "MlFBaXJwb3J0IHJlY29yZHMgYXJlIHJlcXVpcmVkIGZvciBlYWNoIHBvcnQg",
+            "dGhhdCBhIGNhcnJpZXIgb3BlcmF0ZXMgaW4gYW5kIG91dCBvZi7SAQ9pYXRh",
+            "QWlycG9ydENvZGXSAQhjaXR5TmFtZdIBC2FpcnBvcnROYW1l0gELY291bnRy",
+            "eUNvZGXSAQh0aW1lem9uZSIiCgtBaXJwb3J0Q29kZRITCgthaXJwb3J0Q29k",
+            "ZRgBIAEoCUJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0YXNoLnBh",
+            "c3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIUUGFzc0tp",
+            "dC5HcnBjLkZsaWdodHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Flights.CommonReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Port), global::PassKit.Grpc.Flights.Port.Parser, new[]{ "IataAirportCode", "IcaoAirportCode", "CityName", "LocalizedCityName", "AirportName", "LocalizedAirportName", "CountryCode", "Timezone", "SecurityPrograms", "DocumentsVerifiedText", "LocalizedDocumentsVerifiedText", "LoungeId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.AirportCode), global::PassKit.Grpc.Flights.AirportCode.Parser, new[]{ "AirportCode_" }, null, null, null, null)
@@ -248,7 +248,7 @@ namespace PassKit.Grpc.Flights {
       get { return securityPrograms_; }
     }
 
-    /// <summary>Field number for the "DocumentsVerifiedText" field.</summary>
+    /// <summary>Field number for the "documentsVerifiedText" field.</summary>
     public const int DocumentsVerifiedTextFieldNumber = 10;
     private string documentsVerifiedText_ = "";
     /// <summary>

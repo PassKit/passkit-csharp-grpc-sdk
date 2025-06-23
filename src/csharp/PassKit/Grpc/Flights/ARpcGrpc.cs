@@ -474,7 +474,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.AsyncUnaryCall(__Method_deletePort, null, options, request);
       }
       /// <summary>
-      /// Create a carrier record. All Flight Designations and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
+      /// Create a carrier record. All Flight Designators and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -487,7 +487,7 @@ namespace PassKit.Grpc.Flights {
         return createCarrier(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a carrier record. All Flight Designations and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
+      /// Create a carrier record. All Flight Designators and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -498,7 +498,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.BlockingUnaryCall(__Method_createCarrier, null, options, request);
       }
       /// <summary>
-      /// Create a carrier record. All Flight Designations and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
+      /// Create a carrier record. All Flight Designators and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -511,7 +511,7 @@ namespace PassKit.Grpc.Flights {
         return createCarrierAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a carrier record. All Flight Designations and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
+      /// Create a carrier record. All Flight Designators and Flights must have a carrier record. Required Fields: carrierCode, airlineName, passTypeIdentifier.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -714,7 +714,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.AsyncUnaryCall(__Method_createFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Retrieve a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Retrieve a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -727,7 +727,7 @@ namespace PassKit.Grpc.Flights {
         return getFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieve a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Retrieve a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -738,7 +738,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.BlockingUnaryCall(__Method_getFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Retrieve a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Retrieve a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -751,7 +751,7 @@ namespace PassKit.Grpc.Flights {
         return getFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieve a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Retrieve a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -762,7 +762,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.AsyncUnaryCall(__Method_getFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Update a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Update a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -775,7 +775,7 @@ namespace PassKit.Grpc.Flights {
         return updateFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Update a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -786,7 +786,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.BlockingUnaryCall(__Method_updateFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Update a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Update a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -799,7 +799,7 @@ namespace PassKit.Grpc.Flights {
         return updateFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Update a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -810,7 +810,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.AsyncUnaryCall(__Method_updateFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Delete a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Delete a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -823,7 +823,7 @@ namespace PassKit.Grpc.Flights {
         return deleteFlightDesignator(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Delete a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -834,7 +834,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.BlockingUnaryCall(__Method_deleteFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Delete a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Delete a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -847,7 +847,7 @@ namespace PassKit.Grpc.Flights {
         return deleteFlightDesignatorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete a flight designation record. Required Fields: carrierCode, flightNumber, revision.
+      /// Delete a flight designator record. Required Fields: carrierCode, flightNumber, revision.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -858,7 +858,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.AsyncUnaryCall(__Method_deleteFlightDesignator, null, options, request);
       }
       /// <summary>
-      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designation records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
+      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designator records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -871,7 +871,7 @@ namespace PassKit.Grpc.Flights {
         return createFlight(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designation records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
+      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designator records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -882,7 +882,7 @@ namespace PassKit.Grpc.Flights {
         return CallInvoker.BlockingUnaryCall(__Method_createFlight, null, options, request);
       }
       /// <summary>
-      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designation records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
+      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designator records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -895,7 +895,7 @@ namespace PassKit.Grpc.Flights {
         return createFlightAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designation records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
+      /// Create a flight record. In practice, this method is not often used, since flight records can be automatically generated. Any information in the flight record will override information in the carrier and flight designator records. Required Fields: carrierCode, flightNumber, departureDate, boardingPoint, deplaningPoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

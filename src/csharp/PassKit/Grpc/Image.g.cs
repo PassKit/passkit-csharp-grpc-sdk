@@ -246,7 +246,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("artwork")] Artwork = 23,
     /// <summary>
-    /// used in the top left hand corner for Apple poster style Event tickets, and Semantic Boarding Passes (&lt;=378px x 30px).
+    /// used in the top left hand corner for Apple poster style Event tickets, and Semantic Boarding Passes (&lt;=378px x 90px).
     /// </summary>
     [pbr::OriginalName("primaryLogo")] PrimaryLogo = 24,
     /// <summary>
