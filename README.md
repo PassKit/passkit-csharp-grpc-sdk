@@ -2,8 +2,10 @@ PassKit C Sharp gRPC SDK
 =====================
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Nuget](https://img.shields.io/nuget/v/PassKit.Grpc)](https://www.nuget.org/packages/PassKit.Grpc)
+[![Nuget](https://img.shields.io/nuget/v/PassKit.Grpc.)](https://www.nuget.org/packages/PassKit.Grpc)
 
+> [!IMPORTANT]
+> This SDK uses the legacy [`Grpc.Core`](https://www.nuget.org/packages/Grpc.Core) library that is on maintenance mode. To use the [`Grpc.Net.Client`](https://www.nuget.org/packages/Grpc.Net.Client) library, consider using our [.NET SDK](https://github.com/PassKit/passkit-csharp-grpc-dotnet-sdk)
 
 The PassKit IO SDK makes it quick and easy to create and manage your branded Digital Membership Cards for Apple Wallet and Google Pay.
 

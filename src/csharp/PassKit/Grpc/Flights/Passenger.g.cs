@@ -48,26 +48,29 @@ namespace PassKit.Grpc.Flights {
             "cnkYAiABKAkSEwoLbmF0aW9uYWxpdHkYAyABKAkSFgoOZG9jdW1lbnROdW1i",
             "ZXIYBCABKAkSHQoLZGF0ZU9mQmlydGgYBSABKAsyCC5pby5EYXRlEhoKBmdl",
             "bmRlchgGIAEoDjIKLmlvLkdlbmRlchIcCgppc3N1ZWREYXRlGAcgASgLMggu",
-            "aW8uRGF0ZRIcCgpleHBpcnlEYXRlGAggASgLMgguaW8uRGF0ZSKOAgoGSW5m",
+            "aW8uRGF0ZRIcCgpleHBpcnlEYXRlGAggASgLMgguaW8uRGF0ZSKSAwoGSW5m",
             "YW50EiEKDWluZmFudERldGFpbHMYASABKAsyCi5pby5QZXJzb24SMQoPaWRl",
             "bnRpdHlEZXRhaWxzGAIgASgLMhguZmxpZ2h0cy5JZGVudGl0eURldGFpbHMS",
             "FgoOYmFyY29kZVBheWxvYWQYAyABKAkSMwoQY29uZGl0aW9uYWxJdGVtcxgE",
             "IAEoCzIZLmZsaWdodHMuQ29uZGl0aW9uYWxJdGVtcxIdChViYXJjb2RlQWRk",
             "aXRpb25hbERhdGEYBSABKAkSFQoNc2VjdXJpdHlJbWFnZRgGIAEoCRIWCg5w",
-            "cml2aWxlZ2VJbWFnZRgHIAEoCRITCgtmb290ZXJJbWFnZRgIIAEoCSqQAQoQ",
-            "SWRlbnRpdHlEb2N1bWVudBIMCghQQVNTUE9SVBAAEhQKEE5BVElPTkFMX0lE",
-            "X0NBUkQQARITCg9EUklWSU5HX0xJQ0VOU0UQAhIPCgtDUkVESVRfQ0FSRBAD",
-            "EhcKE0ZSRVFVRU5UX0ZMWUVSX0NBUkQQBBIZChVPVEhFUl9UUkFWRUxfRE9D",
-            "VU1FTlQQBUJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0YXNoLnBh",
-            "c3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIUUGFzc0tp",
-            "dC5HcnBjLkZsaWdodHNiBnByb3RvMw=="));
+            "cml2aWxlZ2VJbWFnZRgHIAEoCRITCgtmb290ZXJJbWFnZRgIIAEoCRIQCghz",
+            "c3JDb2RlcxgJIAMoCRI0CgxjYXBhYmlsaXRpZXMYCiADKA4yHi5mbGlnaHRz",
+            "LlBhc3NlbmdlckNhcGFiaWxpdGllcxI6ChBzZWN1cml0eVByb2dyYW1zGAsg",
+            "AygOMiAuZmxpZ2h0cy5BaXJwb3J0U2VjdXJpdHlQcm9ncmFtcyqQAQoQSWRl",
+            "bnRpdHlEb2N1bWVudBIMCghQQVNTUE9SVBAAEhQKEE5BVElPTkFMX0lEX0NB",
+            "UkQQARITCg9EUklWSU5HX0xJQ0VOU0UQAhIPCgtDUkVESVRfQ0FSRBADEhcK",
+            "E0ZSRVFVRU5UX0ZMWUVSX0NBUkQQBBIZChVPVEhFUl9UUkFWRUxfRE9DVU1F",
+            "TlQQBUJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0YXNoLnBhc3Nr",
+            "aXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIUUGFzc0tpdC5H",
+            "cnBjLkZsaWdodHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.Flights.IdentityDocument), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Passenger), global::PassKit.Grpc.Flights.Passenger.Parser, new[]{ "PassengerDetails", "FrequentFlyerInfo", "IdentityDetails", "WithInfant", "InfantDetails", "KnownTravelerNumber" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.FrequentFlyerInfo), global::PassKit.Grpc.Flights.FrequentFlyerInfo.Parser, new[]{ "ProgramName", "AirlineDesignator", "Number", "Tier" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.IdentityDetails), global::PassKit.Grpc.Flights.IdentityDetails.Parser, new[]{ "IdentityDocument", "IssuingCountry", "Nationality", "DocumentNumber", "DateOfBirth", "Gender", "IssuedDate", "ExpiryDate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Infant), global::PassKit.Grpc.Flights.Infant.Parser, new[]{ "InfantDetails", "IdentityDetails", "BarcodePayload", "ConditionalItems", "BarcodeAdditionalData", "SecurityImage", "PrivilegeImage", "FooterImage" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Infant), global::PassKit.Grpc.Flights.Infant.Parser, new[]{ "InfantDetails", "IdentityDetails", "BarcodePayload", "ConditionalItems", "BarcodeAdditionalData", "SecurityImage", "PrivilegeImage", "FooterImage", "SsrCodes", "Capabilities", "SecurityPrograms" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1428,6 +1431,9 @@ namespace PassKit.Grpc.Flights {
       securityImage_ = other.securityImage_;
       privilegeImage_ = other.privilegeImage_;
       footerImage_ = other.footerImage_;
+      ssrCodes_ = other.ssrCodes_.Clone();
+      capabilities_ = other.capabilities_.Clone();
+      securityPrograms_ = other.securityPrograms_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1557,6 +1563,48 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
+    /// <summary>Field number for the "ssrCodes" field.</summary>
+    public const int SsrCodesFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _repeated_ssrCodes_codec
+        = pb::FieldCodec.ForString(74);
+    private readonly pbc::RepeatedField<string> ssrCodes_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// An array of SSR codes. Codes should be 4 capitalized letters.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> SsrCodes {
+      get { return ssrCodes_; }
+    }
+
+    /// <summary>Field number for the "capabilities" field.</summary>
+    public const int CapabilitiesFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Flights.PassengerCapabilities> _repeated_capabilities_codec
+        = pb::FieldCodec.ForEnum(82, x => (int) x, x => (global::PassKit.Grpc.Flights.PassengerCapabilities) x);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities> capabilities_ = new pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities>();
+    /// <summary>
+    /// Passenger Capabilities are used by Apple Semantic boarding passes to visibly display useful information at the boarding gate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Flights.PassengerCapabilities> Capabilities {
+      get { return capabilities_; }
+    }
+
+    /// <summary>Field number for the "securityPrograms" field.</summary>
+    public const int SecurityProgramsFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.Flights.AirportSecurityPrograms> _repeated_securityPrograms_codec
+        = pb::FieldCodec.ForEnum(90, x => (int) x, x => (global::PassKit.Grpc.Flights.AirportSecurityPrograms) x);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> securityPrograms_ = new pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms>();
+    /// <summary>
+    /// Airport Security Programs are by Apple Semantic boarding passes to visibly display on the pass. Both the Airport and the Passenger must be members of the program, otherwise value is ignored.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.Flights.AirportSecurityPrograms> SecurityPrograms {
+      get { return securityPrograms_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1580,6 +1628,9 @@ namespace PassKit.Grpc.Flights {
       if (SecurityImage != other.SecurityImage) return false;
       if (PrivilegeImage != other.PrivilegeImage) return false;
       if (FooterImage != other.FooterImage) return false;
+      if(!ssrCodes_.Equals(other.ssrCodes_)) return false;
+      if(!capabilities_.Equals(other.capabilities_)) return false;
+      if(!securityPrograms_.Equals(other.securityPrograms_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1595,6 +1646,9 @@ namespace PassKit.Grpc.Flights {
       if (SecurityImage.Length != 0) hash ^= SecurityImage.GetHashCode();
       if (PrivilegeImage.Length != 0) hash ^= PrivilegeImage.GetHashCode();
       if (FooterImage.Length != 0) hash ^= FooterImage.GetHashCode();
+      hash ^= ssrCodes_.GetHashCode();
+      hash ^= capabilities_.GetHashCode();
+      hash ^= securityPrograms_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1645,6 +1699,9 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(FooterImage);
       }
+      ssrCodes_.WriteTo(output, _repeated_ssrCodes_codec);
+      capabilities_.WriteTo(output, _repeated_capabilities_codec);
+      securityPrograms_.WriteTo(output, _repeated_securityPrograms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1687,6 +1744,9 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(66);
         output.WriteString(FooterImage);
       }
+      ssrCodes_.WriteTo(ref output, _repeated_ssrCodes_codec);
+      capabilities_.WriteTo(ref output, _repeated_capabilities_codec);
+      securityPrograms_.WriteTo(ref output, _repeated_securityPrograms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1721,6 +1781,9 @@ namespace PassKit.Grpc.Flights {
       if (FooterImage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FooterImage);
       }
+      size += ssrCodes_.CalculateSize(_repeated_ssrCodes_codec);
+      size += capabilities_.CalculateSize(_repeated_capabilities_codec);
+      size += securityPrograms_.CalculateSize(_repeated_securityPrograms_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1766,6 +1829,9 @@ namespace PassKit.Grpc.Flights {
       if (other.FooterImage.Length != 0) {
         FooterImage = other.FooterImage;
       }
+      ssrCodes_.Add(other.ssrCodes_);
+      capabilities_.Add(other.capabilities_);
+      securityPrograms_.Add(other.securityPrograms_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1826,6 +1892,20 @@ namespace PassKit.Grpc.Flights {
             FooterImage = input.ReadString();
             break;
           }
+          case 74: {
+            ssrCodes_.AddEntriesFrom(input, _repeated_ssrCodes_codec);
+            break;
+          }
+          case 82:
+          case 80: {
+            capabilities_.AddEntriesFrom(input, _repeated_capabilities_codec);
+            break;
+          }
+          case 90:
+          case 88: {
+            securityPrograms_.AddEntriesFrom(input, _repeated_securityPrograms_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1884,6 +1964,20 @@ namespace PassKit.Grpc.Flights {
           }
           case 66: {
             FooterImage = input.ReadString();
+            break;
+          }
+          case 74: {
+            ssrCodes_.AddEntriesFrom(ref input, _repeated_ssrCodes_codec);
+            break;
+          }
+          case 82:
+          case 80: {
+            capabilities_.AddEntriesFrom(ref input, _repeated_capabilities_codec);
+            break;
+          }
+          case 90:
+          case 88: {
+            securityPrograms_.AddEntriesFrom(ref input, _repeated_securityPrograms_codec);
             break;
           }
         }
