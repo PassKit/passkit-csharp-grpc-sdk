@@ -27,7 +27,7 @@ namespace PassKit.Grpc.Flights {
             "Chhpby9mbGlnaHRzL2FpcnBvcnQucHJvdG8SB2ZsaWdodHMaHGlvL2NvbW1v",
             "bi9sb2NhbGl6YXRpb24ucHJvdG8aGGlvL2ZsaWdodHMvYmFyY29kZS5wcm90",
             "bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0aW9ucy9hbm5vdGF0aW9ucy5w",
-            "cm90byLSBAoEUG9ydBIeCg9pYXRhQWlycG9ydENvZGUYASABKAlCBZJBAngD",
+            "cm90byLTBAoEUG9ydBIeCg9pYXRhQWlycG9ydENvZGUYASABKAlCBZJBAngD",
             "Eh4KD2ljYW9BaXJwb3J0Q29kZRgCIAEoCUIFkkECeAQSEAoIY2l0eU5hbWUY",
             "AyABKAkSLgoRbG9jYWxpemVkQ2l0eU5hbWUYBCABKAsyEy5pby5Mb2NhbGl6",
             "ZWRTdHJpbmcSEwoLYWlycG9ydE5hbWUYBSABKAkSMQoUbG9jYWxpemVkQWly",
@@ -36,18 +36,18 @@ namespace PassKit.Grpc.Flights {
             "cmFtcxgJIAMoDjIgLmZsaWdodHMuQWlycG9ydFNlY3VyaXR5UHJvZ3JhbXMS",
             "HQoVZG9jdW1lbnRzVmVyaWZpZWRUZXh0GAogASgJEjsKHmxvY2FsaXplZERv",
             "Y3VtZW50c1ZlcmlmaWVkVGV4dBgLIAEoCzITLmlvLkxvY2FsaXplZFN0cmlu",
-            "ZxIQCghsb3VuZ2VJZBgNIAEoCTquAZJBqgEKpwEqDkFpcnBvcnQgUmVjb3Jk",
-            "MlFBaXJwb3J0IHJlY29yZHMgYXJlIHJlcXVpcmVkIGZvciBlYWNoIHBvcnQg",
-            "dGhhdCBhIGNhcnJpZXIgb3BlcmF0ZXMgaW4gYW5kIG91dCBvZi7SAQ9pYXRh",
-            "QWlycG9ydENvZGXSAQhjaXR5TmFtZdIBC2FpcnBvcnROYW1l0gELY291bnRy",
-            "eUNvZGXSAQh0aW1lem9uZSIiCgtBaXJwb3J0Q29kZRITCgthaXJwb3J0Q29k",
-            "ZRgBIAEoCUJfChhjb20ucGFzc2tpdC5ncnBjLkZsaWdodHNaLHN0YXNoLnBh",
-            "c3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pby9mbGlnaHRzqgIUUGFzc0tp",
-            "dC5HcnBjLkZsaWdodHNiBnByb3RvMw=="));
+            "ZxIRCglsb3VuZ2VJZHMYDSADKAk6rgGSQaoBCqcBKg5BaXJwb3J0IFJlY29y",
+            "ZDJRQWlycG9ydCByZWNvcmRzIGFyZSByZXF1aXJlZCBmb3IgZWFjaCBwb3J0",
+            "IHRoYXQgYSBjYXJyaWVyIG9wZXJhdGVzIGluIGFuZCBvdXQgb2Yu0gEPaWF0",
+            "YUFpcnBvcnRDb2Rl0gEIY2l0eU5hbWXSAQthaXJwb3J0TmFtZdIBC2NvdW50",
+            "cnlDb2Rl0gEIdGltZXpvbmUiIgoLQWlycG9ydENvZGUSEwoLYWlycG9ydENv",
+            "ZGUYASABKAlCXwoYY29tLnBhc3NraXQuZ3JwYy5GbGlnaHRzWixzdGFzaC5w",
+            "YXNza2l0LmNvbS9pby9tb2RlbC9zZGsvZ28vaW8vZmxpZ2h0c6oCFFBhc3NL",
+            "aXQuR3JwYy5GbGlnaHRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Port), global::PassKit.Grpc.Flights.Port.Parser, new[]{ "IataAirportCode", "IcaoAirportCode", "CityName", "LocalizedCityName", "AirportName", "LocalizedAirportName", "CountryCode", "Timezone", "SecurityPrograms", "DocumentsVerifiedText", "LocalizedDocumentsVerifiedText", "LoungeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.Port), global::PassKit.Grpc.Flights.Port.Parser, new[]{ "IataAirportCode", "IcaoAirportCode", "CityName", "LocalizedCityName", "AirportName", "LocalizedAirportName", "CountryCode", "Timezone", "SecurityPrograms", "DocumentsVerifiedText", "LocalizedDocumentsVerifiedText", "LoungeIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.AirportCode), global::PassKit.Grpc.Flights.AirportCode.Parser, new[]{ "AirportCode_" }, null, null, null, null)
           }));
     }
@@ -104,7 +104,7 @@ namespace PassKit.Grpc.Flights {
       securityPrograms_ = other.securityPrograms_.Clone();
       documentsVerifiedText_ = other.documentsVerifiedText_;
       localizedDocumentsVerifiedText_ = other.localizedDocumentsVerifiedText_ != null ? other.localizedDocumentsVerifiedText_.Clone() : null;
-      loungeId_ = other.loungeId_;
+      loungeIds_ = other.loungeIds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -278,19 +278,18 @@ namespace PassKit.Grpc.Flights {
       }
     }
 
-    /// <summary>Field number for the "loungeId" field.</summary>
-    public const int LoungeIdFieldNumber = 13;
-    private string loungeId_ = "";
+    /// <summary>Field number for the "loungeIds" field.</summary>
+    public const int LoungeIdsFieldNumber = 13;
+    private static readonly pb::FieldCodec<string> _repeated_loungeIds_codec
+        = pb::FieldCodec.ForString(106);
+    private readonly pbc::RepeatedField<string> loungeIds_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// Apple Place ID for Airline lounge. Can be overridden at the boarding pass level by providing additional data items 'airport.loungeId'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string LoungeId {
-      get { return loungeId_; }
-      set {
-        loungeId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public pbc::RepeatedField<string> LoungeIds {
+      get { return loungeIds_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -319,7 +318,7 @@ namespace PassKit.Grpc.Flights {
       if(!securityPrograms_.Equals(other.securityPrograms_)) return false;
       if (DocumentsVerifiedText != other.DocumentsVerifiedText) return false;
       if (!object.Equals(LocalizedDocumentsVerifiedText, other.LocalizedDocumentsVerifiedText)) return false;
-      if (LoungeId != other.LoungeId) return false;
+      if(!loungeIds_.Equals(other.loungeIds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -338,7 +337,7 @@ namespace PassKit.Grpc.Flights {
       hash ^= securityPrograms_.GetHashCode();
       if (DocumentsVerifiedText.Length != 0) hash ^= DocumentsVerifiedText.GetHashCode();
       if (localizedDocumentsVerifiedText_ != null) hash ^= LocalizedDocumentsVerifiedText.GetHashCode();
-      if (LoungeId.Length != 0) hash ^= LoungeId.GetHashCode();
+      hash ^= loungeIds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -398,10 +397,7 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(90);
         output.WriteMessage(LocalizedDocumentsVerifiedText);
       }
-      if (LoungeId.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(LoungeId);
-      }
+      loungeIds_.WriteTo(output, _repeated_loungeIds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -453,10 +449,7 @@ namespace PassKit.Grpc.Flights {
         output.WriteRawTag(90);
         output.WriteMessage(LocalizedDocumentsVerifiedText);
       }
-      if (LoungeId.Length != 0) {
-        output.WriteRawTag(106);
-        output.WriteString(LoungeId);
-      }
+      loungeIds_.WriteTo(ref output, _repeated_loungeIds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -498,9 +491,7 @@ namespace PassKit.Grpc.Flights {
       if (localizedDocumentsVerifiedText_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedDocumentsVerifiedText);
       }
-      if (LoungeId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(LoungeId);
-      }
+      size += loungeIds_.CalculateSize(_repeated_loungeIds_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -553,9 +544,7 @@ namespace PassKit.Grpc.Flights {
         }
         LocalizedDocumentsVerifiedText.MergeFrom(other.LocalizedDocumentsVerifiedText);
       }
-      if (other.LoungeId.Length != 0) {
-        LoungeId = other.LoungeId;
-      }
+      loungeIds_.Add(other.loungeIds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -630,7 +619,7 @@ namespace PassKit.Grpc.Flights {
             break;
           }
           case 106: {
-            LoungeId = input.ReadString();
+            loungeIds_.AddEntriesFrom(input, _repeated_loungeIds_codec);
             break;
           }
         }
@@ -707,7 +696,7 @@ namespace PassKit.Grpc.Flights {
             break;
           }
           case 106: {
-            LoungeId = input.ReadString();
+            loungeIds_.AddEntriesFrom(ref input, _repeated_loungeIds_codec);
             break;
           }
         }

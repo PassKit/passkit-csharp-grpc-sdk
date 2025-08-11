@@ -30,7 +30,7 @@ namespace PassKit.Grpc.Flights {
             "dG8aHmlvL2NvbW1vbi9jb21tb25fb2JqZWN0cy5wcm90bxoZaW8vY29tbW9u",
             "L3Byb3hpbWl0eS5wcm90bxoVaW8vY29tbW9uL2xpbmtzLnByb3RvGhdpby9j",
             "b21tb24vbWV0cmljcy5wcm90bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0",
-            "aW9ucy9hbm5vdGF0aW9ucy5wcm90byLSEAoSQm9hcmRpbmdQYXNzUmVjb3Jk",
+            "aW9ucy9hbm5vdGF0aW9ucy5wcm90byLqEAoSQm9hcmRpbmdQYXNzUmVjb3Jk",
             "EgoKAmlkGAEgASgJEjIKE29wZXJhdGluZ0NhcnJpZXJQTlIYAiABKAlCFZJB",
             "EooBD15bQS1aMC05XXs1LDd9JBLYAgoLcmVsYXRlZFBOUnMYAyADKAlCwgKS",
             "Qb4CMpcCUmVsYXRlZCBQTlJzIGNhbiBiZSB1c2VkIHRvIGluZGV4IHRoZSBy",
@@ -65,58 +65,59 @@ namespace PassKit.Grpc.Flights {
             "SXRlbXMSIQoEdXJscxglIAEoCzITLmZsaWdodHMuRmxpZ2h0VVJMcxI0Cgxj",
             "YXBhYmlsaXRpZXMYJiADKA4yHi5mbGlnaHRzLlBhc3NlbmdlckNhcGFiaWxp",
             "dGllcxI6ChBzZWN1cml0eVByb2dyYW1zGCcgAygOMiAuZmxpZ2h0cy5BaXJw",
-            "b3J0U2VjdXJpdHlQcm9ncmFtcxIUCgxpbmZhbnRQYXNzSWQYIiABKAkSHgoI",
-            "bWV0YWRhdGEYJCABKAsyDC5pby5NZXRhZGF0YTr4A5JB9AMK8QMqFEJvYXJk",
-            "aW5nIFBhc3MgUmVjb3JkMtcCQSBCb2FyZGluZyBQYXNzIHJlY29yZCBpcyB1",
-            "bmlxdWUgdG8gYW4gaW5kaXZpZHVhbCBwYXNzZW5nZXIgam91cm5leSBmb3Jt",
-            "IGEgYm9hcmRpbmcgcG9pbnQgdG8gYSBkZXBsYW5pbmcgcG9pbnQuIEEgQ2Fy",
-            "cmllciBhbmQgYSBGbGlnaHQgRGVzaWduYXRvciByZWNvcmQgbXVzdCBleGlz",
-            "dC4gSWYgYSBGbGlnaHQgcmVjb3JkIGRvZXMgbm90IGFscmVhZHkgZXhpc3Qs",
-            "IHRoZW4gaXQgd2lsbCBiZSBhdXRvLWdlbmVyYXRlZCBiYXNlZCBvbiB0aGUg",
-            "RmxpZ2h0IERlc2lnbmF0b3IgcmVjb3JkIChhbmQgb3RoZXIgcHVibGljbHkg",
-            "YXZhaWxhYmxlIGRhdGEgaWYgc3Vic2NyaWJlZCB0byBkYXRhIHVwZGF0ZXMp",
-            "LtIBE29wZXJhdGluZ0NhcnJpZXJQTlLSAQ5zZXF1ZW5jZU51bWJlctIBDWJv",
-            "YXJkaW5nUG9pbnTSAQ5kZXBsYW5pbmdQb2ludNIBDGZsaWdodE51bWJlctIB",
-            "DWRlcGFydHVyZURhdGXSAQlwYXNzZW5nZXLSAQtjYXJyaWVyQ29kZSK5Agon",
-            "Qm9hcmRpbmdQYXNzUmVjb3JkUmVxdWVzdEJ5VGlja2V0TnVtYmVyEioKDHRp",
-            "Y2tldE51bWJlchgBIAEoCUIUkkERigEOXihbMC05XXszLDEwfSQSEQoJdGlj",
-            "a2V0TGVnGAIgASgFEhUKDWJvYXJkaW5nUG9pbnQYAyABKAk6twGSQbMBCrAB",
-            "KiVCb2FyZGluZyBQYXNzIFJlY29yZCBCeSBUaWNrZXQgTnVtYmVyMnhVc2Vk",
-            "IHRvIGFjY2VzcyBhIHNpbmdsZSBib2FyZGluZyBwYXNzIG9yIGJvYXJkaW5n",
-            "IHBhc3MgcmVjb3JkLiAgRWl0aGVyIGEgdGlja2V0IGxlZyBvciBib2FyZGlu",
-            "ZyBwb2ludCBzaG91bGQgYmUgcHJvdmlkZWTSAQx0aWNrZXROdW1iZXIi+QIK",
-            "IEJvYXJkaW5nUGFzc1JlY29yZFJlcXVlc3RCeUluZGV4Eh0KC2NhcnJpZXJD",
-            "b2RlGAEgASgJQgiSQQV4A4ABAhIbCgxmbGlnaHROdW1iZXIYAiABKAlCBZJB",
-            "AngFEh8KDWRlcGFydHVyZURhdGUYAyABKAsyCC5pby5EYXRlEikKDWJvYXJk",
-            "aW5nUG9pbnQYBCABKAlCEpJBD4oBDF5bQS1aXXszLDR9JBIWCg5zZXF1ZW5j",
-            "ZU51bWJlchgFIAEoBTq0AZJBsAEKrQEqHUJvYXJkaW5nIFBhc3MgUmVjb3Jk",
-            "IEJ5IEluZGV4Mj5Vc2VkIHRvIGFjY2VzcyBhIHNpbmdsZSBib2FyZGluZyBw",
-            "YXNzIG9yIGJvYXJkaW5nIHBhc3MgcmVjb3JkLtIBC2NhcnJpZXJDb2Rl0gEM",
-            "ZmxpZ2h0TnVtYmVy0gENZGVwYXJ0dXJlRGF0ZdIBDWJvYXJkaW5nUG9pbnTS",
-            "AQ5zZXF1ZW5jZU51bWJlciKfAgoTQm9hcmRpbmdQYXNzUmVxdWVzdBJICgx0",
-            "aWNrZXROdW1iZXIYASABKAsyMC5mbGlnaHRzLkJvYXJkaW5nUGFzc1JlY29y",
-            "ZFJlcXVlc3RCeVRpY2tldE51bWJlckgAEjoKBWluZGV4GAIgASgLMikuZmxp",
-            "Z2h0cy5Cb2FyZGluZ1Bhc3NSZWNvcmRSZXF1ZXN0QnlJbmRleEgAEjcKA3Bu",
-            "chgDIAEoCzIoLmZsaWdodHMuQm9hcmRpbmdQYXNzZXNGb3JCb29raW5nUmVx",
-            "dWVzdEgAEhgKBnBhc3NJZBgEIAEoCzIGLmlvLklkSAASJAoGZm9ybWF0GAUg",
-            "AygOMhQuaW8uUGFzc0J1bmRsZUZvcm1hdEIJCgdyZXF1ZXN0IsYBChlCb2Fy",
-            "ZGluZ1Bhc3NSZWNvcmRSZXF1ZXN0EkgKDHRpY2tldE51bWJlchgBIAEoCzIw",
-            "LmZsaWdodHMuQm9hcmRpbmdQYXNzUmVjb3JkUmVxdWVzdEJ5VGlja2V0TnVt",
-            "YmVySAASOgoFaW5kZXgYAiABKAsyKS5mbGlnaHRzLkJvYXJkaW5nUGFzc1Jl",
-            "Y29yZFJlcXVlc3RCeUluZGV4SAASGAoGcGFzc0lkGAMgASgLMgYuaW8uSWRI",
-            "AEIJCgdyZXF1ZXN0ItgBCh9Cb2FyZGluZ1Bhc3Nlc0ZvckJvb2tpbmdSZXF1",
-            "ZXN0EgsKA3BuchgBIAEoCRIRCgl0aWNrZXRMZWcYAiABKAUSFQoNYm9hcmRp",
-            "bmdQb2ludBgDIAEoCTp+kkF7CnkqIkJvYXJkaW5nIFBhc3MgUmVjb3JkIEJ5",
-            "IFBOUiByZWNvcmQyTVVzZWQgdG8gYWNjZXNzIGEgc2luZ2xlIG9yIG11bHRp",
-            "cGxlIGJvYXJkaW5nIHBhc3NlZCBvciBib2FyZGluZyBwYXNzIHJlY29yZHMu",
-            "0gEDcG5yIkAKFkJvYXJkaW5nUGFzc2VzUmVzcG9uc2USJgoOYm9hcmRpbmdQ",
-            "YXNzZXMYASADKAsyDi5pby5QYXNzQnVuZGxlQl8KGGNvbS5wYXNza2l0Lmdy",
-            "cGMuRmxpZ2h0c1osc3Rhc2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dv",
-            "L2lvL2ZsaWdodHOqAhRQYXNzS2l0LkdycGMuRmxpZ2h0c2IGcHJvdG8z"));
+            "b3J0U2VjdXJpdHlQcm9ncmFtcxIWCg5Qcmlvcml0eVN0YXR1cxgoIAEoCRIU",
+            "CgxpbmZhbnRQYXNzSWQYIiABKAkSHgoIbWV0YWRhdGEYJCABKAsyDC5pby5N",
+            "ZXRhZGF0YTr4A5JB9AMK8QMqFEJvYXJkaW5nIFBhc3MgUmVjb3JkMtcCQSBC",
+            "b2FyZGluZyBQYXNzIHJlY29yZCBpcyB1bmlxdWUgdG8gYW4gaW5kaXZpZHVh",
+            "bCBwYXNzZW5nZXIgam91cm5leSBmb3JtIGEgYm9hcmRpbmcgcG9pbnQgdG8g",
+            "YSBkZXBsYW5pbmcgcG9pbnQuIEEgQ2FycmllciBhbmQgYSBGbGlnaHQgRGVz",
+            "aWduYXRvciByZWNvcmQgbXVzdCBleGlzdC4gSWYgYSBGbGlnaHQgcmVjb3Jk",
+            "IGRvZXMgbm90IGFscmVhZHkgZXhpc3QsIHRoZW4gaXQgd2lsbCBiZSBhdXRv",
+            "LWdlbmVyYXRlZCBiYXNlZCBvbiB0aGUgRmxpZ2h0IERlc2lnbmF0b3IgcmVj",
+            "b3JkIChhbmQgb3RoZXIgcHVibGljbHkgYXZhaWxhYmxlIGRhdGEgaWYgc3Vi",
+            "c2NyaWJlZCB0byBkYXRhIHVwZGF0ZXMpLtIBE29wZXJhdGluZ0NhcnJpZXJQ",
+            "TlLSAQ5zZXF1ZW5jZU51bWJlctIBDWJvYXJkaW5nUG9pbnTSAQ5kZXBsYW5p",
+            "bmdQb2ludNIBDGZsaWdodE51bWJlctIBDWRlcGFydHVyZURhdGXSAQlwYXNz",
+            "ZW5nZXLSAQtjYXJyaWVyQ29kZSK5AgonQm9hcmRpbmdQYXNzUmVjb3JkUmVx",
+            "dWVzdEJ5VGlja2V0TnVtYmVyEioKDHRpY2tldE51bWJlchgBIAEoCUIUkkER",
+            "igEOXihbMC05XXszLDEwfSQSEQoJdGlja2V0TGVnGAIgASgFEhUKDWJvYXJk",
+            "aW5nUG9pbnQYAyABKAk6twGSQbMBCrABKiVCb2FyZGluZyBQYXNzIFJlY29y",
+            "ZCBCeSBUaWNrZXQgTnVtYmVyMnhVc2VkIHRvIGFjY2VzcyBhIHNpbmdsZSBi",
+            "b2FyZGluZyBwYXNzIG9yIGJvYXJkaW5nIHBhc3MgcmVjb3JkLiAgRWl0aGVy",
+            "IGEgdGlja2V0IGxlZyBvciBib2FyZGluZyBwb2ludCBzaG91bGQgYmUgcHJv",
+            "dmlkZWTSAQx0aWNrZXROdW1iZXIi+QIKIEJvYXJkaW5nUGFzc1JlY29yZFJl",
+            "cXVlc3RCeUluZGV4Eh0KC2NhcnJpZXJDb2RlGAEgASgJQgiSQQV4A4ABAhIb",
+            "CgxmbGlnaHROdW1iZXIYAiABKAlCBZJBAngFEh8KDWRlcGFydHVyZURhdGUY",
+            "AyABKAsyCC5pby5EYXRlEikKDWJvYXJkaW5nUG9pbnQYBCABKAlCEpJBD4oB",
+            "DF5bQS1aXXszLDR9JBIWCg5zZXF1ZW5jZU51bWJlchgFIAEoBTq0AZJBsAEK",
+            "rQEqHUJvYXJkaW5nIFBhc3MgUmVjb3JkIEJ5IEluZGV4Mj5Vc2VkIHRvIGFj",
+            "Y2VzcyBhIHNpbmdsZSBib2FyZGluZyBwYXNzIG9yIGJvYXJkaW5nIHBhc3Mg",
+            "cmVjb3JkLtIBC2NhcnJpZXJDb2Rl0gEMZmxpZ2h0TnVtYmVy0gENZGVwYXJ0",
+            "dXJlRGF0ZdIBDWJvYXJkaW5nUG9pbnTSAQ5zZXF1ZW5jZU51bWJlciKfAgoT",
+            "Qm9hcmRpbmdQYXNzUmVxdWVzdBJICgx0aWNrZXROdW1iZXIYASABKAsyMC5m",
+            "bGlnaHRzLkJvYXJkaW5nUGFzc1JlY29yZFJlcXVlc3RCeVRpY2tldE51bWJl",
+            "ckgAEjoKBWluZGV4GAIgASgLMikuZmxpZ2h0cy5Cb2FyZGluZ1Bhc3NSZWNv",
+            "cmRSZXF1ZXN0QnlJbmRleEgAEjcKA3BuchgDIAEoCzIoLmZsaWdodHMuQm9h",
+            "cmRpbmdQYXNzZXNGb3JCb29raW5nUmVxdWVzdEgAEhgKBnBhc3NJZBgEIAEo",
+            "CzIGLmlvLklkSAASJAoGZm9ybWF0GAUgAygOMhQuaW8uUGFzc0J1bmRsZUZv",
+            "cm1hdEIJCgdyZXF1ZXN0IsYBChlCb2FyZGluZ1Bhc3NSZWNvcmRSZXF1ZXN0",
+            "EkgKDHRpY2tldE51bWJlchgBIAEoCzIwLmZsaWdodHMuQm9hcmRpbmdQYXNz",
+            "UmVjb3JkUmVxdWVzdEJ5VGlja2V0TnVtYmVySAASOgoFaW5kZXgYAiABKAsy",
+            "KS5mbGlnaHRzLkJvYXJkaW5nUGFzc1JlY29yZFJlcXVlc3RCeUluZGV4SAAS",
+            "GAoGcGFzc0lkGAMgASgLMgYuaW8uSWRIAEIJCgdyZXF1ZXN0ItgBCh9Cb2Fy",
+            "ZGluZ1Bhc3Nlc0ZvckJvb2tpbmdSZXF1ZXN0EgsKA3BuchgBIAEoCRIRCgl0",
+            "aWNrZXRMZWcYAiABKAUSFQoNYm9hcmRpbmdQb2ludBgDIAEoCTp+kkF7Cnkq",
+            "IkJvYXJkaW5nIFBhc3MgUmVjb3JkIEJ5IFBOUiByZWNvcmQyTVVzZWQgdG8g",
+            "YWNjZXNzIGEgc2luZ2xlIG9yIG11bHRpcGxlIGJvYXJkaW5nIHBhc3NlZCBv",
+            "ciBib2FyZGluZyBwYXNzIHJlY29yZHMu0gEDcG5yIkAKFkJvYXJkaW5nUGFz",
+            "c2VzUmVzcG9uc2USJgoOYm9hcmRpbmdQYXNzZXMYASADKAsyDi5pby5QYXNz",
+            "QnVuZGxlQl8KGGNvbS5wYXNza2l0LmdycGMuRmxpZ2h0c1osc3Rhc2gucGFz",
+            "c2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvL2ZsaWdodHOqAhRQYXNzS2l0",
+            "LkdycGMuRmxpZ2h0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.Flights.PassengerReflection.Descriptor, global::PassKit.Grpc.Flights.BarcodeReflection.Descriptor, global::PassKit.Grpc.Flights.CabinCodes.CabinCodesReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecord), global::PassKit.Grpc.Flights.BoardingPassRecord.Parser, new[]{ "Id", "OperatingCarrierPNR", "RelatedPNRs", "TicketNumber", "TicketLeg", "BoardingPoint", "DeplaningPoint", "CarrierCode", "FlightNumber", "DepartureDate", "Passenger", "Class", "CompartmentCode", "SeatNumber", "SequenceNumber", "BoardingGroup", "BoardingPosition", "FreeBaggageAllowance", "CarryOnAllowance", "SsrCodes", "Osi", "Remarks", "PassengerStatus", "ConditionalItems", "BarcodePayload", "SecurityImage", "PrivilegeImage", "FooterImage", "LocationMessages", "BeaconMessages", "Links", "BarcodeAdditionalData", "AdditionalDataItems", "Urls", "Capabilities", "SecurityPrograms", "InfantPassId", "Metadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecord), global::PassKit.Grpc.Flights.BoardingPassRecord.Parser, new[]{ "Id", "OperatingCarrierPNR", "RelatedPNRs", "TicketNumber", "TicketLeg", "BoardingPoint", "DeplaningPoint", "CarrierCode", "FlightNumber", "DepartureDate", "Passenger", "Class", "CompartmentCode", "SeatNumber", "SequenceNumber", "BoardingGroup", "BoardingPosition", "FreeBaggageAllowance", "CarryOnAllowance", "SsrCodes", "Osi", "Remarks", "PassengerStatus", "ConditionalItems", "BarcodePayload", "SecurityImage", "PrivilegeImage", "FooterImage", "LocationMessages", "BeaconMessages", "Links", "BarcodeAdditionalData", "AdditionalDataItems", "Urls", "Capabilities", "SecurityPrograms", "PriorityStatus", "InfantPassId", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecordRequestByTicketNumber), global::PassKit.Grpc.Flights.BoardingPassRecordRequestByTicketNumber.Parser, new[]{ "TicketNumber", "TicketLeg", "BoardingPoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRecordRequestByIndex), global::PassKit.Grpc.Flights.BoardingPassRecordRequestByIndex.Parser, new[]{ "CarrierCode", "FlightNumber", "DepartureDate", "BoardingPoint", "SequenceNumber" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Flights.BoardingPassRequest), global::PassKit.Grpc.Flights.BoardingPassRequest.Parser, new[]{ "TicketNumber", "Index", "Pnr", "PassId", "Format" }, new[]{ "Request" }, null, null, null),
@@ -203,6 +204,7 @@ namespace PassKit.Grpc.Flights {
       urls_ = other.urls_ != null ? other.urls_.Clone() : null;
       capabilities_ = other.capabilities_.Clone();
       securityPrograms_ = other.securityPrograms_.Clone();
+      priorityStatus_ = other.priorityStatus_;
       infantPassId_ = other.infantPassId_;
       metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -747,6 +749,21 @@ namespace PassKit.Grpc.Flights {
       get { return securityPrograms_; }
     }
 
+    /// <summary>Field number for the "PriorityStatus" field.</summary>
+    public const int PriorityStatusFieldNumber = 40;
+    private string priorityStatus_ = "";
+    /// <summary>
+    /// A string that indicates any priority status or privileges that a passenger may have for the flight. Examples could include "Priority Boarding", "Lounge Access", "Extra Cabin Baggage", etc.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PriorityStatus {
+      get { return priorityStatus_; }
+      set {
+        priorityStatus_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "infantPassId" field.</summary>
     public const int InfantPassIdFieldNumber = 34;
     private string infantPassId_ = "";
@@ -828,6 +845,7 @@ namespace PassKit.Grpc.Flights {
       if (!object.Equals(Urls, other.Urls)) return false;
       if(!capabilities_.Equals(other.capabilities_)) return false;
       if(!securityPrograms_.Equals(other.securityPrograms_)) return false;
+      if (PriorityStatus != other.PriorityStatus) return false;
       if (InfantPassId != other.InfantPassId) return false;
       if (!object.Equals(Metadata, other.Metadata)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -873,6 +891,7 @@ namespace PassKit.Grpc.Flights {
       if (urls_ != null) hash ^= Urls.GetHashCode();
       hash ^= capabilities_.GetHashCode();
       hash ^= securityPrograms_.GetHashCode();
+      if (PriorityStatus.Length != 0) hash ^= PriorityStatus.GetHashCode();
       if (InfantPassId.Length != 0) hash ^= InfantPassId.GetHashCode();
       if (metadata_ != null) hash ^= Metadata.GetHashCode();
       if (_unknownFields != null) {
@@ -1024,6 +1043,10 @@ namespace PassKit.Grpc.Flights {
       }
       capabilities_.WriteTo(output, _repeated_capabilities_codec);
       securityPrograms_.WriteTo(output, _repeated_securityPrograms_codec);
+      if (PriorityStatus.Length != 0) {
+        output.WriteRawTag(194, 2);
+        output.WriteString(PriorityStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1165,6 +1188,10 @@ namespace PassKit.Grpc.Flights {
       }
       capabilities_.WriteTo(ref output, _repeated_capabilities_codec);
       securityPrograms_.WriteTo(ref output, _repeated_securityPrograms_codec);
+      if (PriorityStatus.Length != 0) {
+        output.WriteRawTag(194, 2);
+        output.WriteString(PriorityStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1269,6 +1296,9 @@ namespace PassKit.Grpc.Flights {
       }
       size += capabilities_.CalculateSize(_repeated_capabilities_codec);
       size += securityPrograms_.CalculateSize(_repeated_securityPrograms_codec);
+      if (PriorityStatus.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PriorityStatus);
+      }
       if (InfantPassId.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(InfantPassId);
       }
@@ -1396,6 +1426,9 @@ namespace PassKit.Grpc.Flights {
       }
       capabilities_.Add(other.capabilities_);
       securityPrograms_.Add(other.securityPrograms_);
+      if (other.PriorityStatus.Length != 0) {
+        PriorityStatus = other.PriorityStatus;
+      }
       if (other.InfantPassId.Length != 0) {
         InfantPassId = other.InfantPassId;
       }
@@ -1596,6 +1629,10 @@ namespace PassKit.Grpc.Flights {
             securityPrograms_.AddEntriesFrom(input, _repeated_securityPrograms_codec);
             break;
           }
+          case 322: {
+            PriorityStatus = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1785,6 +1822,10 @@ namespace PassKit.Grpc.Flights {
           case 314:
           case 312: {
             securityPrograms_.AddEntriesFrom(ref input, _repeated_securityPrograms_codec);
+            break;
+          }
+          case 322: {
+            PriorityStatus = input.ReadString();
             break;
           }
         }
