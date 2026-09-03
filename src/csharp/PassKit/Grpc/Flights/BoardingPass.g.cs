@@ -593,7 +593,7 @@ namespace PassKit.Grpc.Flights {
     public const int SecurityImageFieldNumber = 27;
     private string securityImage_ = "";
     /// <summary>
-    /// Security image id for display above the barcode on a Google Pay pass.
+    /// Security image ID for display above the barcode on a Google Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -608,7 +608,7 @@ namespace PassKit.Grpc.Flights {
     public const int PrivilegeImageFieldNumber = 28;
     private string privilegeImage_ = "";
     /// <summary>
-    /// Privilege image id for display above the barcode on a Google Pay pass.
+    /// Privilege image ID for display above the barcode on a Google Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

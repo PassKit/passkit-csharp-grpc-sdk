@@ -26,38 +26,43 @@ namespace PassKit.Grpc {
           string.Concat(
             "Chdpby9jb21tb24vbWVzc2FnZS5wcm90bxICaW8aHGlvL2NvbW1vbi9sb2Nh",
             "bGl6YXRpb24ucHJvdG8aGmlvL2NvbW1vbi9wYWdpbmF0aW9uLnByb3RvGh5p",
-            "by9jb21tb24vY29tbW9uX29iamVjdHMucHJvdG8aFGlvL2ltYWdlL2ltYWdl",
-            "LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvIuUCCgdN",
-            "ZXNzYWdlEgoKAmlkGAEgASgJEg0KBXRpdGxlGAIgASgJEisKDmxvY2FsaXpl",
-            "ZFRpdGxlGAMgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEhgKEHBsYWluVGV4",
-            "dENvbnRlbnQYBCABKAkSNgoZbG9jYWxpemVkUGxhaW5UZXh0Q29udGVudBgF",
-            "IAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxIXCg9yaWNoVGV4dENvbnRlbnQY",
-            "BiABKAkSNQoYbG9jYWxpemVkUmljaFRleHRDb250ZW50GAcgASgLMhMuaW8u",
-            "TG9jYWxpemVkU3RyaW5nEhUKBHVybHMYCCADKAsyBy5pby5VcmwSHAoGaW1h",
-            "Z2VzGAkgASgLMgwuaW8uSW1hZ2VJZHMSEAoIcHJpb3JpdHkYCiABKA0SEwoL",
-            "ZGlzcGxheUZyb20YCyABKAkSFAoMZGlzcGxheVVudGlsGAwgASgJImYKHUdl",
-            "dE1lc3NhZ2VzRm9yUHJvdG9jb2xSZXF1ZXN0EhAKCHByb3RvY29sGAEgASgJ",
-            "Eg8KB2NsYXNzSWQYAiABKAkSIgoKcGFnaW5hdGlvbhgDIAEoCzIOLmlvLlBh",
-            "Z2luYXRpb24iqwIKEkdldE1lc3NhZ2VSZXNwb25zZRIcCgdtZXNzYWdlGAEg",
-            "ASgLMgsuaW8uTWVzc2FnZRIhCgZzdGF0dXMYAiABKA4yES5pby5NZXNzYWdl",
-            "U3RhdHVzEhIKCnJlY2lwaWVudHMYAyABKA0SMQoNZGlzdHJpYnV0ZWRBdBgE",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLd2l0aGRyYXdu",
-            "QXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi0KCWNyZWF0",
-            "ZWRBdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLQoJdXBk",
-            "YXRlZEF0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJFChlH",
-            "ZXRNZXNzYWdlSGlzdG9yeVJlc3BvbnNlEigKCG1lc3NhZ2VzGAEgAygLMhYu",
-            "aW8uR2V0TWVzc2FnZVJlc3BvbnNlInMKElNlbmRNZXNzYWdlUmVxdWVzdBIR",
-            "CgltZXNzYWdlSWQYASABKAkSHgoHcGFzc0lkcxgCIAEoCzILLmlvLlBhc3NJ",
-            "ZHNIABIgCghwcm90b2NvbBgDIAEoCzIMLmlvLlByb3RvY29sSABCCAoGdGFy",
-            "Z2V0IiQKE1NlbmRNZXNzYWdlUmVzcG9uc2USDQoFY291bnQYASABKAUqZQoN",
-            "TWVzc2FnZVN0YXR1cxIdChlNRVNTQUdFX1NUQVRVU19ET19OT1RfVVNFEAAS",
-            "DQoJU0NIRURVTEVEEAESCgoGQUNUSVZFEAISCwoHRVhQSVJFRBADEg0KCUNB",
-            "TkNFTExFRBAEQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3NraXQu",
-            "Y29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJvdG8z"));
+            "by9jb21tb24vY29tbW9uX29iamVjdHMucHJvdG8aFmlvL2NvbW1vbi9maWx0",
+            "ZXIucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aGWlv",
+            "L2NvbW1vbi9wcm90b2NvbHMucHJvdG8ijgQKB01lc3NhZ2USCgoCaWQYASAB",
+            "KAkSDwoHY2xhc3NJZBgCIAEoCRIiCghwcm90b2NvbBgDIAEoDjIQLmlvLlBh",
+            "c3NQcm90b2NvbBIhCgZzdGF0dXMYBCABKA4yES5pby5NZXNzYWdlU3RhdHVz",
+            "EhwKB2ZpbHRlcnMYBSABKAsyCy5pby5GaWx0ZXJzEg0KBXRpdGxlGAYgASgJ",
+            "EisKDmxvY2FsaXplZFRpdGxlGAcgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
+            "EgwKBGJvZHkYCCABKAkSKgoNbG9jYWxpemVkQm9keRgJIAEoCzITLmlvLkxv",
+            "Y2FsaXplZFN0cmluZxIvCgtkaXNwbGF5RnJvbRgKIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASMAoMZGlzcGxheVVudGlsGAsgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpyZWNpcGllbnRzGAwgASgFEhEK",
+            "CWNyZWF0ZWRCeRgNIAEoCRIVCg1sYXN0VXBkYXRlZEJ5GA4gASgJEhAKCHRp",
+            "bWV6b25lGA8gASgJEisKB2NyZWF0ZWQYECABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wEisKB3VwZGF0ZWQYESABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wImYKHUdldE1lc3NhZ2VzRm9yUHJvdG9jb2xSZXF1ZXN0",
+            "EhAKCHByb3RvY29sGAEgASgJEg8KB2NsYXNzSWQYAiABKAkSIgoKcGFnaW5h",
+            "dGlvbhgDIAEoCzIOLmlvLlBhZ2luYXRpb24iqwIKEkdldE1lc3NhZ2VSZXNw",
+            "b25zZRIcCgdtZXNzYWdlGAEgASgLMgsuaW8uTWVzc2FnZRIhCgZzdGF0dXMY",
+            "AiABKA4yES5pby5NZXNzYWdlU3RhdHVzEhIKCnJlY2lwaWVudHMYAyABKA0S",
+            "MQoNZGlzdHJpYnV0ZWRBdBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASLwoLd2l0aGRyYXduQXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wEi0KCWNyZWF0ZWRBdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASLQoJdXBkYXRlZEF0GAcgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcCJFChlHZXRNZXNzYWdlSGlzdG9yeVJlc3BvbnNlEigK",
+            "CG1lc3NhZ2VzGAEgAygLMhYuaW8uR2V0TWVzc2FnZVJlc3BvbnNlInMKElNl",
+            "bmRNZXNzYWdlUmVxdWVzdBIRCgltZXNzYWdlSWQYASABKAkSHgoHcGFzc0lk",
+            "cxgCIAEoCzILLmlvLlBhc3NJZHNIABIgCghwcm90b2NvbBgDIAEoCzIMLmlv",
+            "LlByb3RvY29sSABCCAoGdGFyZ2V0IiQKE1NlbmRNZXNzYWdlUmVzcG9uc2US",
+            "DQoFY291bnQYASABKAUqdQoNTWVzc2FnZVN0YXR1cxIdChlNRVNTQUdFX1NU",
+            "QVRVU19ET19OT1RfVVNFEAASDQoJU0NIRURVTEVEEAESCgoGQUNUSVZFEAIS",
+            "DQoJQ09NUExFVEVEEAMSDQoJQ0FOQ0VMTEVEEAQSDAoIQVJDSElWRUQQBUJH",
+            "ChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0LmNvbS9pby9tb2Rl",
+            "bC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.ImageReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.PaginationReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.FilterReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.MessageStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Message), global::PassKit.Grpc.Message.Parser, new[]{ "Id", "Title", "LocalizedTitle", "PlainTextContent", "LocalizedPlainTextContent", "RichTextContent", "LocalizedRichTextContent", "Urls", "Images", "Priority", "DisplayFrom", "DisplayUntil" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Message), global::PassKit.Grpc.Message.Parser, new[]{ "Id", "ClassId", "Protocol", "Status", "Filters", "Title", "LocalizedTitle", "Body", "LocalizedBody", "DisplayFrom", "DisplayUntil", "Recipients", "CreatedBy", "LastUpdatedBy", "Timezone", "Created", "Updated" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessagesForProtocolRequest), global::PassKit.Grpc.GetMessagesForProtocolRequest.Parser, new[]{ "Protocol", "ClassId", "Pagination" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessageResponse), global::PassKit.Grpc.GetMessageResponse.Parser, new[]{ "Message", "Status", "Recipients", "DistributedAt", "WithdrawnAt", "CreatedAt", "UpdatedAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetMessageHistoryResponse), global::PassKit.Grpc.GetMessageHistoryResponse.Parser, new[]{ "Messages" }, null, null, null, null),
@@ -85,18 +90,22 @@ namespace PassKit.Grpc {
     /// <summary>
     /// Message is no longer visible.
     /// </summary>
-    [pbr::OriginalName("EXPIRED")] Expired = 3,
+    [pbr::OriginalName("COMPLETED")] Completed = 3,
     /// <summary>
     /// Message delivery was cancelled.
     /// </summary>
     [pbr::OriginalName("CANCELLED")] Cancelled = 4,
+    /// <summary>
+    /// Message has been moved to the archived table.
+    /// </summary>
+    [pbr::OriginalName("ARCHIVED")] Archived = 5,
   }
 
   #endregion
 
   #region Messages
   /// <summary>
-  /// Represents a message to be shown on passes such as Apple Wallet or Google Pay.
+  /// Represents a message to be shown on passes such as Apple Wallet or Google Wallet.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Message : pb::IMessage<Message>
@@ -134,17 +143,22 @@ namespace PassKit.Grpc {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Message(Message other) : this() {
       id_ = other.id_;
+      classId_ = other.classId_;
+      protocol_ = other.protocol_;
+      status_ = other.status_;
+      filters_ = other.filters_ != null ? other.filters_.Clone() : null;
       title_ = other.title_;
       localizedTitle_ = other.localizedTitle_ != null ? other.localizedTitle_.Clone() : null;
-      plainTextContent_ = other.plainTextContent_;
-      localizedPlainTextContent_ = other.localizedPlainTextContent_ != null ? other.localizedPlainTextContent_.Clone() : null;
-      richTextContent_ = other.richTextContent_;
-      localizedRichTextContent_ = other.localizedRichTextContent_ != null ? other.localizedRichTextContent_.Clone() : null;
-      urls_ = other.urls_.Clone();
-      images_ = other.images_ != null ? other.images_.Clone() : null;
-      priority_ = other.priority_;
-      displayFrom_ = other.displayFrom_;
-      displayUntil_ = other.displayUntil_;
+      body_ = other.body_;
+      localizedBody_ = other.localizedBody_ != null ? other.localizedBody_.Clone() : null;
+      displayFrom_ = other.displayFrom_ != null ? other.displayFrom_.Clone() : null;
+      displayUntil_ = other.displayUntil_ != null ? other.displayUntil_.Clone() : null;
+      recipients_ = other.recipients_;
+      createdBy_ = other.createdBy_;
+      lastUpdatedBy_ = other.lastUpdatedBy_;
+      timezone_ = other.timezone_;
+      created_ = other.created_ != null ? other.created_.Clone() : null;
+      updated_ = other.updated_ != null ? other.updated_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -166,11 +180,62 @@ namespace PassKit.Grpc {
       }
     }
 
+    /// <summary>Field number for the "classId" field.</summary>
+    public const int ClassIdFieldNumber = 2;
+    private string classId_ = "";
+    /// <summary>
+    /// The class ID of the parent object.bool
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClassId {
+      get { return classId_; }
+      set {
+        classId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "protocol" field.</summary>
+    public const int ProtocolFieldNumber = 3;
+    private global::PassKit.Grpc.PassProtocol protocol_ = global::PassKit.Grpc.PassProtocol.DoNotUse;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.PassProtocol Protocol {
+      get { return protocol_; }
+      set {
+        protocol_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 4;
+    private global::PassKit.Grpc.MessageStatus status_ = global::PassKit.Grpc.MessageStatus.DoNotUse;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.MessageStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "filters" field.</summary>
+    public const int FiltersFieldNumber = 5;
+    private global::PassKit.Grpc.Filters filters_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Filters Filters {
+      get { return filters_; }
+      set {
+        filters_ = value;
+      }
+    }
+
     /// <summary>Field number for the "title" field.</summary>
-    public const int TitleFieldNumber = 2;
+    public const int TitleFieldNumber = 6;
     private string title_ = "";
     /// <summary>
-    /// The message title. This is used as a label in iOS and as the title in Google Pay.
+    /// The message title. This is used as a label in iOS and as the title in Google Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -182,7 +247,7 @@ namespace PassKit.Grpc {
     }
 
     /// <summary>Field number for the "localizedTitle" field.</summary>
-    public const int LocalizedTitleFieldNumber = 3;
+    public const int LocalizedTitleFieldNumber = 7;
     private global::PassKit.Grpc.LocalizedString localizedTitle_;
     /// <summary>
     /// Localized message title.
@@ -196,137 +261,147 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "plainTextContent" field.</summary>
-    public const int PlainTextContentFieldNumber = 4;
-    private string plainTextContent_ = "";
+    /// <summary>Field number for the "body" field.</summary>
+    public const int BodyFieldNumber = 8;
+    private string body_ = "";
     /// <summary>
-    /// Plain text content cannot contain hyperlinks. Google Pay messages cannot have links, use URLs instead.
+    /// Plain text content cannot contain hyperlinks. Google Wallet messages cannot have links; use URLs instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlainTextContent {
-      get { return plainTextContent_; }
+    public string Body {
+      get { return body_; }
       set {
-        plainTextContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        body_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "localizedPlainTextContent" field.</summary>
-    public const int LocalizedPlainTextContentFieldNumber = 5;
-    private global::PassKit.Grpc.LocalizedString localizedPlainTextContent_;
+    /// <summary>Field number for the "localizedBody" field.</summary>
+    public const int LocalizedBodyFieldNumber = 9;
+    private global::PassKit.Grpc.LocalizedString localizedBody_;
     /// <summary>
     /// Localized plain text content.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.LocalizedString LocalizedPlainTextContent {
-      get { return localizedPlainTextContent_; }
+    public global::PassKit.Grpc.LocalizedString LocalizedBody {
+      get { return localizedBody_; }
       set {
-        localizedPlainTextContent_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "richTextContent" field.</summary>
-    public const int RichTextContentFieldNumber = 6;
-    private string richTextContent_ = "";
-    /// <summary>
-    /// Rich text content that can contain hyperlinks. No other markup is accepted. Links will only function on iOS devices. Ignored for Google Pay.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string RichTextContent {
-      get { return richTextContent_; }
-      set {
-        richTextContent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "localizedRichTextContent" field.</summary>
-    public const int LocalizedRichTextContentFieldNumber = 7;
-    private global::PassKit.Grpc.LocalizedString localizedRichTextContent_;
-    /// <summary>
-    /// Localized rich text content.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.LocalizedString LocalizedRichTextContent {
-      get { return localizedRichTextContent_; }
-      set {
-        localizedRichTextContent_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "urls" field.</summary>
-    public const int UrlsFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::PassKit.Grpc.Url> _repeated_urls_codec
-        = pb::FieldCodec.ForMessage(66, global::PassKit.Grpc.Url.Parser);
-    private readonly pbc::RepeatedField<global::PassKit.Grpc.Url> urls_ = new pbc::RepeatedField<global::PassKit.Grpc.Url>();
-    /// <summary>
-    /// Urls will be prioritized over existing urls on the Google Pay Pass. They are ignored for Apple Wallet.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::PassKit.Grpc.Url> Urls {
-      get { return urls_; }
-    }
-
-    /// <summary>Field number for the "images" field.</summary>
-    public const int ImagesFieldNumber = 9;
-    private global::PassKit.Grpc.ImageIds images_;
-    /// <summary>
-    /// Images to display for the duration of the message. For Google Pay, only a 'message' type image will be used. For Apple Wallet, any of strip, eventStrip, background, logo, thumbnail and footer can be used, depending on the underlying pass type.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PassKit.Grpc.ImageIds Images {
-      get { return images_; }
-      set {
-        images_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "priority" field.</summary>
-    public const int PriorityFieldNumber = 10;
-    private uint priority_;
-    /// <summary>
-    /// Priority the lower the priority, the lower down the message will be rendered when there are multiple messages. Defaults to a value of 10.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Priority {
-      get { return priority_; }
-      set {
-        priority_ = value;
+        localizedBody_ = value;
       }
     }
 
     /// <summary>Field number for the "displayFrom" field.</summary>
-    public const int DisplayFromFieldNumber = 11;
-    private string displayFrom_ = "";
+    public const int DisplayFromFieldNumber = 10;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp displayFrom_;
     /// <summary>
-    /// The date and time to display the message. The value must be in RFC3339 format. If omitted, the current timestamp will be used.
+    /// The date and time to display the message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string DisplayFrom {
+    public global::Google.Protobuf.WellKnownTypes.Timestamp DisplayFrom {
       get { return displayFrom_; }
       set {
-        displayFrom_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        displayFrom_ = value;
       }
     }
 
     /// <summary>Field number for the "displayUntil" field.</summary>
-    public const int DisplayUntilFieldNumber = 12;
-    private string displayUntil_ = "";
+    public const int DisplayUntilFieldNumber = 11;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp displayUntil_;
     /// <summary>
-    /// The date and time to remove the message. The value must be in RFC3339 format. If omitted, the message will be displayed indefinitely until it is cancelled.
+    /// The date and time to remove the message. If omitted, the message will be displayed indefinitely until it is cancelled.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string DisplayUntil {
+    public global::Google.Protobuf.WellKnownTypes.Timestamp DisplayUntil {
       get { return displayUntil_; }
       set {
-        displayUntil_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        displayUntil_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recipients" field.</summary>
+    public const int RecipientsFieldNumber = 12;
+    private int recipients_;
+    /// <summary>
+    /// The number of cards the message has been sent to. Does not equate to total message deliveries or views.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Recipients {
+      get { return recipients_; }
+      set {
+        recipients_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "createdBy" field.</summary>
+    public const int CreatedByFieldNumber = 13;
+    private string createdBy_ = "";
+    /// <summary>
+    /// The username of the user that created the message.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CreatedBy {
+      get { return createdBy_; }
+      set {
+        createdBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "lastUpdatedBy" field.</summary>
+    public const int LastUpdatedByFieldNumber = 14;
+    private string lastUpdatedBy_ = "";
+    /// <summary>
+    /// The username of the user that last updated the message.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string LastUpdatedBy {
+      get { return lastUpdatedBy_; }
+      set {
+        lastUpdatedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "timezone" field.</summary>
+    public const int TimezoneFieldNumber = 15;
+    private string timezone_ = "";
+    /// <summary>
+    /// Iana timezone. Default is UTC.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Timezone {
+      get { return timezone_; }
+      set {
+        timezone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "created" field.</summary>
+    public const int CreatedFieldNumber = 16;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
+      get { return created_; }
+      set {
+        created_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "updated" field.</summary>
+    public const int UpdatedFieldNumber = 17;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
+      get { return updated_; }
+      set {
+        updated_ = value;
       }
     }
 
@@ -346,17 +421,22 @@ namespace PassKit.Grpc {
         return true;
       }
       if (Id != other.Id) return false;
+      if (ClassId != other.ClassId) return false;
+      if (Protocol != other.Protocol) return false;
+      if (Status != other.Status) return false;
+      if (!object.Equals(Filters, other.Filters)) return false;
       if (Title != other.Title) return false;
       if (!object.Equals(LocalizedTitle, other.LocalizedTitle)) return false;
-      if (PlainTextContent != other.PlainTextContent) return false;
-      if (!object.Equals(LocalizedPlainTextContent, other.LocalizedPlainTextContent)) return false;
-      if (RichTextContent != other.RichTextContent) return false;
-      if (!object.Equals(LocalizedRichTextContent, other.LocalizedRichTextContent)) return false;
-      if(!urls_.Equals(other.urls_)) return false;
-      if (!object.Equals(Images, other.Images)) return false;
-      if (Priority != other.Priority) return false;
-      if (DisplayFrom != other.DisplayFrom) return false;
-      if (DisplayUntil != other.DisplayUntil) return false;
+      if (Body != other.Body) return false;
+      if (!object.Equals(LocalizedBody, other.LocalizedBody)) return false;
+      if (!object.Equals(DisplayFrom, other.DisplayFrom)) return false;
+      if (!object.Equals(DisplayUntil, other.DisplayUntil)) return false;
+      if (Recipients != other.Recipients) return false;
+      if (CreatedBy != other.CreatedBy) return false;
+      if (LastUpdatedBy != other.LastUpdatedBy) return false;
+      if (Timezone != other.Timezone) return false;
+      if (!object.Equals(Created, other.Created)) return false;
+      if (!object.Equals(Updated, other.Updated)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -365,17 +445,22 @@ namespace PassKit.Grpc {
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (ClassId.Length != 0) hash ^= ClassId.GetHashCode();
+      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) hash ^= Protocol.GetHashCode();
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) hash ^= Status.GetHashCode();
+      if (filters_ != null) hash ^= Filters.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
       if (localizedTitle_ != null) hash ^= LocalizedTitle.GetHashCode();
-      if (PlainTextContent.Length != 0) hash ^= PlainTextContent.GetHashCode();
-      if (localizedPlainTextContent_ != null) hash ^= LocalizedPlainTextContent.GetHashCode();
-      if (RichTextContent.Length != 0) hash ^= RichTextContent.GetHashCode();
-      if (localizedRichTextContent_ != null) hash ^= LocalizedRichTextContent.GetHashCode();
-      hash ^= urls_.GetHashCode();
-      if (images_ != null) hash ^= Images.GetHashCode();
-      if (Priority != 0) hash ^= Priority.GetHashCode();
-      if (DisplayFrom.Length != 0) hash ^= DisplayFrom.GetHashCode();
-      if (DisplayUntil.Length != 0) hash ^= DisplayUntil.GetHashCode();
+      if (Body.Length != 0) hash ^= Body.GetHashCode();
+      if (localizedBody_ != null) hash ^= LocalizedBody.GetHashCode();
+      if (displayFrom_ != null) hash ^= DisplayFrom.GetHashCode();
+      if (displayUntil_ != null) hash ^= DisplayUntil.GetHashCode();
+      if (Recipients != 0) hash ^= Recipients.GetHashCode();
+      if (CreatedBy.Length != 0) hash ^= CreatedBy.GetHashCode();
+      if (LastUpdatedBy.Length != 0) hash ^= LastUpdatedBy.GetHashCode();
+      if (Timezone.Length != 0) hash ^= Timezone.GetHashCode();
+      if (created_ != null) hash ^= Created.GetHashCode();
+      if (updated_ != null) hash ^= Updated.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -398,46 +483,69 @@ namespace PassKit.Grpc {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
-      if (Title.Length != 0) {
+      if (ClassId.Length != 0) {
         output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Protocol);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Status);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Filters);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(50);
         output.WriteString(Title);
       }
       if (localizedTitle_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(58);
         output.WriteMessage(LocalizedTitle);
       }
-      if (PlainTextContent.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(PlainTextContent);
+      if (Body.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Body);
       }
-      if (localizedPlainTextContent_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(LocalizedPlainTextContent);
-      }
-      if (RichTextContent.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(RichTextContent);
-      }
-      if (localizedRichTextContent_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(LocalizedRichTextContent);
-      }
-      urls_.WriteTo(output, _repeated_urls_codec);
-      if (images_ != null) {
+      if (localizedBody_ != null) {
         output.WriteRawTag(74);
-        output.WriteMessage(Images);
+        output.WriteMessage(LocalizedBody);
       }
-      if (Priority != 0) {
-        output.WriteRawTag(80);
-        output.WriteUInt32(Priority);
+      if (displayFrom_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(DisplayFrom);
       }
-      if (DisplayFrom.Length != 0) {
+      if (displayUntil_ != null) {
         output.WriteRawTag(90);
-        output.WriteString(DisplayFrom);
+        output.WriteMessage(DisplayUntil);
       }
-      if (DisplayUntil.Length != 0) {
-        output.WriteRawTag(98);
-        output.WriteString(DisplayUntil);
+      if (Recipients != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(Recipients);
+      }
+      if (CreatedBy.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(CreatedBy);
+      }
+      if (LastUpdatedBy.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(LastUpdatedBy);
+      }
+      if (Timezone.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(Timezone);
+      }
+      if (created_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(Created);
+      }
+      if (updated_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(Updated);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -453,46 +561,69 @@ namespace PassKit.Grpc {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
-      if (Title.Length != 0) {
+      if (ClassId.Length != 0) {
         output.WriteRawTag(18);
+        output.WriteString(ClassId);
+      }
+      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Protocol);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Status);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Filters);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(50);
         output.WriteString(Title);
       }
       if (localizedTitle_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(58);
         output.WriteMessage(LocalizedTitle);
       }
-      if (PlainTextContent.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(PlainTextContent);
+      if (Body.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Body);
       }
-      if (localizedPlainTextContent_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(LocalizedPlainTextContent);
-      }
-      if (RichTextContent.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(RichTextContent);
-      }
-      if (localizedRichTextContent_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(LocalizedRichTextContent);
-      }
-      urls_.WriteTo(ref output, _repeated_urls_codec);
-      if (images_ != null) {
+      if (localizedBody_ != null) {
         output.WriteRawTag(74);
-        output.WriteMessage(Images);
+        output.WriteMessage(LocalizedBody);
       }
-      if (Priority != 0) {
-        output.WriteRawTag(80);
-        output.WriteUInt32(Priority);
+      if (displayFrom_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(DisplayFrom);
       }
-      if (DisplayFrom.Length != 0) {
+      if (displayUntil_ != null) {
         output.WriteRawTag(90);
-        output.WriteString(DisplayFrom);
+        output.WriteMessage(DisplayUntil);
       }
-      if (DisplayUntil.Length != 0) {
-        output.WriteRawTag(98);
-        output.WriteString(DisplayUntil);
+      if (Recipients != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(Recipients);
+      }
+      if (CreatedBy.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(CreatedBy);
+      }
+      if (LastUpdatedBy.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(LastUpdatedBy);
+      }
+      if (Timezone.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(Timezone);
+      }
+      if (created_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(Created);
+      }
+      if (updated_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(Updated);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -507,36 +638,53 @@ namespace PassKit.Grpc {
       if (Id.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
+      if (ClassId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClassId);
+      }
+      if (Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Protocol);
+      }
+      if (Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
+      }
+      if (filters_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filters);
+      }
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
       }
       if (localizedTitle_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedTitle);
       }
-      if (PlainTextContent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlainTextContent);
+      if (Body.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Body);
       }
-      if (localizedPlainTextContent_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedPlainTextContent);
+      if (localizedBody_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedBody);
       }
-      if (RichTextContent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RichTextContent);
+      if (displayFrom_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DisplayFrom);
       }
-      if (localizedRichTextContent_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalizedRichTextContent);
+      if (displayUntil_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DisplayUntil);
       }
-      size += urls_.CalculateSize(_repeated_urls_codec);
-      if (images_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Images);
+      if (Recipients != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Recipients);
       }
-      if (Priority != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+      if (CreatedBy.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CreatedBy);
       }
-      if (DisplayFrom.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DisplayFrom);
+      if (LastUpdatedBy.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LastUpdatedBy);
       }
-      if (DisplayUntil.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DisplayUntil);
+      if (Timezone.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Timezone);
+      }
+      if (created_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Created);
+      }
+      if (updated_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Updated);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -553,6 +701,21 @@ namespace PassKit.Grpc {
       if (other.Id.Length != 0) {
         Id = other.Id;
       }
+      if (other.ClassId.Length != 0) {
+        ClassId = other.ClassId;
+      }
+      if (other.Protocol != global::PassKit.Grpc.PassProtocol.DoNotUse) {
+        Protocol = other.Protocol;
+      }
+      if (other.Status != global::PassKit.Grpc.MessageStatus.DoNotUse) {
+        Status = other.Status;
+      }
+      if (other.filters_ != null) {
+        if (filters_ == null) {
+          Filters = new global::PassKit.Grpc.Filters();
+        }
+        Filters.MergeFrom(other.Filters);
+      }
       if (other.Title.Length != 0) {
         Title = other.Title;
       }
@@ -562,39 +725,50 @@ namespace PassKit.Grpc {
         }
         LocalizedTitle.MergeFrom(other.LocalizedTitle);
       }
-      if (other.PlainTextContent.Length != 0) {
-        PlainTextContent = other.PlainTextContent;
+      if (other.Body.Length != 0) {
+        Body = other.Body;
       }
-      if (other.localizedPlainTextContent_ != null) {
-        if (localizedPlainTextContent_ == null) {
-          LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
+      if (other.localizedBody_ != null) {
+        if (localizedBody_ == null) {
+          LocalizedBody = new global::PassKit.Grpc.LocalizedString();
         }
-        LocalizedPlainTextContent.MergeFrom(other.LocalizedPlainTextContent);
+        LocalizedBody.MergeFrom(other.LocalizedBody);
       }
-      if (other.RichTextContent.Length != 0) {
-        RichTextContent = other.RichTextContent;
-      }
-      if (other.localizedRichTextContent_ != null) {
-        if (localizedRichTextContent_ == null) {
-          LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
+      if (other.displayFrom_ != null) {
+        if (displayFrom_ == null) {
+          DisplayFrom = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        LocalizedRichTextContent.MergeFrom(other.LocalizedRichTextContent);
+        DisplayFrom.MergeFrom(other.DisplayFrom);
       }
-      urls_.Add(other.urls_);
-      if (other.images_ != null) {
-        if (images_ == null) {
-          Images = new global::PassKit.Grpc.ImageIds();
+      if (other.displayUntil_ != null) {
+        if (displayUntil_ == null) {
+          DisplayUntil = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
-        Images.MergeFrom(other.Images);
+        DisplayUntil.MergeFrom(other.DisplayUntil);
       }
-      if (other.Priority != 0) {
-        Priority = other.Priority;
+      if (other.Recipients != 0) {
+        Recipients = other.Recipients;
       }
-      if (other.DisplayFrom.Length != 0) {
-        DisplayFrom = other.DisplayFrom;
+      if (other.CreatedBy.Length != 0) {
+        CreatedBy = other.CreatedBy;
       }
-      if (other.DisplayUntil.Length != 0) {
-        DisplayUntil = other.DisplayUntil;
+      if (other.LastUpdatedBy.Length != 0) {
+        LastUpdatedBy = other.LastUpdatedBy;
+      }
+      if (other.Timezone.Length != 0) {
+        Timezone = other.Timezone;
+      }
+      if (other.created_ != null) {
+        if (created_ == null) {
+          Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Created.MergeFrom(other.Created);
+      }
+      if (other.updated_ != null) {
+        if (updated_ == null) {
+          Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Updated.MergeFrom(other.Updated);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -620,59 +794,88 @@ namespace PassKit.Grpc {
             break;
           }
           case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 24: {
+            Protocol = (global::PassKit.Grpc.PassProtocol) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            if (filters_ == null) {
+              Filters = new global::PassKit.Grpc.Filters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+          case 50: {
             Title = input.ReadString();
             break;
           }
-          case 26: {
+          case 58: {
             if (localizedTitle_ == null) {
               LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
             }
             input.ReadMessage(LocalizedTitle);
             break;
           }
-          case 34: {
-            PlainTextContent = input.ReadString();
-            break;
-          }
-          case 42: {
-            if (localizedPlainTextContent_ == null) {
-              LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedPlainTextContent);
-            break;
-          }
-          case 50: {
-            RichTextContent = input.ReadString();
-            break;
-          }
-          case 58: {
-            if (localizedRichTextContent_ == null) {
-              LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedRichTextContent);
-            break;
-          }
           case 66: {
-            urls_.AddEntriesFrom(input, _repeated_urls_codec);
+            Body = input.ReadString();
             break;
           }
           case 74: {
-            if (images_ == null) {
-              Images = new global::PassKit.Grpc.ImageIds();
+            if (localizedBody_ == null) {
+              LocalizedBody = new global::PassKit.Grpc.LocalizedString();
             }
-            input.ReadMessage(Images);
+            input.ReadMessage(LocalizedBody);
             break;
           }
-          case 80: {
-            Priority = input.ReadUInt32();
+          case 82: {
+            if (displayFrom_ == null) {
+              DisplayFrom = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DisplayFrom);
             break;
           }
           case 90: {
-            DisplayFrom = input.ReadString();
+            if (displayUntil_ == null) {
+              DisplayUntil = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DisplayUntil);
             break;
           }
-          case 98: {
-            DisplayUntil = input.ReadString();
+          case 96: {
+            Recipients = input.ReadInt32();
+            break;
+          }
+          case 106: {
+            CreatedBy = input.ReadString();
+            break;
+          }
+          case 114: {
+            LastUpdatedBy = input.ReadString();
+            break;
+          }
+          case 122: {
+            Timezone = input.ReadString();
+            break;
+          }
+          case 130: {
+            if (created_ == null) {
+              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Created);
+            break;
+          }
+          case 138: {
+            if (updated_ == null) {
+              Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Updated);
             break;
           }
         }
@@ -699,59 +902,88 @@ namespace PassKit.Grpc {
             break;
           }
           case 18: {
+            ClassId = input.ReadString();
+            break;
+          }
+          case 24: {
+            Protocol = (global::PassKit.Grpc.PassProtocol) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            Status = (global::PassKit.Grpc.MessageStatus) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            if (filters_ == null) {
+              Filters = new global::PassKit.Grpc.Filters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+          case 50: {
             Title = input.ReadString();
             break;
           }
-          case 26: {
+          case 58: {
             if (localizedTitle_ == null) {
               LocalizedTitle = new global::PassKit.Grpc.LocalizedString();
             }
             input.ReadMessage(LocalizedTitle);
             break;
           }
-          case 34: {
-            PlainTextContent = input.ReadString();
-            break;
-          }
-          case 42: {
-            if (localizedPlainTextContent_ == null) {
-              LocalizedPlainTextContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedPlainTextContent);
-            break;
-          }
-          case 50: {
-            RichTextContent = input.ReadString();
-            break;
-          }
-          case 58: {
-            if (localizedRichTextContent_ == null) {
-              LocalizedRichTextContent = new global::PassKit.Grpc.LocalizedString();
-            }
-            input.ReadMessage(LocalizedRichTextContent);
-            break;
-          }
           case 66: {
-            urls_.AddEntriesFrom(ref input, _repeated_urls_codec);
+            Body = input.ReadString();
             break;
           }
           case 74: {
-            if (images_ == null) {
-              Images = new global::PassKit.Grpc.ImageIds();
+            if (localizedBody_ == null) {
+              LocalizedBody = new global::PassKit.Grpc.LocalizedString();
             }
-            input.ReadMessage(Images);
+            input.ReadMessage(LocalizedBody);
             break;
           }
-          case 80: {
-            Priority = input.ReadUInt32();
+          case 82: {
+            if (displayFrom_ == null) {
+              DisplayFrom = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DisplayFrom);
             break;
           }
           case 90: {
-            DisplayFrom = input.ReadString();
+            if (displayUntil_ == null) {
+              DisplayUntil = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(DisplayUntil);
             break;
           }
-          case 98: {
-            DisplayUntil = input.ReadString();
+          case 96: {
+            Recipients = input.ReadInt32();
+            break;
+          }
+          case 106: {
+            CreatedBy = input.ReadString();
+            break;
+          }
+          case 114: {
+            LastUpdatedBy = input.ReadString();
+            break;
+          }
+          case 122: {
+            Timezone = input.ReadString();
+            break;
+          }
+          case 130: {
+            if (created_ == null) {
+              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Created);
+            break;
+          }
+          case 138: {
+            if (updated_ == null) {
+              Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Updated);
             break;
           }
         }

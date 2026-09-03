@@ -4,7 +4,7 @@
 // </auto-generated>
 // Original file comments:
 // *
-// Events Protocol is designed to get your Digital Event Tickets into Apple Wallet and Google Pay, from theatre and cinema, to sport events and concerts.
+// Events Protocol is designed to get your Digital Event Tickets into Apple Wallet and Google Wallet, from theatre and cinema, to sport events and concerts.
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
 
@@ -12,7 +12,7 @@ using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc.EventTickets {
   /// <summary>
-  /// The PassKit Event Tickets API allows you to create, manage, and distribute digital tickets for events, including productions, venues, ticket types, and individual tickets. Seamlessly issue and validate Apple Wallet and Google Wallet passes, automate event flows, and track redemptions in real time.
+  /// Manages event-ticket productions, venues, events, ticket types, tickets, validation, and redemption. Ticket types belong to a production; issued tickets are associated with an event and ticket type.
   /// </summary>
   public static partial class EventTickets
   {
@@ -1130,7 +1130,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.AsyncServerStreamingCall(__Method_listVenues, null, options, request);
       }
       /// <summary>
-      /// Creates a new Event for a Production. Required fields: production object and venue object.
+      /// Creates an event for a production at a venue. Required fields: production and venue.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1143,7 +1143,7 @@ namespace PassKit.Grpc.EventTickets {
         return createEvent(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new Event for a Production. Required fields: production object and venue object.
+      /// Creates an event for a production at a venue. Required fields: production and venue.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1154,7 +1154,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.BlockingUnaryCall(__Method_createEvent, null, options, request);
       }
       /// <summary>
-      /// Creates a new Event for a Production. Required fields: production object and venue object.
+      /// Creates an event for a production at a venue. Required fields: production and venue.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1167,7 +1167,7 @@ namespace PassKit.Grpc.EventTickets {
         return createEventAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new Event for a Production. Required fields: production object and venue object.
+      /// Creates an event for a production at a venue. Required fields: production and venue.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1754,7 +1754,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTicketTypes, null, options, request);
       }
       /// <summary>
-      /// Issues a new Ticket by PassKit IDs. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
+      /// Issues a ticket using PassKit IDs for its ticket type and event. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1767,7 +1767,7 @@ namespace PassKit.Grpc.EventTickets {
         return issueTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Issues a new Ticket by PassKit IDs. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
+      /// Issues a ticket using PassKit IDs for its ticket type and event. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1778,7 +1778,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.BlockingUnaryCall(__Method_issueTicket, null, options, request);
       }
       /// <summary>
-      /// Issues a new Ticket by PassKit IDs. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
+      /// Issues a ticket using PassKit IDs for its ticket type and event. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1791,7 +1791,7 @@ namespace PassKit.Grpc.EventTickets {
         return issueTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Issues a new Ticket by PassKit IDs. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
+      /// Issues a ticket using PassKit IDs for its ticket type and event. Required fields: ticketTypeId, eventId, ticketNumber, person.name.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1946,7 +1946,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.AsyncUnaryCall(__Method_patchPerson, null, options, request);
       }
       /// <summary>
-      /// Validates a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Validates a ticket without redeeming it. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1959,7 +1959,7 @@ namespace PassKit.Grpc.EventTickets {
         return validateTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Validates a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Validates a ticket without redeeming it. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1970,7 +1970,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.BlockingUnaryCall(__Method_validateTicket, null, options, request);
       }
       /// <summary>
-      /// Validates a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Validates a ticket without redeeming it. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1983,7 +1983,7 @@ namespace PassKit.Grpc.EventTickets {
         return validateTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Validates a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Validates a ticket without redeeming it. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1994,7 +1994,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.AsyncUnaryCall(__Method_validateTicket, null, options, request);
       }
       /// <summary>
-      /// Redeems a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Redeems a ticket and records the redemption. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2007,7 +2007,7 @@ namespace PassKit.Grpc.EventTickets {
         return redeemTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Redeems a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Redeems a ticket and records the redemption. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2018,7 +2018,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.BlockingUnaryCall(__Method_redeemTicket, null, options, request);
       }
       /// <summary>
-      /// Redeems a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Redeems a ticket and records the redemption. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2031,7 +2031,7 @@ namespace PassKit.Grpc.EventTickets {
         return redeemTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Redeems a Ticket. Required fields: id or (ticketNumber + productionId).
+      /// Redeems a ticket and records the redemption. Required fields: id or ticketNumber with productionId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2234,7 +2234,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.AsyncUnaryCall(__Method_getTicketsByOrderNumber, null, options, request);
       }
       /// <summary>
-      /// Retrieves the digital pass bundle for a Ticket. Required fields: ticketId or (productionId + ticketNumber/orderNumber).
+      /// Retrieves the digital pass bundle for a ticket. Required fields: ticketId, or productionId with ticketNumber or orderNumber.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2247,7 +2247,7 @@ namespace PassKit.Grpc.EventTickets {
         return getEventTicketPass(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieves the digital pass bundle for a Ticket. Required fields: ticketId or (productionId + ticketNumber/orderNumber).
+      /// Retrieves the digital pass bundle for a ticket. Required fields: ticketId, or productionId with ticketNumber or orderNumber.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2258,7 +2258,7 @@ namespace PassKit.Grpc.EventTickets {
         return CallInvoker.BlockingUnaryCall(__Method_getEventTicketPass, null, options, request);
       }
       /// <summary>
-      /// Retrieves the digital pass bundle for a Ticket. Required fields: ticketId or (productionId + ticketNumber/orderNumber).
+      /// Retrieves the digital pass bundle for a ticket. Required fields: ticketId, or productionId with ticketNumber or orderNumber.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2271,7 +2271,7 @@ namespace PassKit.Grpc.EventTickets {
         return getEventTicketPassAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Retrieves the digital pass bundle for a Ticket. Required fields: ticketId or (productionId + ticketNumber/orderNumber).
+      /// Retrieves the digital pass bundle for a ticket. Required fields: ticketId, or productionId with ticketNumber or orderNumber.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

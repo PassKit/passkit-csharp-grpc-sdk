@@ -254,7 +254,7 @@ namespace PassKit.Grpc {
     public const int WalletCompatibleFieldNumber = 11;
     private bool walletCompatible_;
     /// <summary>
-    /// Indicates whether the browser and device are compatible with digital wallet functionality (e.g. Apple Wallet or Google Pay).
+    /// Indicates whether the browser and device are compatible with digital wallet functionality (e.g. Apple Wallet or Google Wallet).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

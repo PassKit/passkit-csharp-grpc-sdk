@@ -4,7 +4,7 @@
 // </auto-generated>
 // Original file comments:
 // *
-// Single Use Coupon Protocol is suit for cases where the user requires a clean and simple single use coupon for short term coupon campaigns in Apple Wallet and Google Pay.
+// Single Use Coupon Protocol is suit for cases where the user requires a clean and simple single use coupon for short term coupon campaigns in Apple Wallet and Google Wallet.
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
 
@@ -12,7 +12,7 @@ using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc.SingleUseCoupons {
   /// <summary>
-  /// The PassKit Coupons API offers a robust and adaptable solution for managing your digital coupon programs. Effortlessly create, update, and maintain mobile coupons for Apple Wallet and Google Wallet. Seamlessly integrate coupon functionality into your applications to deliver engaging, real-time promotions to your customers.
+  /// Manages coupon campaigns, offers, coupon issuance, redemption, and voiding. Create a campaign and offer before issuing coupons.
   /// </summary>
   public static partial class SingleUseCoupons
   {
@@ -654,7 +654,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.AsyncUnaryCall(__Method_getAnalytics, null, options, request);
       }
       /// <summary>
-      /// Creates a new coupon offer, including title, pass design, and rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
+      /// Creates an offer within a coupon campaign, including its pass design and redemption rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -667,7 +667,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return createCouponOffer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new coupon offer, including title, pass design, and rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
+      /// Creates an offer within a coupon campaign, including its pass design and redemption rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -678,7 +678,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.BlockingUnaryCall(__Method_createCouponOffer, null, options, request);
       }
       /// <summary>
-      /// Creates a new coupon offer, including title, pass design, and rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
+      /// Creates an offer within a coupon campaign, including its pass design and redemption rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -691,7 +691,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return createCouponOfferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new coupon offer, including title, pass design, and rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
+      /// Creates an offer within a coupon campaign, including its pass design and redemption rules. Required fields: campaignId, offerTitle, offerDetails, beforeRedeemPassTemplateId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -894,7 +894,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.AsyncServerStreamingCall(__Method_listCouponOffers, null, options, request);
       }
       /// <summary>
-      /// Creates a new unique coupon assigned to a specific offer. Required fields: campaignId, offerId, pass data.
+      /// Issues a unique coupon for an offer in a campaign. Required fields: campaignId, offerId, pass data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -907,7 +907,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return createCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new unique coupon assigned to a specific offer. Required fields: campaignId, offerId, pass data.
+      /// Issues a unique coupon for an offer in a campaign. Required fields: campaignId, offerId, pass data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -918,7 +918,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.BlockingUnaryCall(__Method_createCoupon, null, options, request);
       }
       /// <summary>
-      /// Creates a new unique coupon assigned to a specific offer. Required fields: campaignId, offerId, pass data.
+      /// Issues a unique coupon for an offer in a campaign. Required fields: campaignId, offerId, pass data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -931,7 +931,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return createCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new unique coupon assigned to a specific offer. Required fields: campaignId, offerId, pass data.
+      /// Issues a unique coupon for an offer in a campaign. Required fields: campaignId, offerId, pass data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1012,7 +1012,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.AsyncDuplexStreamingCall(__Method_streamCouponUpdates, null, options);
       }
       /// <summary>
-      /// Marks a coupon as redeemed and triggers redemption-specific design. Required fields: coupon id , or externalId, offerId and campaignId.
+      /// Marks a coupon as redeemed and applies its redemption-specific design. Required fields: coupon ID, or externalId with offerId and campaignId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1025,7 +1025,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return redeemCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Marks a coupon as redeemed and triggers redemption-specific design. Required fields: coupon id , or externalId, offerId and campaignId.
+      /// Marks a coupon as redeemed and applies its redemption-specific design. Required fields: coupon ID, or externalId with offerId and campaignId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1036,7 +1036,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.BlockingUnaryCall(__Method_redeemCoupon, null, options, request);
       }
       /// <summary>
-      /// Marks a coupon as redeemed and triggers redemption-specific design. Required fields: coupon id , or externalId, offerId and campaignId.
+      /// Marks a coupon as redeemed and applies its redemption-specific design. Required fields: coupon ID, or externalId with offerId and campaignId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1049,7 +1049,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return redeemCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Marks a coupon as redeemed and triggers redemption-specific design. Required fields: coupon id , or externalId, offerId and campaignId.
+      /// Marks a coupon as redeemed and applies its redemption-specific design. Required fields: coupon ID, or externalId with offerId and campaignId.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1226,7 +1226,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.AsyncUnaryCall(__Method_getCouponByExternalId, null, options, request);
       }
       /// <summary>
-      /// Voids a coupon and invalidates it in the customer’s mobile wallet. Required fields: coupon id, or externalId, offerId and campaignId. Use with caution, as this action is irreversible.
+      /// Voids a coupon and invalidates it in the customer’s wallet. Required fields: coupon ID, or externalId with offerId and campaignId. This action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1239,7 +1239,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return voidCoupon(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Voids a coupon and invalidates it in the customer’s mobile wallet. Required fields: coupon id, or externalId, offerId and campaignId. Use with caution, as this action is irreversible.
+      /// Voids a coupon and invalidates it in the customer’s wallet. Required fields: coupon ID, or externalId with offerId and campaignId. This action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1250,7 +1250,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return CallInvoker.BlockingUnaryCall(__Method_voidCoupon, null, options, request);
       }
       /// <summary>
-      /// Voids a coupon and invalidates it in the customer’s mobile wallet. Required fields: coupon id, or externalId, offerId and campaignId. Use with caution, as this action is irreversible.
+      /// Voids a coupon and invalidates it in the customer’s wallet. Required fields: coupon ID, or externalId with offerId and campaignId. This action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1263,7 +1263,7 @@ namespace PassKit.Grpc.SingleUseCoupons {
         return voidCouponAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Voids a coupon and invalidates it in the customer’s mobile wallet. Required fields: coupon id, or externalId, offerId and campaignId. Use with caution, as this action is irreversible.
+      /// Voids a coupon and invalidates it in the customer’s wallet. Required fields: coupon ID, or externalId with offerId and campaignId. This action is irreversible.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

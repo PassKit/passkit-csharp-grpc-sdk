@@ -180,7 +180,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("PASS_URL")] PassUrl = 0,
     /// <summary>
-    /// Google Pay pass install URL.
+    /// Google Wallet pass install URL.
     /// </summary>
     [pbr::OriginalName("GOOGLE_URL")] GoogleUrl = 2,
     /// <summary>
@@ -203,7 +203,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("USAGE_APPLE_WALLET")] UsageAppleWallet = 1,
     /// <summary>
-    /// Used by Google Pay.
+    /// Used by Google Wallet.
     /// </summary>
     [pbr::OriginalName("USAGE_GOOGLE_PAY")] UsageGooglePay = 2,
     /// <summary>

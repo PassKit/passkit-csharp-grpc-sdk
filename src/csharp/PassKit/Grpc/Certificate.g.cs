@@ -25,42 +25,67 @@ namespace PassKit.Grpc {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBpby9jZXJ0aWZpY2F0ZS9jZXJ0aWZpY2F0ZS5wcm90bxICaW8aH2dvb2ds",
-            "ZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8i9QEKD0NlcnRpZmljYXRlRGF0",
-            "YRISCgpwYXNzVHlwZUlkGAEgASgJEg4KBnRlYW1JZBgCIAEoCRIQCgh0ZWFt",
-            "TmFtZRgDIAEoCRIUCgxzZXJpYWxOdW1iZXIYBCABKAkSLQoJdmFsaWRGcm9t",
-            "GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIrCgd2YWxpZFRv",
-            "GAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIPCgdtb2R1bHVz",
-            "GAcgASgJEhIKCm5mY0NhcGFibGUYCCABKAgSFQoNb3duZXJVc2VybmFtZRgJ",
-            "IAEoCSJ2ChFQcml2YXRlS2V5UmVxdWVzdBIMCgRuYW1lGAEgASgJEhMKC2Rl",
-            "c2NyaXB0aW9uGAIgASgJEioKBmV4cGlyeRgDIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASEgoKcHJpdmF0ZUtleRgEIAEoDCJRChVUTFNDZXJ0",
-            "aWZpY2F0ZVJlcXVlc3QSEwoLY2VydGlmaWNhdGUYASABKAwSDwoHY2FDaGFp",
-            "bhgCIAEoDBISCgpwcml2YXRlS2V5GAMgASgMIu8BChJUTFNDZXJ0aWZpY2F0",
-            "ZURhdGESCgoCaWQYASABKAkSEgoKY29tbW9uTmFtZRgCIAEoCRIUCgxzZXJp",
-            "YWxOdW1iZXIYAyABKAkSLQoJdmFsaWRGcm9tGAQgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIrCgd2YWxpZFRvGAUgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIPCgdtb2R1bHVzGAYgASgJEh8KF3N1YmplY3RB",
-            "bHRlcm5hdGl2ZU5hbWVzGAcgAygJEhUKDW93bmVyVXNlcm5hbWUYCCABKAki",
-            "ggEKDlByaXZhdGVLZXlEYXRhEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkS",
-            "EwoLZGVzY3JpcHRpb24YAyABKAkSKgoGZXhwaXJ5GAQgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcBIVCg1vd25lclVzZXJuYW1lGAUgASgJIigK",
-            "ElBhc3NUeXBlSWRlbnRpZmllchISCgpwYXNzVHlwZUlkGAEgASgJIigKGUNl",
-            "cnRpZmljYXRlU2lnbmluZ1JlcXVlc3QSCwoDY3NyGAEgASgJIkYKHE5GQ1Np",
-            "Z25pbmdDcmVkZW50aWFsc1JlcXVlc3QSEAoIcGFzc3dvcmQYASABKAkSFAoM",
-            "cHJpdmF0ZUtleUlkGAIgASgJQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNo",
-            "LnBhc3NraXQuY29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3Jw",
-            "Y2IGcHJvdG8z"));
+            "ZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aFmlvL2NvbW1vbi9maWx0ZXIu",
+            "cHJvdG8ijAIKD0NlcnRpZmljYXRlRGF0YRISCgpwYXNzVHlwZUlkGAEgASgJ",
+            "Eg4KBnRlYW1JZBgCIAEoCRIQCgh0ZWFtTmFtZRgDIAEoCRIUCgxzZXJpYWxO",
+            "dW1iZXIYBCABKAkSLQoJdmFsaWRGcm9tGAUgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcBIrCgd2YWxpZFRvGAYgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcBIPCgdtb2R1bHVzGAcgASgJEhIKCm5mY0NhcGFibGUY",
+            "CCABKAgSFQoNb3duZXJVc2VybmFtZRgJIAEoCRIVCg13aWxsQXV0b1JlbmV3",
+            "GAogASgIInYKEVByaXZhdGVLZXlSZXF1ZXN0EgwKBG5hbWUYASABKAkSEwoL",
+            "ZGVzY3JpcHRpb24YAiABKAkSKgoGZXhwaXJ5GAMgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBISCgpwcml2YXRlS2V5GAQgASgMIlEKFVRMU0Nl",
+            "cnRpZmljYXRlUmVxdWVzdBITCgtjZXJ0aWZpY2F0ZRgBIAEoDBIPCgdjYUNo",
+            "YWluGAIgASgMEhIKCnByaXZhdGVLZXkYAyABKAwi7wEKElRMU0NlcnRpZmlj",
+            "YXRlRGF0YRIKCgJpZBgBIAEoCRISCgpjb21tb25OYW1lGAIgASgJEhQKDHNl",
+            "cmlhbE51bWJlchgDIAEoCRItCgl2YWxpZEZyb20YBCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEisKB3ZhbGlkVG8YBSABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEg8KB21vZHVsdXMYBiABKAkSHwoXc3ViamVj",
+            "dEFsdGVybmF0aXZlTmFtZXMYByADKAkSFQoNb3duZXJVc2VybmFtZRgIIAEo",
+            "CSKCAQoOUHJpdmF0ZUtleURhdGESCgoCaWQYASABKAkSDAoEbmFtZRgCIAEo",
+            "CRITCgtkZXNjcmlwdGlvbhgDIAEoCRIqCgZleHBpcnkYBCABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEhUKDW93bmVyVXNlcm5hbWUYBSABKAki",
+            "KAoSUGFzc1R5cGVJZGVudGlmaWVyEhIKCnBhc3NUeXBlSWQYASABKAkiKAoZ",
+            "Q2VydGlmaWNhdGVTaWduaW5nUmVxdWVzdBILCgNjc3IYASABKAkiRgocTkZD",
+            "U2lnbmluZ0NyZWRlbnRpYWxzUmVxdWVzdBIQCghwYXNzd29yZBgBIAEoCRIU",
+            "Cgxwcml2YXRlS2V5SWQYAiABKAkigAIKIEFwcGxlQ2VydGlmaWNhdGVSZW5l",
+            "d2FsQXV0aG9yaXR5EhAKCGFwaUtleUlkGAEgASgJEhMKC2FwcGxlVGVhbUlk",
+            "GAIgASgJEhgKEGFwcGxlRGV2ZWxvcGVySWQYAyABKAkSHAoUYWxsb3dDcm9z",
+            "c0FjY291bnRVc2UYBCABKAgSEAoIdXNlck5hbWUYBSABKAkSEQoJY29tcGFu",
+            "eUlkGAYgASgJEisKB2NyZWF0ZWQYByABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wEisKB3VwZGF0ZWQYCCABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wIqIBCi1DcmVhdGVBcHBsZUNlcnRpZmljYXRlUmVuZXdhbEF1",
+            "dGhvcml0eVJlcXVlc3QSEwoLYXBwbGVUZWFtSWQYASABKAkSGAoQYXBwbGVE",
+            "ZXZlbG9wZXJJZBgCIAEoCRIQCghhcGlLZXlJZBgDIAEoCRISCgphcGlLZXlE",
+            "YXRhGAQgASgJEhwKFGFsbG93Q3Jvc3NBY2NvdW50VXNlGAUgASgIIj4KKkdl",
+            "dEFwcGxlQ2VydGlmaWNhdGVSZW5ld2FsQXV0aG9yaXR5UmVxdWVzdBIQCghh",
+            "cGlLZXlJZBgBIAEoCSKiAQotVXBkYXRlQXBwbGVDZXJ0aWZpY2F0ZVJlbmV3",
+            "YWxBdXRob3JpdHlSZXF1ZXN0EhAKCGFwaUtleUlkGAEgASgJEhMKC2FwcGxl",
+            "VGVhbUlkGAIgASgJEhgKEGFwcGxlRGV2ZWxvcGVySWQYAyABKAkSEgoKYXBp",
+            "S2V5RGF0YRgEIAEoCRIcChRhbGxvd0Nyb3NzQWNjb3VudFVzZRgFIAEoCCJN",
+            "Ci1MaXN0QXBwbGVDZXJ0aWZpY2F0ZVJlbmV3YWxBdXRob3JpdGllc1JlcXVl",
+            "c3QSHAoHZmlsdGVycxgBIAEoCzILLmlvLkZpbHRlcnMiQgouRGVsZXRlQXBw",
+            "bGVDZXJ0aWZpY2F0ZVJlbmV3YWxBdXRob3JpdHlSZXNwb25zZRIQCghhcGlL",
+            "ZXlJZBgBIAEoCUJHChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0",
+            "LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.FilterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.CertificateData), global::PassKit.Grpc.CertificateData.Parser, new[]{ "PassTypeId", "TeamId", "TeamName", "SerialNumber", "ValidFrom", "ValidTo", "Modulus", "NfcCapable", "OwnerUsername" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.CertificateData), global::PassKit.Grpc.CertificateData.Parser, new[]{ "PassTypeId", "TeamId", "TeamName", "SerialNumber", "ValidFrom", "ValidTo", "Modulus", "NfcCapable", "OwnerUsername", "WillAutoRenew" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PrivateKeyRequest), global::PassKit.Grpc.PrivateKeyRequest.Parser, new[]{ "Name", "Description", "Expiry", "PrivateKey" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.TLSCertificateRequest), global::PassKit.Grpc.TLSCertificateRequest.Parser, new[]{ "Certificate", "CaChain", "PrivateKey" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.TLSCertificateData), global::PassKit.Grpc.TLSCertificateData.Parser, new[]{ "Id", "CommonName", "SerialNumber", "ValidFrom", "ValidTo", "Modulus", "SubjectAlternativeNames", "OwnerUsername" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PrivateKeyData), global::PassKit.Grpc.PrivateKeyData.Parser, new[]{ "Id", "Name", "Description", "Expiry", "OwnerUsername" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassTypeIdentifier), global::PassKit.Grpc.PassTypeIdentifier.Parser, new[]{ "PassTypeId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.CertificateSigningRequest), global::PassKit.Grpc.CertificateSigningRequest.Parser, new[]{ "Csr" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.NFCSigningCredentialsRequest), global::PassKit.Grpc.NFCSigningCredentialsRequest.Parser, new[]{ "Password", "PrivateKeyId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.NFCSigningCredentialsRequest), global::PassKit.Grpc.NFCSigningCredentialsRequest.Parser, new[]{ "Password", "PrivateKeyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.AppleCertificateRenewalAuthority), global::PassKit.Grpc.AppleCertificateRenewalAuthority.Parser, new[]{ "ApiKeyId", "AppleTeamId", "AppleDeveloperId", "AllowCrossAccountUse", "UserName", "CompanyId", "Created", "Updated" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest), global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest.Parser, new[]{ "AppleTeamId", "AppleDeveloperId", "ApiKeyId", "ApiKeyData", "AllowCrossAccountUse" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest), global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest.Parser, new[]{ "ApiKeyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest), global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest.Parser, new[]{ "ApiKeyId", "AppleTeamId", "AppleDeveloperId", "ApiKeyData", "AllowCrossAccountUse" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest), global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest.Parser, new[]{ "Filters" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse), global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse.Parser, new[]{ "ApiKeyId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -114,6 +139,7 @@ namespace PassKit.Grpc {
       modulus_ = other.modulus_;
       nfcCapable_ = other.nfcCapable_;
       ownerUsername_ = other.ownerUsername_;
+      willAutoRenew_ = other.willAutoRenew_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -258,6 +284,21 @@ namespace PassKit.Grpc {
       }
     }
 
+    /// <summary>Field number for the "willAutoRenew" field.</summary>
+    public const int WillAutoRenewFieldNumber = 10;
+    private bool willAutoRenew_;
+    /// <summary>
+    /// Returns true when PassKit has received the authority and App Store Connect credentials to automatically renew the certificate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool WillAutoRenew {
+      get { return willAutoRenew_; }
+      set {
+        willAutoRenew_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -282,6 +323,7 @@ namespace PassKit.Grpc {
       if (Modulus != other.Modulus) return false;
       if (NfcCapable != other.NfcCapable) return false;
       if (OwnerUsername != other.OwnerUsername) return false;
+      if (WillAutoRenew != other.WillAutoRenew) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -298,6 +340,7 @@ namespace PassKit.Grpc {
       if (Modulus.Length != 0) hash ^= Modulus.GetHashCode();
       if (NfcCapable != false) hash ^= NfcCapable.GetHashCode();
       if (OwnerUsername.Length != 0) hash ^= OwnerUsername.GetHashCode();
+      if (WillAutoRenew != false) hash ^= WillAutoRenew.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -352,6 +395,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(74);
         output.WriteString(OwnerUsername);
       }
+      if (WillAutoRenew != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(WillAutoRenew);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -398,6 +445,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(74);
         output.WriteString(OwnerUsername);
       }
+      if (WillAutoRenew != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(WillAutoRenew);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -434,6 +485,9 @@ namespace PassKit.Grpc {
       }
       if (OwnerUsername.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerUsername);
+      }
+      if (WillAutoRenew != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -479,6 +533,9 @@ namespace PassKit.Grpc {
       }
       if (other.OwnerUsername.Length != 0) {
         OwnerUsername = other.OwnerUsername;
+      }
+      if (other.WillAutoRenew != false) {
+        WillAutoRenew = other.WillAutoRenew;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -541,6 +598,10 @@ namespace PassKit.Grpc {
             OwnerUsername = input.ReadString();
             break;
           }
+          case 80: {
+            WillAutoRenew = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -600,6 +661,10 @@ namespace PassKit.Grpc {
           }
           case 74: {
             OwnerUsername = input.ReadString();
+            break;
+          }
+          case 80: {
+            WillAutoRenew = input.ReadBool();
             break;
           }
         }
@@ -2733,6 +2798,1857 @@ namespace PassKit.Grpc {
           }
           case 18: {
             PrivateKeyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// AppleCertificateRenewalAuthority stores the Apple API authority used to renew Apple Wallet certificates automatically.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AppleCertificateRenewalAuthority : pb::IMessage<AppleCertificateRenewalAuthority>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AppleCertificateRenewalAuthority> _parser = new pb::MessageParser<AppleCertificateRenewalAuthority>(() => new AppleCertificateRenewalAuthority());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AppleCertificateRenewalAuthority> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppleCertificateRenewalAuthority() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppleCertificateRenewalAuthority(AppleCertificateRenewalAuthority other) : this() {
+      apiKeyId_ = other.apiKeyId_;
+      appleTeamId_ = other.appleTeamId_;
+      appleDeveloperId_ = other.appleDeveloperId_;
+      allowCrossAccountUse_ = other.allowCrossAccountUse_;
+      userName_ = other.userName_;
+      companyId_ = other.companyId_;
+      created_ = other.created_ != null ? other.created_.Clone() : null;
+      updated_ = other.updated_ != null ? other.updated_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AppleCertificateRenewalAuthority Clone() {
+      return new AppleCertificateRenewalAuthority(this);
+    }
+
+    /// <summary>Field number for the "apiKeyId" field.</summary>
+    public const int ApiKeyIdFieldNumber = 1;
+    private string apiKeyId_ = "";
+    /// <summary>
+    /// PassKit identifier for this renewal authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyId {
+      get { return apiKeyId_; }
+      set {
+        apiKeyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "appleTeamId" field.</summary>
+    public const int AppleTeamIdFieldNumber = 2;
+    private string appleTeamId_ = "";
+    /// <summary>
+    /// Apple Developer Team ID used when renewing certificates.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleTeamId {
+      get { return appleTeamId_; }
+      set {
+        appleTeamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "appleDeveloperId" field.</summary>
+    public const int AppleDeveloperIdFieldNumber = 3;
+    private string appleDeveloperId_ = "";
+    /// <summary>
+    /// Apple Developer ID from App Store Connect
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleDeveloperId {
+      get { return appleDeveloperId_; }
+      set {
+        appleDeveloperId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "allowCrossAccountUse" field.</summary>
+    public const int AllowCrossAccountUseFieldNumber = 4;
+    private bool allowCrossAccountUse_;
+    /// <summary>
+    /// Allows this authority to be used by other accounts in the same company when permitted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowCrossAccountUse {
+      get { return allowCrossAccountUse_; }
+      set {
+        allowCrossAccountUse_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "userName" field.</summary>
+    public const int UserNameFieldNumber = 5;
+    private string userName_ = "";
+    /// <summary>
+    /// Username that owns this renewal authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserName {
+      get { return userName_; }
+      set {
+        userName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "companyId" field.</summary>
+    public const int CompanyIdFieldNumber = 6;
+    private string companyId_ = "";
+    /// <summary>
+    /// PassKit company identifier that owns this renewal authority.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CompanyId {
+      get { return companyId_; }
+      set {
+        companyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "created" field.</summary>
+    public const int CreatedFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// Date this renewal authority was created.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
+      get { return created_; }
+      set {
+        created_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "updated" field.</summary>
+    public const int UpdatedFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// Date this renewal authority was last updated.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
+      get { return updated_; }
+      set {
+        updated_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AppleCertificateRenewalAuthority);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AppleCertificateRenewalAuthority other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ApiKeyId != other.ApiKeyId) return false;
+      if (AppleTeamId != other.AppleTeamId) return false;
+      if (AppleDeveloperId != other.AppleDeveloperId) return false;
+      if (AllowCrossAccountUse != other.AllowCrossAccountUse) return false;
+      if (UserName != other.UserName) return false;
+      if (CompanyId != other.CompanyId) return false;
+      if (!object.Equals(Created, other.Created)) return false;
+      if (!object.Equals(Updated, other.Updated)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ApiKeyId.Length != 0) hash ^= ApiKeyId.GetHashCode();
+      if (AppleTeamId.Length != 0) hash ^= AppleTeamId.GetHashCode();
+      if (AppleDeveloperId.Length != 0) hash ^= AppleDeveloperId.GetHashCode();
+      if (AllowCrossAccountUse != false) hash ^= AllowCrossAccountUse.GetHashCode();
+      if (UserName.Length != 0) hash ^= UserName.GetHashCode();
+      if (CompanyId.Length != 0) hash ^= CompanyId.GetHashCode();
+      if (created_ != null) hash ^= Created.GetHashCode();
+      if (updated_ != null) hash ^= Updated.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (UserName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(UserName);
+      }
+      if (CompanyId.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(CompanyId);
+      }
+      if (created_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Created);
+      }
+      if (updated_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Updated);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (UserName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(UserName);
+      }
+      if (CompanyId.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(CompanyId);
+      }
+      if (created_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Created);
+      }
+      if (updated_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Updated);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ApiKeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleDeveloperId);
+      }
+      if (AllowCrossAccountUse != false) {
+        size += 1 + 1;
+      }
+      if (UserName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserName);
+      }
+      if (CompanyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyId);
+      }
+      if (created_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Created);
+      }
+      if (updated_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Updated);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AppleCertificateRenewalAuthority other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ApiKeyId.Length != 0) {
+        ApiKeyId = other.ApiKeyId;
+      }
+      if (other.AppleTeamId.Length != 0) {
+        AppleTeamId = other.AppleTeamId;
+      }
+      if (other.AppleDeveloperId.Length != 0) {
+        AppleDeveloperId = other.AppleDeveloperId;
+      }
+      if (other.AllowCrossAccountUse != false) {
+        AllowCrossAccountUse = other.AllowCrossAccountUse;
+      }
+      if (other.UserName.Length != 0) {
+        UserName = other.UserName;
+      }
+      if (other.CompanyId.Length != 0) {
+        CompanyId = other.CompanyId;
+      }
+      if (other.created_ != null) {
+        if (created_ == null) {
+          Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Created.MergeFrom(other.Created);
+      }
+      if (other.updated_ != null) {
+        if (updated_ == null) {
+          Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Updated.MergeFrom(other.Updated);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 32: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+          case 42: {
+            UserName = input.ReadString();
+            break;
+          }
+          case 50: {
+            CompanyId = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (created_ == null) {
+              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Created);
+            break;
+          }
+          case 66: {
+            if (updated_ == null) {
+              Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Updated);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 32: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+          case 42: {
+            UserName = input.ReadString();
+            break;
+          }
+          case 50: {
+            CompanyId = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (created_ == null) {
+              Created = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Created);
+            break;
+          }
+          case 66: {
+            if (updated_ == null) {
+              Updated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Updated);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// CreateAppleCertificateRenewalAuthorityRequest creates a renewal authority for the authenticated user.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CreateAppleCertificateRenewalAuthorityRequest : pb::IMessage<CreateAppleCertificateRenewalAuthorityRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CreateAppleCertificateRenewalAuthorityRequest> _parser = new pb::MessageParser<CreateAppleCertificateRenewalAuthorityRequest>(() => new CreateAppleCertificateRenewalAuthorityRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CreateAppleCertificateRenewalAuthorityRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateAppleCertificateRenewalAuthorityRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateAppleCertificateRenewalAuthorityRequest(CreateAppleCertificateRenewalAuthorityRequest other) : this() {
+      appleTeamId_ = other.appleTeamId_;
+      appleDeveloperId_ = other.appleDeveloperId_;
+      apiKeyId_ = other.apiKeyId_;
+      apiKeyData_ = other.apiKeyData_;
+      allowCrossAccountUse_ = other.allowCrossAccountUse_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateAppleCertificateRenewalAuthorityRequest Clone() {
+      return new CreateAppleCertificateRenewalAuthorityRequest(this);
+    }
+
+    /// <summary>Field number for the "appleTeamId" field.</summary>
+    public const int AppleTeamIdFieldNumber = 1;
+    private string appleTeamId_ = "";
+    /// <summary>
+    /// Apple Developer Team ID used when renewing certificates e.g. ABR42R6S8X.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleTeamId {
+      get { return appleTeamId_; }
+      set {
+        appleTeamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "appleDeveloperId" field.</summary>
+    public const int AppleDeveloperIdFieldNumber = 2;
+    private string appleDeveloperId_ = "";
+    /// <summary>
+    /// Apple Developer ID from App Store Connect e.g. 69a6de7a-ab12-47e3-e053-5b8c7c11a4d1.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleDeveloperId {
+      get { return appleDeveloperId_; }
+      set {
+        appleDeveloperId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "apiKeyId" field.</summary>
+    public const int ApiKeyIdFieldNumber = 3;
+    private string apiKeyId_ = "";
+    /// <summary>
+    /// Apple issued API key id e.g. ABIQX7WJQMYZ.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyId {
+      get { return apiKeyId_; }
+      set {
+        apiKeyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "apiKeyData" field.</summary>
+    public const int ApiKeyDataFieldNumber = 4;
+    private string apiKeyData_ = "";
+    /// <summary>
+    /// Base64 encoded Apple App Store Connect Api Key (.p8 file).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyData {
+      get { return apiKeyData_; }
+      set {
+        apiKeyData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "allowCrossAccountUse" field.</summary>
+    public const int AllowCrossAccountUseFieldNumber = 5;
+    private bool allowCrossAccountUse_;
+    /// <summary>
+    /// Allows this authority to be used by other PassKit accounts using certificates generated by this Apple team.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowCrossAccountUse {
+      get { return allowCrossAccountUse_; }
+      set {
+        allowCrossAccountUse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CreateAppleCertificateRenewalAuthorityRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CreateAppleCertificateRenewalAuthorityRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AppleTeamId != other.AppleTeamId) return false;
+      if (AppleDeveloperId != other.AppleDeveloperId) return false;
+      if (ApiKeyId != other.ApiKeyId) return false;
+      if (ApiKeyData != other.ApiKeyData) return false;
+      if (AllowCrossAccountUse != other.AllowCrossAccountUse) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AppleTeamId.Length != 0) hash ^= AppleTeamId.GetHashCode();
+      if (AppleDeveloperId.Length != 0) hash ^= AppleDeveloperId.GetHashCode();
+      if (ApiKeyId.Length != 0) hash ^= ApiKeyId.GetHashCode();
+      if (ApiKeyData.Length != 0) hash ^= ApiKeyData.GetHashCode();
+      if (AllowCrossAccountUse != false) hash ^= AllowCrossAccountUse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ApiKeyId);
+      }
+      if (ApiKeyData.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ApiKeyId);
+      }
+      if (ApiKeyData.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (AppleTeamId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleDeveloperId);
+      }
+      if (ApiKeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyId);
+      }
+      if (ApiKeyData.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CreateAppleCertificateRenewalAuthorityRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AppleTeamId.Length != 0) {
+        AppleTeamId = other.AppleTeamId;
+      }
+      if (other.AppleDeveloperId.Length != 0) {
+        AppleDeveloperId = other.AppleDeveloperId;
+      }
+      if (other.ApiKeyId.Length != 0) {
+        ApiKeyId = other.ApiKeyId;
+      }
+      if (other.ApiKeyData.Length != 0) {
+        ApiKeyData = other.ApiKeyData;
+      }
+      if (other.AllowCrossAccountUse != false) {
+        AllowCrossAccountUse = other.AllowCrossAccountUse;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 26: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 34: {
+            ApiKeyData = input.ReadString();
+            break;
+          }
+          case 40: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 26: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 34: {
+            ApiKeyData = input.ReadString();
+            break;
+          }
+          case 40: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// GetAppleCertificateRenewalAuthorityRequest identifies a renewal authority by ID.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetAppleCertificateRenewalAuthorityRequest : pb::IMessage<GetAppleCertificateRenewalAuthorityRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetAppleCertificateRenewalAuthorityRequest> _parser = new pb::MessageParser<GetAppleCertificateRenewalAuthorityRequest>(() => new GetAppleCertificateRenewalAuthorityRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetAppleCertificateRenewalAuthorityRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetAppleCertificateRenewalAuthorityRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetAppleCertificateRenewalAuthorityRequest(GetAppleCertificateRenewalAuthorityRequest other) : this() {
+      apiKeyId_ = other.apiKeyId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetAppleCertificateRenewalAuthorityRequest Clone() {
+      return new GetAppleCertificateRenewalAuthorityRequest(this);
+    }
+
+    /// <summary>Field number for the "apiKeyId" field.</summary>
+    public const int ApiKeyIdFieldNumber = 1;
+    private string apiKeyId_ = "";
+    /// <summary>
+    /// Apple issued API key id e.g. ABIQX7WJQMYZ.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyId {
+      get { return apiKeyId_; }
+      set {
+        apiKeyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetAppleCertificateRenewalAuthorityRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetAppleCertificateRenewalAuthorityRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ApiKeyId != other.ApiKeyId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ApiKeyId.Length != 0) hash ^= ApiKeyId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ApiKeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetAppleCertificateRenewalAuthorityRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ApiKeyId.Length != 0) {
+        ApiKeyId = other.ApiKeyId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// UpdateAppleCertificateRenewalAuthorityRequest updates an existing renewal authority.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class UpdateAppleCertificateRenewalAuthorityRequest : pb::IMessage<UpdateAppleCertificateRenewalAuthorityRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UpdateAppleCertificateRenewalAuthorityRequest> _parser = new pb::MessageParser<UpdateAppleCertificateRenewalAuthorityRequest>(() => new UpdateAppleCertificateRenewalAuthorityRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UpdateAppleCertificateRenewalAuthorityRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateAppleCertificateRenewalAuthorityRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateAppleCertificateRenewalAuthorityRequest(UpdateAppleCertificateRenewalAuthorityRequest other) : this() {
+      apiKeyId_ = other.apiKeyId_;
+      appleTeamId_ = other.appleTeamId_;
+      appleDeveloperId_ = other.appleDeveloperId_;
+      apiKeyData_ = other.apiKeyData_;
+      allowCrossAccountUse_ = other.allowCrossAccountUse_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UpdateAppleCertificateRenewalAuthorityRequest Clone() {
+      return new UpdateAppleCertificateRenewalAuthorityRequest(this);
+    }
+
+    /// <summary>Field number for the "apiKeyId" field.</summary>
+    public const int ApiKeyIdFieldNumber = 1;
+    private string apiKeyId_ = "";
+    /// <summary>
+    /// Apple issued API key id e.g. ABIQX7WJQMYZ.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyId {
+      get { return apiKeyId_; }
+      set {
+        apiKeyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "appleTeamId" field.</summary>
+    public const int AppleTeamIdFieldNumber = 2;
+    private string appleTeamId_ = "";
+    /// <summary>
+    /// Apple Developer Team ID used when renewing certificates e.g. ABR42R6S8X.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleTeamId {
+      get { return appleTeamId_; }
+      set {
+        appleTeamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "appleDeveloperId" field.</summary>
+    public const int AppleDeveloperIdFieldNumber = 3;
+    private string appleDeveloperId_ = "";
+    /// <summary>
+    /// Apple Developer ID from App Store Connect e.g. 69a6de7a-ab12-47e3-e053-5b8c7c11a4d1.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppleDeveloperId {
+      get { return appleDeveloperId_; }
+      set {
+        appleDeveloperId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "apiKeyData" field.</summary>
+    public const int ApiKeyDataFieldNumber = 4;
+    private string apiKeyData_ = "";
+    /// <summary>
+    /// Base64 encoded Apple App Store Connect Api Key (.p8 file).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyData {
+      get { return apiKeyData_; }
+      set {
+        apiKeyData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "allowCrossAccountUse" field.</summary>
+    public const int AllowCrossAccountUseFieldNumber = 5;
+    private bool allowCrossAccountUse_;
+    /// <summary>
+    /// Allows this authority to be used by other accounts in the same company when permitted - default false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowCrossAccountUse {
+      get { return allowCrossAccountUse_; }
+      set {
+        allowCrossAccountUse_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UpdateAppleCertificateRenewalAuthorityRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UpdateAppleCertificateRenewalAuthorityRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ApiKeyId != other.ApiKeyId) return false;
+      if (AppleTeamId != other.AppleTeamId) return false;
+      if (AppleDeveloperId != other.AppleDeveloperId) return false;
+      if (ApiKeyData != other.ApiKeyData) return false;
+      if (AllowCrossAccountUse != other.AllowCrossAccountUse) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ApiKeyId.Length != 0) hash ^= ApiKeyId.GetHashCode();
+      if (AppleTeamId.Length != 0) hash ^= AppleTeamId.GetHashCode();
+      if (AppleDeveloperId.Length != 0) hash ^= AppleDeveloperId.GetHashCode();
+      if (ApiKeyData.Length != 0) hash ^= ApiKeyData.GetHashCode();
+      if (AllowCrossAccountUse != false) hash ^= AllowCrossAccountUse.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (ApiKeyData.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppleDeveloperId);
+      }
+      if (ApiKeyData.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(AllowCrossAccountUse);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ApiKeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyId);
+      }
+      if (AppleTeamId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleTeamId);
+      }
+      if (AppleDeveloperId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppleDeveloperId);
+      }
+      if (ApiKeyData.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyData);
+      }
+      if (AllowCrossAccountUse != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UpdateAppleCertificateRenewalAuthorityRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ApiKeyId.Length != 0) {
+        ApiKeyId = other.ApiKeyId;
+      }
+      if (other.AppleTeamId.Length != 0) {
+        AppleTeamId = other.AppleTeamId;
+      }
+      if (other.AppleDeveloperId.Length != 0) {
+        AppleDeveloperId = other.AppleDeveloperId;
+      }
+      if (other.ApiKeyData.Length != 0) {
+        ApiKeyData = other.ApiKeyData;
+      }
+      if (other.AllowCrossAccountUse != false) {
+        AllowCrossAccountUse = other.AllowCrossAccountUse;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 34: {
+            ApiKeyData = input.ReadString();
+            break;
+          }
+          case 40: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            AppleTeamId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppleDeveloperId = input.ReadString();
+            break;
+          }
+          case 34: {
+            ApiKeyData = input.ReadString();
+            break;
+          }
+          case 40: {
+            AllowCrossAccountUse = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// ListAppleCertificateRenewalAuthoritiesRequest filters renewal authorities visible to the authenticated user.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ListAppleCertificateRenewalAuthoritiesRequest : pb::IMessage<ListAppleCertificateRenewalAuthoritiesRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ListAppleCertificateRenewalAuthoritiesRequest> _parser = new pb::MessageParser<ListAppleCertificateRenewalAuthoritiesRequest>(() => new ListAppleCertificateRenewalAuthoritiesRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ListAppleCertificateRenewalAuthoritiesRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListAppleCertificateRenewalAuthoritiesRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListAppleCertificateRenewalAuthoritiesRequest(ListAppleCertificateRenewalAuthoritiesRequest other) : this() {
+      filters_ = other.filters_ != null ? other.filters_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListAppleCertificateRenewalAuthoritiesRequest Clone() {
+      return new ListAppleCertificateRenewalAuthoritiesRequest(this);
+    }
+
+    /// <summary>Field number for the "filters" field.</summary>
+    public const int FiltersFieldNumber = 1;
+    private global::PassKit.Grpc.Filters filters_;
+    /// <summary>
+    /// Optional filter and pagination criteria.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.Filters Filters {
+      get { return filters_; }
+      set {
+        filters_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ListAppleCertificateRenewalAuthoritiesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ListAppleCertificateRenewalAuthoritiesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Filters, other.Filters)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (filters_ != null) hash ^= Filters.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (filters_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Filters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (filters_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Filters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (filters_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filters);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ListAppleCertificateRenewalAuthoritiesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.filters_ != null) {
+        if (filters_ == null) {
+          Filters = new global::PassKit.Grpc.Filters();
+        }
+        Filters.MergeFrom(other.Filters);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (filters_ == null) {
+              Filters = new global::PassKit.Grpc.Filters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (filters_ == null) {
+              Filters = new global::PassKit.Grpc.Filters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// DeleteAppleCertificateRenewalAuthorityResponse confirms the renewal authority that was deleted.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class DeleteAppleCertificateRenewalAuthorityResponse : pb::IMessage<DeleteAppleCertificateRenewalAuthorityResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DeleteAppleCertificateRenewalAuthorityResponse> _parser = new pb::MessageParser<DeleteAppleCertificateRenewalAuthorityResponse>(() => new DeleteAppleCertificateRenewalAuthorityResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DeleteAppleCertificateRenewalAuthorityResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.CertificateReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteAppleCertificateRenewalAuthorityResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteAppleCertificateRenewalAuthorityResponse(DeleteAppleCertificateRenewalAuthorityResponse other) : this() {
+      apiKeyId_ = other.apiKeyId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteAppleCertificateRenewalAuthorityResponse Clone() {
+      return new DeleteAppleCertificateRenewalAuthorityResponse(this);
+    }
+
+    /// <summary>Field number for the "apiKeyId" field.</summary>
+    public const int ApiKeyIdFieldNumber = 1;
+    private string apiKeyId_ = "";
+    /// <summary>
+    /// Apple issued API key id e.g. ABIQX7WJQMYZ.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiKeyId {
+      get { return apiKeyId_; }
+      set {
+        apiKeyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DeleteAppleCertificateRenewalAuthorityResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DeleteAppleCertificateRenewalAuthorityResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ApiKeyId != other.ApiKeyId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ApiKeyId.Length != 0) hash ^= ApiKeyId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ApiKeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ApiKeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiKeyId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DeleteAppleCertificateRenewalAuthorityResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ApiKeyId.Length != 0) {
+        ApiKeyId = other.ApiKeyId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ApiKeyId = input.ReadString();
             break;
           }
         }

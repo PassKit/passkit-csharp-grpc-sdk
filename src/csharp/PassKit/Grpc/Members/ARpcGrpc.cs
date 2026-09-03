@@ -6,7 +6,7 @@
 // *
 // Members RPC
 //
-// The PassKit Members API lets you manage your membership programs and passes for Apple Wallet and Google Pay.
+// The PassKit Members API lets you manage your membership programs and passes for Apple Wallet and Google Wallet.
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
 
@@ -14,7 +14,7 @@ using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc.Members {
   /// <summary>
-  ///The PassKit Members API provides a powerful and flexible way to manage your membership programs, including creating, updating, and maintaining digital membership passes for Apple Wallet and Google Wallet. Easily integrate membership functionality into your applications to deliver seamless, real-time experiences for your members.
+  /// Manages membership programmes, tiers, members, member events, pass lifecycle, and point balances. Create a programme before creating tiers or enrolling members.
   /// </summary>
   public static partial class Members
   {
@@ -107,6 +107,8 @@ namespace PassKit.Grpc.Members {
     static readonly grpc::Marshaller<global::PassKit.Grpc.PersonRequest> __Marshaller_io_PersonRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PersonRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.EnrolmentUrls> __Marshaller_io_EnrolmentUrls = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.EnrolmentUrls.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.BatchUpdateRequest> __Marshaller_io_BatchUpdateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.BatchUpdateRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Id> __Method_createProgram = new grpc::Method<global::PassKit.Grpc.Members.Program, global::PassKit.Grpc.Id>(
@@ -467,6 +469,14 @@ namespace PassKit.Grpc.Members {
         "getProgramEnrolment",
         __Marshaller_io_Id,
         __Marshaller_io_EnrolmentUrls);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.BatchUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_batchUpdate = new grpc::Method<global::PassKit.Grpc.BatchUpdateRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "batchUpdate",
+        __Marshaller_io_BatchUpdateRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1030,7 +1040,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listTiers, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
+      /// Enrols a member in a programme and creates their pass record. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1043,7 +1053,7 @@ namespace PassKit.Grpc.Members {
         return enrolMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
+      /// Enrols a member in a programme and creates their pass record. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1054,7 +1064,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMember, null, options, request);
       }
       /// <summary>
-      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
+      /// Enrols a member in a programme and creates their pass record. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1067,7 +1077,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Enrols a new member into a program and generates a pass. Required fields: program id and member data.
+      /// Enrols a member in a programme and creates their pass record. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1078,7 +1088,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncUnaryCall(__Method_enrolMember, null, options, request);
       }
       /// <summary>
-      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
+      /// Enrols a member through the public, unauthenticated enrolment endpoint. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1091,7 +1101,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberPublic(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
+      /// Enrols a member through the public, unauthenticated enrolment endpoint. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1102,7 +1112,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_enrolMemberPublic, null, options, request);
       }
       /// <summary>
-      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
+      /// Enrols a member through the public, unauthenticated enrolment endpoint. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1115,7 +1125,7 @@ namespace PassKit.Grpc.Members {
         return enrolMemberPublicAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Public endpoint to enrol a new member into a program without authentication. Required fields: program id and member data.
+      /// Enrols a member through the public, unauthenticated enrolment endpoint. The request must identify the target programme and member data.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1366,7 +1376,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.AsyncServerStreamingCall(__Method_listMembers, null, options, request);
       }
       /// <summary>
-      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// Updates a member record by PassKit ID or external ID. Use patchPerson when changing personal information only.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1379,7 +1389,7 @@ namespace PassKit.Grpc.Members {
         return updateMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// Updates a member record by PassKit ID or external ID. Use patchPerson when changing personal information only.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1390,7 +1400,7 @@ namespace PassKit.Grpc.Members {
         return CallInvoker.BlockingUnaryCall(__Method_updateMember, null, options, request);
       }
       /// <summary>
-      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// Updates a member record by PassKit ID or external ID. Use patchPerson when changing personal information only.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1403,7 +1413,7 @@ namespace PassKit.Grpc.Members {
         return updateMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates an existing member’s personal details or status using PassKit Id or External Id. Required fields: member id or program id and external id. If updating personal information only use patchPerson.
+      /// Updates a member record by PassKit ID or external ID. Use patchPerson when changing personal information only.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2444,6 +2454,54 @@ namespace PassKit.Grpc.Members {
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.EnrolmentUrls> getProgramEnrolmentAsync(global::PassKit.Grpc.Id request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_getProgramEnrolment, null, options, request);
+      }
+      /// <summary>
+      /// Applies the supplied field updates to members selected by the request filters. Required fields: classId, filterGroups, updateEntries.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty batchUpdate(global::PassKit.Grpc.BatchUpdateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return batchUpdate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Applies the supplied field updates to members selected by the request filters. Required fields: classId, filterGroups, updateEntries.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty batchUpdate(global::PassKit.Grpc.BatchUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_batchUpdate, null, options, request);
+      }
+      /// <summary>
+      /// Applies the supplied field updates to members selected by the request filters. Required fields: classId, filterGroups, updateEntries.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> batchUpdateAsync(global::PassKit.Grpc.BatchUpdateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return batchUpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Applies the supplied field updates to members selected by the request filters. Required fields: classId, filterGroups, updateEntries.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> batchUpdateAsync(global::PassKit.Grpc.BatchUpdateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_batchUpdate, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

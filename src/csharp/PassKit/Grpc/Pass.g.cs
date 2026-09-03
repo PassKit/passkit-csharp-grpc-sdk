@@ -27,29 +27,30 @@ namespace PassKit.Grpc {
             "ChRpby9jb21tb24vcGFzcy5wcm90bxICaW8aFGlvL2ltYWdlL2ltYWdlLnBy",
             "b3RvGhVpby9jb21tb24vbGlua3MucHJvdG8aF2lvL2NvbW1vbi9tZXRyaWNz",
             "LnByb3RvGhhpby9jb21tb24vcGVyc29uYWwucHJvdG8aGWlvL2NvbW1vbi9w",
-            "cm90b2NvbHMucHJvdG8aGWlvL2NvbW1vbi9wcm94aW1pdHkucHJvdG8aGGlv",
-            "L2NvbW1vbi90ZW1wbGF0ZS5wcm90bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIv",
-            "b3B0aW9ucy9hbm5vdGF0aW9ucy5wcm90byKEAgoNUGFzc092ZXJyaWRlcxIe",
-            "CghpbWFnZUlkcxgBIAEoCzIMLmlvLkltYWdlSWRzEioKCWxvY2F0aW9ucxgD",
-            "IAMoCzIPLmlvLkdQU0xvY2F0aW9uQgaSQQOgAQoSIwoHYmVhY29ucxgEIAMo",
-            "CzIKLmlvLkJlYWNvbkIGkkEDoAEKEh8KBWxpbmtzGAUgAygLMgguaW8uTGlu",
-            "a0IGkkEDoAEKEhoKBmNvbG9ycxgGIAEoCzIKLmlvLkNvbG9ycxIiChphc3Nv",
-            "Y2lhdGVkU3RvcmVJZGVudGlmaWVycxgHIAMoDRIbChNhcHBTdG9yZUlkZW50",
-            "aWZpZXJzGAggAygESgQIAhADIlwKC1Bhc3NPcHRpb25zEiYKBWFwcGxlGAEg",
-            "ASgLMhcuaW8uQXBwbGVXYWxsZXRTZXR0aW5ncxIlCgZnb29nbGUYAiABKAsy",
-            "FS5pby5Hb29nbGVQYXlTZXR0aW5ncyL/AQoEUGFzcxIKCgJpZBgBIAEoCRIP",
-            "CgdjbGFzc0lkGAIgASgJEiIKCHByb3RvY29sGAMgASgOMhAuaW8uUGFzc1By",
-            "b3RvY29sEiEKDXBlcnNvbkRldGFpbHMYBCABKAsyCi5pby5QZXJzb24SHgoI",
-            "bWV0YWRhdGEYBSABKAsyDC5pby5NZXRhZGF0YRIsCgpyZWNvcmREYXRhGAYg",
-            "AygLMhguaW8uUGFzcy5SZWNvcmREYXRhRW50cnkSEgoKZXh0ZXJuYWxJZBgH",
-            "IAEoCRoxCg9SZWNvcmREYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVl",
-            "GAIgASgJOgI4AUJHChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0",
-            "LmNvbS9pby9tb2RlbC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3Rv",
-            "Mw=="));
+            "cm90b2NvbHMucHJvdG8aGWlvL2NvbW1vbi9wcm94aW1pdHkucHJvdG8aIGlv",
+            "L2NvbW1vbi9mZWF0dXJlZF9hY3Rpb25zLnByb3RvGhhpby9jb21tb24vdGVt",
+            "cGxhdGUucHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29wdGlvbnMvYW5u",
+            "b3RhdGlvbnMucHJvdG8iuQIKDVBhc3NPdmVycmlkZXMSHgoIaW1hZ2VJZHMY",
+            "ASABKAsyDC5pby5JbWFnZUlkcxIqCglsb2NhdGlvbnMYAyADKAsyDy5pby5H",
+            "UFNMb2NhdGlvbkIGkkEDoAEKEiMKB2JlYWNvbnMYBCADKAsyCi5pby5CZWFj",
+            "b25CBpJBA6ABChIfCgVsaW5rcxgFIAMoCzIILmlvLkxpbmtCBpJBA6ABChIa",
+            "CgZjb2xvcnMYBiABKAsyCi5pby5Db2xvcnMSIgoaYXNzb2NpYXRlZFN0b3Jl",
+            "SWRlbnRpZmllcnMYByADKA0SGwoTYXBwU3RvcmVJZGVudGlmaWVycxgIIAMo",
+            "BBIzCg9mZWF0dXJlZEFjdGlvbnMYCSADKAsyEi5pby5GZWF0dXJlZEFjdGlv",
+            "bkIGkkEDoAECSgQIAhADIlwKC1Bhc3NPcHRpb25zEiYKBWFwcGxlGAEgASgL",
+            "MhcuaW8uQXBwbGVXYWxsZXRTZXR0aW5ncxIlCgZnb29nbGUYAiABKAsyFS5p",
+            "by5Hb29nbGVQYXlTZXR0aW5ncyL/AQoEUGFzcxIKCgJpZBgBIAEoCRIPCgdj",
+            "bGFzc0lkGAIgASgJEiIKCHByb3RvY29sGAMgASgOMhAuaW8uUGFzc1Byb3Rv",
+            "Y29sEiEKDXBlcnNvbkRldGFpbHMYBCABKAsyCi5pby5QZXJzb24SHgoIbWV0",
+            "YWRhdGEYBSABKAsyDC5pby5NZXRhZGF0YRIsCgpyZWNvcmREYXRhGAYgAygL",
+            "MhguaW8uUGFzcy5SZWNvcmREYXRhRW50cnkSEgoKZXh0ZXJuYWxJZBgHIAEo",
+            "CRoxCg9SZWNvcmREYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIg",
+            "ASgJOgI4AUJHChBjb20ucGFzc2tpdC5ncnBjWiRzdGFzaC5wYXNza2l0LmNv",
+            "bS9pby9tb2RlbC9zZGsvZ28vaW+qAgxQYXNzS2l0LkdycGNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::PassKit.Grpc.ImageReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.TemplateReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::PassKit.Grpc.ImageReflection.Descriptor, global::PassKit.Grpc.LinksReflection.Descriptor, global::PassKit.Grpc.MetricsReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.ProtocolsReflection.Descriptor, global::PassKit.Grpc.ProximityReflection.Descriptor, global::PassKit.Grpc.FeaturedActionsReflection.Descriptor, global::PassKit.Grpc.TemplateReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOverrides), global::PassKit.Grpc.PassOverrides.Parser, new[]{ "ImageIds", "Locations", "Beacons", "Links", "Colors", "AssociatedStoreIdentifiers", "AppStoreIdentifiers" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOverrides), global::PassKit.Grpc.PassOverrides.Parser, new[]{ "ImageIds", "Locations", "Beacons", "Links", "Colors", "AssociatedStoreIdentifiers", "AppStoreIdentifiers", "FeaturedActions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PassOptions), global::PassKit.Grpc.PassOptions.Parser, new[]{ "Apple", "Google" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Pass), global::PassKit.Grpc.Pass.Parser, new[]{ "Id", "ClassId", "Protocol", "PersonDetails", "Metadata", "RecordData", "ExternalId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
@@ -103,6 +104,7 @@ namespace PassKit.Grpc {
       colors_ = other.colors_ != null ? other.colors_.Clone() : null;
       associatedStoreIdentifiers_ = other.associatedStoreIdentifiers_.Clone();
       appStoreIdentifiers_ = other.appStoreIdentifiers_.Clone();
+      featuredActions_ = other.featuredActions_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -212,6 +214,20 @@ namespace PassKit.Grpc {
       get { return appStoreIdentifiers_; }
     }
 
+    /// <summary>Field number for the "featuredActions" field.</summary>
+    public const int FeaturedActionsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::PassKit.Grpc.FeaturedAction> _repeated_featuredActions_codec
+        = pb::FieldCodec.ForMessage(74, global::PassKit.Grpc.FeaturedAction.Parser);
+    private readonly pbc::RepeatedField<global::PassKit.Grpc.FeaturedAction> featuredActions_ = new pbc::RepeatedField<global::PassKit.Grpc.FeaturedAction>();
+    /// <summary>
+    /// Apple Wallet featured actions displayed prominently on supported passes. Ordered by priority and limited to two actions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::PassKit.Grpc.FeaturedAction> FeaturedActions {
+      get { return featuredActions_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -234,6 +250,7 @@ namespace PassKit.Grpc {
       if (!object.Equals(Colors, other.Colors)) return false;
       if(!associatedStoreIdentifiers_.Equals(other.associatedStoreIdentifiers_)) return false;
       if(!appStoreIdentifiers_.Equals(other.appStoreIdentifiers_)) return false;
+      if(!featuredActions_.Equals(other.featuredActions_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -248,6 +265,7 @@ namespace PassKit.Grpc {
       if (colors_ != null) hash ^= Colors.GetHashCode();
       hash ^= associatedStoreIdentifiers_.GetHashCode();
       hash ^= appStoreIdentifiers_.GetHashCode();
+      hash ^= featuredActions_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -279,6 +297,7 @@ namespace PassKit.Grpc {
       }
       associatedStoreIdentifiers_.WriteTo(output, _repeated_associatedStoreIdentifiers_codec);
       appStoreIdentifiers_.WriteTo(output, _repeated_appStoreIdentifiers_codec);
+      featuredActions_.WriteTo(output, _repeated_featuredActions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -302,6 +321,7 @@ namespace PassKit.Grpc {
       }
       associatedStoreIdentifiers_.WriteTo(ref output, _repeated_associatedStoreIdentifiers_codec);
       appStoreIdentifiers_.WriteTo(ref output, _repeated_appStoreIdentifiers_codec);
+      featuredActions_.WriteTo(ref output, _repeated_featuredActions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -323,6 +343,7 @@ namespace PassKit.Grpc {
       }
       size += associatedStoreIdentifiers_.CalculateSize(_repeated_associatedStoreIdentifiers_codec);
       size += appStoreIdentifiers_.CalculateSize(_repeated_appStoreIdentifiers_codec);
+      size += featuredActions_.CalculateSize(_repeated_featuredActions_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -352,6 +373,7 @@ namespace PassKit.Grpc {
       }
       associatedStoreIdentifiers_.Add(other.associatedStoreIdentifiers_);
       appStoreIdentifiers_.Add(other.appStoreIdentifiers_);
+      featuredActions_.Add(other.featuredActions_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -407,6 +429,10 @@ namespace PassKit.Grpc {
             appStoreIdentifiers_.AddEntriesFrom(input, _repeated_appStoreIdentifiers_codec);
             break;
           }
+          case 74: {
+            featuredActions_.AddEntriesFrom(input, _repeated_featuredActions_codec);
+            break;
+          }
         }
       }
     #endif
@@ -460,6 +486,10 @@ namespace PassKit.Grpc {
           case 66:
           case 64: {
             appStoreIdentifiers_.AddEntriesFrom(ref input, _repeated_appStoreIdentifiers_codec);
+            break;
+          }
+          case 74: {
+            featuredActions_.AddEntriesFrom(ref input, _repeated_featuredActions_codec);
             break;
           }
         }
@@ -537,7 +567,7 @@ namespace PassKit.Grpc {
     public const int GoogleFieldNumber = 2;
     private global::PassKit.Grpc.GooglePaySettings google_;
     /// <summary>
-    /// Google Pay-specific pass rendering and behavior options.
+    /// Google Wallet-specific pass rendering and behavior options.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

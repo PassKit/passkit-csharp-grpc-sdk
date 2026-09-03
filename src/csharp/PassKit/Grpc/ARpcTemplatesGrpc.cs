@@ -9,7 +9,7 @@ using grpc = global::Grpc.Core;
 
 namespace PassKit.Grpc {
   /// <summary>
-  /// The PassKit Templates API allows you to manage your pass templates for Apple Wallet and Google Wallet.
+  /// Manages pass templates and designs for Apple Wallet, Google Wallet, and data collection forms.
   /// </summary>
   public static partial class Templates
   {
@@ -435,7 +435,7 @@ namespace PassKit.Grpc {
       }
 
       /// <summary>
-      /// Creates a new pass template record. Required Fields: protocol, revision, name, colors, fields
+      /// Creates a pass template for a protocol and revision. Required fields: protocol, revision, name, colors, fields.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -448,7 +448,7 @@ namespace PassKit.Grpc {
         return createTemplate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new pass template record. Required Fields: protocol, revision, name, colors, fields
+      /// Creates a pass template for a protocol and revision. Required fields: protocol, revision, name, colors, fields.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -459,7 +459,7 @@ namespace PassKit.Grpc {
         return CallInvoker.BlockingUnaryCall(__Method_createTemplate, null, options, request);
       }
       /// <summary>
-      /// Creates a new pass template record. Required Fields: protocol, revision, name, colors, fields
+      /// Creates a pass template for a protocol and revision. Required fields: protocol, revision, name, colors, fields.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -472,7 +472,7 @@ namespace PassKit.Grpc {
         return createTemplateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a new pass template record. Required Fields: protocol, revision, name, colors, fields
+      /// Creates a pass template for a protocol and revision. Required fields: protocol, revision, name, colors, fields.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

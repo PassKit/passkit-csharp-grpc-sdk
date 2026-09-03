@@ -27,105 +27,107 @@ namespace PassKit.Grpc {
             "ChRpby9pbWFnZS9pbWFnZS5wcm90bxICaW8aHGlvL2NvbW1vbi9sb2NhbGl6",
             "YXRpb24ucHJvdG8aLnByb3RvYy1nZW4tb3BlbmFwaXYyL29wdGlvbnMvYW5u",
             "b3RhdGlvbnMucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJv",
-            "dG8ikwQKCEltYWdlSWRzEgwKBGljb24YASABKAkSDAoEbG9nbxgCIAEoCRIR",
-            "CglhcHBsZUxvZ28YAyABKAkSDAoEaGVybxgEIAEoCRISCgpldmVudFN0cmlw",
-            "GAUgASgJEg0KBXN0cmlwGAYgASgJEhEKCXRodW1ibmFpbBgHIAEoCRISCgpi",
-            "YWNrZ3JvdW5kGAggASgJEg4KBmZvb3RlchgJIAEoCRIQCghzZWN1cml0eRgK",
-            "IAEoCRIRCglwcml2aWxlZ2UYCyABKAkSFwoPYWlybGluZUFsbGlhbmNlGAwg",
-            "ASgJEhcKD3BlcnNvbmFsaXphdGlvbhgNIAEoCRIOCgZiYW5uZXIYDiABKAkS",
-            "DwoHbWVzc2FnZRgPIAEoCRIPCgdwcm9maWxlGBAgASgJEhAKCGFwcEltYWdl",
-            "GBEgASgJEhQKDHN0YW1wZWRJbWFnZRgSIAEoCRIWCg51bnN0YW1wZWRJbWFn",
-            "ZRgTIAEoCRISCgpzdGFtcEltYWdlGBQgASgJEhAKCHdpZGVMb2dvGBUgASgJ",
-            "EhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoHYXJ0d29yaxgXIAEoCRITCgtw",
-            "cmltYXJ5TG9nbxgYIAEoCRIQCgh2ZW51ZU1hcBgZIAEoCToykkEvCi0qCUlt",
-            "YWdlIElkczIZVGhpcyBtYW5hZ2VzIGltYWdlcyBieSBpZNIBBGljb24ilwwK",
-            "CUltYWdlRGF0YRIMCgRpY29uGAEgASgJEgwKBGxvZ28YAiABKAkSEQoJYXBw",
-            "bGVMb2dvGAMgASgJEgwKBGhlcm8YBCABKAkSEgoKZXZlbnRTdHJpcBgFIAEo",
-            "CRINCgVzdHJpcBgGIAEoCRIRCgl0aHVtYm5haWwYByABKAkSEgoKYmFja2dy",
-            "b3VuZBgIIAEoCRIOCgZmb290ZXIYCSABKAkSEAoIc2VjdXJpdHkYCiABKAkS",
-            "EQoJcHJpdmlsZWdlGAsgASgJEhcKD2FpcmxpbmVBbGxpYW5jZRgMIAEoCRIX",
-            "Cg9wZXJzb25hbGl6YXRpb24YDSABKAkSDgoGYmFubmVyGA4gASgJEg8KB21l",
-            "c3NhZ2UYDyABKAkSDwoHcHJvZmlsZRgQIAEoCRIQCghhcHBJbWFnZRgRIAEo",
-            "CRIUCgxzdGFtcGVkSW1hZ2UYEiABKAkSFgoOdW5zdGFtcGVkSW1hZ2UYEyAB",
-            "KAkSKQoLc3RhbXBDb25maWcYFCABKAsyFC5pby5TdGFtcEltYWdlQ29uZmln",
+            "dG8ipQQKCEltYWdlSWRzEgwKBGljb24YASABKAkSDAoEbG9nbxgCIAEoCRIR",
+            "CglhcHBsZUxvZ28YAyABKAkSDAoEaGVybxgEIAEoCRIQCghyaWNoSGVybxga",
+            "IAEoCRISCgpldmVudFN0cmlwGAUgASgJEg0KBXN0cmlwGAYgASgJEhEKCXRo",
+            "dW1ibmFpbBgHIAEoCRISCgpiYWNrZ3JvdW5kGAggASgJEg4KBmZvb3RlchgJ",
+            "IAEoCRIQCghzZWN1cml0eRgKIAEoCRIRCglwcml2aWxlZ2UYCyABKAkSFwoP",
+            "YWlybGluZUFsbGlhbmNlGAwgASgJEhcKD3BlcnNvbmFsaXphdGlvbhgNIAEo",
+            "CRIOCgZiYW5uZXIYDiABKAkSDwoHbWVzc2FnZRgPIAEoCRIPCgdwcm9maWxl",
+            "GBAgASgJEhAKCGFwcEltYWdlGBEgASgJEhQKDHN0YW1wZWRJbWFnZRgSIAEo",
+            "CRIWCg51bnN0YW1wZWRJbWFnZRgTIAEoCRISCgpzdGFtcEltYWdlGBQgASgJ",
             "EhAKCHdpZGVMb2dvGBUgASgJEhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoH",
             "YXJ0d29yaxgXIAEoCRITCgtwcmltYXJ5TG9nbxgYIAEoCRIQCgh2ZW51ZU1h",
-            "cBgZIAEoCRIqCg1sb2NhbGl6ZWRJY29uGB8gASgLMhMuaW8uTG9jYWxpemVk",
-            "U3RyaW5nEioKDWxvY2FsaXplZExvZ28YICABKAsyEy5pby5Mb2NhbGl6ZWRT",
-            "dHJpbmcSLwoSbG9jYWxpemVkQXBwbGVMb2dvGCEgASgLMhMuaW8uTG9jYWxp",
-            "emVkU3RyaW5nEioKDWxvY2FsaXplZEhlcm8YIiABKAsyEy5pby5Mb2NhbGl6",
-            "ZWRTdHJpbmcSMAoTbG9jYWxpemVkRXZlbnRTdHJpcBgjIAEoCzITLmlvLkxv",
-            "Y2FsaXplZFN0cmluZxIrCg5sb2NhbGl6ZWRTdHJpcBgkIAEoCzITLmlvLkxv",
-            "Y2FsaXplZFN0cmluZxIvChJsb2NhbGl6ZWRUaHVtYm5haWwYJSABKAsyEy5p",
-            "by5Mb2NhbGl6ZWRTdHJpbmcSMAoTbG9jYWxpemVkQmFja2dyb3VuZBgmIAEo",
-            "CzITLmlvLkxvY2FsaXplZFN0cmluZxIsCg9sb2NhbGl6ZWRGb290ZXIYJyAB",
-            "KAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSLgoRbG9jYWxpemVkU2VjdXJpdHkY",
-            "KCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSLwoSbG9jYWxpemVkUHJpdmls",
-            "ZWdlGCkgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEjUKGGxvY2FsaXplZEFp",
-            "cmxpbmVBbGxpYW5jZRgqIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxI1Chhs",
-            "b2NhbGl6ZWRQZXJzb25hbGl6YXRpb24YKyABKAsyEy5pby5Mb2NhbGl6ZWRT",
-            "dHJpbmcSLAoPbG9jYWxpemVkQmFubmVyGCwgASgLMhMuaW8uTG9jYWxpemVk",
-            "U3RyaW5nEi0KEGxvY2FsaXplZE1lc3NhZ2UYLSABKAsyEy5pby5Mb2NhbGl6",
-            "ZWRTdHJpbmcSLgoRbG9jYWxpemVkV2lkZUxvZ28YLiABKAsyEy5pby5Mb2Nh",
-            "bGl6ZWRTdHJpbmcSMwoWbG9jYWxpemVkU2Vjb25kYXJ5TG9nbxgvIAEoCzIT",
-            "LmlvLkxvY2FsaXplZFN0cmluZxItChBsb2NhbGl6ZWRBcnR3b3JrGDAgASgL",
-            "MhMuaW8uTG9jYWxpemVkU3RyaW5nEjEKFGxvY2FsaXplZFByaW1hcnlMb2dv",
-            "GDEgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEi4KEWxvY2FsaXplZFZlbnVl",
-            "TWFwGDIgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nOlaSQVMKUSoKSW1hZ2Ug",
-            "RGF0YTJDSW1hZ2UgZGF0YSBjYW4gYmUgcHJvdmlkZWQgYXMgZWl0aGVyIGEg",
-            "dXJsIG9yIGJhc2UgNjQgZW5jb2RlZCBkYXRhLiLpAQoLSW1hZ2VSZWNvcmQS",
-            "CgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRILCgN1cmwYAyABKAkSGQoDdXNl",
-            "GAUgASgOMgwuaW8uSW1hZ2VVc2USIwoJbGFuZ3VhZ2VzGAYgAygOMhAuaW8u",
-            "TGFuZ3VhZ2VDb2RlEhUKDW93bmVyVXNlcm5hbWUYByABKAkSLQoJY3JlYXRl",
-            "ZEF0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCgl1cGRh",
-            "dGVkQXQYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIiYKEVBy",
-            "b2ZpbGVJbWFnZUlucHV0EhEKCWltYWdlRGF0YRgBIAEoCSIxCg5NdWx0aXBs",
-            "ZUltYWdlcxIfCgZpbWFnZXMYASADKAsyDy5pby5JbWFnZVJlY29yZCIvChFT",
-            "dGFtcEltYWdlUmVxdWVzdBIKCgJpZBgBIAEoCRIOCgZzdGF0dXMYAiABKAQi",
-            "jAEKEENyZWF0ZUltYWdlSW5wdXQSDAoEbmFtZRgBIAEoCRIgCglpbWFnZURh",
-            "dGEYAiABKAsyDS5pby5JbWFnZURhdGE6SJJBRQpDKhJDcmVhdGUgSW1hZ2Ug",
-            "SW5wdXQyGlRoaXMgY3JlYXRlcyBpbWFnZSByZWNvcmQu0gEEbmFtZdIBCWlt",
-            "YWdlRGF0YSLCAQoQVXBkYXRlSW1hZ2VJbnB1dBIKCgJpZBgBIAEoCRIMCgRu",
-            "YW1lGAIgASgJEhEKCWltYWdlRGF0YRgDIAEoCRIvChJsb2NhbGl6ZWRJbWFn",
-            "ZURhdGEYBCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmc6UJJBTQpLKhJVcGRh",
-            "dGUgSW1hZ2UgSW5wdXQyMFRoaXMgbWFuYWdlcyBpbWFnZXMgc2V0IGZvciBk",
-            "aWZmZXJlbnQgbGFuZ3VhZ2VzLtIBAmlkIhwKC0ltYWdlQnVuZGxlEg0KBWlt",
-            "YWdlGAEgASgMIpsBChNMb2NhbGl6ZWRJbWFnZUlucHV0EgoKAmlkGAEgASgJ",
-            "EhQKDGxhbmd1YWdlQ29kZRgCIAEoCTpikkFfCl0qFUxvY2FsaXplZCBJbWFn",
-            "ZSBJbnB1dDIwVGhpcyBtYW5hZ2VzIGltYWdlcyBzZXQgZm9yIGRpZmZlcmVu",
-            "dCBsYW5ndWFnZXMu0gECaWTSAQxsYW5ndWFnZUNvZGUizgQKEFN0YW1wSW1h",
-            "Z2VDb25maWcSCgoCaWQYASABKAkSDwoHcGFkZGluZxgCIAEoAhITCgt0b3Rh",
-            "bFN0YW1wcxgDIAEoDRISCgpzdGFtcEltYWdlGAQgASgJEhQKDHVuc3RhbXBJ",
-            "bWFnZRgFIAEoCRIXCg9iYWNrZ3JvdW5kSW1hZ2UYBiABKAkSFwoPYmFja2dy",
-            "b3VuZENvbG9yGAcgASgJEhkKEWJhY2tncm91bmRPcGFjaXR5GAggASgCEhIK",
-            "CnN0YW1wQ29sb3IYCSABKAkSFAoMc3RhbXBPcGFjaXR5GAogASgCEhQKDHVu",
-            "c3RhbXBDb2xvchgLIAEoCRIWCg51bnN0YW1wT3BhY2l0eRgMIAEoAhIUCgxw",
-            "bGFjZWhvbGRlcnMYDSABKAgSGAoQcGxhY2Vob2xkZXJDb2xvchgOIAEoCRIa",
-            "ChJwbGFjZWhvbGRlck9wYWNpdHkYDyABKAISHgoWcGxhY2Vob2xkZXJCb3Jk",
-            "ZXJDb2xvchgQIAEoCRIgChhwbGFjZWhvbGRlckJvcmRlck9wYWNpdHkYESAB",
-            "KAISGgoScmV3YXJkUGxhY2Vob2xkZXJzGBIgASgIEhkKEXJld2FyZEJvcmRl",
-            "ckNvbG9yGBMgASgJEhsKE3Jld2FyZEJvcmRlck9wYWNpdHkYFCABKAISHQoV",
-            "cmV3YXJkQmFja2dyb3VuZENvbG9yGBUgASgJEh8KF3Jld2FyZEJhY2tncm91",
-            "bmRPcGFjaXR5GBYgASgCEhcKD3Jld2FyZFBvc2l0aW9ucxgXIAEoBCJaChhT",
-            "dGFtcEltYWdlUHJldmlld1JlcXVlc3QSLgoQc3RhbXBJbWFnZUNvbmZpZxgB",
-            "IAEoCzIULmlvLlN0YW1wSW1hZ2VDb25maWcSDgoGc3RhdHVzGAIgASgEIiQK",
-            "EVN0YW1wSW1hZ2VQcmV2aWV3Eg8KB3ByZXZpZXcYASABKAkq+wIKCEltYWdl",
-            "VXNlEggKBGljb24QABIICgRsb2dvEAESDQoJYXBwbGVMb2dvEAISCAoEaGVy",
-            "bxADEg4KCmV2ZW50U3RyaXAQBBIJCgVzdHJpcBAFEg0KCXRodW1ibmFpbBAG",
-            "Eg4KCmJhY2tncm91bmQQBxIKCgZmb290ZXIQCBIMCghzZWN1cml0eRAJEg0K",
-            "CXByaXZpbGVnZRAKEhMKD2FpcmxpbmVBbGxpYW5jZRALEhMKD3BlcnNvbmFs",
-            "aXphdGlvbhAMEgoKBmJhbm5lchANEgsKB21lc3NhZ2UQDhILCgdwcm9maWxl",
-            "EA8SDAoIYXBwSW1hZ2UQEBIQCgxzdGFtcGVkSW1hZ2UQEhISCg51bnN0YW1w",
-            "ZWRJbWFnZRATEg4KCnN0YW1wSW1hZ2UQFBIMCgh3aWRlTG9nbxAVEhEKDXNl",
-            "Y29uZGFyeUxvZ28QFhILCgdhcnR3b3JrEBcSDwoLcHJpbWFyeUxvZ28QGBIM",
-            "Cgh2ZW51ZU1hcBAZQkcKEGNvbS5wYXNza2l0LmdycGNaJHN0YXNoLnBhc3Nr",
-            "aXQuY29tL2lvL21vZGVsL3Nkay9nby9pb6oCDFBhc3NLaXQuR3JwY2IGcHJv",
-            "dG8z"));
+            "cBgZIAEoCToykkEvCi0qCUltYWdlIElkczIZVGhpcyBtYW5hZ2VzIGltYWdl",
+            "cyBieSBpZNIBBGljb24i2QwKCUltYWdlRGF0YRIMCgRpY29uGAEgASgJEgwK",
+            "BGxvZ28YAiABKAkSEQoJYXBwbGVMb2dvGAMgASgJEgwKBGhlcm8YBCABKAkS",
+            "EAoIcmljaEhlcm8YGiABKAkSEgoKZXZlbnRTdHJpcBgFIAEoCRINCgVzdHJp",
+            "cBgGIAEoCRIRCgl0aHVtYm5haWwYByABKAkSEgoKYmFja2dyb3VuZBgIIAEo",
+            "CRIOCgZmb290ZXIYCSABKAkSEAoIc2VjdXJpdHkYCiABKAkSEQoJcHJpdmls",
+            "ZWdlGAsgASgJEhcKD2FpcmxpbmVBbGxpYW5jZRgMIAEoCRIXCg9wZXJzb25h",
+            "bGl6YXRpb24YDSABKAkSDgoGYmFubmVyGA4gASgJEg8KB21lc3NhZ2UYDyAB",
+            "KAkSDwoHcHJvZmlsZRgQIAEoCRIQCghhcHBJbWFnZRgRIAEoCRIUCgxzdGFt",
+            "cGVkSW1hZ2UYEiABKAkSFgoOdW5zdGFtcGVkSW1hZ2UYEyABKAkSKQoLc3Rh",
+            "bXBDb25maWcYFCABKAsyFC5pby5TdGFtcEltYWdlQ29uZmlnEhAKCHdpZGVM",
+            "b2dvGBUgASgJEhUKDXNlY29uZGFyeUxvZ28YFiABKAkSDwoHYXJ0d29yaxgX",
+            "IAEoCRITCgtwcmltYXJ5TG9nbxgYIAEoCRIQCgh2ZW51ZU1hcBgZIAEoCRIq",
+            "Cg1sb2NhbGl6ZWRJY29uGB8gASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEioK",
+            "DWxvY2FsaXplZExvZ28YICABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcSLwoS",
+            "bG9jYWxpemVkQXBwbGVMb2dvGCEgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
+            "EioKDWxvY2FsaXplZEhlcm8YIiABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcS",
+            "LgoRbG9jYWxpemVkUmljaEhlcm8YMyABKAsyEy5pby5Mb2NhbGl6ZWRTdHJp",
+            "bmcSMAoTbG9jYWxpemVkRXZlbnRTdHJpcBgjIAEoCzITLmlvLkxvY2FsaXpl",
+            "ZFN0cmluZxIrCg5sb2NhbGl6ZWRTdHJpcBgkIAEoCzITLmlvLkxvY2FsaXpl",
+            "ZFN0cmluZxIvChJsb2NhbGl6ZWRUaHVtYm5haWwYJSABKAsyEy5pby5Mb2Nh",
+            "bGl6ZWRTdHJpbmcSMAoTbG9jYWxpemVkQmFja2dyb3VuZBgmIAEoCzITLmlv",
+            "LkxvY2FsaXplZFN0cmluZxIsCg9sb2NhbGl6ZWRGb290ZXIYJyABKAsyEy5p",
+            "by5Mb2NhbGl6ZWRTdHJpbmcSLgoRbG9jYWxpemVkU2VjdXJpdHkYKCABKAsy",
+            "Ey5pby5Mb2NhbGl6ZWRTdHJpbmcSLwoSbG9jYWxpemVkUHJpdmlsZWdlGCkg",
+            "ASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nEjUKGGxvY2FsaXplZEFpcmxpbmVB",
+            "bGxpYW5jZRgqIAEoCzITLmlvLkxvY2FsaXplZFN0cmluZxI1Chhsb2NhbGl6",
+            "ZWRQZXJzb25hbGl6YXRpb24YKyABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmcS",
+            "LAoPbG9jYWxpemVkQmFubmVyGCwgASgLMhMuaW8uTG9jYWxpemVkU3RyaW5n",
+            "Ei0KEGxvY2FsaXplZE1lc3NhZ2UYLSABKAsyEy5pby5Mb2NhbGl6ZWRTdHJp",
+            "bmcSLgoRbG9jYWxpemVkV2lkZUxvZ28YLiABKAsyEy5pby5Mb2NhbGl6ZWRT",
+            "dHJpbmcSMwoWbG9jYWxpemVkU2Vjb25kYXJ5TG9nbxgvIAEoCzITLmlvLkxv",
+            "Y2FsaXplZFN0cmluZxItChBsb2NhbGl6ZWRBcnR3b3JrGDAgASgLMhMuaW8u",
+            "TG9jYWxpemVkU3RyaW5nEjEKFGxvY2FsaXplZFByaW1hcnlMb2dvGDEgASgL",
+            "MhMuaW8uTG9jYWxpemVkU3RyaW5nEi4KEWxvY2FsaXplZFZlbnVlTWFwGDIg",
+            "ASgLMhMuaW8uTG9jYWxpemVkU3RyaW5nOlaSQVMKUSoKSW1hZ2UgRGF0YTJD",
+            "SW1hZ2UgZGF0YSBjYW4gYmUgcHJvdmlkZWQgYXMgZWl0aGVyIGEgdXJsIG9y",
+            "IGJhc2UgNjQgZW5jb2RlZCBkYXRhLiLpAQoLSW1hZ2VSZWNvcmQSCgoCaWQY",
+            "ASABKAkSDAoEbmFtZRgCIAEoCRILCgN1cmwYAyABKAkSGQoDdXNlGAUgASgO",
+            "MgwuaW8uSW1hZ2VVc2USIwoJbGFuZ3VhZ2VzGAYgAygOMhAuaW8uTGFuZ3Vh",
+            "Z2VDb2RlEhUKDW93bmVyVXNlcm5hbWUYByABKAkSLQoJY3JlYXRlZEF0GAgg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBItCgl1cGRhdGVkQXQY",
+            "CSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIiYKEVByb2ZpbGVJ",
+            "bWFnZUlucHV0EhEKCWltYWdlRGF0YRgBIAEoCSIxCg5NdWx0aXBsZUltYWdl",
+            "cxIfCgZpbWFnZXMYASADKAsyDy5pby5JbWFnZVJlY29yZCIvChFTdGFtcElt",
+            "YWdlUmVxdWVzdBIKCgJpZBgBIAEoCRIOCgZzdGF0dXMYAiABKAQijAEKEENy",
+            "ZWF0ZUltYWdlSW5wdXQSDAoEbmFtZRgBIAEoCRIgCglpbWFnZURhdGEYAiAB",
+            "KAsyDS5pby5JbWFnZURhdGE6SJJBRQpDKhJDcmVhdGUgSW1hZ2UgSW5wdXQy",
+            "GlRoaXMgY3JlYXRlcyBpbWFnZSByZWNvcmQu0gEEbmFtZdIBCWltYWdlRGF0",
+            "YSLCAQoQVXBkYXRlSW1hZ2VJbnB1dBIKCgJpZBgBIAEoCRIMCgRuYW1lGAIg",
+            "ASgJEhEKCWltYWdlRGF0YRgDIAEoCRIvChJsb2NhbGl6ZWRJbWFnZURhdGEY",
+            "BCABKAsyEy5pby5Mb2NhbGl6ZWRTdHJpbmc6UJJBTQpLKhJVcGRhdGUgSW1h",
+            "Z2UgSW5wdXQyMFRoaXMgbWFuYWdlcyBpbWFnZXMgc2V0IGZvciBkaWZmZXJl",
+            "bnQgbGFuZ3VhZ2VzLtIBAmlkIhwKC0ltYWdlQnVuZGxlEg0KBWltYWdlGAEg",
+            "ASgMIpsBChNMb2NhbGl6ZWRJbWFnZUlucHV0EgoKAmlkGAEgASgJEhQKDGxh",
+            "bmd1YWdlQ29kZRgCIAEoCTpikkFfCl0qFUxvY2FsaXplZCBJbWFnZSBJbnB1",
+            "dDIwVGhpcyBtYW5hZ2VzIGltYWdlcyBzZXQgZm9yIGRpZmZlcmVudCBsYW5n",
+            "dWFnZXMu0gECaWTSAQxsYW5ndWFnZUNvZGUizgQKEFN0YW1wSW1hZ2VDb25m",
+            "aWcSCgoCaWQYASABKAkSDwoHcGFkZGluZxgCIAEoAhITCgt0b3RhbFN0YW1w",
+            "cxgDIAEoDRISCgpzdGFtcEltYWdlGAQgASgJEhQKDHVuc3RhbXBJbWFnZRgF",
+            "IAEoCRIXCg9iYWNrZ3JvdW5kSW1hZ2UYBiABKAkSFwoPYmFja2dyb3VuZENv",
+            "bG9yGAcgASgJEhkKEWJhY2tncm91bmRPcGFjaXR5GAggASgCEhIKCnN0YW1w",
+            "Q29sb3IYCSABKAkSFAoMc3RhbXBPcGFjaXR5GAogASgCEhQKDHVuc3RhbXBD",
+            "b2xvchgLIAEoCRIWCg51bnN0YW1wT3BhY2l0eRgMIAEoAhIUCgxwbGFjZWhv",
+            "bGRlcnMYDSABKAgSGAoQcGxhY2Vob2xkZXJDb2xvchgOIAEoCRIaChJwbGFj",
+            "ZWhvbGRlck9wYWNpdHkYDyABKAISHgoWcGxhY2Vob2xkZXJCb3JkZXJDb2xv",
+            "chgQIAEoCRIgChhwbGFjZWhvbGRlckJvcmRlck9wYWNpdHkYESABKAISGgoS",
+            "cmV3YXJkUGxhY2Vob2xkZXJzGBIgASgIEhkKEXJld2FyZEJvcmRlckNvbG9y",
+            "GBMgASgJEhsKE3Jld2FyZEJvcmRlck9wYWNpdHkYFCABKAISHQoVcmV3YXJk",
+            "QmFja2dyb3VuZENvbG9yGBUgASgJEh8KF3Jld2FyZEJhY2tncm91bmRPcGFj",
+            "aXR5GBYgASgCEhcKD3Jld2FyZFBvc2l0aW9ucxgXIAEoBCJaChhTdGFtcElt",
+            "YWdlUHJldmlld1JlcXVlc3QSLgoQc3RhbXBJbWFnZUNvbmZpZxgBIAEoCzIU",
+            "LmlvLlN0YW1wSW1hZ2VDb25maWcSDgoGc3RhdHVzGAIgASgEIiQKEVN0YW1w",
+            "SW1hZ2VQcmV2aWV3Eg8KB3ByZXZpZXcYASABKAkqiQMKCEltYWdlVXNlEggK",
+            "BGljb24QABIICgRsb2dvEAESDQoJYXBwbGVMb2dvEAISCAoEaGVybxADEgwK",
+            "CHJpY2hIZXJvEBoSDgoKZXZlbnRTdHJpcBAEEgkKBXN0cmlwEAUSDQoJdGh1",
+            "bWJuYWlsEAYSDgoKYmFja2dyb3VuZBAHEgoKBmZvb3RlchAIEgwKCHNlY3Vy",
+            "aXR5EAkSDQoJcHJpdmlsZWdlEAoSEwoPYWlybGluZUFsbGlhbmNlEAsSEwoP",
+            "cGVyc29uYWxpemF0aW9uEAwSCgoGYmFubmVyEA0SCwoHbWVzc2FnZRAOEgsK",
+            "B3Byb2ZpbGUQDxIMCghhcHBJbWFnZRAQEhAKDHN0YW1wZWRJbWFnZRASEhIK",
+            "DnVuc3RhbXBlZEltYWdlEBMSDgoKc3RhbXBJbWFnZRAUEgwKCHdpZGVMb2dv",
+            "EBUSEQoNc2Vjb25kYXJ5TG9nbxAWEgsKB2FydHdvcmsQFxIPCgtwcmltYXJ5",
+            "TG9nbxAYEgwKCHZlbnVlTWFwEBlCRwoQY29tLnBhc3NraXQuZ3JwY1okc3Rh",
+            "c2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFzc0tpdC5H",
+            "cnBjYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PassKit.Grpc.LocalizationReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.ImageUse), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageIds), global::PassKit.Grpc.ImageIds.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampImage", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageData), global::PassKit.Grpc.ImageData.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampConfig", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap", "LocalizedIcon", "LocalizedLogo", "LocalizedAppleLogo", "LocalizedHero", "LocalizedEventStrip", "LocalizedStrip", "LocalizedThumbnail", "LocalizedBackground", "LocalizedFooter", "LocalizedSecurity", "LocalizedPrivilege", "LocalizedAirlineAlliance", "LocalizedPersonalization", "LocalizedBanner", "LocalizedMessage", "LocalizedWideLogo", "LocalizedSecondaryLogo", "LocalizedArtwork", "LocalizedPrimaryLogo", "LocalizedVenueMap" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageIds), global::PassKit.Grpc.ImageIds.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "RichHero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampImage", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageData), global::PassKit.Grpc.ImageData.Parser, new[]{ "Icon", "Logo", "AppleLogo", "Hero", "RichHero", "EventStrip", "Strip", "Thumbnail", "Background", "Footer", "Security", "Privilege", "AirlineAlliance", "Personalization", "Banner", "Message", "Profile", "AppImage", "StampedImage", "UnstampedImage", "StampConfig", "WideLogo", "SecondaryLogo", "Artwork", "PrimaryLogo", "VenueMap", "LocalizedIcon", "LocalizedLogo", "LocalizedAppleLogo", "LocalizedHero", "LocalizedRichHero", "LocalizedEventStrip", "LocalizedStrip", "LocalizedThumbnail", "LocalizedBackground", "LocalizedFooter", "LocalizedSecurity", "LocalizedPrivilege", "LocalizedAirlineAlliance", "LocalizedPersonalization", "LocalizedBanner", "LocalizedMessage", "LocalizedWideLogo", "LocalizedSecondaryLogo", "LocalizedArtwork", "LocalizedPrimaryLogo", "LocalizedVenueMap" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ImageRecord), global::PassKit.Grpc.ImageRecord.Parser, new[]{ "Id", "Name", "Url", "Use", "Languages", "OwnerUsername", "CreatedAt", "UpdatedAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ProfileImageInput), global::PassKit.Grpc.ProfileImageInput.Parser, new[]{ "ImageData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.MultipleImages), global::PassKit.Grpc.MultipleImages.Parser, new[]{ "Images" }, null, null, null, null),
@@ -152,7 +154,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("icon")] Icon = 0,
     /// <summary>
-    /// Logo is circle-cropped by Google Pay, a 15% safety margin is recommended (660px x 660px).
+    /// Logo is circle-cropped by Google Wallet, a 15% safety margin is recommended (660px x 660px).
     /// </summary>
     [pbr::OriginalName("logo")] Logo = 1,
     /// <summary>
@@ -160,9 +162,13 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("appleLogo")] AppleLogo = 2,
     /// <summary>
-    /// Hero is the Google Pay strip and is also used in the dialog box when installing (1032px x 336px).
+    /// Hero is the Google Wallet strip and is also used in the dialog box when installing (1032px x 336px).
     /// </summary>
     [pbr::OriginalName("hero")] Hero = 3,
+    /// <summary>
+    /// RichHero is the Google Wallet full face image for passes issued after late 2026 (1032px x 812px).
+    /// </summary>
+    [pbr::OriginalName("richHero")] RichHero = 26,
     /// <summary>
     /// Apple Wallet strip image for EventTicket pass types (1125px x 294px).
     /// </summary>
@@ -186,17 +192,17 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("footer")] Footer = 8,
     /// <summary>
-    /// Google Pay - used to denote a security program on boarding pass types (E.g. TSA PreCheck®).  Width of 1600px is.
+    /// Google Wallet - used to denote a security program on boarding pass types (E.g. TSA PreCheck®).  Width of 1600px is.
     /// shared with the boarding privilege logo (&lt;=1600px x 80px).
     /// </summary>
     [pbr::OriginalName("security")] Security = 9,
     /// <summary>
-    /// Google Pay - used to denote a boarding privilege.  Width of 1600px is shared with the security program logo.
+    /// Google Wallet - used to denote a boarding privilege.  Width of 1600px is shared with the security program logo.
     /// (&lt;=1600px x 80px)
     /// </summary>
     [pbr::OriginalName("privilege")] Privilege = 10,
     /// <summary>
-    /// Google Pay - used to denote airline alliance on boarding pass types (&lt;=1600px x 80px).
+    /// Google Wallet - used to denote airline alliance on boarding pass types (&lt;=1600px x 80px).
     /// </summary>
     [pbr::OriginalName("airlineAlliance")] AirlineAlliance = 11,
     /// <summary>
@@ -209,7 +215,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("banner")] Banner = 13,
     /// <summary>
-    /// used for Google Pay in wallet promotional messages - for Apple Pay, the message will be rendered on a mobile
+    /// used for Google Wallet in wallet promotional messages - for Apple Pay, the message will be rendered on a mobile
     /// website (1860px x &lt;=930px).
     /// </summary>
     [pbr::OriginalName("message")] Message = 14,
@@ -218,7 +224,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("profile")] Profile = 15,
     /// <summary>
-    /// used for user App images in Google Pay (Google approval required, 300px x 300px).
+    /// used for user App images in Google Wallet (Google approval required, 300px x 300px).
     /// </summary>
     [pbr::OriginalName("appImage")] AppImage = 16,
     /// <summary>
@@ -300,6 +306,7 @@ namespace PassKit.Grpc {
       logo_ = other.logo_;
       appleLogo_ = other.appleLogo_;
       hero_ = other.hero_;
+      richHero_ = other.richHero_;
       eventStrip_ = other.eventStrip_;
       strip_ = other.strip_;
       thumbnail_ = other.thumbnail_;
@@ -349,7 +356,7 @@ namespace PassKit.Grpc {
     public const int LogoFieldNumber = 2;
     private string logo_ = "";
     /// <summary>
-    /// Logo is circle-cropped by Google Pay, a 15% safety margin is recommended (660px x 660px).
+    /// Logo is circle-cropped by Google Wallet, a 15% safety margin is recommended (660px x 660px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -379,7 +386,7 @@ namespace PassKit.Grpc {
     public const int HeroFieldNumber = 4;
     private string hero_ = "";
     /// <summary>
-    /// Google Pay hero strip and install dialog. (1032px x 336px).
+    /// Google Wallet hero strip and install dialog. (1032px x 336px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -387,6 +394,21 @@ namespace PassKit.Grpc {
       get { return hero_; }
       set {
         hero_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "richHero" field.</summary>
+    public const int RichHeroFieldNumber = 26;
+    private string richHero_ = "";
+    /// <summary>
+    /// RichHero is the Google Wallet full face image for passes issued after late 2026 (1032px x 812px).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RichHero {
+      get { return richHero_; }
+      set {
+        richHero_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -469,7 +491,7 @@ namespace PassKit.Grpc {
     public const int SecurityFieldNumber = 10;
     private string security_ = "";
     /// <summary>
-    /// Google Pay boarding pass security program (e.g. TSA PreCheck®). (≤1600px x 80px).
+    /// Google Wallet boarding pass security program (e.g. TSA PreCheck®). (≤1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -484,7 +506,7 @@ namespace PassKit.Grpc {
     public const int PrivilegeFieldNumber = 11;
     private string privilege_ = "";
     /// <summary>
-    /// Google Pay boarding privilege logo. Shares width with security. (≤1600px x 80px).
+    /// Google Wallet boarding privilege logo. Shares width with security. (≤1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -499,7 +521,7 @@ namespace PassKit.Grpc {
     public const int AirlineAllianceFieldNumber = 12;
     private string airlineAlliance_ = "";
     /// <summary>
-    /// Google Pay airline alliance logo for boarding passes. (≤1600px x 80px).
+    /// Google Wallet airline alliance logo for boarding passes. (≤1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -574,7 +596,7 @@ namespace PassKit.Grpc {
     public const int AppImageFieldNumber = 17;
     private string appImage_ = "";
     /// <summary>
-    /// Google Pay app image - Requires Google pre-authorization (300px x 300px).
+    /// Google Wallet app image - Requires Google pre-authorization (300px x 300px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -724,6 +746,7 @@ namespace PassKit.Grpc {
       if (Logo != other.Logo) return false;
       if (AppleLogo != other.AppleLogo) return false;
       if (Hero != other.Hero) return false;
+      if (RichHero != other.RichHero) return false;
       if (EventStrip != other.EventStrip) return false;
       if (Strip != other.Strip) return false;
       if (Thumbnail != other.Thumbnail) return false;
@@ -756,6 +779,7 @@ namespace PassKit.Grpc {
       if (Logo.Length != 0) hash ^= Logo.GetHashCode();
       if (AppleLogo.Length != 0) hash ^= AppleLogo.GetHashCode();
       if (Hero.Length != 0) hash ^= Hero.GetHashCode();
+      if (RichHero.Length != 0) hash ^= RichHero.GetHashCode();
       if (EventStrip.Length != 0) hash ^= EventStrip.GetHashCode();
       if (Strip.Length != 0) hash ^= Strip.GetHashCode();
       if (Thumbnail.Length != 0) hash ^= Thumbnail.GetHashCode();
@@ -895,6 +919,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(202, 1);
         output.WriteString(VenueMap);
       }
+      if (RichHero.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(RichHero);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1005,6 +1033,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(202, 1);
         output.WriteString(VenueMap);
       }
+      if (RichHero.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(RichHero);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1026,6 +1058,9 @@ namespace PassKit.Grpc {
       }
       if (Hero.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Hero);
+      }
+      if (RichHero.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(RichHero);
       }
       if (EventStrip.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EventStrip);
@@ -1113,6 +1148,9 @@ namespace PassKit.Grpc {
       }
       if (other.Hero.Length != 0) {
         Hero = other.Hero;
+      }
+      if (other.RichHero.Length != 0) {
+        RichHero = other.RichHero;
       }
       if (other.EventStrip.Length != 0) {
         EventStrip = other.EventStrip;
@@ -1296,6 +1334,10 @@ namespace PassKit.Grpc {
             VenueMap = input.ReadString();
             break;
           }
+          case 210: {
+            RichHero = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1415,6 +1457,10 @@ namespace PassKit.Grpc {
             VenueMap = input.ReadString();
             break;
           }
+          case 210: {
+            RichHero = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -1464,6 +1510,7 @@ namespace PassKit.Grpc {
       logo_ = other.logo_;
       appleLogo_ = other.appleLogo_;
       hero_ = other.hero_;
+      richHero_ = other.richHero_;
       eventStrip_ = other.eventStrip_;
       strip_ = other.strip_;
       thumbnail_ = other.thumbnail_;
@@ -1489,6 +1536,7 @@ namespace PassKit.Grpc {
       localizedLogo_ = other.localizedLogo_ != null ? other.localizedLogo_.Clone() : null;
       localizedAppleLogo_ = other.localizedAppleLogo_ != null ? other.localizedAppleLogo_.Clone() : null;
       localizedHero_ = other.localizedHero_ != null ? other.localizedHero_.Clone() : null;
+      localizedRichHero_ = other.localizedRichHero_ != null ? other.localizedRichHero_.Clone() : null;
       localizedEventStrip_ = other.localizedEventStrip_ != null ? other.localizedEventStrip_.Clone() : null;
       localizedStrip_ = other.localizedStrip_ != null ? other.localizedStrip_.Clone() : null;
       localizedThumbnail_ = other.localizedThumbnail_ != null ? other.localizedThumbnail_.Clone() : null;
@@ -1533,7 +1581,7 @@ namespace PassKit.Grpc {
     public const int LogoFieldNumber = 2;
     private string logo_ = "";
     /// <summary>
-    /// Logo is circle-cropped by Google Pay, a 15% safety margin is recommended (660px x 660px).
+    /// Logo is circle-cropped by Google Wallet, a 15% safety margin is recommended (660px x 660px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1563,7 +1611,7 @@ namespace PassKit.Grpc {
     public const int HeroFieldNumber = 4;
     private string hero_ = "";
     /// <summary>
-    /// Hero is the Google Pay strip and is also used in the dialog box when installing (1032px x 336px).
+    /// Hero is the Google Wallet strip and is also used in the dialog box when installing (1032px x 336px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1571,6 +1619,21 @@ namespace PassKit.Grpc {
       get { return hero_; }
       set {
         hero_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "richHero" field.</summary>
+    public const int RichHeroFieldNumber = 26;
+    private string richHero_ = "";
+    /// <summary>
+    /// RichHero is the Google Wallet full face image for passes issued after late 2026 (1032px x 812px).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RichHero {
+      get { return richHero_; }
+      set {
+        richHero_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1653,7 +1716,7 @@ namespace PassKit.Grpc {
     public const int SecurityFieldNumber = 10;
     private string security_ = "";
     /// <summary>
-    /// Google Pay - used to denote a security program on boarding pass types (E.g. TSA PreCheck®).  Width of 1600px is shared with the boarding privilege logo (&lt;=1600px x 80px).
+    /// Google Wallet - used to denote a security program on boarding pass types (E.g. TSA PreCheck®).  Width of 1600px is shared with the boarding privilege logo (&lt;=1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1668,7 +1731,7 @@ namespace PassKit.Grpc {
     public const int PrivilegeFieldNumber = 11;
     private string privilege_ = "";
     /// <summary>
-    /// Google Pay - used to denote a boarding privilege.  Width of 1600px is shared with the security program logo (&lt;=1600px x 80px).
+    /// Google Wallet - used to denote a boarding privilege.  Width of 1600px is shared with the security program logo (&lt;=1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1683,7 +1746,7 @@ namespace PassKit.Grpc {
     public const int AirlineAllianceFieldNumber = 12;
     private string airlineAlliance_ = "";
     /// <summary>
-    /// Google Pay - used to denote airline alliance on boarding pass types (&lt;=1600px x 80px).
+    /// Google Wallet - used to denote airline alliance on boarding pass types (&lt;=1600px x 80px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1728,7 +1791,7 @@ namespace PassKit.Grpc {
     public const int MessageFieldNumber = 15;
     private string message_ = "";
     /// <summary>
-    /// Used for Google Pay in wallet promotional messages - for Apple Pay, the message will be rendered on a mobile website (1860px x &lt;=930px).
+    /// Used for Google Wallet in wallet promotional messages - for Apple Pay, the message will be rendered on a mobile website (1860px x &lt;=930px).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1758,7 +1821,7 @@ namespace PassKit.Grpc {
     public const int AppImageFieldNumber = 17;
     private string appImage_ = "";
     /// <summary>
-    /// Used for user app images in Google Pay Passes (300px x 300px). Cannot be localized.
+    /// Used for user app images in Google Wallet Passes (300px x 300px). Cannot be localized.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1946,6 +2009,21 @@ namespace PassKit.Grpc {
       get { return localizedHero_; }
       set {
         localizedHero_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "localizedRichHero" field.</summary>
+    public const int LocalizedRichHeroFieldNumber = 51;
+    private global::PassKit.Grpc.LocalizedString localizedRichHero_;
+    /// <summary>
+    /// Sets different richHero images for non-default languages.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PassKit.Grpc.LocalizedString LocalizedRichHero {
+      get { return localizedRichHero_; }
+      set {
+        localizedRichHero_ = value;
       }
     }
 
@@ -2208,6 +2286,7 @@ namespace PassKit.Grpc {
       if (Logo != other.Logo) return false;
       if (AppleLogo != other.AppleLogo) return false;
       if (Hero != other.Hero) return false;
+      if (RichHero != other.RichHero) return false;
       if (EventStrip != other.EventStrip) return false;
       if (Strip != other.Strip) return false;
       if (Thumbnail != other.Thumbnail) return false;
@@ -2233,6 +2312,7 @@ namespace PassKit.Grpc {
       if (!object.Equals(LocalizedLogo, other.LocalizedLogo)) return false;
       if (!object.Equals(LocalizedAppleLogo, other.LocalizedAppleLogo)) return false;
       if (!object.Equals(LocalizedHero, other.LocalizedHero)) return false;
+      if (!object.Equals(LocalizedRichHero, other.LocalizedRichHero)) return false;
       if (!object.Equals(LocalizedEventStrip, other.LocalizedEventStrip)) return false;
       if (!object.Equals(LocalizedStrip, other.LocalizedStrip)) return false;
       if (!object.Equals(LocalizedThumbnail, other.LocalizedThumbnail)) return false;
@@ -2260,6 +2340,7 @@ namespace PassKit.Grpc {
       if (Logo.Length != 0) hash ^= Logo.GetHashCode();
       if (AppleLogo.Length != 0) hash ^= AppleLogo.GetHashCode();
       if (Hero.Length != 0) hash ^= Hero.GetHashCode();
+      if (RichHero.Length != 0) hash ^= RichHero.GetHashCode();
       if (EventStrip.Length != 0) hash ^= EventStrip.GetHashCode();
       if (Strip.Length != 0) hash ^= Strip.GetHashCode();
       if (Thumbnail.Length != 0) hash ^= Thumbnail.GetHashCode();
@@ -2285,6 +2366,7 @@ namespace PassKit.Grpc {
       if (localizedLogo_ != null) hash ^= LocalizedLogo.GetHashCode();
       if (localizedAppleLogo_ != null) hash ^= LocalizedAppleLogo.GetHashCode();
       if (localizedHero_ != null) hash ^= LocalizedHero.GetHashCode();
+      if (localizedRichHero_ != null) hash ^= LocalizedRichHero.GetHashCode();
       if (localizedEventStrip_ != null) hash ^= LocalizedEventStrip.GetHashCode();
       if (localizedStrip_ != null) hash ^= LocalizedStrip.GetHashCode();
       if (localizedThumbnail_ != null) hash ^= LocalizedThumbnail.GetHashCode();
@@ -2419,6 +2501,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(202, 1);
         output.WriteString(VenueMap);
       }
+      if (RichHero.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(RichHero);
+      }
       if (localizedIcon_ != null) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(LocalizedIcon);
@@ -2498,6 +2584,10 @@ namespace PassKit.Grpc {
       if (localizedVenueMap_ != null) {
         output.WriteRawTag(146, 3);
         output.WriteMessage(LocalizedVenueMap);
+      }
+      if (localizedRichHero_ != null) {
+        output.WriteRawTag(154, 3);
+        output.WriteMessage(LocalizedRichHero);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2609,6 +2699,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(202, 1);
         output.WriteString(VenueMap);
       }
+      if (RichHero.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(RichHero);
+      }
       if (localizedIcon_ != null) {
         output.WriteRawTag(250, 1);
         output.WriteMessage(LocalizedIcon);
@@ -2689,6 +2783,10 @@ namespace PassKit.Grpc {
         output.WriteRawTag(146, 3);
         output.WriteMessage(LocalizedVenueMap);
       }
+      if (localizedRichHero_ != null) {
+        output.WriteRawTag(154, 3);
+        output.WriteMessage(LocalizedRichHero);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2710,6 +2808,9 @@ namespace PassKit.Grpc {
       }
       if (Hero.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Hero);
+      }
+      if (RichHero.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(RichHero);
       }
       if (EventStrip.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EventStrip);
@@ -2786,6 +2887,9 @@ namespace PassKit.Grpc {
       if (localizedHero_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedHero);
       }
+      if (localizedRichHero_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedRichHero);
+      }
       if (localizedEventStrip_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocalizedEventStrip);
       }
@@ -2857,6 +2961,9 @@ namespace PassKit.Grpc {
       }
       if (other.Hero.Length != 0) {
         Hero = other.Hero;
+      }
+      if (other.RichHero.Length != 0) {
+        RichHero = other.RichHero;
       }
       if (other.EventStrip.Length != 0) {
         EventStrip = other.EventStrip;
@@ -2947,6 +3054,12 @@ namespace PassKit.Grpc {
           LocalizedHero = new global::PassKit.Grpc.LocalizedString();
         }
         LocalizedHero.MergeFrom(other.LocalizedHero);
+      }
+      if (other.localizedRichHero_ != null) {
+        if (localizedRichHero_ == null) {
+          LocalizedRichHero = new global::PassKit.Grpc.LocalizedString();
+        }
+        LocalizedRichHero.MergeFrom(other.LocalizedRichHero);
       }
       if (other.localizedEventStrip_ != null) {
         if (localizedEventStrip_ == null) {
@@ -3166,6 +3279,10 @@ namespace PassKit.Grpc {
             VenueMap = input.ReadString();
             break;
           }
+          case 210: {
+            RichHero = input.ReadString();
+            break;
+          }
           case 250: {
             if (localizedIcon_ == null) {
               LocalizedIcon = new global::PassKit.Grpc.LocalizedString();
@@ -3304,6 +3421,13 @@ namespace PassKit.Grpc {
               LocalizedVenueMap = new global::PassKit.Grpc.LocalizedString();
             }
             input.ReadMessage(LocalizedVenueMap);
+            break;
+          }
+          case 410: {
+            if (localizedRichHero_ == null) {
+              LocalizedRichHero = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedRichHero);
             break;
           }
         }
@@ -3428,6 +3552,10 @@ namespace PassKit.Grpc {
             VenueMap = input.ReadString();
             break;
           }
+          case 210: {
+            RichHero = input.ReadString();
+            break;
+          }
           case 250: {
             if (localizedIcon_ == null) {
               LocalizedIcon = new global::PassKit.Grpc.LocalizedString();
@@ -3566,6 +3694,13 @@ namespace PassKit.Grpc {
               LocalizedVenueMap = new global::PassKit.Grpc.LocalizedString();
             }
             input.ReadMessage(LocalizedVenueMap);
+            break;
+          }
+          case 410: {
+            if (localizedRichHero_ == null) {
+              LocalizedRichHero = new global::PassKit.Grpc.LocalizedString();
+            }
+            input.ReadMessage(LocalizedRichHero);
             break;
           }
         }

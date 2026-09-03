@@ -68,6 +68,8 @@ namespace PassKit.Grpc {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.PasswordResetInput> __Marshaller_io_PasswordResetInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.PasswordResetInput.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.ChangeOwnPasswordInput> __Marshaller_io_ChangeOwnPasswordInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ChangeOwnPasswordInput.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Email> __Marshaller_io_Email = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Email.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.ConfirmEmailChangeInput> __Marshaller_io_ConfirmEmailChangeInput = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ConfirmEmailChangeInput.Parser));
@@ -183,6 +185,14 @@ namespace PassKit.Grpc {
         "changePassword",
         __Marshaller_io_PasswordResetInput,
         __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.ChangeOwnPasswordInput, global::PassKit.Grpc.JWT> __Method_changeOwnPassword = new grpc::Method<global::PassKit.Grpc.ChangeOwnPasswordInput, global::PassKit.Grpc.JWT>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "changeOwnPassword",
+        __Marshaller_io_ChangeOwnPasswordInput,
+        __Marshaller_io_JWT);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.Email, global::Google.Protobuf.WellKnownTypes.Empty> __Method_changeEmail = new grpc::Method<global::PassKit.Grpc.Email, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -912,6 +922,54 @@ namespace PassKit.Grpc {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> changePasswordAsync(global::PassKit.Grpc.PasswordResetInput request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_changePassword, null, options, request);
+      }
+      /// <summary>
+      /// Changes the currently authenticated user's password. Requires a valid auth token and the current password. Required Fields: currentPassword, newPassword, confirmNewPassword.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.JWT changeOwnPassword(global::PassKit.Grpc.ChangeOwnPasswordInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return changeOwnPassword(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Changes the currently authenticated user's password. Requires a valid auth token and the current password. Required Fields: currentPassword, newPassword, confirmNewPassword.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.JWT changeOwnPassword(global::PassKit.Grpc.ChangeOwnPasswordInput request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_changeOwnPassword, null, options, request);
+      }
+      /// <summary>
+      /// Changes the currently authenticated user's password. Requires a valid auth token and the current password. Required Fields: currentPassword, newPassword, confirmNewPassword.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.JWT> changeOwnPasswordAsync(global::PassKit.Grpc.ChangeOwnPasswordInput request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return changeOwnPasswordAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Changes the currently authenticated user's password. Requires a valid auth token and the current password. Required Fields: currentPassword, newPassword, confirmNewPassword.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.JWT> changeOwnPasswordAsync(global::PassKit.Grpc.ChangeOwnPasswordInput request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_changeOwnPassword, null, options, request);
       }
       /// <summary>
       /// Initiates email change. Verification email is sent to new address. Required Fields: email.

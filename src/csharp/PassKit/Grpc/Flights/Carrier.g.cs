@@ -157,7 +157,7 @@ namespace PassKit.Grpc.Flights {
     public const int AirlineNameFieldNumber = 4;
     private string airlineName_ = "";
     /// <summary>
-    /// The name of the airline. This will be printed below the logo on the Google Pay pass.
+    /// The name of the airline. This is printed below the logo on the Google Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

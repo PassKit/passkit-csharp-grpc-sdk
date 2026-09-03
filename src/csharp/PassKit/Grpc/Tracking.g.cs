@@ -159,7 +159,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("GA_PP_EVENT_VIEW_PASS_IN_APPLE_WALLET_CLICK")] GaPpEventViewPassInAppleWalletClick = 3,
     /// <summary>
-    /// When a user clicks the Save to Google Pay button.
+    /// When a user clicks the Save to Google Wallet button.
     /// </summary>
     [pbr::OriginalName("GA_PP_EVENT_SAVE_TO_GOOGLE_PAY_CLICK")] GaPpEventSaveToGooglePayClick = 4,
     /// <summary>

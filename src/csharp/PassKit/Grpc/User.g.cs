@@ -58,85 +58,87 @@ namespace PassKit.Grpc {
             "by5BZGRyZXNzIlgKC0NyZWRlbnRpYWxzEhAKCHVzZXJuYW1lGAEgASgJEhAK",
             "CHBhc3N3b3JkGAIgASgJEhIKCnR3b0ZBVG9rZW4YAyABKAkSEQoJdHdvRkFD",
             "b2RlGAQgASgJIisKDVZlcmlmeVJlcXVlc3QSCwoDdWlkGAEgASgJEg0KBXRv",
-            "a2VuGAIgASgJIhQKA0pXVBINCgV0b2tlbhgBIAEoCSJqChJQYXNzd29yZFJl",
-            "c2V0SW5wdXQSCgoCaWQYASABKAkSFwoPcmVnaXN0ZXJlZEVtYWlsGAIgASgJ",
-            "EhMKC25ld1Bhc3N3b3JkGAMgASgJEhoKEmNvbmZpcm1OZXdQYXNzd29yZBgE",
-            "IAEoCSIcCghVc2VybmFtZRIQCgh1c2VybmFtZRgBIAEoCSJrChpPQXV0aDJB",
-            "dXRob3JpemF0aW9uUmVxdWVzdBISCgpjbGllbnRDb2RlGAEgASgJEiQKCHBy",
-            "b3ZpZGVyGAIgASgOMhIuaW8uT0F1dGgyUHJvdmlkZXISEwoLcmVkaXJlY3RV",
-            "cmkYAyABKAkijAIKFFNjYW5uZXJDb25maWd1cmF0aW9uEj8KFW1lbWJlcnNo",
-            "aXBQZXJtaXNzaW9ucxgBIAMoDjIgLmlvLlNjYW5uZXJNZW1iZXJzaGlwUGVy",
-            "bWlzc2lvbnMSNwoRY291cG9uUGVybWlzc2lvbnMYAiADKA4yHC5pby5TY2Fu",
-            "bmVyQ291cG9uUGVybWlzc2lvbnMSQAoXZGVmYXVsdE1lbWJlcnNoaXBBY3Rp",
-            "b24YAyADKA4yHy5pby5EZWZhdWx0TWVtYmVyc2hpcFNjYW5BY3Rpb24SOAoT",
-            "ZGVmYXVsdENvdXBvbkFjdGlvbhgEIAMoDjIbLmlvLkRlZmF1bHRDb3Vwb25T",
-            "Y2FuQWN0aW9uIhYKBUVtYWlsEg0KBWVtYWlsGAEgASgJIkwKF0NvbmZpcm1F",
-            "bWFpbENoYW5nZUlucHV0EhAKCHVzZXJuYW1lGAEgASgJEhAKCHBhc3N3b3Jk",
-            "GAIgASgJEg0KBXRva2VuGAMgASgJIiIKC0NvbXBhbnlOYW1lEhMKC2NvbXBh",
-            "bnlOYW1lGAEgASgJIloKFERlbGV0ZUFjY291bnRSZXF1ZXN0EhAKCHVzZXJu",
-            "YW1lGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJEh4KFmNvbmZpcm1QZXJtYW5l",
-            "bnREZWxldGUYAyABKAgiIAoMUHJvamVjdHNMaXN0EhAKCHByb2plY3RzGAEg",
-            "AygJIigKEENlcnRpZmljYXRlc0xpc3QSFAoMY2VydGlmaWNhdGVzGAEgAygJ",
-            "IiAKDFByb3RvY29sTGlzdBIQCghjbGFzc0lkcxgBIAMoCSKMAwoTUmVzb3Vy",
-            "Y2VQZXJtaXNzaW9ucxIrCg9hbGxvd2VkUHJvamVjdHMYASABKAsyEC5pby5Q",
-            "cm9qZWN0c0xpc3RIABIuChJkaXNhbGxvd2VkUHJvamVjdHMYAiABKAsyEC5p",
-            "by5Qcm9qZWN0c0xpc3RIABIzChNhbGxvd2VkQ2VydGlmaWNhdGVzGAMgASgL",
-            "MhQuaW8uQ2VydGlmaWNhdGVzTGlzdEgBEjYKFmRpc2FsbG93ZWRDZXJ0aWZp",
-            "Y2F0ZXMYBCABKAsyFC5pby5DZXJ0aWZpY2F0ZXNMaXN0SAESKwoPYWxsb3dl",
-            "ZFByb2dyYW1zGAUgASgLMhAuaW8uUHJvdG9jb2xMaXN0SAISLgoSZGlzYWxs",
-            "b3dlZFByb2dyYW1zGAYgASgLMhAuaW8uUHJvdG9jb2xMaXN0SAJCFAoSUHJv",
-            "amVjdFBlcm1pc3Npb25zQhgKFkNlcnRpZmljYXRlUGVybWlzc2lvbnNCHgoc",
-            "TWVtYmVyc2hpcFByb2dyYW1QZXJtaXNzaW9ucyKXAgoVVGVhbU1lbWJlclBl",
-            "cm1pc3Npb25zEgoKAmlkGAEgASgJEg4KBnVzZXJJZBgCIAEoCRIsCg9wZXJt",
-            "aXNzaW9uU2NvcGUYAyABKA4yEy5pby5QZXJtaXNzaW9uU2NvcGUSJAoGc3Rh",
-            "dHVzGAQgASgOMhQuaW8uVGVhbU1lbWJlclN0YXR1cxI0ChNyZXNvdXJjZVBl",
-            "cm1pc3Npb25zGAUgASgLMhcuaW8uUmVzb3VyY2VQZXJtaXNzaW9ucxIrCgdj",
-            "cmVhdGVkGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIrCgd1",
-            "cGRhdGVkGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJaCg1O",
-            "ZXdUZWFtTWVtYmVyEhkKBHVzZXIYASABKAsyCy5pby5OZXdVc2VyEi4KC3Bl",
-            "cm1pc3Npb25zGAIgASgLMhkuaW8uVGVhbU1lbWJlclBlcm1pc3Npb25zImoK",
-            "FUdldFRlYW1NZW1iZXJSZXNwb25zZRIhCgR1c2VyGAEgASgLMhMuaW8uR2V0",
-            "VXNlclJlc3BvbnNlEi4KC3Blcm1pc3Npb25zGAIgASgLMhkuaW8uVGVhbU1l",
-            "bWJlclBlcm1pc3Npb25zIlsKF0xpc3RUZWFtTWVtYmVyc1Jlc3BvbnNlEgsK",
-            "A3VpZBgBIAEoCRINCgVlbWFpbBgCIAEoCRIkCgZzdGF0dXMYAyABKA4yFC5p",
-            "by5UZWFtTWVtYmVyU3RhdHVzIhoKCVJlY2FwdGNoYRINCgV0b2tlbhgBIAEo",
-            "CSpxCg5PQXV0aDJQcm92aWRlchIUChBPQVVUSF9ET19OT1RfVVNFEAASEQoN",
-            "T0FVVEhfUEFUUkVPThAKEhAKDE9BVVRIX1NQUk9VVBAyEhMKD09BVVRIX01B",
-            "SUxDSElNUBBkEg8KCk9BVVRIX1hFUk8QlgEqxgMKHFNjYW5uZXJNZW1iZXJz",
-            "aGlwUGVybWlzc2lvbnMSHgoaTUVNQkVSU0hJUF9QRVJNSVNTSU9OX05PTkUQ",
-            "ABIlCiFNRU1CRVJTSElQX1BFUk1JU1NJT05fVklFV19NRU1CRVIQARIlCiFN",
-            "RU1CRVJTSElQX1BFUk1JU1NJT05fRURJVF9NRU1CRVIQAhIlCiFNRU1CRVJT",
-            "SElQX1BFUk1JU1NJT05fRUFSTl9QT0lOVFMQBBIlCiFNRU1CRVJTSElQX1BF",
-            "Uk1JU1NJT05fQlVSTl9QT0lOVFMQCBIkCiBNRU1CRVJTSElQX1BFUk1JU1NJ",
-            "T05fU0VUX1BPSU5UUxAQEiUKIU1FTUJFUlNISVBfUEVSTUlTU0lPTl9DSEFO",
-            "R0VfVElFUhAgEiUKIU1FTUJFUlNISVBfUEVSTUlTU0lPTl9WSUVXX0VWRU5U",
-            "UxBAEigKI01FTUJFUlNISVBfUEVSTUlTU0lPTl9DSEFOR0VfRVhQSVJZEIAB",
-            "EicKIk1FTUJFUlNISVBfUEVSTUlTU0lPTl9DSEVDS19JTl9PVVQQgAISIwoe",
-            "TUVNQkVSU0hJUF9QRVJNSVNTSU9OX1ZBTElEQVRFEIAEKoICChhTY2FubmVy",
-            "Q291cG9uUGVybWlzc2lvbnMSGgoWQ09VUE9OX1BFUk1JU1NJT05fTk9ORRAA",
-            "EiEKHUNPVVBPTl9QRVJNSVNTSU9OX1ZJRVdfQ09VUE9OEAESIQodQ09VUE9O",
-            "X1BFUk1JU1NJT05fRURJVF9DT1VQT04QAhIcChhDT1VQT05fUEVSTUlTU0lP",
-            "Tl9SRURFRU0QBBIhCh1DT1VQT05fUEVSTUlTU0lPTl9WSUVXX0VWRU5UUxAI",
-            "EiMKH0NPVVBPTl9QRVJNSVNTSU9OX0NIQU5HRV9FWFBJUlkQEBIeChpDT1VQ",
-            "T05fUEVSTUlTU0lPTl9WQUxJREFURRAgKsgBChtEZWZhdWx0TWVtYmVyc2hp",
-            "cFNjYW5BY3Rpb24SGwoXTUVNQkVSU0hJUF9ERUZBVUxUX05PTkUQABIiCh5N",
-            "RU1CRVJTSElQX0RFRkFVTFRfRUFSTl9QT0lOVFMQARIiCh5NRU1CRVJTSElQ",
-            "X0RFRkFVTFRfQlVSTl9QT0lOVFMQAhIjCh9NRU1CRVJTSElQX0RFRkFVTFRf",
-            "Q0hFQ0tfSU5fT1VUEAQSHwobTUVNQkVSU0hJUF9ERUZBVUxUX1ZBTElEQVRF",
-            "EAgqagoXRGVmYXVsdENvdXBvblNjYW5BY3Rpb24SFwoTQ09VUE9OX0RFRkFV",
-            "TFRfTk9ORRAAEhkKFUNPVVBPTl9ERUZBVUxUX1JFREVFTRABEhsKF0NPVVBP",
-            "Tl9ERUZBVUxUX1ZBTElEQVRFEAIqhQIKD1Blcm1pc3Npb25TY29wZRITCg9Q",
-            "RVJNSVNTSU9OX05PTkUQABIOCgpXRUJfQUNDRVNTEAESDgoKQVBQX0FDQ0VT",
-            "UxACEhAKDEFMTF9QUk9KRUNUUxAEEhQKEEFMTF9DRVJUSUZJQ0FURVMQCBIS",
-            "Cg5CSUxMSU5HX0FDQ0VTUxAQEhcKE0NFUlRJRklDQVRFU19BQ0NFU1MQIBIS",
-            "Cg5NRU1CRVJTX0FDQ0VTUxBAEhMKDkNPVVBPTlNfQUNDRVNTEIABEhIKDUVW",
-            "RU5UU19BQ0NFU1MQgAISEwoORkxJR0hUU19BQ0NFU1MQgAQSFgoRVEVBTV9N",
-            "RU1CRVJfQURNSU4QgAgqhwEKEFRlYW1NZW1iZXJTdGF0dXMSDwoLU1RBVFVT",
-            "X05PTkUQABIWChJURUFNX01FTUJFUl9BQ1RJVkUQARIYChRURUFNX01FTUJF",
-            "Ul9ESVNBQkxFRBACEhcKE1RFQU1fTUVNQkVSX0VYUElSRUQQBBIXChNURUFN",
-            "X01FTUJFUl9QRU5ESU5HEAhCRwoQY29tLnBhc3NraXQuZ3JwY1okc3Rhc2gu",
-            "cGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFzc0tpdC5HcnBj",
-            "YgZwcm90bzM="));
+            "a2VuGAIgASgJIhQKA0pXVBINCgV0b2tlbhgBIAEoCSJjChJQYXNzd29yZFJl",
+            "c2V0SW5wdXQSCgoCaWQYASABKAkSEAoIdXNlcm5hbWUYAiABKAkSEwoLbmV3",
+            "UGFzc3dvcmQYAyABKAkSGgoSY29uZmlybU5ld1Bhc3N3b3JkGAQgASgJImIK",
+            "FkNoYW5nZU93blBhc3N3b3JkSW5wdXQSFwoPY3VycmVudFBhc3N3b3JkGAEg",
+            "ASgJEhMKC25ld1Bhc3N3b3JkGAIgASgJEhoKEmNvbmZpcm1OZXdQYXNzd29y",
+            "ZBgDIAEoCSIcCghVc2VybmFtZRIQCgh1c2VybmFtZRgBIAEoCSJrChpPQXV0",
+            "aDJBdXRob3JpemF0aW9uUmVxdWVzdBISCgpjbGllbnRDb2RlGAEgASgJEiQK",
+            "CHByb3ZpZGVyGAIgASgOMhIuaW8uT0F1dGgyUHJvdmlkZXISEwoLcmVkaXJl",
+            "Y3RVcmkYAyABKAkijAIKFFNjYW5uZXJDb25maWd1cmF0aW9uEj8KFW1lbWJl",
+            "cnNoaXBQZXJtaXNzaW9ucxgBIAMoDjIgLmlvLlNjYW5uZXJNZW1iZXJzaGlw",
+            "UGVybWlzc2lvbnMSNwoRY291cG9uUGVybWlzc2lvbnMYAiADKA4yHC5pby5T",
+            "Y2FubmVyQ291cG9uUGVybWlzc2lvbnMSQAoXZGVmYXVsdE1lbWJlcnNoaXBB",
+            "Y3Rpb24YAyADKA4yHy5pby5EZWZhdWx0TWVtYmVyc2hpcFNjYW5BY3Rpb24S",
+            "OAoTZGVmYXVsdENvdXBvbkFjdGlvbhgEIAMoDjIbLmlvLkRlZmF1bHRDb3Vw",
+            "b25TY2FuQWN0aW9uIhYKBUVtYWlsEg0KBWVtYWlsGAEgASgJIkwKF0NvbmZp",
+            "cm1FbWFpbENoYW5nZUlucHV0EhAKCHVzZXJuYW1lGAEgASgJEhAKCHBhc3N3",
+            "b3JkGAIgASgJEg0KBXRva2VuGAMgASgJIiIKC0NvbXBhbnlOYW1lEhMKC2Nv",
+            "bXBhbnlOYW1lGAEgASgJIloKFERlbGV0ZUFjY291bnRSZXF1ZXN0EhAKCHVz",
+            "ZXJuYW1lGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJEh4KFmNvbmZpcm1QZXJt",
+            "YW5lbnREZWxldGUYAyABKAgiIAoMUHJvamVjdHNMaXN0EhAKCHByb2plY3Rz",
+            "GAEgAygJIigKEENlcnRpZmljYXRlc0xpc3QSFAoMY2VydGlmaWNhdGVzGAEg",
+            "AygJIiAKDFByb3RvY29sTGlzdBIQCghjbGFzc0lkcxgBIAMoCSKMAwoTUmVz",
+            "b3VyY2VQZXJtaXNzaW9ucxIrCg9hbGxvd2VkUHJvamVjdHMYASABKAsyEC5p",
+            "by5Qcm9qZWN0c0xpc3RIABIuChJkaXNhbGxvd2VkUHJvamVjdHMYAiABKAsy",
+            "EC5pby5Qcm9qZWN0c0xpc3RIABIzChNhbGxvd2VkQ2VydGlmaWNhdGVzGAMg",
+            "ASgLMhQuaW8uQ2VydGlmaWNhdGVzTGlzdEgBEjYKFmRpc2FsbG93ZWRDZXJ0",
+            "aWZpY2F0ZXMYBCABKAsyFC5pby5DZXJ0aWZpY2F0ZXNMaXN0SAESKwoPYWxs",
+            "b3dlZFByb2dyYW1zGAUgASgLMhAuaW8uUHJvdG9jb2xMaXN0SAISLgoSZGlz",
+            "YWxsb3dlZFByb2dyYW1zGAYgASgLMhAuaW8uUHJvdG9jb2xMaXN0SAJCFAoS",
+            "UHJvamVjdFBlcm1pc3Npb25zQhgKFkNlcnRpZmljYXRlUGVybWlzc2lvbnNC",
+            "HgocTWVtYmVyc2hpcFByb2dyYW1QZXJtaXNzaW9ucyKXAgoVVGVhbU1lbWJl",
+            "clBlcm1pc3Npb25zEgoKAmlkGAEgASgJEg4KBnVzZXJJZBgCIAEoCRIsCg9w",
+            "ZXJtaXNzaW9uU2NvcGUYAyABKA4yEy5pby5QZXJtaXNzaW9uU2NvcGUSJAoG",
+            "c3RhdHVzGAQgASgOMhQuaW8uVGVhbU1lbWJlclN0YXR1cxI0ChNyZXNvdXJj",
+            "ZVBlcm1pc3Npb25zGAUgASgLMhcuaW8uUmVzb3VyY2VQZXJtaXNzaW9ucxIr",
+            "CgdjcmVhdGVkGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIr",
+            "Cgd1cGRhdGVkGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcCJa",
+            "Cg1OZXdUZWFtTWVtYmVyEhkKBHVzZXIYASABKAsyCy5pby5OZXdVc2VyEi4K",
+            "C3Blcm1pc3Npb25zGAIgASgLMhkuaW8uVGVhbU1lbWJlclBlcm1pc3Npb25z",
+            "ImoKFUdldFRlYW1NZW1iZXJSZXNwb25zZRIhCgR1c2VyGAEgASgLMhMuaW8u",
+            "R2V0VXNlclJlc3BvbnNlEi4KC3Blcm1pc3Npb25zGAIgASgLMhkuaW8uVGVh",
+            "bU1lbWJlclBlcm1pc3Npb25zIlsKF0xpc3RUZWFtTWVtYmVyc1Jlc3BvbnNl",
+            "EgsKA3VpZBgBIAEoCRINCgVlbWFpbBgCIAEoCRIkCgZzdGF0dXMYAyABKA4y",
+            "FC5pby5UZWFtTWVtYmVyU3RhdHVzIhoKCVJlY2FwdGNoYRINCgV0b2tlbhgB",
+            "IAEoCSpxCg5PQXV0aDJQcm92aWRlchIUChBPQVVUSF9ET19OT1RfVVNFEAAS",
+            "EQoNT0FVVEhfUEFUUkVPThAKEhAKDE9BVVRIX1NQUk9VVBAyEhMKD09BVVRI",
+            "X01BSUxDSElNUBBkEg8KCk9BVVRIX1hFUk8QlgEqxgMKHFNjYW5uZXJNZW1i",
+            "ZXJzaGlwUGVybWlzc2lvbnMSHgoaTUVNQkVSU0hJUF9QRVJNSVNTSU9OX05P",
+            "TkUQABIlCiFNRU1CRVJTSElQX1BFUk1JU1NJT05fVklFV19NRU1CRVIQARIl",
+            "CiFNRU1CRVJTSElQX1BFUk1JU1NJT05fRURJVF9NRU1CRVIQAhIlCiFNRU1C",
+            "RVJTSElQX1BFUk1JU1NJT05fRUFSTl9QT0lOVFMQBBIlCiFNRU1CRVJTSElQ",
+            "X1BFUk1JU1NJT05fQlVSTl9QT0lOVFMQCBIkCiBNRU1CRVJTSElQX1BFUk1J",
+            "U1NJT05fU0VUX1BPSU5UUxAQEiUKIU1FTUJFUlNISVBfUEVSTUlTU0lPTl9D",
+            "SEFOR0VfVElFUhAgEiUKIU1FTUJFUlNISVBfUEVSTUlTU0lPTl9WSUVXX0VW",
+            "RU5UUxBAEigKI01FTUJFUlNISVBfUEVSTUlTU0lPTl9DSEFOR0VfRVhQSVJZ",
+            "EIABEicKIk1FTUJFUlNISVBfUEVSTUlTU0lPTl9DSEVDS19JTl9PVVQQgAIS",
+            "IwoeTUVNQkVSU0hJUF9QRVJNSVNTSU9OX1ZBTElEQVRFEIAEKoICChhTY2Fu",
+            "bmVyQ291cG9uUGVybWlzc2lvbnMSGgoWQ09VUE9OX1BFUk1JU1NJT05fTk9O",
+            "RRAAEiEKHUNPVVBPTl9QRVJNSVNTSU9OX1ZJRVdfQ09VUE9OEAESIQodQ09V",
+            "UE9OX1BFUk1JU1NJT05fRURJVF9DT1VQT04QAhIcChhDT1VQT05fUEVSTUlT",
+            "U0lPTl9SRURFRU0QBBIhCh1DT1VQT05fUEVSTUlTU0lPTl9WSUVXX0VWRU5U",
+            "UxAIEiMKH0NPVVBPTl9QRVJNSVNTSU9OX0NIQU5HRV9FWFBJUlkQEBIeChpD",
+            "T1VQT05fUEVSTUlTU0lPTl9WQUxJREFURRAgKsgBChtEZWZhdWx0TWVtYmVy",
+            "c2hpcFNjYW5BY3Rpb24SGwoXTUVNQkVSU0hJUF9ERUZBVUxUX05PTkUQABIi",
+            "Ch5NRU1CRVJTSElQX0RFRkFVTFRfRUFSTl9QT0lOVFMQARIiCh5NRU1CRVJT",
+            "SElQX0RFRkFVTFRfQlVSTl9QT0lOVFMQAhIjCh9NRU1CRVJTSElQX0RFRkFV",
+            "TFRfQ0hFQ0tfSU5fT1VUEAQSHwobTUVNQkVSU0hJUF9ERUZBVUxUX1ZBTElE",
+            "QVRFEAgqagoXRGVmYXVsdENvdXBvblNjYW5BY3Rpb24SFwoTQ09VUE9OX0RF",
+            "RkFVTFRfTk9ORRAAEhkKFUNPVVBPTl9ERUZBVUxUX1JFREVFTRABEhsKF0NP",
+            "VVBPTl9ERUZBVUxUX1ZBTElEQVRFEAIqhQIKD1Blcm1pc3Npb25TY29wZRIT",
+            "Cg9QRVJNSVNTSU9OX05PTkUQABIOCgpXRUJfQUNDRVNTEAESDgoKQVBQX0FD",
+            "Q0VTUxACEhAKDEFMTF9QUk9KRUNUUxAEEhQKEEFMTF9DRVJUSUZJQ0FURVMQ",
+            "CBISCg5CSUxMSU5HX0FDQ0VTUxAQEhcKE0NFUlRJRklDQVRFU19BQ0NFU1MQ",
+            "IBISCg5NRU1CRVJTX0FDQ0VTUxBAEhMKDkNPVVBPTlNfQUNDRVNTEIABEhIK",
+            "DUVWRU5UU19BQ0NFU1MQgAISEwoORkxJR0hUU19BQ0NFU1MQgAQSFgoRVEVB",
+            "TV9NRU1CRVJfQURNSU4QgAgqhwEKEFRlYW1NZW1iZXJTdGF0dXMSDwoLU1RB",
+            "VFVTX05PTkUQABIWChJURUFNX01FTUJFUl9BQ1RJVkUQARIYChRURUFNX01F",
+            "TUJFUl9ESVNBQkxFRBACEhcKE1RFQU1fTUVNQkVSX0VYUElSRUQQBBIXChNU",
+            "RUFNX01FTUJFUl9QRU5ESU5HEAhCRwoQY29tLnBhc3NraXQuZ3JwY1okc3Rh",
+            "c2gucGFzc2tpdC5jb20vaW8vbW9kZWwvc2RrL2dvL2lvqgIMUGFzc0tpdC5H",
+            "cnBjYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::PassKit.Grpc.PersonalReflection.Descriptor, global::PassKit.Grpc.AttributesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::PassKit.Grpc.OAuth2Provider), typeof(global::PassKit.Grpc.ScannerMembershipPermissions), typeof(global::PassKit.Grpc.ScannerCouponPermissions), typeof(global::PassKit.Grpc.DefaultMembershipScanAction), typeof(global::PassKit.Grpc.DefaultCouponScanAction), typeof(global::PassKit.Grpc.PermissionScope), typeof(global::PassKit.Grpc.TeamMemberStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -149,7 +151,8 @@ namespace PassKit.Grpc {
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Credentials), global::PassKit.Grpc.Credentials.Parser, new[]{ "Username", "Password", "TwoFAToken", "TwoFACode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.VerifyRequest), global::PassKit.Grpc.VerifyRequest.Parser, new[]{ "Uid", "Token" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.JWT), global::PassKit.Grpc.JWT.Parser, new[]{ "Token" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PasswordResetInput), global::PassKit.Grpc.PasswordResetInput.Parser, new[]{ "Id", "RegisteredEmail", "NewPassword", "ConfirmNewPassword" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.PasswordResetInput), global::PassKit.Grpc.PasswordResetInput.Parser, new[]{ "Id", "Username", "NewPassword", "ConfirmNewPassword" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ChangeOwnPasswordInput), global::PassKit.Grpc.ChangeOwnPasswordInput.Parser, new[]{ "CurrentPassword", "NewPassword", "ConfirmNewPassword" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.Username), global::PassKit.Grpc.Username.Parser, new[]{ "Username_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.OAuth2AuthorizationRequest), global::PassKit.Grpc.OAuth2AuthorizationRequest.Parser, new[]{ "ClientCode", "Provider", "RedirectUri" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PassKit.Grpc.ScannerConfiguration), global::PassKit.Grpc.ScannerConfiguration.Parser, new[]{ "MembershipPermissions", "CouponPermissions", "DefaultMembershipAction", "DefaultCouponAction" }, null, null, null, null),
@@ -4117,7 +4120,7 @@ namespace PassKit.Grpc {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PasswordResetInput(PasswordResetInput other) : this() {
       id_ = other.id_;
-      registeredEmail_ = other.registeredEmail_;
+      username_ = other.username_;
       newPassword_ = other.newPassword_;
       confirmNewPassword_ = other.confirmNewPassword_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -4141,15 +4144,15 @@ namespace PassKit.Grpc {
       }
     }
 
-    /// <summary>Field number for the "registeredEmail" field.</summary>
-    public const int RegisteredEmailFieldNumber = 2;
-    private string registeredEmail_ = "";
+    /// <summary>Field number for the "username" field.</summary>
+    public const int UsernameFieldNumber = 2;
+    private string username_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string RegisteredEmail {
-      get { return registeredEmail_; }
+    public string Username {
+      get { return username_; }
       set {
-        registeredEmail_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        username_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -4193,7 +4196,7 @@ namespace PassKit.Grpc {
         return true;
       }
       if (Id != other.Id) return false;
-      if (RegisteredEmail != other.RegisteredEmail) return false;
+      if (Username != other.Username) return false;
       if (NewPassword != other.NewPassword) return false;
       if (ConfirmNewPassword != other.ConfirmNewPassword) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -4204,7 +4207,7 @@ namespace PassKit.Grpc {
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
-      if (RegisteredEmail.Length != 0) hash ^= RegisteredEmail.GetHashCode();
+      if (Username.Length != 0) hash ^= Username.GetHashCode();
       if (NewPassword.Length != 0) hash ^= NewPassword.GetHashCode();
       if (ConfirmNewPassword.Length != 0) hash ^= ConfirmNewPassword.GetHashCode();
       if (_unknownFields != null) {
@@ -4229,9 +4232,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
-      if (RegisteredEmail.Length != 0) {
+      if (Username.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(RegisteredEmail);
+        output.WriteString(Username);
       }
       if (NewPassword.Length != 0) {
         output.WriteRawTag(26);
@@ -4255,9 +4258,9 @@ namespace PassKit.Grpc {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
-      if (RegisteredEmail.Length != 0) {
+      if (Username.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(RegisteredEmail);
+        output.WriteString(Username);
       }
       if (NewPassword.Length != 0) {
         output.WriteRawTag(26);
@@ -4280,8 +4283,8 @@ namespace PassKit.Grpc {
       if (Id.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
-      if (RegisteredEmail.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RegisteredEmail);
+      if (Username.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
       }
       if (NewPassword.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(NewPassword);
@@ -4304,8 +4307,8 @@ namespace PassKit.Grpc {
       if (other.Id.Length != 0) {
         Id = other.Id;
       }
-      if (other.RegisteredEmail.Length != 0) {
-        RegisteredEmail = other.RegisteredEmail;
+      if (other.Username.Length != 0) {
+        Username = other.Username;
       }
       if (other.NewPassword.Length != 0) {
         NewPassword = other.NewPassword;
@@ -4337,7 +4340,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 18: {
-            RegisteredEmail = input.ReadString();
+            Username = input.ReadString();
             break;
           }
           case 26: {
@@ -4372,7 +4375,7 @@ namespace PassKit.Grpc {
             break;
           }
           case 18: {
-            RegisteredEmail = input.ReadString();
+            Username = input.ReadString();
             break;
           }
           case 26: {
@@ -4380,6 +4383,278 @@ namespace PassKit.Grpc {
             break;
           }
           case 34: {
+            ConfirmNewPassword = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ChangeOwnPasswordInput : pb::IMessage<ChangeOwnPasswordInput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ChangeOwnPasswordInput> _parser = new pb::MessageParser<ChangeOwnPasswordInput>(() => new ChangeOwnPasswordInput());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ChangeOwnPasswordInput> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeOwnPasswordInput() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeOwnPasswordInput(ChangeOwnPasswordInput other) : this() {
+      currentPassword_ = other.currentPassword_;
+      newPassword_ = other.newPassword_;
+      confirmNewPassword_ = other.confirmNewPassword_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeOwnPasswordInput Clone() {
+      return new ChangeOwnPasswordInput(this);
+    }
+
+    /// <summary>Field number for the "currentPassword" field.</summary>
+    public const int CurrentPasswordFieldNumber = 1;
+    private string currentPassword_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CurrentPassword {
+      get { return currentPassword_; }
+      set {
+        currentPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "newPassword" field.</summary>
+    public const int NewPasswordFieldNumber = 2;
+    private string newPassword_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string NewPassword {
+      get { return newPassword_; }
+      set {
+        newPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "confirmNewPassword" field.</summary>
+    public const int ConfirmNewPasswordFieldNumber = 3;
+    private string confirmNewPassword_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ConfirmNewPassword {
+      get { return confirmNewPassword_; }
+      set {
+        confirmNewPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ChangeOwnPasswordInput);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ChangeOwnPasswordInput other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CurrentPassword != other.CurrentPassword) return false;
+      if (NewPassword != other.NewPassword) return false;
+      if (ConfirmNewPassword != other.ConfirmNewPassword) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CurrentPassword.Length != 0) hash ^= CurrentPassword.GetHashCode();
+      if (NewPassword.Length != 0) hash ^= NewPassword.GetHashCode();
+      if (ConfirmNewPassword.Length != 0) hash ^= ConfirmNewPassword.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CurrentPassword.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CurrentPassword);
+      }
+      if (NewPassword.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewPassword);
+      }
+      if (ConfirmNewPassword.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ConfirmNewPassword);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CurrentPassword.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CurrentPassword);
+      }
+      if (NewPassword.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewPassword);
+      }
+      if (ConfirmNewPassword.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ConfirmNewPassword);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CurrentPassword.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CurrentPassword);
+      }
+      if (NewPassword.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NewPassword);
+      }
+      if (ConfirmNewPassword.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ConfirmNewPassword);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ChangeOwnPasswordInput other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CurrentPassword.Length != 0) {
+        CurrentPassword = other.CurrentPassword;
+      }
+      if (other.NewPassword.Length != 0) {
+        NewPassword = other.NewPassword;
+      }
+      if (other.ConfirmNewPassword.Length != 0) {
+        ConfirmNewPassword = other.ConfirmNewPassword;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CurrentPassword = input.ReadString();
+            break;
+          }
+          case 18: {
+            NewPassword = input.ReadString();
+            break;
+          }
+          case 26: {
+            ConfirmNewPassword = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CurrentPassword = input.ReadString();
+            break;
+          }
+          case 18: {
+            NewPassword = input.ReadString();
+            break;
+          }
+          case 26: {
             ConfirmNewPassword = input.ReadString();
             break;
           }
@@ -4405,7 +4680,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[10]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4606,7 +4881,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[11]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4890,7 +5165,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[12]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5163,7 +5438,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[13]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5361,7 +5636,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[14]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5633,7 +5908,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[15]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5831,7 +6106,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[16]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6112,7 +6387,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[17]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6299,7 +6574,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[18]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6486,7 +6761,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[19]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6673,7 +6948,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[20]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7233,7 +7508,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[21]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7680,7 +7955,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[22]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7933,7 +8208,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[23]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8186,7 +8461,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[24]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8458,7 +8733,7 @@ namespace PassKit.Grpc {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[25]; }
+      get { return global::PassKit.Grpc.UserReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

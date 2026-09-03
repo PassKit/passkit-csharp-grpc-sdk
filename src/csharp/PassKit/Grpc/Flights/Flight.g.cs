@@ -552,7 +552,7 @@ namespace PassKit.Grpc.Flights {
     public const int BoardingPolicyFieldNumber = 28;
     private global::PassKit.Grpc.Flights.BoardingPolicy boardingPolicy_ = global::PassKit.Grpc.Flights.BoardingPolicy.Unspecified;
     /// <summary>
-    /// Used to determine the label printed above the boarding group on the Google Pay pass.
+    /// Used to determine the label printed above the boarding group on the Google Wallet pass.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -567,7 +567,7 @@ namespace PassKit.Grpc.Flights {
     public const int SeatingPolicyFieldNumber = 29;
     private global::PassKit.Grpc.Flights.SeatClassPolicy seatingPolicy_ = global::PassKit.Grpc.Flights.SeatClassPolicy.Unspecified;
     /// <summary>
-    /// Used to determine the label printed above the seat class on the Google Pay pass. E.g. Economy, Economy Plus.
+    /// Used to determine the label printed above the seat class on the Google Wallet pass, for example Economy or Economy Plus.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

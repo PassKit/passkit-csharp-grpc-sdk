@@ -290,7 +290,7 @@ namespace PassKit.Grpc.EventTickets {
     public const int RelevantDateFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp relevantDate_;
     /// <summary>
-    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Pay will always notify the user 3 hours before the event start date that they have an upcoming event.
+    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Wallet notifies the user three hours before the event start date that they have an upcoming event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2595,7 +2595,7 @@ namespace PassKit.Grpc.EventTickets {
     public const int RelevantDateFieldNumber = 7;
     private global::Google.Protobuf.WellKnownTypes.Timestamp relevantDate_;
     /// <summary>
-    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Pay will always notify the user 3 hours before the event start date that they have an upcoming event.
+    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Wallet notifies the user three hours before the event start date that they have an upcoming event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3372,7 +3372,7 @@ namespace PassKit.Grpc.EventTickets {
     public const int RelevantDateFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp relevantDate_;
     /// <summary>
-    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Pay will always notify the user 3 hours before the event start date that they have an upcoming event.
+    /// Optional relevant date for when the event starts. Used by Apple Wallet to trigger a lock-screen notification that there is an event coming up. Google Wallet notifies the user three hours before the event start date that they have an upcoming event.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

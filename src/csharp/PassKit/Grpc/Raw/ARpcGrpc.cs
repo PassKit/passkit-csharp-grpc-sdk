@@ -5,7 +5,7 @@
 // Original file comments:
 // *
 // This protocol is suit for cases where the business logic is handled elsewhere, and the purpose is purely to issue and
-// update content for Apple Wallet and Google Pay.
+// update content for Apple Wallet and Google Wallet.
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
 

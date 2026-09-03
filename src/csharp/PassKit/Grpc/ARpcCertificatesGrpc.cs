@@ -65,6 +65,18 @@ namespace PassKit.Grpc {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.Count> __Marshaller_io_Count = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.Count.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest> __Marshaller_io_CreateAppleCertificateRenewalAuthorityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.AppleCertificateRenewalAuthority> __Marshaller_io_AppleCertificateRenewalAuthority = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.AppleCertificateRenewalAuthority.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest> __Marshaller_io_GetAppleCertificateRenewalAuthorityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest> __Marshaller_io_UpdateAppleCertificateRenewalAuthorityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse> __Marshaller_io_DeleteAppleCertificateRenewalAuthorityResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest> __Marshaller_io_ListAppleCertificateRenewalAuthoritiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PassKit.Grpc.NFCSigningCredentialsRequest> __Marshaller_io_NFCSigningCredentialsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PassKit.Grpc.NFCSigningCredentialsRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -130,6 +142,46 @@ namespace PassKit.Grpc {
         "countAppleCertificates",
         __Marshaller_io_Filters,
         __Marshaller_io_Count);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority> __Method_createAppleCertificateRenewalAuthority = new grpc::Method<global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "createAppleCertificateRenewalAuthority",
+        __Marshaller_io_CreateAppleCertificateRenewalAuthorityRequest,
+        __Marshaller_io_AppleCertificateRenewalAuthority);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority> __Method_getAppleCertificateRenewalAuthority = new grpc::Method<global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "getAppleCertificateRenewalAuthority",
+        __Marshaller_io_GetAppleCertificateRenewalAuthorityRequest,
+        __Marshaller_io_AppleCertificateRenewalAuthority);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority> __Method_updateAppleCertificateRenewalAuthority = new grpc::Method<global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "updateAppleCertificateRenewalAuthority",
+        __Marshaller_io_UpdateAppleCertificateRenewalAuthorityRequest,
+        __Marshaller_io_AppleCertificateRenewalAuthority);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse> __Method_deleteAppleCertificateRenewalAuthority = new grpc::Method<global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest, global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "deleteAppleCertificateRenewalAuthority",
+        __Marshaller_io_GetAppleCertificateRenewalAuthorityRequest,
+        __Marshaller_io_DeleteAppleCertificateRenewalAuthorityResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority> __Method_listAppleCertificateRenewalAuthorities = new grpc::Method<global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest, global::PassKit.Grpc.AppleCertificateRenewalAuthority>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "listAppleCertificateRenewalAuthorities",
+        __Marshaller_io_ListAppleCertificateRenewalAuthoritiesRequest,
+        __Marshaller_io_AppleCertificateRenewalAuthority);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PassKit.Grpc.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_sendNFCSigningCredentials = new grpc::Method<global::PassKit.Grpc.NFCSigningCredentialsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -507,6 +559,222 @@ namespace PassKit.Grpc {
       public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.Count> countAppleCertificatesAsync(global::PassKit.Grpc.Filters request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_countAppleCertificates, null, options, request);
+      }
+      /// <summary>
+      /// Creates an Apple certificate renewal authority for the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority createAppleCertificateRenewalAuthority(global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return createAppleCertificateRenewalAuthority(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates an Apple certificate renewal authority for the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority createAppleCertificateRenewalAuthority(global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_createAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Creates an Apple certificate renewal authority for the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> createAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return createAppleCertificateRenewalAuthorityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates an Apple certificate renewal authority for the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> createAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.CreateAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_createAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Retrieves an Apple certificate renewal authority by ID.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority getAppleCertificateRenewalAuthority(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return getAppleCertificateRenewalAuthority(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Retrieves an Apple certificate renewal authority by ID.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority getAppleCertificateRenewalAuthority(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_getAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Retrieves an Apple certificate renewal authority by ID.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> getAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return getAppleCertificateRenewalAuthorityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Retrieves an Apple certificate renewal authority by ID.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> getAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_getAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Updates an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority updateAppleCertificateRenewalAuthority(global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return updateAppleCertificateRenewalAuthority(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Updates an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.AppleCertificateRenewalAuthority updateAppleCertificateRenewalAuthority(global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_updateAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Updates an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> updateAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return updateAppleCertificateRenewalAuthorityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Updates an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> updateAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.UpdateAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_updateAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Deletes an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse deleteAppleCertificateRenewalAuthority(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return deleteAppleCertificateRenewalAuthority(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deletes an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse deleteAppleCertificateRenewalAuthority(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_deleteAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Deletes an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse> deleteAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return deleteAppleCertificateRenewalAuthorityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deletes an Apple certificate renewal authority.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::PassKit.Grpc.DeleteAppleCertificateRenewalAuthorityResponse> deleteAppleCertificateRenewalAuthorityAsync(global::PassKit.Grpc.GetAppleCertificateRenewalAuthorityRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_deleteAppleCertificateRenewalAuthority, null, options, request);
+      }
+      /// <summary>
+      /// Lists Apple certificate renewal authorities visible to the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> listAppleCertificateRenewalAuthorities(global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return listAppleCertificateRenewalAuthorities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists Apple certificate renewal authorities visible to the authenticated user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::PassKit.Grpc.AppleCertificateRenewalAuthority> listAppleCertificateRenewalAuthorities(global::PassKit.Grpc.ListAppleCertificateRenewalAuthoritiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_listAppleCertificateRenewalAuthorities, null, options, request);
       }
       /// <summary>
       /// Sends NFC signing credentials for an NFC-enabled Apple certificate to the user's registered email address. Required Fields: certificateId, user email must be associated with the cert.

@@ -763,7 +763,7 @@ namespace PassKit.Grpc {
     public const int GooglePayFieldNumber = 2;
     private uint googlePay_;
     /// <summary>
-    /// Total number of passes installed in Google Pay.
+    /// Total number of passes installed in Google Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -78,15 +78,15 @@ namespace PassKit.Grpc.Scheduler {
             "c3QgU2NoZWR1bGluZyBKb2IgSGlzdG9yaWVzGh5MaXN0IHNjaGVkdWxpbmcg",
             "am9iIGhpc3Rvcmllcy5KIgoDNDAzEhsKGVVzZXIgbGFja3MgYXV0aG9yaXph",
             "dGlvbi5KHgoDNDA0EhcKFVJlY29yZCB3YXMgbm90IGZvdW5kLoLT5JMCHSIY",
-            "L3NjaGVkdWxpbmcvaGlzdG9yeS9saXN0OgEqMAFC3QIKGmNvbS5wYXNza2l0",
+            "L3NjaGVkdWxpbmcvaGlzdG9yeS9saXN0OgEqMAFCxgIKGmNvbS5wYXNza2l0",
             "LmdycGMuU2NoZWR1bGVyWi5zdGFzaC5wYXNza2l0LmNvbS9pby9tb2RlbC9z",
             "ZGsvZ28vaW8vc2NoZWR1bGVyqgIWUGFzc0tpdC5HcnBjLlNjaGVkdWxlcpJB",
-            "9AESygEKFVBhc3NLaXQgU2NoZWR1bGVyIEFQSRIxVGhpcyBwcm90b2NvbCBz",
-            "Y2hlZHVsZSByZWN1cnNpdmUgb3Igb25lLW9mZiBqb2JzLho4aHR0cHM6Ly9w",
-            "YXNza2l0LmNvbS9sZWdhbC90ZXJtcy1vZi1zdWJzY3JpcHRpb24tc2Vydmlj",
-            "ZS8iPwoPUGFzc0tpdCBTdXBwb3J0EhdodHRwczovL2RvY3MucGFzc2tpdC5p",
-            "bxoTc3VwcG9ydEBwYXNza2l0LmNvbTIDMS4wKgECMhBhcHBsaWNhdGlvbi9q",
-            "c29uOhBhcHBsaWNhdGlvbi9qc29uYgZwcm90bzM="));
+            "3QESswEKFVBhc3NLaXQgU2NoZWR1bGVyIEFQSRIxVGhpcyBwcm90b2NvbCBz",
+            "Y2hlZHVsZSByZWN1cnNpdmUgb3Igb25lLW9mZiBqb2JzLhogaHR0cHM6Ly9w",
+            "YXNza2l0LmNvbS9sZWdhbC90ZXJtcy8iQAoPUGFzc0tpdCBTdXBwb3J0Ehho",
+            "dHRwczovL2hlbHAucGFzc2tpdC5jb20aE3N1cHBvcnRAcGFzc2tpdC5jb20y",
+            "AzEuMCoBAjIQYXBwbGljYXRpb24vanNvbjoQYXBwbGljYXRpb24vanNvbmIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::PassKit.Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::PassKit.Grpc.CommonObjectsReflection.Descriptor, global::PassKit.Grpc.Scheduler.SchedulerReflection.Descriptor, global::PassKit.Grpc.Ct.SchedulerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, null));

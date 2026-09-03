@@ -48,7 +48,7 @@ namespace PassKit.Grpc {
   }
   #region Enums
   /// <summary>
-  /// Used to specify the type of link for link field. Each type has different icon on Google Pay.
+  /// Used to specify the type of link for link field. Each type has a different icon in Google Wallet.
   /// </summary>
   public enum LinkType {
     /// <summary>
@@ -199,7 +199,7 @@ namespace PassKit.Grpc {
     public const int LocalizedLinkFieldNumber = 5;
     private global::PassKit.Grpc.LocalizedString localizedLink_;
     /// <summary>
-    /// This customises link text for different languages. Ignored by Google Pay passes.
+    /// This customises link text for different languages. Ignored by Google Wallet passes.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

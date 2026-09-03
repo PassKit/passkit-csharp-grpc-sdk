@@ -96,7 +96,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("INSTALLED_APPLE")] InstalledApple = 2,
     /// <summary>
-    /// Pass has been installed in at least one Google Pay account.
+    /// Pass has been installed in at least one Google Wallet account.
     /// </summary>
     [pbr::OriginalName("INSTALLED_GOOGLE")] InstalledGoogle = 4,
     /// <summary>
@@ -108,7 +108,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("UNINSTALLED_APPLE")] UninstalledApple = 1024,
     /// <summary>
-    /// Pass has been uninstalled from at least one Google Pay account.
+    /// Pass has been uninstalled from at least one Google Wallet account.
     /// </summary>
     [pbr::OriginalName("UNINSTALLED_GOOGLE")] UninstalledGoogle = 2048,
     /// <summary>
@@ -120,7 +120,7 @@ namespace PassKit.Grpc {
     /// </summary>
     [pbr::OriginalName("APPLE_PASS_CREATED")] ApplePassCreated = 8192,
     /// <summary>
-    /// A Google Pay record has been created.
+    /// A Google Wallet record has been created.
     /// </summary>
     [pbr::OriginalName("GOOGLE_PAY_RECORD_CREATED")] GooglePayRecordCreated = 16384,
     /// <summary>
@@ -267,7 +267,7 @@ namespace PassKit.Grpc {
     public const int GooglePayInstallsFieldNumber = 3;
     private ulong googlePayInstalls_;
     /// <summary>
-    /// Number of passes installed in Google Pay.
+    /// Number of passes installed in Google Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -312,7 +312,7 @@ namespace PassKit.Grpc {
     public const int GooglePayUninstallsFieldNumber = 12;
     private ulong googlePayUninstalls_;
     /// <summary>
-    /// Number of passes uninstalled from Google Pay.
+    /// Number of passes uninstalled from Google Wallet.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
